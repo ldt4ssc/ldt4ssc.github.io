@@ -1,0 +1,18 @@
+site_name: GA MkDocs Material on gh-deploy
+site_url: https://doesntmatter.example
+theme:
+  name: material
+  palette:
+    # Dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+      primary: green
+      accent: yellow
+
+    # Light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+      primary: blue
+      accent: deep purple
