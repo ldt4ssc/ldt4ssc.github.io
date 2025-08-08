@@ -1,4 +1,4 @@
-site_name: GA MkDocs Material on gh-deploy
+site_name: LDT4SSC KB made with MkDocs Material
 site_url: https://doesntmatter.example
 theme:
   name: material
