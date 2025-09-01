@@ -1,18 +1,35 @@
-site_name: LDT4SSC KB made with MkDocs Material
-site_url: https://doesntmatter.example
+site_name: Knowledge Hub
+site_url: https://ldt4ssc.github.io/
+
 theme:
   name: material
+  logo: assets/logo.png   # Add your logo in docs/assets/logo.png
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    # Do not enable toc.integrate → removes right TOC
   palette:
-    # Dark mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-      primary: green
-      accent: yellow
-
-    # Light mode
     - scheme: default
+      primary: blue grey
+      accent: amber
+    - scheme: slate
+      primary: teal
+      accent: lime
       toggle:
         icon: material/weather-night
-      primary: blue
-      accent: deep purple
+        name: Switch to dark mode
+
+nav:
+  - Welcome: index.md
+  - Strategy & Sustainability: strategy.md
+  - Smart Communities Ecosystems: communities.md
+  - Pilot Guidance: guidance.md
+  - Pilot Journey: journey.md
+
+markdown_extensions:
+  toc:
+    permalink: false   # disables table of contents panel
