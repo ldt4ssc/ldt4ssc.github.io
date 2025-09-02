@@ -1,4 +1,4 @@
-# Welcome to LTD4SCC Knowledge Hub
+# Welcome to LTD4SCC Knowledge Hub!
 
 The **LDT4SSC Knowledge Base Inventory (KB)** is the central reference hub of the project *Local Digital Twins for Smart and Sustainable Communities (LDT4SSC)*.  
 It collects and organises the project’s knowledge outputs, providing stakeholders with easy access to strategies, tools, guidance, and pilots.

@@ -26,10 +26,26 @@ theme:
 nav:
   - Welcome: index.md
   - Strategy & Sustainability: strategy.md
-  - Smart Communities Ecosystems: communities.md
+  - Smart Communities Ecosystem: communities.md
   - Pilot Guidance: guidance.md
   - Pilot Journey: journey.md
 
+
+    
 markdown_extensions:
-  toc:
-    permalink: false   # disables table of contents panel
+  - admonition
+  - pymdownx.details
+  - toc:
+      permalink: false
+ # disables table of contents panel
+    
+extra_css:
+  - assets/extra.css
+
+markdown_extensions: 
+  - attr_list
+  - md_in_html
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
