@@ -22,3 +22,13 @@ The initiative contributes directly to LDT4SSC by:
 - Providing Testing and Experimentation Facilities ([TEFs](https://citcomai-hub.github.io/tef/)) where LDT pilots can test innovative services in realistic environments, ensuring scalability, replicability, and compliance with European policies and sustainability goals.  
 
 - Offering a [reference common infrastructure](https://citcomai-hub.github.io/) supporting project operations across the technical domains of data spaces, data analytics, AI modelling, Local Digital Twins, and cybersecurity.  
+
+**Key Assets and Resources:** 
+[[catalogue of AI Testing and Experimentation services](https://citcomtef.eu/services), [Market report](https://citcomtef.eu/assets/uploads/Resources/D5.1-CitCom.ai-European-AI-Market-Report.pdf), [TEFs](https://citcomai-hub.github.io/tef/), [reference common infrastructure](https://citcomai-hub.github.io/) ]
+
+**Webpage / Reference Link:**  
+[https://www.citcom.ai](https://www.citcom.ai) 
+
+**Main contact point:**  
+- Tamara De Swert (IMEC)  
+- German Castignani (LIST)  

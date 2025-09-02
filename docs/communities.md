@@ -16,8 +16,7 @@ In this page, we have categorised the relevant ecosystems into **six thematic cl
 - **Interoperability & MIMs** – Frameworks, Minimal Interoperability Mechanisms (MIMs), and technical specifications that ensure cross-domain interoperability and seamless integration of digital services in cities.  
 - **Cities Network and Supporting Actions** – City alliances, peer-to-peer networks, and capacity-building initiatives that promote collaboration, knowledge exchange, and joint actions among European cities.  
 
-
-![Ecosystem Logo](assets/cluster.png)
+<!-- ![Ecosystem Logo](assets/cluster.png) -->
 
 Ultimately, LDT4SSC takes input from all these initiatives, which together converge towards the **European Digital Infrastructure Consortium (EDIC)** framework — a legal and governance instrument enabling multi-country projects with transformative impact on cities and communities across Europe.  
 
