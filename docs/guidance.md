@@ -1,20 +1,23 @@
 # Pilot Guidance
 
-This section provides an overview of the **piloting process** within LDT4SSC.  
+This section provides an overview of the piloting process within **LDT4SSC** and provides guidelines and relevant resources for each of the Work Strands.
 
-- **Why apply?** Pilots are at the heart of the project, ensuring real-world validation and impact.  
-- **Work Strands (WS):** The project foresees **3 Work Strands** with a total of **5 calls** for pilots.  
-- **Preliminary Calendar:** A timeline for the calls will be provided, ensuring clarity for applicants.  
-- **At a Glance:** Each Work Strand (WS1, WS2, WS3) addresses different aspects of digital twin development and adoption.  
+**Why to apply?**  
+  Pilots are at the heart of LDT4SSC. They enable real-world testing of digital twin solutions, validate interoperability, and deliver tangible benefits for communities. Selected pilots will receive funding, technical and non-technical support, and visibility across the European Local Digital Twin ecosystem.  
+
+**Work Strands (WS):**  
+  The project foresees **three Work Strands**:  
+  - **WS1: Interconnecting Existing LDTs** – linking and scaling digital twins already in place.  
+  - **WS2: Creating New LDTs Based on Common Needs** – addressing shared urban or regional challenges (e.g. cross-border traffic, pollution).  
+  - **WS3: Developing Advanced AI Services** – adding AI-driven, value-added services to enhance LDTs.  
+
 ---
 
-## Piloting Work Strands (WS1, WS2, WS3)  
+## Piloting Work Strand 1
 
-**Key Purpose:** *(Insert description from the Proposal here).*  
+### Guidelines
 
----
-
-## Step-by-Step Guidelines & Resources  
+### Resources
 
 To support pilot applicants, a variety of resources are made available. When possible, links will connect to initiatives in the **Smart Communities Ecosystem**.  
 
@@ -34,6 +37,8 @@ To support pilot applicants, a variety of resources are made available. When pos
   - Standards and technical frameworks  
 
 ---
+
+
 
 ## Testing Environment  
 
