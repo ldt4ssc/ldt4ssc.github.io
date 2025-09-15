@@ -1,5 +1,6 @@
 # Strategy & Sustainability
 
+## Introduction to LDT4SSC Strategy and Sustanbility
 Local digital twins (LDTs) should be developed through a purpose-driven, collaborative approach that addresses real community needs, scales beyond pilots, and remains sustainable in the long term. 
 
 Municipalities are expected to begin their LDT development by defining clear local objectives (e.g. climate resilience, mobility, or public health goals), validating these with stakeholders, and building the digital twin around concrete use cases. Incremental expansion of services and applications, guided by a coherent strategy and supported by an interoperable technical backbone, enables communities to create and capture value throughout the ongoing development process. To ensure accountability and shared learning, the value of LDTs should be measured against well-defined Key Performance Indicators (KPIs) linked to the original goals, with results (both successes and setbacks) communicated across current stakeholders and potential collaborators. 

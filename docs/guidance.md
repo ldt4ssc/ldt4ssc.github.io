@@ -2,57 +2,78 @@
 
 
 ## General Guidance
-This section provides an overview of the piloting process within **LDT4SSC** and provides guidelines and relevant resources for each of the Work Strands.
+This section provides an overview of the piloting process within LDT4SSC and offers guidance and relevant resources for each of the Work Strands.
+
 
 **Why to apply?**  
-  Pilots are at the heart of LDT4SSC. They enable real-world testing of digital twin solutions, validate interoperability, and deliver tangible benefits for communities. Selected pilots will receive funding, technical and non-technical support, and visibility across the European Local Digital Twin ecosystem.  
+Pilots are at the heart of LDT4SSC. They enable real-world testing of digital twin solutions, validate interoperability, and deliver tangible benefits for communities. Selected pilots will receive:
+
+ - Funding support. 
+ - Technical & non-technical guidance. 
+ - Increased visibility across the European Local Digital Twin ecosystem. 
+
+
+**Who should apply?**  
+LDT4SSC pilots are open to a wide range of stakeholders, including:
+
+ - Municipalities, groups of municipalities, or regions 
+ - Syndicates and energy communities
+ - Technology providers and AI innovators from the private and public sector
+
+
+--- 
 
 **Work Strands (WS):**  
-  The project foresees **three Work Strands**:  
+The project foresees **three Work Strands** through which potential pilots can apply to receive funding and develop their solutions:
+
   - **WS1: Technical Inter-connection of Existing LDTs** – linking and scaling digital twins already in place.  
   - **WS2:  Creation of LDTs Based on Common Needs** – addressing shared urban or regional challenges (e.g. cross-border traffic, pollution).  
-  - **WS3: Adding New Advanced AI-Based Tools to the LDTs Toolbox** – adding AI-driven, value-added services to enhance LDTs.  
+  - **WS3: Adding New Advanced AI-Based Tools to the LDTs Toolbox** – adding AI-driven, value-added services to enhance LDTs.
 
 ---
 
-## Piloting Work Strand 1
+<p align="center">👉 Check the sections below for more detailed information on each Work Strand.</p>
 
-### Brief Overview
-**What is the goal?**  
-This work strand focuses on connecting and testing **existing Local Digital Twins (LDTs)** within a European ecosystem. The aim is to demonstrate interoperability, enable data sharing across domains and borders, and unlock new opportunities for smarter and more resilient communities.  
+<div align="center" style="font-size: 2em; margin: 20px 0;">
+⬇️
+</div>
 
-**Who are we looking for?**  
-We are seeking **cities and communities that already have a digital twin** and are ready to:  
-- Integrate it with a European LDT infrastructure  
-- Test interoperability and cross-community data exchange  
-- Share lessons learned and scalable practices  
 
-**Why apply?**  
-- Join the **European LDT ecosystem** and collaborate with peers  
-- Showcase and scale your **digital twin solutions** across regions  
-- Access shared methodologies, tools, and expertise  
-- Strengthen your city’s role as a **leader in innovation and resilience** 
+## Work Strands - Piloting Opportunities
 
-### Requirements
 
-### Relevant Resources
 
-To support pilot applicants, a variety of resources are made available. When possible, links will connect to initiatives in the **Smart Communities Ecosystem**.  
+<div class="grid cards grid-cols-1" markdown>
 
-- **Non-technical resources**  
-  - Surveys  
-  - Legal templates  
-  - Eco-conception guidelines  
-  - Governance documents  
-  - Other supporting frameworks  
+-   __Piloting Activities WS1__  
 
-- **Technical resources**  
-  - Interoperability requirements  
-  - *MIMs Meter*  
-  - *MIMs specifications*  
-  - Connectors and APIs  
-  - Data space references  
-  - Standards and technical frameworks  
+    Technical Inter-connection of Existing LDTs.  
+
+    [:octicons-arrow-right-24: View Details](guidance_content/ws1.md)
+
+</div>
+
+<div class="grid cards grid-cols-1" markdown>
+
+-   __Piloting Activities WS2__  
+
+    Creation of LDTs Based on Common Needs.  
+
+    [:octicons-arrow-right-24: View Details](guidance_content/ws2.md)
+</div>
+
+
+<div class="grid cards grid-cols-1" markdown>
+
+-   __Piloting Activities WS3__  
+
+    Adding New Advanced AI-Based Tools to the LDTs Toolbox.  
+
+    [:octicons-arrow-right-24: View Details](guidance_content/ws3.md)
+
+</div>
+
+
 
 ---
 
