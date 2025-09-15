@@ -31,6 +31,7 @@ This Work Strand focuses on connecting and testing existing Local Digital Twins 
 
 
 ## WS1 Mandatory Requirements  
+To ensure that selected pilots are mature, interoperable, and sustainable, applicants must comply with a set of **mandatory requirements**. These requirements cover technical, legal, and governance aspects, ensuring that pilots contribute effectively to the European Local Digital Twin ecosystem and are well alligned with the scope and goals of this Work Strand.  
 
 **Technical Requirements**
 
