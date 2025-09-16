@@ -1,53 +1,60 @@
 # WS1 Piloting Activities - Technical Inter-connection of Existing LDTs
 
 ## Brief Overview  
-This Work Strand focuses on connecting and testing existing Local Digital Twins (LDTs) within a European ecosystem. The aim is to demonstrate interoperability, enable cross-domain and cross-border data sharing, and build the foundations for a European federation of LDTs. Through these efforts, the pilots will unlock innovation opportunities for cities, communities, and providers, contributing to smarter and more resilient communities across Europe.
+This Work Strand focuses on connecting and testing existing Local Digital Twins (LDTs) within a European ecosystem. The goal is to demonstrate interoperability, enable data sharing across domains and borders, and unlock new opportunities for smarter and more resilient communities.  
 
-- 6–8 pilots will be selected
+**Key facts:**  
+- 6–8 pilots will be selected  
+- Start of the pilots: May 2026  
+- Duration: 18 months  
+- Funding: 50% co-funding required  
+- Opening of Open Call 1: November 2025  
 
-- Start of the pilots: May 2026
-
-- Duration: 18 months
-
-- Funding: 50% co-funding required
-
-- Opening of Open Call 1: November 2025
-
----
-
-## Who are we looking for?  
-
-**Municipalities, groups of municipalities, syndicates, or regions** with:  
-  - A data platform with a description and a functional perimeter  
-  - Willingness to share data, models, and services with:  
-    - Other data platforms (LDT, hypervision, etc.)  
-    - Data spaces  
-
-**Municipalities or regions** wanting to create a **data space** to link a batch of local data platforms  
-
-**Municipalities, groups of municipalities, or regions** aiming to create a **marketplace of services**  
+**What is the goal?**  
+- Demonstrate interoperability between existing LDTs  
+- Enable cross-domain and cross-border data sharing  
+- Build the foundations for a European federation of LDTs  
+- Unlock innovation opportunities for cities, communities, and providers  
 
 ---
 
+**Who Are We Looking For?**  
 
-## WS1 Mandatory Requirements  
-To ensure that selected pilots are mature, interoperable, and sustainable, applicants must comply with a set of **mandatory requirements**. These requirements cover technical, legal, and governance aspects, ensuring that pilots contribute effectively to the European Local Digital Twin ecosystem and are well alligned with the scope and goals of this Work Strand.  
+Municipalities, groups of municipalities, syndicates, or regions, who have a **data platform** with a description and a functional perimeter, and who are willing to share data, models, and services with:  
+- Other data platforms (LDT, hypervision, etc.)  
+- Data spaces  
 
-**Technical Requirements**
+Municipalities or regions aiming to:  
+- Create a data space to link a batch of local data platforms  
+- Develop a marketplace of services  
 
-- The pilot demonstrates sufficient *digital maturity* (TBD)
-- Interoperability is integrated *by design*, not as an afterthought (TBD)
-- Applicants commit to adopting a *high level of interoperability*, aligned with MIMs and linked legal clauses (TBD)
+**Minimum consortium composition:**  
+- At least 2 public entities  
+- Plus 1 other partner from the following:  
+  - Private entity (e.g., service provider)  
+  - Private association (legal status)  
+  - Trusted third party  
+  - Representative of a use-case sector  
 
-**Legal Requirements**
-
-- Agreement to integrate *legal clauses* ensuring data sovereignty, compliance with funded projects, and replicability of results  
-- A clear statement of *data governance status* must be provided at both the beginning and the end of the project  
-- A *minimum governance baseline* must be described to enable project start  
-- Proposal of a *methodology for establishing data governance frameworks* tailored to the pilot  
+**Requirement:**  
+- The consortium must propose at least 2 common use cases.  
 
 ---
 
+## WS1 Specific Requirements  
+
+On top of the **common requirements** described in the Pilot Guidance page, WS1 piloting activity extends its requirements to:  
+
+**Technical**  
+- The pilot consortium must include at least **two data platforms/Local Digital Twins** to interconnect (upcoming definitions).  
+- Applicants must use in priority the **proposed building blocks and assets** (smart data models, connectors, etc.) to interconnect their platforms or LDTs.  
+- Pilots must use **selected types of interconnection** (TBD).  
+- For knowledge models:  
+  - Use existing smart data models, or  
+  - Create new smart data models if they don’t exist.  
+- Applicants must agree to **publish on GitHub, FIWARE, or EDIC** (TBD)
+
+---
 
 ## WS1 Resources  
 
@@ -57,10 +64,16 @@ Pilots will find these materials extremely relevant, as they provide practical g
 
 **Non-Technical Resources**
 
+| Title | Small Description | Source / Link | Thematic Area |
+|-------|-------------------|---------------|---------------|
+| Align Stakeholders on the Data Space Scope | Helpful to build consensus on the data space’s boundaries and goals, ensuring all stakeholders share a clear vision | [Link](https://dssc.eu/space/BVE2/1071257999/Align+Stakeholders+on+the+Data+Space+Scope) | Data Spaces |
+| The Economics of Data Sharing: Insights from a Legal-Economics Workshop | Provides insights on economic incentives and legal frameworks that can help design sustainable data sharing models. | [Link](https://dssc.eu/space/News/blog/1284145156/The+Economics+of+Data+Sharing:+Insights+from+a+Legal-Economics+Workshop) | Data Spaces |
+| MIMS Specification Introduction | Introduces standards for interoperable data management, essential for connecting platforms. | [Link](https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys) | Interoperability / MIMs |
+| DS4SSCC | Guidelines to set up multi-stakeholder governance, crucial for trust and collaboration in data spaces and LDTs. | [Link](https://inventory.ds4sscc.eu/multi-stakeholder-governance/developing-multi-stakeholder) | Data Spaces |
+
 
 
 **Technical Resources**
-
 
 | Title              | Small Description                                                  | Source / Link                                                                 | Thematic Area              |
 |--------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------|----------------------------|
