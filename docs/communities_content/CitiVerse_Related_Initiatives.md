@@ -106,6 +106,40 @@ Aligned with EU strategies (Digital Decade 2030, Green Deal), 3Dxverse supports 
 
 
 
+## CU – European Citiverses Uniting for Inclusiveness  
+
+![CU Project Logo](../assets/CU_logo.png){ width="220" align="center" }  
+---  
+
+**Short Description:**  
+CU (Citiverses Uniting) is a European initiative that seeks to lower thresholds for urban accessibility. Grounded in universal design principles, CU develops immersive, human-centric digital experiences that allow everyone—including marginalized groups—to plan and navigate city visits safely and independently on their own devices.  
+
+By connecting people, places, and services through a new digital layer in urban life, CU sets new accessibility and inclusiveness standards across Europe.  
+
+**Key role in the LDT Ecosystem:**  
+CU contributes to the LDT4SSC ecosystem by:  
+- Gathering Insights: Mapping urban accessibility needs and integrating marginalized voices through universal design frameworks.  
+- Immersive Pre-Visits: Creating digital twin–based “pre-visit” experiences that allow individuals to familiarize themselves with urban environments.  
+- Universal Design: Embedding human-centric, inclusive approaches into LDTs.  
+- European Awareness: Raising stakeholder-wide visibility and awareness of accessibility challenges.  
+- Policy Alignment: Supporting EU priorities such as the Digital Decade 2030 and the European Accessibility Strategy.  
+
+**Relevance to LDT4SSC:**  
+- Accessibility Innovation: Places inclusiveness at the core of digital twin development.  
+- Human-Centric Pilots: Bridges digital and physical accessibility in cities and communities.  
+- Cross-Domain Relevance: Extends accessibility into mobility, environment, culture, and social services.  
+- Scalable Impact: Provides a replicable model for cities across Europe.  
+
+**Key Assets and Resources:**  
+[[Events](https://cu-project.eu/event-calendar), [News](https://cu-project.eu/news), [Video Library](https://cu-project.eu/vimeo-library)]  
+
+**Webpage / Reference Link:**  
+[https://cu-project.eu/](https://cu-project.eu/)  
+
+**Main contact point:**  
+- **Anna Wennblad**, Project Leader – Lindholmen Science Park AB  
+  anna.wennblad@lindholmen.se 
+
 
 
 

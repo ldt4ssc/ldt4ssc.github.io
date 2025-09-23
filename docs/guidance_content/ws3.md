@@ -4,6 +4,7 @@
 This Work Strand is about experimenting with advanced AI-based services to push the boundaries of what Local Digital Twins (LDTs) can do. Pilots will test and apply cutting-edge approaches such as generative AI (GenAI4EU), virtual worlds, advanced simulation and modelling, and multi-sector services. These solutions will help cities improve critical services (energy, mobility, infrastructure, risk management) while involving citizens more actively in shaping their communities.  
 
 **Key facts:**  
+
 - 3–4 pilots will be selected  
 - Start of the pilots: May/November 2026  
 - Duration: 18 months  
@@ -11,7 +12,8 @@ This Work Strand is about experimenting with advanced AI-based services to push 
 - Opening of Open Call 4: February 2026  
 - Opening of Open Call 5: May 2026  
 
-**What is the goal?**  
+**What is the goal?** 
+
 - Pilot AI-driven use cases that go beyond current LDT capabilities.  
 - Test novel applications using generative AI, simulation, and immersive technologies.  
 - Strengthen citizen participation through co-creation and democratic engagement.  
@@ -26,7 +28,8 @@ We invite applications from:
 - Cities, municipalities, or regions.  
 - Technology innovators and solution providers in areas such as AI, generative AI, Citiverse/virtual worlds, simulation, and modelling, who are ready to collaborate with cities and transfer their solutions into real-world pilots.  
 
-**Minimum consortium composition:**  
+**Minimum consortium composition:**
+
 - At least 2 public entities  
 - Plus 1 other partner from the following:  
   - Private entity (e.g., service provider)  
@@ -35,6 +38,7 @@ We invite applications from:
   - Representative of a use-case sector  
 
 **Requirement:**  
+
 - The consortium must propose at least 2 common use cases.  
 
 ---
@@ -43,12 +47,14 @@ We invite applications from:
 
 On top of the **common requirements** described in the Pilot Guidance page, WS3 piloting activity extends its requirements to:  
 
-**General**  
+**General**
+
 - The pilot must specify how AI will be integrated into their data processing.  
 - The pilot must comply with European regulations such as the **AI Act**, especially regarding **data governance** at the project level.  
 - The pilot guarantees **transparency towards end-users** in the use of AI through an ethical charter/code of ethics, or other means.  
 
 **Technical**  
+
 - The pilots must use a **software tool (to be provided)** to assess their **carbon footprint impact** of the developed AI models.  
 - The pilot shall build a **business knowledge model** of their smart data model.  
 - Pilots must prove that, through the use of AI, they have become **more efficient and consume less**, notably because of structured data with completed levels of relationships.  

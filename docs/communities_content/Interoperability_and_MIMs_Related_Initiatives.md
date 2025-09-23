@@ -1,4 +1,6 @@
-**Interoperability** ensures cities can integrate diverse digital solutions.  
+# Interoperability and MIMs Plus Related Initiatives  
+
+Interoperability ensures cities can integrate diverse digital solutions.  
 Minimal Interoperability Mechanisms (MIMs) provide common standards, APIs, and governance models that allow reuse and scaling across pilots.  
 
 ## FIWARE  
@@ -34,10 +36,10 @@ FIWARE contributes directly to LDT4SSC through:
 [https://www.fiware.org/](https://www.fiware.org/) | [https://github.com/FIWARE](https://github.com/FIWARE)  
 
 **Main contact point:**  
-- [Contact us](https://www.fiware.org/contact-us/)
+- [Contact us](https://www.fiware.org/contact-us/)  
 
 
----
+---  
 
 ## MIMs and MIMs Plus  
 
@@ -62,16 +64,16 @@ MIMs Plus also has a dedicated LDT working group and includes a specific MIM (MI
 - Aligns with EU policies and strategies (Digital Decade, Data Governance Act, Green Deal).  
 
 **Key Assets and Resources:**  
-[[MIMs Plus Specification 8.0](https://living-in.eu/sites/default/files/files/mims-plus-v.8_1.pdf), [MIMs Overview](https://oascities.org/minimal-interoperability-mechanisms/), [MIMs Adoption Guide](https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys/) ] 
+[[MIMs Plus Specification 8.0](https://living-in.eu/sites/default/files/files/mims-plus-v.8_1.pdf), [MIMs Overview](https://oascities.org/minimal-interoperability-mechanisms/), [MIMs Adoption Guide](https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys/)]  
 
 **Webpage / Reference Link:**  
 [MIMs – Open & Agile Smart Cities](https://oascities.org/mims/)  
 
 **Main contact point:**  
-- Sophie Meszaros, LDT MIM Lead (OASC) — sophie.meszaros@oascities.org  
+- Sophie Meszaros, LDT MIM Lead (OASC) — sophie@oascities.org  
 
 
----
+---  
 
 ## Interoperability Test Bed (ITB) – European Commission  
 
@@ -98,10 +100,10 @@ ITB is a critical resource for ensuring that LDTs comply with EU standards. It:
 - Provides documentation, tutorials, and troubleshooting resources.  
 
 **Key Assets and Resources:**  
-[[ITB User Guide](https://www.itb.ec.europa.eu/docs/itb-ou/latest/), [ITB Platform](https://interoperable-europe.ec.europa.eu/collection/interoperability-test-bed-repository/solution/interoperability-test-bed)]
+[[ITB User Guide](https://www.itb.ec.europa.eu/docs/itb-ou/latest/), [ITB Platform](https://interoperable-europe.ec.europa.eu/collection/interoperability-test-bed-repository/solution/interoperability-test-bed)]  
 
 **Webpage / Reference Link:**  
 [https://www.itb.ec.europa.eu/docs/itb-ou/latest/](https://www.itb.ec.europa.eu/docs/itb-ou/latest/)  
 
 **Main contact point:**  
-- DIGIT-ITB@ec.europa.eu
+- DIGIT-ITB@ec.europa.eu  

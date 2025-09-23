@@ -3,14 +3,16 @@
 ## Brief Overview  
 This Work Strand focuses on connecting and testing existing Local Digital Twins (LDTs) within a European ecosystem. The goal is to demonstrate interoperability, enable data sharing across domains and borders, and unlock new opportunities for smarter and more resilient communities.  
 
-**Key facts:**  
+**Key facts:** 
+
 - 6–8 pilots will be selected  
 - Start of the pilots: May 2026  
 - Duration: 18 months  
 - Funding: 50% co-funding required  
 - Opening of Open Call 1: November 2025  
 
-**What is the goal?**  
+**What is the goal?**
+
 - Demonstrate interoperability between existing LDTs  
 - Enable cross-domain and cross-border data sharing  
 - Build the foundations for a European federation of LDTs  
@@ -29,6 +31,7 @@ Municipalities or regions aiming to:
 - Develop a marketplace of services  
 
 **Minimum consortium composition:**  
+
 - At least 2 public entities  
 - Plus 1 other partner from the following:  
   - Private entity (e.g., service provider)  
@@ -36,7 +39,8 @@ Municipalities or regions aiming to:
   - Trusted third party  
   - Representative of a use-case sector  
 
-**Requirement:**  
+**Requirement:** 
+ 
 - The consortium must propose at least 2 common use cases.  
 
 ---
@@ -45,14 +49,17 @@ Municipalities or regions aiming to:
 
 On top of the **common requirements** described in the Pilot Guidance page, WS1 piloting activity extends its requirements to:  
 
-**Technical**  
-- The pilot consortium must include at least **two data platforms/Local Digital Twins** to interconnect (upcoming definitions).  
-- Applicants must use in priority the **proposed building blocks and assets** (smart data models, connectors, etc.) to interconnect their platforms or LDTs.  
-- Pilots must use **selected types of interconnection** (TBD).  
+**Technical** 
+
+- The pilot consortium must include at least *two data platforms/Local Digital Twins* to interconnect (upcoming definitions).  
+- Applicants must use in priority the *proposed building blocks and assets* (smart data models, connectors, etc.) to interconnect their platforms or LDTs.  
+- Pilots must use *selected types of interconnection* (TBD).  
 - For knowledge models:  
-  - Use existing smart data models, or  
-  - Create new smart data models if they don’t exist.  
-- Applicants must agree to **publish on GitHub, FIWARE, or EDIC** (TBD)
+  a) Use existing smart data models, or  
+  b) Create new smart data models if they don’t exist.  
+- Applicants must agree to publish on GitHub, FIWARE, or EDIC (TBD)
+
+- Use SIMPL component (TBD)
 
 ---
 

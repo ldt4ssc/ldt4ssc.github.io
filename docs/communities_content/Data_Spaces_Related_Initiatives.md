@@ -1,3 +1,5 @@
+# Data Spaces Related Initiatives
+
 **Data Spaces** are collaborative ecosystems that enable secure and trusted sharing of data across sectors and domains.  
 They provide the backbone for connecting digital twins across cities, regions, and sectors, supporting scalable pilots and long-term sustainability of the ecosystem.  
 
@@ -35,13 +37,12 @@ The initiative contributes directly to LDT4SSC by:
 - Reducing **costs and carbon footprints** by promoting data reuse and shared infrastructure.  
 
 **Key Assets and Resources:**  
-[DS4SSCC Toolbox](https://toolbox.dssc.eu/), [DS4SSCC Blueprint](https://www.ds4sscc.eu/inventory), [Reports](https://www.ds4sscc.eu/reports), [Data Cooperation Canvas](https://inventory.ds4sscc.eu/multi-stakeholder-governance/developing-multi-stakeholder)]  
+[[DS4SSCC Toolbox](https://toolbox.dssc.eu/), [DS4SSCC Blueprint](https://www.ds4sscc.eu/inventory), [Reports](https://www.ds4sscc.eu/reports), [Data Cooperation Canvas](https://inventory.ds4sscc.eu/multi-stakeholder-governance/developing-multi-stakeholder)]  
 
 **Webpage / Reference Link:**  
 [https://www.ds4sscc.eu](https://www.ds4sscc.eu)  
 
 **Main contact point:**  
-- Sophie Mezsaros (DS4SSCC Project Coordinator)  
 - General contact: support@ds4sscc.eu  
 
 
@@ -126,4 +127,3 @@ The initiative contributes directly to LDT4SSC through:
 
 **Main contact point:**  
 - General contact: info@gaia-x.eu  
-

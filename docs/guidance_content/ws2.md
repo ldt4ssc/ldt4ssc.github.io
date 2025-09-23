@@ -4,6 +4,7 @@
 This Work Strand focuses on supporting key policy scenarios and addressing common needs such as urban mobility, climate change mitigation, optimising energy grids, mitigating air pollution, managing waste, and enhancing water resource management. The aim is to help cities and communities develop new Local Digital Twins (LDTs) that directly respond to real urban challenges.  
 
 **Key facts:**  
+
 - 6–8 pilots will be selected  
 - Start of the pilots: May/November 2026  
 - Duration: 18 months  
@@ -12,6 +13,7 @@ This Work Strand focuses on supporting key policy scenarios and addressing commo
 - Opening of Open Call 3: May 2026  
 
 **What is the goal?**  
+
 - Build new LDTs around pressing policy priorities (mobility, climate, energy, environment, waste, water).  
 - Enable cities to model and manage infrastructure and services more effectively.  
 - Share and replicate solutions across communities facing similar challenges.  
@@ -27,6 +29,7 @@ We invite applications from:
 - Technology providers, academic and research institutions ready to work with public authorities to ensure that solutions are scalable and replicable.  
 
 **Minimum consortium composition:**  
+
 - At least 2 public entities  
 - Plus 1 other partner from the following:  
   - Private entity (e.g., service provider)  
@@ -35,6 +38,7 @@ We invite applications from:
   - Representative of a use-case sector  
 
 **Requirement:**  
+
 - The consortium must propose at least 2 common use cases.  
 
 ---
@@ -43,7 +47,8 @@ We invite applications from:
 
 On top of the **common requirements** described in the Pilot Guidance page, WS2 piloting activity extends its requirements to:  
 
-**General**  
+**General** 
+
 - The pilot's project must be fully replicable.  
 - Pilots should follow the methodology, which (partially) goes as follows:  
   - Draw up their use case by identifying the data.  

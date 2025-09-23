@@ -14,7 +14,7 @@ In this page, we have categorised the relevant ecosystems into **six thematic cl
 - **Local Digital Twins (LDTs)** – European efforts around the design, deployment, and integration of local digital twins, including standards, toolboxes, and best practices.  
 - **Citiverse** – The emerging initiative connecting Local Digital Twins across Europe towards a networked European CitiVERSE.  
 - **Interoperability & MIMs** – Frameworks, Minimal Interoperability Mechanisms (MIMs), and technical specifications that ensure cross-domain interoperability and seamless integration of digital services in cities.  
-- **Cities Network and Supporting Actions** – City alliances, peer-to-peer networks, and capacity-building initiatives that promote collaboration, knowledge exchange, and joint actions among European cities.  
+- **Cities Network and Supporting Actions** – Local and regional authorities, cities, peer-to-peer networks, and capacity-building initiatives that promote collaboration, knowledge exchange, and joint actions among European cities.  
 
 <!-- ![Ecosystem Logo](assets/cluster.png) -->
 
@@ -59,7 +59,7 @@ Ultimately, LDT4SSC takes input from all these initiatives, which together conve
 
 -   :material-city:{ .lg .middle } __Cities Network & Supporting Actions__  
 
-    City alliances, peer-to-peer networks, and capacity-building initiatives promoting collaboration and knowledge exchange.  
+    Local and Regional Authorities, peer-to-peer networks, and capacity-building initiatives promoting collaboration and knowledge exchange.  
 
     [:octicons-arrow-right-24: View Details](communities_content/Cities_Network_Related_Initiatives.md)
 

@@ -1,4 +1,4 @@
-**City networks and support programmes** strengthen local authorities by promoting collaboration, joint procurement, knowledge exchange, and training.  
+**City networks and support programmes** strengthen local and regional authorities by promoting collaboration, joint procurement, knowledge exchange, and training.  
 They act as multipliers, embedding digital twins and AI-enabled services in communities of practice.  
 
 ## NetZeroCities  
