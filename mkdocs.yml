@@ -14,7 +14,7 @@ theme:
     # Do not enable toc.integrate → removes right TOC
   palette:
     - scheme: default
-      primary: blue grey
+      primary: white
       accent: amber
     - scheme: slate
       primary: teal
@@ -49,3 +49,18 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  social:
+  generator: false  # hide "Made with Material for MkDocs"
+
+extra_javascript:
+  - js/footer.js
+
+
+
+
+
+
+copyright: LDT4SSC is a project funded by the Digital Europe Programme under grant agreement number 101226211. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the European Commission can be held responsible for them.
+

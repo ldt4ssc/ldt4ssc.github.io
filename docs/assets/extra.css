@@ -39,3 +39,19 @@ details.note[open] summary::marker {
   font-size: 1.2rem;
   color: #000;
 }
+
+/* Force Knowledge Hub text to blue */
+.md-header__title .md-header__topic:first-child a {
+  color: #007BFF !important;   /* pick your shade of blue */
+}
+
+/* Change footer background */
+.md-footer {
+  background-color: #1f75d6 !important;  /* Green example */
+  color: white !important;
+}
+
+/* Links inside footer */
+.md-footer a {
+  color: #FFD700 !important; /* Gold links */
+}
