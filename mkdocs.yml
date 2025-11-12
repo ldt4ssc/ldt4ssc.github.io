@@ -53,6 +53,7 @@ markdown_extensions:
 extra:
   social:
   generator: false  # hide "Made with Material for MkDocs"
+  homepage: https://ldt4ssc.eu/ # logo links back to project home, instead of KH home
 
 extra_javascript:
   - js/footer.js
