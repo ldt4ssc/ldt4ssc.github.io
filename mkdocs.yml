@@ -57,7 +57,7 @@ extra:
 
 extra_javascript:
   - js/footer.js
-
+  - js/logo-top-redirect.js
 
 
 
