@@ -22,7 +22,7 @@ This Work Strand focuses on connecting and testing existing Local Digital Twins 
 
 **Who Are We Looking For?**  
 
-Municipalities, groups of municipalities, syndicates, or regions, who have a **data platform** with a description and a functional perimeter, and who are willing to share data, models, and services with:  
+Municipalities, groups of municipalities, syndicates, or regions, who have a **Local Digital Twin** in place, with a description and a functional perimeter, and who are willing to share data, models, and services with:  
 - Other data platforms (LDT, hypervision, etc.)  
 - Data spaces  
 
@@ -30,10 +30,10 @@ Municipalities or regions aiming to:
 - Create a data space to link a batch of local data platforms  
 - Develop a marketplace of services  
 
-**Minimum consortium composition:**  
+**Consortium composition:**  
 
-- At least 2 public entities  
-- Plus 1 other partner from the following:  
+- At least 2 public entities (from at least two different eligible countries)
+- At least 1 other partner from the following:  
   - Private entity (e.g., service provider)  
   - Private association (legal status)  
   - Trusted third party  
@@ -43,6 +43,7 @@ Municipalities or regions aiming to:
  
 - The consortium must propose at least 2 common use cases.  
 
+<!-- START commenting out WS1 Requirements
 ---
 
 ## WS1 Specific Requirements  
@@ -60,7 +61,7 @@ On top of the **common requirements** described in the Pilot Guidance page, WS1 
 - Applicants must agree to publish on GitHub, FIWARE, or EDIC (TBD)
 
 - Use SIMPL component (TBD)
-
+END commenting out WS1 requirements-->
 ---
 
 ## WS1 Resources  
