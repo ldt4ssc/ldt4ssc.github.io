@@ -22,14 +22,55 @@ LDT4SSC pilots are open to a wide range of stakeholders, including:
 **Work Strands (WS):**  
 The project foresees **three Work Strands** through which potential pilots can apply to receive funding and develop their solutions:  
 
-- **WS1: Technical Inter-connection of Data Platforms (Existing LDTs, Hypervisors, …)** – Linking and scaling digital twins or data platforms that are already in place  
+- **WS1: Technical Inter-connection of LDTs** – Linking and scaling digital twins that are already in place  
 - **WS2: Creation of LDTs Based on Common Needs** – Addressing shared urban or regional challenges (e.g., cross-border traffic, air pollution).  
 - **WS3: Adding New Advanced AI-Based Tools to existing LDTs** – Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDTs Toolbox.  
 
 ---
 
-## Common Requirements
 
+
+
+<!-- START New Skeleton for requirements
+## Common Requirements
+**Pilot details**
+Rq1.
+Rq2.
+Rq3.
+Rq4.
+Rq5.
+Rq6.
+Rq7.
+
+**Relevance**
+Rq8.
+Rq9.
+Rq10.
+Rq11.
+Rq12.
+
+**Implementation**
+Rq13.
+Rq14.
+Rq15.
+Rq16.
+Rq17.
+
+**Impact**
+Rq18.
+Rq19.
+Rq20.
+Rq21.
+Rq22.
+Rq23.
+
+## Recommendations
+
+
+
+END New Skeleton for requirements -->
+
+<!-- START Commenting out requirements
 All calls will include a set of **common requirements** that applicants must meet in order to ensure the quality, interoperability, and sustainability of the pilots. These requirements are divided into **technical**, **non-technical**, and **general**.  
 
 **Technical:**  
@@ -78,7 +119,7 @@ All calls will include a set of **common requirements** that applicants must mee
 - Pilots who *favour open access* to share the created *Key Expected Outcomes (services and assets)* of their projects.  
 - Pilots who *involve public entities from multiple Member States*, enabling cross-border collaboration.  
 
-
+END commenting out requirements -->
 
 
 

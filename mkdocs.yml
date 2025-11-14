@@ -56,8 +56,8 @@ extra:
   homepage: https://ldt4ssc.eu/ # logo links back to project home, instead of KH home
 
 extra_javascript:
-  - js/footer.js
-  - js/logo-top-redirect.js
+#  - js/footer.js
+  - js/logo-top-redirect.js # script to avoid the frameset loop in the project website
 
 
 
