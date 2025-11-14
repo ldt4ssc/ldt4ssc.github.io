@@ -9,7 +9,9 @@ This Work Strand focuses on connecting and testing existing Local Digital Twins 
 - Start of the pilots: May 2026  
 - Duration: 18 months  
 - Funding: 50% co-funding required  
-- Opening of Open Call 1: November 2025  
+- Opening of Open Call 1: 14th of November 2025
+
+👉 First open call now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-one/). Apply until 15/01/2026, 23:59 CET.
 
 **What is the goal?**
 
@@ -38,12 +40,109 @@ Municipalities or regions aiming to:
   - Private association (legal status)  
   - Trusted third party  
   - Representative of a use-case sector  
+---
+## WS1 Requirements:
 
-**Requirement:** 
- 
-- The consortium must propose at least 2 common use cases.  
+This is a cheat sheet. For a complete list of requirements, please refer to the [open call](https://ldt4ssc.eu/call-one/).
 
-<!-- START commenting out WS1 Requirements
+### 1. Pilot details
+🎯 **Minimum Conditions** 
+
+  - 🏛️ **2+ public authorities**, each with a **digitally mature LDT**
+  - 🔀 **2+ cross-sectoral use cases** with **one shared service each**
+
+🧱 **What to Provide**
+
+  - **LDT capabilities** (dynamic data + services)
+  - **Architectures** (technical + functional)  
+    → include diagrams, tools, standards, data lifecycle
+  - **Data governance** (current ➜ target)
+  - **Project team & resources**, incl. political + technical commitment
+  - **AI/XR usage** + ethics/legal safeguards
+
+⭐ **Recommendation**
+
+- **LORDIMAS** maturity:  
+  - Lead: **Digitally Optimised**  
+  - Others: **≥ Moderate**
+
+
+### 2. Relevance
+ 🎯 **Show Alignment With**
+
+  - **EU priorities**: Green Deal, New European Bauhaus  
+  - **LDT4SSC objectives**
+
+👥 **Engagement**
+
+  - **End-users involved throughout**
+  - Include **3+ Quadruple Helix groups**:  
+    public • private • research • civil society
+
+ 📌 **Also Provide**
+
+  - **Political endorsement** (+ links or documents)
+  - **Transferability** to other EU communities
+  - Expected **EU stacks & infrastructures** (Simpl-Open, DSSC, Gaia-X, CitiVERSE…)
+
+
+
+### 3. Implementation
+ 🚀 **Project Phases**
+
+**Explore → Validate → Define → Implement**
+
+🛠️ **Required Elements**
+
+  - Data governance (incl. legal interoperability)
+  - Business model for long-term sustainability
+  - Consortium contract
+  - Cost–Benefit analysis
+  - Eco-design / frugal AI
+  - Impact assessment (economic • social • environmental)
+
+ 🌐 **Technical Interconnection**
+
+  - Tools, standards, IAM, connectors, knowledge models  
+  - Must integrate the **Simpl Governance Authority Agent**
+  - **Technical & functional diagrams** for each use case
+  - **Shared data models** using Linked Data (NGSI-LD / RDF / SPARQL)
+  - Identify **MIMs+** used (≥5 foundational)
+
+ ⭐ **Recommendations**
+
+  - Prefer **open-source** tools and contribute back  
+  - Use:
+    - DCAT catalogue  
+    - Context broker (NGSI-LD/RDF/JSON-LD)  
+    - OAuth2/OIDC/VC IAM  
+    - ODRL-based data policies  
+  - Align with LDT Toolbox, Gaia-X, IDSA, DSBA, DSSC, DS4SSCC-DEP
+
+
+### 4. Impact
+🎯 **What to Explain**
+
+  - Why LDT **interconnection** matters
+  - Expected **benefits + long-term impacts**
+  - Wider **socio-economic + environmental** effects
+  - Contractual framework ensuring:  
+    **data rights, IP rights, exploitation rights, long-term sustainability**
+
+📦 **Outputs**
+
+  - Services, tools, data models, assets  
+  - Openness level (models must be open-licensed)  
+  - Services shared via **LDT Toolbox Marketplace**  
+  - Ongoing documentation updates for Knowledge Hub
+
+⭐ **Recommendations**
+
+  - Capture **baseline data** for the CBA  
+  - Assess **eco-design maturity** at start & end
+
+
+<!-- START commenting out WS1 Requirements 14/11/2025
 ---
 
 ## WS1 Specific Requirements  

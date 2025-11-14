@@ -31,44 +31,76 @@ The project foresees **three Work Strands** through which potential pilots can a
 
 
 
-<!-- START New Skeleton for requirements
+<!-- START requirements that didn't work
+
 ## Common Requirements
 **Pilot details**
-Rq1.
-Rq2.
-Rq3.
-Rq4.
-Rq5.
-Rq6.
-Rq7.
+Rq1. Each pilot must include ≥2 public authorities operating digitally mature LDTs with descriptive-level capabilities and dynamic data integration.
+Rq2. Pilots must include ≥2 cross-sectoral use cases, each delivering one shared service that integrates datasets or LDT services across at least two sectors.
+Rq3. For each participating LDT, provide a high-level description of its capabilities, dynamic data sources, and digital/data services. Include a public link or representative screenshots.
+Rq4. For each LDT, provide technical and functional architecture descriptions, with diagrams, tools, standards, components, and a full data lifecycle.
+Rq5. Describe the current and target data governance schemes (political, technical, legal, organisational dimensions).
+Rq6. Describe project management and coordination, team structure, resource allocation, planned recruitments, and how missing skills will be secured. Each authority must ensure both technical capacity and political support.
+Rq7. If AI and/or XR are used, describe purpose, integration, and ethical/legal management.
+
 
 **Relevance**
-Rq8.
-Rq9.
-Rq10.
-Rq11.
-Rq12.
+Rq8. Explain how the pilot aligns with local/EU priorities, LDT4SSC objectives, and frameworks such as the European Green Deal or New European Bauhaus.
+Rq9. Describe political endorsement, referencing public materials or attaching supporting documentation.
+Rq10. Pilots must engage end-users throughout the lifecycle.
+Describe end-users, engagement methods, and stakeholders across the Quadruple Helix.
+At least 3 out of 4 categories must be involved: public, private, academia/research, civil society.
+Rq11. Explain the transferability and wider relevance of the pilot to other EU communities.
+Rq12. Identify expected EU technology stacks (e.g., SIMPL, DSSC) and infrastructure providers (e.g., LDT CitiVERSE EDIC, Gaia-X).
 
 **Implementation**
-Rq13.
-Rq14.
-Rq15.
-Rq16.
-Rq17.
+Rq13.Structure the project through Explore → Validate → Define → Implement, covering:
+- Data governance & legal interoperability
+- Sustainability-oriented business model
+- Consortium contract
+- Cost–Benefit analysis
+- Responsible digital practices (eco-design, frugal AI)
+- Impact assessment (economic, social, environmental)
+
+Rq14. Describe the technical interconnection of LDTs: tools, standards, catalogues, IAM, data policies, connectors, knowledge models.
+Demonstrate integration with the SIMPL Data Space Governance Authority Agent.
+
+Rq15. For each use case, provide two draft diagrams:
+1. Technical architecture (LDT interconnection)
+2. Functional architecture (data lifecycle)
+Rq16. Describe how shared data models and Linked Data ontologies (MIM1) will ensure semantic interoperability (e.g., NGSI-LD, RDF, SPARQL).
+Rq17. Specify the data, assets, and services to be shared, sectors involved, providers, and beneficiaries.
+Rq18. Identify which MIMs Plus (MIM0–MIM8) the project will use, level of current and planned compliance, and justification.
+Pilots must engage with at least the five foundational MIMs Plus.
 
 **Impact**
-Rq18.
-Rq19.
-Rq20.
-Rq21.
-Rq22.
-Rq23.
+Rq19. Explain the rationale and ambition for interconnecting LDTs and how shared data/services enhance governance, efficiency, and innovation.
+Rq20. Describe the expected benefits and long-term impacts for participating communities, including measurable indicators.
+Rq21. Describe wider socio-economic and environmental indirect effects, and how eco-design contributes to sustainability.
+Rq22. Ensure a contractual framework that guarantees sustainability of digital twins (rights to use data, IP, analyses, exploitation rights, etc.).
+Rq23. Describe the expected outputs (services, tools, data models, assets) and their post-pilot openness (Open Source, Limited Access, Proprietary).
+Data models must be published under an open licence; services should be shared via the LDT Toolbox Marketplace.
+Pilots must maintain regular documentation for the Knowledge Hub.
+Rq24. Define a strategy for sustaining and scaling services beyond the project.
 
 ## Recommendations
+Rc1. Provide LORDIMAS digital maturity scores.
+Pilot lead: recommended Digitally Optimised; other authorities: at least Moderate at application, and Digitally Optimised by project end.
+Rc2. Use open-source components and contribute enhancements back to the community.
+Rc3. Include non-exclusive IP/knowledge transfer provisions and clear rules for rights protection and sharing.
+Rc4. Establish:
+- A DCAT-based data catalogue
+- A context broker or system supporting JSON-LD/RDF/NGSI-LD
+- An IAM system based on OAuth2, OIDC, or Verifiable Credentials
+- An ODRL-based data policy
+Rc5. Seek alignment with the LDT Toolbox as specifications become available.
+Rc6. Describe compliance with frameworks: Gaia-X Trust Framework, IDSA, DSBA Recommendations, DSSC Blueprint, DS4SSCC-DEP Blueprint.
+Rc7. Record all baseline data (socio-economic, environmental, organisational) before starting, to enable a robust final Cost–Benefit analysis.
+Rc8. Assess eco-design maturity using the General Policy Framework for the Ecodesign of Digital Services (2024) at the beginning and end of the project (at least the top 30 criteria).
+
+END Requirements didn't work -->
 
 
-
-END New Skeleton for requirements -->
 
 <!-- START Commenting out requirements
 All calls will include a set of **common requirements** that applicants must meet in order to ensure the quality, interoperability, and sustainability of the pilots. These requirements are divided into **technical**, **non-technical**, and **general**.  
@@ -184,6 +216,11 @@ END commenting out requirements -->
 
 ## Application Process  
 
-*Describe the application process here.*  
+👉 The first open call is now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-one/). Deadline 15th of January 2026, 23:59 CET.
 
-👉 A link to the **official pilot application site** will be provided once available.  
+To apply, 
+
+1. Check your eligibility;
+2. Prepare and complete the required forms;
+3. Before submitting, ensure that all required documents are completed and signed, the consortium meets the eligibility criteria, the proposal aligns with the objectives of Work Strand 1;
+4. Submit your application via the LDT4SSC mailbox: 👉 [Submit here](mailto:application@ldt4ssc.eu).

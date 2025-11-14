@@ -45,6 +45,7 @@ extra_css:
 markdown_extensions: 
   - attr_list
   - md_in_html
+  - pymdownx.snippets # allows embedding external content
 
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -58,8 +59,7 @@ extra:
 extra_javascript:
 #  - js/footer.js
   - js/logo-top-redirect.js # script to avoid the frameset loop in the project website
-
-
+  - js/frame-escape.js # script to escape the frame for all external links
 
 
 
