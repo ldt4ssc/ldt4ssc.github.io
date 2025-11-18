@@ -37,6 +37,8 @@ We invite applications from:
   - Trusted third party  
   - Representative of a use-case sector  
 
+---
+<!-- START commenting out requirements
 **Requirement:**  
 
 - The consortium must propose at least 2 common use cases.  
@@ -64,7 +66,7 @@ Pilots will be advantaged if they:
 - Share produced and sharable assets and services on the (soon-to-be implemented) **EDIC marketplace** (e.g., shared data models, AI notebooks (if used), data knowledge models, template of indicators, visualizations, etc.).  
 
 ---
-
+END commenting out requirements -->
 ## WS2 Resources  
 
 This section provides a set of **non-technical** and **technical resources** that are directly targeted to the WS2 scope. These resources are designed to support pilots in preparing their proposals, planning their implementation, and ensuring compliance with interoperability and governance requirements.  

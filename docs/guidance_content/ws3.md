@@ -37,11 +37,13 @@ We invite applications from:
   - Trusted third party  
   - Representative of a use-case sector  
 
+---
+<!-- START commenting out requirements
 **Requirement:**  
 
 - The consortium must propose at least 2 common use cases.  
 
----
+
 
 ## WS3 Specific Requirements  
 
@@ -63,6 +65,7 @@ On top of the **common requirements** described in the Pilot Guidance page, WS3 
 To ensure usefulness, efficiency, and relevance of AI in the project, pilots should base themselves on their own **publications/articles/papers**, or on **key publications in their field** (e.g., if the topic is about how mobility is decarbonised, they should base themselves on expert opinions, feedbacks from experiments, etc.), which should lead to them building a very innovative project.  
 
 ---
+END commenting out requirements -->
 
 ## WS3 Resources  
 
