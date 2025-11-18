@@ -73,7 +73,7 @@ This section provides a set of **non-technical** and **technical resources** tha
 
 **Non-Technical Resources**
 
-| Title | Small Description | Source / Link | Thematic Area |
+| Title | Small Description | Source / Link | Domain |
 |-------|-------------------|---------------|---------------|
 | AI Act | Provides a clear regulatory foundation for AI deployment within data spaces and LDTs, ensuring adherence to EU standards and fostering trust among stakeholders. | [AI Act](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A52021PC0206) | Legal |
 | European AI Office | Central authority within the European Commission responsible for overseeing the implementation and enforcement of the AI Act across EU member states. | [AI Office](https://digital-strategy.ec.europa.eu/en/policies/ai-office) | AI for Smart Cities |
@@ -82,7 +82,7 @@ This section provides a set of **non-technical** and **technical resources** tha
 
 **Technical Resources**
 
-| Title | Small Description | Source / Link | Thematic Area |
+| Title | Small Description | Source / Link | Domain |
 |-------|-------------------|---------------|---------------|
 | Simpl Open | An open-source software stack powering data spaces and cloud-to-edge federation initiatives. | [Simpl Open](https://code.europa.eu/simpl/simpl-open) | Data Spaces |
 | Smart Data Models | Shared, standard and open-licensed data models & validation. | [Website](https://smartdatamodels.org/) · [GitHub](https://github.com/smart-data-models) | Interoperability MIMs |
