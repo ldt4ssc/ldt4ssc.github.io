@@ -41,26 +41,57 @@ Municipalities or regions aiming to:
   - Trusted third party  
   - Representative of a use-case sector  
 ---
+<!--
 ## WS1 Requirements:
 
-This is a cheat sheet. For a complete list of requirements, please refer to the [open call](https://ldt4ssc.eu/call-one/).
+This is a **cheat sheet** for the first open call's requirements. For a complete list of requirements, please refer to the [open call](https://ldt4ssc.eu/call-one/).
 
-### 1. Pilot details
-🎯 **Minimum Conditions** 
+
+### 🎯 **Minimum Conditions** 
 
   - 🏛️ **2+ public authorities**, each with a **digitally mature LDT**
   - 🔀 **2+ cross-sectoral use cases** with **one shared service each**
 
-🧱 **What to Provide**
+### 📋 **Describe** in the Application Form
 
-  - **LDT capabilities** (dynamic data + services)
+  - **LDTs and their capabilities** (dynamic data + services)
   - **Architectures** (technical + functional)  
     → include diagrams, tools, standards, data lifecycle
   - **Data governance** (current ➜ target)
-  - **Project team & resources**, incl. political + technical commitment
+  - **Project management**, incl. political + technical commitment
   - **AI/XR usage** + ethics/legal safeguards
+  - **Alignment** with **EU** priorities and projects
+    → Green Deal, New European Bauhaus
+    → LDT4SSC objectives
+  - **Political endorsement** via Letter of Commitment
+  - **Engagement of stakeholders** from the Quadruple Helix
+    public • private • research • civil society
+  - **Relevance** and replicability
+  - **EU technology stack** and **infrastructure** to be used
+    → SIMPL, DSSC, ...
+    → LDT CitiVERSE EDIC, Gaia-X, ...
+  - **Project phases** 
+    Explore → Validate → Define → Implement
+  - **Technical interconnection**, including tools, softwares, standards
+    → Demonstrate usage of SIMPL Governance Authority Agent
+  - Strategy for maintaining and expanding services
 
-⭐ **Recommendation**
+
+### 🧱 **Provide** as complementary material
+
+  - **2 draft diagrams** (technical + functional)
+  - **Contractual framework**
+  - 
+
+### **Adopt**
+  - Linked Data Ontology (MIM1)
+
+
+### **Specify**
+
+
+
+### ⭐ **Recommendations**
 
 - **LORDIMAS** maturity:  
   - Lead: **Digitally Optimised**  
@@ -132,7 +163,7 @@ This is a cheat sheet. For a complete list of requirements, please refer to the 
 📦 **Outputs**
 
   - Services, tools, data models, assets  
-  - Openness level (models must be open-licensed)  
+  - Openness level (data models must be open-licensed)  
   - Services shared via **LDT Toolbox Marketplace**  
   - Ongoing documentation updates for Knowledge Hub
 
@@ -140,7 +171,7 @@ This is a cheat sheet. For a complete list of requirements, please refer to the 
 
   - Capture **baseline data** for the CBA  
   - Assess **eco-design maturity** at start & end
-
+-->
 
 <!-- START commenting out WS1 Requirements 14/11/2025
 ---
@@ -171,7 +202,7 @@ Pilots will find these materials extremely relevant, as they provide practical g
 
 **Non-Technical Resources**
 
-| Title | Small Description | Source / Link | Thematic Area |
+| Title | Small Description | Source / Link | Domain |
 |-------|-------------------|---------------|---------------|
 | Align Stakeholders on the Data Space Scope | Helpful to build consensus on the data space’s boundaries and goals, ensuring all stakeholders share a clear vision | [Link](https://dssc.eu/space/BVE2/1071257999/Align+Stakeholders+on+the+Data+Space+Scope) | Data Spaces |
 | The Economics of Data Sharing: Insights from a Legal-Economics Workshop | Provides insights on economic incentives and legal frameworks that can help design sustainable data sharing models. | [Link](https://dssc.eu/space/News/blog/1284145156/The+Economics+of+Data+Sharing:+Insights+from+a+Legal-Economics+Workshop) | Data Spaces |
@@ -182,7 +213,7 @@ Pilots will find these materials extremely relevant, as they provide practical g
 
 **Technical Resources**
 
-| Title              | Small Description                                                  | Source / Link                                                                 | Thematic Area              |
+| Title              | Small Description                                                  | Source / Link                                                                 | Domain              |
 |--------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------|----------------------------|
 | Simpl Open         | An open-source software stack powering data spaces and cloud-to-edge federation initiatives. | [Simpl Open](https://code.europa.eu/simpl/simpl-open)                         | Data Spaces                |
 | Smart Data Models  | Shared, standard and open-licensed data models & validation.       | [Website](https://smartdatamodels.org/) · [GitHub](https://github.com/smart-data-models) | Interoperability MIMs      |
