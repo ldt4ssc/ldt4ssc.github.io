@@ -41,63 +41,111 @@ Municipalities or regions aiming to:
   - Trusted third party  
   - Representative of a use-case sector  
 ---
-<!--
-## WS1 Requirements:
+
+## WS1 Requirements Cheat Sheet:
 
 This is a **cheat sheet** for the first open call's requirements. For a complete list of requirements, please refer to the [open call](https://ldt4ssc.eu/call-one/).
 
 
 ### 🎯 **Minimum Conditions** 
 
-  - 🏛️ **2+ public authorities**, each with a **digitally mature LDT**
-  - 🔀 **2+ cross-sectoral use cases** with **one shared service each**
+  - 🏛️ **2+ public authorities**, each with a **digitally mature LDT** (Rq1)
+  - 🔀 **2+ cross-sectoral use cases** with **one shared service each** (Rq2)
 
 ### 📋 **Describe** in the Application Form
 
-  - **LDTs and their capabilities** (dynamic data + services)
-  - **Architectures** (technical + functional)  
+  - **LDTs and their capabilities** (dynamic data + services) (Rq3)
+  - **Architectures** (technical + functional) (Rq4) 
+
     → include diagrams, tools, standards, data lifecycle
-  - **Data governance** (current ➜ target)
-  - **Project management**, incl. political + technical commitment
-  - **AI/XR usage** + ethics/legal safeguards
-  - **Alignment** with **EU** priorities and projects
+
+  - **Data governance** (Rq5)
+
+      current ➜ target 
+
+  - **Project management**, incl. political + technical support (Rq6)
+  - **AI/XR usage** + ethics/legal safeguards (Rq7)
+  - **Alignment** with **EU** priorities and projects (Rq8)
+
     → Green Deal, New European Bauhaus
+
     → LDT4SSC objectives
-  - **Political endorsement** via Letter of Commitment
-  - **Engagement of stakeholders** from the Quadruple Helix
+
+  - **Engagement of stakeholders** from the Quadruple Helix (Rq10)
+
     public • private • research • civil society
-  - **Relevance** and replicability
-  - **EU technology stack** and **infrastructure** to be used
+
+  - **Relevance** and replicability (Rq11)
+  - **EU technology stack** and **infrastructure** to be used (Rq12)
+
     → SIMPL, DSSC, ...
+
     → LDT CitiVERSE EDIC, Gaia-X, ...
-  - **Project phases** 
+
+  - **Project phases** (Rq13)
+
     Explore → Validate → Define → Implement
-  - **Technical interconnection**, including tools, softwares, standards
+
+  - **Technical interconnection**, including tools, softwares, standards (Rq14)
+
     → Demonstrate usage of SIMPL Governance Authority Agent
-  - Strategy for maintaining and expanding services
+
+  - **Ambition** and **rationale** for interconnecting LDTs (Rq19)
+  - Tangible **benefits** and long-term **impacts** (Rq20)
+  - Socio-economic and environmental **effects** (Rq21)
+  - **Maintenance** and **expansion** of services and activities (Rq24)
 
 
 ### 🧱 **Provide** as complementary material
 
-  - **2 draft diagrams** (technical + functional)
-  - **Contractual framework**
-  - 
+  - **2 draft diagrams** (technical + functional) per use case (Rq15)
+  - **Contractual framework** guaranteeing the sustainability of the LDTs
+  - **Letter of  Commitment** with political endorsement (Rq9)
+  - **Ownership and Control Declaration**
+  - **Financial form**
+  - **Ethics and data protection** assessment
 
-### **Adopt**
-  - Linked Data Ontology (MIM1)
+### 🛠️ **Adopt** during the project
 
+  - Active **engagement** of end-users (Rq10)
+  - **Linked Data Ontology (MIM1)** for semantic consistency (Rq16)
+  - At least **5 foundational MIMs Plus** for engagement (Rq18)
+  - **Open data models**, to be shared back to stakeholders (Rq23)
+  - The **LDT Toolbox Marketplace** for service sharing (Rq23)
+  - The **LDT4SSC's Knowledge Hub** for regular documentation and updates (Rq23)
 
-### **Specify**
+  
+### ✏️ **Specify** upon application
 
-
+  - **Data, assets, or services** to be shared (Rq17)
+  - **Sectors involved, main providers, beneficiaries** (Rq17)
+  - **The MIMs Plus (MIM0-MIM8)** project will engage with (Rq18)
+  - Equivalent **open-source solution**, in case of proprietary components (Rq23)
 
 ### ⭐ **Recommendations**
 
-- **LORDIMAS** maturity:  
-  - Lead: **Digitally Optimised**  
+- Assess **LORDIMAS** maturity (Rc1)  
+  - Pilot Lead: **Digitally Optimised**  
   - Others: **≥ Moderate**
+- Use **open-source components** (Rc2)
+- Include in agreement **Intellectual Property** and exploitation rights (Rc3)
+- Technically stablish (Rc4):
 
+  - Data catalogue using **DCAT** vocabulary
 
+  - A **data management system** with contextualised metadata capacities
+
+  - **Identity and access management** (OAuth2, OpenID Connect, Verifiable Credentials)
+
+- Pursue alignment with upcoming **LDT Toolbox** (Rc5)
+- Describe compliance with **frameworks** (Rc6):
+
+    → Gaia-X, IDSA, DSBA, DSSC
+
+- Record **baseline data** (for meaningful comparisons) (Rc7)
+- Assess maturity in **eco-design** (Rc8)
+
+<!--
 ### 2. Relevance
  🎯 **Show Alignment With**
 
@@ -191,9 +239,11 @@ On top of the **common requirements** described in the Pilot Guidance page, WS1 
 - Applicants must agree to publish on GitHub, FIWARE, or EDIC (TBD)
 
 - Use SIMPL component (TBD)
-END commenting out WS1 requirements-->
----
 
+
+END commenting out WS1 requirements-->
+
+---
 ## WS1 Resources  
 
 This section provides a set of **non-technical** and **technical resources** that are directly targeted to the WS1 scope. These resources are designed to support pilots in preparing their proposals, planning their implementation, and ensuring compliance with interoperability and governance requirements.  
