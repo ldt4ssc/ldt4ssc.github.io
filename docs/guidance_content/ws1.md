@@ -125,8 +125,11 @@ This is a **cheat sheet** for the first open call's requirements. For a complete
 ### ⭐ **Recommendations**
 
 - Assess **LORDIMAS** maturity (Rc1)  
+
   - Pilot Lead: **Digitally Optimised**  
+
   - Others: **≥ Moderate**
+  
 - Use **open-source components** (Rc2)
 - Include in agreement **Intellectual Property** and exploitation rights (Rc3)
 - Technically stablish (Rc4):
