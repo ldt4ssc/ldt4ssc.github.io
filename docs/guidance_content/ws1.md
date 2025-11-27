@@ -134,11 +134,11 @@ This is a **cheat sheet** for the first open call's requirements. For a complete
 - Include in agreement **Intellectual Property** and exploitation rights (Rc3)
 - Technically stablish (Rc4):
 
-  - Data catalogue using **DCAT** vocabulary
+    → Data catalogue using **DCAT** vocabulary
 
-  - A **data management system** with contextualised metadata capacities
+    → A **data management system** with contextualised metadata capacities
 
-  - **Identity and access management** (OAuth2, OpenID Connect, Verifiable Credentials)
+    → **Identity and access management** (OAuth2, OpenID Connect, Verifiable Credentials)
 
 - Pursue alignment with upcoming **LDT Toolbox** (Rc5)
 - Describe compliance with **frameworks** (Rc6):
