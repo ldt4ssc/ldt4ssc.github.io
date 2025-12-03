@@ -50,6 +50,7 @@ This is a **cheat sheet** for the first open call's requirements. For a complete
 ### 🎯 **Minimum Conditions** 
 
   - 🏛️ **2+ public authorities**, each with a **digitally mature LDT** (Rq1)
+  - 🤝 At least **1 aditional private entity** partner
   - 🔀 **2+ cross-sectoral use cases** with **one shared service each** (Rq2)
 
 ### 📋 **Describe** in the Application Form
