@@ -1,0 +1,33 @@
+[
+  {
+    "id": "r001",
+    "short_name": "GPS Failure Guide",
+    "long_name": "GPS System Failure Comprehensive Handbook",
+    "thematic_area": "Data exchange",
+    "category": "Protocol",
+    "scope": "Interoperability",
+    "type": "technical",
+    "tags": ["gps", "failure", "procedure"],
+    "mims": ["MIM2", "MIM5"],
+    "maintainer": "Aviation Safety Board",
+    "version": "2.1.0",
+    "docs": "https://example.com/gps-failure",
+    "git": "https://github.com/example/gps-failure",
+    "description": "How to diagnose GPS signal issues during flight."
+  },
+  {
+    "id": "r002",
+    "short_name": "Crew Comm Basics",
+    "long_name": "Crew Communication Basics Complete Guide",
+    "thematic_area": "Validation",
+    "category": "Standard",
+    "scope": "AI for Smart Cities",
+    "type": "non-technical",
+    "tags": ["communication", "crm"],
+    "mims": ["MIM1"],
+    "maintainer": "Aviation Training Institute",
+    "version": "1.0.0",
+    "docs": "https://example.com/crew-comm",
+    "description": "Core concepts of cockpit communication."
+  }
+]
