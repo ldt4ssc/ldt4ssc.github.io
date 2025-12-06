@@ -1,5 +1,5 @@
 site_name: Knowledge Hub
-site_url: https://ldt4ssc.github.io/
+site_url: https://knowledgehub.ldt4ssc.eu/
 
 theme:
   name: material
@@ -35,17 +35,23 @@ nav:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - md_in_html
   - toc:
       permalink: false
  # disables table of contents panel
     
 extra_css:
   - assets/extra.css
+  - css/resources_poc.css
+  - css/methodology_diagram.css
 
 markdown_extensions: 
   - attr_list
   - md_in_html
   - pymdownx.snippets # allows embedding external content
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -60,6 +66,7 @@ extra_javascript:
 #  - js/footer.js
   - js/logo-top-redirect.js # script to avoid the frameset loop in the project website
   - js/frame-escape.js # script to escape the frame for all external links
+  - js/resources_poc.js # test resource interactive frame
 
 
 

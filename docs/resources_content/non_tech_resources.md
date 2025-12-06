@@ -1,0 +1,434 @@
+# Non-technical Resources
+These non-technical resources provide practical guidance for the organisational, strategic, legal, and governance aspects of the pilot journey. They support pilots and applicants in aligning stakeholders, structuring responsibilities, anticipating risks, and creating the conditions for sustainable, interoperable, and widely adopted digital services. Together, these methods and workshops help build the shared culture, clarity, and coordination required to transform a use case into a long-lasting, impactful solution.
+
+## Example stories
+To illustrate the potential of each WS, we present a set of Pilots’ Example Stories, i.e. fictional scenarios that demonstrate how future pilots could emerge and operate within the LDT4SSC project framework. These examples are intended to help prospective applicants envision their own roles and opportunities within the initiative.
+
+The example stories developed for WS1 show how cities and communities with an existing level of digital maturity (as described in the Requirements section) can build on their Local LDTs to form a federated, EU-wide ecosystem. Each example illustrates how interoperability, cross-border collaboration, and shared data platforms can enable scalable and replicable solutions. The realistic use cases highlight the concrete benefits of interconnected LDTs, such as improved decision-making, resource optimisation, and faster adoption of open-source tools, while also addressing common challenges like technical integration, governance, and stakeholder coordination. Their purpose is to inspire replication, lower entry barriers for less digitally advanced regions, and foster a shared community of practice around federated LDTs, advancing the project’s goal of a unified and interoperable digital infrastructure for Europe.
+
+
+???+ example "Traffic Management and Air Quality"
+
+    Two municipalities of similar size, population, and density have each developed a descriptive Local Digital Twin (LDT) to monitor traffic, air quality, and their interaction. They partner with a specialised private service provider to interconnect their systems and exchange data and related services using the NGSI-LD standard. By linking their context brokers, the partners establish a shared real-time dashboard that enables coordinated management of transport corridors and supports efforts to reduce congestion and pollution.
+
+    To ensure seamless data and service interoperability, the partners align their API documentation with the MIM1. The outcomes include both operational improvements such as optimised traffic flows and reduced emissions, and reusable assets such as standardised data models and dashboards that can be adopted by other cities.
+
+    This example reflects the ambition of WS1: to scale up EU-wide datasets and open-source solutions within the LDT ecosystem, demonstrating how federated approaches can transform local innovations into collective impact.
+
+
+???+ example "Interconnected Networks Management and Service Marketplace"
+
+    Cities of a DS4SSCC Pilot projects interconnect their Local Digital Twins (LDTs) with those of another group of communities to create a shared marketplace for essential public services, aligned with the priorities of each local authority. These services may include areas such as mobility, land-use planning, and energy or electricity management, reflecting the themes of the New European Bauhaus (NEB) and the European Green Deal. By leveraging the SIMPL building blocks and the FIWARE ecosystem of technologies, this new consortium integrates waste, energy, and water management systems, enabling local authority syndicates to exchange data, optimise resource allocation, and deliver new services across regions. The main challenge lies in ensuring the maturity of the connector, which must reliably bridge diverse platforms while maintaining data consistency and security.
+
+    The outcomes include operational efficiencies such as streamlined network management and cross-city service coordination, as well as contributions to the SIMPL framework, reinforcing its role as means for interoperable LDT ecosystems. This example illustrates how federated LDTs can move beyond individual city silos, fostering a collaborative economy of shared services and scalable, cross-regional solutions.
+
+???+ example annotate "Regional Energy and Climate Data Space"
+
+    Several municipalities in a cross-border region with varying digital maturity levels create a shared DS to combine energy production and consumption data. The goal is to monitor regional energy use and evaluate its climate impact. Together with a data space specialist and a local energy supplier, the municipalities deploy a FIWARE Data Space Connector and use the EU LDT Toolbox to model scenarios on energy demand, renewable integration, and the environmental impact of alternative energy sources. The main challenge is to manage data access rights among diverse stakeholders (municipalities, regional alliances, and private partners) while ensuring secure data exchange and consistent decision-making across governance levels.
+
+    The project delivers a real-time regional overview of energy supply and demand, enabling policymakers, businesses, and citizens to track consumption patterns and make informed choices. It demonstrates how federated LDTs can consolidate fragmented local data into a unified, actionable resource for advancing climate resilience and the energy transition.
+
+
+
+## The LDT4SSC Methodology
+
+<div class="methodology-diagram">
+  <div class="diagram-inner">
+    <!-- Central Circle -->
+    <div class="diagram-center">
+      <div class="use-case-circle">Use Case</div>
+    </div>
+
+    <!-- Four Quadrants forming a square -->
+    <a href="#deployment-implement" class="quadrant quadrant-deployment" title="Go to Deployment phase">
+      <span class="phase-name">4. Deployment</span>
+      <span class="phase-action">IMPLEMENT</span>
+    </a>
+
+    <a href="#ideation-explore" class="quadrant quadrant-ideation" title="Go to Ideation phase">
+      <span class="phase-name">1. Ideation</span>
+      <span class="phase-action">EXPLORE</span>
+    </a>
+
+    <a href="#prototyping-define" class="quadrant quadrant-prototyping" title="Go to Prototyping phase">
+      <span class="phase-name">3. Prototyping</span>
+      <span class="phase-action">DEFINE</span>
+    </a>
+
+    <a href="#specifications-validate" class="quadrant quadrant-specifications" title="Go to Specifications phase">
+      <span class="phase-name">2. Specifications</span>
+      <span class="phase-action">VALIDATE</span>
+    </a>
+
+    <!-- Activity Cards - Left Side Top (Deployment - Green) -->
+    <div class="activity-group activity-deployment">
+      <a href="#reviewing-legal-framework" class="activity-card activity-deployment-card">
+        Reviewing the legal framework and defining data clauses
+      </a>
+      <a href="#defining-business-model" class="activity-card activity-deployment-card">
+        Defining your business model
+      </a>
+      <a href="#designing-action-plan" class="activity-card activity-deployment-card">
+        Designing and drafting an action plan
+      </a>
+      <a href="#onboard-train-involve-agents" class="activity-card activity-deployment-card">
+        Onboard, train, and involve agents
+      </a>
+    </div>
+
+    <!-- Activity Cards - Right Side Top (Ideation - Yellow) -->
+    <div class="activity-group activity-ideation">
+      <a href="#designing-drawing-up-your-use-case" class="activity-card activity-ideation-card">
+        Designing/drawing up your use case
+      </a>
+      <a href="#questioning-the-why" class="activity-card activity-ideation-card">
+        Questioning the why
+      </a>
+      <a href="#questioning-digital-responsibility" class="activity-card activity-ideation-card">
+        Questioning your project from the perspective of digital responsibility
+      </a>
+      <a href="#carrying-out-cost-benefit-analysis" class="activity-card activity-ideation-card">
+        Carrying out a cost-benefit analysis
+      </a>
+    </div>
+
+    <!-- Activity Cards - Left Side Bottom (Prototyping - Blue) -->
+    <div class="activity-group activity-prototyping">
+      <a href="#produce-prototype" class="activity-card activity-prototyping-card">
+        Produce a prototype of your project
+      </a>
+    </div>
+
+    <!-- Activity Cards - Right Side Bottom (Specifications - Gray) -->
+    <div class="activity-group activity-specifications">
+      <a href="#deepening-functional-scope" class="activity-card activity-specifications-card">
+        Deepening the functional scope
+      </a>
+      <a href="#describing-dashboard-indicators" class="activity-card activity-specifications-card">
+        Describing your dashboard and indicators
+      </a>
+      <a href="#implementing-data-governance" class="activity-card activity-specifications-card">
+        Implementing data governance
+      </a>
+      <a href="#defining-lifecycle-interoperability" class="activity-card activity-specifications-card">
+        Defining the lifecycle and interoperability of your data
+      </a>
+      <a href="#raising-awareness-interoperability" class="activity-card activity-specifications-card">
+        Raising awareness and putting interoperability into practice
+      </a>
+    </div>
+  </div>
+</div>
+
+### Ideation (EXPLORE) {#ideation-explore}
+
+Many digital projects fail because they jump too quickly to a solution without clarifying the underlying need. The ideation phase establishes a shared foundation by defining a clear use case, identifying relevant data, anticipating impacts, and aligning all stakeholders. It also embeds responsible digital principles early on, questioning the project’s purpose, ethics, and long-term value.
+
+**Prerequisites**
+
+- A clearly identified problem rooted in the organisation’s mission  
+- Political/strategic support and a committed sponsor  
+- A dedicated project manager  
+- Ability to mobilise internal and external stakeholders 
+
+**Objectives**
+
+- Clarify and contextualise the problem  
+- Identify beneficiaries, expected impacts, context, actors, available data, constraints, and risks  
+- Produce a project framework to secure resources (funding, support, platforms)  
+
+
+**Stakeholders to Engage**
+
+- Operational/business teams  
+- Cross-functional or “bridge” agents  
+- Decision-makers (managers, elected officials)  
+- IT and data teams  
+- End-users or their representatives  
+- Technical partners, experts, or peer local authorities  
+
+
+
+???+ workshop_ideation "**EXPLORE Workshops**"
+
+    #### Designing/drawing up your use case {#designing-drawing-up-your-use-case}
+
+    This workshop helps participants build a shared understanding of the use case by collaboratively drawing the current process, data flows, and pain points. By making an abstract idea tangible and envisioning an ideal future state, it aligns stakeholders early on and forms a visual foundation for the rest of the project.
+
+    ??? workshop_ideation "Workshop A: Draw Your Use Case from a Functional Point of View"
+
+        Lorem ipsum
+
+    #### Questioning the why {#questioning-the-why}
+
+    This workshop helps teams clarify the deeper purpose of their digital project by exploring the operational, user, strategic, economic, and socio-environmental benefits it aims to deliver. By identifying the real objectives and expected impacts, stakeholders can better articulate the project, prioritise functionalities, and avoid solutions that fail to address the core problem.
+
+    ??? workshop_ideation "Workshop B: Questioning the Why"
+
+        Lorem ipsum
+
+
+    #### Questioning your project from the perspective of digital responsibility {#questioning-digital-responsibility}
+
+    This workshop invites teams to evaluate their project through the lens of sustainable design for digital services, questioning its necessity, relevance, and potential ecological, social, and economic impacts. It provides a quick, collective assessment of both positive and negative effects across the project lifecycle, helping decision-makers make more responsible and informed choices.
+
+    ??? workshop_ideation "Workshop C: Question your project from a sustainable design for digital services perspective"
+
+        Lorem ipsum
+
+    #### Carrying out a cost-benefit analysis {#carrying-out-cost-benefit-analysis}
+
+    This workshop helps teams prepare and conduct a cost–benefit analysis by identifying expected costs, impacts, and monitoring indicators before the project begins. By comparing the solution’s financial and socio-environmental benefits with a baseline scenario, it supports informed decision-making and ensures that public investment is justified.
+
+    ??? workshop_ideation "Workshop D: Preparing and carrying out a Cost-Benefit Analysis"
+
+        Lorem ipsum
+
+**Achievements at the end of the phase**
+
+- A drawing of the use case identifying the data sources, their path, the Information System bricks, the players, etc.
+- The desired impacts by type
+- The reason why for the project
+- The costs and benefits, and the indicators for monitoring them
+- The project stakeholders
+
+
+---
+
+### Specifications (VALIDATE) {#specifications-validate}
+
+After ideation clarifies the need, motivations, stakeholders, and data, the specification phase focuses on defining *how* the solution should work. It translates the shared use case into functional and technical requirements, taking into account real-world constraints (data, architecture, users, security). This phase prevents misunderstandings between business and technical teams, embeds interoperability early on, and provides the basis for selecting or prototyping the appropriate solution.
+
+**Prerequisites**
+
+- A clear and validated use case with precise objectives  
+- Identified data requirements and understanding of data accessibility  
+- A committed project team with experience in data-related issues  
+- A realistic view of available resources (time, budget, technical support) 
+
+**Objectives**
+
+- Identify and describe personas (future users of the solution)  
+- Translate functional needs into operational technical specifications  
+- Identify required data and define its lifecycle  
+- Determine necessary indicators, dashboards, and potential simulations  
+- Define data access conditions, legal constraints, and governance arrangements  
+- Produce documentation to guide development or prototyping  
+
+**Stakeholders to engage**
+
+- Business referents (use case owners, service managers)  
+- End-users of the solution  
+- Data engineers or data architects  
+- IT or infrastructure managers  
+- Legal experts or DPOs when personal data or data-sharing clauses apply 
+
+???+ workshop_specifications "**VALIDATE Workshops**"
+
+    #### Deepening the functional scope {#deepening-functional-scope}
+
+    This workshop refines the functional scope by having participants step into the shoes of different user personas, map their daily journeys, and identify needs, pain points, and potential improvements. The resulting functionalities are compared across profiles and then prioritised based on usefulness, feasibility, and originality to determine which features offer the greatest value.
+
+    ??? workshop_specifications "Workshop E: Deepening the functional scope and prioritisation of functionalities"
+
+        Lorem ipsum
+
+    #### Describing your dashboard and indicators {#describing-dashboard-indicators}
+
+    This workshop guides participants in designing dashboards and indicators that genuinely meet the needs of different user personas, ensuring each metric is meaningful, usable, and aligned with strategic objectives. By mapping the path from source data to dashboard outputs, it helps avoid overly complex or irrelevant indicators and provides solid foundations for prototyping or deployment.
+
+    ??? workshop_specifications "Workshop F: Describe your dashboard and indicators"
+
+        Lorem ipsum
+
+
+    #### Implementing data governance {#implementing-data-governance}
+
+    This section presents data governance as a cross-functional framework encompassing technical, legal, organisational, and strategic dimensions, essential for creating digital twins and connecting them within shared data infrastructures. It outlines a set of common practices and workshops that help project leaders and partners clarify roles, establish processes, and build sustainable, collaborative governance structures that support long-term reuse and interoperability.
+
+    ???+ workshop_specifications "A focus on data governance"
+
+        ??? workshop_specifications "Workshop O: Identify stakeholders and their status/legitimacy to act"
+
+            This workshop helps identify all stakeholders involved in data governance—both internal and external—and clarify their roles, expertise, responsibilities, and ability to act or contribute. By visually mapping actors and defining collaboration and data-sharing conditions, it lays the groundwork for cross-functional and multi-partner governance essential to implementing the project.
+
+        ??? workshop_specifications "Workshop H: Implementing the Ideal fit-to purpose Data Governance"
+
+            This workshop helps participants build a shared, strategic vision of what fit-for-purpose data governance should look like in their organisation by exploring political, legal, organisational, and technical dimensions and imagining ideal and undesirable future scenarios. It then translates these insights into a concrete action plan, clarifying roles, processes, and conditions for success to ensure sustainable and coordinated data governance across projects.
+
+        ??? workshop_specifications "Workshop P: Documenting each person's responsibilities in data governance (mission statement/job profile)"
+
+            This workshop focuses on clarifying and formally documenting each stakeholder’s responsibilities in data governance, ensuring that roles are explicit and aligned across the consortium. By defining missions or adapting job profiles, it strengthens engagement, accountability, and the internal structures needed to support effective, long-term data governance.
+
+        ??? workshop_specifications "Workshop I: Question the legal framework and define its data"
+
+            This workshop helps participants examine the legal framework needed to govern data securely and consistently, identifying regulatory requirements and the contractual clauses or internal processes needed to meet them. By comparing needs with existing resources, it supports the development of clear, robust legal foundations for data use and sharing.
+
+        ??? workshop_specifications "Workshop Q: Exploring each stage of creating a digital twin (through mini-questionnaires and the use of resources: experience reports, clauses, standard contracts)"
+
+            This workshop equips participants to anticipate legal, contractual, and interoperability requirements at every stage of their digital twin or data platform project by examining typical clauses, risks, and resources. By mapping legal needs across the project lifecycle and drawing on standard contracts and experience reports, teams gain the ability to secure long-term viability, manage intellectual property, and negotiate effectively with suppliers and partners.
+
+
+
+
+
+
+    #### Defining the lifecycle and interoperability of your data {#defining-lifecycle-interoperability}
+
+    This workshop expands the initial use-case diagram by mapping all data sources, transformations, flows, and actors involved, ensuring a complete view of the data lifecycle from creation to reuse. It also assesses interoperability needs—such as API-based access and integration requirements—to support future reuse, system alignment, and robust data infrastructure planning.
+
+    ??? workshop_specifications "Workshop N: Identify the life cycle and interoperability of your data"
+
+        Lorem ipsum
+
+
+    #### Raising awareness and putting interoperability into practice {#raising-awareness-interoperability}
+
+    This workshop introduces participants to the principles and importance of interoperability, helping them recognise obstacles, levers, and the different interoperability layers that affect a data project. Through a collective diagnostic exercise, it builds a shared understanding of priorities and equips teams to prevent compatibility issues, ensuring smoother integration and sustainable data use in later phases.
+
+    ??? workshop_specifications "Workshop J: Raising awareness and implementing interoperability"
+
+        Lorem ipsum
+
+
+    ??? workshop_specifications "Workshop R: Lego Serious Play"
+
+        This workshop uses the Lego Serious Play method to help participants model complex ideas—such as governance, processes, or system architecture—in a tangible and easily adjustable form. By enabling creative, visual co-construction, it reveals gaps and shared solutions more effectively than traditional discussions, supporting alignment before moving into implementation.
+
+
+**Achievements at the end of the phase**
+
+At this stage of the method, the following elements have been achieved or identified:
+
+- The personas
+- The desired indicators, data visualisations and dashboards, based on the personas
+- The desired functionalities, based on the personas
+- The data lifecycle, and the action plan for accessing and using the data effectively
+
+---
+
+### Prototyping (DEFINE) {#prototyping-define}
+
+Prototyping turns a theoretical concept into a tangible proof of feasibility. Rather than building a finished service, this phase focuses on rapidly testing a solution on a limited scope, using real data and confronting assumptions with technical, functional, and human realities. While not always mandatory—especially if existing market solutions already fit the need—prototyping often provides valuable insights before large-scale deployment. Its purpose is twofold: to show that the idea works and to confirm that it brings real value to users. This iterative, frugal approach enables quick learning while preparing the foundations for a scalable deployment.
+
+**Prerequisites**
+
+- A prioritised and formalised use case validated internally  
+- Clear functional and technical specifications  
+- Identified and accessible datasets in usable form  
+- Identified human and technical resources to build the prototype  
+- Agreement from a small group of end-users to test the solution under semi-real conditions  
+
+**Objectives**
+
+- Experiment with concrete solutions using real data and representative users  
+- Validate organisational hypotheses  
+- Confirm technical feasibility (data access, processing, flow integration, result display, etc.)  
+- Confirm or refine design choices based on practical feedback  
+- Prepare the conditions for future deployment (technical, organisational, legal)  
+
+**Stakeholders to engage**
+
+- A project manager  
+- Business referents to test and validate functionalities  
+- A data engineer or developer to integrate data and build the prototype  
+- A UX/UI designer or facilitator (if possible) to ensure clear user journeys  
+- An IT or infrastructure consultant to ensure compatibility with the existing environment and support implementation  
+
+???+ workshop_prototyping "DEFINE Workshops"
+
+    #### Produce a prototype of your project {#produce-prototype}
+
+    This method ensures that prototypes are designed with interoperability at their core by first formalising a multi-dimensional representation of the use case—capturing objectives, users, features, data, and constraints—to guide collaboration with technical teams. It then structures and contextualises the data through knowledge-graph modelling and existing ontologies, creating a simplified, standards-aligned semantic model that supports integration, reuse, and long-term scalability.
+
+    ??? workshop_prototyping "Methodology. Step-by-step process of building a use case"
+
+        Lorem ipsum
+
+
+**Achievements at the end of the phase**
+
+At this stage of the method, the following elements have been produced or identified:
+
+- A prototype that meets the use case
+- Reusable knowledge model(s)
+- The code used to produce the algorithms or models
+- Documentation of the prototype.
+
+
+---
+
+### Deployment (IMPLEMENT) {#deployment-implement}
+
+Deployment marks the transition from experimentation to full implementation. Once the prototype has demonstrated feasibility, the goal becomes widespread adoption across the organisation. This phase focuses on stabilising and securing the solution, establishing maintenance processes, and ensuring long-term sustainability. It also finalises the technical architecture, economic model, and legal framework, while preparing an action plan for training, onboarding, and organisational change. Ideally, many of these topics will have been explored earlier; this stage formalises and operationalises them. Deployment may also open opportunities for scaling, replication, or pooling with other local authorities.
+
+**Prerequisites**
+
+- A prototype validated by target users and tested in near-real conditions  
+- A political or strategic decision to make the solution sustainable  
+- A defined target technical architecture (hosting, tools, security, interconnections)  
+- An analysis of implementation and maintenance costs  
+- A clear vision for the future governance of the solution (technical, organisational, partnership)  
+
+
+**Objectives**
+
+- Establish governance for the data and service (updating, sharing, accountability)  
+- Choose an appropriate management structure where relevant  
+- Organise maintenance, support, and long-term evolution of the solution  
+- Technically stabilise the solution for production use  
+- Ensure user adoption through training and ongoing adjustments  
+- Document and capitalise on lessons learned to support reuse internally or externally  
+
+
+**Stakeholders to Engage**
+
+- The business department responsible for the project, to steer deployment and support adoption  
+- IT/digital teams to integrate the solution into the existing information system  
+- Functional managers to monitor user feedback and prioritise improvements  
+- External service providers for industrialisation, hosting, and technical support  
+- Public purchasers and legal experts to formalise contracts and clarify rights of use and ownership  
+- Potential partner local authorities for pooling or scaling initiatives  
+
+???+ workshop_deployment "IMPLEMENT Workshops"
+
+    #### Onboard, train, and involve agents {#onboard-train-involve-agents}
+
+    This workshop supports staff and elected representatives in understanding the value of a data project by identifying the audiences to be mobilised and defining tailored awareness and training actions. By mapping stakeholder groups and shaping clear messages and engagement strategies, it strengthens commitment, fosters collaboration, and ensures the project is sustainably adopted.
+
+    ??? workshop_deployment "Workshop K: Onboard, train and acculturate agents in a digital project"
+
+        Lorem ipsum
+
+    #### Designing and drafting an action plan {#designing-action-plan}
+
+    This workshop helps teams turn their use case into a concrete action plan by identifying key steps, organising them on a timeline, and exploring alternative implementation scenarios. By visualising the sequence of actions and anticipating constraints, it supports better planning, facilitates decision-making, and aligns stakeholders around a realistic path forward.
+
+    ??? workshop_deployment "Workshop G: Designing and drafting an action plan"
+
+        Lorem ipsum
+
+    #### Defining your business model {#defining-business-model}
+
+    This workshop helps participants explore and structure the financial mechanisms that will support the deployment and long-term sustainability of their data or digital project, from funding models to partnerships and value-added services. By identifying resources, revenue levers, and feasibility constraints, it ensures the project’s economic viability and provides a solid basis for decision-makers to evaluate and support the initiative.
+
+    ??? workshop_deployment "Workshop L: Define the Business Model for your Project"
+
+        Lorem ipsum
+
+    ??? workshop_deployment "Workshop M: Refine your Business Model"
+
+        Lorem ipsum
+
+
+
+    #### Reviewing the legal framework and defining data clauses {#reviewing-legal-framework}
+
+    Content about compliance, contracts, data sharing agreements, GDPR...
+
+    ??? workshop "Workshop: ???"
+
+        Lorem ipsum
+
+## Other resources
+[ INSERT: Table with other resources ]

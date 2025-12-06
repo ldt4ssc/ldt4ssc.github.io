@@ -216,7 +216,7 @@ END commenting out requirements -->
 
 ## Application Process  
 
-👉 The first open call is now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-one/). Deadline 15th of January 2026, 23:59 CET.
+👉 The first open call is now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-one/). Apply until 15/01/2026, 23:59 CET.
 
 To apply, 
 

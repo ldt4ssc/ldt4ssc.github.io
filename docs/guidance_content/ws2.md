@@ -73,7 +73,7 @@ This section provides a set of **non-technical** and **technical resources** tha
 
 **Non-Technical Resources**
 
-| Title | Small Description | Source / Link | Thematic Area |
+| Title | Small Description | Source / Link | Domain |
 |-------|-------------------|---------------|---------------|
 | The Digital Twin of the City of Zurich for Urban Planning | Offers a practical example of integrating 3D spatial data and digital twins into urban planning. By releasing 3D spatial data under Open Government Data, Zurich facilitates the development of applications and promotes understanding, aiding in collaborative decision-making. | [Link](https://living-in.eu/knowledge-base/digital-twin-city-zurich-urban-planning) | Local Digital Twins |
 | Unravelling the Use of Digital Twins to Assist Decision- and Policy-Making in Smart Cities | Provides a systematic literature review that lays the foundation for developing frameworks to support decision-making in smart cities using digital twins. This can guide the design of LDTs by highlighting the role of digital twins in policy formulation and governance. | [Link](https://arxiv.org/pdf/2405.20916) | Local Digital Twins |
@@ -81,7 +81,7 @@ This section provides a set of **non-technical** and **technical resources** tha
 
 **Technical Resources**
 
-| Title | Small Description | Source / Link | Thematic Area |
+| Title | Small Description | Source / Link | Domain |
 |-------|-------------------|---------------|---------------|
 | Simpl Open | An open-source software stack powering data spaces and cloud-to-edge federation initiatives. | [Simpl Open](https://code.europa.eu/simpl/simpl-open) | Data Spaces |
 | Smart Data Models | Shared, standard and open-licensed data models & validation. | [Website](https://smartdatamodels.org/) · [GitHub](https://github.com/smart-data-models) | Interoperability MIMs |
