@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Only run on pages that actually have the filters/cards
   const cardsContainer = document.getElementById("resource-cards");
-  const categorySelect = document.getElementById("filter-category");
+  const categoryFilterContainer = document.getElementById("filter-category");
   const resourceCategorySelect = document.getElementById("filter-resource-category");
   const scopeSelect = document.getElementById("filter-scope");
   const searchInput = document.getElementById("filter-search");
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultsCount = document.getElementById("results-count");
   const clearFiltersBtn = document.getElementById("clear-filters");
 
-  if (!cardsContainer || !categorySelect || !resourceCategorySelect || !scopeSelect || !searchInput || !sortSelect) {
+  if (!cardsContainer || !categoryFilterContainer || !resourceCategorySelect || !scopeSelect || !searchInput || !sortSelect) {
     return;
   }
 
@@ -22,6 +22,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let allResources = [];
   let selectedMims = new Set(); // Track selected MIM filters
+  let selectedLayers = new Set(); // Track selected Layer filters
+
+  // Define the canonical order for layers
+  const LAYER_ORDER = [
+    "Data sources",
+    "Data acquisition",
+    "Interoperability",
+    "Orchestration",
+    "Knowledge",
+    "Services",
+    "Visualisation"
+  ];
 
   // Thematic area color schemes
   const THEMATIC_AREA_COLORS = {
@@ -193,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadResources()
     .then((data) => {
       allResources = Array.isArray(data) ? data : [];
-      populateThematicAreaOptions(allResources);
+      populateLayerFilters();
       populateResourceCategoryOptions(allResources);
       populateScopeOptions(allResources);
       populateMimFilters();
@@ -204,17 +216,27 @@ document.addEventListener("DOMContentLoaded", () => {
       cardsContainer.innerHTML = "<p class='error-message'>Unable to load resources. Please try again later.</p>";
     });
 
-  function populateThematicAreaOptions(resources) {
-    const thematicAreas = Array.from(
-      new Set(resources.map((r) => r.thematic_area).filter(Boolean))
-    ).sort();
+  function populateLayerFilters() {
+    const layerFilterContainer = document.getElementById("filter-category");
+    if (!layerFilterContainer) return;
 
-    categorySelect.innerHTML = '<option value="">All Layers</option>';
-    thematicAreas.forEach((area) => {
-      const opt = document.createElement("option");
-      opt.value = area;
-      opt.textContent = area;
-      categorySelect.appendChild(opt);
+    // Use the predefined LAYER_ORDER array for consistent ordering
+    layerFilterContainer.innerHTML = LAYER_ORDER.map(layer => {
+      const colors = THEMATIC_AREA_COLORS[layer] || THEMATIC_AREA_COLORS.default;
+      // Use badge color for background, text color for text, border color for border (same as cards)
+      return `
+        <label class="layer-checkbox-label">
+          <input type="checkbox" value="${layer}" data-layer="${layer}">
+          <span class="layer-checkbox-badge" style="background-color: ${colors.badge}; color: ${colors.text}; --border-color: ${colors.border};">
+            ${layer}
+          </span>
+        </label>
+      `;
+    }).join('');
+
+    // Add event listeners to checkboxes
+    layerFilterContainer.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+      checkbox.addEventListener('change', handleLayerFilterChange);
     });
   }
 
@@ -277,18 +299,52 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       selectedMims.delete(mim);
     }
+
+    // Update has-selection class based on whether any MIMs are selected
+    const mimFilterContainer = document.getElementById("filter-mims");
+    if (mimFilterContainer) {
+      if (selectedMims.size > 0) {
+        mimFilterContainer.classList.add('has-selection');
+      } else {
+        mimFilterContainer.classList.remove('has-selection');
+      }
+    }
+
+    renderResources();
+  }
+
+  function handleLayerFilterChange(event) {
+    const layer = event.target.value;
+    if (event.target.checked) {
+      selectedLayers.add(layer);
+    } else {
+      selectedLayers.delete(layer);
+    }
+
+    // Update has-selection class based on whether any layers are selected
+    const layerFilterContainer = document.getElementById("filter-category");
+    if (layerFilterContainer) {
+      if (selectedLayers.size > 0) {
+        layerFilterContainer.classList.add('has-selection');
+      } else {
+        layerFilterContainer.classList.remove('has-selection');
+      }
+    }
+
     renderResources();
   }
 
   function renderResources() {
-    const categoryFilter = categorySelect.value;
     const resourceCategoryFilter = resourceCategorySelect.value;
     const scopeFilter = scopeSelect.value;
     const searchTerm = searchInput.value.toLowerCase().trim();
     const sortBy = sortSelect.value;
 
     let filtered = allResources.filter((r) => {
-      if (categoryFilter && r.thematic_area !== categoryFilter) return false;
+      // Filter by selected Layers (OR logic - show if resource matches ANY selected layer)
+      if (selectedLayers.size > 0) {
+        if (!selectedLayers.has(r.thematic_area)) return false;
+      }
       if (resourceCategoryFilter && r.category !== resourceCategoryFilter) return false;
       if (scopeFilter && r.scope !== scopeFilter) return false;
 
@@ -384,18 +440,18 @@ document.addEventListener("DOMContentLoaded", () => {
   <div class="card-header">
     <div class="card-header-left">
       <h3 style="color: ${colors.text};">${escapeHtml(resource.short_name || "")}</h3>
-      <p class="card-description">${escapeHtml(resource.description || "")}</p>
     </div>
     <div class="mim-badges-container">
       ${mimBadgesHtml || '<span class="mim-badge" style="background-color: #cccccc; color: #666666;">No MIM</span>'}
     </div>
   </div>
+  <p class="card-description">${escapeHtml(resource.description || "")}</p>
 
   <div class="card-content">
     <div class="card-meta">
       <div class="meta-row">
         <span class="meta-label">Layer:</span>
-        <span class="category-badge" style="background-color: ${colors.badge}; color: ${colors.text};">
+        <span class="category-badge clickable ${selectedLayers.has(resource.thematic_area) ? 'selected' : ''}" style="background-color: ${colors.badge}; color: ${colors.text}; --border-color: ${colors.border}; cursor: pointer;" onclick="toggleLayerFilter('${escapeHtml(resource.thematic_area || "")}')">
           ${escapeHtml(resource.thematic_area || "")}
         </span>
       </div>
@@ -445,7 +501,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateResultsCount(filtered, total) {
     if (resultsCount) {
       const activeFilters = [
-        categorySelect.value,
+        selectedLayers.size > 0 ? 'layers' : '',
         resourceCategorySelect.value,
         scopeSelect.value,
         searchInput.value,
@@ -466,14 +522,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function clearFilters() {
-    categorySelect.value = "";
+    selectedLayers.clear();
     resourceCategorySelect.value = "";
     scopeSelect.value = "";
     searchInput.value = "";
     sortSelect.value = "title";
     selectedMims.clear();
 
-    // Uncheck all MIM checkboxes
+    // Uncheck all Layer checkboxes and remove has-selection class
+    const layerFilterContainer = document.getElementById("filter-category");
+    if (layerFilterContainer) {
+      layerFilterContainer.classList.remove('has-selection');
+    }
+    document.querySelectorAll('#filter-category input[type="checkbox"]').forEach(cb => {
+      cb.checked = false;
+    });
+
+    // Uncheck all MIM checkboxes and remove has-selection class
+    const mimFilterContainer = document.getElementById("filter-mims");
+    if (mimFilterContainer) {
+      mimFilterContainer.classList.remove('has-selection');
+    }
     document.querySelectorAll('#filter-mims input[type="checkbox"]').forEach(cb => {
       cb.checked = false;
     });
@@ -483,6 +552,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.toggleMimFilter = function(mim) {
     const checkbox = document.querySelector(`input[data-mim="${mim}"]`);
+    if (checkbox) {
+      checkbox.checked = !checkbox.checked;
+      checkbox.dispatchEvent(new Event('change'));
+    }
+  };
+
+  window.toggleLayerFilter = function(layer) {
+    const checkbox = document.querySelector(`input[data-layer="${layer}"]`);
     if (checkbox) {
       checkbox.checked = !checkbox.checked;
       checkbox.dispatchEvent(new Event('change'));
@@ -499,7 +576,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Event listeners
-  [categorySelect, resourceCategorySelect, scopeSelect, sortSelect].forEach((el) => {
+  [resourceCategorySelect, scopeSelect, sortSelect].forEach((el) => {
     el.addEventListener("change", renderResources);
   });
 

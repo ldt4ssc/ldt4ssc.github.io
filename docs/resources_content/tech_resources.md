@@ -74,16 +74,26 @@ The Technical Landscape Report focuses on establishing the technical foundations
 The technical resource database is categorised by layer (according to the LDT-Toolbox), by category (whether standard, protocol, framework, or tool/implementation), and by scope (whether relevant for data spaces, AI for smart cities, interoperability, or LDTs). In the visualisation below, you may filter by each categorisation, as well as by the relevant **MIMs Plus**. Use the Search bar to look for a specific resource.
 
 <div id="resource-filters" class="md-typeset">
-  <div class="filter-grid">
-    <div>
-      <label for="filter-category">Layer</label>
-      <select id="filter-category">
-        <option value="">All Layers</option>
-        <!-- Layers will be filled by JS -->
-      </select>
+  <!-- Top row: Layer and MIMs -->
+  <div class="filter-row-badges">
+    <div class="filter-section">
+      <label>Layer</label>
+      <div id="filter-category" class="layer-filter-checkboxes">
+        <!-- Layer checkboxes will be filled by JS -->
+      </div>
     </div>
 
-    <div>
+    <div class="filter-section">
+      <label>MIMs Plus</label>
+      <div id="filter-mims" class="mim-filter-checkboxes">
+        <!-- MIM checkboxes will be filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle row: Dropdowns -->
+  <div class="filter-row-dropdowns">
+    <div class="filter-section">
       <label for="filter-resource-category">Category</label>
       <select id="filter-resource-category">
         <option value="">All Categories</option>
@@ -91,7 +101,7 @@ The technical resource database is categorised by layer (according to the LDT-To
       </select>
     </div>
 
-    <div>
+    <div class="filter-section">
       <label for="filter-scope">Scope</label>
       <select id="filter-scope">
         <option value="">All Scopes</option>
@@ -99,7 +109,7 @@ The technical resource database is categorised by layer (according to the LDT-To
       </select>
     </div>
 
-    <div>
+    <div class="filter-section">
       <label for="sort-by">Sort By</label>
       <select id="sort-by">
         <option value="title">Title (A–Z)</option>
@@ -107,17 +117,13 @@ The technical resource database is categorised by layer (according to the LDT-To
         <option value="thematic-area">Layer</option>
       </select>
     </div>
+  </div>
 
-    <div>
+  <!-- Bottom row: Search -->
+  <div class="filter-row-search">
+    <div class="filter-section-search">
       <label for="filter-search">Search</label>
       <input type="text" id="filter-search" placeholder="Title, tags, description...">
-    </div>
-
-    <div>
-      <label>MIMs Plus</label>
-      <div id="filter-mims" class="mim-filter-checkboxes">
-        <!-- MIM checkboxes will be filled by JS -->
-      </div>
     </div>
   </div>
 
