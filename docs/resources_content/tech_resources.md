@@ -81,14 +81,32 @@ The technical resource database is categorised by layer (according to the LDT-To
   <!-- Top row: Layer and MIMs -->
   <div class="filter-row-badges">
     <div class="filter-section">
-      <label>Layer</label>
+      <label>
+        Layer
+        <span class="info-tooltip-wrapper">
+          <span class="info-icon">?</span>
+          <div class="info-tooltip-content">
+            Based on the EU LDT-Toolbox layers
+            <a href="https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2025-10/eu_ldt_presentation.pdf" target="_blank" class="tooltip-link">See more</a>
+          </div>
+        </span>
+      </label>
       <div id="filter-category" class="layer-filter-checkboxes">
         <!-- Layer checkboxes will be filled by JS -->
       </div>
     </div>
 
     <div class="filter-section">
-      <label>MIMs Plus</label>
+      <label>
+        MIMs Plus
+        <span class="info-tooltip-wrapper">
+          <span class="info-icon">?</span>
+          <div class="info-tooltip-content">
+            Based on the MIMs Plus Specification 8.0
+            <a href="https://living-in.eu/sites/default/files/files/mims-plus-v.8_2.pdf" target="_blank" class="tooltip-link">See more</a>
+          </div>
+        </span>
+      </label>
       <div id="filter-mims" class="mim-filter-checkboxes">
         <!-- MIM checkboxes will be filled by JS -->
       </div>
@@ -147,7 +165,7 @@ The technical resource database is categorised by layer (according to the LDT-To
 Know of a technical resource that should be included in our database? Share it with us using the form below!
 
 <div class="form-container">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTRwPEhr_SjZekvfrwbSHNKugVfC6-HQSJGPL8FJIZsVWamA/viewform?embedded=true" width="640" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTRwPEhr_SjZekvfrwbSHNKugVfC6-HQSJGPL8FJIZsVWamA/viewform?embedded=true" width="100%" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
