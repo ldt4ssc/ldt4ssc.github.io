@@ -1,5 +1,52 @@
 /* docs/css/resources_poc.css */
 
+/* Suggest Resource Button */
+.suggest-resource-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1976d2;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.suggest-resource-button:hover {
+  background-color: #1565c0;
+  text-decoration: none;
+}
+
+/* Suggest Resource Section */
+.suggest-resource-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+  text-align: center;
+}
+
+.suggest-resource-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.suggest-resource-section p {
+  color: #616161;
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.form-container iframe {
+  max-width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
 /* Filter Container */
 #resource-filters {
   background-color: #f8f9fa;

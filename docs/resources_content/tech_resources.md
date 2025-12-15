@@ -71,7 +71,11 @@ The Technical Landscape Report focuses on establishing the technical foundations
 
 ## Technical resource database
 
-The technical resource database is categorised by layer (according to the LDT-Toolbox), by category (whether standard, protocol, framework, or tool/implementation), and by scope (whether relevant for data spaces, AI for smart cities, interoperability, or LDTs). In the visualisation below, you may filter by each categorisation, as well as by the relevant **MIMs Plus**. Use the Search bar to look for a specific resource.
+The technical resource database is categorised by layer (according to the LDT-Toolbox), by category (whether standard, protocol, framework, or tool/implementation), and by scope (whether relevant for data spaces, AI for smart cities, interoperability, or LDTs). In the visualisation below, you may filter by each categorisation, as well as by the relevant **MIMs Plus**. Use the Search bar to look for a specific resource, and suggest a resource using the button below.
+
+<div style="text-align: center; margin-bottom: 1.5rem;">
+  <a href="#suggest-a-resource" class="suggest-resource-button">Suggest a Resource</a>
+</div>
 
 <div id="resource-filters" class="md-typeset">
   <!-- Top row: Layer and MIMs -->
@@ -138,6 +142,13 @@ The technical resource database is categorised by layer (according to the LDT-To
   <p style="text-align: center; color: #616161;">Loading resources...</p>
 </div>
 
+## Suggest a Resource
+
+Know of a technical resource that should be included in our database? Share it with us using the form below!
+
+<div class="form-container">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTRwPEhr_SjZekvfrwbSHNKugVfC6-HQSJGPL8FJIZsVWamA/viewform?embedded=true" width="640" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="/js/resources_poc.js"></script>

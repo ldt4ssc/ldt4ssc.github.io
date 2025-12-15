@@ -406,6 +406,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cardItems = filtered.map((r) => createCard(r));
     cardsContainer.innerHTML = cardItems.join("");
+
+    // Restore scroll position if a card badge was clicked
+    if (window._lastClickedCardTitle) {
+      setTimeout(() => {
+        // Find the card with the matching title
+        const cards = document.querySelectorAll('.resource-card h3');
+        for (const titleElement of cards) {
+          if (titleElement.textContent.trim() === window._lastClickedCardTitle) {
+            const card = titleElement.closest('.resource-card');
+            if (card) {
+              const rect = card.getBoundingClientRect();
+              const scrollTop = window.scrollY + rect.top - 100; // 100px offset from top
+              window.scrollTo({
+                top: scrollTop,
+                behavior: 'smooth'
+              });
+              break;
+            }
+          }
+        }
+        delete window._lastClickedCardTitle;
+      }, 50);
+    }
   }
 
   function createCard(resource) {
@@ -421,7 +444,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .map((mim) => {
         const mimColors = MIM_COLORS[mim] || { bg: '#cccccc', text: '#333333' };
         const description = MIM_DESCRIPTIONS[mim] || '';
-        return `<span class="mim-tooltip-wrapper"><span class="mim-badge clickable" data-mim="${mim}" style="background-color: ${mimColors.bg}; color: ${mimColors.text};" onclick="toggleMimFilter('${mim}')">${escapeHtml(mim)}</span><div class="mim-tooltip">${mim}: ${description}</div></span>`;
+        return `<span class="mim-tooltip-wrapper"><span class="mim-badge clickable" data-mim="${mim}" style="background-color: ${mimColors.bg}; color: ${mimColors.text};" onclick="toggleMimFilter('${mim}', event)">${escapeHtml(mim)}</span><div class="mim-tooltip">${mim}: ${description}</div></span>`;
       })
       .join("");
 
@@ -451,7 +474,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="card-meta">
       <div class="meta-row">
         <span class="meta-label">Layer:</span>
-        <span class="category-badge clickable ${selectedLayers.has(resource.thematic_area) ? 'selected' : ''}" style="background-color: ${colors.badge}; color: ${colors.text}; --border-color: ${colors.border}; cursor: pointer;" onclick="toggleLayerFilter('${escapeHtml(resource.thematic_area || "")}')">
+        <span class="category-badge clickable ${selectedLayers.has(resource.thematic_area) ? 'selected' : ''}" style="background-color: ${colors.badge}; color: ${colors.text}; --border-color: ${colors.border}; cursor: pointer;" onclick="toggleLayerFilter('${escapeHtml(resource.thematic_area || "")}', event)">
           ${escapeHtml(resource.thematic_area || "")}
         </span>
       </div>
@@ -550,7 +573,18 @@ document.addEventListener("DOMContentLoaded", () => {
     renderResources();
   }
 
-  window.toggleMimFilter = function(mim) {
+  window.toggleMimFilter = function(mim, event) {
+    // Store the clicked card's title to find it later
+    if (event) {
+      const card = event.target.closest('.resource-card');
+      if (card) {
+        const title = card.querySelector('h3');
+        if (title) {
+          window._lastClickedCardTitle = title.textContent.trim();
+        }
+      }
+    }
+
     const checkbox = document.querySelector(`input[data-mim="${mim}"]`);
     if (checkbox) {
       checkbox.checked = !checkbox.checked;
@@ -558,7 +592,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  window.toggleLayerFilter = function(layer) {
+  window.toggleLayerFilter = function(layer, event) {
+    // Store the clicked card's title to find it later
+    if (event) {
+      const card = event.target.closest('.resource-card');
+      if (card) {
+        const title = card.querySelector('h3');
+        if (title) {
+          window._lastClickedCardTitle = title.textContent.trim();
+        }
+      }
+    }
+
     const checkbox = document.querySelector(`input[data-layer="${layer}"]`);
     if (checkbox) {
       checkbox.checked = !checkbox.checked;
