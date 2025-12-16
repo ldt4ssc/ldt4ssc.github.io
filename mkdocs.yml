@@ -22,6 +22,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
+  favicon: assets/fav_icon_resized.png
 
 nav:
   - Welcome: index.md
