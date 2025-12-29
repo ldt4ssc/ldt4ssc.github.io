@@ -484,3 +484,24 @@
     border-left-width: 4px;
   }
 }
+
+/* Phase heading colors */
+h3#ideation-explore {
+  color: var(--ideation-primary);
+  font-weight: 700;
+}
+
+h3#specifications-validate {
+  color: var(--specifications-primary);
+  font-weight: 700;
+}
+
+h3#prototyping-define {
+  color: var(--prototyping-primary);
+  font-weight: 700;
+}
+
+h3#deployment-implement {
+  color: var(--deployment-primary);
+  font-weight: 700;
+}

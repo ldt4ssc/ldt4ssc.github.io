@@ -122,29 +122,29 @@ The example stories developed for WS1 show how cities and communities with an ex
 
 ### Ideation (EXPLORE) {#ideation-explore}
 
-Many digital projects fail because they jump too quickly to a solution without clarifying the underlying need. The ideation phase establishes a shared foundation by defining a clear use case, identifying relevant data, anticipating impacts, and aligning all stakeholders. It also embeds responsible digital principles early on, questioning the project’s purpose, ethics, and long-term value.
+Many digital projects fail because they jump too quickly to a solution without clarifying the underlying need. The ideation phase establishes a shared foundation by defining a clear use case, identifying relevant data, anticipating impacts, and aligning all stakeholders. It also embeds responsible digital principles early on, questioning the project's purpose, ethics, and long-term value.
 
-**Prerequisites**
+📋 **Prerequisites**
 
-- A clearly identified problem rooted in the organisation’s mission  
-- Political/strategic support and a committed sponsor  
-- A dedicated project manager  
-- Ability to mobilise internal and external stakeholders 
+- A clearly identified problem rooted in the organisation's mission
+- Political/strategic support and a committed sponsor
+- A dedicated project manager
+- Ability to mobilise internal and external stakeholders
 
-**Objectives**
+🎯 **Objectives**
 
-- Clarify and contextualise the problem  
-- Identify beneficiaries, expected impacts, context, actors, available data, constraints, and risks  
-- Produce a project framework to secure resources (funding, support, platforms)  
+- Clarify and contextualise the problem
+- Identify beneficiaries, expected impacts, context, actors, available data, constraints, and risks
+- Produce a project framework to secure resources (funding, support, platforms)
 
 
-**Stakeholders to Engage**
+👥 **Stakeholders to Engage**
 
-- Operational/business teams  
-- Cross-functional or “bridge” agents  
-- Decision-makers (managers, elected officials)  
-- IT and data teams  
-- End-users or their representatives  
+- Operational/business teams
+- Cross-functional or "bridge" agents
+- Decision-makers (managers, elected officials)
+- IT and data teams
+- End-users or their representatives
 - Technical partners, experts, or peer local authorities  
 
 
@@ -157,7 +157,7 @@ Many digital projects fail because they jump too quickly to a solution without c
 
     ??? workshop_ideation "Workshop A: Draw Your Use Case from a Functional Point of View"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
     #### Questioning the why {#questioning-the-why}
 
@@ -165,7 +165,7 @@ Many digital projects fail because they jump too quickly to a solution without c
 
     ??? workshop_ideation "Workshop B: Questioning the Why"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
     #### Questioning your project from the perspective of digital responsibility {#questioning-digital-responsibility}
@@ -174,7 +174,7 @@ Many digital projects fail because they jump too quickly to a solution without c
 
     ??? workshop_ideation "Workshop C: Question your project from a sustainable design for digital services perspective"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
     #### Carrying out a cost-benefit analysis {#carrying-out-cost-benefit-analysis}
 
@@ -182,9 +182,9 @@ Many digital projects fail because they jump too quickly to a solution without c
 
     ??? workshop_ideation "Workshop D: Preparing and carrying out a Cost-Benefit Analysis"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-**Achievements at the end of the phase**
+✨ **Achievements at the end of the phase**
 
 - A drawing of the use case identifying the data sources, their path, the Information System bricks, the players, etc.
 - The desired impacts by type
@@ -199,28 +199,28 @@ Many digital projects fail because they jump too quickly to a solution without c
 
 After ideation clarifies the need, motivations, stakeholders, and data, the specification phase focuses on defining *how* the solution should work. It translates the shared use case into functional and technical requirements, taking into account real-world constraints (data, architecture, users, security). This phase prevents misunderstandings between business and technical teams, embeds interoperability early on, and provides the basis for selecting or prototyping the appropriate solution.
 
-**Prerequisites**
+📋 **Prerequisites**
 
-- A clear and validated use case with precise objectives  
-- Identified data requirements and understanding of data accessibility  
-- A committed project team with experience in data-related issues  
-- A realistic view of available resources (time, budget, technical support) 
+- A clear and validated use case with precise objectives
+- Identified data requirements and understanding of data accessibility
+- A committed project team with experience in data-related issues
+- A realistic view of available resources (time, budget, technical support)
 
-**Objectives**
+🎯 **Objectives**
 
-- Identify and describe personas (future users of the solution)  
-- Translate functional needs into operational technical specifications  
-- Identify required data and define its lifecycle  
-- Determine necessary indicators, dashboards, and potential simulations  
-- Define data access conditions, legal constraints, and governance arrangements  
-- Produce documentation to guide development or prototyping  
+- Identify and describe personas (future users of the solution)
+- Translate functional needs into operational technical specifications
+- Identify required data and define its lifecycle
+- Determine necessary indicators, dashboards, and potential simulations
+- Define data access conditions, legal constraints, and governance arrangements
+- Produce documentation to guide development or prototyping
 
-**Stakeholders to engage**
+👥 **Stakeholders to Engage**
 
-- Business referents (use case owners, service managers)  
-- End-users of the solution  
-- Data engineers or data architects  
-- IT or infrastructure managers  
+- Business referents (use case owners, service managers)
+- End-users of the solution
+- Data engineers or data architects
+- IT or infrastructure managers
 - Legal experts or DPOs when personal data or data-sharing clauses apply 
 
 ???+ workshop_specifications "**VALIDATE Workshops**"
@@ -231,7 +231,7 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
     ??? workshop_specifications "Workshop E: Deepening the functional scope and prioritisation of functionalities"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
     #### Describing your dashboard and indicators {#describing-dashboard-indicators}
 
@@ -239,8 +239,7 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
     ??? workshop_specifications "Workshop F: Describe your dashboard and indicators"
 
-        Lorem ipsum
-
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
     #### Implementing data governance {#implementing-data-governance}
 
@@ -252,21 +251,31 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
             This workshop helps identify all stakeholders involved in data governance—both internal and external—and clarify their roles, expertise, responsibilities, and ability to act or contribute. By visually mapping actors and defining collaboration and data-sharing conditions, it lays the groundwork for cross-functional and multi-partner governance essential to implementing the project.
 
+            [Download workshop as PDF](#){ .md-button .md-button--primary }
+
         ??? workshop_specifications "Workshop H: Implementing the Ideal fit-to purpose Data Governance"
 
             This workshop helps participants build a shared, strategic vision of what fit-for-purpose data governance should look like in their organisation by exploring political, legal, organisational, and technical dimensions and imagining ideal and undesirable future scenarios. It then translates these insights into a concrete action plan, clarifying roles, processes, and conditions for success to ensure sustainable and coordinated data governance across projects.
+
+            [Download workshop as PDF](#){ .md-button .md-button--primary }
 
         ??? workshop_specifications "Workshop P: Documenting each person's responsibilities in data governance (mission statement/job profile)"
 
             This workshop focuses on clarifying and formally documenting each stakeholder’s responsibilities in data governance, ensuring that roles are explicit and aligned across the consortium. By defining missions or adapting job profiles, it strengthens engagement, accountability, and the internal structures needed to support effective, long-term data governance.
 
+            [Download workshop as PDF](#){ .md-button .md-button--primary }
+
         ??? workshop_specifications "Workshop I: Question the legal framework and define its data"
 
             This workshop helps participants examine the legal framework needed to govern data securely and consistently, identifying regulatory requirements and the contractual clauses or internal processes needed to meet them. By comparing needs with existing resources, it supports the development of clear, robust legal foundations for data use and sharing.
 
+            [Download workshop as PDF](#){ .md-button .md-button--primary }
+
         ??? workshop_specifications "Workshop Q: Exploring each stage of creating a digital twin (through mini-questionnaires and the use of resources: experience reports, clauses, standard contracts)"
 
             This workshop equips participants to anticipate legal, contractual, and interoperability requirements at every stage of their digital twin or data platform project by examining typical clauses, risks, and resources. By mapping legal needs across the project lifecycle and drawing on standard contracts and experience reports, teams gain the ability to secure long-term viability, manage intellectual property, and negotiate effectively with suppliers and partners.
+
+            [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
 
@@ -279,7 +288,7 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
     ??? workshop_specifications "Workshop N: Identify the life cycle and interoperability of your data"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
     #### Raising awareness and putting interoperability into practice {#raising-awareness-interoperability}
@@ -288,15 +297,17 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
     ??? workshop_specifications "Workshop J: Raising awareness and implementing interoperability"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
     ??? workshop_specifications "Workshop R: Lego Serious Play"
 
         This workshop uses the Lego Serious Play method to help participants model complex ideas—such as governance, processes, or system architecture—in a tangible and easily adjustable form. By enabling creative, visual co-construction, it reveals gaps and shared solutions more effectively than traditional discussions, supporting alignment before moving into implementation.
 
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-**Achievements at the end of the phase**
+
+✨ **Achievements at the end of the phase**
 
 At this stage of the method, the following elements have been achieved or identified:
 
@@ -311,28 +322,28 @@ At this stage of the method, the following elements have been achieved or identi
 
 Prototyping turns a theoretical concept into a tangible proof of feasibility. Rather than building a finished service, this phase focuses on rapidly testing a solution on a limited scope, using real data and confronting assumptions with technical, functional, and human realities. While not always mandatory—especially if existing market solutions already fit the need—prototyping often provides valuable insights before large-scale deployment. Its purpose is twofold: to show that the idea works and to confirm that it brings real value to users. This iterative, frugal approach enables quick learning while preparing the foundations for a scalable deployment.
 
-**Prerequisites**
+📋 **Prerequisites**
 
-- A prioritised and formalised use case validated internally  
-- Clear functional and technical specifications  
-- Identified and accessible datasets in usable form  
-- Identified human and technical resources to build the prototype  
-- Agreement from a small group of end-users to test the solution under semi-real conditions  
+- A prioritised and formalised use case validated internally
+- Clear functional and technical specifications
+- Identified and accessible datasets in usable form
+- Identified human and technical resources to build the prototype
+- Agreement from a small group of end-users to test the solution under semi-real conditions
 
-**Objectives**
+🎯 **Objectives**
 
-- Experiment with concrete solutions using real data and representative users  
-- Validate organisational hypotheses  
-- Confirm technical feasibility (data access, processing, flow integration, result display, etc.)  
-- Confirm or refine design choices based on practical feedback  
-- Prepare the conditions for future deployment (technical, organisational, legal)  
+- Experiment with concrete solutions using real data and representative users
+- Validate organisational hypotheses
+- Confirm technical feasibility (data access, processing, flow integration, result display, etc.)
+- Confirm or refine design choices based on practical feedback
+- Prepare the conditions for future deployment (technical, organisational, legal)
 
-**Stakeholders to engage**
+👥 **Stakeholders to Engage**
 
-- A project manager  
-- Business referents to test and validate functionalities  
-- A data engineer or developer to integrate data and build the prototype  
-- A UX/UI designer or facilitator (if possible) to ensure clear user journeys  
+- A project manager
+- Business referents to test and validate functionalities
+- A data engineer or developer to integrate data and build the prototype
+- A UX/UI designer or facilitator (if possible) to ensure clear user journeys
 - An IT or infrastructure consultant to ensure compatibility with the existing environment and support implementation  
 
 ???+ workshop_prototyping "DEFINE Workshops"
@@ -343,10 +354,10 @@ Prototyping turns a theoretical concept into a tangible proof of feasibility. Ra
 
     ??? workshop_prototyping "Methodology. Step-by-step process of building a use case"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
-**Achievements at the end of the phase**
+✨ **Achievements at the end of the phase**
 
 At this stage of the method, the following elements have been produced or identified:
 
@@ -362,32 +373,32 @@ At this stage of the method, the following elements have been produced or identi
 
 Deployment marks the transition from experimentation to full implementation. Once the prototype has demonstrated feasibility, the goal becomes widespread adoption across the organisation. This phase focuses on stabilising and securing the solution, establishing maintenance processes, and ensuring long-term sustainability. It also finalises the technical architecture, economic model, and legal framework, while preparing an action plan for training, onboarding, and organisational change. Ideally, many of these topics will have been explored earlier; this stage formalises and operationalises them. Deployment may also open opportunities for scaling, replication, or pooling with other local authorities.
 
-**Prerequisites**
+📋 **Prerequisites**
 
-- A prototype validated by target users and tested in near-real conditions  
-- A political or strategic decision to make the solution sustainable  
-- A defined target technical architecture (hosting, tools, security, interconnections)  
-- An analysis of implementation and maintenance costs  
-- A clear vision for the future governance of the solution (technical, organisational, partnership)  
-
-
-**Objectives**
-
-- Establish governance for the data and service (updating, sharing, accountability)  
-- Choose an appropriate management structure where relevant  
-- Organise maintenance, support, and long-term evolution of the solution  
-- Technically stabilise the solution for production use  
-- Ensure user adoption through training and ongoing adjustments  
-- Document and capitalise on lessons learned to support reuse internally or externally  
+- A prototype validated by target users and tested in near-real conditions
+- A political or strategic decision to make the solution sustainable
+- A defined target technical architecture (hosting, tools, security, interconnections)
+- An analysis of implementation and maintenance costs
+- A clear vision for the future governance of the solution (technical, organisational, partnership)
 
 
-**Stakeholders to Engage**
+🎯 **Objectives**
 
-- The business department responsible for the project, to steer deployment and support adoption  
-- IT/digital teams to integrate the solution into the existing information system  
-- Functional managers to monitor user feedback and prioritise improvements  
-- External service providers for industrialisation, hosting, and technical support  
-- Public purchasers and legal experts to formalise contracts and clarify rights of use and ownership  
+- Establish governance for the data and service (updating, sharing, accountability)
+- Choose an appropriate management structure where relevant
+- Organise maintenance, support, and long-term evolution of the solution
+- Technically stabilise the solution for production use
+- Ensure user adoption through training and ongoing adjustments
+- Document and capitalise on lessons learned to support reuse internally or externally
+
+
+👥 **Stakeholders to Engage**
+
+- The business department responsible for the project, to steer deployment and support adoption
+- IT/digital teams to integrate the solution into the existing information system
+- Functional managers to monitor user feedback and prioritise improvements
+- External service providers for industrialisation, hosting, and technical support
+- Public purchasers and legal experts to formalise contracts and clarify rights of use and ownership
 - Potential partner local authorities for pooling or scaling initiatives  
 
 ???+ workshop_deployment "IMPLEMENT Workshops"
@@ -398,7 +409,7 @@ Deployment marks the transition from experimentation to full implementation. Onc
 
     ??? workshop_deployment "Workshop K: Onboard, train and acculturate agents in a digital project"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
     #### Designing and drafting an action plan {#designing-action-plan}
 
@@ -406,7 +417,7 @@ Deployment marks the transition from experimentation to full implementation. Onc
 
     ??? workshop_deployment "Workshop G: Designing and drafting an action plan"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
     #### Defining your business model {#defining-business-model}
 
@@ -414,11 +425,11 @@ Deployment marks the transition from experimentation to full implementation. Onc
 
     ??? workshop_deployment "Workshop L: Define the Business Model for your Project"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
     ??? workshop_deployment "Workshop M: Refine your Business Model"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
 
@@ -428,7 +439,29 @@ Deployment marks the transition from experimentation to full implementation. Onc
 
     ??? workshop "Workshop: ???"
 
-        Lorem ipsum
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 ## Other resources
-[ INSERT: Table with other resources ]
+
+This table summarises other important resources from the initiatives in the ecosystem.
+
+| Title | Small Description | Source | Thematic Area |
+|-------|-------------------|--------|---------------|
+| [DSSC's Co-Creation Method – Align Stakeholders on the Data Space Scope](https://dssc.eu/space/BVE2/1071257999/Align+Stakeholders+on+the+Data+Space+Scope) | Helpful to build consensus on the data space's boundaries and goals, ensuring all stakeholders share a clear vision | DSSC | Data Spaces |
+| [The Economics of Data Sharing: Insights from a Legal-Economics Workshop](https://dssc.eu/space/News/blog/1284145156/The+Economics+of+Data+Sharing:+Insights+from+a+Legal-Economics+Workshop) | Provides insights on economic incentives and legal frameworks that can help design sustainable data sharing models. | DSSC | Data Spaces |
+| [MIMS Specification Introduction](https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys) | Introduces standards for interoperable data management, essential for connecting platforms. | OASC | Interoperability / MIMs |
+| [DS4SSCC-DEP Blueprint](https://static1.squarespace.com/static/63718ba2d90d0263d7fc1857/t/6527a36ea3fd1470ffc95fec/1697096639359/D4.1_DS4SSCC_Data+Space+Blueprint+and+Priority+Data+Sets.pdf) | | DS4SSCC | Data Spaces |
+| [DS4SSCC's Multi-Stakeholder Governance Scheme](https://inventory.ds4sscc.eu/multi-stakeholder-governance/developing-multi-stakeholder) | Guidelines to set up multi-stakeholder governance, crucial for trust and collaboration in data spaces and LDTs. | DS4SSCC | Data Spaces |
+| [Guidance for the Integration of Digital Twins in Data Spaces](https://aioti.eu/wp-content/uploads/Guidance-for-the-Integration-of-Digital-Twins-in-Data-Spaces-Final.pdf) | This document focuses on the integration of digital twins in data spaces: it provides a context on data spaces, digital twins, IoT and edge computing and standardisation; it provides an analysis on the integration of digital twins in data spaces taking an architecture approach; it describes a large number of digital twin use cases in domains such as agriculture, connected vehicles, smart cities, energy, smart manufacturing. The document can be used to provide insights and sources for future standardisation work related to the integration of digital twins in data spaces. | AIOTI | Digital Twins |
+| [Policy processes and building blocks for Digital Twins](https://www.geonovum.nl/uploads/documents/Eindrapport%20Advies%20Beleid%20en%20Digital%20Twins%20-%20provincie%20Utrecht%20v1.3d_EN.pdf) | | GEONOVUM | Digital Twins |
+| [IDSA - Rulebook](https://github.com/International-Data-Spaces-Association/IDSA-Rulebook/blob/main/documentation/2.%20Guiding_Principles/2.1%20Overaching_considerations.md) | The IDSA Rulebook serves several purposes regarding the development and operation of data spaces. The aim is to describe clearly which rules are mandatory and which are optional guidelines. This governance framework includes functional, technical, operational, and legal dimensions. It also presents a PESTEL analysis of the overarching considerations of data spaces which is interesting regarding the impact assessment. | IDSA | Data Spaces |
+| [Catalogue of Tools](https://living-in.eu/catalogue-of-tools) | A curated set of ready-to-use resources (tools, frameworks, guidelines) to support local authorities in digital transformation: includes procurement templates, interoperability standards (e.g. MIMs), capacity-building tools. Pilots of LDT4SSC can use these tools to procure and build Local Digital Twins (LDTs) in line with EU best practices. | Living-in.EU | Cities Network and Supporting Actions |
+| [Knowledge Base](https://living-in.eu/knowledge-base) | A knowledge repository of documents, studies, guidelines, webinars, and working-group outputs. For LDT4SSC pilots, this Knowledge Base provides evidence, legal and technical guidance, and community-shared lessons relevant to digital twin implementation. | Living-in.EU | Cities Network and Supporting Actions |
+| [Procurement Support Materials](https://living-in.eu/eu-support-services/procurement-support-materials) | Procurement guidelines, templates, and a glossary designed specifically to help EU cities and communities acquire digital infrastructures and digital twins. For LDT4SSC pilots, these materials simplify tender processes, ensure alignment with EU standards, and embed interoperability, sustainability, and social criteria. | Living-in.EU | Cities Network and Supporting Actions |
+| [Digital Twin Business Maturity Model](https://www.digitaltwinconsortium.org/publications/digital-twin-business-maturity-model/) | A maturity model from the Digital Twin Consortium defining five maturity stages (Passive → Master) across dimensions such as Strategy, Culture, Technology. LDT4SSC pilots can use it to assess their current maturity in digital twin adoption, plan progression, and benchmark against peer organizations. | Digital Twin Consortium | Digital Twin |
+| [Digital twins for cities and municipalities DIN SPEC – Build a digital twin for smart cities (Germany)](https://www.dinmedia.de/en/technical-rule/din-spec-91607/384414386) | Gives a holistic overview of urban digital twins. At the heart of the document are the use cases, the description of urban digital twins (including capabilities) and a maturity model. As part of the development of this DIN SPEC, around 100 different municipal usage scenarios were identified by the participating municipalities and assigned to municipal spheres of activity. | DIN | Digital Twin |
+| [DTC Digital Twin Capabilities Periodic Table](https://www.digitaltwinconsortium.org/digital-twin-capabilities-periodic-table-download-all-v1-form/) | The Digital Twin Capabilities Periodic Table (CPT) is an architecture and technology agnostic requirements definition framework for digital engineering projects. It is aimed at organizations who want to design, develop, deploy and operate digital twins based on use case capability requirements versus the features of technology solutions. | DIGITAL TWIN CONSORTIUM | Digital Twin |
+| [UNRAVELLING THE USE OF DIGITAL TWINS TO ASSIST DECISION- AND POLICY-MAKING IN SMART CITIES](https://arxiv.org/pdf/2405.20916) | "The main objective of this ongoing research is to review the existing literature on the intersection of digital twins and smart cities with a focus on decision and policy-making support and to answer the research question: "What are the existing applications of digital twins for smart cities for aiding decision-and policy-making?"" | ARXIV | Digital Twin |
+| [Trusted Data Transaction](https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/2024/cwa18125_2024.pdf) | Provides terminology, concepts and mechanisms in the field of data exchange focusing on trusted data transactions. | CEN / CENELEC | Legal terminologies |
+| [High-Level Forum on European Standardisation Final report of work-stream 14](https://ec.europa.eu/docsroom/documents/58914) | The report is the result of Workstream 14 on Data Interoperability of the High-Level Forum on European Standardisation (HLF). The workstream was initiated to help establish a coordinated approach to (European) standardisation in support of the interoperability requirements established in the horizontal data legislation, implementing the European data strategy (2020). The clarity, transparency, and reliability resulting from a well-designed overall set of standards will significantly lower entry barriers for the application of data spaces and thus support the emergence of a vibrant data ecosystem in Europe. | EUROPEAN COMMISSION | Data Spaces |
+| [New European Interoperability Framework](https://ec.europa.eu/isa2/sites/default/files/eif_brochure_final.pdf) | Promoting seamless services and data flows for European public administrations | EUROPEAN COMMISSION | Data interoperability |
