@@ -62,59 +62,54 @@ The example stories developed for WS1 show how cities and communities with an ex
 
     <!-- Activity Cards - Left Side Top (Deployment - Green) -->
     <div class="activity-group activity-deployment">
-      <a href="#reviewing-legal-framework" class="activity-card activity-deployment-card">
-        Reviewing the legal framework and defining data clauses
-      </a>
       <a href="#defining-business-model" class="activity-card activity-deployment-card">
-        Defining your business model
+        4.3 Defining your business model
       </a>
       <a href="#designing-action-plan" class="activity-card activity-deployment-card">
-        Designing and drafting an action plan
+        4.2 Designing and drafting an action plan
       </a>
       <a href="#onboard-train-involve-agents" class="activity-card activity-deployment-card">
-        Onboard, train, and involve agents
+        4.1 Onboard, train, and involve agents
       </a>
     </div>
 
     <!-- Activity Cards - Right Side Top (Ideation - Yellow) -->
     <div class="activity-group activity-ideation">
       <a href="#designing-drawing-up-your-use-case" class="activity-card activity-ideation-card">
-        Designing/drawing up your use case
+        1.1 Map Your Use Case from a Functional Point of View
       </a>
       <a href="#questioning-the-why" class="activity-card activity-ideation-card">
-        Questioning the why
+        1.2 Question Your Why
       </a>
       <a href="#questioning-digital-responsibility" class="activity-card activity-ideation-card">
-        Questioning your project from the perspective of digital responsibility
-      </a>
-      <a href="#carrying-out-cost-benefit-analysis" class="activity-card activity-ideation-card">
-        Carrying out a cost-benefit analysis
+        1.3 Questioning your project from the perspective of digital responsibility
       </a>
     </div>
 
     <!-- Activity Cards - Left Side Bottom (Prototyping - Blue) -->
     <div class="activity-group activity-prototyping">
       <a href="#produce-prototype" class="activity-card activity-prototyping-card">
-        Produce a prototype of your project
+        3.1 Produce a prototype of your project
       </a>
     </div>
 
     <!-- Activity Cards - Right Side Bottom (Specifications - Gray) -->
     <div class="activity-group activity-specifications">
-      <a href="#deepening-functional-scope" class="activity-card activity-specifications-card">
-        Deepening the functional scope
-      </a>
-      <a href="#describing-dashboard-indicators" class="activity-card activity-specifications-card">
-        Describing your dashboard and indicators
+
+      <a href="#fit-for-purpose-data-governance" class="activity-card activity-specifications-card">
+        2.1 Implementing the Ideal fit-for-purpose Data Governance
       </a>
       <a href="#implementing-data-governance" class="activity-card activity-specifications-card">
-        Implementing data governance
+        2.2 Implement data governance
+      </a>
+      <a href="#describing-dashboard-indicators" class="activity-card activity-specifications-card">
+        2.3 Describe your dashboard and indicators
       </a>
       <a href="#defining-lifecycle-interoperability" class="activity-card activity-specifications-card">
-        Defining the lifecycle and interoperability of your data
+        2.4 Defining the lifecycle and interoperability of your data
       </a>
       <a href="#raising-awareness-interoperability" class="activity-card activity-specifications-card">
-        Raising awareness and putting interoperability into practice
+        2.5 Raising awareness and putting interoperability into practice
       </a>
     </div>
   </div>
@@ -149,21 +144,21 @@ Many digital projects fail because they jump too quickly to a solution without c
 
 
 
-???+ workshop_ideation "**EXPLORE Workshops**"
+???+ workshop_ideation "**EXPLORE Resources**"
 
-    #### Designing/drawing up your use case {#designing-drawing-up-your-use-case}
+    #### Map your use case from a functional point of view {#designing-drawing-up-your-use-case}
 
     This workshop helps participants build a shared understanding of the use case by collaboratively drawing the current process, data flows, and pain points. By making an abstract idea tangible and envisioning an ideal future state, it aligns stakeholders early on and forms a visual foundation for the rest of the project.
 
-    ??? workshop_ideation "Workshop A: Draw Your Use Case from a Functional Point of View"
+    ??? workshop_ideation "Workshop A: Map Your Use Case from a Functional Point of View"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-    #### Questioning the why {#questioning-the-why}
+    #### Question your why {#questioning-the-why}
 
     This workshop helps teams clarify the deeper purpose of their digital project by exploring the operational, user, strategic, economic, and socio-environmental benefits it aims to deliver. By identifying the real objectives and expected impacts, stakeholders can better articulate the project, prioritise functionalities, and avoid solutions that fail to address the core problem.
 
-    ??? workshop_ideation "Workshop B: Questioning the Why"
+    ??? workshop_ideation "Workshop B: Question Your Why"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
@@ -176,13 +171,6 @@ Many digital projects fail because they jump too quickly to a solution without c
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-    #### Carrying out a cost-benefit analysis {#carrying-out-cost-benefit-analysis}
-
-    This workshop helps teams prepare and conduct a cost–benefit analysis by identifying expected costs, impacts, and monitoring indicators before the project begins. By comparing the solution’s financial and socio-environmental benefits with a baseline scenario, it supports informed decision-making and ensures that public investment is justified.
-
-    ??? workshop_ideation "Workshop D: Preparing and carrying out a Cost-Benefit Analysis"
-
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 ✨ **Achievements at the end of the phase**
 
@@ -223,23 +211,17 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 - IT or infrastructure managers
 - Legal experts or DPOs when personal data or data-sharing clauses apply 
 
-???+ workshop_specifications "**VALIDATE Workshops**"
+???+ workshop_specifications "**VALIDATE Resources**"
 
-    #### Deepening the functional scope {#deepening-functional-scope}
+    #### Implementing the Ideal fit-for-purpose Data Governance {#fit-for-purpose-data-governance}
 
-    This workshop refines the functional scope by having participants step into the shoes of different user personas, map their daily journeys, and identify needs, pain points, and potential improvements. The resulting functionalities are compared across profiles and then prioritised based on usefulness, feasibility, and originality to determine which features offer the greatest value.
+    This workshop helps participants build a shared, strategic vision of what fit-for-purpose data governance should look like in their organisation by exploring political, legal, organisational, and technical dimensions and imagining ideal and undesirable future scenarios. It then translates these insights into a concrete action plan, clarifying roles, processes, and conditions for success to ensure sustainable and coordinated data governance across projects.
 
-    ??? workshop_specifications "Workshop E: Deepening the functional scope and prioritisation of functionalities"
-
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-    #### Describing your dashboard and indicators {#describing-dashboard-indicators}
-
-    This workshop guides participants in designing dashboards and indicators that genuinely meet the needs of different user personas, ensuring each metric is meaningful, usable, and aligned with strategic objectives. By mapping the path from source data to dashboard outputs, it helps avoid overly complex or irrelevant indicators and provides solid foundations for prototyping or deployment.
-
-    ??? workshop_specifications "Workshop F: Describe your dashboard and indicators"
+    ??? workshop_specifications "Workshop H: Implementing the Ideal fit-for-purpose Data Governance"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
+
+
 
     #### Implementing data governance {#implementing-data-governance}
 
@@ -253,11 +235,6 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-        ??? workshop_specifications "Workshop H: Implementing the Ideal fit-to purpose Data Governance"
-
-            This workshop helps participants build a shared, strategic vision of what fit-for-purpose data governance should look like in their organisation by exploring political, legal, organisational, and technical dimensions and imagining ideal and undesirable future scenarios. It then translates these insights into a concrete action plan, clarifying roles, processes, and conditions for success to ensure sustainable and coordinated data governance across projects.
-
-            [Download workshop as PDF](#){ .md-button .md-button--primary }
 
         ??? workshop_specifications "Workshop P: Documenting each person's responsibilities in data governance (mission statement/job profile)"
 
@@ -277,7 +254,13 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
+    #### Describing your dashboard and indicators {#describing-dashboard-indicators}
 
+    This workshop guides participants in designing dashboards and indicators that genuinely meet the needs of different user personas, ensuring each metric is meaningful, usable, and aligned with strategic objectives. By mapping the path from source data to dashboard outputs, it helps avoid overly complex or irrelevant indicators and provides solid foundations for prototyping or deployment.
+
+    ??? workshop_specifications "Workshop E: Describe your dashboard and indicators"
+
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
 
@@ -346,7 +329,7 @@ Prototyping turns a theoretical concept into a tangible proof of feasibility. Ra
 - A UX/UI designer or facilitator (if possible) to ensure clear user journeys
 - An IT or infrastructure consultant to ensure compatibility with the existing environment and support implementation  
 
-???+ workshop_prototyping "DEFINE Workshops"
+???+ workshop_prototyping "DEFINE Resources"
 
     #### Produce a prototype of your project {#produce-prototype}
 
@@ -354,7 +337,7 @@ Prototyping turns a theoretical concept into a tangible proof of feasibility. Ra
 
     ??? workshop_prototyping "Methodology. Step-by-step process of building a use case"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
+        [Download methodology as PDF](#){ .md-button .md-button--primary }
 
 
 ✨ **Achievements at the end of the phase**
@@ -401,7 +384,7 @@ Deployment marks the transition from experimentation to full implementation. Onc
 - Public purchasers and legal experts to formalise contracts and clarify rights of use and ownership
 - Potential partner local authorities for pooling or scaling initiatives  
 
-???+ workshop_deployment "IMPLEMENT Workshops"
+???+ workshop_deployment "IMPLEMENT Resources"
 
     #### Onboard, train, and involve agents {#onboard-train-involve-agents}
 
@@ -431,15 +414,6 @@ Deployment marks the transition from experimentation to full implementation. Onc
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-
-
-    #### Reviewing the legal framework and defining data clauses {#reviewing-legal-framework}
-
-    Content about compliance, contracts, data sharing agreements, GDPR...
-
-    ??? workshop "Workshop: ???"
-
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 ## Other resources
 
