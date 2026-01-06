@@ -18,13 +18,32 @@ LDT4SSC pilots are open to a wide range of stakeholders, including:
 - Technology providers and AI innovators from the private and public sector  
 
 ---
+## Piloting opportunities
+
+<p align="center">👉 Check the sections below for more detailed information on each Work Strand.</p>
+
+<div align="center" style="font-size: 2em; margin: 20px 0;">
+⬇️
+</div>
 
 **Work Strands (WS):**  
 The project foresees **three Work Strands** through which potential pilots can apply to receive funding and develop their solutions:  
 
-- **WS1: Technical Inter-connection of LDTs** – Linking and scaling digital twins that are already in place  
-- **WS2: Creation of LDTs Based on Common Needs** – Addressing shared urban or regional challenges (e.g., cross-border traffic, air pollution).  
-- **WS3: Adding New Advanced AI-Based Tools to existing LDTs** – Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDTs Toolbox.  
+!!! abstract "WS1: Technical Interconnection of LDTs"
+    **Linking and scaling digital twins that are already in place**
+
+    [:octicons-arrow-right-24: View Details](guidance_content/ws1.md)
+
+!!! abstract "WS2: Creation of LDTs Based on Common Needs"
+    **Addressing shared urban or regional challenges (e.g., cross-border traffic, air pollution)**
+
+    [:octicons-arrow-right-24: View Details](guidance_content/ws2.md)
+
+!!! abstract "WS3: Adding New Advanced AI-Based Tools to existing LDTs"
+    **Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDTs Toolbox**
+
+    [:octicons-arrow-right-24: View Details](guidance_content/ws3.md)
+
 
 ---
 
@@ -155,20 +174,7 @@ END commenting out requirements -->
 
 
 
-
-
-
-
----
-
-<p align="center">👉 Check the sections below for more detailed information on each Work Strand.</p>
-
-<div align="center" style="font-size: 2em; margin: 20px 0;">
-⬇️
-</div>
-
-
-## Work Strands - Piloting Opportunities
+<!-- ## Work Strands - Piloting Opportunities
 
 
 
@@ -200,12 +206,7 @@ END commenting out requirements -->
 
     [:octicons-arrow-right-24: View Details](guidance_content/ws3.md)
 
-</div>
-
-
-
----
-
+</div> -->
 
 
 ## Testing Environment  
