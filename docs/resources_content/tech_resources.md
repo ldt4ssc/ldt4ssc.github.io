@@ -1,12 +1,53 @@
 # Technical Resources
-These technical resources offer pilots and community stakeholders a curated overview of the standards, tools, frameworks, and implementations that permeate interoperable and scalable Local Digital Twin deployments in the LDT4SSC project. Drawing on the [Technical Landscape Report](#the-technical-landscape-report), we provide a **[resource library](#technical-resource-library)** that guides users through resources for LDT ecosystems - from interoperability standards and data space protocols to context brokers, discovery services, and AI toolkits - helping pilots and applicants make informed technical choices as they design their interconnection (Work Strand 1), deploy and expand their digital twins (Work Strand 2), or develop advanced services for them (Work Strand 3). It serves as a practical entry point for navigating an incremental reference of assets, aligned with EU digital and green transformation goals.
+
+!!! tip "On this page"
+    - [Technical Landscape](#technical-landscape) - Understanding the ecosystem
+    - [What is a Local Digital Twin?](#definition-of-a-local-digital-twin-ldt) - Core concepts
+    - [Example Implementations](#example-implementations) - See LDTs in action
+    - [Reference Architecture](#reference-architecture) - Technical architecture
+    - 📚 [Technical Resource Library](#technical-resource-library) - Browse tools & standards
+
+## 🎯 What you'll find here
+
+These technical resources offer pilots and community stakeholders a curated overview of the standards, tools, frameworks, and implementations that permeate interoperable and scalable Local Digital Twin deployments in the LDT4SSC project.
+
+**Quick links:**
+
+- 📚 [Technical Resource Library](#technical-resource-library) - Browse standards, tools, protocols and frameworks
+- 📊 [Technical Landscape Report](#the-technical-landscape-report) - Technical overview of ecosystem
+- 🏛️ [Example Implementations](#example-implementations) - Real-world LDT projects
+
+The resources guide you through the LDT ecosystem - from interoperability standards and data space protocols to context brokers, discovery services, and AI toolkits - helping pilots and applicants make informed technical choices across three work strands.
+
+### Work Strands Overview
+
+The technical resources in this library support three interconnected work strands, each with different technical priorities:
+
+!!! abstract "WS1: Technical Interconnection of LDTs"
+    **Linking and scaling digital twins that are already in place**
+
+    Focus on interoperability standards, data space connectors, federated catalogues, and context broker federation for connecting existing LDT implementations.
+
+!!! abstract "WS2: Creation of LDTs Based on Common Needs"
+    **Addressing shared urban or regional challenges (e.g., cross-border traffic, air pollution)**
+
+    Emphasis on semantic data models, NGSI-LD context brokers, domain-specific ontologies, and collaborative data governance frameworks.
+
+!!! abstract "WS3: Adding New Advanced AI-Based Tools to existing LDTs"
+    **Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDTs Toolbox**
+
+    Tools for AI/ML integration, predictive analytics, simulation platforms, and Testing and Experimentation Facilities (TEFs).
+
+---
 
 ## Technical Landscape
-The project’s technical landscape is built on a foundation of open standards that ensure Local Digital Twins (LDTs) can easily connect, understand each other’s data, and operate across cities and communities. At its foundation is a strong commitment to interoperability by design, aligned with European frameworks such as the [European Interoperability Framework (EIF)](https://interoperable-europe.ec.europa.eu/collection/iopeu-monitoring/european-interoperability-framework-detail), [Minimal Interoperability Mechanisms (MIMs Plus)](https://living-in.eu/sites/default/files/files/mims-plus-v.8_2.pdf), and the EU’s emerging regulatory environment for data, AI, and digital services. This landscape acknowledges the reality that communities operate diverse legacy systems - data platforms, dashboards, GIS environments, BIM/CIM models - and offers clear guidance on how they can evolve towards connected, sovereign, and sustainable digital infrastructures.
 
-Complementing other European initiatives - including the [DS4SSCC-DEP](https://www.ds4sscc.eu/) project, the [EU LDT Toolbox](https://interoperable-europe.ec.europa.eu/collection/ldttoolbox), [SIMPL Smart Middleware](https://digital-strategy.ec.europa.eu/en/policies/simpl), and [Gaia-X](https://gaia-x.eu/) trust frameworks - the project provides pilots with a harmonised set of standards, protocols, and tools that enable seamless data sharing across sectors and borders. The initiatives outlined in the technical landscape aim at progressively integrating local data platforms towards interoperability, facilitating the deployment of data spaces through trust frameworks, discovery services, and usage-controlled data exchange. These data spaces can then interconnect through shared connectors to form a European-wide federation. This is the foundation upon which pilots can interconnect existing LDTs (WS1), develop and expand LDTs (WS2), and integrate advanced AI-driven capabilities (WS3).
+??? info "Understanding the technical ecosystem (click to expand)"
+    The project's technical landscape is built on a foundation of open standards that ensure Local Digital Twins (LDTs) can easily connect, understand each other's data, and operate across cities and communities. At its foundation is a strong commitment to interoperability by design, aligned with European frameworks such as the [European Interoperability Framework (EIF)](https://interoperable-europe.ec.europa.eu/collection/iopeu-monitoring/european-interoperability-framework-detail), [Minimal Interoperability Mechanisms (MIMs Plus)](https://living-in.eu/sites/default/files/files/mims-plus-v.8_2.pdf), and the EU's emerging regulatory environment for data, AI, and digital services. This landscape acknowledges the reality that communities operate diverse legacy systems - data platforms, dashboards, GIS environments, BIM/CIM models - and offers guidance on how they can evolve towards connected, sovereign, and sustainable digital infrastructures.
 
-At the operational level, the technical landscape points pilots to concrete, open technologies - such as [NGSI-LD](https://ngsi-ld.org/) context brokers, [DCAT](https://www.w3.org/TR/vocab-dcat-3/)/[DCAT-AP](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) metadata catalogs, [ODRL](https://www.w3.org/TR/odrl-model/) for usage policies, and standardized APIs - to ensure that LDT services are discoverable, reusable, and portable across cities. Combined with AI and simulation technologies supported through Testing and Experimentation Facilities (TEFs), this ecosystem enables cities to move from isolated platforms to federated, trustworthy, and citizen-centric digital twins. Ultimately, the landscape envisions collaboration, innovation, and scaling for communities towards digital services that advance Europe’s green and digital transitions.
+    Complementing other European initiatives - including the [DS4SSCC-DEP](https://www.ds4sscc.eu/) project, the [EU LDT Toolbox](https://interoperable-europe.ec.europa.eu/collection/ldttoolbox), [SIMPL Smart Middleware](https://digital-strategy.ec.europa.eu/en/policies/simpl), and [Gaia-X](https://gaia-x.eu/) trust frameworks - the project provides pilots with a harmonised set of standards, protocols, and tools that enable seamless data sharing across sectors and borders. The initiatives outlined in the technical landscape aim at progressively developing local data platforms towards fully-fledged LDTs, aiming at interoperability, facilitating the deployment of data spaces through trust frameworks, discovery services, and usage-controlled data exchange. These data spaces can then interconnect through shared connectors to form a European-wide federation. This is the foundation upon which pilots can interconnect existing LDTs (WS1), develop and expand LDTs (WS2), and integrate advanced AI-driven capabilities (WS3).
+
+    At the operational level, the technical landscape points pilots to concrete, open technologies - such as [NGSI-LD](https://ngsi-ld.org/) context brokers, [DCAT](https://www.w3.org/TR/vocab-dcat-3/)/[DCAT-AP](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) metadata catalogs, [ODRL](https://www.w3.org/TR/odrl-model/) for usage policies, and standardised APIs - to ensure that LDT services are discoverable, reusable, and portable across cities. Combined with AI and simulation technologies supported through Testing and Experimentation Facilities (TEFs), this ecosystem enables cities to move from isolated platforms to federated, trustworthy, and citizen-centric digital twins. Ultimately, the landscape envisions collaboration, innovation, and scaling for communities towards digital services that advance Europe's green and digital transitions.
 
 ### The Technical Landscape Report
 The Technical Landscape Report focuses on establishing the technical foundations necessary to support pilot projects within the Local Digital Twins for Smart and Sustainable Communities’ (LDT4SSC) open calls.
@@ -14,26 +55,30 @@ The Technical Landscape Report focuses on establishing the technical foundations
 !!! info "The Technical Landscape Report"
     [Download report as PDF](#){ .md-button .md-button--primary }
 
+---
+
 ## Definition of a Local Digital Twin (LDT)
 A Local Digital Twin is a digital representation of physical assets, systems, or processes, in a defined local context (e.g., city, district, building, industry, port, airport). It leverages either historical data, near real-time data, or real-time data, and it enables visualisation, analysis, simulation, and reasoning services that support decision-making. 
 
 It aims to dynamically represent a defined observed geographical area to analyse, understand, anticipate, and simulate the effects of public policies, environmental hazards, climate change, development projects or disruptions. It supports strategic decision-making, consultation, foresight, and scenario design. It can include automated decision-making and execution (actuation). It can also incorporate other sources of data, including Building Information Models (BIM), Geographic Information Systems (GIS), and/or sector-specific models (mobility, climate, energy, etc.)
 
-### Functional scope of a Local Digital Twin
-At its core, a Local Digital Twin relies on a contextual and semantic data management approach, enabling the representation and interlinking of entities, attributes, and relationships across domains. This may be implemented using different architectural technologies, such as context management systems, knowledge meta-model, or equivalent solutions. Other components are **additional**, and they enable: integration of data (**ETL**), management of access rights to the twin's data and services (**Identity**), production of **visualisations** for tangible end-user data analysis, etc.
+??? info "Functional scope of a Local Digital Twin (click to expand)"
+    At its core, a Local Digital Twin relies on a contextual and semantic data management approach, enabling the representation and interlinking of entities, attributes, and relationships across domains. This may be implemented using different architectural technologies, such as context management systems, knowledge meta-model, or equivalent solutions. Other components are **additional**, and they enable: integration of data (**ETL**), management of access rights to the twin's data and services (**Identity**), production of **visualisations** for tangible end-user data analysis, etc.
 
-![Functional scope of a LDT](../assets/functional_scope.svg){ width="100%" align="center" }
+    ![Functional scope of a LDT](../assets/functional_scope.svg){ width="100%" align="center" }
 
-The components of the scope of an LDT that are circled with dotted lines (Policy and Catalog) are not essential to the Digital Twin but enable the interconnection with other Digital Twins. Policy describes the obligations and rights of both the data producer and the user; the former describes how a user can use the data at hand, and the latter says what they want to do with the data. A verification is then carried out using Open Digital Rights Language [(ODRL)](https://www.w3.org/TR/odrl-model/) managed by the Eclipse Dataspace Components [(EDC)](https://projects.eclipse.org/projects/technology.edc), SIMPL is in charge of enabling this. Catalogue enables the data cataloguing of one's data (exposing the metadata) as well as the consumption of data from other data catalogues for interconnection.
+    The components of the scope of an LDT that are circled with dotted lines (Policy and Catalog) are not essential to the Digital Twin but enable the interconnection with other Digital Twins. Policy describes the obligations and rights of both the data producer and the user; the former describes how a user can use the data at hand, and the latter says what they want to do with the data. A verification is then carried out using Open Digital Rights Language [(ODRL)](https://www.w3.org/TR/odrl-model/) managed by the Eclipse Dataspace Components [(EDC)](https://projects.eclipse.org/projects/technology.edc), SIMPL is in charge of enabling this. Catalogue enables the data cataloguing of one's data (exposing the metadata) as well as the consumption of data from other data catalogues for interconnection.
 
-### Capabilities of a Local Digital Twin
-![Capabilities of a LDT](../assets/capabilities.svg){ width="100%" align="center" }
+??? info "Capabilities of a Local Digital Twin (click to expand)"
+    ![Capabilities of a LDT](../assets/capabilities.svg){ width="100%" align="center" }
 
-1. **Descriptive**: Current (and past) states of the real-world asset – static and dynamic. Augmentation functions are responsible for extracting information out of the stored data.
-2. **Predictive**: Extends the descriptive twin capability by providing predictions on the way the real asset could evolve in the future, using predictive models to envision a future scenario.
-3. **Prospective**: Conducts "what-if" analyses to evaluate the potential consequences of actions, extending the predictive model to multiple possible future scenarios.
-4. **Prescriptive**: Extends (or, in some cases, executes) the prospective capability with suggested actions on the real system to achieve a given objective based on the analysis.
-5. **Diagnostic**: Explains situations or alerts about deviations from expected conditions. Capability for evaluating what happened, especially in the case of a malfunction of the real asset.
+    1. **Descriptive**: Current (and past) states of the real-world asset – static and dynamic. Augmentation functions are responsible for extracting information out of the stored data.
+    2. **Predictive**: Extends the descriptive twin capability by providing predictions on the way the real asset could evolve in the future, using predictive models to envision a future scenario.
+    3. **Prospective**: Conducts "what-if" analyses to evaluate the potential consequences of actions, extending the predictive model to multiple possible future scenarios.
+    4. **Prescriptive**: Extends (or, in some cases, executes) the prospective capability with suggested actions on the real system to achieve a given objective based on the analysis.
+    5. **Diagnostic**: Explains situations or alerts about deviations from expected conditions. Capability for evaluating what happened, especially in the case of a malfunction of the real asset.
+
+---
 
 ## Example implementations
 
@@ -64,7 +109,7 @@ The components of the scope of an LDT that are circled with dotted lines (Policy
     Zurich’s digital twin has enabled integration of several planning domains. It supports the Municipal Development Plan, showing the current building development, the allowed development, and possible scenarios; urban climate analysis, modelling airflow and heat mitigation strategies; or even architectural competitions, where Augmented Reality (AR) and web-based tools are planned to allow juries to assess digital submissions interactively. Moreover, participatory initiatives were also put in place, such as “Minecraft Zurich”, which allows citizens to design and submit their own ideas, lowering barriers to political participation.
 
 
-    Zurich’s example exemplifies a mature, multi-purpose data platform for data-driven urban governance. It combines spatial accuracy and open access principles, enhancing the city’s ability to simulate, visualise, and discuss planning scenarios, with the collaboration of the population. Further developments envisioned by the city include bettering their interconnected 3D data, with faster updating for instance; systematic recording of urban furniture; better interconnection of BIM and GIS world; building a 3D utility cadaster, among others. The Zurich example demonstrates how a data platform can evolve towards a fully-fledged digital twin, with an operational decision-support system, allowing citizen participation to foster sustainable urban growth
+    Zurich's example exemplifies a mature, multi-purpose data platform for data-driven urban governance. It combines spatial accuracy and open access principles, enhancing the city's ability to simulate, visualise, and discuss planning scenarios, with the collaboration of the population. Further developments envisioned by the city include bettering their interconnected 3D data, with faster updating for instance; systematic recording of urban furniture; better interconnection of BIM and GIS world; building a 3D utility cadaster, among others. The Zurich example demonstrates how a data platform can evolve towards a fully-fledged digital twin, with an operational decision-support system, allowing citizen participation to foster sustainable urban growth.
 
 ??? example "Differdange (LU): clean energy and mobility"
 
@@ -82,7 +127,9 @@ The components of the scope of an LDT that are circled with dotted lines (Policy
 
     A total of 30 Nexelec Carbon sensors were deployed in 14 primary classrooms, 6 nursery classrooms, 1 activity room, 2 dormitories and 1 large dining hall. They are connected to the Orange LoRaWAN network, and the data collected is then centralised on an EGM TWIN·PICKS platform (FIWARE architecture with Stelio context broker)  where, among other things, the school air confinement index (ICONE) is calculated to assess the degree of air confinement in a room. This is based on continuous CO2 measurement over a school week at 10-minute intervals and calculated exclusively for periods when the room is occupied.
 
-    The city of Antibes, which has a 3D representation of its territory, wanted to feed the ICONE index information into this representation, thereby enabling better visualisation of the data and creating a digital twin of the territory. To do this, the temporal data is retrieved directly from the NGSI-LD API by the 3D visualisation tools Terra Explorer and Césium. 
+    The city of Antibes, which has a 3D representation of its territory, wanted to feed the ICONE index information into this representation, thereby enabling better visualisation of the data and creating a digital twin of the territory. To do this, the temporal data is retrieved directly from the NGSI-LD API by the 3D visualisation tools Terra Explorer and Césium.
+
+---
 
 ## Reference architecture
 We provide a possible high-level architecture implementation for achieving the desired interconnection between existing LDTs, scope of WS1. Pilots are expected to have a multitude of possible implementations of LDTs internally, so we focus on providing a generic interconnection architecture. To possible internal architectures non-compliant *a priori* with open standards and open software, we refer to as a "legacy LDT" in the architecture diagram below. Compliant LDTs are expected to have a context broker, responsible for assuring interoperability, among other components. 
@@ -91,9 +138,14 @@ We provide a possible high-level architecture implementation for achieving the d
 
 As part of WS1 requirements, pilots are expected to have implemented a [SIMPL Governance Authority Agent](https://code.europa.eu/simpl/simpl-open/development/agents/governance-authority/-/blob/main/documents/deployment-guide/README.md), which guarantees a federated catalogue and assures the schema and vocabulary used by the interconnected LDTs. A context broker can be linked to another one by the means of a federation broker, or via a data space. In case the connection is done via a data space, a data space connector must be deployed (unless using a SIMPL Agent, which includes an [EDC connector](https://github.com/eclipse-edc/Connector)). This allows other consumers or providers to be onboarded on the same data space, ensuring access policies and also interacting with the interconnected LDTs, guaranteeing a sustainable interoperable environment.
 
-## Technical resource library
+---
 
-The technical resource library is categorised by layer (according to the LDT-Toolbox), by category (whether standard, protocol, framework, or tool/implementation), and by scope (whether relevant for data spaces, AI for smart cities, interoperability, or LDTs). In the visualisation below, you may filter by each categorisation, as well as by the relevant **MIMs Plus**. Use the Search bar to look for a specific resource, and suggest a resource using the button below.
+## 📚 Technical Resource Library
+
+!!! note "How to use this library"
+    Filter resources by **Layer**, **MIMs Plus** category, and **Scope**. Use the search bar to find specific standards or tools, and suggest new resources using the button below.
+
+The technical resource library is categorised by layer (according to the LDT-Toolbox), by category (whether standard, protocol, framework, or tool/implementation), and by scope (whether relevant for data spaces, AI for smart cities, interoperability, or LDTs).
 
 <div style="text-align: center; margin-bottom: 1.5rem;">
   <a href="#suggest-a-resource" class="suggest-resource-button">Suggest a Resource</a>
