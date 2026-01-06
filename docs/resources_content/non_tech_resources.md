@@ -1,5 +1,42 @@
 # Non-technical Resources
-These non-technical resources provide practical guidance for the organisational, strategic, legal, and governance aspects of the pilot journey. They support pilots and applicants in aligning stakeholders, structuring responsibilities, anticipating risks, and creating the conditions for sustainable, interoperable, and widely adopted digital services. Together, these methods and workshops help build the shared culture, clarity, and coordination required to transform a use case into a long-lasting, impactful solution.
+
+!!! tip "On this page"
+    - [Example Stories](#example-stories) - See potential pilot scenarios
+    - 📖 [The LDT4SSC Methodology](#the-ldt4ssc-methodology) - Four-phase implementation framework
+    - [Other Resources](#other-resources) - Additional ecosystem resources
+
+## 🎯 What you'll find here
+
+These non-technical resources provide practical guidance for the organisational, strategic, legal, and governance aspects of the pilot journey.
+
+**Quick links:**
+
+- 📖 [The LDT4SSC Methodology](#the-ldt4ssc-methodology) - Navigate the four-phase framework
+- 💡 [Example Stories](#example-stories) - Fictional pilot scenarios for each work strand
+- [Other Resources](#other-resources) - Additional ecosystem resources
+
+The resources support pilots and applicants in aligning stakeholders, structuring responsibilities, anticipating risks, and creating the conditions for sustainable, interoperable, and widely adopted digital services. Together, these methods and workshops help build the shared culture, clarity, and coordination required to transform a use case into a long-lasting, impactful solution.
+
+### Work Strands Overview
+
+The non-technical resources support pilots across three interconnected work strands, each requiring different organisational approaches:
+
+!!! abstract "WS1: Technical Interconnection of LDTs"
+    **Linking and scaling digital twins that are already in place**
+
+    Focus on multi-stakeholder governance, legal frameworks for data sharing, cross-organisational coordination, and partnership models for federated LDT ecosystems.
+
+!!! abstract "WS2: Creation of LDTs Based on Common Needs"
+    **Addressing shared urban or regional challenges (e.g., cross-border traffic, air pollution)**
+
+    Emphasis on use case co-creation, stakeholder alignment, data governance frameworks, business model design, and responsible digital principles for new LDT initiatives.
+
+!!! abstract "WS3: Adding New Advanced AI-Based Tools to existing LDTs"
+    **Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDTs Toolbox**
+
+    Focus on change management, user training and adoption, ethical AI considerations, and preparing organisations for advanced analytics and decision-support capabilities.
+
+---
 
 ## Example stories
 To illustrate the potential of each WS, we present a set of Pilots’ Example Stories, i.e. fictional scenarios that demonstrate how future pilots could emerge and operate within the LDT4SSC project framework. These examples are intended to help prospective applicants envision their own roles and opportunities within the initiative.
@@ -15,7 +52,6 @@ The example stories developed for WS1 show how cities and communities with an ex
 
     This example reflects the ambition of WS1: to scale up EU-wide datasets and open-source solutions within the LDT ecosystem, demonstrating how federated approaches can transform local innovations into collective impact.
 
-
 ???+ example "Interconnected Networks Management and Service Marketplace"
 
     Cities of a DS4SSCC Pilot projects interconnect their Local Digital Twins (LDTs) with those of another group of communities to create a shared marketplace for essential public services, aligned with the priorities of each local authority. These services may include areas such as mobility, land-use planning, and energy or electricity management, reflecting the themes of the New European Bauhaus (NEB) and the European Green Deal. By leveraging the SIMPL building blocks and the FIWARE ecosystem of technologies, this new consortium integrates waste, energy, and water management systems, enabling local authority syndicates to exchange data, optimise resource allocation, and deliver new services across regions. The main challenge lies in ensuring the maturity of the connector, which must reliably bridge diverse platforms while maintaining data consistency and security.
@@ -28,9 +64,9 @@ The example stories developed for WS1 show how cities and communities with an ex
 
     The project delivers a real-time regional overview of energy supply and demand, enabling policymakers, businesses, and citizens to track consumption patterns and make informed choices. It demonstrates how federated LDTs can consolidate fragmented local data into a unified, actionable resource for advancing climate resilience and the energy transition.
 
+---
 
-
-## The LDT4SSC Methodology
+## 📖 The LDT4SSC Methodology
 
 <div class="methodology-diagram">
   <div class="diagram-inner">
@@ -347,8 +383,7 @@ At this stage of the method, the following elements have been produced or identi
 - A prototype that meets the use case
 - Reusable knowledge model(s)
 - The code used to produce the algorithms or models
-- Documentation of the prototype.
-
+- Documentation of the prototype
 
 ---
 
