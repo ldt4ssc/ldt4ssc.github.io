@@ -72,7 +72,7 @@ It aims to dynamically represent a defined observed geographical area to analyse
 ??? info "Capabilities of a Local Digital Twin (click to expand)"
     ![Capabilities of a LDT](../assets/capabilities.svg){ width="100%" align="center" }
 
-    1. **Descriptive**: Current (and past) states of the real-world asset – static and dynamic. Augmentation functions are responsible for extracting information out of the stored data.
+    1. **Descriptive**: Current (and past) states of the real-world asset – static and dynamic. Augmentation functions are responsible for extracting information out of the stored data and feeding it to live services or visualisation tools.
     2. **Predictive**: Extends the descriptive twin capability by providing predictions on the way the real asset could evolve in the future, using predictive models to envision a future scenario.
     3. **Prospective**: Conducts "what-if" analyses to evaluate the potential consequences of actions, extending the predictive model to multiple possible future scenarios.
     4. **Prescriptive**: Extends (or, in some cases, executes) the prospective capability with suggested actions on the real system to achieve a given objective based on the analysis.
