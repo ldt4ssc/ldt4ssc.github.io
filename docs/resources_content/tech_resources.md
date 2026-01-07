@@ -128,7 +128,7 @@ It aims to dynamically represent a defined observed geographical area to analyse
     A total of 30 Nexelec Carbon sensors were deployed in 14 primary classrooms, 6 nursery classrooms, 1 activity room, 2 dormitories and 1 large dining hall. They are connected to the Orange LoRaWAN network, and the data collected is then centralised on an EGM TWIN·PICKS platform (FIWARE architecture with Stelio context broker)  where, among other things, the school air confinement index (ICONE) is calculated to assess the degree of air confinement in a room. This is based on continuous CO2 measurement over a school week at 10-minute intervals and calculated exclusively for periods when the room is occupied.
 
     The city of Antibes, which has a 3D representation of its territory, wanted to feed the ICONE index information into this representation, thereby enabling better visualisation of the data and creating a digital twin of the territory. To do this, the temporal data is retrieved directly from the NGSI-LD API by the 3D visualisation tools Terra Explorer and Césium.
-
+<!-- START Commenting out ARCHITECTURE
 ---
 
 ## Reference architecture
@@ -137,7 +137,7 @@ We provide a possible high-level architecture implementation for achieving the d
 ![Reference architecture for interconnection](../assets/interconnection_architecture.svg){ width="100%" align="center" }
 
 As part of WS1 requirements, pilots are expected to have implemented a [SIMPL Governance Authority Agent](https://code.europa.eu/simpl/simpl-open/development/agents/governance-authority/-/blob/main/documents/deployment-guide/README.md), which guarantees a federated catalogue and assures the schema and vocabulary used by the interconnected LDTs. A context broker can be linked to another one by the means of a federation broker, or via a data space. In case the connection is done via a data space, a data space connector must be deployed (unless using a SIMPL Agent, which includes an [EDC connector](https://github.com/eclipse-edc/Connector)). This allows other consumers or providers to be onboarded on the same data space, ensuring access policies and also interacting with the interconnected LDTs, guaranteeing a sustainable interoperable environment.
-
+-->
 ---
 
 ## 📚 Technical Resource Library
