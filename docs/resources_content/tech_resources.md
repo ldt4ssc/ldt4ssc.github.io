@@ -56,7 +56,7 @@ The Technical Landscape Report focuses on establishing the technical foundations
     [Download report as PDF](#){ .md-button .md-button--primary }
 
 ---
-
+<!-- START commenting out definition
 ## Definition of a Local Digital Twin (LDT)
 We propose a working definition of a Local Digital Twin, aligned with the [MIM8: Local Digital Twins](https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys/mim8-local-digital-twins). A Local Digital Twin is a digital representation of physical assets, systems, or processes, in a defined local context (e.g., city, district, building, industry, port, airport). It leverages either historical data, near real-time data, or real-time data, and it enables visualisation, analysis, simulation, and reasoning services that support decision-making. 
 
@@ -77,8 +77,10 @@ It aims to dynamically represent a defined observed geographical area to analyse
     3. **Prospective**: Conducts "what-if" analyses to evaluate the potential consequences of actions, extending the predictive model to multiple possible future scenarios.
     4. **Prescriptive**: Extends (or, in some cases, executes) the prospective capability with suggested actions on the real system to achieve a given objective based on the analysis.
     5. **Diagnostic**: Explains situations or alerts about deviations from expected conditions. Capability for evaluating what happened, especially in the case of a malfunction of the real asset.
-
 ---
+
+
+-->
 
 ## Example implementations
 
