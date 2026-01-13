@@ -53,7 +53,7 @@ The technical resources in this library support three interconnected work strand
 The Technical Landscape Report focuses on establishing the technical foundations necessary to support pilot projects within the Local Digital Twins for Smart and Sustainable Communities’ (LDT4SSC) open calls.
 
 !!! info "The Technical Landscape Report"
-    [Download report as PDF](#){ .md-button .md-button--primary }
+    [Download report as PDF](../assets/PDFs/LDT4SSC_Technical_Landscape_Report_for_Pilots.pdf){ .md-button .md-button--primary }
 
 ---
 
