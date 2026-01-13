@@ -3,6 +3,7 @@ site_url: https://knowledgehub.ldt4ssc.eu/
 
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: assets/logo.png   # Add your logo in docs/assets/logo.png
   features:
     - navigation.expand
@@ -46,6 +47,7 @@ extra_css:
   - assets/extra.css
   - css/resources_poc.css
   - css/methodology_diagram.css
+  - css/feedback_widget.css
 
 markdown_extensions: 
   - attr_list

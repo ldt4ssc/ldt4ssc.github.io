@@ -2,7 +2,7 @@
 
 !!! tip "On this page"
     - [Technical Landscape](#technical-landscape) - Understanding the ecosystem
-    - [What is a Local Digital Twin?](#definition-of-a-local-digital-twin-ldt) - Core concepts
+    - [What is a Local Digital Twin?](#what-is-a-local-digital-twin) - Core concepts
     - [Example Implementations](#example-implementations) - See LDTs in action
     - [Reference Architecture](#reference-architecture) - Technical architecture
     - 📚 [Technical Resource Library](#technical-resource-library) - Browse tools & standards
@@ -56,9 +56,16 @@ The Technical Landscape Report focuses on establishing the technical foundations
     [Download report as PDF](#){ .md-button .md-button--primary }
 
 ---
-<!-- START commenting out definition
-## Definition of a Local Digital Twin (LDT)
-We propose a working definition of a Local Digital Twin, aligned with the [MIM8: Local Digital Twins](https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys/mim8-local-digital-twins). A Local Digital Twin is a digital representation of physical assets, systems, or processes, in a defined local context (e.g., city, district, building, industry, port, airport). It leverages either historical data, near real-time data, or real-time data, and it enables visualisation, analysis, simulation, and reasoning services that support decision-making. 
+
+## What is a Local Digital Twin?
+
+The concept of a Local Digital Twin (LDT) is inherently dynamic and its definition is continuously evolving. Within the LDT4SSC project, we therefore adopt a provisional definition that reflects our current perspective, objectives, and scope. It is intended to converge with the definition of an LDT in the [MIM8: Local Digital Twins](https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys/mim8-local-digital-twins) that describes interoperability in terms of the application domain of LDTs. This definition is intended as a working reference rather than a fixed one, and it could be refined over the course of the project.
+
+In articulating this definition, we recognise that many cities and communities already operate mature Local Digital Twins, often built on architectural choices, technologies, or governance models that differ from those considered within this project. Such initiatives should not interpret the LDT4SSC definition as rendering their existing solutions out of scope or non-compliant by default. On the contrary, the project seeks to remain inclusive, valuing diverse implementations and learning from established practices, while providing a common conceptual framework.
+
+### Technical definition
+
+A Local Digital Twin is a digital representation of physical assets, systems, or processes, in a defined local context (e.g., city, district, building, industry, port, airport). It leverages either historical data, near real-time data, or real-time data, and it enables visualisation, analysis, simulation, and reasoning services that support decision-making. 
 
 It aims to dynamically represent a defined observed geographical area to analyse, understand, anticipate, and simulate the effects of public policies, environmental hazards, climate change, development projects or disruptions. It supports strategic decision-making, consultation, foresight, and scenario design. It can include automated decision-making and execution (actuation). It can also incorporate other sources of data, including Building Information Models (BIM), Geographic Information Systems (GIS), and/or sector-specific models (mobility, climate, energy, etc).
 
@@ -79,8 +86,6 @@ It aims to dynamically represent a defined observed geographical area to analyse
     5. **Diagnostic**: Explains situations or alerts about deviations from expected conditions. Capability for evaluating what happened, especially in the case of a malfunction of the real asset.
 ---
 
-
--->
 
 ## Example implementations
 
