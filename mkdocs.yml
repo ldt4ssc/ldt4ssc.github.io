@@ -70,6 +70,7 @@ extra_javascript:
 #  - js/footer.js
   - js/logo-top-redirect.js # script to avoid the frameset loop in the project website
   - js/frame-escape.js # script to escape the frame for all external links
+  - js/papaparse.min.js # CSV parser for Google Sheets integration
   - js/resources_poc.js # test resource interactive frame
 
 
