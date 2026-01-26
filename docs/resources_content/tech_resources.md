@@ -249,7 +249,7 @@ Know of a technical resource that should be included in our database? Share it w
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTRwPEhr_SjZekvfrwbSHNKugVfC6-HQSJGPL8FJIZsVWamA/viewform?embedded=true" width="100%" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="/js/papaparse.min.js"></script>
 <script src="/js/resources_poc.js"></script>
 
 ## Other resources
