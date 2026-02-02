@@ -1,5 +1,11 @@
 # Pilot Guidance
 
+!!! tip "On this page"
+    - [General Guidance](#general-guidance) - Overview of piloting process
+    - [Piloting opportunities](#piloting-opportunities) - Work-strand specific information
+    - [Testing environment](#testing-environment) - Sandbox for pilot demonstrators
+    - [Application process](#application-process) - Summary for potential applicants
+
 ## General Guidance
 This section provides an overview of the piloting process within LDT4SSC and offers guidance and relevant resources for each of the Work Strands.  
 
@@ -217,7 +223,7 @@ END commenting out requirements -->
 
 ## Application Process  
 
-👉 The first open call is now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-one/). Apply until 15/01/2026, 23:59 CET.
+👉 The second open call is now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply until 02/04/2026, 23:59 CET.
 
 To apply, 
 
