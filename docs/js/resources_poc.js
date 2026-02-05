@@ -132,6 +132,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const desc = row.Description || "";
     const combinedDescription = longName && desc ? `${longName}. ${desc}` : longName || desc;
 
+    // Extract dynamic links from columns A, B, C, D, E
+    const links = [
+      { text: row["A Resource"], url: row["A Link"] },
+      { text: row["B Resource"], url: row["B Link"] },
+      { text: row["C Resource"], url: row["C Link"] },
+      { text: row["D Resource"], url: row["D Link"] },
+      { text: row["E Resource"], url: row["E Link"] },
+    ].filter(link => link.text && link.url); // Only include links with both text and URL
+
     return {
       id: row.Index || `r${String(index + 1).padStart(3, '0')}`,
       short_name: row["Short name"] || "",
@@ -142,8 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
       thematic_area: row.Layer || "",
       scope: row.Scope || "",
       mims: parseMims(row.MIMs),
-      docs: row.Docs || "",
-      git: row.Git || "",
+      links: links,
       description: combinedDescription,
       type: "technical", // Default value, not in sheet
       tags: [] // Default value, not in sheet
@@ -504,19 +512,16 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 
   <div class="card-footer">
-    <a href="${escapeHtml(resource.docs || "#")}" class="resource-button">
-      Go to resource
-      <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M5 12h14m-7-7 7 7-7 7"/>
-      </svg>
-    </a>
-    ${resource.git ? `
-    <a href="${escapeHtml(resource.git)}" class="resource-button resource-button-secondary">
-      Source
-      <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M5 12h14m-7-7 7 7-7 7"/>
-      </svg>
-    </a>` : ''}
+    <div class="resource-links">
+      ${(resource.links || []).length > 0
+        ? (resource.links || []).map(link => `
+          <a href="${escapeHtml(link.url)}" class="resource-link-button" target="_blank" rel="noopener">
+            ${getLinkEmoji(link.text)} ${escapeHtml(link.text)}
+          </a>
+        `).join("")
+        : '<span class="no-links">No links available</span>'
+      }
+    </div>
   </div>
 </article>`;
   }
@@ -618,6 +623,21 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
+  }
+
+  // Get emoji for link button based on text content
+  function getLinkEmoji(text) {
+    const lowerText = text.toLowerCase();
+    if (lowerText.includes('doc') || lowerText.includes('specification') || lowerText.includes('spec')) return '📄';
+    if (lowerText.includes('manual')) return '📖';
+    if (lowerText.includes('marketplace') || lowerText.includes('store')) return '🛒';
+    if (lowerText.includes('git') || lowerText.includes('source') || lowerText.includes('code') || lowerText.includes('repo')) return '💻';
+    if (lowerText.includes('api')) return '🔌';
+    if (lowerText.includes('demo') || lowerText.includes('example')) return '🎯';
+    if (lowerText.includes('download')) return '⬇️';
+    if (lowerText.includes('video') || lowerText.includes('tutorial')) return '🎬';
+    if (lowerText.includes('web') || lowerText.includes('site') || lowerText.includes('home')) return '🌐';
+    return '🔗'; // Default link emoji
   }
 
   // Event listeners
