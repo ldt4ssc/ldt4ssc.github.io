@@ -1,0 +1,954 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://knowledgehub.ldt4ssc.eu/guidance_content/ws1/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/fav_icon_resized.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>WS1 Piloting Activities - Technical Inter-connection of Existing LDTs - Knowledge Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+      <link rel="stylesheet" href="../../css/resources_poc.css">
+    
+      <link rel="stylesheet" href="../../css/methodology_diagram.css">
+    
+      <link rel="stylesheet" href="../../css/feedback_widget.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ws1-piloting-activities-technical-inter-connection-of-existing-ldts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ldt4ssc.eu/" title="Knowledge Hub" class="md-header__button md-logo" aria-label="Knowledge Hub" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Knowledge Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              WS1 Piloting Activities - Technical Inter-connection of Existing LDTs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ldt4ssc.eu/" title="Knowledge Hub" class="md-nav__button md-logo" aria-label="Knowledge Hub" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Knowledge Hub
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategy & Sustainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Communities Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot Guidance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources for Pilots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot Journey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brief-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brief Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ws1-requirements-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WS1 Requirements Cheat Sheet:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WS1 Requirements Cheat Sheet:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minimum-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Minimum Conditions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#describe-in-the-application-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Describe in the Application Form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provide-as-complementary-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧱 Provide as complementary material
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adopt-during-the-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Adopt during the project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specify-upon-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✏️ Specify upon application
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⭐ Recommendations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ws1-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WS1 Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+
+<h1 id="ws1-piloting-activities-technical-inter-connection-of-existing-ldts">WS1 Piloting Activities - Technical Inter-connection of Existing LDTs</h1>
+<h2 id="brief-overview">Brief Overview</h2>
+<p>This Work Strand focuses on connecting and testing existing Local Digital Twins (LDTs) within a European ecosystem. The goal is to demonstrate interoperability, enable data sharing across domains and borders, and unlock new opportunities for smarter and more resilient communities.  </p>
+<p><strong>Key facts:</strong> </p>
+<ul>
+<li>6–8 pilots will be selected  </li>
+<li>Start of the pilots: May 2026  </li>
+<li>Duration: 18 months  </li>
+<li>Funding: 50% co-funding required  </li>
+<li>Opening of Open Call 1: 14th of November 2025</li>
+</ul>
+<p>👉 First open call now <strong>OPEN</strong>. Check it out <a href="https://ldt4ssc.eu/call-one/">here</a>. Apply until 15/01/2026, 23:59 CET.</p>
+<p><strong>What is the goal?</strong></p>
+<ul>
+<li>Demonstrate interoperability between existing LDTs  </li>
+<li>Enable cross-domain and cross-border data sharing  </li>
+<li>Build the foundations for a European federation of LDTs  </li>
+<li>Unlock innovation opportunities for cities, communities, and providers  </li>
+</ul>
+<hr />
+<p><strong>Who Are We Looking For?</strong>  </p>
+<p>Municipalities, groups of municipalities, syndicates, or regions, who have a <strong>Local Digital Twin</strong> in place, with a description and a functional perimeter, and who are willing to share data, models, and services with:<br />
+- Other data platforms (LDT, hypervision, etc.)<br />
+- Data spaces  </p>
+<p>Municipalities or regions aiming to:<br />
+- Create a data space to link a batch of local data platforms<br />
+- Develop a marketplace of services  </p>
+<p><strong>Consortium composition:</strong>  </p>
+<ul>
+<li>At least 2 public entities (from at least two different eligible countries)</li>
+<li>At least 1 other partner from the following:  </li>
+<li>Private entity (e.g., service provider)  </li>
+<li>Private association (legal status)  </li>
+<li>Trusted third party  </li>
+<li>Representative of a use-case sector  </li>
+</ul>
+<hr />
+<h2 id="ws1-requirements-cheat-sheet">WS1 Requirements Cheat Sheet:</h2>
+<p>This is a <strong>cheat sheet</strong> for the first open call's requirements. For a complete list of requirements, please refer to the <a href="https://ldt4ssc.eu/call-one/">open call</a>.</p>
+<h3 id="minimum-conditions">🎯 <strong>Minimum Conditions</strong></h3>
+<ul>
+<li>🏛️ <strong>2+ public authorities</strong>, each with a <strong>digitally mature LDT</strong> (Rq1)</li>
+<li>🤝 At least <strong>1 aditional private entity</strong> partner</li>
+<li>🔀 <strong>2+ cross-sectoral use cases</strong> with <strong>one shared service each</strong> (Rq2)</li>
+</ul>
+<h3 id="describe-in-the-application-form">📋 <strong>Describe</strong> in the Application Form</h3>
+<ul>
+<li><strong>LDTs and their capabilities</strong> (dynamic data + services) (Rq3)</li>
+<li>
+<p><strong>Architectures</strong> (technical + functional) (Rq4) </p>
+<p>→ include diagrams, tools, standards, data lifecycle</p>
+</li>
+<li>
+<p><strong>Data governance</strong> (Rq5)</p>
+<p>current ➜ target </p>
+</li>
+<li>
+<p><strong>Project management</strong>, incl. political + technical support (Rq6)</p>
+</li>
+<li><strong>AI/XR usage</strong> + ethics/legal safeguards (Rq7)</li>
+<li>
+<p><strong>Alignment</strong> with <strong>EU</strong> priorities and projects (Rq8)</p>
+<p>→ Green Deal, New European Bauhaus</p>
+<p>→ LDT4SSC objectives</p>
+</li>
+<li>
+<p><strong>Engagement of stakeholders</strong> from the Quadruple Helix (Rq10)</p>
+<p>public • private • research • civil society</p>
+</li>
+<li>
+<p><strong>Relevance</strong> and replicability (Rq11)</p>
+</li>
+<li>
+<p><strong>EU technology stack</strong> and <strong>infrastructure</strong> to be used (Rq12)</p>
+<p>→ SIMPL, DSSC, ...</p>
+<p>→ LDT CitiVERSE EDIC, Gaia-X, ...</p>
+</li>
+<li>
+<p><strong>Project phases</strong> (Rq13)</p>
+<p>Explore → Validate → Define → Implement</p>
+</li>
+<li>
+<p><strong>Technical interconnection</strong>, including tools, softwares, standards (Rq14)</p>
+<p>→ Demonstrate usage of SIMPL Governance Authority Agent</p>
+</li>
+<li>
+<p><strong>Ambition</strong> and <strong>rationale</strong> for interconnecting LDTs (Rq19)</p>
+</li>
+<li>Tangible <strong>benefits</strong> and long-term <strong>impacts</strong> (Rq20)</li>
+<li>Socio-economic and environmental <strong>effects</strong> (Rq21)</li>
+<li><strong>Maintenance</strong> and <strong>expansion</strong> of services and activities (Rq24)</li>
+</ul>
+<h3 id="provide-as-complementary-material">🧱 <strong>Provide</strong> as complementary material</h3>
+<ul>
+<li><strong>2 draft diagrams</strong> (technical + functional) per use case (Rq15)</li>
+<li><strong>Contractual framework</strong> guaranteeing the sustainability of the LDTs</li>
+<li><strong>Letter of  Commitment</strong> with political endorsement (Rq9)</li>
+<li><strong>Ownership and Control Declaration</strong></li>
+<li><strong>Financial form</strong></li>
+<li><strong>Ethics and data protection</strong> assessment</li>
+</ul>
+<h3 id="adopt-during-the-project">🛠️ <strong>Adopt</strong> during the project</h3>
+<ul>
+<li>Active <strong>engagement</strong> of end-users (Rq10)</li>
+<li><strong>Linked Data Ontology (MIM1)</strong> for semantic consistency (Rq16)</li>
+<li>At least <strong>5 foundational MIMs Plus</strong> for engagement (Rq18)</li>
+<li><strong>Open data models</strong>, to be shared back to stakeholders (Rq23)</li>
+<li>The <strong>LDT Toolbox Marketplace</strong> for service sharing (Rq23)</li>
+<li>The <strong>LDT4SSC's Knowledge Hub</strong> for regular documentation and updates (Rq23)</li>
+</ul>
+<h3 id="specify-upon-application">✏️ <strong>Specify</strong> upon application</h3>
+<ul>
+<li><strong>Data, assets, or services</strong> to be shared (Rq17)</li>
+<li><strong>Sectors involved, main providers, beneficiaries</strong> (Rq17)</li>
+<li><strong>The MIMs Plus (MIM0-MIM8)</strong> project will engage with (Rq18)</li>
+<li>Equivalent <strong>open-source solution</strong>, in case of proprietary components (Rq23)</li>
+</ul>
+<h3 id="recommendations">⭐ <strong>Recommendations</strong></h3>
+<ul>
+<li>
+<p>Assess <strong>LORDIMAS</strong> maturity (Rc1)  </p>
+<p>→ Pilot Lead: <strong>Digitally Optimised</strong>  </p>
+<p>→ Others: <strong>≥ Moderate</strong></p>
+</li>
+<li>
+<p>Use <strong>open-source components</strong> (Rc2)</p>
+</li>
+<li>Include in agreement <strong>Intellectual Property</strong> and exploitation rights (Rc3)</li>
+<li>
+<p>Technically stablish (Rc4):</p>
+<p>→ Data catalogue using <strong>DCAT</strong> vocabulary</p>
+<p>→ A <strong>data management system</strong> with contextualised metadata capacities</p>
+<p>→ <strong>Identity and access management</strong> (OAuth2, OpenID Connect, Verifiable Credentials)</p>
+</li>
+<li>
+<p>Pursue alignment with upcoming <strong>LDT Toolbox</strong> (Rc5)</p>
+</li>
+<li>
+<p>Describe compliance with <strong>frameworks</strong> (Rc6):</p>
+<p>→ Gaia-X, IDSA, DSBA, DSSC</p>
+</li>
+<li>
+<p>Record <strong>baseline data</strong> (for meaningful comparisons) (Rc7)</p>
+</li>
+<li>Assess maturity in <strong>eco-design</strong> (Rc8)</li>
+</ul>
+<!--
+### 2. Relevance
+ 🎯 **Show Alignment With**
+
+  - **EU priorities**: Green Deal, New European Bauhaus  
+  - **LDT4SSC objectives**
+
+👥 **Engagement**
+
+  - **End-users involved throughout**
+  - Include **3+ Quadruple Helix groups**:  
+    public • private • research • civil society
+
+ 📌 **Also Provide**
+
+  - **Political endorsement** (+ links or documents)
+  - **Transferability** to other EU communities
+  - Expected **EU stacks & infrastructures** (Simpl-Open, DSSC, Gaia-X, CitiVERSE…)
+
+
+
+### 3. Implementation
+ 🚀 **Project Phases**
+
+**Explore → Validate → Define → Implement**
+
+🛠️ **Required Elements**
+
+  - Data governance (incl. legal interoperability)
+  - Business model for long-term sustainability
+  - Consortium contract
+  - Cost–Benefit analysis
+  - Eco-design / frugal AI
+  - Impact assessment (economic • social • environmental)
+
+ 🌐 **Technical Interconnection**
+
+  - Tools, standards, IAM, connectors, knowledge models  
+  - Must integrate the **Simpl Governance Authority Agent**
+  - **Technical & functional diagrams** for each use case
+  - **Shared data models** using Linked Data (NGSI-LD / RDF / SPARQL)
+  - Identify **MIMs+** used (≥5 foundational)
+
+ ⭐ **Recommendations**
+
+  - Prefer **open-source** tools and contribute back  
+  - Use:
+    - DCAT catalogue  
+    - Context broker (NGSI-LD/RDF/JSON-LD)  
+    - OAuth2/OIDC/VC IAM  
+    - ODRL-based data policies  
+  - Align with LDT Toolbox, Gaia-X, IDSA, DSBA, DSSC, DS4SSCC-DEP
+
+
+### 4. Impact
+🎯 **What to Explain**
+
+  - Why LDT **interconnection** matters
+  - Expected **benefits + long-term impacts**
+  - Wider **socio-economic + environmental** effects
+  - Contractual framework ensuring:  
+    **data rights, IP rights, exploitation rights, long-term sustainability**
+
+📦 **Outputs**
+
+  - Services, tools, data models, assets  
+  - Openness level (data models must be open-licensed)  
+  - Services shared via **LDT Toolbox Marketplace**  
+  - Ongoing documentation updates for Knowledge Hub
+
+⭐ **Recommendations**
+
+  - Capture **baseline data** for the CBA  
+  - Assess **eco-design maturity** at start & end
+-->
+
+<!-- START commenting out WS1 Requirements 14/11/2025
+---
+
+## WS1 Specific Requirements  
+
+On top of the **common requirements** described in the Pilot Guidance page, WS1 piloting activity extends its requirements to:  
+
+**Technical** 
+
+- The pilot consortium must include at least *two data platforms/Local Digital Twins* to interconnect (upcoming definitions).  
+- Applicants must use in priority the *proposed building blocks and assets* (smart data models, connectors, etc.) to interconnect their platforms or LDTs.  
+- Pilots must use *selected types of interconnection* (TBD).  
+- For knowledge models:  
+  a) Use existing smart data models, or  
+  b) Create new smart data models if they don’t exist.  
+- Applicants must agree to publish on GitHub, FIWARE, or EDIC (TBD)
+
+- Use SIMPL component (TBD)
+
+
+END commenting out WS1 requirements-->
+
+<hr />
+<h2 id="ws1-resources">WS1 Resources</h2>
+<p>This section provides a set of <strong>non-technical</strong> and <strong>technical resources</strong> that are directly targeted to the WS1 scope. These resources are designed to support pilots in preparing their proposals, planning their implementation, and ensuring compliance with interoperability and governance requirements.  </p>
+<p>Pilots will find these materials extremely relevant, as they provide practical guidance and concrete examples to help them understand what they need to do at each stage of the process. By using these resources, pilots can ensure that their projects are well aligned with the objectives of WS1 and contribute effectively to the broader European Local Digital Twin ecosystem.  </p>
+<p><strong>Non-Technical Resources</strong></p>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Small Description</th>
+<th>Source / Link</th>
+<th>Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Align Stakeholders on the Data Space Scope</td>
+<td>Helpful to build consensus on the data space’s boundaries and goals, ensuring all stakeholders share a clear vision</td>
+<td><a href="https://dssc.eu/space/BVE2/1071257999/Align+Stakeholders+on+the+Data+Space+Scope">Link</a></td>
+<td>Data Spaces</td>
+</tr>
+<tr>
+<td>The Economics of Data Sharing: Insights from a Legal-Economics Workshop</td>
+<td>Provides insights on economic incentives and legal frameworks that can help design sustainable data sharing models.</td>
+<td><a href="https://dssc.eu/space/News/blog/1284145156/The+Economics+of+Data+Sharing:+Insights+from+a+Legal-Economics+Workshop">Link</a></td>
+<td>Data Spaces</td>
+</tr>
+<tr>
+<td>MIMS Specification Introduction</td>
+<td>Introduces standards for interoperable data management, essential for connecting platforms.</td>
+<td><a href="https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys">Link</a></td>
+<td>Interoperability / MIMs</td>
+</tr>
+<tr>
+<td>DS4SSCC</td>
+<td>Guidelines to set up multi-stakeholder governance, crucial for trust and collaboration in data spaces and LDTs.</td>
+<td><a href="https://inventory.ds4sscc.eu/multi-stakeholder-governance/developing-multi-stakeholder">Link</a></td>
+<td>Data Spaces</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Technical Resources</strong></p>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Small Description</th>
+<th>Source / Link</th>
+<th>Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simpl Open</td>
+<td>An open-source software stack powering data spaces and cloud-to-edge federation initiatives.</td>
+<td><a href="https://code.europa.eu/simpl/simpl-open">Simpl Open</a></td>
+<td>Data Spaces</td>
+</tr>
+<tr>
+<td>Smart Data Models</td>
+<td>Shared, standard and open-licensed data models &amp; validation.</td>
+<td><a href="https://smartdatamodels.org/">Website</a> · <a href="https://github.com/smart-data-models">GitHub</a></td>
+<td>Interoperability MIMs</td>
+</tr>
+<tr>
+<td>NGSI-LD</td>
+<td>Information model and API for publishing, querying and subscribing to context information.</td>
+<td><a href="https://ngsi-ld.org/">NGSI-LD</a></td>
+<td>Interoperability MIMs</td>
+</tr>
+<tr>
+<td>Stellio</td>
+<td>NGSI-LD compliant context broker.</td>
+<td><a href="https://github.com/stellio-hub/stellio-context-broker">GitHub</a></td>
+<td>Local Digital Twins (LDTs)</td>
+</tr>
+<tr>
+<td>Scorpio</td>
+<td>NGSI-LD compliant context broker.</td>
+<td><a href="https://github.com/ScorpioBroker/ScorpioBroker">GitHub</a></td>
+<td>Local Digital Twins (LDTs)</td>
+</tr>
+<tr>
+<td>Orion-LD</td>
+<td>NGSI-LD compliant context broker.</td>
+<td><a href="https://github.com/FIWARE/context.Orion-LD">GitHub</a></td>
+<td>Local Digital Twins (LDTs)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+  <!-- Feedback Widget (only on resources pages) -->
+  
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      LDT4SSC is a project funded by the Digital Europe Programme under grant agreement number 101226211. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the European Commission can be held responsible for them.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/logo-top-redirect.js"></script>
+      
+        <script src="../../js/frame-escape.js"></script>
+      
+        <script src="../../js/papaparse.min.js"></script>
+      
+        <script src="../../js/resources_poc.js"></script>
+      
+    
+  </body>
+</html>
