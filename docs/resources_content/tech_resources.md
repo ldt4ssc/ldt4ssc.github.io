@@ -57,6 +57,18 @@ The Technical Landscape Report focuses on establishing the technical foundations
 
 ---
 
+## Resources for Pilots
+
+
+### Resources for Pilots in Work Strand 1
+This deliverable (D3.7) expands and complements Deliverable 2.8 – Technical landscape for pilots, in Task 2.4 of Work Package 2 (Local Digital
+Twin Ecosystem). It does so by providing prospective pilots with technical resources classified by category and thematic area, self-assessment tools, and reference high-level architectures and implementations.
+
+!!! info "Technical Resources for pilots (WS1)"
+    [Download deliverable as PDF](../assets/PDFs/LDT4SSC_Technical_Resources_for_pilots_(WS1).pdf){ .md-button .md-button--primary }
+    
+---
+
 ## What is a Local Digital Twin?
 
 The concept of a Local Digital Twin (LDT) is inherently dynamic and its definition is continuously evolving. Within the LDT4SSC project, we therefore adopt a provisional definition that reflects our current perspective, objectives, and scope. It is intended to converge with the definition of an LDT in the [MIM8: Local Digital Twins](https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys/mim8-local-digital-twins) that describes interoperability in terms of the application domain of LDTs. This definition is intended as a working reference rather than a fixed one, and it could be refined over the course of the project.
