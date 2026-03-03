@@ -327,9 +327,10 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
 
     #### 2.6 Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges {#lego-serious-gameplay}
-    ??? workshop_specifications "Workshop 2.6: Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges"
 
-        This workshop uses the Lego Serious Play method to help participants model complex ideas—such as governance, processes, or system architecture—in a tangible and easily adjustable form. By enabling creative, visual co-construction, it reveals gaps and shared solutions more effectively than traditional discussions, supporting alignment before moving into implementation.
+    This workshop uses the Lego Serious Play method to help participants model complex ideas—such as governance, processes, or system architecture—in a tangible and easily adjustable form. By enabling creative, visual co-construction, it reveals gaps and shared solutions more effectively than traditional discussions, supporting alignment before moving into implementation.
+
+    ??? workshop_specifications "Workshop 2.6: Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
