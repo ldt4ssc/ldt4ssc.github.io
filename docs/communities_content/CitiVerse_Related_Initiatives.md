@@ -104,7 +104,7 @@ Aligned with EU strategies (Digital Decade 2030, Green Deal), 3Dxverse supports 
 **Main contact point:**  
 - contact@3dxverse.org 
 
-
+---
 
 ## CU – European Citiverses Uniting for Inclusiveness  
 

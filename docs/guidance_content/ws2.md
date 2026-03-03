@@ -9,8 +9,10 @@ This Work Strand focuses on supporting key policy scenarios and addressing commo
 - Start of the pilots: May/November 2026  
 - Duration: 18 months  
 - Funding: 50% co-funding required  
-- Opening of Open Call 2: February 2026  
-- Opening of Open Call 3: May 2026  
+- Second Round of open calls: February 2026  
+- Third Round of open calls: May 2026  
+
+👉 Second round of open calls now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply by 02/04/2026, 23:59 CET.
 
 **What is the goal?**  
 
@@ -38,6 +40,131 @@ We invite applications from:
   - Representative of a use-case sector  
 
 ---
+
+## WS2 Requirements Cheat Sheet
+
+This is a **cheat sheet** for Work Strand 2 (Creating New Local Digital Twins based on Common Needs). For a complete list of requirements, please refer to the specific [Call for Pilots Manual](https://ldt4ssc.eu/documents/cpmws2.pdf).
+
+
+### 🎯 **Minimum Conditions**
+
+  - 🏛️ **2+ local/regional public authorities** from **2 different eligible countries**  
+      → No LDT required upfront (but see Rc1 for digital maturity)
+  - 🤝 At least **1 additional partner** (private entity, association, trusted third party, or sector representative)
+  - 🔀 **1+ cross-sectoral use case** that is **innovative** and **citizen-focused**, with **2 services** (Rq3)
+  - 🤝 **Common need** shared across pilot consortium members (Rq5)
+
+
+### 📋 **Describe** in the Application Form
+
+  - **Existing platforms** (if any: GIS, open-data, dashboards) + capabilities (Rq2)  
+      → Include URL/screenshots, architecture diagrams, data lifecycle
+  - **Current data governance** scheme for each pilot site (Rq4)  
+      → Target governance across political • technical • legal • organisational
+  - **Shared local challenge** addressed by the pilot (Rq5)  
+      → Ambition and rationale for jointly developing the LDT
+  - **Alignment** with **EU priorities** and **LDT4SSC objectives** (Rq6)  
+      → Green Deal, New European Bauhaus, LDT4SSC challenges
+  - **Project management** and coordination (Rq7)  
+      → Teams, collaboration, recruitment, political endorsement
+  - **End-user engagement** strategy (Rq8)  
+      → End-users must test the service before replication
+  - **Quadruple Helix stakeholders** (Rq9)  
+      → 3 of 4 groups required (public • private • research • civil society)
+  - **Broader applicability** and relevance for other EU communities (Rq10)
+  - **EU initiatives alignment** (Rq11)  
+      → DSSC, Gaia-X, SIMPL, LDT Toolbox...
+  - **AI/XR/edge computing** usage + ethical/legal safeguards (Rq20)
+  - **AI Act compliance** for AI used in public services (Rq21)
+  - **Contribution** to governance, efficiency, and innovation (Rq22)
+  - **Socio-economic and environmental effects** + eco-design approach (Rq23)
+  - **Sustainability strategy** post-pilot (Rq25)  
+      → Risks & mitigation (political, social, technical, operational, business, legal)  
+      → Plans for at least 1 year beyond project
+
+
+### 🏗️ **Build** during the project
+
+  - **Develop a new common LDT** based on shared needs (Rq13)  
+      → **Each public authority must implement its own instance** (≥2 instances)
+  - Each LDT must provide **management access** to all **7 LDT Layers** (Rq13):  
+      1. Data Sources Layer  
+      2. Data Acquisition Layer  
+      3. Knowledge Layer  
+      4. Interoperability Layer  
+      5. Services Layer  
+      6. Orchestration Layer  
+      7. Visualisation Layer
+  - **Advanced capability**: Predictive, Prospective, or Prescriptive (Rq15)  
+      → LDT must be able to simulate scenarios
+
+
+### 🧱 **Provide** as complementary material
+
+  - **2 draft diagrams** (Rq14):  
+      → Technical (deployment diagram)  
+      → Functional (activity diagram showing data lifecycle)
+  - **Letter of Intent** from another public authority (not in consortium) supporting the shared challenge (Rq5)
+  - **Letter of Commitment** with political endorsement
+  - **Ownership and Control Declaration** (OCD)
+  - **Financial Form** (.xlsx)
+  - **Ethics and Data Protection Self-Assessment**
+  - **Contractual framework** for LDT sustainability (Rq24)
+
+
+### 🛠️ **Adopt** during the project
+
+  - **LDT4SSC methodology** phases: Explore → Validate → Define → Implement (Rq12)
+  - **Semantic interoperability** (MIM1) using open standards (Rq17)  
+      → e.g., NGSI-LD, LDES
+  - **Interoperability self-assessment**: achieve score **≥3** by end (Rq18)
+  - At least **5 foundational MIMs Plus** (MIM0, MIM1, MIM2, MIM3, MIM6) (Rq19)
+  - **LDT4SSC Assets and Services Repository** for asset sharing (Rq27)
+  - **Open repositories** for data models (Rq28)
+  - **Up-to-date documentation** for LDT4SSC consortium (Rq31)
+
+
+### ✏️ **Specify** upon application
+
+  - **Data, assets, services** to be shared, sectors involved, providers and beneficiaries (Rq16)
+  - **MIMs Plus (MIM0–MIM8)** the project will engage with (Rq19)  
+      → Current and planned compliance level (Initial, Partial, Full)
+  - **Main expected assets** to be produced (Rq26)  
+      → See Annex 2.9 for list of potential assets
+  - **Deployment approach** (hosted, SaaS, on-premise) (Rq14)
+  - **Replicability, Transferability, Scalability** measures (Rq30)  
+      → Describe how assets can be transferred to at least one additional context
+  - **Equivalent open-source solution**, if proprietary components used (Rq29)
+
+
+### ⭐ **Recommendations**
+
+- **Assess LORDIMAS maturity** (Rc1)  
+    → Pilot Lead: **Digitally Optimised**  
+    → Others: **≥ Moderate**
+- Include **3+ public authorities** for better replicability demonstration (Rc2)
+- Use **open-source technical components** and share enhancements (Rc2, Rc5)
+- Pursue alignment with **LDT Toolbox** (Rc3)
+- Consider **federation with WS1 pilots** using SIMPL GA Agent (Rc4)
+- Include **IP and exploitation rights** in consortium agreement (Rc6)
+- Technically establish (Rc7):  
+    → **DCAT** data catalogue  
+    → **Data management system** (JSON-LD, RDF, NGSI-LD)  
+    → **IAM** (OAuth2, OpenID Connect, Verifiable Credentials)  
+    → **ODRL-based data policy**
+- Use **MIT or Apache open licence** (Rc8)
+- **Record baseline data** for Cost-Benefit Analysis (Rc9)
+- **Assess eco-design maturity** (General Policy Framework for Ecodesign) (Rc10)  
+    → At least 30 highest-priority criteria
+
+
+### 💰 **Financial Rules**
+
+- Maximum grant per third-party: **€500,000**
+- Maximum cumulative grant per consortium: **€1,000,000**
+- **Co-funding: 50%** of total pilot costs from applicants' own resources
+- Indirect costs: **7% flat rate** of direct costs
+
 <!-- START commenting out requirements
 **Requirement:**  
 
@@ -67,7 +194,7 @@ Pilots will be advantaged if they:
 
 ---
 END commenting out requirements -->
-## WS2 Resources  
+<!-- ## WS2 Resources  
 
 This section provides a set of **non-technical** and **technical resources** that are directly targeted to the WS2 scope. These resources are designed to support pilots in preparing their proposals, planning their implementation, and ensuring compliance with interoperability and governance requirements.  
 
@@ -92,4 +219,4 @@ This section provides a set of **non-technical** and **technical resources** tha
 | Apache Kafka | Distributed event streaming for real-time data pipelines. | [Kafka](https://kafka.apache.org/) | Local Digital Twins (LDTs) |
 | Apache Airflow | Orchestration platform for batch ETL, simulations, AI workflows. | [Airflow](https://airflow.apache.org/) | Local Digital Twins (LDTs) |
 
----
+--- -->

@@ -1,4 +1,4 @@
-# WS3 Piloting Activities - Adding New AI-Based Tools to the LDTs Toolbox
+# WS3 Piloting Activities - Adding New AI-Based Capabilities to the LDTs Toolbox
 
 ## Brief Overview  
 This Work Strand is about experimenting with advanced AI-based services to push the boundaries of what Local Digital Twins (LDTs) can do. Pilots will test and apply cutting-edge approaches such as generative AI (GenAI4EU), virtual worlds, advanced simulation and modelling, and multi-sector services. These solutions will help cities improve critical services (energy, mobility, infrastructure, risk management) while involving citizens more actively in shaping their communities.  
@@ -9,8 +9,10 @@ This Work Strand is about experimenting with advanced AI-based services to push 
 - Start of the pilots: May/November 2026  
 - Duration: 18 months  
 - Funding: 50% co-funding required  
-- Opening of Open Call 4: February 2026  
-- Opening of Open Call 5: May 2026  
+- Second Round of open calls: February 2026  
+- Third Round of open calls: May 2026  
+
+👉 Second Round of open calls now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply by 02/04/2026, 23:59 CET.
 
 **What is the goal?** 
 
@@ -38,6 +40,169 @@ We invite applications from:
   - Representative of a use-case sector  
 
 ---
+
+## WS3 Requirements Cheat Sheet
+
+This is a **cheat sheet** for Work Strand 3 (Adding New Advanced AI-Based Capabilities to the LDTs Toolbox). For a complete list of requirements, please refer to the specific [Call for Pilots Manual](https://ldt4ssc.eu/documents/cpmws3.pdf).
+
+
+### 🎯 **Minimum Conditions**
+
+  - 🏛️ **2+ local/regional public authorities** from **2 different eligible countries**  
+      → **At least 1** must have a **digitally mature LDT** (Rq1)  
+      → Descriptive-level capabilities + dynamic data integration
+  - 🤝 At least **1 additional partner** (private entity, association, trusted third party, or sector representative)
+  - 🔀 **1+ cross-sectoral use case** that is **innovative** and **citizen-focused** (Rq3)  
+      → Must include **2+ AI-based services**
+  - 🤖 **Significant integration of AI** into LDT services (Rq3)  
+      → AI may be used upstream (data cleaning) or downstream (analysis/decision support)
+
+
+### 📋 **Describe** in the Application Form
+
+  - **Existing LDT/platforms** + capabilities (Rq2)  
+      → Include URL/screenshots, architecture diagrams, data lifecycle
+  - **Current data governance** for each pilot site (Rq4)  
+      → Target governance across political • technical • legal • organisational
+  - **Current use of AI/XR/edge computing** in the public authorities (Rq32)  
+      → How, for what purpose, ethical/legal considerations
+  - **Shared local challenge** addressed by AI-based service (Rq5)  
+      → Justify **AI added value** vs. non-AI solution
+  - **Alignment** with **EU priorities** and **LDT4SSC objectives** (Rq6)  
+      → Green Deal, New European Bauhaus, LDT4SSC challenges
+  - **Project management** and coordination (Rq7)  
+      → Teams, collaboration, recruitment, political endorsement
+  - **End-user engagement** strategy (Rq8)  
+      → End-users must test the service before replication
+  - **Quadruple Helix stakeholders** (Rq9)  
+      → 3 of 4 groups required (public • private • research • civil society)
+  - **Broader applicability** for other EU communities (Rq10)
+  - **EU initiatives alignment** (Rq11)  
+      → DSSC, Gaia-X, AIoD, EDIHs, TEFs (CitCom.AI), SIMPL, LDT Toolbox
+  - **Advanced Digital Technologies** used in services (Rq20)  
+      → Intended use of AI (LLM fine-tuning, new model, integration...)
+  - **AI Act compliance** for AI in public services (Rq21)  
+      → Describe ethical risk identification, assessment, mitigation
+  - **Contribution** to governance, efficiency, innovation (Rq22)
+  - **Socio-economic and environmental effects** + eco-design (Rq23)
+  - **Sustainability strategy** post-pilot (Rq25)  
+      → Risks & mitigation (political, social, technical, operational, business, legal)  
+      → Plans for at least 1 year beyond project
+
+
+### 🏗️ **Build** during the project
+
+  - **Each public authority must implement its own LDT instance** (≥2 instances) (Rq13)
+  - Each LDT must provide **management access** to all **7 LDT Layers** (Rq13):  
+      1. Data Sources Layer  
+      2. Data Acquisition Layer  
+      3. Knowledge Layer (ML/AI models)  
+      4. Interoperability Layer  
+      5. Services Layer  
+      6. Orchestration Layer  
+      7. Visualisation Layer
+  - **Advanced capability**: Predictive, Prospective, Prescriptive, or Diagnostic (Rq15)  
+      → LDT must be able to simulate scenarios
+  - **End-to-end traceability** and **proof of dependencies** for all AI components (Rq33)  
+      → Track origin, usage conditions, governance of data and software dependencies
+
+
+### 🧱 **Provide** as complementary material
+
+  - **2 draft diagrams** (Rq14):  
+      → Technical (deployment diagram)  
+      → Functional (activity diagram): **end-to-end data and AI pipeline**  
+        (collection → processing → training/validation/testing → deployment → monitoring)
+  - **Letter of Commitment** with political endorsement
+  - **Ownership and Control Declaration** (OCD)
+  - **Financial Form** (.xlsx)
+  - **Ethics and Data Protection Self-Assessment**
+  - **Contractual framework** for LDT/service sustainability (Rq24)
+
+
+### 🛠️ **Adopt** during the project
+
+  - **LDT4SSC methodology** phases: Explore → Validate → Define → Implement (Rq12)
+  - **Semantic interoperability** (MIM1) using open standards (Rq17)  
+      → e.g., NGSI-LD, LDES
+  - **Interoperability self-assessment**: achieve score **≥3** by end (Rq18)
+  - At least **5 foundational MIMs Plus** (MIM0, MIM1, MIM2, MIM3, MIM6) (Rq19)
+  - **LDT4SSC Assets and Services Repository** for asset sharing (Rq27)
+  - **LDT Toolbox Marketplace** for code/models/algorithms (Rq27)
+  - **Open repositories** for data models (Rq28)
+  - **Up-to-date documentation** for LDT4SSC consortium (Rq31)
+
+
+### 📦 **LDT Toolbox Marketplace Requirements** (Rq27)
+
+Unless using the LDT AI Notebook, AI models must meet:
+  - **Deployable KServe package** (Kubernetes via KServe, with InferenceService YAML)
+  - **Accessible model artefact location** (resolvable storageUri)
+  - **Standard inference endpoint** (V2-style API at /v2/models/{model_name}/infer)
+  - **Documented inputs/outputs and runtime** (framework/runtime, version)
+
+
+### ✏️ **Specify** upon application
+
+  - **Data, assets, services** to be shared, sectors involved, providers and beneficiaries (Rq16)
+  - **MIMs Plus (MIM0–MIM8)** the project will engage with (Rq19)  
+      → Current and planned compliance level (Initial, Partial, Full)
+  - **Main expected assets** to be produced (Rq26)  
+      → See Annex 2.9 for list of potential assets
+  - **Deployment approach** (hosted, SaaS, on-premise) (Rq14)
+  - **Replicability, Transferability, Scalability** measures (Rq30)  
+      → Describe how assets can be transferred to at least one additional context
+  - **Equivalent open-source solution**, if proprietary components used (Rq29)
+  - **Citiverse components/XR** usage, if intended (Rq5)
+
+
+### ⭐ **Recommendations**
+
+- **Assess LORDIMAS maturity** (Rc1)  
+    → Pilot Lead: **Digitally Optimised**  
+    → Others: **≥ Moderate**
+- Include **3+ public authorities** for better replicability (Rc2)
+- Pursue alignment with **LDT Toolbox** (Rc3)  
+    → Recommended tools:  
+      • **EU LDT AI Notebook** for algorithm/model creation  
+      • **EU LDT Federated Learning** for decentralised training  
+      • **EU LDT Data Modeller** for synthetic data generation
+- Consider **federation with WS1 pilots** using SIMPL GA Agent (Rc4)
+- Use **open-source components** and share enhancements (Rc5)
+- Include **IP and exploitation rights** in consortium agreement (Rc6)
+- Technically establish (Rc7):  
+    → **DCAT** data catalogue  
+    → **Data management system** (JSON-LD, RDF, NGSI-LD)  
+    → **IAM** (OAuth2, OpenID Connect, Verifiable Credentials)  
+    → **ODRL-based data policy**
+- Use **MIT or Apache open licence** (Rc8)
+- **Record baseline data** for Cost-Benefit Analysis (Rc9)
+- **Assess eco-design maturity** (General Policy Framework for Ecodesign) (Rc10)  
+    → At least 30 highest-priority criteria
+
+
+### 💰 **Financial Rules**
+
+- Maximum grant per third-party: **€500,000**
+- Maximum cumulative grant per consortium: **€1,000,000**
+- **Co-funding: 50%** of total pilot costs from applicants' own resources
+- Indirect costs: **7% flat rate** of direct costs
+
+
+### 🧠 **AI-Specific Highlights**
+
+| Aspect | Requirement |
+|--------|-------------|
+| AI Integration | Significant, either upstream (data) or downstream (analysis) |
+| AI Services | At least 2 AI-based services per use case |
+| Added Value | Must justify AI advantage over non-AI solution |
+| Advanced Capability | Predictive, Prospective, Prescriptive, or Diagnostic |
+| Traceability | End-to-end for all AI components (Rq33) |
+| AI Act | Full compliance required |
+| Ethical Risks | Must describe identification, assessment, mitigation |
+| Toolbox Publishing | KServe-deployable packages with documented APIs |
+
+
 <!-- START commenting out requirements
 **Requirement:**  
 
