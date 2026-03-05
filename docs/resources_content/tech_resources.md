@@ -57,7 +57,7 @@ The Technical Landscape Report focuses on establishing the technical foundations
 
 ---
 
-## Resources for Pilots
+<!-- ## Resources for Pilots
 
 
 ### Resources for Pilots in Work Strand 1
@@ -67,7 +67,7 @@ Twin Ecosystem). It does so by providing prospective pilots with technical resou
 !!! info "Technical Resources for pilots (WS1)"
     [Download deliverable as PDF](../assets/PDFs/LDT4SSC_Technical_Resources_for_pilots_(WS1).pdf){ .md-button .md-button--primary }
     
----
+--- -->
 
 ## What is a Local Digital Twin?
 
