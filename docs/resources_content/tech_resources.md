@@ -2,6 +2,7 @@
 
 !!! tip "On this page"
     - [Technical Landscape](#technical-landscape) - Understanding the ecosystem
+    - [Interoperability Self-Assessment Questionnaire (ISAQ)](#interoperability-self-assessment-questionnaire-isaq) - Assess your interoperability level
     - [What is a Local Digital Twin?](#what-is-a-local-digital-twin) - Core concepts
     - [Example Implementations](#example-implementations) - See LDTs in action
     - [Reference Architecture](#reference-architecture) - Technical architecture
@@ -15,6 +16,7 @@ These technical resources offer pilots and community stakeholders a curated over
 
 - 📚 [Technical Resource Library](#technical-resource-library) - Browse standards, tools, protocols and frameworks
 - 📊 [Technical Landscape Report](#the-technical-landscape-report) - Technical overview of ecosystem
+- 📋 [Interoperability Self-Assessment Questionnaire (ISAQ)](#interoperability-self-assessment-questionnaire-isaq) - Assess your interoperability level
 - 🏛️ [Example Implementations](#example-implementations) - Real-world LDT projects
 
 The resources guide you through the LDT ecosystem - from interoperability standards and data space protocols to context brokers, discovery services, and AI toolkits - helping pilots and applicants make informed technical choices across three work strands.
@@ -54,6 +56,26 @@ The Technical Landscape Report focuses on establishing the technical foundations
 
 !!! info "The Technical Landscape Report"
     [Download report as PDF](../assets/PDFs/LDT4SSC_Technical_Landscape_Report_for_Pilots.pdf){ .md-button .md-button--primary }
+
+---
+
+## Interoperability Self-Assessment Questionnaire (ISAQ)
+
+This questionnaire has been developed within the LDT4SSC project to support Smart Cities and Communities solution development projects in their journey towards higher levels of interoperability.
+
+It is based on existing and recognised resources provided by the European Commission, including:
+
+- **IMAPS v2.1.0** – Interoperability Maturity Assessment of a Public Service
+- **TIMAPS v1.1.0** – Technical Interoperability Maturity Assessment of a Public Service
+- **SIMAPS v1.2.0** – Semantic Interoperability Maturity Assessment of a Public Service
+- **SIQAT v2.2.0** – Structural Interoperability Quick Assessment Toolkit
+
+By building on these reference frameworks, the tool ensures alignment with European approaches and good practices on interoperability.
+
+This questionnaire allows you to assess and score the level of interoperability of a solution or service at a specific point in time. It provides a snapshot of the current situation and helps identify strengths, gaps, and potential areas for improvement. Based on the results, the tool also provides recommendations to support the improvement of the interoperability level of the assessed solution or service and refers you to adequate MIMs (Minimal Interoperability Mechanisms).
+
+!!! info "Interoperability Self-Assessment Questionnaire (ISAQ)"
+    [Download questionnaire as XLSX](/assets/xlss/LDT4SCC_WP3_interop_questionaire_final.xlsx){ .md-button .md-button--primary }
 
 ---
 
