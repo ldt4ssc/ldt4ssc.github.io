@@ -82,6 +82,7 @@ X-Cite supports the ecosystem by:
 Aligned with EU strategies (Digital Decade 2030, Green Deal), 3Dxverse supports interoperability with EU data spaces (Gaia-X, FIWARE, NGSI-LD).  
 
 **Key role in the LDT Ecosystem:**  
+
 3Dxverse supports the ecosystem by:  
 - Providing a 3D simulation platform for urban systems and infrastructure.  
 - Supporting cross-domain integration (mobility, energy, environment, urban planning).  
@@ -136,10 +137,76 @@ CU contributes to the LDT4SSC ecosystem by:
 **Webpage / Reference Link:**  
 [https://cu-project.eu/](https://cu-project.eu/)  
 
-**Main contact point:**  
-- **Anna Wennblad**, Project Leader – Lindholmen Science Park AB  
-  anna.wennblad@lindholmen.se 
+**Main contact point:**
+- **Anna Wennblad**, Project Leader – Lindholmen Science Park AB
+  anna.wennblad@lindholmen.se
 
 
+---
+
+## SENSE – Strengthening Cities and Enhancing Neighbourhood Sense of Belonging
+
+![SENSE Logo](../assets/sense_logo.png){ width="100" align="center" }
+---
+
+**Short Description:**
+SENSE is a European initiative funded under the Digital Europe Programme (Grant Agreement No. 101167948) that creates interconnected virtual worlds mirroring real cities using VR/AR and metaverse technologies. It aims to enhance urban life and foster a sense of citizen belonging across Europe by developing practical digital tools that connect people, places, and services. SENSE builds immersive virtual environments enabling citizens to navigate, interact, and collaborate in urban spaces, enhancing the social, architectural, green, and cultural dimensions of living spaces.
+
+The project brings together 11+ partners including municipal authorities (Kiel, Cartagena), technology companies, and academic institutions (University of Galway), ensuring real-world grounding and cross-border transferability.
+
+**Key role in the LDT Ecosystem:**
+SENSE contributes to the LDT ecosystem by:  
+- Extending Local Digital Twins into immersive, citizen-facing virtual environments.  
+- Integrating EU data infrastructure with interoperability-compliant technical standards.  
+- Providing a CitiVerse platform component linking urban data with participatory digital experiences.  
+- Bridging smart city infrastructure and citizen engagement through accessible metaverse tooling.  
+
+**Relevance to LDT4SSC:**    
+The initiative contributes directly to LDT4SSC by:  
+- Demonstrating how LDTs can be extended into citizen-centric immersive environments.  
+- Providing tested frameworks for participatory urban governance via virtual worlds.  
+- Offering a replicable model for cities seeking to integrate VR/AR into their digital twin stack.  
+
+**Key Assets and Resources:**
+[[Project Website](https://senseverse.eu), [Contact](https://senseverse.eu/contact-us/)]
+
+**Webpage / Reference Link:**
+[https://senseverse.eu](https://senseverse.eu)
+
+**Main contact point:**
+- [https://senseverse.eu/contact-us/](https://senseverse.eu/contact-us/)
 
 
+---
+
+## ITU Global Initiative on Virtual Worlds – Discovering the Citiverse
+
+![ITU Logo](../assets/itu_logo.svg){ width="100" align="center" }
+---
+
+**Short Description:**
+The Global Initiative on Virtual Worlds and AI is a multistakeholder platform launched by the International Telecommunication Union (ITU), the UN International Computing Centre (UNICC), and Digital Dubai, supported by over 70 international partners. It aims to shape a future where AI-powered virtual worlds are inclusive, trusted, and interoperable — connecting people, cities, and technologies to empower meaningful progress.
+
+The initiative has produced a Citiverse Use-Case Taxonomy series covering urban planning, public safety, transport, economic development, and accessibility, and organises annual events including the UN Virtual Worlds Day and the Citiverse Assembly.
+
+**Key role in the LDT Ecosystem:**  
+The ITU initiative supports the LDT ecosystem by:  
+- Providing a global governance and standards framework for AI-powered virtual worlds and citiverses.  
+- Publishing practical use-case taxonomies that inform LDT deployment across urban domains.  
+- Promoting inclusiveness and accessibility as core design principles for digital twin environments.  
+- Connecting national and local actors through a trusted, UN-backed multistakeholder platform.  
+
+**Relevance to LDT4SSC:**  
+The initiative contributes directly to LDT4SSC by:  
+- Offering a global reference framework for Citiverse standards and interoperability.  
+- Providing use-case taxonomies (urban planning, mobility, public safety) directly relevant to pilot activities.  
+- Supporting talent development through grants and training programmes for cities in developing contexts.  
+
+**Key Assets and Resources:**
+[[Citiverse Use-Case Taxonomy series](https://www.itu.int/epublications/en/publication/citiverse-use-case-taxonomy-global-insights-and-implementation-pathways), [Virtual Worlds Toolkit](https://www.itu.int/metaverse/virtual-worlds/virtual-worlds-toolkit/), [UN Citiverse Challenge](https://www.itu.int/metaverse/virtual-worlds/1st-un-citiverse-challenge/)]
+
+**Webpage / Reference Link:**
+[https://www.itu.int/metaverse/virtual-worlds/](https://www.itu.int/metaverse/virtual-worlds/)
+
+**Main contact point:**
+- **Ms Cristina Bueti**, Counsellor — virtualworlds@itu.int

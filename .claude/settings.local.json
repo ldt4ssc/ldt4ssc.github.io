@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ai4europe.aiod.eu)",
+      "WebFetch(domain:lumi-ai-factory.eu)",
+      "WebFetch(domain:bsc-aifactory.eu)",
+      "WebFetch(domain:aifactory.lu)"
+    ]
+  }
+}
