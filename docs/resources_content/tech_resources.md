@@ -61,7 +61,7 @@ The Technical Landscape Report focuses on establishing the technical foundations
 
 ## Interoperability Self-Assessment Questionnaire (ISAQ)
 
-This questionnaire has been developed within the LDT4SSC project to support Smart Cities and Communities solution development projects in their journey towards higher levels of interoperability.
+This questionnaire has been developed within the LDT4SSC project to support Smart Cities and Communities in their journey towards higher levels of interoperability.
 
 It is based on existing and recognised resources provided by the European Commission, including:
 
@@ -75,7 +75,7 @@ By building on these reference frameworks, the tool ensures alignment with Europ
 This questionnaire allows you to assess and score the level of interoperability of a solution or service at a specific point in time. It provides a snapshot of the current situation and helps identify strengths, gaps, and potential areas for improvement. Based on the results, the tool also provides recommendations to support the improvement of the interoperability level of the assessed solution or service and refers you to adequate MIMs (Minimal Interoperability Mechanisms).
 
 !!! info "Interoperability Self-Assessment Questionnaire (ISAQ)"
-    [Download questionnaire as XLSX](/assets/xlss/LDT4SCC_WP3_interop_questionaire_final.xlsx){ .md-button .md-button--primary }
+    [Download questionnaire as XLSX](/assets/XLSs/LDT4SCC_WP3_interop_questionaire_final.xlsx){ .md-button .md-button--primary }
 
 ---
 
