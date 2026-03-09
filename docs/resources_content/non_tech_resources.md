@@ -160,30 +160,34 @@ The example stories developed for WS1 show how cities and communities with an ex
 
 ### Ideation (EXPLORE) {#ideation-explore}
 
-Many digital projects fail because they jump too quickly to a solution without clarifying the underlying need. The ideation phase establishes a shared foundation by defining a clear use case, identifying relevant data, anticipating impacts, and aligning all stakeholders. It also embeds responsible digital principles early on, questioning the project's purpose, ethics, and long-term value.
+Many digital projects begin with predefined solutions (dashboards, apps, algorithms) rather than user needs, risking misalignment, irrelevant data use, and stakeholder disengagement. The LDT4SSC Methodology requires a dedicated EXPLORE (Ideation) step to define clear needs and shared use cases, identify relevant data and anticipate impacts, and secure stakeholder alignment and ethical sustainability.
+
+The Ideation step generally lasts from four to eight weeks, depending on the level of maturity and complexity of the project. It does not follow a strict linear path, but is essential for the strategic grounding of the project. Some workshops are however essential, in particular the use case mapping via iterative workshops ([1.1 Mapping your Use Case](#mapping-use-case)).
 
 📋 **Prerequisites**
 
-- A clearly identified problem rooted in the organisation's mission
-- Political/strategic support and a committed sponsor
-- A dedicated project manager
-- Ability to mobilise internal and external stakeholders
+- A clear understanding of the project's broader goals (e.g., smart city objectives, climate adaptation).
+- Stakeholder identification and initial engagement (local authorities, experts, citizens, private sector).
+- Basic data and resource availability to explore feasibility.
+- Alignment with public policies (e.g., digital transformation, sustainability strategies).
+- Workshop materials and facilitation tools (e.g., templates, visual aids).
 
 🎯 **Objectives**
 
-- Clarify and contextualise the problem
-- Identify beneficiaries, expected impacts, context, actors, available data, constraints, and risks
-- Produce a project framework to secure resources (funding, support, platforms)
+- Identify challenges and opportunities for the Local Digital Twin (LDT) project.
+- Define and prioritise use cases aligned with public policy and sustainability goals.
+- Engage stakeholders to understand roles, needs, and governance dynamics.
+- Assess costs, benefits, and impacts (economic, social, environmental).
+- Lay the foundation for validation and detailed planning in later steps.
 
+👥 **Stakeholders to Involve**
 
-👥 **Stakeholders to Engage**
-
-- Operational/business teams
-- Cross-functional or "bridge" agents
-- Decision-makers (managers, elected officials)
-- IT and data teams
-- End-users or their representatives
-- Technical partners, experts, or peer local authorities  
+- **Project Coordination Roles** (Project Coordinators, etc.) – They facilitate structured ideation, stakeholder alignment, and documentation of exploratory outputs.
+- **Domain Expertise Roles** (Use-Case Owners, Subject-Matter Experts, Researchers, Field Agents, etc.) – They define real-world challenges and opportunities, grounding ideation in practical, context-specific needs.
+- **Decision Roles** (Elected Officials, Deputy Chief Executives, Directors, Heads of Departments, etc.) – They ensure strategic alignment with policy priorities and secure high-level buy-in for project direction and resource allocation.
+- **End-Users or representatives of civil society** (Citizens, Citizens' Associations or Panels, etc.) – They ensure use cases reflect citizen priorities and societal impact, fostering inclusivity from the outset.
+- **Technical Roles** (IT Department Staff, External Service Providers, Technical Experts, etc.), if available – They provide early feasibility insights to avoid unrealistic assumptions and ground ideation in technical possibilities.
+- **Other Local Authorities facing similar issues** – They offer peer-learning opportunities and best practices to accelerate problem-solving and innovation.
 
 
 
@@ -191,7 +195,7 @@ Many digital projects fail because they jump too quickly to a solution without c
 
     #### 1.1 Mapping your Use Case: Visualising Processes, Pinpointing Challenges, and Co-Designing Data-Driven Solutions {#mapping-use-case}
 
-    This workshop helps participants build a shared understanding of the use case by collaboratively drawing the current process, data flows, and pain points. By making an abstract idea tangible and envisioning an ideal future state, it aligns stakeholders early on and forms a visual foundation for the rest of the project.
+    This 3-hour workshop (1 facilitator per group of 4–5) uses process mapping tools such as flowcharts and swimlane diagrams to visualise the end-to-end process of a specific use case, identify key challenges and bottlenecks, and co-design data-driven solutions aligned with stakeholder needs. Through collaborative brainstorming focused on data requirements, integration points, and decision-making touchpoints, participants produce a detailed process map, a list of challenges and opportunities, and co-designed solutions with clear action steps and stakeholder roles.
 
     ??? workshop_ideation "Workshop 1.1: Mapping your Use Case: Visualising Processes, Pinpointing Challenges, and Co-Designing Data-Driven Solutions"
 
@@ -199,7 +203,7 @@ Many digital projects fail because they jump too quickly to a solution without c
 
     #### 1.2 Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Costs and Benefits {#questioning-the-purpose}
 
-    This workshop helps teams clarify the deeper purpose of their digital project by exploring the operational, user, strategic, economic, and socio-environmental benefits it aims to deliver. By identifying the real objectives and expected impacts, stakeholders can better articulate the project, prioritise functionalities, and avoid solutions that fail to address the core problem.
+    This workshop (3 hours 15 mins, run 3 times, with 1 facilitator per group of 4–5) uses iterative mapping exercises to clarify the strategic intent and public value of the LDT project, helping pilots and elected officials envision the potential benefits of several solutions to encourage their implementation. By exploring multidimensional costs and benefits — operational, practical, strategic, economic, and socio-environmental — across diverse stakeholder perspectives, participants produce a prioritised list of objectives and expected impacts and a cost-benefit framework to guide decision-making, captured in a filled-in Benefits Restitution Table.
 
     ??? workshop_ideation "Workshop 1.2: Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Costs and Benefits"
 
@@ -208,57 +212,69 @@ Many digital projects fail because they jump too quickly to a solution without c
 
     #### 1.3 Implementing Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects {#implementing-sustainable-digital-design}
 
-    This workshop invites teams to evaluate their project through the lens of sustainable design for digital services, questioning its necessity, relevance, and potential ecological, social, and economic impacts. It provides a quick, collective assessment of both positive and negative effects across the project lifecycle, helping decision-makers make more responsible and informed choices.
+    This 2-hour workshop (1 facilitator per group of 4–5) uses a structured sustainability matrix and case studies to examine the LDT project through the lenses of responsible and sustainable design, aligning it with EU Green Deal and circular economy principles. By exploring trade-offs between digital innovation and sustainability goals across social, environmental, and economic dimensions, participants produce a visual map of the project's impacts and a clear action plan — captured in the Sustainable Digital Design Matrix — highlighting areas for improvement and opportunities for positive change.
 
     ??? workshop_ideation "Workshop 1.3: Implementing Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
-✨ **Achievements at the end of the phase**
+✨ **Achievements at the end of the stage**
 
-- A drawing of the use case identifying the data sources, their path, the Information System bricks, the players, etc.
-- The desired impacts by type
-- The reason why for the project
-- The costs and benefits, and the indicators for monitoring them
-- The project stakeholders
+At this stage of the method, the following elements have been completed or identified:
+
+- Clear project objectives and alignment with public policy goals.
+- Shared and prioritised use cases reflecting stakeholder needs and challenges.
+- Stakeholder maps outlining roles, legitimacy, and influence in data governance.
+- Sustainability and impact assessments (economic, social, environmental).
+- Initial cost-benefit framework to guide decision-making.
+- Collective understanding of the project's purpose and strategic direction.
 
 
 ---
 
 ### Specifications (VALIDATE) {#specifications-validate}
 
-After ideation clarifies the need, motivations, stakeholders, and data, the specification phase focuses on defining *how* the solution should work. It translates the shared use case into functional and technical requirements, taking into account real-world constraints (data, architecture, users, security). This phase prevents misunderstandings between business and technical teams, embeds interoperability early on, and provides the basis for selecting or prototyping the appropriate solution.
+At the end of the Ideation phase, we have a better idea of the need we are meeting, why we are doing the project, with whom and with what data — but we don't know exactly *how*. The VALIDATE (Specifications) step provides the link between the vision that emerges from the Ideation step and the actual implementation of the project. It involves translating a use case into technical and functional requirements, taking into account the real constraints of its environment (data, architecture, users, security, etc.).
+
+This step helps to avoid misunderstandings between the business and technical teams, and prepares a solid basis for development. It is also an opportunity to ensure that the principles of interoperability are integrated from the outset. It further ensures that pilots work on the following topics:
+
+- The personas, i.e. the future users of the solution.
+- Their functionalities in relation to users.
+- The indicators and dashboards in relation to the personas.
+- The desired simulations.
+- The data and its governance.
 
 📋 **Prerequisites**
 
-- A clear and validated use case with precise objectives
-- Identified data requirements and understanding of data accessibility
-- A committed project team with experience in data-related issues
-- A realistic view of available resources (time, budget, technical support)
+- Completed outputs from the [EXPLORE step](#ideation-explore) (clearly-defined use case, stakeholder maps, sustainability assessments, main data requirements and available resources, etc.).
+- Access to technical, legal, and operational expertise for feasibility assessments.
+- Stakeholder commitment and availability for validation discussions.
+- Clear criteria for evaluation (e.g., impact metrics, compliance requirements, resource constraints).
+- Workshop tools and templates (e.g., validation frameworks, decision matrices).
 
 🎯 **Objectives**
 
-- Identify and describe personas (future users of the solution)
-- Translate functional needs into operational technical specifications
-- Identify required data and define its lifecycle
-- Determine necessary indicators, dashboards, and potential simulations
-- Define data access conditions, legal constraints, and governance arrangements
-- Produce documentation to guide development or prototyping
+- Test and refine use cases, hypotheses, and assumptions from the [EXPLORE step](#ideation-explore).
+- Assess technical, legal, and operational feasibility of the proposed LDT solutions (define terms of access, base documents for prototyping, etc.).
+- Validate stakeholder roles and governance structures to ensure alignment and accountability.
+- Prioritise actions and resources based on feasibility, impact, and strategic alignment.
+- Develop a validated roadmap for transitioning into the [DEFINE phase](#prototyping-define).
 
-👥 **Stakeholders to Engage**
+👥 **Stakeholders to Involve**
 
-- Business referents (use case owners, service managers)
-- End-users of the solution
-- Data engineers or data architects
-- IT or infrastructure managers
-- Legal experts or DPOs when personal data or data-sharing clauses apply 
+- **Project Coordination Roles** (Project Coordinators, etc.) – They are vital to align stakeholders, manage timelines, and ensure seamless integration of validated outputs into the project's strategic roadmap.
+- **Domain Expertise Roles** (Use-Case Owners, Subject-Matter Experts, Researchers, Field Agents, etc.) – They ensure the real-world relevance and accuracy of use cases, validating technical and operational assumptions against domain-specific knowledge.
+- **Data Roles** (GIS Specialists, Data Engineers, Open Data Officers, Data Scientists, etc.) – They confirm data feasibility, quality, and interoperability, validating whether proposed data sources and processes meet project requirements.
+- **Technical Roles** (IT Department Staff, External Service Providers, Technical Experts, etc.) – They assess feasibility, validate technical requirements, and ensure alignment between proposed solutions and operational realities.
+- **End-Users or representatives of civil society** (Citizens, Citizens' Associations or Panels, etc.) – They provide user-centric validation, ensuring solutions align with actual needs, usability, and societal impact.
+- **Legal Roles** (Data Protection Officers, Legal Experts, Intellectual Property Managers, etc.) – They are critical to ensure compliance with regulations, mitigate risks, and align data governance with legal and contractual obligations.
 
 ???+ workshop_specifications "**VALIDATE Resources**"
 
     #### 2.1 Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes {#effective-visualisation-dashboards}
 
-    This workshop helps participants build a shared, strategic vision of what fit-for-purpose data governance should look like in their organisation by exploring political, legal, organisational, and technical dimensions and imagining ideal and undesirable future scenarios. It then translates these insights into a concrete action plan, clarifying roles, processes, and conditions for success to ensure sustainable and coordinated data governance across projects.
+    This 3-hour 15-minute workshop (1 facilitator per group of 4–5) uses user journey mapping and prototyping tools — such as wireframes and mock-ups — to define clear personas, translate their needs into functional indicators (specifying data sources, calculation rules, etc.), and design intuitive, actionable dashboards. Applying data visualisation best practices around clarity, accessibility, and relevance, participants prioritise and plan functionalities by usefulness and feasibility, producing user-centric dashboard prototypes, a prioritised list of indicators, visualisation guidelines, and clear persona definitions.
 
     ??? workshop_specifications "Workshop 2.1: Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes"
 
@@ -274,38 +290,38 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
         ??? workshop_specifications "Workshop 2.2.1: Understanding Data Governance and Setting the Goal: From Vision to a First Actionable Roadmap"
 
-            This workshop helps identify all stakeholders involved in data governance—both internal and external—and clarify their roles, expertise, responsibilities, and ability to act or contribute. By visually mapping actors and defining collaboration and data-sharing conditions, it lays the groundwork for cross-functional and multi-partner governance essential to implementing the project.
+            This 2-hour workshop (1 facilitator per group of 4–5) uses SWOT analysis and goal-setting frameworks to clarify the principles and components of data governance, project participants into a future state of full implementation, and identify the actions, obstacles, and solutions needed to get there. Participants produce a shared definition and scope of data governance, success and failure scenarios, a preliminary action list, identified risks, and initial elements for a data governance roadmap, change management plan, and stakeholder engagement strategy.
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
         ??? workshop_specifications "Workshop 2.2.2: Mapping Stakeholders' Legitimacy and Authority to act in Data Governance: Understand Roles, Responsibilities, and Hierarchical Influence"
 
-            This workshop focuses on clarifying and formally documenting each stakeholder’s responsibilities in data governance, ensuring that roles are explicit and aligned across the consortium. By defining missions or adapting job profiles, it strengthens engagement, accountability, and the internal structures needed to support effective, long-term data governance.
+            This 1-hour 30-minute workshop (1 facilitator per group of 4–5) uses a circle diagram or stakeholder matrix to map the roles, responsibilities, and hierarchical influence of all individuals working with data, raising awareness of differences in legitimacy and authority and facilitating open dialogue on power dynamics and collaboration needs. Participants produce a stakeholder map with legitimacy and status, a list of key data governance participants, a preliminary assignment for governance unit formation, and a list of people requiring mission statement letters for their job profiles.
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
         ??? workshop_specifications "Workshop 2.2.3: Designing your Data Governance Roadmap: From Data Officer Mission Statement to Action"
 
-            This workshop helps participants examine the legal framework needed to govern data securely and consistently, identifying regulatory requirements and the contractual clauses or internal processes needed to meet them. By comparing needs with existing resources, it supports the development of clear, robust legal foundations for data use and sharing.
+            This 2-hour 5-minute workshop (1 facilitator per group of 4–5) uses action planning templates to define the role and responsibilities of an ideal Data Governance Lead or Data Officer and develop a detailed roadmap covering organisational, technical, and human resource aspects. Grounded in legal, operational, and ethical frameworks, participants produce a mission statement and job profile for data officers, an implementation roadmap with timeframes and responsibilities, and a structured list of actions across organisational, technical, and HR dimensions.
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
         ??? workshop_specifications "Workshop 2.2.4: Complementing your Data Governance Roadmap with a Legal Framework: From Mapping Legal Phases to Action"
 
-            This workshop equips participants to anticipate legal, contractual, and interoperability requirements at every stage of their digital twin or data platform project by examining typical clauses, risks, and resources. By mapping legal needs across the project lifecycle and drawing on standard contracts and experience reports, teams gain the ability to secure long-term viability, manage intellectual property, and negotiate effectively with suppliers and partners.
+            This 2-hour 30-minute workshop (1 facilitator per group of 4–5) uses legal checklists, compliance matrices, mini-questionnaires, case studies, and reference materials — with input from legal experts — to map the regulatory and legal stages of an LDT project and integrate compliance requirements such as GDPR and data sharing laws into the governance roadmap. Participants produce a visual map of legal stages, a list of key legal clauses and contractual agreements, actionable compliance steps, risk assessments, and an identification of topics requiring deeper exploration or discussion.
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
         ??? workshop_specifications "Workshop 2.2.5: Refining your Legal Framework for Data Governance: Deep dive into legal and contractual requirements"
 
-            This workshop equips participants to anticipate legal, contractual, and interoperability requirements at every stage of their digital twin or data platform project by examining typical clauses, risks, and resources. By mapping legal needs across the project lifecycle and drawing on standard contracts and experience reports, teams gain the ability to secure long-term viability, manage intellectual property, and negotiate effectively with suppliers and partners.
+            This 1-hour 30-minute to 2-hour workshop (1 facilitator per group of 4–5) uses case studies and scenario analysis to pinpoint specific legal and contractual requirements, refine the governance framework to mitigate risks, and categorise each requirement by feasibility into three tracks: can-be-resolved, necessitate legislative changes, or demand collective action. Participants produce a prioritised list of legal needs, completed action sheets detailing proposed solutions and stakeholders, a clear roadmap of follow-up actions, a gap analysis of existing resources, and a post-workshop synthesis consolidating outcomes for decision-makers.
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }        
 
     #### 2.3 Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners {#inventorying-ldt-project-data}
 
-    This workshop guides participants in designing dashboards and indicators that genuinely meet the needs of different user personas, ensuring each metric is meaningful, usable, and aligned with strategic objectives. By mapping the path from source data to dashboard outputs, it helps avoid overly complex or irrelevant indicators and provides solid foundations for prototyping or deployment.
+    This 1-hour 40-minute workshop (1 facilitator per group of 4–5) uses data inventory templates to identify data sources, formats, and access protocols, map the data lifecycle, and formalise participant commitments for sharing data samples with partners or service providers. Focused on interoperability standards and data-sharing agreements, it promotes collaboration and accountability, producing a data inventory table, participant data-sharing commitments, and an action plan for interoperability and deployment.
 
     ??? workshop_specifications "Workshop 2.3: Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners"
 
@@ -316,7 +332,7 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
     #### 2.4 Identifying Levers, Obstacles and Objectives for Interoperability: From Awareness to Actionable Strategies for LDT Projects {#unlocking-interoperability}
 
-    This workshop expands the initial use-case diagram by mapping all data sources, transformations, flows, and actors involved, ensuring a complete view of the data lifecycle from creation to reuse. It also assesses interoperability needs—such as API-based access and integration requirements—to support future reuse, system alignment, and robust data infrastructure planning.
+    This 2-hour workshop (1 facilitator per group of 4–5) uses a Speed-Boat canvas — a SWOT analysis or force-field diagram format — to map technical, organisational, and policy-related levers (sails), obstacles (anchors), and target objectives (island) for interoperability in the LDT project. Participants collectively validate and prioritise an interoperability action plan, producing a documented Speed-Boat canvas, a prioritised set of objectives, and a summary note outlining key findings and recommended next steps.
 
     ??? workshop_specifications "Workshop 2.4: Identifying Levers, Obstacles and Objectives for Interoperability: From Awareness to Actionable Strategies for LDT Projects"
 
@@ -326,111 +342,125 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
     #### BONUS Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges {#lego-serious-play}
 
-    This workshop uses the Lego Serious Play method to help participants model complex ideas—such as governance, processes, or system architecture—in a tangible and easily adjustable form. By enabling creative, visual co-construction, it reveals gaps and shared solutions more effectively than traditional discussions, supporting alignment before moving into implementation.
+    This 2-hour 20-minute workshop (1 lead facilitator + 1 per group of 4–5) uses Lego® bricks and metaphors to visualise abstract governance concepts through storytelling and collaborative exploration, unblocking complex discussions and fostering creative problem-solving. Participants produce physical Lego prototypes, documented governance or project models, recorded presentations with photos or videos for reuse, and a summary report to help address the selected challenges.
 
     ??? workshop_specifications "Workshop BONUS: Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
-✨ **Achievements at the end of the phase**
+✨ **Achievements at the end of the stage**
 
 At this stage of the method, the following elements have been achieved or identified:
 
-- The personas
-- The desired indicators, data visualisations and dashboards, based on the personas
-- The desired functionalities, based on the personas
-- The data lifecycle, and the action plan for accessing and using the data effectively
+- Validated use cases with tested assumptions and feasibility assessments.
+- Technical, legal, and operational constraints documented and addressed.
+- Refined stakeholder roles and governance structures with clear responsibilities.
+- Actionable roadmaps for data governance, legal compliance, and business models.
+- Prioritised action plans with timelines, resources, and risk mitigation strategies.
+- Stakeholder buy-in and alignment on validated outputs.
 
 ---
 
 ### Prototyping (DEFINE) {#prototyping-define}
 
-Prototyping turns a theoretical concept into a tangible proof of feasibility. Rather than building a finished service, this phase focuses on rapidly testing a solution on a limited scope, using real data and confronting assumptions with technical, functional, and human realities. While not always mandatory—especially if existing market solutions already fit the need—prototyping often provides valuable insights before large-scale deployment. Its purpose is twofold: to show that the idea works and to confirm that it brings real value to users. This iterative, frugal approach enables quick learning while preparing the foundations for a scalable deployment.
+Prototyping is the stage that transforms a still theoretical project into concrete proof of feasibility. It is not yet a question of producing a finished service, but of rapidly testing a solution on a restricted perimeter, using real data, confronting ideas with technical, functional, and human reality.
+
+This is not a compulsory stage. The previous stages can show that solutions on the market do indeed meet the needs identified, and that prototyping is not a required necessity. Nevertheless, an experimentation stage can always be useful before large-scale deployment.
+
+In the LDT4SSC methodology, the aim of prototyping is twofold: to demonstrate that the idea works, and to check that it has real value for users. It is an iterative, experimental, and frugal approach, which should enable you to learn quickly without committing to heavy investment. The aim is also, from this stage onwards, to rely on a scalable infrastructure, so that you don't have to start from scratch during the deployment phase.
 
 📋 **Prerequisites**
 
-- A prioritised and formalised use case validated internally
-- Clear functional and technical specifications
-- Identified and accessible datasets in usable form
-- Identified human and technical resources to build the prototype
-- Agreement from a small group of end-users to test the solution under semi-real conditions
+- Validated use cases, stakeholder maps, and feasibility assessments from the [VALIDATE step](#specifications-validate).
+- Technical and operational expertise to define system architecture, data flows, and integration requirements.
+- Stakeholder consensus on governance structures, roles, and decision-making processes.
+- Access to necessary tools and templates (e.g., system design frameworks, governance charters, project management software).
+- Clear strategic alignment with public policies, sustainability goals, and organisational objectives.
 
 🎯 **Objectives**
 
-- Experiment with concrete solutions using real data and representative users
-- Validate organisational hypotheses
-- Confirm technical feasibility (data access, processing, flow integration, result display, etc.)
-- Confirm or refine design choices based on practical feedback
-- Prepare the conditions for future deployment (technical, organisational, legal)
+- Experiment with concrete solutions using real data and representative users.
+- Validate organisational hypotheses.
+- Confirm technical feasibility (data access, processing, flow integration, result display, etc.).
+- Confirm or refine design choices based on practical feedback.
+- Prepare the conditions for future deployment (technical, organisational, legal).
 
-👥 **Stakeholders to Engage**
+👥 **Stakeholders to Involve**
 
-- A project manager
-- Business referents to test and validate functionalities
-- A data engineer or developer to integrate data and build the prototype
-- A UX/UI designer or facilitator (if possible) to ensure clear user journeys
-- An IT or infrastructure consultant to ensure compatibility with the existing environment and support implementation  
+- **Project Coordination Roles** (Project Coordinators, etc.) – They orchestrate cross-functional alignment, timelines, and resource allocation for definition outputs.
+- **Domain Expertise Roles** (Use-Case Owners, Subject-Matter Experts, Researchers, Field Agents, etc.) – They refine use-case specifications and technical requirements, ensuring alignment with operational realities.
+- **Data Roles** (GIS Specialists, Data Engineers, Open Data Officers, Data Scientists, etc.) – They design data architectures and workflows, validating interoperability and quality standards.
+- **Innovation / Smart City Roles** (Smart City Experts, UX/UI Designers, Innovation Laboratories, etc.) – They drive user-centric, innovative design and ensure solutions align with smart city standards and emerging best practices.
+- **Legal Roles** (Data Protection Officers, Legal Experts, Intellectual Property Managers, etc.) – They embed legal and ethical guardrails into governance frameworks and data-sharing agreements.
+- **End-Users or representatives of civil society** (Citizens, Citizens' Associations or Panels, etc.) – They validate user experience and accessibility of proposed dashboards or tools.
+- **Technical Roles** (IT Department Staff, External Service Providers, Technical Experts, etc.) – They provide early technical validation of system integration or scalability constraints.
 
 ???+ workshop_prototyping "DEFINE Resources"
 
     #### 3.1 Prototyping a Use Case with a Context Broker: A Step-by-Step Technical Guide for LDT4SSC Pilots {#prototyping-use-case-context-broker}
 
-    This method ensures that prototypes are designed with interoperability at their core by first formalising a multi-dimensional representation of the use case—capturing objectives, users, features, data, and constraints—to guide collaboration with technical teams. It then structures and contextualises the data through knowledge-graph modelling and existing ontologies, creating a simplified, standards-aligned semantic model that supports integration, reuse, and long-term scalability.
+    These slides are an optional but practical resource for pilots who want to technically implement a use case using a context broker, completing the PROTOTYPING–DEFINE phase of the methodology. They walk through four steps: (1) accurately defining needs (purpose, data inventory, functionalities); (2) modelling and contextualising data using existing standards, ontologies, and a cross-functional repository; (3) integrating data into a platform via ETL pipelines, converting to NGSI-LD format; and (4) exploiting the data through dashboards, business applications, open data publications, or inter-system reuse. The approach is illustrated with the energy consumption use case from the City of Paris, and is transferable to any use case.
 
     ??? workshop_prototyping "Methodology. Prototyping your Use Case with a Context Broker: A Step-by-Step Technical Guide for LDT4SSC Pilots"
 
         [Download methodology as PDF](#){ .md-button .md-button--primary }
 
 
-✨ **Achievements at the end of the phase**
+✨ **Achievements at the end of the stage**
 
 At this stage of the method, the following elements have been produced or identified:
 
-- A prototype that meets the use case
-- Reusable knowledge model(s)
-- The code used to produce the algorithms or models
-- Documentation of the prototype
+- A prototype that meets the use case.
+- Reusable knowledge model(s).
+- The code used to produce the algorithms or models.
+- Documentation of the prototype.
+
+It is then about expanding user testing, in a logic of progressive test/iteration, to arrive at a validation (or not!) from the community on scaling up. At that moment, we are at T0 of the cost-benefit analysis method (see [workshop 1.2 Questioning the Purpose of your LDT Project](#questioning-the-purpose)).
 
 ---
 
 ### Deployment (IMPLEMENT) {#deployment-implement}
 
-Deployment marks the transition from experimentation to full implementation. Once the prototype has demonstrated feasibility, the goal becomes widespread adoption across the organisation. This phase focuses on stabilising and securing the solution, establishing maintenance processes, and ensuring long-term sustainability. It also finalises the technical architecture, economic model, and legal framework, while preparing an action plan for training, onboarding, and organisational change. Ideally, many of these topics will have been explored earlier; this stage formalises and operationalises them. Deployment may also open opportunities for scaling, replication, or pooling with other local authorities.
+Deployment is the final stage, marking the transition from experimentation to implementation. Having demonstrated the feasibility of a project through a prototype, it is now a question of getting it used by all the end users within the organisation. This phase involves stabilising the prototype, making it reliable, and putting in place maintenance so that it becomes a long-term tool.
+
+During this phase, the project's technical infrastructure, its economic model, and the legal framework for its use will be finalised, and a deployment action plan will be drawn up, involving in particular the acculturation, training, and onboarding of all staff.
+
+Ideally, most of the subjects covered in this stage (business model, legal framework, staff familiarisation) may already have been addressed upstream, so the aim here is to formalise the concrete elements arising from these discussions.
+
+This stage may also enable the project to be scaled up, either within the same region, or through re-use or pooling with other local authorities.
 
 📋 **Prerequisites**
 
-- A prototype validated by target users and tested in near-real conditions
-- A political or strategic decision to make the solution sustainable
-- A defined target technical architecture (hosting, tools, security, interconnections)
-- An analysis of implementation and maintenance costs
-- A clear vision for the future governance of the solution (technical, organisational, partnership)
-
+- Finalised project blueprint from the [DEFINE step](#prototyping-define), including technical specifications, governance models, and action plans.
+- Secured resources (budget, technology, personnel) for deployment and operation.
+- Stakeholder readiness and commitment, including trained teams and clear communication channels.
+- Established monitoring and evaluation frameworks to track progress and measure impact.
+- Compliance with legal, ethical, and regulatory requirements, including data protection and interoperability standards.
 
 🎯 **Objectives**
 
-- Establish governance for the data and service (updating, sharing, accountability)
-- Choose an appropriate management structure where relevant
-- Organise maintenance, support, and long-term evolution of the solution
-- Technically stabilise the solution for production use
-- Ensure user adoption through training and ongoing adjustments
-- Document and capitalise on lessons learned to support reuse internally or externally
+- Deploy the Local Digital Twin (LDT) platform based on the defined architecture, governance frameworks, and action plans.
+- Execute operational workflows, ensuring seamless integration of data sources, tools, and stakeholder processes.
+- Monitor and evaluate performance against established KPIs, adjusting strategies as needed for optimal outcomes.
+- Ensure stakeholder engagement and capacity-building to support adoption, training, and long-term sustainability.
+- Document lessons learned and best practices for scalability, replication, and continuous improvement.
 
+👥 **Stakeholders to Involve**
 
-👥 **Stakeholders to Engage**
-
-- The business department responsible for the project, to steer deployment and support adoption
-- IT/digital teams to integrate the solution into the existing information system
-- Functional managers to monitor user feedback and prioritise improvements
-- External service providers for industrialisation, hosting, and technical support
-- Public purchasers and legal experts to formalise contracts and clarify rights of use and ownership
-- Potential partner local authorities for pooling or scaling initiatives  
+- **Project Coordination Roles** (Project Coordinators, etc.) – They oversee implementation timelines, stakeholder communication, and risk management.
+- **Data Roles** (GIS Specialists, Data Engineers, Open Data Officers, Data Scientists, etc.) – They manage data pipelines, quality control, and real-time monitoring of the LDT system.
+- **Technical Roles** (IT Department Staff, External Service Providers, Technical Experts, etc.) – They execute platform deployment, integration, and troubleshooting, ensuring operational readiness.
+- **Legal Roles** (Data Protection Officers, Legal Experts, Intellectual Property Managers, etc.) – They ensure ongoing compliance with data protection, licensing, and contractual obligations.
+- **Domain Expertise Roles** (Use-Case Owners, Subject-Matter Experts, Researchers, Field Agents, etc.) – They support field-level validation and troubleshooting of use-case-specific issues.
+- **End-Users or representatives of civil society** (Citizens, Citizens' Associations or Panels, etc.) – They provide feedback on usability and impact, enabling iterative improvements post-deployment.
+- **Other Local Authorities facing similar issues** – They enable cross-city knowledge exchange and replication of successful deployment strategies, fostering scalability and shared learning.
 
 ???+ workshop_deployment "IMPLEMENT Resources"
 
     #### 4.1 Onboarding & Acculturation in Digital Projects: Engaging Stakeholders, Defining Training Paths, and Building a Sustainable Adoption Plan {#onboarding-acculturation}
 
-    This workshop supports staff and elected representatives in understanding the value of a data project by identifying the audiences to be mobilised and defining tailored awareness and training actions. By mapping stakeholder groups and shaping clear messages and engagement strategies, it strengthens commitment, fosters collaboration, and ensures the project is sustainably adopted.
+    This 1-hour 10-minute workshop (2 facilitators per group) uses interactive exercises to map stakeholders across three concentric circles (direct, indirect, and broader audiences), identify their knowledge, skills, and support needs, and define tailored training paths and communication strategies to overcome resistance points. Participants produce a structured action plan with key messages, methods, objectives, and success indicators per stakeholder category, alongside a workshop summary consolidating stakeholder mapping, needs analysis, and concrete engagement levers for implementation and follow-up.
 
     ??? workshop_deployment "Workshop 4.1: Onboarding & Acculturation in Digital Projects: Engaging Stakeholders, Defining Training Paths, and Building a Sustainable Adoption Plan"
 
@@ -438,7 +468,7 @@ Deployment marks the transition from experimentation to full implementation. Onc
 
     #### 4.2 Designing a Structured Action Plan: From Ideas to Execution for Your Use Case {#designing-action-plan}
 
-    This workshop helps teams turn their use case into a concrete action plan by identifying key steps, organising them on a timeline, and exploring alternative implementation scenarios. By visualising the sequence of actions and anticipating constraints, it supports better planning, facilitates decision-making, and aligns stakeholders around a realistic path forward.
+    This 1-hour 30-minute workshop (1 facilitator per group of 4–5) uses Gantt charts, task matrices, and prioritisation tools to translate use cases into SMART objectives and assign responsibilities, timelines, and resources. Teams explore three alternative implementation scenarios and anticipate constraints, producing a photo and clean digital version of a timeline diagram and a summary report presenting the action plan and all three scenarios.
 
     ??? workshop_deployment "Workshop 4.2: Designing a Structured Action Plan: From Ideas to Execution for Your Use Case"
 
@@ -446,25 +476,44 @@ Deployment marks the transition from experimentation to full implementation. Onc
 
     #### 4.3 Designing a Sustainable Business Model: Funding, Valuation, and Deployment Strategies for Your Project {#designing-business-model}
 
-    This workshop helps participants explore and structure the financial mechanisms that will support the deployment and long-term sustainability of their data or digital project, from funding models to partnerships and value-added services. By identifying resources, revenue levers, and feasibility constraints, it ensures the project’s economic viability and provides a solid basis for decision-makers to evaluate and support the initiative.
+    This 1-hour 15-minute workshop (1 facilitator per group of 4–5) uses financial forecasting and scenario analysis to explore revenue models, cost structures, and public/private funding sources, ensuring the project’s economic viability and long-term sustainability. Participants produce a summary report that will serve as the foundation for building the business plan and deployment strategy.
 
     ??? workshop_deployment "Workshop 4.3: Designing a Sustainable Business Model: Funding, Valuation, and Deployment Strategies for Your Project"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
     #### 4.4 Refining the Business Model: Designing, Testing, and Refining Your Strategy with a Canvas {#refining-business-model}
-    
+
+    This 2-hour 10-minute workshop (1 facilitator per group of 4–5) uses the Business Model Canvas and iterative assumption testing — covering value propositions, customer segments, and more — refined through visual tools and stakeholder feedback, to align the model with strategic goals and stakeholder needs. Participants produce a validated and completed Business Model Canvas and a summary report with prioritised action steps for implementation.
+
     ??? workshop_deployment "Workshop 4.4: Refining the Business Model: Designing, Testing, and Refining Your Strategy with a Canvas"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
     #### 4.5 Completing your Data Cooperation Canvas (DS4SSCC): Developing Multi-Stakeholder Data Cooperation {#completing-dcc}
-    
+
+    This intensive 2-day workshop (11 hours 30 mins total, 1 facilitator per group of 4–5) brings together domain experts, data, legal, and technical roles, and project teams across 5 distinct timed phases to define the purpose, scope, and value of the data cooperation initiative and structure it using the Data Cooperation Canvas (Why, Who, What, How). Participants produce a completed Data Cooperation Canvas as a practical roadmap for implementation, with clear roles, responsibilities, and next steps for stakeholder alignment and action.
+
     ??? workshop_deployment "Workshop 4.5: Completing your Data Cooperation Canvas (DS4SSCC): Developing Multi-Stakeholder Data Cooperation"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
+✨ **Achievements at the end of the stage**
+
+At this stage of the method, the following elements have been achieved or identified:
+
+- An action plan to scale up the project (acculturation, adoption, next steps, links to other use cases, etc.).
+- A list of funding and revenue sources to ensure the project's long-term viability and the foundations of the business plan.
+- A clear vision of the collaborations to be established with new partners around data for future use cases.
+- Deployed LDT platform with integrated data sources and operational workflows.
+- Functional dashboards and tools tailored to end-user needs.
+- Established data pipelines ensuring quality, interoperability, and real-time monitoring.
+- Trained stakeholders (staff, partners, end-users) with capacity-building initiatives.
+- Documented lessons learned and best practices for scalability and replication.
+- Ongoing evaluation framework to measure impact, user feedback, and continuous improvement.
+
+---
 
 ## Other resources
 
