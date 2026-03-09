@@ -225,7 +225,7 @@ The Ideation step generally lasts from four to eight weeks, depending on the lev
 
     #### 1.1 Mapping your Use Case: Visualising Processes, Pinpointing Challenges, and Co-Designing Data-Driven Solutions {#mapping-use-case}
 
-    This 3-hour workshop (1 facilitator per group of 4–5) helps teams to visually map the current use case, data flows, and challenges. It fosters a shared understanding of the project’s scope and identifies gaps between the current and ideal states. The outcome is a collaborative foundation for the project, adaptable as it progresses.
+    This workshop helps teams to visually map the current use case, data flows, and challenges. It fosters a shared understanding of the project’s scope and identifies gaps between the current and ideal states. The outcome is a collaborative foundation for the project, adaptable as it progresses.
 
     ??? workshop_ideation "Workshop 1.1: Mapping your Use Case: Visualising Processes, Pinpointing Challenges, and Co-Designing Data-Driven Solutions"
 
@@ -235,7 +235,7 @@ The Ideation step generally lasts from four to eight weeks, depending on the lev
 
     #### 1.2 Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Costs and Benefits {#questioning-the-purpose}
 
-    This workshop (3 hours 15 mins, run 3 times, with 1 facilitator per group of 4–5) clarifies the project’s objectives and expected impacts across operational, user, strategic, economic, and socio-environmental dimensions. It supports iterative mapping of costs and benefits to justify the project and prioritise functionalities. The result is a clearer project vision, aiding decision-making and resource allocation.
+    This workshop clarifies the project’s objectives and expected impacts across operational, user, strategic, economic, and socio-environmental dimensions. It supports iterative mapping of costs and benefits to justify the project and prioritise functionalities. The result is a clearer project vision, aiding decision-making and resource allocation.
 
     ??? workshop_ideation "Workshop 1.2: Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Costs and Benefits"
 
@@ -246,7 +246,7 @@ The Ideation step generally lasts from four to eight weeks, depending on the lev
 
     #### 1.3 Implementing Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects {#implementing-sustainable-digital-design}
 
-    This 2-hour workshop (1 facilitator per group of 4–5) evaluates the project’s relevance, sustainability, and alignment with responsible digital principles. It encourages a collective reflection on ecological, social, and economic impacts throughout the project lifecycle. The output is a matrix of positive and negative impacts, guiding responsible decision-making processes.
+    This workshop evaluates the project’s relevance, sustainability, and alignment with responsible digital principles. It encourages a collective reflection on ecological, social, and economic impacts throughout the project lifecycle. The output is a matrix of positive and negative impacts, guiding responsible decision-making processes.
 
 
     ??? workshop_ideation "Workshop 1.3: Implementing Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects"
@@ -312,7 +312,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
     #### 2.1 Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes {#effective-visualisation-dashboards}
 
-    This 3-hour 15-minute workshop (1 facilitator per group of 4–5) guides participants in designing tailored indicators and dashboards that align with the diverse needs of users ensuring clarity, relevance, and alignment with strategic objectives. By adopting the perspectives of different personas, teams define persona-specific indicators, detailing the required data, sources, calculations, and visualisation formats, while mapping the journey from raw data to actionable insights. The process bridges the gap between data and real-life usage, preventing overly complex or irrelevant dashboards, and produces practical deliverables such as indicator sheets, dashboard mockups, and action plans. These outputs empower stakeholders and pave the way for prototyping or deployment.
+    This workshop guides participants in designing tailored indicators and dashboards that align with the diverse needs of users ensuring clarity, relevance, and alignment with strategic objectives. By adopting the perspectives of different personas, teams define persona-specific indicators, detailing the required data, sources, calculations, and visualisation formats, while mapping the journey from raw data to actionable insights. The process bridges the gap between data and real-life usage, preventing overly complex or irrelevant dashboards, and produces practical deliverables such as indicator sheets, dashboard mockups, and action plans. These outputs empower stakeholders and pave the way for prototyping or deployment.
 
     ??? workshop_specifications "Workshop 2.1: Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes"
 
@@ -372,7 +372,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
     #### 2.3 Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners {#inventorying-ldt-project-data}
 
-    This 1-hour 40-minute workshop (1 facilitator per group of 4–5) refines and expands the use case designed in 2.2.1 Understanding Data Governance and Setting the Goal by identifying data sources, lifecycle stages, and the roles of stakeholders in data management, with a focus on ensuring interoperability through APIs like Next Generation Service Interface with Linked Data (NGSI-LD) for future reuse. Participants —including technical and domain expertise roles— build on the initial use-case diagram ([Workshop 1.1 Mapping your Use Case](#mapping-use-case)) to map data flows, transformations, and tools, while also addressing storage, integration, and potential open data publishing. 
+    This workshop refines and expands the use case designed in 2.2.1 Understanding Data Governance and Setting the Goal by identifying data sources, lifecycle stages, and the roles of stakeholders in data management, with a focus on ensuring interoperability through APIs like Next Generation Service Interface with Linked Data (NGSI-LD) for future reuse. Participants —including technical and domain expertise roles— build on the initial use-case diagram ([Workshop 1.1 Mapping your Use Case](#mapping-use-case)) to map data flows, transformations, and tools, while also addressing storage, integration, and potential open data publishing. 
 
     ??? workshop_specifications "Workshop 2.3: Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners"
 
