@@ -98,37 +98,40 @@ The example stories developed for WS1 show how cities and communities with an ex
 
     <!-- Activity Cards - Left Side Top (Deployment - Green) -->
     <div class="activity-group activity-deployment">
+      <a href="#completing-dcc" class="activity-card activity-deployment-card">
+        4.5 Completing your Data Cooperation Canvas
+      </a>      
       <a href="#refining-business-model" class="activity-card activity-deployment-card">
         4.4 Refining the Business Model
       </a>      
       
-      <a href="#defining-business-model" class="activity-card activity-deployment-card">
+      <a href="#designing-business-model" class="activity-card activity-deployment-card">
         4.3 Designing a Sustainable Business Model
       </a>
       <a href="#designing-action-plan" class="activity-card activity-deployment-card">
         4.2 Designing a Structured Action Plan
       </a>
-      <a href="#onboard-train-involve-agents" class="activity-card activity-deployment-card">
+      <a href="#onboarding-acculturation" class="activity-card activity-deployment-card">
         4.1 Onboarding & Acculturation in Digital Projects
       </a>
     </div>
 
     <!-- Activity Cards - Right Side Top (Ideation - Yellow) -->
     <div class="activity-group activity-ideation">
-      <a href="#designing-drawing-up-your-use-case" class="activity-card activity-ideation-card">
-        1.1 Operational Use Case Mapping
+      <a href="#mapping-use-case" class="activity-card activity-ideation-card">
+        1.1 Mapping your Use Case
       </a>
-      <a href="#questioning-the-why" class="activity-card activity-ideation-card">
+      <a href="#questioning-the-purpose" class="activity-card activity-ideation-card">
         1.2 Questioning the purpose of your LDT project
       </a>
-      <a href="#questioning-digital-responsibility" class="activity-card activity-ideation-card">
+      <a href="#implementing-sustainable-digital-design" class="activity-card activity-ideation-card">
         1.3 Sustainable Digital Design
       </a>
     </div>
 
     <!-- Activity Cards - Left Side Bottom (Prototyping - Blue) -->
     <div class="activity-group activity-prototyping">
-      <a href="#produce-prototype" class="activity-card activity-prototyping-card">
+      <a href="#prototyping-use-case-context-broker" class="activity-card activity-prototyping-card">
         3.1 Prototyping a Use Case with a Context Broker
       </a>
     </div>
@@ -136,23 +139,20 @@ The example stories developed for WS1 show how cities and communities with an ex
     <!-- Activity Cards - Right Side Bottom (Specifications - Gray) -->
     <div class="activity-group activity-specifications">
 
-      <a href="#fit-for-purpose-data-governance" class="activity-card activity-specifications-card">
+      <a href="#effective-visualisation-dashboards" class="activity-card activity-specifications-card">
         2.1 Co-Creating Effective Dashboards
       </a>
       <a href="#implementing-data-governance" class="activity-card activity-specifications-card">
         2.2 Implementing data governance
       </a>
-      <a href="#describing-dashboard-indicators" class="activity-card activity-specifications-card">
-        2.3 Data Governance in Practice
+      <a href="#inventorying-ldt-project-data" class="activity-card activity-specifications-card">
+        2.3 Inventorying your LDT Projects' Data
       </a>
-      <a href="#defining-lifecycle-interoperability" class="activity-card activity-specifications-card">
+      <a href="#unlocking-interoperability" class="activity-card activity-specifications-card">
         2.4 Unlocking Interoperability
       </a>
-      <a href="#raising-awareness-interoperability" class="activity-card activity-specifications-card">
-        2.5 Building the Data Cooperation Canvas (DS4SSCC)
-      </a>
-      <a href="#lego-serious-gameplay" class="activity-card activity-specifications-card">
-        2.6 Lego® Serious Play
+      <a href="#lego-serious-play" class="activity-card activity-specifications-card">
+        BONUS: Lego® Serious Play
       </a>
     </div>
   </div>
@@ -189,28 +189,28 @@ Many digital projects fail because they jump too quickly to a solution without c
 
 ???+ workshop_ideation "**EXPLORE Resources**"
 
-    #### 1.1 Operational Use Case Mapping: Visualizing Processes, Pinpointing Challenges, and Co-Designing Data-Driven Solutions {#designing-drawing-up-your-use-case}
+    #### 1.1 Mapping your Use Case: Visualising Processes, Pinpointing Challenges, and Co-Designing Data-Driven Solutions {#mapping-use-case}
 
     This workshop helps participants build a shared understanding of the use case by collaboratively drawing the current process, data flows, and pain points. By making an abstract idea tangible and envisioning an ideal future state, it aligns stakeholders early on and forms a visual foundation for the rest of the project.
 
-    ??? workshop_ideation "Workshop 1.1: Operational Use Case Mapping: Visualizing Processes, Pinpointing Challenges, and Co-Designing Data-Driven Solutions"
+    ??? workshop_ideation "Workshop 1.1: Mapping your Use Case: Visualising Processes, Pinpointing Challenges, and Co-Designing Data-Driven Solutions"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-    #### 1.2 Questioning the purpose of your LDT project: Iterative Mapping of the Multi-Dimensional Costs and Benefits {#questioning-the-why}
+    #### 1.2 Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Costs and Benefits {#questioning-the-purpose}
 
     This workshop helps teams clarify the deeper purpose of their digital project by exploring the operational, user, strategic, economic, and socio-environmental benefits it aims to deliver. By identifying the real objectives and expected impacts, stakeholders can better articulate the project, prioritise functionalities, and avoid solutions that fail to address the core problem.
 
-    ??? workshop_ideation "Workshop 1.2: Questioning the purpose of your LDT project: Iterative Mapping of the Multi-Dimensional Costs and Benefits"
+    ??? workshop_ideation "Workshop 1.2: Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Costs and Benefits"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
-    #### 1.3 Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects {#questioning-digital-responsibility}
+    #### 1.3 Implementing Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects {#implementing-sustainable-digital-design}
 
     This workshop invites teams to evaluate their project through the lens of sustainable design for digital services, questioning its necessity, relevance, and potential ecological, social, and economic impacts. It provides a quick, collective assessment of both positive and negative effects across the project lifecycle, helping decision-makers make more responsible and informed choices.
 
-    ??? workshop_ideation "Workshop 1.3: Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects"
+    ??? workshop_ideation "Workshop 1.3: Implementing Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
@@ -256,11 +256,11 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
 ???+ workshop_specifications "**VALIDATE Resources**"
 
-    #### 2.1 Co-Creating Effective Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes {#fit-for-purpose-data-governance}
+    #### 2.1 Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes {#effective-visualisation-dashboards}
 
     This workshop helps participants build a shared, strategic vision of what fit-for-purpose data governance should look like in their organisation by exploring political, legal, organisational, and technical dimensions and imagining ideal and undesirable future scenarios. It then translates these insights into a concrete action plan, clarifying roles, processes, and conditions for success to ensure sustainable and coordinated data governance across projects.
 
-    ??? workshop_specifications "Workshop 2.1: Co-Creating Effective Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes"
+    ??? workshop_specifications "Workshop 2.1: Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
@@ -272,65 +272,63 @@ After ideation clarifies the need, motivations, stakeholders, and data, the spec
 
     ???+ workshop_specifications "A focus on data governance"
 
-        ??? workshop_specifications "Workshop 2.2.1: Designing Fit-for-Purpose Data Governance: From Vision to Actionable Roadmap"
+        ??? workshop_specifications "Workshop 2.2.1: Understanding Data Governance and Setting the Goal: From Vision to a First Actionable Roadmap"
 
             This workshop helps identify all stakeholders involved in data governance—both internal and external—and clarify their roles, expertise, responsibilities, and ability to act or contribute. By visually mapping actors and defining collaboration and data-sharing conditions, it lays the groundwork for cross-functional and multi-partner governance essential to implementing the project.
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
-        ??? workshop_specifications "Workshop 2.2.2: Stakeholder Legitimacy and Authority in Data Governance: Mapping Roles, Responsibilities, and Hierarchical Influence"
+        ??? workshop_specifications "Workshop 2.2.2: Mapping Stakeholders' Legitimacy and Authority to act in Data Governance: Understand Roles, Responsibilities, and Hierarchical Influence"
 
             This workshop focuses on clarifying and formally documenting each stakeholder’s responsibilities in data governance, ensuring that roles are explicit and aligned across the consortium. By defining missions or adapting job profiles, it strengthens engagement, accountability, and the internal structures needed to support effective, long-term data governance.
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-        ??? workshop_specifications "Workshop 2.2.3: From Mission Statement to Action: Designing Roles and Roadmaps for Effective Data Governance"
+        ??? workshop_specifications "Workshop 2.2.3: Designing your Data Governance Roadmap: From Data Officer Mission Statement to Action"
 
             This workshop helps participants examine the legal framework needed to govern data securely and consistently, identifying regulatory requirements and the contractual clauses or internal processes needed to meet them. By comparing needs with existing resources, it supports the development of clear, robust legal foundations for data use and sharing.
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-        ??? workshop_specifications "Workshop 2.2.4: Building a Local Digital Twin: Navigating Legal Phases and Contractual Alignment for Project Sustainability"
+        ??? workshop_specifications "Workshop 2.2.4: Complementing your Data Governance Roadmap with a Legal Framework: From Mapping Legal Phases to Action"
 
             This workshop equips participants to anticipate legal, contractual, and interoperability requirements at every stage of their digital twin or data platform project by examining typical clauses, risks, and resources. By mapping legal needs across the project lifecycle and drawing on standard contracts and experience reports, teams gain the ability to secure long-term viability, manage intellectual property, and negotiate effectively with suppliers and partners.
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-    #### 2.3 Data Governance in Practice: Mapping Lifecycle, Interoperability, and Collaborative Commitments {#describing-dashboard-indicators}
+        ??? workshop_specifications "Workshop 2.2.5: Refining your Legal Framework for Data Governance: Deep dive into legal and contractual requirements"
+
+            This workshop equips participants to anticipate legal, contractual, and interoperability requirements at every stage of their digital twin or data platform project by examining typical clauses, risks, and resources. By mapping legal needs across the project lifecycle and drawing on standard contracts and experience reports, teams gain the ability to secure long-term viability, manage intellectual property, and negotiate effectively with suppliers and partners.
+
+            [Download workshop as PDF](#){ .md-button .md-button--primary }        
+
+    #### 2.3 Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners {#inventorying-ldt-project-data}
 
     This workshop guides participants in designing dashboards and indicators that genuinely meet the needs of different user personas, ensuring each metric is meaningful, usable, and aligned with strategic objectives. By mapping the path from source data to dashboard outputs, it helps avoid overly complex or irrelevant indicators and provides solid foundations for prototyping or deployment.
 
-    ??? workshop_specifications "Workshop 2.3: Data Governance in Practice: Mapping Lifecycle, Interoperability, and Collaborative Commitments"
+    ??? workshop_specifications "Workshop 2.3: Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
 
 
-    #### 2.4 Unlocking Interoperability: From Awareness to Actionable Strategies for Projects and Organizations {#defining-lifecycle-interoperability}
+    #### 2.4 Identifying Levers, Obstacles and Objectives for Interoperability: From Awareness to Actionable Strategies for LDT Projects {#unlocking-interoperability}
 
     This workshop expands the initial use-case diagram by mapping all data sources, transformations, flows, and actors involved, ensuring a complete view of the data lifecycle from creation to reuse. It also assesses interoperability needs—such as API-based access and integration requirements—to support future reuse, system alignment, and robust data infrastructure planning.
 
-    ??? workshop_specifications "Workshop 2.4: Unlocking Interoperability: From Awareness to Actionable Strategies for Projects and Organizations "
+    ??? workshop_specifications "Workshop 2.4: Identifying Levers, Obstacles and Objectives for Interoperability: From Awareness to Actionable Strategies for LDT Projects"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
 
-    #### 2.5 Building the Data Cooperation Canvas (DS4SSCC): A Structured Approach to Cross-Sectoral Data Collaboration {#raising-awareness-interoperability}
 
-    This workshop introduces participants to the principles and importance of interoperability, helping them recognise obstacles, levers, and the different interoperability layers that affect a data project. Through a collective diagnostic exercise, it builds a shared understanding of priorities and equips teams to prevent compatibility issues, ensuring smoother integration and sustainable data use in later phases.
-
-    ??? workshop_specifications "Workshop  2.5: Building the Data Cooperation Canvas (DS4SSCC): A Structured Approach to Cross-Sectoral Data Collaboration"
-
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-
-    #### 2.6 Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges {#lego-serious-gameplay}
+    #### BONUS Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges {#lego-serious-play}
 
     This workshop uses the Lego Serious Play method to help participants model complex ideas—such as governance, processes, or system architecture—in a tangible and easily adjustable form. By enabling creative, visual co-construction, it reveals gaps and shared solutions more effectively than traditional discussions, supporting alignment before moving into implementation.
 
-    ??? workshop_specifications "Workshop 2.6: Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges"
+    ??? workshop_specifications "Workshop BONUS: Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
@@ -376,11 +374,11 @@ Prototyping turns a theoretical concept into a tangible proof of feasibility. Ra
 
 ???+ workshop_prototyping "DEFINE Resources"
 
-    #### 3.1 Prototyping a Use Case with a Context Broker: A Step-by-Step Technical Guide for LDT4SSC Pilots {#produce-prototype}
+    #### 3.1 Prototyping a Use Case with a Context Broker: A Step-by-Step Technical Guide for LDT4SSC Pilots {#prototyping-use-case-context-broker}
 
     This method ensures that prototypes are designed with interoperability at their core by first formalising a multi-dimensional representation of the use case—capturing objectives, users, features, data, and constraints—to guide collaboration with technical teams. It then structures and contextualises the data through knowledge-graph modelling and existing ontologies, creating a simplified, standards-aligned semantic model that supports integration, reuse, and long-term scalability.
 
-    ??? workshop_prototyping "Methodology. Prototyping a Use Case with a Context Broker: A Step-by-Step Technical Guide for LDT4SSC Pilots"
+    ??? workshop_prototyping "Methodology. Prototyping your Use Case with a Context Broker: A Step-by-Step Technical Guide for LDT4SSC Pilots"
 
         [Download methodology as PDF](#){ .md-button .md-button--primary }
 
@@ -430,7 +428,7 @@ Deployment marks the transition from experimentation to full implementation. Onc
 
 ???+ workshop_deployment "IMPLEMENT Resources"
 
-    #### 4.1 Onboarding & Acculturation in Digital Projects: Engaging Stakeholders, Defining Training Paths, and Building a Sustainable Adoption Plan {#onboard-train-involve-agents}
+    #### 4.1 Onboarding & Acculturation in Digital Projects: Engaging Stakeholders, Defining Training Paths, and Building a Sustainable Adoption Plan {#onboarding-acculturation}
 
     This workshop supports staff and elected representatives in understanding the value of a data project by identifying the audiences to be mobilised and defining tailored awareness and training actions. By mapping stakeholder groups and shaping clear messages and engagement strategies, it strengthens commitment, fosters collaboration, and ensures the project is sustainably adopted.
 
@@ -446,7 +444,7 @@ Deployment marks the transition from experimentation to full implementation. Onc
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-    #### 4.3 Designing a Sustainable Business Model: Funding, Valuation, and Deployment Strategies for Your Project {#defining-business-model}
+    #### 4.3 Designing a Sustainable Business Model: Funding, Valuation, and Deployment Strategies for Your Project {#designing-business-model}
 
     This workshop helps participants explore and structure the financial mechanisms that will support the deployment and long-term sustainability of their data or digital project, from funding models to partnerships and value-added services. By identifying resources, revenue levers, and feasibility constraints, it ensures the project’s economic viability and provides a solid basis for decision-makers to evaluate and support the initiative.
 
@@ -459,6 +457,13 @@ Deployment marks the transition from experimentation to full implementation. Onc
     ??? workshop_deployment "Workshop 4.4: Refining the Business Model: Designing, Testing, and Refining Your Strategy with a Canvas"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
+
+    #### 4.5 Completing your Data Cooperation Canvas (DS4SSCC): Developing Multi-Stakeholder Data Cooperation {#completing-dcc}
+    
+    ??? workshop_deployment "Workshop 4.5: Completing your Data Cooperation Canvas (DS4SSCC): Developing Multi-Stakeholder Data Cooperation"
+
+        [Download workshop as PDF](#){ .md-button .md-button--primary }
+
 
 
 ## Other resources
