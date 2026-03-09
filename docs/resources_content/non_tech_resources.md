@@ -335,7 +335,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-        *PDF coming soon — contact the project team in the meantime.*
+            *PDF coming soon — contact the project team in the meantime.*
 
 
         ??? workshop_specifications "Workshop 2.2.2: Mapping Stakeholders' Legitimacy and Authority to act in Data Governance: Understand Roles, Responsibilities, and Hierarchical Influence"
@@ -344,7 +344,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-        *PDF coming soon — contact the project team in the meantime.*
+            *PDF coming soon — contact the project team in the meantime.*
 
         ??? workshop_specifications "Workshop 2.2.3: Designing your Data Governance Roadmap: From Data Officer Mission Statement to Action"
 
@@ -352,7 +352,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-        *PDF coming soon — contact the project team in the meantime.*
+            *PDF coming soon — contact the project team in the meantime.*
 
         ??? workshop_specifications "Workshop 2.2.4: Complementing your Data Governance Roadmap with a Legal Framework: From Mapping Legal Phases to Action"
 
@@ -360,7 +360,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-        *PDF coming soon — contact the project team in the meantime.*
+            *PDF coming soon — contact the project team in the meantime.*
 
         ??? workshop_specifications "Workshop 2.2.5: Refining your Legal Framework for Data Governance: Deep dive into legal and contractual requirements"
 
@@ -368,7 +368,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
             [Download workshop as PDF](#){ .md-button .md-button--primary }
 
-        *PDF coming soon — contact the project team in the meantime.*        
+            *PDF coming soon — contact the project team in the meantime.*        
 
     #### 2.3 Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners {#inventorying-ldt-project-data}
 
