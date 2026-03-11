@@ -186,7 +186,7 @@ As part of WS1 requirements, pilots are expected to have implemented a [SIMPL Go
 !!! note "How to use this library"
     Filter resources by **Layer**, **MIMs Plus** category, and **Scope**. Use the search bar to find specific standards or tools, and suggest new resources using the button below.
 
-The technical resource library is categorised by layer (according to the LDT-Toolbox), by category (whether standard, protocol, framework, or tool/implementation), and by scope (whether relevant for data spaces, AI for smart cities, interoperability, or LDTs).
+The technical resource library is categorised by layer (according to the MIM8), by category (whether standard, protocol, framework, or tool/implementation), and by scope (whether relevant for data spaces, AI for smart cities, interoperability, or LDTs).
 
 <div style="text-align: center; margin-bottom: 1.5rem;">
   <a href="#suggest-a-resource" class="suggest-resource-button">Suggest a Resource</a>
@@ -201,7 +201,7 @@ The technical resource library is categorised by layer (according to the LDT-Too
         <span class="info-tooltip-wrapper">
           <span class="info-icon">?</span>
           <div class="info-tooltip-content">
-            Based on the EU LDT-Toolbox layers
+            Based on the MIM8 layers
             <a href="https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2025-10/eu_ldt_presentation.pdf" target="_blank" class="tooltip-link">See more</a>
           </div>
         </span>
@@ -239,20 +239,29 @@ The technical resource library is categorised by layer (according to the LDT-Too
     </div>
 
     <div class="filter-section">
-      <label for="filter-scope">Scope</label>
-      <select id="filter-scope">
-        <option value="">All Scopes</option>
-        <!-- Scopes will be filled by JS -->
-      </select>
-    </div>
-
-    <div class="filter-section">
       <label for="sort-by">Sort By</label>
       <select id="sort-by">
         <option value="title">Title (A–Z)</option>
         <option value="mim">MIMs Plus</option>
         <option value="thematic-area">Layer</option>
       </select>
+    </div>
+  </div>
+
+  <!-- Badge filters row: Scope + Origin -->
+  <div class="filter-row-badges">
+    <div class="filter-section">
+      <label>Scope</label>
+      <div id="filter-scope" class="scope-filter-checkboxes">
+        <!-- Scope badges will be filled by JS -->
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <label>From the Ecosystem</label>
+      <div id="filter-origin" class="origin-filter-checkboxes">
+        <!-- Origin badges will be filled by JS -->
+      </div>
     </div>
   </div>
 

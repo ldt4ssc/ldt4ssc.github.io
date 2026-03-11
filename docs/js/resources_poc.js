@@ -23,27 +23,29 @@ document.addEventListener("DOMContentLoaded", () => {
   let allResources = [];
   let selectedMims = new Set(); // Track selected MIM filters
   let selectedLayers = new Set(); // Track selected Layer filters
+  let selectedScopes = new Set(); // Track selected Scope filters
+  let selectedOrigins = new Set(); // Track selected Origin filters
 
   // Define the canonical order for layers
   const LAYER_ORDER = [
     "Data sources",
     "Data acquisition",
-    "Interoperability",
-    "Orchestration",
-    "Knowledge",
+    "Connectivity",
+    "Data management",
+    "Analytics",
     "Services",
     "Visualisation"
   ];
 
   // Thematic area color schemes
   const THEMATIC_AREA_COLORS = {
-    "Interoperability": {
+    "Connectivity": {
       bg: '#ffe4d6',
       border: '#ff6b1a',
       text: '#753800',
       badge: '#ffb088'
     },
-    "Knowledge": {
+    "Analytics": {
       bg: '#fff5d9',
       border: '#e6a800',
       text: '#473821',
@@ -73,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       text: '#b10202',
       badge: '#ef9a9a'
     },
-    "Orchestration": {
+    "Data management": {
       bg: '#f3e5f5',
       border: '#8e24aa',
       text: '#5a3286',
@@ -116,6 +118,17 @@ document.addEventListener("DOMContentLoaded", () => {
     MIM8: 'Local Digital Twins'
   };
 
+  // Origin colour map — bg/text for each allowed origin value
+  const ORIGIN_COLORS = {
+    'LDT4SSC':                 { bg: '#fffde7', text: '#7a5c00' },
+    'Data Spaces':             { bg: '#1565c0', text: '#ffffff' },
+    'AI for Smart Cities':     { bg: '#6a1b9a', text: '#ffffff' },
+    'Local Digital Twins':     { bg: '#2e7d32', text: '#ffffff' },
+    'CitiVERSE':               { bg: '#00838f', text: '#ffffff' },
+    'Interoperability & MIMs': { bg: '#e65100', text: '#ffffff' },
+    'Cities Network':          { bg: '#4e342e', text: '#ffffff' }
+  };
+
   // Helper function: Parse comma-separated MIMs into array
   function parseMims(mimsString) {
     if (!mimsString) return [];
@@ -125,12 +138,23 @@ document.addEventListener("DOMContentLoaded", () => {
       .filter(m => m.match(/^MIM\d$/));
   }
 
+  // Helper function: Parse comma-separated scopes into array
+  function parseScopes(scopeString) {
+    if (!scopeString) return [];
+    return scopeString
+      .split(',')
+      .map(s => s.trim())
+      .filter(Boolean);
+  }
+
   // Helper function: Map CSV row to resource object
   function mapCsvRowToResource(row, index) {
     // Combine long name and description for the description field
+    const shortName = row["Short name"] || "";
     const longName = row["Long name"] || "";
     const desc = row.Description || "";
-    const combinedDescription = longName && desc ? `${longName}. ${desc}` : longName || desc;
+    const effectiveLongName = longName && longName.trim() !== shortName.trim() ? longName : "";
+    const combinedDescription = effectiveLongName && desc ? `${effectiveLongName}. ${desc}` : effectiveLongName || desc;
 
     // Extract dynamic links from columns A, B, C, D, E
     const links = [
@@ -149,7 +173,8 @@ document.addEventListener("DOMContentLoaded", () => {
       version: row.Version || "",
       category: row.Category || "",
       thematic_area: row.Layer || "",
-      scope: row.Scope || "",
+      scope: parseScopes(row.Scope),
+      origin: row.Origin ? row.Origin.trim() : "",
       mims: parseMims(row.MIMs),
       links: links,
       description: combinedDescription,
@@ -215,7 +240,8 @@ document.addEventListener("DOMContentLoaded", () => {
       allResources = Array.isArray(data) ? data : [];
       populateLayerFilters();
       populateResourceCategoryOptions(allResources);
-      populateScopeOptions(allResources);
+      populateScopeFilters(allResources);
+      populateOriginFilters(allResources);
       populateMimFilters();
       renderResources();
     })
@@ -262,18 +288,87 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function populateScopeOptions(resources) {
-    const scopes = Array.from(
-      new Set(resources.map((r) => r.scope).filter(Boolean))
+  function populateScopeFilters(resources) {
+    const scopeFilterContainer = document.getElementById("filter-scope");
+    if (!scopeFilterContainer) return;
+
+    const allScopes = Array.from(
+      new Set(resources.flatMap(r => Array.isArray(r.scope) ? r.scope : []).filter(Boolean))
     ).sort();
 
-    scopeSelect.innerHTML = '<option value="">All Scopes</option>';
-    scopes.forEach((scope) => {
-      const opt = document.createElement("option");
-      opt.value = scope;
-      opt.textContent = scope;
-      scopeSelect.appendChild(opt);
+    scopeFilterContainer.innerHTML = allScopes.map(scope => `
+      <label class="scope-checkbox-label">
+        <input type="checkbox" value="${scope}" data-scope="${scope}">
+        <span class="scope-checkbox-badge">${scope}</span>
+      </label>
+    `).join('');
+
+    scopeFilterContainer.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+      checkbox.addEventListener('change', handleScopeFilterChange);
     });
+  }
+
+  function handleScopeFilterChange(event) {
+    const scope = event.target.value;
+    if (event.target.checked) {
+      selectedScopes.add(scope);
+    } else {
+      selectedScopes.delete(scope);
+    }
+
+    const scopeFilterContainer = document.getElementById("filter-scope");
+    if (scopeFilterContainer) {
+      if (selectedScopes.size > 0) {
+        scopeFilterContainer.classList.add('has-selection');
+      } else {
+        scopeFilterContainer.classList.remove('has-selection');
+      }
+    }
+
+    renderResources();
+  }
+
+  function populateOriginFilters(resources) {
+    const originFilterContainer = document.getElementById("filter-origin");
+    if (!originFilterContainer) return;
+
+    const allOrigins = Array.from(
+      new Set(resources.map(r => r.origin).filter(Boolean))
+    ).sort();
+
+    originFilterContainer.innerHTML = allOrigins.map(origin => {
+      const colors = ORIGIN_COLORS[origin] || { bg: '#9e9e9e', text: '#ffffff' };
+      return `
+        <label class="origin-checkbox-label">
+          <input type="checkbox" value="${origin}" data-origin="${origin}">
+          <span class="origin-checkbox-badge${origin === 'LDT4SSC' ? ' origin-badge--ldt4ssc' : ''}" style="background-color: ${colors.bg}; color: ${colors.text};"${origin === 'LDT4SSC' ? ' title="Within-project resource"' : ''}>${origin}</span>
+        </label>
+      `;
+    }).join('');
+
+    originFilterContainer.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+      checkbox.addEventListener('change', handleOriginFilterChange);
+    });
+  }
+
+  function handleOriginFilterChange(event) {
+    const origin = event.target.value;
+    if (event.target.checked) {
+      selectedOrigins.add(origin);
+    } else {
+      selectedOrigins.delete(origin);
+    }
+
+    const originFilterContainer = document.getElementById("filter-origin");
+    if (originFilterContainer) {
+      if (selectedOrigins.size > 0) {
+        originFilterContainer.classList.add('has-selection');
+      } else {
+        originFilterContainer.classList.remove('has-selection');
+      }
+    }
+
+    renderResources();
   }
 
   function populateMimFilters() {
@@ -344,7 +439,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderResources() {
     const resourceCategoryFilter = resourceCategorySelect.value;
-    const scopeFilter = scopeSelect.value;
     const searchTerm = searchInput.value.toLowerCase().trim();
     const sortBy = sortSelect.value;
 
@@ -354,7 +448,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!selectedLayers.has(r.thematic_area)) return false;
       }
       if (resourceCategoryFilter && r.category !== resourceCategoryFilter) return false;
-      if (scopeFilter && r.scope !== scopeFilter) return false;
+      if (selectedScopes.size > 0) {
+        const resourceScopes = Array.isArray(r.scope) ? r.scope : [];
+        if (!resourceScopes.some(s => selectedScopes.has(s))) return false;
+      }
+      if (selectedOrigins.size > 0 && !selectedOrigins.has(r.origin)) return false;
 
       // Filter by selected MIMs (OR logic - show if resource has ANY selected MIM)
       if (selectedMims.size > 0) {
@@ -461,9 +559,15 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `<span class="grey-badge" style="background-color: ${GREY_BADGE_STYLE.bg}; color: ${GREY_BADGE_STYLE.text};">${escapeHtml(resource.category)}</span>`
       : '';
 
-    // Generate scope badge (grey)
-    const scopeBadge = resource.scope
-      ? `<span class="grey-badge" style="background-color: ${GREY_BADGE_STYLE.bg}; color: ${GREY_BADGE_STYLE.text};">${escapeHtml(resource.scope)}</span>`
+    // Generate scope badges (clickable, one per scope value)
+    const scopeBadgesHtml = Array.isArray(resource.scope) && resource.scope.length > 0
+      ? resource.scope.map(s => `<span class="grey-badge clickable" style="background-color: ${GREY_BADGE_STYLE.bg}; color: ${GREY_BADGE_STYLE.text}; cursor: pointer;" onclick="toggleScopeFilter('${escapeHtml(s)}', event)">${escapeHtml(s)}</span>`).join(' ')
+      : '';
+
+    // Generate origin badge (clickable, shown only when origin is set)
+    const originColors = resource.origin ? (ORIGIN_COLORS[resource.origin] || { bg: '#9e9e9e', text: '#ffffff' }) : null;
+    const originBadge = resource.origin
+      ? `<span class="origin-badge clickable${resource.origin === 'LDT4SSC' ? ' origin-badge--ldt4ssc' : ''}" style="background-color: ${originColors.bg}; color: ${originColors.text};"${resource.origin === 'LDT4SSC' ? ' title="Within-project resource"' : ''} onclick="toggleOriginFilter('${escapeHtml(resource.origin)}', event)">${escapeHtml(resource.origin)}</span>`
       : '';
 
     return `
@@ -471,6 +575,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <div class="card-header">
     <div class="card-header-left">
       <h3 style="color: ${colors.text};">${escapeHtml(resource.short_name || "")}</h3>
+      ${originBadge}
     </div>
     <div class="mim-badges-container">
       ${mimBadgesHtml || '<span class="mim-badge" style="background-color: #cccccc; color: #666666;">No MIM</span>'}
@@ -491,10 +596,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <span class="meta-label">Category:</span>
         ${categoryBadge}
       </div>` : ''}
-      ${resource.scope ? `
+      ${scopeBadgesHtml ? `
       <div class="meta-row">
         <span class="meta-label">Scope:</span>
-        ${scopeBadge}
+        ${scopeBadgesHtml}
       </div>` : ''}
       ${resource.maintainer ? `
       <div class="meta-row">
@@ -531,7 +636,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const activeFilters = [
         selectedLayers.size > 0 ? 'layers' : '',
         resourceCategorySelect.value,
-        scopeSelect.value,
+        selectedScopes.size > 0 ? 'scopes' : '',
+        selectedOrigins.size > 0 ? 'origins' : '',
         searchInput.value,
         selectedMims.size > 0 ? 'mims' : ''
       ].filter(Boolean).length;
@@ -552,7 +658,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function clearFilters() {
     selectedLayers.clear();
     resourceCategorySelect.value = "";
-    scopeSelect.value = "";
+    selectedScopes.clear();
     searchInput.value = "";
     sortSelect.value = "title";
     selectedMims.clear();
@@ -572,6 +678,25 @@ document.addEventListener("DOMContentLoaded", () => {
       mimFilterContainer.classList.remove('has-selection');
     }
     document.querySelectorAll('#filter-mims input[type="checkbox"]').forEach(cb => {
+      cb.checked = false;
+    });
+
+    // Uncheck all scope checkboxes and remove has-selection class
+    const scopeFilterContainer = document.getElementById("filter-scope");
+    if (scopeFilterContainer) {
+      scopeFilterContainer.classList.remove('has-selection');
+    }
+    document.querySelectorAll('#filter-scope input[type="checkbox"]').forEach(cb => {
+      cb.checked = false;
+    });
+
+    // Uncheck all origin checkboxes and remove has-selection class
+    selectedOrigins.clear();
+    const originFilterContainer = document.getElementById("filter-origin");
+    if (originFilterContainer) {
+      originFilterContainer.classList.remove('has-selection');
+    }
+    document.querySelectorAll('#filter-origin input[type="checkbox"]').forEach(cb => {
       cb.checked = false;
     });
 
@@ -616,6 +741,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  window.toggleScopeFilter = function(scope, event) {
+    // Store the clicked card's title to find it later
+    if (event) {
+      const card = event.target.closest('.resource-card');
+      if (card) {
+        const title = card.querySelector('h3');
+        if (title) {
+          window._lastClickedCardTitle = title.textContent.trim();
+        }
+      }
+    }
+
+    const checkbox = document.querySelector(`input[data-scope="${scope}"]`);
+    if (checkbox) {
+      checkbox.checked = !checkbox.checked;
+      checkbox.dispatchEvent(new Event('change'));
+    }
+  };
+
+  window.toggleOriginFilter = function(origin, event) {
+    if (event) {
+      const card = event.target.closest('.resource-card');
+      if (card) {
+        const title = card.querySelector('h3');
+        if (title) {
+          window._lastClickedCardTitle = title.textContent.trim();
+        }
+      }
+    }
+
+    const checkbox = document.querySelector(`input[data-origin="${origin}"]`);
+    if (checkbox) {
+      checkbox.checked = !checkbox.checked;
+      checkbox.dispatchEvent(new Event('change'));
+    }
+  };
+
   function escapeHtml(str) {
     return String(str)
       .replace(/&/g, "&amp;")
@@ -637,11 +799,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (lowerText.includes('download')) return '⬇️';
     if (lowerText.includes('video') || lowerText.includes('tutorial')) return '🎬';
     if (lowerText.includes('web') || lowerText.includes('site') || lowerText.includes('home')) return '🌐';
+    if (lowerText.includes('wiki')) return '🌍';
+    if (lowerText.includes('blueprint')) return '🏗️';
     return '🔗'; // Default link emoji
   }
 
   // Event listeners
-  [resourceCategorySelect, scopeSelect, sortSelect].forEach((el) => {
+  [resourceCategorySelect, sortSelect].forEach((el) => {
     el.addEventListener("change", renderResources);
   });
 
