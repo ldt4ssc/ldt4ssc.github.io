@@ -791,7 +791,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function getLinkEmoji(text) {
     const lowerText = text.toLowerCase();
     if (lowerText.includes('doc') || lowerText.includes('specification') || lowerText.includes('spec')) return '📄';
-    if (lowerText.includes('manual')) return '📖';
+    if (lowerText.includes('manual') || lowerText.includes('catalog') || lowerText.includes('director')) return '📖';
     if (lowerText.includes('marketplace') || lowerText.includes('store')) return '🛒';
     if (lowerText.includes('git') || lowerText.includes('source') || lowerText.includes('code') || lowerText.includes('repo')) return '💻';
     if (lowerText.includes('api')) return '🔌';

@@ -184,9 +184,9 @@ As part of WS1 requirements, pilots are expected to have implemented a [SIMPL Go
 ## 📚 Technical Resource Library
 
 !!! note "How to use this library"
-    Filter resources by **Layer**, **MIMs Plus** category, and **Scope**. Use the search bar to find specific standards or tools, and suggest new resources using the button below.
+    Filter resources by **Layer**, **MIMs Plus**, **Category**, **Scope**, or **origin within the Smart Communities Ecosystem**. Click any badge on a resource card to filter by that value directly. Use the search bar to find specific standards or tools, and suggest new resources using the button below.
 
-The technical resource library is categorised by layer (according to the MIM8), by category (whether standard, protocol, framework, or tool/implementation), and by scope (whether relevant for data spaces, AI for smart cities, interoperability, or LDTs).
+The technical resource library is categorised by layer (according to the MIM8 layers), by category (standards, protocols and specs; tools and implementations; frameworks and methodologies; or assessment and alignment), by scope, and by origin — resources from the LDT4SSC project or the broader Smart Communities Ecosystem are highlighted alongside general external resources.
 
 <div style="text-align: center; margin-bottom: 1.5rem;">
   <a href="#suggest-a-resource" class="suggest-resource-button">Suggest a Resource</a>

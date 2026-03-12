@@ -533,7 +533,7 @@
 
 /* LDT4SSC special treatment: golden border + outlined star + border-only circulating shine */
 .origin-badge--ldt4ssc {
-  border: 3px solid #f9a825 !important;
+  border: 3px solid #fcd95a !important;
   position: relative;
 }
 
