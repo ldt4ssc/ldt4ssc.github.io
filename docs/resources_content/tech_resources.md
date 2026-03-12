@@ -172,14 +172,14 @@ It aims to dynamically represent a defined observed geographical area to analyse
 
 ---
 
-## Reference architecture
+<!-- ## Reference architecture
 We provide a possible high-level architecture implementation for achieving the desired interconnection between existing LDTs, scope of WS1. Pilots are expected to have a multitude of possible implementations of LDTs internally, so we focus on providing a generic interconnection architecture. To possible internal architectures non-compliant *a priori* with open standards and open software, we refer to as a "legacy LDT" in the architecture diagram below. Compliant LDTs are expected to have a context broker, responsible for assuring interoperability, among other components. 
 
 ![Reference architecture for interconnection](../assets/interconnection_architecture.svg){ width="100%" align="center" }
 
 As part of WS1 requirements, pilots are expected to have implemented a [SIMPL Governance Authority Agent](https://code.europa.eu/simpl/simpl-open/development/agents/governance-authority/-/blob/main/documents/deployment-guide/README.md), which guarantees a federated catalogue and assures the schema and vocabulary used by the interconnected LDTs. A context broker can be linked to another one by the means of a federation broker, or via a data space. In case the connection is done via a data space, a data space connector must be deployed (unless using a SIMPL Agent, which includes an [EDC connector](https://github.com/eclipse-edc/Connector)). This allows other consumers or providers to be onboarded on the same data space, ensuring access policies and also interacting with the interconnected LDTs, guaranteeing a sustainable interoperable environment.
 
----
+--- -->
 
 ## 📚 Technical Resource Library
 
