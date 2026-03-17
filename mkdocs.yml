@@ -31,7 +31,7 @@ nav:
   - Smart Communities Ecosystem: communities.md
   - Pilot Guidance: guidance.md
   - Resources for Pilots: resources.md
-  - Pilot Journey: journey.md
+  # - Pilot Journey: journey.md  # hidden until ready for release
 
 
     
@@ -48,6 +48,7 @@ extra_css:
   - css/resources_poc.css
   - css/methodology_diagram.css
   - css/feedback_widget.css
+  - css/journey.css
 
 markdown_extensions:
   - attr_list
@@ -72,6 +73,7 @@ extra_javascript:
   - js/frame-escape.js # script to escape the frame for all external links
   - js/papaparse.min.js # CSV parser for Google Sheets integration
   - js/resources_poc.js # test resource interactive frame
+  - js/journey.js # pilot journey timeline and tracker
 
 
 
