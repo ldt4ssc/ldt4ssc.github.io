@@ -722,6 +722,9 @@ This table summarises other important resources from the initiatives in the ecos
 | **UN-Habitat** [Step-by-Step Guide for a People-Centred Smart City Strategy](https://unhabitat.org/a-step-by-step-guide-for-a-people-centred-smart-city-strategy-a-playbook-for-national-regional-and-local-governments) | Playbook to design inclusive, social-equity focused smart city strategies; recommended for use in identifying affected stakeholder groups and vulnerable communities. | Guideline |
 | **University for Continuing Education Krems, Austria** [Unravelling the use of digital twins to assist decision- and policy-making in smart cities](https://arxiv.org/pdf/2405.20916) | "The main objective of this ongoing research is to review the existing literature on the intersection of digital twins and smart cities with a focus on decision and policy-making support and to answer the research question: "What are the existing applications of digital twins for smart cities for aiding decision-and policy-making?"" | Peer-reviewed article |
 | **W3C** [Web Accessibility Guidelines (WCAG 3.0)](https://www.w3.org/TR/wcag-3.0/) | Web accessibility standards and national reference (France) plus tools to assess conformity; to ensure inclusive LDT services. | Guideline |
+| **ESRI** [Geodesign Framework](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/introducing-geodesign.pdf) | End-user engagement and citizen participation framework for territorial interventions. | Framework |
+
+
 
 ## Additional resources from the LDT4SSC ecosystem
 
@@ -736,3 +739,5 @@ This table summarises other important resources from the initiatives in the ecos
 | [Trusted Data Transaction](https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/2024/cwa18125_2024.pdf) | Provides terminology, concepts and mechanisms in the field of data exchange focusing on trusted data transactions. | CEN / CENELEC | Legal terminologies |
 | [High-Level Forum on European Standardisation Final report of work-stream 14](https://ec.europa.eu/docsroom/documents/58914) | The report is the result of Workstream 14 on Data Interoperability of the High-Level Forum on European Standardisation (HLF). The workstream was initiated to help establish a coordinated approach to (European) standardisation in support of the interoperability requirements established in the horizontal data legislation, implementing the European data strategy (2020). The clarity, transparency, and reliability resulting from a well-designed overall set of standards will significantly lower entry barriers for the application of data spaces and thus support the emergence of a vibrant data ecosystem in Europe. | European Commission | Data Spaces |
 | [Accessibility Inspection Grid](../assets/XLSs/blank_quick-accessibility-inspection-grid_2025.xlsx) | Quick Accessibility Inspection Grid | French Government | Accessibility |
+
+
