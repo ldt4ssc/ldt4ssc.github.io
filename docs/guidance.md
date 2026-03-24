@@ -48,7 +48,7 @@ The project foresees **three Work Strands** through which potential pilots can a
     [:octicons-arrow-right-24: View Details](guidance_content/ws2.md)
 
 !!! abstract "WS3: Adding New Advanced AI-Based Capabilities to existing LDTs"
-    **Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDTs Toolbox**
+    **Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDT Toolbox**
 
     [:octicons-arrow-right-24: View Details](guidance_content/ws3.md)
 

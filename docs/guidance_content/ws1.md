@@ -11,7 +11,6 @@ This Work Strand focuses on connecting and testing existing Local Digital Twins 
 - Funding: 50% co-funding required  
 - First Round of open calls: November 2025
 - Second Round of open calls: February 2026  
-- Third Round of open calls: May 2026  
 
 👉 Second round of open calls now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply by 02/04/2026, 23:59 CET.
 
@@ -38,12 +37,12 @@ Municipalities or regions aiming to:
 
 **Consortium composition:**  
 
-- At least 2 public entities (from at least two different eligible countries)
-- At least 1 other partner from the following:  
-  - Private entity (e.g., service provider)  
-  - Private association (legal status)  
-  - Trusted third party  
-  - Representative of a use-case sector  
+- At least 2 public entities  
+- Plus 1 other partner from the following:  
+    → Private entity (e.g., service provider)  
+    → Private association (legal status)  
+    → Trusted third party  
+    → Representative of a use-case sector  
 ---
 
 ## WS1 Requirements Cheat Sheet:
@@ -91,9 +90,9 @@ This is a **cheat sheet** for Work Strand 1 (Connecting Existing Local Digital T
 
 ### 🧱 **Provide** as complementary material
 
-  - **2 draft diagrams** (technical + functional) per use case (Rq15)  
-      → Technical: LDT interconnection  
-      → Functional: data lifecycle
+  - **4 draft diagrams** (technical + functional, current + future) per use case (Rq15)  
+      → Technical: LDT interconnection (current + future)
+      → Functional: data lifecycle (current + future)
   - **Letter of Commitment** with political endorsement (Rq9)
   - **Ownership and Control Declaration** (OCD)
   - **Financial Form** (.xlsx)

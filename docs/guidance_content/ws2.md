@@ -25,7 +25,8 @@ This Work Strand focuses on supporting key policy scenarios and addressing commo
 
 **Who Are We Looking For?**  
 
-We invite applications from:  
+We invite applications from:
+
 - Cities, municipalities, groups of municipalities, or regions seeking to develop new LDTs.  
 - Municipalities, groups of municipalities, or regions gathered around at least one common use case, who wish to solve a common challenge together.  
 - Technology providers, academic and research institutions ready to work with public authorities to ensure that solutions are scalable and replicable.  
@@ -34,10 +35,10 @@ We invite applications from:
 
 - At least 2 public entities  
 - Plus 1 other partner from the following:  
-  - Private entity (e.g., service provider)  
-  - Private association (legal status)  
-  - Trusted third party  
-  - Representative of a use-case sector  
+    → Private entity (e.g., service provider)  
+    → Private association (legal status)  
+    → Trusted third party  
+    → Representative of a use-case sector  
 
 ---
 
@@ -101,9 +102,9 @@ This is a **cheat sheet** for Work Strand 2 (Creating New Local Digital Twins ba
 
 ### 🧱 **Provide** as complementary material
 
-  - **2 draft diagrams** (Rq14):  
-      → Technical (deployment diagram)  
-      → Functional (activity diagram showing data lifecycle)
+  - **4 draft diagrams** (Rq14):  
+      → Technical (deployment diagram, current + future)  
+      → Functional (activity diagram showing data lifecycle, current + future)
   - **Letter of Intent** from another public authority (not in consortium) supporting the shared challenge (Rq5)
   - **Letter of Commitment** with political endorsement
   - **Ownership and Control Declaration** (OCD)

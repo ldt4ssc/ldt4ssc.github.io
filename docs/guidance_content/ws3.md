@@ -1,4 +1,4 @@
-# WS3 Piloting Activities - Adding New AI-Based Capabilities to the LDTs Toolbox
+# WS3 Piloting Activities - Adding New AI-Based Capabilities to the LDT Toolbox
 
 ## Brief Overview  
 This Work Strand is about experimenting with advanced AI-based services to push the boundaries of what Local Digital Twins (LDTs) can do. Pilots will test and apply cutting-edge approaches such as generative AI (GenAI4EU), virtual worlds, advanced simulation and modelling, and multi-sector services. These solutions will help cities improve critical services (energy, mobility, infrastructure, risk management) while involving citizens more actively in shaping their communities.  
@@ -25,7 +25,8 @@ This Work Strand is about experimenting with advanced AI-based services to push 
 
 **Who Are We Looking For?**  
 
-We invite applications from:  
+We invite applications from:
+
 - Municipalities, groups of municipalities, or regions, syndicates which already have a **public service** (whichever) and want to experiment with AI-enhanced LDT services to improve public services and resilience.  
 - Cities, municipalities, or regions.  
 - Technology innovators and solution providers in areas such as AI, generative AI, Citiverse/virtual worlds, simulation, and modelling, who are ready to collaborate with cities and transfer their solutions into real-world pilots.  
@@ -34,16 +35,16 @@ We invite applications from:
 
 - At least 2 public entities  
 - Plus 1 other partner from the following:  
-  - Private entity (e.g., service provider)  
-  - Private association (legal status)  
-  - Trusted third party  
-  - Representative of a use-case sector  
+    → Private entity (e.g., service provider)  
+    → Private association (legal status)  
+    → Trusted third party  
+    → Representative of a use-case sector  
 
 ---
 
 ## WS3 Requirements Cheat Sheet
 
-This is a **cheat sheet** for Work Strand 3 (Adding New Advanced AI-Based Capabilities to the LDTs Toolbox). For a complete list of requirements, please refer to the specific [Call for Pilots Manual](https://ldt4ssc.eu/documents/cpmws3.pdf).
+This is a **cheat sheet** for Work Strand 3 (Adding New Advanced AI-Based Capabilities to the LDT Toolbox). For a complete list of requirements, please refer to the specific [Call for Pilots Manual](https://ldt4ssc.eu/documents/cpmws3.pdf).
 
 
 ### 🎯 **Minimum Conditions**
@@ -109,9 +110,9 @@ This is a **cheat sheet** for Work Strand 3 (Adding New Advanced AI-Based Capabi
 
 ### 🧱 **Provide** as complementary material
 
-  - **2 draft diagrams** (Rq14):  
-      → Technical (deployment diagram)  
-      → Functional (activity diagram): **end-to-end data and AI pipeline**  
+  - **4 draft diagrams** (Rq14):  
+      → Technical (deployment diagram, current + future)  
+      → Functional (activity diagram, current + future): **end-to-end data and AI pipeline**  
         (collection → processing → training/validation/testing → deployment → monitoring)
   - **Letter of Commitment** with political endorsement
   - **Ownership and Control Declaration** (OCD)
@@ -233,7 +234,7 @@ To ensure usefulness, efficiency, and relevance of AI in the project, pilots sho
 
 ---
 END commenting out requirements -->
-
+<!-- 
 ## WS3 Resources  
 
 This section provides a set of **non-technical** and **technical resources** that are directly targeted to the WS3 scope. These resources are designed to support pilots in preparing their proposals, planning their implementation, and ensuring compliance with interoperability, AI, and governance requirements.  
@@ -263,4 +264,4 @@ This section provides a set of **non-technical** and **technical resources** tha
 | MLFlow | Experiment tracking & model registry. | [MLFlow](https://mlflow.org/) | AI for Smart Cities |
 | KServe & Open Inference Protocol V2 | AI Inference Platform for Scalable, Multi-Framework Deployment on Kubernetes. | [KServe](https://kserve.github.io/website/) · [Inference Protocol V2](https://kserve.github.io/website/docs/concepts/architecture/data-plane/v2-protocol) | AI for Smart Cities |
 
----
+--- -->
