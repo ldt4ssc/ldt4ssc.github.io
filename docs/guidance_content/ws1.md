@@ -101,9 +101,11 @@ This is a **cheat sheet** for Work Strand 1 (Connecting Existing Local Digital T
   - **Contractual framework** guaranteeing sustainability of LDTs (Rq22)
 
 
-### 🛠️ **Adopt** during the project
+### 🛠️ **Engage** during the project
 
-  - Active **engagement** of end-users throughout the project lifecycle (Rq10)
+Pilots are expected to engage with:
+
+  - **End-users** actively throughout the project lifecycle (Rq10)
   - **Linked Data Ontology (MIM1)** for semantic consistency (Rq16)  
       → e.g., NGSI-LD, SPARQL
   - At least **5 foundational MIMs Plus** (MIM0, MIM1, MIM2, MIM3, MIM6) (Rq18)

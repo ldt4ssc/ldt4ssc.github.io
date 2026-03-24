@@ -112,7 +112,9 @@ This is a **cheat sheet** for Work Strand 2 (Creating New Local Digital Twins ba
   - **Contractual framework** for LDT sustainability (Rq24)
 
 
-### 🛠️ **Adopt** during the project
+### 🛠️ **Engage** during the project
+
+Pilots are expected to engage with:
 
   - **LDT4SSC methodology** phases: Explore → Validate → Define → Implement (Rq12)
   - **Semantic interoperability** (MIM1) using open standards (Rq17)  
