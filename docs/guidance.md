@@ -203,7 +203,7 @@ This page summarises requirements **shared across WS1, WS2, and WS3**. For work-
 
 ## Application Process  
 
-👉 The second round of open calls is now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply until 02/04/2026, 23:59 CET.
+👉 The second round of open calls is now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply until 15/04/2026, 23:59 CET.
 
 To apply, 
 

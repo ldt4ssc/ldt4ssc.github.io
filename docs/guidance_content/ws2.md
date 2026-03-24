@@ -12,7 +12,7 @@ This Work Strand focuses on supporting key policy scenarios and addressing commo
 - Second Round of open calls: February 2026  
 - Third Round of open calls: May 2026  
 
-👉 Second round of open calls now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply by 02/04/2026, 23:59 CET.
+👉 Second round of open calls now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply by 15/04/2026, 23:59 CET.
 
 **What is the goal?**  
 
