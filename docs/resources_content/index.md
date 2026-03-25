@@ -12,12 +12,12 @@ We've organized resources into two complementary categories: **Technical Resourc
 
     Standards, tools, frameworks, and implementations for interoperable Local Digital Twin deployments. Explore the technical landscape including NGSI-LD context brokers, data space protocols, discovery services, and AI toolkits aligned with European interoperability frameworks.
 
-    [:octicons-arrow-right-24: Browse Technical Resources](resources_content/tech_resources.md)
+    [:octicons-arrow-right-24: Browse Technical Resources](tech_resources.md)
 
 -   :material-clipboard-text:{ .lg .middle } __Non-Technical Resources__
 
     Organisational, strategic, legal, and governance guidance for the pilot journey. Access the LDT4SSC methodology with its four phases (Ideation, Specifications, Prototyping, Deployment), practical workshops, and tools to align stakeholders and ensure sustainable implementation.
 
-    [:octicons-arrow-right-24: Explore Non-Technical Resources](resources_content/non_tech_resources.md)
+    [:octicons-arrow-right-24: Explore Non-Technical Resources](non_tech_resources.md)
 
 </div>

@@ -31,10 +31,10 @@ Every pilot follows five main phases over an 18-month period:
     <div class="stepper-label" style="color: var(--journey-define);">Development</div>
     <div class="stepper-desc">Follow the LDT4SSC methodology</div>
     <div class="stepper-subphases">
-      <a href="../resources_content/non_tech_resources/#ideation-explore" class="stepper-subphase" style="background: var(--journey-explore);">EXPLORE</a>
-      <a href="../resources_content/non_tech_resources/#specifications-validate" class="stepper-subphase" style="background: var(--journey-validate);">VALIDATE</a>
-      <a href="../resources_content/non_tech_resources/#prototyping-define" class="stepper-subphase" style="background: var(--journey-define);">DEFINE</a>
-      <a href="../resources_content/non_tech_resources/#deployment-implement" class="stepper-subphase" style="background: var(--journey-implement);">IMPLEMENT</a>
+      <a href="../resources_content/methodology/#ideation-explore" class="stepper-subphase" style="background: var(--journey-explore);">EXPLORE</a>
+      <a href="../resources_content/methodology/#specifications-validate" class="stepper-subphase" style="background: var(--journey-validate);">VALIDATE</a>
+      <a href="../resources_content/methodology/#prototyping-define" class="stepper-subphase" style="background: var(--journey-define);">DEFINE</a>
+      <a href="../resources_content/methodology/#deployment-implement" class="stepper-subphase" style="background: var(--journey-implement);">IMPLEMENT</a>
     </div>
   </div>
   <div class="stepper-phase">
@@ -55,7 +55,7 @@ Every pilot follows five main phases over an 18-month period:
 
     **2. Onboarding** — Selected pilots go through a structured training programme (Pilots Onboarding Package, D4.2) developed by WP4 in coordination with WP3 and WP2. Training covers the technical specifications, the methodological framework, and the available resources. Pilot support activities — including the helpdesk, monitoring tools, and quality assurance — are also introduced.
 
-    **3. Implementation** — Pilots follow the [LDT4SSC methodology](resources_content/non_tech_resources.md#the-methodology) through its four phases: **EXPLORE** (ideation and use case mapping), **VALIDATE** (specifications and data governance), **DEFINE** (prototyping and architecture), and **IMPLEMENT** (deployment and integration). Pilot deliverables are produced along the way.
+    **3. Implementation** — Pilots follow the [LDT4SSC methodology](resources_content/methodology.md#the-ldt4ssc-methodology) through its four phases: **EXPLORE** (ideation and use case mapping), **VALIDATE** (specifications and data governance), **DEFINE** (prototyping and architecture), and **IMPLEMENT** (deployment and integration). Pilot deliverables are produced along the way.
 
     **4. Sharing Back** — Developed assets, tools, and lessons are contributed back to the [Technical](resources_content/tech_resources.md) and [Non-Technical](resources_content/non_tech_resources.md) resources, as well as to the LDT4SSC Assets Repository, enriching the ecosystem for future initiatives.
 

@@ -40,17 +40,17 @@ The project foresees **three Work Strands** through which potential pilots can a
 !!! abstract "WS1: Technical Interconnection of LDTs"
     **Linking and scaling digital twins that are already in place**
 
-    [:octicons-arrow-right-24: View Details](guidance_content/ws1.md)
+    [:octicons-arrow-right-24: View Details](ws1.md)
 
 !!! abstract "WS2: Creation of LDTs Based on Common Needs"
     **Addressing shared urban or regional challenges (e.g., cross-border traffic, air pollution)**
 
-    [:octicons-arrow-right-24: View Details](guidance_content/ws2.md)
+    [:octicons-arrow-right-24: View Details](ws2.md)
 
 !!! abstract "WS3: Adding New Advanced AI-Based Capabilities to existing LDTs"
     **Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDT Toolbox**
 
-    [:octicons-arrow-right-24: View Details](guidance_content/ws3.md)
+    [:octicons-arrow-right-24: View Details](ws3.md)
 
 
 ---
@@ -170,7 +170,7 @@ This page summarises requirements **shared across WS1, WS2, and WS3**. For work-
 
     Technical Inter-connection of Existing LDTs.  
 
-    [:octicons-arrow-right-24: View Details](guidance_content/ws1.md)
+    [:octicons-arrow-right-24: View Details](ws1.md)
 
 </div>
 
@@ -180,7 +180,7 @@ This page summarises requirements **shared across WS1, WS2, and WS3**. For work-
 
     Creation of LDTs Based on Common Needs.  
 
-    [:octicons-arrow-right-24: View Details](guidance_content/ws2.md)
+    [:octicons-arrow-right-24: View Details](ws2.md)
 </div>
 
 
@@ -190,7 +190,7 @@ This page summarises requirements **shared across WS1, WS2, and WS3**. For work-
 
     Adding New Advanced AI-Based Tools to the LDTs Toolbox.  
 
-    [:octicons-arrow-right-24: View Details](guidance_content/ws3.md)
+    [:octicons-arrow-right-24: View Details](ws3.md)
 
 </div> -->
 ---

@@ -6,9 +6,8 @@ theme:
   custom_dir: docs/overrides
   logo: assets/logo.png   # Add your logo in docs/assets/logo.png
   features:
-    - navigation.expand
-    - navigation.sections
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - search.share
@@ -28,9 +27,23 @@ theme:
 nav:
   - Welcome: index.md
   - Strategy & Sustainability: strategy.md
-  - Smart Communities Ecosystem: communities.md
-  - Pilot Guidance: guidance.md
-  - Resources for Pilots: resources.md
+  - Smart Communities Ecosystem:
+    - communities_content/index.md
+    - Data Spaces: communities_content/Data_Spaces_Related_Initiatives.md
+    - AI for Smart Cities: communities_content/AI_For_Smart_Cities_Related_Initiatives.md
+    - Local Digital Twins: communities_content/Local_Digital_Twins_Related_Initiatives.md
+    - CitiVerse: communities_content/CitiVerse_Related_Initiatives.md
+    - Interoperability & MIMs: communities_content/Interoperability_and_MIMs_Related_Initiatives.md
+    - Cities Network: communities_content/Cities_Network_Related_Initiatives.md
+  - Pilot Guidance:
+    - guidance_content/index.md
+    - WS1 – Interconnection of LDTs: guidance_content/ws1.md
+    - WS2 – Creation of LDTs: guidance_content/ws2.md
+    - WS3 – AI-Based Capabilities: guidance_content/ws3.md
+  - Resources for Pilots:
+    - resources_content/index.md
+    - Technical Resources: resources_content/tech_resources.md
+    - Non-technical Resources: resources_content/non_tech_resources.md
   # - Pilot Journey: journey.md  # hidden until ready for release
 
 
