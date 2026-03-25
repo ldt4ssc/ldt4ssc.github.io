@@ -550,7 +550,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .map((mim) => {
         const mimColors = MIM_COLORS[mim] || { bg: '#cccccc', text: '#333333' };
         const description = MIM_DESCRIPTIONS[mim] || '';
-        return `<span class="mim-tooltip-wrapper"><span class="mim-badge clickable" data-mim="${mim}" style="background-color: ${mimColors.bg}; color: ${mimColors.text};" onclick="toggleMimFilter('${mim}', event)">${escapeHtml(mim)}</span><div class="mim-tooltip">${mim}: ${description}</div></span>`;
+        return `<span class="mim-tooltip-wrapper"><span class="mim-badge clickable" data-mim="${mim}" style="background-color: ${mimColors.bg}; color: ${mimColors.text};" onclick="toggleMimFilter('${mim}', event)"><span class="mim-badge-label">${escapeHtml(mim)}</span></span><div class="mim-tooltip">${mim}: ${description}</div></span>`;
       })
       .join("");
 
@@ -578,7 +578,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ${originBadge}
     </div>
     <div class="mim-badges-container">
-      ${mimBadgesHtml || '<span class="mim-badge" style="background-color: #cccccc; color: #666666;">No MIM</span>'}
+      ${mimBadgesHtml || '<span class="mim-badge" style="background-color: #cccccc; color: #666666;"><span class="mim-badge-label">No MIM</span></span>'}
     </div>
   </div>
   <p class="card-description">${escapeHtml(resource.description || "")}</p>
@@ -597,9 +597,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ${categoryBadge}
       </div>` : ''}
       ${scopeBadgesHtml ? `
-      <div class="meta-row">
+      <div class="meta-row meta-row--scope">
         <span class="meta-label">Scope:</span>
-        ${scopeBadgesHtml}
+        <div class="scope-badges-stack">${scopeBadgesHtml}</div>
       </div>` : ''}
       ${resource.maintainer ? `
       <div class="meta-row">
