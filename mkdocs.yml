@@ -44,7 +44,7 @@ nav:
     - resources_content/index.md
     - Technical Resources: resources_content/tech_resources.md
     - Non-technical Resources: resources_content/non_tech_resources.md
-  # - Pilot Journey: journey.md  # hidden until ready for release
+  # - Pilot Journey: journey/index.md  # hidden until ready for release
 
 
     

@@ -4,7 +4,7 @@ This page tracks the progress of all piloting projects within the LDT4SSC initia
 
 !!! tip "On this page"
     - [Journey Overview](#journey-overview) — The 5 phases every pilot goes through
-    - [Cohorts](#cohorts) — Three rounds of open calls
+    - [Rounds](#rounds) — Three rounds of open calls
     - [Timeline](#timeline) — Interactive progress tracker
     - [Our Pilots](#our-pilots) — Browse all selected pilots
     - [Deliverables](#deliverables) — Pilot deliverable status
@@ -55,31 +55,31 @@ Every pilot follows five main phases over an 18-month period:
 
     **2. Onboarding** — Selected pilots go through a structured training programme (Pilots Onboarding Package, D4.2) developed by WP4 in coordination with WP3 and WP2. Training covers the technical specifications, the methodological framework, and the available resources. Pilot support activities — including the helpdesk, monitoring tools, and quality assurance — are also introduced.
 
-    **3. Implementation** — Pilots follow the [LDT4SSC methodology](resources_content/methodology.md#the-ldt4ssc-methodology) through its four phases: **EXPLORE** (ideation and use case mapping), **VALIDATE** (specifications and data governance), **DEFINE** (prototyping and architecture), and **IMPLEMENT** (deployment and integration). Pilot deliverables are produced along the way.
+    **3. Implementation** — Pilots follow the [LDT4SSC methodology](../resources_content/methodology.md#the-ldt4ssc-methodology) through its four phases: **EXPLORE** (ideation and use case mapping), **VALIDATE** (specifications and data governance), **DEFINE** (prototyping and architecture), and **IMPLEMENT** (deployment and integration). Pilot deliverables are produced along the way.
 
-    **4. Sharing Back** — Developed assets, tools, and lessons are contributed back to the [Technical](resources_content/tech_resources.md) and [Non-Technical](resources_content/non_tech_resources.md) resources, as well as to the LDT4SSC Assets Repository, enriching the ecosystem for future initiatives.
+    **4. Sharing Back** — Developed assets, tools, and lessons are contributed back to the [Technical](../resources_content/tech_resources.md) and [Non-Technical](../resources_content/non_tech_resources.md) resources, as well as to the LDT4SSC Assets Repository, enriching the ecosystem for future initiatives.
 
     **5. Handover** — Final project review, sustainability planning, and handover of assets and services for future continuity.
 
 ---
 
-## Cohorts {#cohorts}
+## Rounds {#rounds}
 
-Pilots are selected through three rounds of open calls. Each cohort follows a journey of up to 18 months, but starts at different times.
+Pilots are selected through three rounds of open calls. Each round follows a journey of up to 18 months, but starts at different times.
 
 <div class="cohort-cards">
   <div class="cohort-card" style="border-left-color: #1565c0;">
-    <h3 style="color: #1565c0;">Cohort 1</h3>
+    <h3 style="color: #1565c0;">Round 1</h3>
     <div class="cohort-dates">May 2026 – October 2027</div>
     <span class="cohort-status" style="background: #e3f2fd; color: #0d47a1;">Upcoming</span>
   </div>
   <div class="cohort-card" style="border-left-color: #2e7d32;">
-    <h3 style="color: #2e7d32;">Cohort 2</h3>
+    <h3 style="color: #2e7d32;">Round 2</h3>
     <div class="cohort-dates">August 2026 – January 2028</div>
     <span class="cohort-status" style="background: #e8f5e9; color: #1b5e20;">Upcoming</span>
   </div>
   <div class="cohort-card" style="border-left-color: #e65100;">
-    <h3 style="color: #e65100;">Cohort 3</h3>
+    <h3 style="color: #e65100;">Round 3</h3>
     <div class="cohort-dates">November 2026 – April 2028</div>
     <span class="cohort-status" style="background: #fff3e0; color: #e65100;">Upcoming</span>
   </div>
@@ -89,14 +89,14 @@ Pilots are selected through three rounds of open calls. Each cohort follows a jo
 
 ## Timeline {#timeline}
 
-The progress tracker shows the 18-month pilot journey with key phases and deliverable milestones. Toggle between the **All Pilots** view (relative months M1–M18) and a **cohort view** (absolute calendar months).
+The progress tracker shows the 18-month pilot journey with key phases and deliverable milestones. Toggle between the **All Pilots** view (relative months M1–M18) and a **round view** (absolute calendar months).
 
 <div class="timeline-container">
   <div class="timeline-tabs" id="timeline-tabs">
     <span class="timeline-tab active" data-cohort="template">All Pilots (M1–M18)</span>
-    <span class="timeline-tab" data-cohort="1">Cohort 1</span>
-    <span class="timeline-tab" data-cohort="2">Cohort 2</span>
-    <span class="timeline-tab" data-cohort="3">Cohort 3</span>
+    <span class="timeline-tab" data-cohort="1">Round 1</span>
+    <span class="timeline-tab" data-cohort="2">Round 2</span>
+    <span class="timeline-tab" data-cohort="3">Round 3</span>
   </div>
 
   <div id="journey-timeline">
@@ -227,7 +227,7 @@ The progress tracker shows the 18-month pilot journey with key phases and delive
   <!-- Pilot cards will be rendered by journey.js from Google Sheets data -->
 
   !!! note "Coming soon"
-      Pilot cards will appear here as cohorts are onboarded. **Cohort 1** begins in May 2026.
+      Pilot cards will appear here as rounds are onboarded. **Round 1** begins in May 2026.
 
 </div>
 
@@ -252,7 +252,7 @@ All pilots produce five key deliverables throughout their 18-month journey:
     <thead>
       <tr>
         <th>Pilot</th>
-        <th>Cohort</th>
+        <th>Round</th>
         <th>PD1</th>
         <th>PD2 (Initial)</th>
         <th>PD3</th>
@@ -264,7 +264,7 @@ All pilots produce five key deliverables throughout their 18-month journey:
     <tbody id="deliverable-tracker-body">
       <tr>
         <td colspan="8" style="text-align: center; color: #999; padding: 1.5rem; font-size: 0.8rem;">
-          Pilot data will appear here once Cohort 1 begins in May 2026.
+          Pilot data will appear here once Round 1 begins in May 2026.
         </td>
       </tr>
     </tbody>
@@ -279,7 +279,7 @@ All pilots produce five key deliverables throughout their 18-month journey:
     <thead>
       <tr>
         <th>Pilot</th>
-        <th>Cohort</th>
+        <th>Round</th>
         <th>PD1</th>
         <th>PD2 (Initial)</th>
         <th>PD3</th>

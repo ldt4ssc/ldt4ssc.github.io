@@ -118,6 +118,7 @@ It aims to dynamically represent a defined observed geographical area to analyse
     3. **Prospective**: Conducts "what-if" analyses to evaluate the potential consequences of actions, extending the predictive model to multiple possible future scenarios.
     4. **Prescriptive**: Extends (or, in some cases, executes) the prospective capability with suggested actions on the real system to achieve a given objective based on the analysis.
     5. **Diagnostic**: Explains situations or alerts about deviations from expected conditions. Capability for evaluating what happened, especially in the case of a malfunction of the real asset.
+
 ---
 
 

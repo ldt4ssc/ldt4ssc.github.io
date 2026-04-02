@@ -2,7 +2,7 @@
 
 !!! tip "Quick Info"
     - **Pilot ID:** [ID]
-    - **Cohort:** [1 / 2 / 3]
+    - **Round:** [1 / 2 / 3]
     - **Work Strand:** WS[1 / 2 / 3] — [Title]
     - **Pilot Lead:** [Organisation]
     - **Composition:** [Partner 1, Partner 2, ...]
@@ -42,4 +42,4 @@
 
 ---
 
-[:octicons-arrow-left-24: Back to Pilot Journey](../../journey.md)
+[:octicons-arrow-left-24: Back to Pilot Journey](../index.md)

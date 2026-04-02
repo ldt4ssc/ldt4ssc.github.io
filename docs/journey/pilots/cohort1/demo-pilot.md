@@ -2,7 +2,7 @@
 
 <div class="pilot-detail-header">
   <div class="pilot-detail-meta">
-    <span class="pilot-detail-badge" style="background: #e3f2fd; color: #0d47a1;">Cohort 1</span>
+    <span class="pilot-detail-badge" style="background: #e3f2fd; color: #0d47a1;">Round 1</span>
     <span class="pilot-detail-badge" style="background: #e8eaf6; color: #283593;">WS1 — Technical Interconnection of LDTs</span>
     <span class="pilot-detail-badge pilot-phase-badge" style="background: #424242; color: #fff;">VALIDATE</span>
   </div>
@@ -202,4 +202,4 @@ The pilot has completed the **EXPLORE** phase and is now in the **VALIDATE** pha
 
 ---
 
-[:octicons-arrow-left-24: Back to Pilot Journey](../../../journey.md)
+[:octicons-arrow-left-24: Back to Pilot Journey](../../index.md)

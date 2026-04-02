@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!pilots.length) {
       container.innerHTML = `
         <div style="text-align: center; color: #999; padding: 2rem; font-size: 0.85rem;">
-          No pilots available yet. Cohort 1 begins in May 2026.
+          No pilots available yet. Round 1 begins in May 2026.
         </div>`;
       return;
     }
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!cohortPilots.length) return;
 
       const colors = COHORT_COLORS[cohort] || COHORT_COLORS["C1"];
-      html += `<h4 style="color: ${colors.border}; margin-top: 1.5rem;">Cohort ${cohort.slice(1)}</h4>`;
+      html += `<h4 style="color: ${colors.border}; margin-top: 1.5rem;">Round ${cohort.slice(1)}</h4>`;
       html += `<div class="pilot-cards-container">`;
 
       cohortPilots.forEach(p => {
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tbody.innerHTML = `
         <tr>
           <td colspan="8" style="text-align: center; color: #999; padding: 1.5rem; font-size: 0.8rem;">
-            Pilot data will appear here once Cohort 1 begins in May 2026.
+            Pilot data will appear here once Round 1 begins in May 2026.
           </td>
         </tr>`;
       return;
@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
       separator.className = "timeline-cohort-header";
       separator.style.borderLeftColor = colors.border;
       separator.style.color = colors.border;
-      separator.textContent = `Cohort ${cohortKey.slice(1)}`;
+      separator.textContent = `Round ${cohortKey.slice(1)}`;
       grid.appendChild(separator);
 
       // Pilot rows
