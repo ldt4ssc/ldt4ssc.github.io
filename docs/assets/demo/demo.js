@@ -118,10 +118,9 @@ function buildEntityFromFeature(feature) {
       unitCode: 'DD',
     },
     generatedPower: {
-      type:       'Property',
-      value:      0,
-      unitCode:   'KWT',
-      observedAt: new Date().toISOString(),
+      type:     'Property',
+      value:    0,
+      unitCode: 'KWT',
     },
     '@context': [
       'https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.8.jsonld',
@@ -130,24 +129,6 @@ function buildEntityFromFeature(feature) {
   };
 }
 
-/**
- * Build an approximate circle as a closed GeoJSON ring (lon/lat pairs).
- * @param {number} centerLng
- * @param {number} centerLat
- * @param {number} radiusM   Radius in metres.
- * @param {number} [steps=32]
- * @returns {number[][]}  Closed outer ring.
- */
-function _buildCirclePolygon(centerLng, centerLat, radiusM, steps = 32) {
-  const coords = [];
-  for (let i = 0; i <= steps; i++) {
-    const angle = (i / steps) * 2 * Math.PI;
-    const dLat  = (radiusM / 110540) * Math.cos(angle);
-    const dLon  = (radiusM / (111320 * Math.cos(centerLat * Math.PI / 180))) * Math.sin(angle);
-    coords.push([centerLng + dLon, centerLat + dLat]);
-  }
-  return coords;
-}
 
 /**
  * Highlight a set of entities on the map as query results.
@@ -235,10 +216,6 @@ function addMapSources(m) {
     promoteId: 'entityId',  // allows setFeatureState with string IDs
   });
 
-  m.addSource('selected-source', {
-    type: 'geojson',
-    data: { type: 'FeatureCollection', features: [] },
-  });
 }
 
 /** Add building polygon layers in correct z-order. */
@@ -269,7 +246,7 @@ function addMapLayers(m) {
     },
   });
 
-  // Query-console highlight layer — amber fill for matched buildings
+  // Highlighted buildings (both click-selected and geo-query matched) — amber fill
   m.addLayer({
     id:     'buildings-query',
     type:   'fill',
@@ -284,25 +261,19 @@ function addMapLayers(m) {
     },
   });
 
-  // Selected building fill (above others)
+  // Highlighted buildings stroke — same condition as fill
   m.addLayer({
-    id:     'selected-fill',
-    type:   'fill',
-    source: 'selected-source',
-    paint:  {
-      'fill-color':   '#e8a33d',
-      'fill-opacity': 0.85,
-    },
-  });
-
-  // Selected building stroke
-  m.addLayer({
-    id:     'selected-stroke',
+    id:     'buildings-query-stroke',
     type:   'line',
-    source: 'selected-source',
+    source: 'buildings-source',
     paint:  {
-      'line-color': '#c47f1a',
-      'line-width': 2.5,
+      'line-color':   '#c47f1a',
+      'line-width':   2.5,
+      'line-opacity': [
+        'case',
+        ['boolean', ['feature-state', 'queryMatch'], false], 1,
+        0,
+      ],
     },
   });
 }
@@ -361,30 +332,6 @@ function updateMapBuildings() {
   map.getSource('buildings-source').setData({ type: 'FeatureCollection', features });
 }
 
-/**
- * Set the selected-source to a single building polygon (or empty).
- * @param {string | null} entityId
- */
-function updateMapSelection(entityId) {
-  if (!map) return;
-  if (!entityId) {
-    map.getSource('selected-source').setData({ type: 'FeatureCollection', features: [] });
-    return;
-  }
-  try {
-    const entity = broker.getEntity(entityId);
-    map.getSource('selected-source').setData({
-      type:     'FeatureCollection',
-      features: [{
-        type:       'Feature',
-        geometry:   entity.location.value,
-        properties: { entityId },
-      }],
-    });
-  } catch (_) {
-    map.getSource('selected-source').setData({ type: 'FeatureCollection', features: [] });
-  }
-}
 
 /**
  * Update hover feature state and entity list row highlight.
@@ -416,6 +363,8 @@ function setHoveredEntity(entityId) {
  * @param {Object} entity  Full NGSI-LD entity.
  */
 async function seedHistoricalData(entity) {
+  // Clear existing generatedPower temporal history before (re-)seeding
+  broker.clearTemporalAttr(entity.id, 'generatedPower');
   const observations = generateHistorical(entity);
   for (const obs of observations) {
     broker.updateAttribute(entity.id, 'generatedPower', obs.value, obs.observedAt);
@@ -507,7 +456,16 @@ async function handleFetchBuildings() {
 function selectEntity(entityId) {
   state.selectedEntityId = entityId;
   focusedListIndex = -1;
-  updateMapSelection(entityId);
+  // Route map highlight through the same queryMatch feature-state used by geo-queries
+  // so click and geo-query produce identical visual results on the map.
+  if (entityId) {
+    // Preserve any existing multi-entity queryHighlight; only override when single-clicking
+    if (!state.queryHighlight || state.queryHighlight.size <= 1) {
+      applyQueryHighlight([entityId]);
+    }
+  } else {
+    applyQueryHighlight(null);
+  }
   renderEntityList();
   renderChart();
   renderRawPanel();
@@ -543,10 +501,9 @@ function renderEntityList() {
         e.id.toLowerCase().includes(filter))
     : entities;
 
-  // Sort: highlighted (selected or query-matched) entities float to the top
+  // Sort: highlighted entities (queryHighlight covers both click-selected and geo-query)
   const isHighlighted = (e) =>
-    e.id === state.selectedEntityId ||
-    (state.queryHighlight && state.queryHighlight.has(e.id));
+    state.queryHighlight && state.queryHighlight.has(e.id);
   const filtered = [
     ...base.filter(isHighlighted),
     ...base.filter(e => !isHighlighted(e)),
@@ -658,7 +615,65 @@ function renderScenarioSection() {
 async function renderChart() {
   const hint = document.getElementById('chart-hint');
 
-  if (!state.selectedEntityId) {
+  // Aggregated view: 2+ highlighted entities → sum generatedPower hour-by-hour
+  if (state.queryHighlight && state.queryHighlight.size >= 2) {
+
+    const ids = [...state.queryHighlight];
+    let allObs;
+
+    if (state.scenario === 'forecast') {
+      // Fetch weather once, then generate forecast for each entity
+      if (!state.weatherData) {
+        try {
+          const wr = await fetchForecast(state.lat, state.lon);
+          state.weatherData = wr.data;
+          state.weatherData._source = wr.source;
+          if (wr.warning) setStatus('init-status', wr.warning, 'error');
+          renderScenarioSection();
+        } catch (err) {
+          hint.textContent = `Could not load forecast: ${err.message}`;
+          hint.removeAttribute('hidden');
+          return;
+        }
+      }
+      allObs = ids.flatMap(id => {
+        try {
+          const entity = broker.getEntity(id);
+          return generateForecast(entity, state.weatherData);
+        } catch (_) { return []; }
+      });
+    } else {
+      allObs = ids.flatMap(id => {
+        try {
+          const r = broker.getTemporalEntity(id);
+          return Array.isArray(r.generatedPower) ? r.generatedPower : [];
+        } catch (_) { return []; }
+      });
+    }
+
+    if (allObs.length === 0) {
+      hint.textContent = 'No time-series data for the selected buildings.';
+      hint.removeAttribute('hidden');
+      return;
+    }
+    // Sum values at the same timestamp bucket (minute precision)
+    const sumMap = new Map();
+    for (const obs of allObs) {
+      const key = obs.observedAt.slice(0, 16); // YYYY-MM-DDTHH:MM
+      sumMap.set(key, (sumMap.get(key) || 0) + obs.value);
+    }
+    const aggregated = [...sumMap.entries()]
+      .map(([ts, value]) => ({ observedAt: ts + ':00Z', value: Math.round(value * 100) / 100 }));
+    hint.setAttribute('hidden', '');
+    updateChart(aggregated, `Total — ${ids.length} buildings`);
+    return;
+  }
+
+  // Resolve a single entity to render — prefer explicit selection, fall back to sole highlight
+  const singleId = state.selectedEntityId ||
+    (state.queryHighlight?.size === 1 ? [...state.queryHighlight][0] : null);
+
+  if (!singleId) {
     hint.removeAttribute('hidden');
     return;
   }
@@ -666,7 +681,7 @@ async function renderChart() {
   let observations;
   try {
     if (state.scenario === 'historical') {
-      const temporal = broker.getTemporalEntity(state.selectedEntityId);
+      const temporal = broker.getTemporalEntity(singleId);
       observations   = temporal.generatedPower || [];
     } else {
       // Forecast mode
@@ -677,7 +692,7 @@ async function renderChart() {
         if (wr.warning) setStatus('init-status', wr.warning, 'error');
         renderScenarioSection();
       }
-      const entity = broker.getEntity(state.selectedEntityId);
+      const entity = broker.getEntity(singleId);
       observations = generateForecast(entity, state.weatherData);
     }
   } catch (err) {
@@ -700,12 +715,12 @@ async function renderChart() {
  * Lazily initialize ECharts and update the chart with new observations.
  * @param {{ value: number, observedAt: string }[]} observations
  */
-function updateChart(observations) {
+function updateChart(observations, label) {
   const el = document.getElementById('chart');
   if (!chartInstance) {
     chartInstance = echarts.init(el);
   }
-  chartInstance.setOption(buildChartOption(observations), true);
+  chartInstance.setOption(buildChartOption(observations, label), true);
 }
 
 /**
@@ -714,7 +729,7 @@ function updateChart(observations) {
  * @param {{ value: number, observedAt: string }[]} observations
  * @returns {Object}  ECharts option.
  */
-function buildChartOption(observations) {
+function buildChartOption(observations, label = 'Generated power') {
   // Sort chronologically — broker appends in push order which may not be sorted
   const sorted = [...observations].sort((a, b) => new Date(a.observedAt) - new Date(b.observedAt));
   const data = sorted.map(o => [+new Date(o.observedAt), o.value]);
@@ -774,6 +789,7 @@ function buildChartOption(observations) {
       },
     },
     series: [{
+      name:        label,
       type:        'line',
       data,
       smooth:      false,
@@ -845,7 +861,7 @@ async function handleImport(file) {
     state.selectedEntityId = null;
     state.weatherData      = null;
     updateMapBuildings();
-    updateMapSelection(null);
+    applyQueryHighlight(null);
     renderAll();
     setStatus('export-status', `Imported ${result.count} entities.`, 'success');
 
@@ -959,58 +975,136 @@ async function handleRunQuery() {
   try {
     if (op === 'queryEntities') {
       const radius = parseFloat(document.getElementById('qp-radius').value) || 200;
-      const ring   = _buildCirclePolygon(state.lon, state.lat, radius);
       const result = broker.queryEntities({
         type:        'Building',
-        georel:      'within',
-        geometry:    'Polygon',
-        coordinates: [ring],
+        georel:      `near;maxDistance==${radius}`,
+        geometry:    'Point',
+        coordinates: [state.lon, state.lat],
       });
+      // Clear any prior single selection before applying the new highlight set,
+      // so renderEntityList sees a clean slate when applyQueryHighlight calls it.
+      state.selectedEntityId = null;
       applyQueryHighlight(result.map(e => e.id));
-      if (result.length > 0) selectEntity(result[0].id);
+      if (result.length === 1) {
+        selectEntity(result[0].id);
+      } else if (result.length > 1) {
+        renderChart();
+        renderRawPanel();
+      }
       setStatus('query-status', `${result.length} building(s) matched within ${radius} m`, 'success');
       curlEl.textContent = result._curl || '';
       copyBtn.hidden     = !result._curl;
 
     } else if (op === 'getTemporalEntity') {
-      const shortId = document.getElementById('qp-entity-id').value.trim();
-      if (!shortId) { setStatus('query-status', 'Enter an entity ID.', 'error'); return; }
-      const fullId  = shortId.startsWith('urn:') ? shortId
-        : `urn:ngsi-ld:Building:demo:${shortId}`;
-      const timerel = document.getElementById('qp-timerel').value;
+      const timerel   = document.getElementById('qp-timerel').value;
       const timeAtRaw = document.getElementById('qp-timeat').value;
-      const timeAt  = timeAtRaw ? new Date(timeAtRaw).toISOString() : undefined;
-      const result  = broker.getTemporalEntity(fullId, timerel, timeAt);
-      const observations = Array.isArray(result.generatedPower) ? result.generatedPower : [];
-      applyQueryHighlight([fullId]);
-      selectEntity(fullId);
-      // Override chart with time-filtered observations from the query
-      const hint = document.getElementById('chart-hint');
-      if (observations.length > 0) {
-        hint.setAttribute('hidden', '');
-        updateChart(observations);
+      const timeAt    = timeAtRaw ? new Date(timeAtRaw).toISOString() : undefined;
+
+      // Determine target IDs: use all highlighted entities if available, else manual input
+      let targetIds;
+      if (state.queryHighlight && state.queryHighlight.size > 0) {
+        targetIds = [...state.queryHighlight];
       } else {
-        hint.textContent = 'No observations in that time range.';
-        hint.removeAttribute('hidden');
+        const shortId = document.getElementById('qp-entity-id').value.trim();
+        if (!shortId) { setStatus('query-status', 'Enter an entity ID or run a geo-query first.', 'error'); return; }
+        const fullId = shortId.startsWith('urn:') ? shortId
+          : `urn:ngsi-ld:Building:demo:${shortId}`;
+        targetIds = [fullId];
       }
-      const obsCount = observations.length;
-      setStatus('query-status', `Found — ${obsCount} generatedPower observation(s)`, 'success');
-      curlEl.textContent = result._curl || '';
-      copyBtn.hidden     = !result._curl;
+
+      const hint = document.getElementById('chart-hint');
+
+      if (targetIds.length === 1) {
+        // Single-entity path — unchanged
+        const result = broker.getTemporalEntity(targetIds[0], timerel, timeAt);
+        const observations = Array.isArray(result.generatedPower) ? result.generatedPower : [];
+        applyQueryHighlight([targetIds[0]]);
+        selectEntity(targetIds[0]);
+        if (observations.length > 0) {
+          hint.setAttribute('hidden', '');
+          updateChart(observations);
+        } else {
+          hint.textContent = 'No observations in that time range.';
+          hint.removeAttribute('hidden');
+        }
+        setStatus('query-status', `Found — ${observations.length} generatedPower observation(s)`, 'success');
+        curlEl.textContent = result._curl || '';
+        copyBtn.hidden     = !result._curl;
+      } else {
+        // Multi-entity path — aggregate observations with the same time filter
+        let lastCurl = '';
+        const allObs = targetIds.flatMap(id => {
+          try {
+            const r = broker.getTemporalEntity(id, timerel, timeAt);
+            lastCurl = r._curl || '';
+            return Array.isArray(r.generatedPower) ? r.generatedPower : [];
+          } catch (_) { return []; }
+        });
+
+        if (allObs.length === 0) {
+          hint.textContent = 'No observations in that time range.';
+          hint.removeAttribute('hidden');
+          setStatus('query-status', 'No observations matched the time filter.', 'error');
+        } else {
+          const sumMap = new Map();
+          for (const obs of allObs) {
+            const key = obs.observedAt.slice(0, 16); // YYYY-MM-DDTHH:MM
+            sumMap.set(key, (sumMap.get(key) || 0) + obs.value);
+          }
+          const aggregated = [...sumMap.entries()]
+            .map(([ts, value]) => ({ observedAt: ts + ':00Z', value: Math.round(value * 100) / 100 }));
+          hint.setAttribute('hidden', '');
+          updateChart(aggregated, `Total — ${targetIds.length} buildings (filtered)`);
+          setStatus('query-status', `Found — ${allObs.length} observation(s) across ${targetIds.length} buildings`, 'success');
+        }
+        curlEl.textContent = lastCurl
+          ? `# Repeated for ${targetIds.length} entities — showing last:\n${lastCurl}`
+          : '';
+        copyBtn.hidden = !lastCurl;
+      }
 
     } else if (op === 'patchAttr') {
-      const shortId = document.getElementById('qp-patch-id').value.trim();
-      if (!shortId) { setStatus('query-status', 'Enter an entity ID.', 'error'); return; }
-      const fullId   = shortId.startsWith('urn:') ? shortId
-        : `urn:ngsi-ld:Building:demo:${shortId}`;
       const attrName = document.getElementById('qp-attr-name').value;
       const rawVal   = document.getElementById('qp-attr-value').value.trim();
-      const value    = rawVal !== '' && !isNaN(rawVal) ? parseFloat(rawVal) : rawVal;
-      const result   = broker.updateAttribute(fullId, attrName, value, new Date().toISOString());
-      applyQueryHighlight([fullId]);
-      setStatus('query-status', `Patched ${attrName} on ${shortId.split(':').pop()}`, 'success');
-      curlEl.textContent = result._curl || '';
-      copyBtn.hidden     = !result._curl;
+      if (rawVal === '') { setStatus('query-status', 'Enter a value.', 'error'); return; }
+      const value = !isNaN(rawVal) ? parseFloat(rawVal) : rawVal;
+
+      // Use all highlighted entities if available, else fall back to manual ID input
+      let targetIds;
+      if (state.queryHighlight && state.queryHighlight.size > 0) {
+        targetIds = [...state.queryHighlight];
+      } else {
+        const shortId = document.getElementById('qp-patch-id').value.trim();
+        if (!shortId) { setStatus('query-status', 'Enter an entity ID or run a geo-query first.', 'error'); return; }
+        const fullId = shortId.startsWith('urn:') ? shortId : `urn:ngsi-ld:Building:demo:${shortId}`;
+        targetIds = [fullId];
+      }
+
+      let lastCurl = '';
+      for (const fullId of targetIds) {
+        const result = broker.updateAttribute(fullId, attrName, value, new Date().toISOString());
+        lastCurl = result._curl || '';
+      }
+
+      // Re-seed historical data when a solar-model input is changed
+      if (attrName === 'tiltAngle' || attrName === 'installedCapacity') {
+        for (const fullId of targetIds) {
+          try {
+            const entity = broker.getEntity(fullId);
+            await seedHistoricalData(entity);
+          } catch (_) {}
+        }
+      }
+
+      applyQueryHighlight(targetIds);
+      const statusLabel = targetIds.length > 1
+        ? `Patched ${attrName} on ${targetIds.length} buildings`
+        : `Patched ${attrName} on ${targetIds[0].split(':').pop()}`;
+      setStatus('query-status', statusLabel, 'success');
+      curlEl.textContent = targetIds.length > 1
+        ? `# Sent for each of ${targetIds.length} entities — showing last:\n${lastCurl}`
+        : lastCurl;
+      copyBtn.hidden = !lastCurl;
       renderAll();
     }
   } catch (err) {

@@ -178,6 +178,16 @@ a {
   }
 }
 
+.demo-disclaimer {
+  padding:        8px 14px;
+  background:     color-mix(in srgb, var(--demo-accent) 12%, var(--demo-surface));
+  border-bottom:  1px solid color-mix(in srgb, var(--demo-accent) 30%, var(--demo-border));
+  font-size:      11px;
+  line-height:    1.5;
+  color:          var(--demo-text-muted);
+  font-style:     italic;
+}
+
 /* ── 8. Collapsible sections (<details>) ──────────────────────────────── */
 
 details {

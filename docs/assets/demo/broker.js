@@ -54,22 +54,21 @@ function _centroid(ring) {
 }
 
 /**
- * Ray-casting point-in-polygon test.
- * @param {number[]}   point  [lon, lat]
- * @param {number[][]} ring   Polygon outer ring (closed).
- * @returns {boolean}
+ * Haversine distance in metres between two [lon, lat] points.
+ * @param {number[]} a  [lon, lat]
+ * @param {number[]} b  [lon, lat]
+ * @returns {number}  Distance in metres.
  */
-function _pointInPolygon(point, ring) {
-  const [px, py] = point;
-  let inside = false;
-  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
-    const [xi, yi] = ring[i];
-    const [xj, yj] = ring[j];
-    const cross = ((yi > py) !== (yj > py)) &&
-                  (px < (xj - xi) * (py - yi) / (yj - yi) + xi);
-    if (cross) inside = !inside;
-  }
-  return inside;
+function _haversineM(a, b) {
+  const R = 6371000;
+  const toRad = d => d * Math.PI / 180;
+  const dLat = toRad(b[1] - a[1]);
+  const dLon = toRad(b[0] - a[0]);
+  const sinLat = Math.sin(dLat / 2);
+  const sinLon = Math.sin(dLon / 2);
+  const h = sinLat * sinLat +
+            Math.cos(toRad(a[1])) * Math.cos(toRad(b[1])) * sinLon * sinLon;
+  return 2 * R * Math.asin(Math.sqrt(h));
 }
 
 // ---- Exported broker functions ----
@@ -117,7 +116,7 @@ export function getEntity(id) {
     throw new Error(`Entity '${id}' not found`);
   }
   const entity = { ..._store.get(id) };
-  return _attach(entity, _buildCurl('GET', `/ngsi-ld/v1/entities/${encodeURIComponent(id)}`));
+  return _attach(entity, _buildCurl('GET', `/ngsi-ld/v1/entities/${id}`));
 }
 
 /**
@@ -126,15 +125,15 @@ export function getEntity(id) {
  *
  * Supported filters:
  *   type        — exact match on entity type
- *   georel      — only 'within' is supported; tests entity centroid vs query polygon
- *   geometry    — only 'Polygon' is supported with georel=within
- *   coordinates — GeoJSON coordinates array for the query polygon
+ *   georel      — 'near;maxDistance==<metres>' — tests entity centroid distance to query Point
+ *   geometry    — 'Point' (required with georel=near)
+ *   coordinates — [lon, lat] of the query point
  *
  * @param {Object} [params]
  * @param {string} [params.type]
- * @param {string} [params.georel]
- * @param {string} [params.geometry]
- * @param {Array}  [params.coordinates]
+ * @param {string} [params.georel]       e.g. 'near;maxDistance==200'
+ * @param {string} [params.geometry]     'Point'
+ * @param {Array}  [params.coordinates]  [lon, lat]
  * @returns {Array}  Array of shallow-copied matching entities with ._curl on the array.
  */
 export function queryEntities({ type, georel, geometry, coordinates } = {}) {
@@ -144,27 +143,44 @@ export function queryEntities({ type, georel, geometry, coordinates } = {}) {
     results = results.filter(e => e.type === type);
   }
 
-  if (georel === 'within' && geometry === 'Polygon' && Array.isArray(coordinates)) {
-    const ring = coordinates[0]; // outer ring of the query polygon
+  // georel=near;maxDistance==<N> with geometry=Point
+  if (georel && georel.startsWith('near') && geometry === 'Point' && Array.isArray(coordinates)) {
+    const match = georel.match(/maxDistance==(\d+(\.\d+)?)/);
+    const maxDist = match ? parseFloat(match[1]) : Infinity;
+    const queryPoint = coordinates; // [lon, lat]
     results = results.filter(e => {
       const loc = e.location;
       if (!loc?.value?.coordinates?.[0]) return false;
       const centroid = _centroid(loc.value.coordinates[0]);
-      return _pointInPolygon(centroid, ring);
+      return _haversineM(queryPoint, centroid) <= maxDist;
     });
   }
 
   const arr = results.map(e => ({ ...e }));
 
-  // Build query string for curl (human-readable, coordinates URL-encoded)
+  // Build curl using proper NGSI-LD geo-query syntax (human-readable, not percent-encoded)
   const parts = [];
-  if (type)        parts.push(`type=${encodeURIComponent(type)}`);
+  if (type)        parts.push(`type=${type}`);
   if (georel)      parts.push(`georel=${georel}`);
   if (geometry)    parts.push(`geometry=${geometry}`);
-  if (coordinates) parts.push(`coordinates=${encodeURIComponent(JSON.stringify(coordinates))}`);
+  if (coordinates) parts.push(`coordinates=${JSON.stringify(coordinates)}`);
+  if (georel)      parts.push(`geoproperty=location`);
   const qs = parts.length ? `?${parts.join('&')}` : '';
 
   return _attach(arr, _buildCurl('GET', `/ngsi-ld/v1/entities${qs}`));
+}
+
+/**
+ * Clear the temporal history of a single attribute on an entity.
+ * Used internally before re-seeding to avoid duplicate observations.
+ * No direct Stellio equivalent.
+ *
+ * @param {string} id        Entity URN.
+ * @param {string} attrName  Attribute name.
+ */
+export function clearTemporalAttr(id, attrName) {
+  const tmap = _temporal.get(id);
+  if (tmap) tmap.delete(attrName);
 }
 
 /**
@@ -209,7 +225,7 @@ export function updateAttribute(id, attrName, value, observedAt) {
   const body = { value };
   if (observedAt !== undefined) body.observedAt = observedAt;
 
-  return _attach({}, _buildCurl('PATCH', `/ngsi-ld/v1/entities/${encodeURIComponent(id)}/attrs/${attrName}`, body));
+  return _attach({}, _buildCurl('PATCH', `/ngsi-ld/v1/entities/${id}/attrs/${attrName}`, body));
 }
 
 /**
@@ -226,7 +242,7 @@ export function deleteEntity(id) {
   }
   _store.delete(id);
   _temporal.delete(id);
-  return _attach({}, _buildCurl('DELETE', `/ngsi-ld/v1/entities/${encodeURIComponent(id)}`));
+  return _attach({}, _buildCurl('DELETE', `/ngsi-ld/v1/entities/${id}`));
 }
 
 /**
@@ -264,10 +280,10 @@ export function getTemporalEntity(id, timerel, timeAt) {
 
   const parts = [];
   if (timerel) parts.push(`timerel=${timerel}`);
-  if (timeAt)  parts.push(`timeAt=${encodeURIComponent(timeAt)}`);
+  if (timeAt)  parts.push(`timeAt=${timeAt}`);
   const qs = parts.length ? `?${parts.join('&')}` : '';
 
-  return _attach(entity, _buildCurl('GET', `/ngsi-ld/v1/temporal/entities/${encodeURIComponent(id)}${qs}`));
+  return _attach(entity, _buildCurl('GET', `/ngsi-ld/v1/temporal/entities/${id}${qs}`));
 }
 
 /**

@@ -173,6 +173,12 @@
   <!-- ── Right: Control panel ──────────────────────────────────────────── -->
   <aside class="demo-sidebar">
 
+    <!-- Disclaimer -->
+    <div class="demo-disclaimer">
+      This is a fictitious Local Digital Twin built to showcase possible NGSI-LD capabilities.
+      Buildings, solar data, and sensor readings are synthetic and do not represent any real installation.
+    </div>
+
     <!-- 1. Initialize -->
     <details id="sec-init" open>
       <summary><h3>Initialize</h3></summary>
@@ -308,7 +314,7 @@
         <!-- Parameters: patchAttr -->
         <div id="qp-patch" class="demo-query-params" hidden>
           <div class="demo-field">
-            <label for="qp-patch-id">Entity ID (short: osm-way-…)</label>
+            <label for="qp-patch-id">Entity ID — or leave blank to patch all highlighted</label>
             <input id="qp-patch-id" type="text" placeholder="osm-way-123456">
           </div>
           <div class="demo-field">
