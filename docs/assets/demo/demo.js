@@ -9,9 +9,9 @@
 import maplibregl          from 'https://esm.sh/maplibre-gl@4?bundle';
 import * as echarts        from 'https://esm.sh/echarts@5';
 import * as broker         from './broker.js';
-import { generateHistorical, generateForecast } from './solar-model.js';
-import { fetchBuildings }  from './overpass.js';
-import { fetchForecast }   from './weather.js';
+import { generateHistorical, generateFromWeather, generateForecast } from './solar-model.js';
+import { fetchBuildings }   from './overpass.js';
+import { fetchForecast, fetchHistorical } from './weather.js';
 
 // ── Module-level state ────────────────────────────────────────────────────
 
@@ -19,6 +19,7 @@ const state = {
   selectedEntityId: null,        // currently selected building URN
   scenario:         'historical', // 'historical' | 'forecast'
   weatherData:      null,         // last fetchForecast().data
+  historicalData:   null,         // last fetchHistorical().data (null = use synthetic)
   queryHighlight:   null,         // Set<entityId> of last query-console results, or null
   lat:              49.6116,
   lon:              6.1319,
@@ -363,9 +364,19 @@ function setHoveredEntity(entityId) {
  * @param {Object} entity  Full NGSI-LD entity.
  */
 async function seedHistoricalData(entity) {
-  // Clear existing generatedPower temporal history before (re-)seeding
   broker.clearTemporalAttr(entity.id, 'generatedPower');
-  const observations = generateHistorical(entity);
+
+  // Fetch real ERA5 archive weather once per location; all buildings share the result
+  if (state.historicalData === null) {
+    const wr = await fetchHistorical(state.lat, state.lon);
+    state.historicalData = wr.data;  // null means archive unreachable → use synthetic
+    if (wr.warning) setStatus('init-status', wr.warning, 'error');
+  }
+
+  const observations = state.historicalData
+    ? generateFromWeather(entity, state.historicalData)
+    : generateHistorical(entity);
+
   for (const obs of observations) {
     broker.updateAttribute(entity.id, 'generatedPower', obs.value, obs.observedAt);
   }
@@ -382,8 +393,9 @@ async function handleFetchBuildings() {
     setStatus('init-status', 'Enter valid latitude and longitude.', 'error');
     return;
   }
-  state.lat = latVal;
-  state.lon = lonVal;
+  state.lat            = latVal;
+  state.lon            = lonVal;
+  state.historicalData = null;  // clear so next seedHistoricalData fetches fresh archive data
 
   const btn = document.getElementById('fetch-btn');
   btn.disabled    = true;
@@ -860,6 +872,7 @@ async function handleImport(file) {
     const result = broker.importAll(data);
     state.selectedEntityId = null;
     state.weatherData      = null;
+    state.historicalData   = null;
     updateMapBuildings();
     applyQueryHighlight(null);
     renderAll();

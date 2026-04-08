@@ -158,7 +158,7 @@ export function generateHistorical(building, days = 7) {
  * @returns {{ value: number, observedAt: string }[]}
  *   One observation per entry in weatherData.hourly.time.
  */
-export function generateForecast(building, weatherData) {
+export function generateFromWeather(building, weatherData) {
   const ring  = building.location.value.coordinates[0];
   const [, latDeg] = _centroid(ring);
   const cap   = building.installedCapacity.value;
@@ -190,3 +190,6 @@ export function generateForecast(building, weatherData) {
     };
   });
 }
+
+// Backwards-compatible alias — forecast and historical use the same weather-driven model
+export const generateForecast = generateFromWeather;
