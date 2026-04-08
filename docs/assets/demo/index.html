@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--
+  docs/assets/demo/index.html
+  Solar LDT Demo — single-page UI entry point.
+  Iframed from docs/demo/index.md. Must work from file:// and from mkdocs serve.
+
+  DOM STRUCTURE
+  ─────────────
+  <html>
+    <head>
+      MapLibre GL CSS (CDN)
+      demo.css (relative)
+      meta charset + viewport
+      <title>Solar LDT Demo</title>
+    </head>
+    <body>
+      <div class="demo-root">                      ← CSS grid: 1fr 380px
+
+        <div class="demo-map-wrap">                ← left cell, position:relative
+          <div id="map"></div>                     ← MapLibre mount (position:absolute, inset:0)
+          <div class="demo-attribution">           ← compact OSM attribution (position:absolute, bottom-right)
+          <div class="demo-place-banner" hidden>   ← click-to-place overlay (position:absolute, top)
+            <span class="demo-place-banner-text">Click on the map to place a building</span>
+            <button id="cancel-place-btn">Cancel</button>
+          </div>
+        </div>
+
+        <aside class="demo-sidebar">               ← right cell, overflow-y:auto
+
+          <details id="sec-init" open>             ← 1. Initialize (starts open)
+            <summary><h3>Initialize</h3></summary>
+            <div class="demo-section-body">
+              <div class="demo-field-row">         ← lat / lon inputs side-by-side
+                <label>Lat<input id="lat-input" type="number" step="any"></label>
+                <label>Lon<input id="lon-input" type="number" step="any"></label>
+              </div>
+              <div class="demo-search-wrap">       ← position:relative for dropdown
+                <input id="address-input" type="search" placeholder="Search address…"
+                       autocomplete="off" spellcheck="false">
+                <ul id="address-results" class="demo-dropdown" hidden></ul>
+              </div>
+              <button id="fetch-btn" class="demo-btn demo-btn-primary">Fetch buildings</button>
+              <p id="init-status" class="demo-status"></p>
+            </div>
+          </details>
+
+          <details id="sec-entities">             ← 2. Entities (opened after first fetch)
+            <summary>
+              <h3>Entities</h3>
+              <span id="entity-count" class="demo-badge">0</span>
+            </summary>
+            <div class="demo-section-body">
+              <input id="entity-filter" type="search" placeholder="Filter by name or id…"
+                     autocomplete="off">
+              <ul id="entity-list" class="demo-entity-list" tabindex="0"
+                  role="listbox" aria-label="Building entities"></ul>
+            </div>
+          </details>
+
+          <details id="sec-edit">                 ← 3. Edit entity (disabled when nothing selected)
+            <summary><h3>Edit entity</h3></summary>
+            <div class="demo-section-body">
+              <div class="demo-field">
+                <label for="edit-name">Name</label>
+                <input id="edit-name" type="text" disabled>
+              </div>
+              <div class="demo-field">
+                <label for="edit-capacity">Installed capacity (kW)</label>
+                <input id="edit-capacity" type="number" step="0.01" min="0" disabled>
+              </div>
+              <div class="demo-field">
+                <label for="edit-tilt">Tilt angle (°)</label>
+                <input id="edit-tilt" type="number" step="1" min="0" max="90" disabled>
+              </div>
+              <div class="demo-btn-row">
+                <button id="save-entity-btn" class="demo-btn demo-btn-primary" disabled>Save</button>
+                <button id="delete-entity-btn" class="demo-btn demo-btn-danger" disabled>Delete</button>
+              </div>
+              <p id="edit-status" class="demo-status"></p>
+            </div>
+          </details>
+
+          <details id="sec-add">                  ← 4. Add entity (click-to-place mode)
+            <summary><h3>Add entity</h3></summary>
+            <div class="demo-section-body">
+              <p class="demo-hint">Click "Place" then click anywhere on the map to add a building.</p>
+              <button id="place-btn" class="demo-btn demo-btn-secondary">Place building on map</button>
+            </div>
+          </details>
+
+          <details id="sec-scenario">             ← 5. Scenario toggle (Historical / Forecast)
+            <summary><h3>Scenario</h3></summary>
+            <div class="demo-section-body">
+              <div class="demo-toggle-group" role="radiogroup" aria-label="Scenario">
+                <button id="toggle-historical" class="demo-toggle demo-toggle-active"
+                        aria-pressed="true">Historical</button>
+                <button id="toggle-forecast" class="demo-toggle"
+                        aria-pressed="false">Forecast</button>
+              </div>
+              <div id="weather-summary" class="demo-weather-summary" hidden></div>
+                ← rendered by demo.js: source badge, mean cloud cover, mean shortwave radiation
+            </div>
+          </details>
+
+          <details id="sec-chart">               ← 6. ECharts time-series
+            <summary><h3>Time series — Generated Power</h3></summary>
+            <div class="demo-section-body">
+              <div id="chart" class="demo-chart"></div>
+              <p id="chart-hint" class="demo-hint">Select an entity to view its time series.</p>
+            </div>
+          </details>
+
+          <details id="sec-raw">                 ← 7. Raw NGSI-LD viewer (two tabs)
+            <summary><h3>Raw NGSI-LD</h3></summary>
+            <div class="demo-section-body">
+              <div class="demo-tab-bar" role="tablist">
+                <button id="tab-json" class="demo-tab demo-tab-active"
+                        role="tab" aria-selected="true"
+                        aria-controls="raw-panel-json">Entity JSON</button>
+                <button id="tab-curl" class="demo-tab"
+                        role="tab" aria-selected="false"
+                        aria-controls="raw-panel-curl">curl</button>
+              </div>
+              <div id="raw-panel-json" class="demo-raw-panel" role="tabpanel">
+                <pre id="raw-json" class="demo-json-pre"></pre>
+              </div>
+              <div id="raw-panel-curl" class="demo-raw-panel" role="tabpanel" hidden>
+                <pre id="raw-curl" class="demo-curl-pre"></pre>
+                <button id="copy-curl-btn" class="demo-btn demo-btn-ghost demo-btn-sm">Copy</button>
+              </div>
+            </div>
+          </details>
+
+          <details id="sec-export">              ← 8. Export / Import
+            <summary><h3>Export / Import</h3></summary>
+            <div class="demo-section-body">
+              <button id="export-btn" class="demo-btn demo-btn-secondary">Export all as JSON-LD</button>
+              <div class="demo-field">
+                <label for="import-input">Import JSON-LD</label>
+                <input id="import-input" type="file" accept=".json,.jsonld">
+              </div>
+              <p id="export-status" class="demo-status"></p>
+            </div>
+          </details>
+
+        </aside>
+      </div>
+
+      <script type="module" src="./demo.js"></script>
+    </body>
+  </html>
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar LDT Demo</title>
+  <link rel="stylesheet" href="https://esm.sh/maplibre-gl@4/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+
+<div class="demo-root">
+
+  <!-- ── Left: Map ─────────────────────────────────────────────────────── -->
+  <div class="demo-map-wrap">
+    <div id="map"></div>
+    <div class="demo-attribution">
+      © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors
+    </div>
+  </div>
+
+  <!-- ── Right: Control panel ──────────────────────────────────────────── -->
+  <aside class="demo-sidebar">
+
+    <!-- 1. Initialize -->
+    <details id="sec-init" open>
+      <summary><h3>Initialize</h3></summary>
+      <div class="demo-section-body">
+        <div class="demo-field-row">
+          <div class="demo-field">
+            <label for="lat-input">Lat</label>
+            <input id="lat-input" type="number" step="any">
+          </div>
+          <div class="demo-field">
+            <label for="lon-input">Lon</label>
+            <input id="lon-input" type="number" step="any">
+          </div>
+        </div>
+        <div class="demo-search-wrap">
+          <input id="address-input" type="search" placeholder="Search address…"
+                 autocomplete="off" spellcheck="false">
+          <ul id="address-results" class="demo-dropdown" hidden></ul>
+        </div>
+        <button id="fetch-btn" class="demo-btn demo-btn-primary">Fetch buildings</button>
+        <p id="init-status" class="demo-status"></p>
+      </div>
+    </details>
+
+    <!-- 2. Entities -->
+    <details id="sec-entities">
+      <summary>
+        <h3>Entities</h3>
+        <span id="entity-count" class="demo-badge">0</span>
+      </summary>
+      <div class="demo-section-body">
+        <input id="entity-filter" type="search" placeholder="Filter by name or id…"
+               autocomplete="off">
+        <ul id="entity-list" class="demo-entity-list" tabindex="0"
+            role="listbox" aria-label="Building entities"></ul>
+        <button id="clear-selection-btn" class="demo-btn demo-btn-ghost demo-btn-sm" hidden>
+          Clear selection
+        </button>
+      </div>
+    </details>
+
+    <!-- 3. Scenario -->
+    <details id="sec-scenario">
+      <summary><h3>Scenario</h3></summary>
+      <div class="demo-section-body">
+        <div class="demo-toggle-group" role="radiogroup" aria-label="Scenario">
+          <button id="toggle-historical" class="demo-toggle demo-toggle-active"
+                  aria-pressed="true">Historical</button>
+          <button id="toggle-forecast" class="demo-toggle"
+                  aria-pressed="false">Forecast</button>
+        </div>
+        <div id="weather-summary" class="demo-weather-summary" hidden></div>
+      </div>
+    </details>
+
+    <!-- 6. Time series -->
+    <details id="sec-chart">
+      <summary><h3>Time series — Generated Power</h3></summary>
+      <div class="demo-section-body">
+        <div id="chart" class="demo-chart"></div>
+        <p id="chart-hint" class="demo-hint">Select an entity to view its time series.</p>
+      </div>
+    </details>
+
+    <!-- 7. Raw NGSI-LD -->
+    <details id="sec-raw">
+      <summary><h3>Raw NGSI-LD</h3></summary>
+      <div class="demo-section-body">
+        <div class="demo-tab-bar" role="tablist">
+          <button id="tab-json" class="demo-tab demo-tab-active"
+                  role="tab" aria-selected="true" aria-controls="raw-panel-json">Entity JSON</button>
+          <button id="tab-curl" class="demo-tab"
+                  role="tab" aria-selected="false" aria-controls="raw-panel-curl">curl</button>
+        </div>
+        <div id="raw-panel-json" class="demo-raw-panel" role="tabpanel">
+          <pre id="raw-json" class="demo-json-pre"></pre>
+        </div>
+        <div id="raw-panel-curl" class="demo-raw-panel" role="tabpanel" hidden>
+          <pre id="raw-curl" class="demo-curl-pre"></pre>
+          <button id="copy-curl-btn" class="demo-btn demo-btn-ghost demo-btn-sm">Copy</button>
+        </div>
+      </div>
+    </details>
+
+    <!-- 8. Query console -->
+    <details id="sec-query">
+      <summary><h3>Query console</h3></summary>
+      <div class="demo-section-body">
+
+        <div class="demo-field">
+          <label for="query-op">Operation</label>
+          <select id="query-op" class="demo-select">
+            <option value="queryEntities">GET /ngsi-ld/v1/entities</option>
+            <option value="getTemporalEntity">GET /ngsi-ld/v1/temporal/entities/{id}</option>
+            <option value="patchAttr">PATCH /ngsi-ld/v1/entities/{id}/attrs/{attr}</option>
+          </select>
+        </div>
+
+        <!-- Parameters: queryEntities (geo filter) -->
+        <div id="qp-geo" class="demo-query-params">
+          <div class="demo-field">
+            <label for="qp-georel">georel</label>
+            <select id="qp-georel" class="demo-select">
+              <option value="within">within</option>
+            </select>
+          </div>
+          <div class="demo-field">
+            <label for="qp-radius">Radius (m)</label>
+            <input id="qp-radius" type="number" value="200" min="50" max="2000" step="50">
+          </div>
+          <p class="demo-hint">Uses the current map center as the query point.</p>
+        </div>
+
+        <!-- Parameters: getTemporalEntity -->
+        <div id="qp-temporal" class="demo-query-params" hidden>
+          <div class="demo-field">
+            <label for="qp-entity-id">Entity ID (short: osm-way-…)</label>
+            <input id="qp-entity-id" type="text" placeholder="osm-way-123456">
+          </div>
+          <div class="demo-field">
+            <label for="qp-timerel">timerel</label>
+            <select id="qp-timerel" class="demo-select">
+              <option value="after">after</option>
+              <option value="before">before</option>
+            </select>
+          </div>
+          <div class="demo-field">
+            <label for="qp-timeat">timeAt</label>
+            <input id="qp-timeat" type="datetime-local">
+          </div>
+        </div>
+
+        <!-- Parameters: patchAttr -->
+        <div id="qp-patch" class="demo-query-params" hidden>
+          <div class="demo-field">
+            <label for="qp-patch-id">Entity ID (short: osm-way-…)</label>
+            <input id="qp-patch-id" type="text" placeholder="osm-way-123456">
+          </div>
+          <div class="demo-field">
+            <label for="qp-attr-name">Attribute</label>
+            <select id="qp-attr-name" class="demo-select">
+              <option value="installedCapacity">installedCapacity</option>
+              <option value="tiltAngle">tiltAngle</option>
+              <option value="name">name</option>
+            </select>
+          </div>
+          <div class="demo-field">
+            <label for="qp-attr-value">New value</label>
+            <input id="qp-attr-value" type="text" placeholder="e.g. 12.5">
+          </div>
+        </div>
+
+        <button id="query-run-btn" class="demo-btn demo-btn-primary">Run</button>
+        <p id="query-status" class="demo-status"></p>
+        <pre id="query-curl" class="demo-curl-pre demo-query-curl"></pre>
+        <button id="query-copy-btn" class="demo-btn demo-btn-ghost demo-btn-sm" hidden>Copy curl</button>
+
+      </div>
+    </details>
+
+    <!-- 9. Export / Import -->
+    <details id="sec-export">
+      <summary><h3>Export / Import</h3></summary>
+      <div class="demo-section-body">
+        <button id="export-btn" class="demo-btn demo-btn-secondary">Export all as JSON-LD</button>
+        <div class="demo-field">
+          <label for="import-input">Import JSON-LD</label>
+          <input id="import-input" type="file" accept=".json,.jsonld">
+        </div>
+        <p id="export-status" class="demo-status"></p>
+      </div>
+    </details>
+
+  </aside>
+</div>
+
+<script type="module" src="./demo.js"></script>
+</body>
+</html>

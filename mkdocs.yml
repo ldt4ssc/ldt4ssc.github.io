@@ -44,6 +44,9 @@ nav:
     - resources_content/index.md
     - Technical Resources: resources_content/tech_resources.md
     - Non-technical Resources: resources_content/non_tech_resources.md
+  # - Solar LDT Demo:
+  #   - Demo: demo/index.md
+  #   - How it works: demo/how-it-works.md
   # - Pilot Journey: journey/index.md  # hidden until ready for release
 
 
@@ -69,7 +72,11 @@ markdown_extensions:
   - pymdownx.snippets # allows embedding external content
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -87,6 +94,7 @@ extra_javascript:
   - js/papaparse.min.js # CSV parser for Google Sheets integration
   - js/resources_poc.js # test resource interactive frame
   - js/journey.js # pilot journey timeline and tracker
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
 
 
 

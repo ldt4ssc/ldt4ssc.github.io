@@ -1,0 +1,681 @@
+/* docs/assets/demo/demo.css
+   All styles for the solar LDT demo. Every class is prefixed .demo- so
+   this file can be inlined into an MkDocs page without colliding with
+   Material theme classes.
+   Skill: solar-demo-ui (see .claude/skills/solar-demo-ui/SKILL.md) */
+
+/* ── 1. Custom properties ──────────────────────────────────────────────── */
+
+:root {
+  /* backgrounds */
+  --demo-bg:          #f8f9fb;
+  --demo-surface:     #ffffff;
+  --demo-surface-alt: #eef1f5;
+
+  /* text */
+  --demo-text:        #1a1d23;
+  --demo-text-muted:  #5c6370;
+
+  /* brand / accent */
+  --demo-accent:        #e8a33d;
+  --demo-accent-strong: #c47f1a;
+  --demo-accent-soft:   #fbe9c9;
+
+  /* data viz */
+  --demo-chart-line: #c47f1a;
+  --demo-chart-area: rgba(232, 163, 61, 0.18);
+  --demo-chart-grid: #e3e6eb;
+
+  /* borders and shadows */
+  --demo-border: #d7dbe3;
+  --demo-shadow: 0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04);
+
+  /* status */
+  --demo-error:   #c0392b;
+  --demo-success: #2e7d4f;
+
+  /* spacing scale */
+  --demo-space-1: 4px;
+  --demo-space-2: 8px;
+  --demo-space-3: 12px;
+  --demo-space-4: 16px;
+  --demo-space-5: 24px;
+
+  /* radii */
+  --demo-radius:    6px;
+  --demo-radius-lg: 10px;
+
+  /* typography */
+  --demo-font:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  --demo-font-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", monospace;
+
+  /* transitions */
+  --demo-transition: 150ms ease;
+}
+
+/* ── 2. Reset and base ─────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin:   0;
+  padding:  0;
+  height:   100%;
+  overflow: hidden;
+  font-family: var(--demo-font);
+  font-size:   14px;
+  color:       var(--demo-text);
+  background:  var(--demo-bg);
+}
+
+a {
+  color: var(--demo-accent-strong);
+}
+
+/* ── 3. Root grid layout ───────────────────────────────────────────────── */
+
+.demo-root {
+  display:               grid;
+  grid-template-columns: 1fr 380px;
+  height:                100vh;
+  width:                 100vw;
+  overflow:              hidden;
+}
+
+@media (max-width: 900px) {
+  .demo-root {
+    grid-template-columns: 1fr;
+    grid-template-rows:    60vh 1fr;
+  }
+}
+
+/* ── 4. Map wrap ───────────────────────────────────────────────────────── */
+
+.demo-map-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  inset:    0;
+}
+
+/* ── 5. MapLibre overrides ─────────────────────────────────────────────── */
+
+/* Hide MapLibre's built-in controls and attribution — we supply our own */
+.maplibregl-ctrl-top-right,
+.maplibregl-ctrl-bottom-right,
+.maplibregl-ctrl-bottom-left,
+.maplibregl-ctrl-top-left {
+  display: none;
+}
+
+.maplibregl-canvas {
+  display: block;
+}
+
+.demo-attribution {
+  position:   absolute;
+  bottom:     4px;
+  right:      6px;
+  font-size:  10px;
+  color:      rgba(0, 0, 0, 0.65);
+  background: rgba(255, 255, 255, 0.75);
+  padding:    2px 6px;
+  border-radius: 3px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.demo-attribution a {
+  pointer-events: auto;
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* ── 6. Place mode banner ──────────────────────────────────────────────── */
+
+.demo-place-banner {
+  position:        absolute;
+  top:             0;
+  left:            0;
+  right:           0;
+  z-index:         10;
+  background:      var(--demo-accent);
+  color:           #fff;
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  padding:         var(--demo-space-2) var(--demo-space-4);
+  font-size:       13px;
+  font-weight:     600;
+}
+
+.demo-place-banner-text {
+  flex: 1;
+}
+
+/* ── 7. Sidebar ────────────────────────────────────────────────────────── */
+
+.demo-sidebar {
+  background:   var(--demo-surface);
+  border-left:  1px solid var(--demo-border);
+  overflow-y:   auto;
+  overflow-x:   hidden;
+  display:      flex;
+  flex-direction: column;
+  min-width:    0;
+}
+
+@media (max-width: 900px) {
+  .demo-sidebar {
+    border-left: none;
+    border-top:  1px solid var(--demo-border);
+    overflow-y:  auto;
+  }
+}
+
+/* ── 8. Collapsible sections (<details>) ──────────────────────────────── */
+
+details {
+  border-bottom: 1px solid var(--demo-border);
+  flex-shrink:   0;
+}
+
+details summary {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  padding:         var(--demo-space-3) var(--demo-space-4);
+  cursor:          pointer;
+  user-select:     none;
+  list-style:      none;
+  gap:             var(--demo-space-2);
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary h3 {
+  margin:         0;
+  font-size:      12px;
+  font-weight:    700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color:          var(--demo-text-muted);
+  flex:           1;
+  transition:     color var(--demo-transition);
+}
+
+details[open] summary h3 {
+  color: var(--demo-text);
+}
+
+/* Expand/collapse chevron */
+details summary::after {
+  content:    '›';
+  font-size:  16px;
+  color:      var(--demo-text-muted);
+  transform:  rotate(90deg);
+  transition: transform var(--demo-transition);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+details[open] summary::after {
+  transform: rotate(270deg);
+}
+
+.demo-section-body {
+  padding:        var(--demo-space-2) var(--demo-space-4) var(--demo-space-4);
+  display:        flex;
+  flex-direction: column;
+  gap:            var(--demo-space-3);
+}
+
+/* ── 9. Form controls ──────────────────────────────────────────────────── */
+
+.demo-field {
+  display:        flex;
+  flex-direction: column;
+  gap:            4px;
+}
+
+.demo-field label {
+  font-size:   12px;
+  font-weight: 600;
+  color:       var(--demo-text-muted);
+}
+
+.demo-field-row {
+  display: flex;
+  gap:     var(--demo-space-2);
+}
+
+.demo-field-row .demo-field {
+  flex: 1;
+}
+
+.demo-search-wrap {
+  position: relative;
+}
+
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="file"] {
+  width:       100%;
+  padding:     6px 8px;
+  border:      1px solid var(--demo-border);
+  border-radius: var(--demo-radius);
+  font-size:   13px;
+  font-family: var(--demo-font);
+  background:  var(--demo-surface);
+  color:       var(--demo-text);
+  outline:     none;
+  transition:  border-color var(--demo-transition);
+  line-height: 1.4;
+}
+
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus {
+  border-color: var(--demo-accent);
+}
+
+input:disabled {
+  background: var(--demo-surface-alt);
+  color:      var(--demo-text-muted);
+  cursor:     not-allowed;
+}
+
+/* Remove search input clear button on webkit */
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+/* ── 10. Buttons ───────────────────────────────────────────────────────── */
+
+.demo-btn {
+  display:         inline-flex;
+  align-items:     center;
+  justify-content: center;
+  gap:             var(--demo-space-1);
+  padding:         7px 14px;
+  border-radius:   var(--demo-radius);
+  font-size:       13px;
+  font-weight:     600;
+  font-family:     var(--demo-font);
+  cursor:          pointer;
+  border:          1px solid transparent;
+  transition:      background var(--demo-transition), border-color var(--demo-transition), color var(--demo-transition);
+  line-height:     1.4;
+  white-space:     nowrap;
+}
+
+.demo-btn-primary {
+  background:   var(--demo-accent);
+  color:        #fff;
+  border-color: var(--demo-accent);
+}
+.demo-btn-primary:hover:not(:disabled) {
+  background:   var(--demo-accent-strong);
+  border-color: var(--demo-accent-strong);
+}
+
+.demo-btn-secondary {
+  background:   var(--demo-surface-alt);
+  color:        var(--demo-text);
+  border-color: var(--demo-border);
+}
+.demo-btn-secondary:hover:not(:disabled) {
+  background: var(--demo-border);
+}
+
+.demo-btn-danger {
+  background:   transparent;
+  color:        var(--demo-error);
+  border-color: var(--demo-error);
+}
+.demo-btn-danger:hover:not(:disabled) {
+  background: var(--demo-error);
+  color:      #fff;
+}
+
+.demo-btn-ghost {
+  background:   transparent;
+  color:        var(--demo-text-muted);
+  border-color: transparent;
+}
+.demo-btn-ghost:hover:not(:disabled) {
+  color:      var(--demo-text);
+  background: var(--demo-surface-alt);
+}
+
+.demo-btn-sm {
+  padding:   4px 10px;
+  font-size: 12px;
+}
+
+.demo-btn:disabled {
+  opacity: 0.45;
+  cursor:  not-allowed;
+}
+
+.demo-btn-row {
+  display: flex;
+  gap:     var(--demo-space-2);
+}
+
+/* ── 11. Badge ─────────────────────────────────────────────────────────── */
+
+.demo-badge {
+  display:         inline-flex;
+  align-items:     center;
+  justify-content: center;
+  min-width:       20px;
+  height:          20px;
+  padding:         0 6px;
+  background:      var(--demo-accent-soft);
+  color:           var(--demo-accent-strong);
+  border-radius:   10px;
+  font-size:       11px;
+  font-weight:     700;
+  flex-shrink:     0;
+}
+
+/* ── 12. Entity list ───────────────────────────────────────────────────── */
+
+.demo-entity-list {
+  list-style:      none;
+  margin:          0;
+  padding:         0;
+  display:         flex;
+  flex-direction:  column;
+  gap:             2px;
+  max-height:      220px;
+  overflow-y:      auto;
+  outline:         none;
+}
+
+.demo-entity-list li {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+  padding:        6px 8px;
+  border-radius:  var(--demo-radius);
+  cursor:         pointer;
+  transition:     background var(--demo-transition);
+  border:         1px solid transparent;
+}
+
+.demo-entity-list li:hover {
+  background: var(--demo-surface-alt);
+}
+
+.demo-entity-list li.demo-entity-selected {
+  background:   var(--demo-accent-soft);
+  border-color: var(--demo-accent);
+}
+
+.demo-entity-list li.demo-entity-hovered {
+  background: var(--demo-surface-alt);
+}
+
+
+.demo-entity-name {
+  font-size:   13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow:    hidden;
+  text-overflow: ellipsis;
+}
+
+.demo-entity-id {
+  font-size:   11px;
+  color:       var(--demo-text-muted);
+  font-family: var(--demo-font-mono);
+  white-space: nowrap;
+  overflow:    hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── 13. Scenario toggle ───────────────────────────────────────────────── */
+
+.demo-toggle-group {
+  display:       flex;
+  border:        1px solid var(--demo-border);
+  border-radius: var(--demo-radius);
+  overflow:      hidden;
+}
+
+.demo-toggle {
+  flex:        1;
+  padding:     6px 10px;
+  font-size:   13px;
+  font-weight: 600;
+  font-family: var(--demo-font);
+  background:  var(--demo-surface);
+  border:      none;
+  cursor:      pointer;
+  transition:  background var(--demo-transition), color var(--demo-transition);
+  color:       var(--demo-text-muted);
+}
+
+.demo-toggle:not(:last-child) {
+  border-right: 1px solid var(--demo-border);
+}
+
+.demo-toggle.demo-toggle-active {
+  background: var(--demo-accent);
+  color:      #fff;
+}
+
+/* ── 14. Weather summary ───────────────────────────────────────────────── */
+
+.demo-weather-summary {
+  background:    var(--demo-surface-alt);
+  border-radius: var(--demo-radius);
+  padding:       var(--demo-space-3);
+  display:       grid;
+  grid-template-columns: 1fr 1fr;
+  gap:           var(--demo-space-2);
+  font-size:     12px;
+}
+
+.demo-weather-stat {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+}
+
+.demo-weather-stat-label {
+  color:          var(--demo-text-muted);
+  text-transform: uppercase;
+  font-size:      10px;
+  letter-spacing: 0.05em;
+  font-weight:    600;
+}
+
+.demo-weather-stat-value {
+  font-size:   18px;
+  font-weight: 700;
+  color:       var(--demo-text);
+  line-height: 1.2;
+}
+
+.demo-weather-stat-unit {
+  font-size:   11px;
+  color:       var(--demo-text-muted);
+}
+
+.demo-source-badge {
+  grid-column: 1 / -1;
+  font-size:   11px;
+  color:       var(--demo-text-muted);
+  margin-top:  var(--demo-space-1);
+}
+
+.demo-source-badge.demo-source-live     { color: var(--demo-success); }
+.demo-source-badge.demo-source-cache    { color: var(--demo-text-muted); }
+.demo-source-badge.demo-source-fallback { color: var(--demo-error); }
+
+/* ── 15. ECharts container ─────────────────────────────────────────────── */
+
+.demo-chart {
+  width:      100%;
+  height:     260px;
+  min-height: 260px;
+}
+
+/* ── 16. Raw NGSI-LD viewer ────────────────────────────────────────────── */
+
+.demo-tab-bar {
+  display:   flex;
+  gap:       4px;
+}
+
+.demo-tab {
+  padding:     5px 12px;
+  font-size:   12px;
+  font-weight: 600;
+  font-family: var(--demo-font);
+  cursor:      pointer;
+  background:  transparent;
+  border:      1px solid var(--demo-border);
+  border-radius: var(--demo-radius);
+  color:       var(--demo-text-muted);
+  transition:  all var(--demo-transition);
+}
+
+.demo-tab.demo-tab-active {
+  background:   var(--demo-accent-soft);
+  border-color: var(--demo-accent);
+  color:        var(--demo-text);
+}
+
+.demo-raw-panel {
+  overflow:   auto;
+  max-height: 320px;
+}
+
+.demo-json-pre,
+.demo-curl-pre {
+  margin:      0;
+  padding:     var(--demo-space-3);
+  font-family: var(--demo-font-mono);
+  font-size:   11.5px;
+  line-height: 1.55;
+  background:  var(--demo-surface-alt);
+  border-radius: var(--demo-radius);
+  white-space: pre;
+  overflow-x:  auto;
+  border:      1px solid var(--demo-border);
+  color:       var(--demo-text);
+  tab-size:    2;
+}
+
+/* JSON syntax highlight tokens */
+.demo-json-key     { color: #0550ae; }
+.demo-json-string  { color: #116329; }
+.demo-json-number  { color: #8250df; }
+.demo-json-keyword { color: #c0392b; }
+
+/* ── 17. Query console ─────────────────────────────────────────────────── */
+
+.demo-select {
+  display:       block;
+  width:         100%;
+  padding:       6px 8px;
+  background:    var(--demo-surface);
+  color:         var(--demo-text);
+  border:        1px solid var(--demo-border);
+  border-radius: var(--demo-radius);
+  font-size:     13px;
+  font-family:   var(--demo-font);
+  outline:       none;
+  transition:    border-color var(--demo-transition);
+  line-height:   1.4;
+}
+
+.demo-select:focus {
+  border-color: var(--demo-accent);
+}
+
+.demo-query-params {
+  display:        flex;
+  flex-direction: column;
+  gap:            var(--demo-space-3);
+}
+
+.demo-query-params[hidden] {
+  display: none;
+}
+
+.demo-query-curl {
+  max-height:  120px;
+  overflow-y:  auto;
+  font-size:   11px;
+  white-space: pre-wrap;
+  word-break:  break-all;
+}
+
+/* ── 18. Address search dropdown ──────────────────────────────────────── */
+
+.demo-dropdown {
+  position:      absolute;
+  z-index:       100;
+  left:          0;
+  right:         0;
+  top:           100%;
+  margin-top:    2px;
+  background:    var(--demo-surface);
+  border:        1px solid var(--demo-border);
+  border-radius: var(--demo-radius);
+  list-style:    none;
+  padding:       4px 0;
+  box-shadow:    var(--demo-shadow);
+  max-height:    180px;
+  overflow-y:    auto;
+}
+
+.demo-dropdown li {
+  padding:       6px 10px;
+  font-size:     13px;
+  cursor:        pointer;
+  white-space:   nowrap;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+}
+
+.demo-dropdown li:hover {
+  background: var(--demo-surface-alt);
+}
+
+/* ── 18. Status and hint text ──────────────────────────────────────────── */
+
+.demo-status {
+  margin:      0;
+  font-size:   12px;
+  line-height: 1.4;
+  color:       var(--demo-text-muted);
+}
+
+.demo-status:empty {
+  display: none;
+}
+
+.demo-status-error   { color: var(--demo-error);   }
+.demo-status-success { color: var(--demo-success);  }
+.demo-status-info    { color: var(--demo-text-muted); }
+
+.demo-hint {
+  margin:      0;
+  font-size:   12px;
+  color:       var(--demo-text-muted);
+  line-height: 1.4;
+}
