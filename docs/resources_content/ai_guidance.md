@@ -5,9 +5,8 @@
     - [Environmental Impact of AI](#environmental-impact-of-ai) — Sustainable AI practices and assessment frameworks
     - [Ethics of AI](#ethics-of-ai) — LDT4SSC ethics framework and key ethical considerations
 
-This page provides non-technical guidance specific to WS3 pilots deploying LDTs with AI-based capabilities. It complements the general regulatory compliance resources in **Deliverable 3.4 Non-Technical Resources for Pilots (WS1 and WS2)** — refer to D3.4 for resources not specific to AI.
+This page provides non-technical guidance specific to WS3 pilots deploying LDTs with AI-based capabilities. It complements the general regulatory compliance resources.
 
-For a mapping of the WS3 Requirements referenced throughout this page to the associated resources, see **Annex A: Mapping WS3 Requirements and Recommendations to the Non-Technical Resources**.
 
 ---
 
@@ -34,7 +33,7 @@ The AI Act applies only where an AI system is:
 - **"placed on the market"** — intended for distribution or use on the Union market in the course of a commercial activity, whether for a fee or free of charge; or
 - **"put into service"** — supplied for first use for their own purposes or for the benefit of another person.
 
-It applies to businesses, organisations, and public authorities alike — central government bodies, decentralised authorities, local authorities, and public institutions.
+It applies to businesses, organisations, and public authorities alike - central government bodies, decentralised authorities, local authorities, and public institutions.
 
 #### Approach
 
@@ -67,12 +66,12 @@ To comply with **Requirement 21** ("All AI used in public services must comply w
 | Author / Title | Description | Type |
 |---|---|---|
 | European Commission — [AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) | General presentation of the AI Act (risk-based approach, compliance and enforcement, simplification proposal). Use to explore the AI Act in depth. | Standard / Educational resource |
-| European Commission — [Questions & Answers on the AI Act](https://ec.europa.eu/commission/presscorner/detail/en/qanda_21_1683) | Detailed Q&A covering the AI Act's goals, governance, enforcement, provisions for high-risk AI systems and general-purpose AI models, and measures to foster innovation. | Q&A |
-| European Commission — [Guidelines on prohibited AI practices](https://digital-strategy.ec.europa.eu/en/library/guidelines-prohibited-artificial-intelligence-ai-practices-definition-ai-act) | Guidelines providing an overview of AI practices deemed unacceptable under the AI Act. Use to ensure pilots do not have a prohibited use of AI. | Guidelines |
-| European Commission — [Guidelines on AI system definition](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-definition-ai-systems) | Explains the practical application of the legal concept of "AI system" as defined in the AI Act. Use to determine whether your software systems constitute AI systems. | Guidelines |
-| European Commission — [AI Act Single Information Platform](https://digital-strategy.ec.europa.eu/en/policies/ai-act-single-information-platform) | Platform to help WS3 pilots determine whether they are subject to legal obligations and understand the steps needed to comply. | Platform |
-| European Commission — [EU AI Act Compliance Checker](https://digital-strategy.ec.europa.eu/en/policies/eu-ai-act-compliance-checker) | A self-assessment tool to evaluate whether AI systems and general-purpose AI models meet the requirements of the AI Act. An ongoing project. | Self-assessment |
-| Hub France IA — [A toolbox for managing risks of Artificial Intelligence systems](https://hubfranceia.fr/publications/) | Reflections and feedback from the Banking and Auditability Working Group on how risk management can be equipped to reduce the costs of AI Act compliance. | Toolbox / Guidelines |
+| European Commission — [Questions & Answers on the AI Act](https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act) | Detailed Q&A covering the AI Act's goals, governance, enforcement, provisions for high-risk AI systems and general-purpose AI models, and measures to foster innovation. | Q&A |
+| European Commission — [Guidelines on prohibited AI practices](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act) | Guidelines providing an overview of AI practices deemed unacceptable under the AI Act. Use to ensure pilots do not have a prohibited use of AI. | Guidelines |
+| European Commission — [Guidelines on AI system definition](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application) | Explains the practical application of the legal concept of "AI system" as defined in the AI Act. Use to determine whether your software systems constitute AI systems. | Guidelines |
+| European Commission — [AI Act Single Information Platform](https://ai-act-service-desk.ec.europa.eu/en) | Platform to help WS3 pilots determine whether they are subject to legal obligations and understand the steps needed to comply. | Platform |
+| European Commission — [EU AI Act Compliance Checker](https://ai-act-service-desk.ec.europa.eu/en/eu-ai-act-compliance-checker) | A self-assessment tool to evaluate whether AI systems and general-purpose AI models meet the requirements of the AI Act. An ongoing project. | Self-assessment |
+| Hub France IA — [A toolbox for managing risks of Artificial Intelligence systems](https://www.hub-franceia.fr/wp-content/uploads/2024/10/Hub-France-IA-A-toolbox-for-managing-risks-of-AI-systems.pdf) | Reflections and feedback from the Banking and Auditability Working Group on how risk management can be equipped to reduce the costs of AI Act compliance. | Toolbox / Guidelines |
 
 ---
 
@@ -112,9 +111,9 @@ Not all AI has an equal environmental footprint. The ITU-T L.1801 standard class
 
 | Author / Title | Description | Type |
 |---|---|---|
-| ITU-T / ETSI — [ITU-T L.1801 Environmental impact assessment of AI systems](https://www.itu.int/rec/T-REC-L.1801/en) | The first international standard for assessing the environmental impact of AI systems across their full lifecycle (ITU-T L.1801 / ETSI ES 204 135, February 2026). Use to grasp the main concepts and dimensions of AI's environmental impact. | Recommendation Standard / Educational resource |
-| European Parliament – AIDA / Öko-Institut e.V. — [The Role of AI in the European Green Deal](https://www.europarl.europa.eu/thinktank/en/document/IPOL_STU(2021)662906) | Commissioned study for the AIDA Committee analysing AI's environmental potential and risks, with recommendations for regulatory alignment with Green Deal objectives. Use to align your use-case with the European Green Deal (Rq6). | Study |
-| Bundesverband Green.Software — [Green Software Landscape – AI](https://www.green-software.de/en) | Overview of the green software ecosystem with concrete recommendations and measurement tools applicable at code, component, data aggregation, database, infrastructure, and AI algorithm levels. Use to identify software tools for measuring the energy consumption of AI services. | Toolbox |
+| ITU-T / ETSI — [ITU-T L.1801 Environmental impact assessment of AI systems](https://l1801framework.netlify.app/) | The first international standard for assessing the environmental impact of AI systems across their full lifecycle (ITU-T L.1801 / ETSI ES 204 135, February 2026). Use to grasp the main concepts and dimensions of AI's environmental impact. | Recommendation Standard / Educational resource |
+| European Parliament – AIDA / Öko-Institut e.V. — [The Role of AI in the European Green Deal](https://www.europarl.europa.eu/RegData/etudes/STUD/2021/662906/IPOL_STU(2021)662906_EN.pdf) | Commissioned study for the AIDA Committee analysing AI's environmental potential and risks, with recommendations for regulatory alignment with Green Deal objectives. Use to align your use-case with the European Green Deal (Rq6). | Study |
+| Bundesverband Green.Software — [Green Software Landscape – AI](https://landscape.bundesverband-green-software.de/?group=measurement&view-mode=grid&license=oss&category=Artificial+Intelligence) | Overview of the green software ecosystem with concrete recommendations and measurement tools applicable at code, component, data aggregation, database, infrastructure, and AI algorithm levels. Use to identify software tools for measuring the energy consumption of AI services. | Toolbox |
 
 ---
 
@@ -132,7 +131,7 @@ The LDT4SSC ethics framework requires pilots to follow an **"Ethics and Data Pro
 
 The framework draws on recognised ethical guidance (ALTAI, FRAIA, ISO/IEC standards), mandates compliance with applicable legislation (GDPR, AI Act), integrates ethics checkpoints throughout the call and implementation, and expects pilots to establish governance, oversight, and mitigation measures for issues such as data protection, bias, transparency, and fairness.
 
-More information can be found in the **Call for Pilot Manuals for WS3**.
+More information can be found in the [**Call for Pilot Manuals for WS3**](https://ldt4ssc.eu/documents/cpmws3.pdf).
 
 ### Key ethical considerations for AI in LDT projects
 
@@ -142,7 +141,7 @@ Ethics complements existing laws and regulations. The ethical approach is a best
 
 AI models in LDTs are only as fair as the data they are trained on. Historical data often reflects societal biases — such as underinvestment in certain neighbourhoods — which AI systems can inadvertently perpetuate.
 
-**Stakeholder involvement** — Involving a diverse range of stakeholders (end-users, citizens, ethicists, and partners from other regions) in the design process helps identify blind spots and potential biases. See section 3.2 of D3.4 for more on stakeholder involvement.
+**Stakeholder involvement** — Involving a diverse range of stakeholders (end-users, citizens, ethicists, and partners from other regions) in the design process helps identify blind spots and potential biases. 
 
 **Transparency and explainability** — AI systems must be understandable and auditable by stakeholders, not just technical experts. Techniques such as eXplainable AI (XAI) can demystify complex models, allowing users to question and challenge algorithmic decisions. For example, a digital twin optimising public transport routes should provide clear explanations for why certain areas are prioritised or deprioritised.
 
@@ -154,7 +153,7 @@ LDTs that rely on personal or behavioural data must be designed to empower indiv
 - Users should retain control over their information.
 - Mixed datasets must not result in sensitive data that could affect users or citizens.
 
-Obtaining meaningful consent is a challenge where users interact with LDTs indirectly (e.g. through smart city sensors). Clear communication about the purpose of data processing and the rights of individuals — such as the ability to opt out or request data deletion — is fundamental. See section 3.2.5 of D3.4 for resources on end-user and citizen involvement.
+Obtaining meaningful consent is a challenge where users interact with LDTs indirectly (e.g. through smart city sensors). Clear communication about the purpose of data processing and the rights of individuals — such as the ability to opt out or request data deletion — is fundamental.
 
 Inclusion and accessibility are further concerns: systems must be accessible to all regardless of technical literacy or physical ability, which may involve providing multi-channel interfaces to ensure marginalised groups are not excluded.
 
@@ -168,7 +167,7 @@ A major risk is over-reliance on automation, which can lead to outcomes that lac
 
 The deployment of AI-powered LDTs must be assessed through the lens of societal impact — benefits should not be solely technical or economic but should also contribute to the common good.
 
-**Cost-benefit analysis** — Comprehensive assessments should evaluate not only technical performance but also social equity, environmental sustainability, and legal compliance. See section 3.7.2 of D3.4 for cost-benefit analysis resources.
+**Cost-benefit analysis** — Comprehensive assessments should evaluate not only technical performance but also social equity, environmental sustainability, and legal compliance. See the [Cost-benefit analysis](../non_tech_resources/#cost-benefit-analysis) section for more information.
 
 The need to balance innovation with ecological responsibility must also be taken into account. LDTs rely on vast computational resources, and their carbon footprint must be justified by tangible societal benefits. See [Environmental Impact of AI](#environmental-impact-of-ai) above.
 
@@ -176,7 +175,7 @@ The need to balance innovation with ecological responsibility must also be taken
 
 | Author / Title | Description | Type |
 |---|---|---|
-| Estonian Government — [Algorithmic Bias Risk Management Guideline, Workbook and Methodology](https://www.mkm.ee/en/algorithmic-bias) | Algorithmic Bias Risk Management Tool (guideline, methodology, workbook) for the development and deployment of AI systems in the public sector. | Guideline / Workbook / Methodology |
-| Ekitia — [Eki'Learning](https://ekitia.fr/ekilearning/) | A learning environment to assess, improve and apply ethical practices in real-world data and AI initiatives, built in the context of the Destination Earth project. | E-learning |
-| OECD — [Artificial Intelligence for Advancing Smart Cities](https://www.oecd.org/en/publications/artificial-intelligence-for-advancing-smart-cities_4f7e3578-en.html) | Note supporting city governments in adopting AI for resilience and good governance. Provides a comprehensive view of enablers and conditions for AI development in smart communities, especially in Chapter 3. | Note |
-| Datactivists, La Mednum, Fari, Waag — [ALGO-LIT project](https://algo-lit.eu/) | Project aimed at supporting society's digital transformation by identifying and developing the skills needed to understand and use algorithms, ensuring no citizens are left behind. | Project |
+| Estonian Government — **Algorithmic Bias Risk Management** [Guideline](https://www.volinik.ee/volinik-live-web-prd/s3fs-public/2025-12/algorithmic_bias_risk_management_gudieline.pdf), [Workbook](https://www.volinik.ee/en/information-materials/ai-bias-assessment-workbook) and [Methodology](https://www.volinik.ee/en/information-materials/algorithmic-bias-risk-management-methodology) | Algorithmic Bias Risk Management Tool (guideline, methodology, workbook) for the development and deployment of AI systems in the public sector. | Guideline / Workbook / Methodology |
+| Ekitia — [Eki'Learning](https://ekilearning.com) | A learning environment to assess, improve and apply ethical practices in real-world data and AI initiatives, built in the context of the Destination Earth project. | E-learning |
+| OECD — [Artificial Intelligence for Advancing Smart Cities](https://www.oecd.org/content/dam/oecd/en/about/programmes/cfe/the-oecd-programme-on-smart-cities-and-inclusive-growth/Issues-Note-AI-for-advancing-smart-cities.pdf) | Note supporting city governments in adopting AI for resilience and good governance. Provides a comprehensive view of enablers and conditions for AI development in smart communities, especially in Chapter 3. | Note |
+| Datactivists, La Mednum, Fari, Waag — [ALGO-LIT project](https://algolit.eu/en/blog/how-to-explain-algorithms-and-train-people-to-do-so) | Project aimed at supporting society's digital transformation by identifying and developing the skills needed to understand and use algorithms, ensuring no citizens are left behind. | Project |
