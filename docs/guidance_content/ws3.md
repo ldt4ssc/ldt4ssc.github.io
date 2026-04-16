@@ -139,6 +139,7 @@ Pilots are expected to engage with:
 ### 📦 **LDT Toolbox Marketplace Requirements** (Rq27)
 
 Unless using the LDT AI Notebook, AI models must meet:
+
   - **Deployable KServe package** (Kubernetes via KServe, with InferenceService YAML)
   - **Accessible model artefact location** (resolvable storageUri)
   - **Standard inference endpoint** (V2-style API at /v2/models/{model_name}/infer)
@@ -193,6 +194,8 @@ Unless using the LDT AI Notebook, AI models must meet:
 
 
 ### 🧠 **AI-Specific Highlights**
+
+Please refer to our specific [AI-Guidance](/resources_content/ai_guidance/) page.
 
 | Aspect | Requirement |
 |--------|-------------|
