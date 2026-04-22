@@ -64,10 +64,10 @@ MIMs Plus also has a dedicated LDT working group and includes a specific MIM (MI
 - Aligns with EU policies and strategies (Digital Decade, Data Governance Act, Green Deal).  
 
 **Key Assets and Resources:**  
-[[MIMs Plus Specification 8.0](https://living-in.eu/sites/default/files/files/mims-plus-v.8_1.pdf), [MIMs Overview](https://oascities.org/minimal-interoperability-mechanisms/), [MIMs Adoption Guide](https://mims.oascities.org/NzWXOO1Fttw4wtqv1Wys/)]  
+[[MIMs Plus Specification 8.0](https://oasc.gitbook.io/mims-specification-8), [MIMs Overview](https://oascities.org/minimal-interoperability-mechanisms/), [MIMs Landing Page](https://mims.oascities.org/)]  
 
 **Webpage / Reference Link:**  
-[MIMs – Open & Agile Smart Cities](https://oascities.org/mims/)  
+[MIMs – Open & Agile Smart Cities](https://mims.oascities.org/)  
 
 **Main contact point:**  
 - Sophie Meszaros, LDT MIM Lead (OASC) — sophie@oascities.org  
