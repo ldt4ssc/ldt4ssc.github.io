@@ -46,7 +46,7 @@ To illustrate the potential of each WS, we present a set of Pilots' Example Stor
 The example stories developed for WS1 show how cities and communities with an existing level of digital maturity (as described in the Requirements section) can build on their Local LDTs to form a federated, EU-wide ecosystem. Each example illustrates how interoperability, cross-border collaboration, and shared data platforms can enable scalable and replicable solutions. The realistic use cases highlight the concrete benefits of interconnected LDTs, such as improved decision-making, resource optimisation, and faster adoption of open-source tools, while also addressing common challenges like technical integration, governance, and stakeholder coordination. Their purpose is to inspire replication, lower entry barriers for less digitally advanced regions, and foster a shared community of practice around federated LDTs, advancing the project's goal of a unified and interoperable digital infrastructure for Europe.
 
 
-???+ example "Traffic Management and Air Quality"
+??? example "Traffic Management and Air Quality"
 
     Two municipalities of similar size, population, and density have each developed a descriptive Local Digital Twin (LDT) to monitor traffic, air quality, and their interaction. They partner with a specialised private service provider to interconnect their systems and exchange data and related services using the NGSI-LD standard. By linking their context brokers, the partners establish a shared real-time dashboard that enables coordinated management of transport corridors and supports efforts to reduce congestion and pollution.
 
@@ -54,19 +54,19 @@ The example stories developed for WS1 show how cities and communities with an ex
 
     This example reflects the ambition of WS1: to scale up EU-wide datasets and open-source solutions within the LDT ecosystem, demonstrating how federated approaches can transform local innovations into collective impact.
 
-???+ example "Interconnected Networks Management and Service Marketplace"
+??? example "Interconnected Networks Management and Service Marketplace"
 
     Cities of a DS4SSCC Pilot projects interconnect their Local Digital Twins (LDTs) with those of another group of communities to create a shared marketplace for essential public services, aligned with the priorities of each local authority. These services may include areas such as mobility, land-use planning, and energy or electricity management, reflecting the themes of the New European Bauhaus (NEB) and the European Green Deal. By leveraging the SIMPL building blocks and the FIWARE ecosystem of technologies, this new consortium integrates waste, energy, and water management systems, enabling local authority syndicates to exchange data, optimise resource allocation, and deliver new services across regions. The main challenge lies in ensuring the maturity of the connector, which must reliably bridge diverse platforms while maintaining data consistency and security.
 
     The outcomes include operational efficiencies such as streamlined network management and cross-city service coordination, as well as contributions to the SIMPL framework, reinforcing its role as means for interoperable LDT ecosystems. This example illustrates how federated LDTs can move beyond individual city silos, fostering a collaborative economy of shared services and scalable, cross-regional solutions.
 
-???+ example annotate "Regional Energy and Climate Data Space"
+??? example annotate "Regional Energy and Climate Data Space"
 
     Several municipalities in a cross-border region with varying digital maturity levels create a shared DS to combine energy production and consumption data. The goal is to monitor regional energy use and evaluate its climate impact. Together with a data space specialist and a local energy supplier, the municipalities deploy a FIWARE Data Space Connector and use the EU LDT Toolbox to model scenarios on energy demand, renewable integration, and the environmental impact of alternative energy sources. The main challenge is to manage data access rights among diverse stakeholders (municipalities, regional alliances, and private partners) while ensuring secure data exchange and consistent decision-making across governance levels.
 
     The project delivers a real-time regional overview of energy supply and demand, enabling policymakers, businesses, and citizens to track consumption patterns and make informed choices. It demonstrates how federated LDTs can consolidate fragmented local data into a unified, actionable resource for advancing climate resilience and the energy transition.
 
-???+ example annotate "Local carbon emissions and sequestration urban platform"
+??? example annotate "Local carbon emissions and sequestration urban platform"
 
     Facing comparable challenges and climate targets, two regions of similar size and population in two EU countries have joined forces to develop a shared LDT to monitor and manage their Scope 1 and Scope 2 carbon emissions and sequestration capacities.They partnered with an academic institution specialized in climate change science and mitigation strategies, ensuring methodological robustness and alignment with the latest research. In parallel, a private company specialized in energy grids provides real-time and historical data on electricity distribution, consumption patterns, and grid decarbonization pathways. The LDT integrates geospatial, energy, mobility, land-use, and environmental datasets into a dynamic urban model.
 
@@ -75,7 +75,7 @@ The example stories developed for WS1 show how cities and communities with an ex
     The LDT also supports a bottom-up emissions accounting approach, aggregating data from buildings, transport networks, and public assets to generate accurate and transparent inventories. Automated reporting tools simplify compliance with national and European climate frameworks. 
     Beyond internal planning, the platform enhances communication with citizens through accessible dashboards and visual storytelling tools. Residents can better understand how local projects influence emissions and climate goals. Ultimately, the shared LDT strengthens inter-region collaboration, evidence-based policymaking, and public trust in the transition toward climate neutrality.
 
-???+ example annotate "Climate-Resilient Urban Greening"
+??? example annotate "Climate-Resilient Urban Greening"
 
     Two European cities jointly deploy a local digital twin using the European Commission’s EU LDT Toolbox to address rising urban heat challenges. The shared objective is to mitigate increasingly unlivable summer heat driven by climate change through data-informed greening strategies.
     
