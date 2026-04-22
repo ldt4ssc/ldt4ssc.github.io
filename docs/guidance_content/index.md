@@ -144,15 +144,15 @@ This page summarises requirements **shared across WS1, WS2, and WS3**. For work-
       → At least 30 highest-priority criteria
 
 
-### 📅 **Timeline (Second Round of open calls - WS1, WS2, WS3)**
+### 📅 **Timeline (Third Round of open calls - WS1, WS2, WS3)**
 
 | Milestone | Date |
 |-----------|------|
-| Call opens | 2 February 2026 |
-| Call closes | 2 April 2026 (23:59 CET) |
-| Selection announced | 30 June 2026 |
-| Pilots start | 31 August 2026 |
-| Pilots end (max 18 months) | 2 April 2028 |
+| Call opens | 13 May 2026 |
+| Call closes | 13 July 2026 (23:59 CET) |
+| Selection announced | August 2026 |
+| Pilots start | November 2026 |
+| Pilots end (max 18 months) | June 2028 |
 
 
 
@@ -198,16 +198,18 @@ This page summarises requirements **shared across WS1, WS2, and WS3**. For work-
 ## Testing Environment  
 
 - **Demo environment:** Provide sandboxed or reference environments for pilot demonstrations.  
+
+*Coming soon.*
  
 ---
 
 ## Application Process  
 
-👉 The second round of open calls is now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply until 15/04/2026, 23:59 CET.
+👉 The second round of open calls is now **Closed**. Third round of open calls on **May 13 2026**.
 
 To apply, 
 
 1. Check your eligibility;
 2. Prepare and complete the required forms;
-3. Before submitting, ensure that all required documents are completed and signed, the consortium meets the eligibility criteria, the proposal aligns with the objectives of Work Strand 1;
+3. Before submitting, ensure that all required documents are completed and signed, the consortium meets the eligibility criteria, the proposal aligns with the objectives of Work Strand 1, 2, or 3;
 4. Submit your application via the LDT4SSC mailbox: 👉 [Submit here](mailto:application@ldt4ssc.eu).

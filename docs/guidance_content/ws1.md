@@ -6,13 +6,14 @@ This Work Strand focuses on connecting and testing existing Local Digital Twins 
 **Key facts:** 
 
 - 6–8 pilots will be selected  
-- Start of the pilots: May 2026  
+- Start of first pilots: May 2026  
 - Duration: 18 months  
 - Funding: 50% co-funding required  
 - First Round of open calls: November 2025
-- Second Round of open calls: February 2026  
+- Second Round of open calls: February 2026 
+- Third Round of open calls: May 2026 
 
-👉 Second round of open calls now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply by 15/04/2026, 23:59 CET.
+👉 Second round of open calls now **CLOSED**. Third round on **13 May 2026**.
 
 **What is the goal?**
 

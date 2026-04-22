@@ -6,13 +6,13 @@ This Work Strand is about experimenting with advanced AI-based services to push 
 **Key facts:**  
 
 - 3–4 pilots will be selected  
-- Start of the pilots: May/November 2026  
+- Start of first pilots: June 2026  
 - Duration: 18 months  
 - Funding: 50% co-funding required  
 - Second Round of open calls: February 2026  
 - Third Round of open calls: May 2026  
 
-👉 Second Round of open calls now **OPEN**. Check it out [here](https://ldt4ssc.eu/call-two/). Apply by 15/04/2026, 23:59 CET.
+👉 Second round of open calls now **CLOSED**. Third round on **13 May 2026**.
 
 **What is the goal?** 
 
