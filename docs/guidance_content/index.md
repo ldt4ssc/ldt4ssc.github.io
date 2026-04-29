@@ -151,7 +151,7 @@ This page summarises requirements **shared across WS1, WS2, and WS3**. For work-
 | Call opens | 13 May 2026 |
 | Call closes | 13 July 2026 (23:59 CET) |
 | Selection announced | August 2026 |
-| Pilots start | November 2026 |
+| Pilots start | December 2026 |
 | Pilots end (max 18 months) | June 2028 |
 
 
