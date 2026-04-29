@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1312, 49.6118], [6.1318, 49.6118], [6.1318, 49.6124], [6.1312, 49.6124], [6.1312, 49.6118]]]
+      },
+      "properties": { "osmId": 123456701, "name": "Kirchberg Office A", "rooftopArea": 444.2, "installedCapacity": 46.64, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1320, 49.6118], [6.1327, 49.6118], [6.1327, 49.6123], [6.1320, 49.6123], [6.1320, 49.6118]]]
+      },
+      "properties": { "osmId": 123456702, "name": "Kirchberg Office B", "rooftopArea": 388.5, "installedCapacity": 40.79, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1295, 49.6110], [6.1302, 49.6110], [6.1302, 49.6116], [6.1295, 49.6116], [6.1295, 49.6110]]]
+      },
+      "properties": { "osmId": 123456703, "name": null, "rooftopArea": 512.3, "installedCapacity": 53.79, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1305, 49.6108], [6.1310, 49.6108], [6.1310, 49.6113], [6.1305, 49.6113], [6.1305, 49.6108]]]
+      },
+      "properties": { "osmId": 123456704, "name": null, "rooftopArea": 276.4, "installedCapacity": 29.02, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1330, 49.6112], [6.1338, 49.6112], [6.1338, 49.6118], [6.1330, 49.6118], [6.1330, 49.6112]]]
+      },
+      "properties": { "osmId": 123456705, "name": "Résidence du Parc", "rooftopArea": 623.7, "installedCapacity": 65.49, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1285, 49.6120], [6.1291, 49.6120], [6.1291, 49.6125], [6.1285, 49.6125], [6.1285, 49.6120]]]
+      },
+      "properties": { "osmId": 123456706, "name": null, "rooftopArea": 330.8, "installedCapacity": 34.73, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1342, 49.6120], [6.1350, 49.6120], [6.1350, 49.6127], [6.1342, 49.6127], [6.1342, 49.6120]]]
+      },
+      "properties": { "osmId": 123456707, "name": "Immeuble Vert", "rooftopArea": 700.1, "installedCapacity": 73.51, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1298, 49.6127], [6.1305, 49.6127], [6.1305, 49.6132], [6.1298, 49.6132], [6.1298, 49.6127]]]
+      },
+      "properties": { "osmId": 123456708, "name": null, "rooftopArea": 385.0, "installedCapacity": 40.43, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1315, 49.6130], [6.1321, 49.6130], [6.1321, 49.6136], [6.1315, 49.6136], [6.1315, 49.6130]]]
+      },
+      "properties": { "osmId": 123456709, "name": null, "rooftopArea": 462.8, "installedCapacity": 48.59, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1275, 49.6105], [6.1282, 49.6105], [6.1282, 49.6110], [6.1275, 49.6110], [6.1275, 49.6105]]]
+      },
+      "properties": { "osmId": 123456710, "name": "Logements Belval", "rooftopArea": 543.2, "installedCapacity": 57.04, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1260, 49.6118], [6.1266, 49.6118], [6.1266, 49.6123], [6.1260, 49.6123], [6.1260, 49.6118]]]
+      },
+      "properties": { "osmId": 123456711, "name": null, "rooftopArea": 310.5, "installedCapacity": 32.60, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1270, 49.6128], [6.1278, 49.6128], [6.1278, 49.6134], [6.1270, 49.6134], [6.1270, 49.6128]]]
+      },
+      "properties": { "osmId": 123456712, "name": null, "rooftopArea": 668.4, "installedCapacity": 70.18, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1355, 49.6108], [6.1361, 49.6108], [6.1361, 49.6113], [6.1355, 49.6113], [6.1355, 49.6108]]]
+      },
+      "properties": { "osmId": 123456713, "name": "Centre Hamilius", "rooftopArea": 481.6, "installedCapacity": 50.57, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1248, 49.6112], [6.1255, 49.6112], [6.1255, 49.6117], [6.1248, 49.6117], [6.1248, 49.6112]]]
+      },
+      "properties": { "osmId": 123456714, "name": null, "rooftopArea": 394.7, "installedCapacity": 41.44, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1362, 49.6115], [6.1368, 49.6115], [6.1368, 49.6121], [6.1362, 49.6121], [6.1362, 49.6115]]]
+      },
+      "properties": { "osmId": 123456715, "name": null, "rooftopArea": 507.9, "installedCapacity": 53.33, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1240, 49.6120], [6.1247, 49.6120], [6.1247, 49.6125], [6.1240, 49.6125], [6.1240, 49.6120]]]
+      },
+      "properties": { "osmId": 123456716, "name": "Résidence Acacias", "rooftopArea": 578.3, "installedCapacity": 60.72, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1308, 49.6100], [6.1315, 49.6100], [6.1315, 49.6105], [6.1308, 49.6105], [6.1308, 49.6100]]]
+      },
+      "properties": { "osmId": 123456717, "name": null, "rooftopArea": 243.1, "installedCapacity": 25.53, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1322, 49.6100], [6.1329, 49.6100], [6.1329, 49.6106], [6.1322, 49.6106], [6.1322, 49.6100]]]
+      },
+      "properties": { "osmId": 123456718, "name": null, "rooftopArea": 602.4, "installedCapacity": 63.25, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1335, 49.6102], [6.1341, 49.6102], [6.1341, 49.6108], [6.1335, 49.6108], [6.1335, 49.6102]]]
+      },
+      "properties": { "osmId": 123456719, "name": "Maison Kirchberg", "rooftopArea": 357.8, "installedCapacity": 37.57, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1348, 49.6103], [6.1355, 49.6103], [6.1355, 49.6108], [6.1348, 49.6108], [6.1348, 49.6103]]]
+      },
+      "properties": { "osmId": 123456720, "name": null, "rooftopArea": 419.6, "installedCapacity": 44.06, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1283, 49.6098], [6.1290, 49.6098], [6.1290, 49.6104], [6.1283, 49.6104], [6.1283, 49.6098]]]
+      },
+      "properties": { "osmId": 123456721, "name": null, "rooftopArea": 551.7, "installedCapacity": 57.93, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1268, 49.6098], [6.1275, 49.6098], [6.1275, 49.6104], [6.1268, 49.6104], [6.1268, 49.6098]]]
+      },
+      "properties": { "osmId": 123456722, "name": "Atelier Sud", "rooftopArea": 488.9, "installedCapacity": 51.33, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1372, 49.6122], [6.1378, 49.6122], [6.1378, 49.6128], [6.1372, 49.6128], [6.1372, 49.6122]]]
+      },
+      "properties": { "osmId": 123456723, "name": null, "rooftopArea": 366.2, "installedCapacity": 38.45, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1250, 49.6130], [6.1257, 49.6130], [6.1257, 49.6136], [6.1250, 49.6136], [6.1250, 49.6130]]]
+      },
+      "properties": { "osmId": 123456724, "name": null, "rooftopArea": 734.5, "installedCapacity": 77.12, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1258, 49.6140], [6.1265, 49.6140], [6.1265, 49.6146], [6.1258, 49.6146], [6.1258, 49.6140]]]
+      },
+      "properties": { "osmId": 123456725, "name": "Résidence Merl", "rooftopArea": 426.3, "installedCapacity": 44.76, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1275, 49.6142], [6.1282, 49.6142], [6.1282, 49.6148], [6.1275, 49.6148], [6.1275, 49.6142]]]
+      },
+      "properties": { "osmId": 123456726, "name": null, "rooftopArea": 318.7, "installedCapacity": 33.46, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1292, 49.6140], [6.1298, 49.6140], [6.1298, 49.6146], [6.1292, 49.6146], [6.1292, 49.6140]]]
+      },
+      "properties": { "osmId": 123456727, "name": null, "rooftopArea": 529.4, "installedCapacity": 55.59, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1308, 49.6138], [6.1315, 49.6138], [6.1315, 49.6144], [6.1308, 49.6144], [6.1308, 49.6138]]]
+      },
+      "properties": { "osmId": 123456728, "name": "Villa Clervaux", "rooftopArea": 455.6, "installedCapacity": 47.84, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1325, 49.6140], [6.1332, 49.6140], [6.1332, 49.6145], [6.1325, 49.6145], [6.1325, 49.6140]]]
+      },
+      "properties": { "osmId": 123456729, "name": null, "rooftopArea": 398.1, "installedCapacity": 41.80, "tiltAngle": 30 }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.1340, 49.6135], [6.1347, 49.6135], [6.1347, 49.6141], [6.1340, 49.6141], [6.1340, 49.6135]]]
+      },
+      "properties": { "osmId": 123456730, "name": "Tour Opal", "rooftopArea": 815.2, "installedCapacity": 85.60, "tiltAngle": 30 }
+    }
+  ]
+}

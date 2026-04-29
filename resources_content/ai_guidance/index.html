@@ -1,0 +1,1396 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://knowledgehub.ldt4ssc.eu/resources_content/ai_guidance/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/fav_icon_resized.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Guidance on AI - Knowledge Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+      <link rel="stylesheet" href="../../css/resources_poc.css">
+    
+      <link rel="stylesheet" href="../../css/methodology_diagram.css">
+    
+      <link rel="stylesheet" href="../../css/feedback_widget.css">
+    
+      <link rel="stylesheet" href="../../css/journey.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guidance-on-ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ldt4ssc.eu/" title="Knowledge Hub" class="md-header__button md-logo" aria-label="Knowledge Hub" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Knowledge Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guidance on AI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ldt4ssc.eu/" title="Knowledge Hub" class="md-nav__button md-logo" aria-label="Knowledge Hub" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Knowledge Hub
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategy & Sustainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../communities_content/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Communities Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Smart Communities Ecosystem
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Data_Spaces_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/AI_For_Smart_Cities_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI for Smart Cities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Local_Digital_Twins_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Local Digital Twins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/CitiVerse_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CitiVerse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Interoperability_and_MIMs_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interoperability & MIMs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Cities_Network_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cities Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../guidance_content/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot Guidance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pilot Guidance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance_content/ws1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WS1 – Interconnection of LDTs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance_content/ws2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WS2 – Creation of LDTs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance_content/ws3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WS3 – AI-Based Capabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources for Pilots
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources for Pilots
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../non_tech_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-technical Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regulatory-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regulatory Compliance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regulatory Compliance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-act-and-its-implementation-in-the-context-of-ldt-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Act and its implementation in the context of LDT projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Act and its implementation in the context of LDT projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommendations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Associated Resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environmental-impact-of-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environmental Impact of AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environmental Impact of AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-for-sustainability-and-environmentally-sustainable-ai-in-ldts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI for Sustainability and environmentally sustainable AI in LDTs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI for Sustainability and environmentally sustainable AI in LDTs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#european-regulatory-and-strategic-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        European regulatory and strategic context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-environmental-impact-of-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The environmental impact of AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-resources_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Associated Resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ethics-of-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ethics of AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ethics of AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ldt4ssc-ethics-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LDT4SSC ethics framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-ethical-considerations-for-ai-in-ldt-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key ethical considerations for AI in LDT projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key ethical considerations for AI in LDT projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discriminatory-bias-and-explainability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discriminatory bias and explainability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-users-rights-and-free-choice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        End users' rights and free choice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#human-oversight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Human oversight
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#societal-impact-and-risk-benefit-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Societal impact and risk-benefit assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-resources_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Associated Resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+
+<h1 id="guidance-on-ai">Guidance on AI</h1>
+<div class="admonition tip">
+<p class="admonition-title">On this page</p>
+<ul>
+<li><a href="#regulatory-compliance">Regulatory Compliance</a> — AI Act and its implementation in LDT projects</li>
+<li><a href="#environmental-impact-of-ai">Environmental Impact of AI</a> — Sustainable AI practices and assessment frameworks</li>
+<li><a href="#ethics-of-ai">Ethics of AI</a> — LDT4SSC ethics framework and key ethical considerations</li>
+</ul>
+</div>
+<p>This page provides non-technical guidance specific to WS3 pilots deploying LDTs with AI-based capabilities. It complements the general regulatory compliance resources.</p>
+<hr />
+<h2 id="regulatory-compliance">Regulatory Compliance</h2>
+<p><em>Relevant WS3 Requirements: Rq32, Rq5, Rq6, Rq20, Rq21</em></p>
+<h3 id="ai-act-and-its-implementation-in-the-context-of-ldt-projects">AI Act and its implementation in the context of LDT projects</h3>
+<h4 id="context">Context</h4>
+<p>Since 2020, the European Union has sought to regulate the marketing and use of AI systems. On 14 June 2024 it adopted a Regulation on Artificial Intelligence (the <strong>"AI Act"</strong>), the provisions of which apply directly in the Member States and have been phased in since February 2025.</p>
+<p>The development and use of LDTs, where they qualify as <strong>"artificial intelligence systems"</strong> within the meaning of this Regulation, are fully subject to these rules.</p>
+<h4 id="scope">Scope</h4>
+<p>The AI Act applies to <strong>"AI systems"</strong> and <strong>"general-purpose AI models"</strong>. Whilst the concept of "general-purpose AI models" refers to generative AI (e.g. Mistral's Le Chat, OpenAI's ChatGPT), the broader concept of "AI system" can cover some Digital Twin projects. An AI system refers to any:</p>
+<blockquote>
+<p><em>"machine-based system that is designed to operate with varying levels of autonomy and that may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments."</em></p>
+</blockquote>
+<p>The AI Act applies only where an AI system is:</p>
+<ul>
+<li><strong>"placed on the market"</strong> — intended for distribution or use on the Union market in the course of a commercial activity, whether for a fee or free of charge; or</li>
+<li><strong>"put into service"</strong> — supplied for first use for their own purposes or for the benefit of another person.</li>
+</ul>
+<p>It applies to businesses, organisations, and public authorities alike - central government bodies, decentralised authorities, local authorities, and public institutions.</p>
+<h4 id="approach">Approach</h4>
+<p>The AI Act regulates AI systems based on the risks they pose to individuals' rights and freedoms across four levels:</p>
+<div class="admonition danger">
+<p class="admonition-title">Prohibited AI practices (Article 5)</p>
+<p>Several AI practices are outright prohibited, such as manipulation and deception harmful to individuals, social scoring, and the assessment or prediction of the risk of criminal offences. Although unlikely in LDT contexts, pilots must ensure their project does not pursue any of these prohibited purposes.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">High-risk AI systems (Chapter 3)</p>
+<p>AI systems classified as "high-risk" — likely to pose a risk to health, safety, or fundamental rights — are subject to strict regulation. LDTs may fall within this category in many situations, for example when they map critical infrastructure (transport, energy), are used in the administration of democratic processes, or are deployed in law enforcement contexts.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">The Digital Omnibus on AI (November 2025 proposal)</p>
+<p>The European Commission has proposed amendments to the AI Act. Subject to final adoption, key points are:</p>
+<ul>
+<li>If the project is a <strong>high-risk AI system</strong>, obligations applicable to such systems would be deferred until compliance tools and standards become available.</li>
+<li>If the project lead or a consortium member is an <strong>SME</strong>, it would benefit from reduced technical documentation requirements and other advantages.</li>
+<li>Projects could more easily make use of <strong>regulatory sandboxes</strong> — test environments for technologies supervised by public authorities.</li>
+</ul>
+</div>
+<h4 id="recommendations">Recommendations</h4>
+<p>To comply with <strong>Requirement 21</strong> ("All AI used in public services must comply with the AI Act, particularly if it influences decisions, priorities, resource allocations, or public policies. Pilots must take into account the relevant amendments of the Digital Omnibus on AI, should they come into force"), pilots are advised to:</p>
+<ul>
+<li>Inform and familiarise staff and/or agents involved in the development and use of the LDT with the AI Act.</li>
+<li>Determine whether the LDT project is likely to be classified as an AI System and define the applicable requirements.</li>
+<li>Map the roles of consortium members in the creation of the LDT to understand their rights and obligations within the value chain.</li>
+<li>Contact the relevant regulatory authority in the event of any doubt regarding the application and implementation of the AI Act.</li>
+</ul>
+<h3 id="associated-resources">Associated Resources</h3>
+<table>
+<thead>
+<tr>
+<th>Author / Title</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>European Commission — <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">AI Act</a></td>
+<td>General presentation of the AI Act (risk-based approach, compliance and enforcement, simplification proposal). Use to explore the AI Act in depth.</td>
+<td>Standard / Educational resource</td>
+</tr>
+<tr>
+<td>European Commission — <a href="https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act">Questions &amp; Answers on the AI Act</a></td>
+<td>Detailed Q&amp;A covering the AI Act's goals, governance, enforcement, provisions for high-risk AI systems and general-purpose AI models, and measures to foster innovation.</td>
+<td>Q&amp;A</td>
+</tr>
+<tr>
+<td>European Commission — <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act">Guidelines on prohibited AI practices</a></td>
+<td>Guidelines providing an overview of AI practices deemed unacceptable under the AI Act. Use to ensure pilots do not have a prohibited use of AI.</td>
+<td>Guidelines</td>
+</tr>
+<tr>
+<td>European Commission — <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application">Guidelines on AI system definition</a></td>
+<td>Explains the practical application of the legal concept of "AI system" as defined in the AI Act. Use to determine whether your software systems constitute AI systems.</td>
+<td>Guidelines</td>
+</tr>
+<tr>
+<td>European Commission — <a href="https://ai-act-service-desk.ec.europa.eu/en">AI Act Single Information Platform</a></td>
+<td>Platform to help WS3 pilots determine whether they are subject to legal obligations and understand the steps needed to comply.</td>
+<td>Platform</td>
+</tr>
+<tr>
+<td>European Commission — <a href="https://ai-act-service-desk.ec.europa.eu/en/eu-ai-act-compliance-checker">EU AI Act Compliance Checker</a></td>
+<td>A self-assessment tool to evaluate whether AI systems and general-purpose AI models meet the requirements of the AI Act. An ongoing project.</td>
+<td>Self-assessment</td>
+</tr>
+<tr>
+<td>Hub France IA — <a href="https://www.hub-franceia.fr/wp-content/uploads/2024/10/Hub-France-IA-A-toolbox-for-managing-risks-of-AI-systems.pdf">A toolbox for managing risks of Artificial Intelligence systems</a></td>
+<td>Reflections and feedback from the Banking and Auditability Working Group on how risk management can be equipped to reduce the costs of AI Act compliance.</td>
+<td>Toolbox / Guidelines</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="environmental-impact-of-ai">Environmental Impact of AI</h2>
+<p><em>Relevant WS3 Requirements: Rq32, Rq5, Rq6, Rq8, Rq9, Rq20</em></p>
+<h3 id="ai-for-sustainability-and-environmentally-sustainable-ai-in-ldts">AI for Sustainability and environmentally sustainable AI in LDTs</h3>
+<h4 id="european-regulatory-and-strategic-context">European regulatory and strategic context</h4>
+<p>WS3 pilots are set to develop AI-based services: predictive models, computer vision, optimisation algorithms, or generative AI. This integration takes place within a rapidly evolving European strategic and regulatory context addressing environmental sustainability.</p>
+<p>The <strong>2019 European Green Deal</strong> positioned digital technologies, including AI, as enablers of the green transition. The Commission's <strong>White Paper on AI (2020)</strong> established the dual framing of AI and the environment:</p>
+<ul>
+<li><strong>AI for Sustainability</strong> — AI as a tool to achieve environmental goals (underpinning many LDT use-cases)</li>
+<li><strong>Sustainable AI</strong> — minimising AI's own environmental footprint</li>
+</ul>
+<p>The <strong>AI Act (2024)</strong> includes environmental protection among its objectives (Article 1) and acknowledges AI's environmental potential (Recital 4). However, the evidence base remains limited: the European Parliament's AIDA committee study concluded no comprehensive cost-benefit assessment existed as of 2021, and flags rebound effects where efficiency gains are offset by increased usage. For digital twins specifically, generative scenario tools may increase compute intensity without proportional public value, and cloud-based inference at scale carries cumulative energy costs.</p>
+<h4 id="the-environmental-impact-of-ai">The environmental impact of AI</h4>
+<p>Since Strubell et al. (2019) quantified the substantial emissions from training large NLP models, scientific and institutional scrutiny has grown rapidly. The <strong>IEA's 2025 report</strong> estimates global data centre electricity consumption at 415 TWh in 2024 (1.5% of global consumption), growing 12% annually and projected to double to 945 TWh by 2030, with AI-related servers accounting for nearly half the increase.</p>
+<p>This impact extends beyond energy consumption. The International Telecommunication Union's <strong>ITU-T L.1801</strong> recommendation standard (published February 2026 as ITU-T L.1801 / ETSI ES 204 135) codifies assessment across four lifecycle stages and five environmental impact categories through a <strong>life cycle assessment (LCA)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Lifecycle stage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hardware production</td>
+<td>Manufacturing of computing hardware</td>
+</tr>
+<tr>
+<td>Training and development</td>
+<td>Compute for model training and experimentation</td>
+</tr>
+<tr>
+<td>Operation and inference</td>
+<td>Ongoing compute for deployed services</td>
+</tr>
+<tr>
+<td>Decommissioning</td>
+<td>End-of-life disposal of hardware</td>
+</tr>
+</tbody>
+</table>
+<p>Not all AI has an equal environmental footprint. The ITU-T L.1801 standard classifies AI into four types — expert systems, machine learning, deep learning, and generative AI — with generative AI rated "comparatively high" in energy, data, and hardware demands. For example, in an LDT, an optimisation algorithm has a fundamentally different footprint from using a large language model for scenario building.</p>
+<h3 id="associated-resources_1">Associated Resources</h3>
+<table>
+<thead>
+<tr>
+<th>Author / Title</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ITU-T / ETSI — <a href="https://l1801framework.netlify.app/">ITU-T L.1801 Environmental impact assessment of AI systems</a></td>
+<td>The first international standard for assessing the environmental impact of AI systems across their full lifecycle (ITU-T L.1801 / ETSI ES 204 135, February 2026). Use to grasp the main concepts and dimensions of AI's environmental impact.</td>
+<td>Recommendation Standard / Educational resource</td>
+</tr>
+<tr>
+<td>European Parliament – AIDA / Öko-Institut e.V. — <a href="https://www.europarl.europa.eu/RegData/etudes/STUD/2021/662906/IPOL_STU(2021)662906_EN.pdf">The Role of AI in the European Green Deal</a></td>
+<td>Commissioned study for the AIDA Committee analysing AI's environmental potential and risks, with recommendations for regulatory alignment with Green Deal objectives. Use to align your use-case with the European Green Deal (Rq6).</td>
+<td>Study</td>
+</tr>
+<tr>
+<td>Bundesverband Green.Software — <a href="https://landscape.bundesverband-green-software.de/?group=measurement&amp;view-mode=grid&amp;license=oss&amp;category=Artificial+Intelligence">Green Software Landscape – AI</a></td>
+<td>Overview of the green software ecosystem with concrete recommendations and measurement tools applicable at code, component, data aggregation, database, infrastructure, and AI algorithm levels. Use to identify software tools for measuring the energy consumption of AI services.</td>
+<td>Toolbox</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ethics-of-ai">Ethics of AI</h2>
+<p><em>Relevant WS3 Requirements: Rq32, Rq5, Rq20</em></p>
+<h3 id="ldt4ssc-ethics-framework">LDT4SSC ethics framework</h3>
+<p>The LDT4SSC ethics framework requires pilots to follow an <strong>"Ethics and Data Protection By Design"</strong> approach:</p>
+<ul>
+<li>Applicants must complete and submit an Ethics and Data Protection Self-Assessment with their proposal.</li>
+<li>Assessments are reviewed by the <strong>LDT4SSC Ethical Board</strong> during evaluation.</li>
+<li>Selected pilots engage further with the Ethical Board at project start to discuss and mitigate ethical risks.</li>
+</ul>
+<p>The framework draws on recognised ethical guidance (ALTAI, FRAIA, ISO/IEC standards), mandates compliance with applicable legislation (GDPR, AI Act), integrates ethics checkpoints throughout the call and implementation, and expects pilots to establish governance, oversight, and mitigation measures for issues such as data protection, bias, transparency, and fairness.</p>
+<p>More information can be found in the <a href="https://ldt4ssc.eu/documents/cpmws3.pdf"><strong>Call for Pilot Manuals for WS3</strong></a>.</p>
+<h3 id="key-ethical-considerations-for-ai-in-ldt-projects">Key ethical considerations for AI in LDT projects</h3>
+<p>Ethics complements existing laws and regulations. The ethical approach is a best practice undertaken by pilots to assess the validity of an action in relation to the values and principles they have chosen to uphold throughout the entire project design process. This section identifies key issues related to LDT projects incorporating AI and provides corresponding recommendations.</p>
+<h4 id="discriminatory-bias-and-explainability">Discriminatory bias and explainability</h4>
+<p>AI models in LDTs are only as fair as the data they are trained on. Historical data often reflects societal biases — such as underinvestment in certain neighbourhoods — which AI systems can inadvertently perpetuate.</p>
+<p><strong>Stakeholder involvement</strong> — Involving a diverse range of stakeholders (end-users, citizens, ethicists, and partners from other regions) in the design process helps identify blind spots and potential biases. </p>
+<p><strong>Transparency and explainability</strong> — AI systems must be understandable and auditable by stakeholders, not just technical experts. Techniques such as eXplainable AI (XAI) can demystify complex models, allowing users to question and challenge algorithmic decisions. For example, a digital twin optimising public transport routes should provide clear explanations for why certain areas are prioritised or deprioritised.</p>
+<h4 id="end-users-rights-and-free-choice">End users' rights and free choice</h4>
+<p>LDTs that rely on personal or behavioural data must be designed to empower individuals:</p>
+<ul>
+<li>Users must be fully informed about how their data is collected, processed, and utilised.</li>
+<li>Users should retain control over their information.</li>
+<li>Mixed datasets must not result in sensitive data that could affect users or citizens.</li>
+</ul>
+<p>Obtaining meaningful consent is a challenge where users interact with LDTs indirectly (e.g. through smart city sensors). Clear communication about the purpose of data processing and the rights of individuals — such as the ability to opt out or request data deletion — is fundamental.</p>
+<p>Inclusion and accessibility are further concerns: systems must be accessible to all regardless of technical literacy or physical ability, which may involve providing multi-channel interfaces to ensure marginalised groups are not excluded.</p>
+<h4 id="human-oversight">Human oversight</h4>
+<p>AI systems in LDTs must be transparent, reliable, and subject to human oversight. While AI can process vast datasets and generate insights, critical decisions must remain under human control. This aligns with the <strong>"Human-in-Command"</strong> approach, where AI serves as a decision-support tool rather than an autonomous decision-maker.</p>
+<p>A major risk is over-reliance on automation, which can lead to outcomes that lack contextual understanding or ethical nuance. The <strong>"Human-in-the-Loop"</strong> principle ensures that experts intervene at key stages, such as validating data inputs or correcting algorithmic biases.</p>
+<h4 id="societal-impact-and-risk-benefit-assessment">Societal impact and risk-benefit assessment</h4>
+<p>The deployment of AI-powered LDTs must be assessed through the lens of societal impact — benefits should not be solely technical or economic but should also contribute to the common good.</p>
+<p><strong>Cost-benefit analysis</strong> — Comprehensive assessments should evaluate not only technical performance but also social equity, environmental sustainability, and legal compliance. See the <a href="../non_tech_resources/#cost-benefit-analysis">Cost-benefit analysis</a> section for more information.</p>
+<p>The need to balance innovation with ecological responsibility must also be taken into account. LDTs rely on vast computational resources, and their carbon footprint must be justified by tangible societal benefits. See <a href="#environmental-impact-of-ai">Environmental Impact of AI</a> above.</p>
+<h3 id="associated-resources_2">Associated Resources</h3>
+<table>
+<thead>
+<tr>
+<th>Author / Title</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Estonian Government — <strong>Algorithmic Bias Risk Management</strong> <a href="https://www.volinik.ee/volinik-live-web-prd/s3fs-public/2025-12/algorithmic_bias_risk_management_gudieline.pdf">Guideline</a>, <a href="https://www.volinik.ee/en/information-materials/ai-bias-assessment-workbook">Workbook</a> and <a href="https://www.volinik.ee/en/information-materials/algorithmic-bias-risk-management-methodology">Methodology</a></td>
+<td>Algorithmic Bias Risk Management Tool (guideline, methodology, workbook) for the development and deployment of AI systems in the public sector.</td>
+<td>Guideline / Workbook / Methodology</td>
+</tr>
+<tr>
+<td>Ekitia — <a href="https://ekilearning.com">Eki'Learning</a></td>
+<td>A learning environment to assess, improve and apply ethical practices in real-world data and AI initiatives, built in the context of the Destination Earth project.</td>
+<td>E-learning</td>
+</tr>
+<tr>
+<td>OECD — <a href="https://www.oecd.org/content/dam/oecd/en/about/programmes/cfe/the-oecd-programme-on-smart-cities-and-inclusive-growth/Issues-Note-AI-for-advancing-smart-cities.pdf">Artificial Intelligence for Advancing Smart Cities</a></td>
+<td>Note supporting city governments in adopting AI for resilience and good governance. Provides a comprehensive view of enablers and conditions for AI development in smart communities, especially in Chapter 3.</td>
+<td>Note</td>
+</tr>
+<tr>
+<td>Datactivists, La Mednum, Fari, Waag — <a href="https://algolit.eu/en/blog/how-to-explain-algorithms-and-train-people-to-do-so">ALGO-LIT project</a></td>
+<td>Project aimed at supporting society's digital transformation by identifying and developing the skills needed to understand and use algorithms, ensuring no citizens are left behind.</td>
+<td>Project</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+  <!-- Feedback Widget (only on resources pages) -->
+  
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      LDT4SSC is a project funded by the Digital Europe Programme under grant agreement number 101226211. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the European Commission can be held responsible for them.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/logo-top-redirect.js"></script>
+      
+        <script src="../../js/frame-escape.js"></script>
+      
+        <script src="../../js/papaparse.min.js"></script>
+      
+        <script src="../../js/resources_poc.js"></script>
+      
+        <script src="../../js/journey.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

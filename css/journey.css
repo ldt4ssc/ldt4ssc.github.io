@@ -1,0 +1,939 @@
+/* ============================================================
+   Journey Page Styles
+   ============================================================ */
+
+:root {
+  /* Journey phase colours */
+  --journey-prepilot: #78909c;
+  --journey-onboarding: #fcc979;
+  --journey-explore: #f9a825;
+  --journey-validate: #424242;
+  --journey-define: #1976d2;
+  --journey-implement: #388e3c;
+  --journey-sharingback: #0097a7;
+  --journey-handover: #5d4037;
+}
+
+/* ---- Phase Stepper ---- */
+.journey-stepper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin: 2rem 0;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.stepper-phase {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  position: relative;
+}
+
+.stepper-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.stepper-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.3rem;
+}
+
+.stepper-desc {
+  font-size: 0.65rem;
+  color: #666;
+  line-height: 1.3;
+  padding: 0 0.25rem;
+}
+
+/* Connector line between stepper phases */
+.stepper-phase:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background: #e0e0e0;
+  z-index: 1;
+}
+
+/* Implementation sub-phases row */
+.stepper-subphases {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500%;
+}
+
+/* Bracket connector: ┌──┐ above the badges */
+.stepper-subphases::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 33%;
+  right: 33%;
+  height: 0.6rem;
+  border-left: 1.5px solid #ccc;
+  border-right: 1.5px solid #ccc;
+  border-top: 1.5px solid #ccc;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Vertical line from bracket up to Implementation */
+.stepper-subphases::after {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 4px + 0.6rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.5px;
+  height: 0.5rem;
+  background: #ccc;
+}
+
+.stepper-subphase {
+  font-size: 0.55rem;
+  font-weight: 700;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+a.stepper-subphase,
+a.stepper-subphase:visited {
+  color: #fff !important;
+}
+
+a.stepper-subphase:hover {
+  opacity: 0.8;
+  color: #fff !important;
+}
+
+/* ---- Cohort Cards ---- */
+.cohort-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.cohort-card {
+  border-radius: 8px;
+  padding: 1.2rem;
+  border-left: 4px solid;
+  background: #f8f9fa;
+}
+
+.cohort-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.cohort-card .cohort-dates {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.cohort-card .cohort-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* ---- Timeline ---- */
+.timeline-container {
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.timeline-tabs {
+  display: flex;
+  gap: 0.375rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.timeline-tab {
+  padding: 0.25rem 0.75rem;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: #e0e0e0;
+  color: #424242;
+  transition: all 0.15s ease;
+}
+
+.timeline-tab:hover {
+  transform: scale(1.02);
+}
+
+.timeline-tab.active {
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+
+.timeline-tab[data-cohort="template"].active {
+  background: #424242;
+  color: #fff;
+}
+
+.timeline-tab[data-cohort="1"].active {
+  background: #1565c0;
+  color: #fff;
+}
+
+.timeline-tab[data-cohort="2"].active {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.timeline-tab[data-cohort="3"].active {
+  background: #e65100;
+  color: #fff;
+}
+
+/* Timeline grid */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 120px repeat(20, 1fr);
+  gap: 0;
+  min-width: 960px;
+  font-size: 0.65rem;
+  position: relative;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+/* Cohort separator row */
+.timeline-cohort-header {
+  grid-column: 1 / -1;
+  padding: 0.4rem 0.5rem 0.2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-left: 3px solid;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fafafa;
+  margin-top: 2px;
+}
+
+/* Month headers */
+.timeline-header {
+  display: contents;
+}
+
+.timeline-month {
+  text-align: center;
+  padding: 0.3rem 0;
+  font-weight: 700;
+  color: #666;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 0.6rem;
+}
+
+.timeline-month:first-child {
+  text-align: left;
+  font-size: 0.7rem;
+  color: #333;
+}
+
+/* Kick-off divider between M-1 and M1 */
+.timeline-month.kickoff-after {
+  position: relative;
+  overflow: visible;
+}
+
+.timeline-month.kickoff-after::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 2px;
+  height: 500px;
+  background: #999;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.timeline-month.kickoff-after::after {
+  content: 'KICK-OFF';
+  position: absolute;
+  left: -1px;
+  bottom: calc(100% + 2px);
+  transform: translateX(-50%);
+  font-size: 0.45rem;
+  font-weight: 800;
+  color: #999;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  z-index: 6;
+}
+
+/* Phase bands */
+.timeline-row {
+  display: contents;
+}
+
+.timeline-row-label {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  font-weight: 600;
+  font-size: 0.65rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.timeline-cell {
+  border-bottom: 1px solid #f0f0f0;
+  border-right: 1px solid #f5f5f5;
+  min-height: 32px;
+  position: relative;
+}
+
+/* Phase band fills */
+.timeline-band {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 2px;
+  right: 2px;
+  border-radius: 4px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+.timeline-band.prepilot { background: var(--journey-prepilot); }
+.timeline-band.onboarding { background: var(--journey-onboarding); color: #333; }
+.timeline-band.explore { background: var(--journey-explore); color: #333; }
+.timeline-band.validate { background: var(--journey-validate); }
+.timeline-band.define { background: var(--journey-define); }
+.timeline-band.implement { background: var(--journey-implement); }
+.timeline-band.sharingback { background: var(--journey-sharingback); }
+.timeline-band.handover { background: var(--journey-handover); }
+
+/* Deliverable markers */
+.timeline-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: #1976d2;
+  z-index: 3;
+  cursor: default;
+}
+
+/* Tooltips handled by JS (appended to body to escape overflow containers) */
+
+/* JS-rendered tooltip (appended to body) */
+.timeline-tooltip {
+  position: fixed;
+  background: #333;
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  white-space: nowrap;
+  z-index: 9999;
+  pointer-events: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-style: normal;
+}
+
+/* Monitoring markers — "i" info style */
+.timeline-marker.monitoring-marker {
+  border-color: #0097a7;
+  color: #0097a7;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.timeline-marker.monitoring-marker:hover::after {
+  font-style: normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Pilot rows (shown in cohort view) */
+.timeline-pilot-row {
+  display: contents;
+}
+
+.timeline-pilot-label {
+  padding: 0.3rem 0.5rem 0.3rem 0;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #555;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.timeline-pilot-label a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.timeline-pilot-label a:hover {
+  color: #1976d2;
+  text-decoration: underline;
+}
+
+/* Cohort separator row */
+.timeline-cohort-header {
+  grid-column: 1 / -1;
+  padding: 0.4rem 0.5rem 0.2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-left: 3px solid;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fafafa;
+  margin-top: 2px;
+}
+
+.timeline-pilot-cell {
+  border-bottom: 1px solid #f0f0f0;
+  border-right: 1px solid #f5f5f5;
+  min-height: 24px;
+  position: relative;
+}
+
+/* Current position indicator */
+.pilot-position {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  border-radius: 3px;
+  opacity: 0.6;
+}
+
+.pilot-position.current {
+  opacity: 1;
+  animation: pulse-phase 2s ease-in-out infinite;
+}
+
+.pilot-position.future {
+  opacity: 0.2;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  background: transparent !important;
+}
+
+@keyframes pulse-phase {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+/* Deliverable markers on pilot rows */
+.pilot-deliverable-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.45rem;
+  font-weight: 700;
+  color: #1976d2;
+  z-index: 4;
+  cursor: default;
+}
+
+/* Pilot deliverable tooltips also handled by JS */
+
+/* "Now" marker — thin red vertical line */
+.timeline-now-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: #d32f2f;
+  z-index: 5;
+}
+
+.timeline-now-marker::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #d32f2f;
+}
+
+/* ---- Deliverable Tracker ---- */
+.deliverable-tracker {
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.deliverable-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  min-width: 600px;
+}
+
+.deliverable-table th {
+  background: #f5f5f5;
+  padding: 0.5rem;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 0.7rem;
+}
+
+.deliverable-table td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.deliverable-table tr:hover {
+  background: #fafafa;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 10px;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.status-badge.not-started {
+  background: #e0e0e0;
+  color: #666;
+}
+
+.status-badge.in-progress {
+  background: #bbdefb;
+  color: #0d47a1;
+}
+
+.status-badge.submitted {
+  background: #fff9c4;
+  color: #f57f17;
+}
+
+.status-badge.approved {
+  background: #c8e6c9;
+  color: #1b5e20;
+}
+
+/* ---- Pilot Cards ---- */
+.pilot-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.pilot-card {
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 4px solid #1976d2;
+  background: #f8f9fa;
+  transition: box-shadow 0.2s ease;
+}
+
+.pilot-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pilot-card h4 {
+  margin: 0 0 0.3rem;
+  font-size: 0.9rem;
+}
+
+.pilot-card .pilot-meta {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.pilot-card .pilot-desc {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.pilot-card .pilot-status-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.pilot-card a {
+  font-size: 0.7rem;
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pilot-card a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Static Deliverable Reference ---- */
+.deliverable-ref {
+  margin: 1.5rem 0;
+}
+
+.deliverable-ref table {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.deliverable-ref th {
+  text-align: left;
+}
+
+.deliverable-due {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  background: #e3f2fd;
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+.deliverable-due.tbd {
+  background: #f5f5f5;
+  color: #999;
+}
+
+/* ---- Section Spacing ---- */
+.journey-section {
+  margin-bottom: 2.5rem;
+}
+
+.journey-section h2 {
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .journey-stepper {
+    gap: 0.5rem;
+  }
+
+  .stepper-phase:not(:last-child)::after {
+    display: none;
+  }
+
+  .stepper-desc {
+    display: none;
+  }
+
+  .cohort-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-grid {
+    min-width: 800px;
+  }
+
+  .stepper-subphases {
+    flex-wrap: wrap;
+  }
+}
+
+/* ============================================================
+   Pilot Detail Page Styles
+   ============================================================ */
+
+/* Header badges */
+.pilot-detail-header {
+  margin-bottom: 1rem;
+}
+
+.pilot-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pilot-detail-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.pilot-phase-badge {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Quick Info grid */
+.pilot-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.4rem 1.5rem;
+}
+
+.pilot-info-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.pilot-info-label {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 0.1rem;
+}
+
+/* Mini phase stepper */
+.pilot-phase-stepper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+.pilot-phase-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  min-width: 70px;
+  opacity: 0.35;
+}
+
+.pilot-phase-step.completed {
+  opacity: 1;
+}
+
+.pilot-phase-step.active {
+  opacity: 1;
+}
+
+.pilot-phase-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 0 auto 0.4rem;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pilot-phase-step.completed .pilot-phase-dot::after {
+  content: '\2713';
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.pilot-phase-step.active .pilot-phase-dot {
+  box-shadow: 0 0 0 4px rgba(66, 66, 66, 0.2);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(66, 66, 66, 0.15); }
+  50% { box-shadow: 0 0 0 6px rgba(66, 66, 66, 0.25); }
+}
+
+.pilot-phase-name {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.pilot-phase-step.active .pilot-phase-name {
+  font-weight: 700;
+  color: #222;
+}
+
+/* Connector line between phase dots */
+.pilot-phase-step:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background: #e0e0e0;
+  z-index: 1;
+}
+
+.pilot-phase-step.completed:not(:last-child)::before {
+  background: #bdbdbd;
+}
+
+@media (max-width: 768px) {
+  .pilot-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pilot-phase-stepper {
+    gap: 0.25rem;
+  }
+
+  .pilot-phase-name {
+    font-size: 0.5rem;
+  }
+}
+
+/* ---- Pilot Updates (blog-style) ---- */
+.pilot-updates {
+  margin: 1rem 0;
+}
+
+.pilot-update-entry {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pilot-update-entry:last-child {
+  border-bottom: none;
+}
+
+.pilot-update-date {
+  min-width: 52px;
+  text-align: center;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+.pilot-update-day {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1;
+}
+
+.pilot-update-month {
+  display: block;
+  font-size: 0.6rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 0.15rem;
+}
+
+.pilot-update-content {
+  flex: 1;
+  border-left: 3px solid #e0e0e0;
+  padding-left: 1rem;
+}
+
+.pilot-update-content h4 {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  color: #222;
+}
+
+.pilot-update-content p {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #555;
+  margin: 0 0 0.5rem;
+}
+
+.pilot-update-content p:last-of-type {
+  margin-bottom: 0.6rem;
+}
+
+.pilot-update-tag {
+  display: inline-block;
+  font-size: 0.55rem;
+  font-weight: 600;
+  padding: 0.1rem 0.45rem;
+  border-radius: 8px;
+  color: #fff;
+  margin-right: 0.3rem;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .pilot-update-entry {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .pilot-update-date {
+    text-align: left;
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+
+  .pilot-update-content {
+    border-left: none;
+    padding-left: 0;
+    border-top: 2px solid #e0e0e0;
+    padding-top: 0.5rem;
+  }
+}
