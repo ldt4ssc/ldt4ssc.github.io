@@ -52,8 +52,10 @@ nav:
 plugins:
   - redirects:
       redirect_maps:
-        'blueprint.md': 'https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/'  # Example redirect, adjust as needed
-    
+        'blueprint/index.md': 'https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/v1/'
+        'blueprint/latest.md': 'https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/'
+
+
 markdown_extensions:
   - admonition
   - pymdownx.details
