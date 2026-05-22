@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Connectivity",
     "Data management",
     "Analytics",
-    "Services",
+    "Decision-making",
     "Visualisation"
   ];
 
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       text: '#215a6c',
       badge: '#80deea'
     },
-    "Services": {
+    "Decision-making": {
       bg: '#ffebe9',
       border: '#e53935',
       text: '#b10202',
@@ -463,9 +463,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (searchTerm) {
         const haystack = (
-          (r.title || "") +
+          (r.short_name || "") +
+          " " +
+          (r.long_name || "") +
           " " +
           (r.description || "") +
+          " " +
+          (r.maintainer || "") +
           " " +
           (r.tags || []).join(" ")
         ).toLowerCase();
@@ -478,7 +482,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Sorting
     filtered.sort((a, b) => {
       if (sortBy === "title") {
-        return (a.title || "").localeCompare(b.title || "");
+        return (a.short_name || "").localeCompare(b.short_name || "");
       } else if (sortBy === "mim") {
         // Sort by MIM levels (MIM0-MIM8)
         const getMimOrder = (mims) => {
