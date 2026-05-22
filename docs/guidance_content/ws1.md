@@ -13,7 +13,7 @@ This Work Strand focuses on connecting and testing existing Local Digital Twins 
 - Second Round of open calls: February 2026 
 - Third Round of open calls: May 2026 
 
-👉 Second round of open calls now **CLOSED**. Third round on **13 May 2026**.
+👉 The third round of open calls is now **OPEN**. Apply by **July 13 2026**.
 
 **What is the goal?**
 

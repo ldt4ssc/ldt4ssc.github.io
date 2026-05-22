@@ -205,7 +205,7 @@ This page summarises requirements **shared across WS1, WS2, and WS3**. For work-
 
 ## Application Process  
 
-👉 The second round of open calls is now **Closed**. Third round of open calls on **May 13 2026**.
+👉 The third round of open calls is now **OPEN**. Apply by **July 13 2026**.
 
 To apply, 
 
