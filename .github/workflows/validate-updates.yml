@@ -1,0 +1,38 @@
+name: Validate updates (reusable)
+
+on:
+  workflow_call:
+
+jobs:
+  validate:
+    name: Validate update files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out calling repository
+        uses: actions/checkout@v4
+
+      - name: Check out validator script from ldt4ssc.github.io
+        uses: actions/checkout@v4
+        with:
+          repository: ldt4ssc/ldt4ssc.github.io
+          path: _ldt4ssc
+          ref: main
+          sparse-checkout: |
+            docs/assets/validate_updates.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml jsonschema
+
+      - name: Validate updates
+        run: python _ldt4ssc/docs/assets/validate_updates.py
+        env:
+          SCHEMA_BASE_URL: https://knowledgehub.ldt4ssc.eu/assets
