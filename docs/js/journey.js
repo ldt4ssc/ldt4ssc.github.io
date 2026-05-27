@@ -74,7 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
       useCases: (row["Use-Cases"] || "").split(",").map(s => s.trim()).filter(Boolean),
       status: (row["Status"] || "").trim(),
       pageUrl: (row["Page URL"] || "").trim(),
-      kh: (row["KH?"] || "").trim()
+      kh: (row["KH?"] || "").trim(),
+      pilotPageUrl: (row["pilot_page_url"] || "").trim(),
+      repositoryUrl: (row["repository_url"] || "").trim()
     };
   }
 
@@ -196,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 20 columns: M-2, M-1, M1 … M18
   // Index 0 = M-2, 1 = M-1, 2 = M1, … 19 = M18
   const MONTH_LABELS = ["M-2", "M-1"];
-  for (let i = 1; i <= 18; i++) MONTH_LABELS.push(`M${i}`);
+  for (let i = 1; i <= 21; i++) MONTH_LABELS.push(`M${i}`);
 
   function indexToRelativeMonth(idx) {
     // idx 0 → -2, idx 1 → -1, idx 2 → 1, … idx 19 → 18
@@ -276,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (d && start) {
       const diff = (d.getFullYear() - start.getFullYear()) * 12
                  + (d.getMonth() - start.getMonth()) + 1;
-      if (diff >= -2 && diff <= 18) return diff;
+      if (diff >= -2 && diff <= 21) return diff;
     }
     return null;
   }
@@ -327,7 +329,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const pilotDels = deliverablesByPilot[p.id] || [];
         pilotDels.forEach(d => {
           const m = parseDueMonth(d.dueDate, p);
-          if (m !== null && m >= -2 && m <= 18) {
+          if (m !== null && m >= -2 && m <= 21) {
             const idx = relativeMonthToIndex(m);
             if (!deliverableAtIdx[idx]) deliverableAtIdx[idx] = [];
             deliverableAtIdx[idx].push({
@@ -342,20 +344,32 @@ document.addEventListener("DOMContentLoaded", () => {
         // Label cell
         const label = document.createElement("div");
         label.className = "timeline-pilot-label";
-        if (p.pageUrl) {
+        if (p.pilotPageUrl) {
           const a = document.createElement("a");
-          a.href = p.pageUrl;
+          a.href = p.pilotPageUrl;
           a.textContent = p.name;
           a.style.color = colors.border;
           label.appendChild(a);
         } else {
-          label.textContent = p.name;
-          label.style.color = colors.border;
+          const span = document.createElement("span");
+          span.textContent = p.name;
+          span.style.color = colors.border;
+          label.appendChild(span);
+        }
+        if (p.repositoryUrl) {
+          const badge = document.createElement("a");
+          badge.href = p.repositoryUrl;
+          badge.target = "_blank";
+          badge.rel = "noopener";
+          badge.className = "pilot-repo-badge";
+          badge.title = "GitHub repository";
+          badge.innerHTML = "Repo &#x2197;";
+          label.appendChild(badge);
         }
         grid.appendChild(label);
 
-        // 20 month cells
-        for (let idx = 0; idx < 20; idx++) {
+        // 23 month cells
+        for (let idx = 0; idx < 23; idx++) {
           const cell = document.createElement("div");
           cell.className = "timeline-pilot-cell";
 

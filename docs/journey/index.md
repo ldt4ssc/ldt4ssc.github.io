@@ -6,8 +6,7 @@ This page tracks the progress of all piloting projects within the LDT4SSC initia
     - [Journey Overview](#journey-overview) — The 5 phases every pilot goes through
     - [Rounds](#rounds) — Three rounds of open calls
     - [Timeline](#timeline) — Interactive progress tracker
-    - [Our Pilots](#our-pilots) — Browse all selected pilots
-    - [Deliverables](#deliverables) — Pilot deliverable status
+    - [Pilots](#pilots) — Browse all selected pilots
 
 ---
 
@@ -24,7 +23,7 @@ Every pilot follows five main phases over an 18-month period:
   <div class="stepper-phase">
     <div class="stepper-icon" style="background: var(--journey-onboarding);">2</div>
     <div class="stepper-label" style="color: var(--journey-onboarding);">Onboarding</div>
-    <div class="stepper-desc">Training, capacity building, kick-off</div>
+    <div class="stepper-desc">Introductions, training, kick-off</div>
   </div>
   <div class="stepper-phase">
     <div class="stepper-icon" style="background: var(--journey-define);">3</div>
@@ -38,14 +37,14 @@ Every pilot follows five main phases over an 18-month period:
     </div>
   </div>
   <div class="stepper-phase">
-    <div class="stepper-icon" style="background: var(--journey-sharingback);">4</div>
-    <div class="stepper-label" style="color: var(--journey-sharingback);">Sharing Back</div>
-    <div class="stepper-desc">Assets contributed to the resource repository</div>
+    <div class="stepper-icon" style="background: var(--journey-contribution);">4</div>
+    <div class="stepper-label" style="color: var(--journey-contribution);">Contribution</div>
+    <div class="stepper-desc">Assets and services contributed to the common repository</div>
   </div>
   <div class="stepper-phase">
-    <div class="stepper-icon" style="background: var(--journey-handover);">5</div>
-    <div class="stepper-label" style="color: var(--journey-handover);">Handover</div>
-    <div class="stepper-desc">Final review, sustainability planning</div>
+    <div class="stepper-icon" style="background: var(--journey-legacy);">5</div>
+    <div class="stepper-label" style="color: var(--journey-legacy);">Legacy & Replication</div>
+    <div class="stepper-desc">Replication & scaling beyond the project</div>
   </div>
 </div>
 
@@ -57,9 +56,9 @@ Every pilot follows five main phases over an 18-month period:
 
     **3. Implementation** — Pilots follow the [LDT4SSC methodology](../resources_content/methodology.md#the-ldt4ssc-methodology) through its four phases: **EXPLORE** (ideation and use case mapping), **VALIDATE** (specifications and data governance), **DEFINE** (prototyping and architecture), and **IMPLEMENT** (deployment and integration). Pilot deliverables are produced along the way.
 
-    **4. Sharing Back** — Developed assets, tools, and lessons are contributed back to the [Technical](../resources_content/tech_resources.md) and [Non-Technical](../resources_content/non_tech_resources.md) resources, as well as to the LDT4SSC Assets Repository, enriching the ecosystem for future initiatives.
+    **4. Contribution** — Developed assets, tools, and lessons are contributed back to the [Technical](../resources_content/tech_resources.md) and [Non-Technical](../resources_content/non_tech_resources.md) resources, as well as to the LDT4SSC Assets Repository, enriching the ecosystem for future initiatives.
 
-    **5. Handover** — Final project review, sustainability planning, and handover of assets and services for future continuity.
+    **5. Legacy & Replication** — Replication, scaling beyond the project, and handover of assets and services for long-term continuity.
 
 ---
 
@@ -71,7 +70,7 @@ Pilots are selected through three rounds of open calls. Each round follows a jou
   <div class="cohort-card" style="border-left-color: #1565c0;">
     <h3 style="color: #1565c0;">Round 1</h3>
     <div class="cohort-dates">May 2026 – October 2027</div>
-    <span class="cohort-status" style="background: #e3f2fd; color: #0d47a1;">Upcoming</span>
+    <span class="cohort-status" style="background: #e3f2fd; color: #0d47a1;">ONGOING</span>
   </div>
   <div class="cohort-card" style="border-left-color: #2e7d32;">
     <h3 style="color: #2e7d32;">Round 2</h3>
@@ -89,7 +88,7 @@ Pilots are selected through three rounds of open calls. Each round follows a jou
 
 ## Timeline {#timeline}
 
-The progress tracker shows the 18-month pilot journey with key phases and deliverable milestones. Toggle between the **All Pilots** view (relative months M1–M18) and a **round view** (absolute calendar months).
+The progress tracker shows the 21-month pilot journey with key phases and deliverable milestones. Toggle between the **All Pilots** view (relative months M1–M21) and a **round view** (absolute calendar months).
 
 <div class="timeline-container">
   <div class="timeline-tabs" id="timeline-tabs">
@@ -122,10 +121,16 @@ The progress tracker shows the 18-month pilot journey with key phases and delive
       <div class="timeline-month">M15</div>
       <div class="timeline-month">M16</div>
       <div class="timeline-month">M17</div>
-      <div class="timeline-month">M18</div>
+      <div class="timeline-month handover-after">M18</div>
+      <div class="timeline-month">M19</div>
+      <div class="timeline-month">M20</div>
+      <div class="timeline-month">M21</div>
 
-      <!-- Phases row: Onboarding at M-2/M-1, then M1–M18 -->
+      <!-- Phases row: Pre-pilot M-2/M-1, Onboarding M1–M2, then M3–M21 -->
       <div class="timeline-row-label">Phases <span style="font-size:0.5rem;font-weight:400;color:#999;font-style:italic;">(ref)</span></div>
+      <div class="timeline-cell" style="grid-column: span 2;">
+        <div class="timeline-band prepilot">Pre-pilot</div>
+      </div>
       <div class="timeline-cell" style="grid-column: span 2;">
         <div class="timeline-band onboarding">Onboarding</div>
       </div>
@@ -142,10 +147,10 @@ The progress tracker shows the 18-month pilot journey with key phases and delive
         <div class="timeline-band implement">IMPLEMENT</div>
       </div>
       <div class="timeline-cell" style="grid-column: span 2;">
-        <div class="timeline-band sharingback">Sharing</div>
+        <div class="timeline-band contribution">Contribution</div>
       </div>
-      <div class="timeline-cell" style="grid-column: span 2;">
-        <div class="timeline-band handover">Handover</div>
+      <div class="timeline-cell" style="grid-column: span 3;">
+        <div class="timeline-band legacy">Legacy &amp; Replication</div>
       </div>
 
       <!-- Deliverables row -->
@@ -176,6 +181,9 @@ The progress tracker shows the 18-month pilot journey with key phases and delive
       <div class="timeline-cell">
         <div class="timeline-marker" data-tooltip="PD2: Interoperability Self-Assessment (Final)">2</div>
       </div>
+      <div class="timeline-cell"></div>
+      <div class="timeline-cell"></div>
+      <div class="timeline-cell"></div>
 
       <!-- Monitoring row -->
       <div class="timeline-row-label">Monitoring <span style="font-size:0.5rem;font-weight:400;color:#999;font-style:italic;">(ref)</span></div>
@@ -211,6 +219,9 @@ The progress tracker shows the 18-month pilot journey with key phases and delive
       <div class="timeline-cell">
         <div class="timeline-marker monitoring-marker" data-tooltip="Final Self-Assessment">i</div>
       </div>
+      <div class="timeline-cell"></div>
+      <div class="timeline-cell"></div>
+      <div class="timeline-cell"></div>
 
       <!-- Pilot rows grouped by cohort (rendered by journey.js) -->
     </div>
@@ -221,109 +232,9 @@ The progress tracker shows the 18-month pilot journey with key phases and delive
 
 ---
 
-## Our Pilots {#our-pilots}
+## Pilots {#pilots}
 
-<div id="pilot-cards">
-  <!-- Pilot cards will be rendered by journey.js from Google Sheets data -->
-
-  !!! note "Coming soon"
-      Pilot cards will appear here as rounds are onboarded. **Round 1** begins in May 2026.
-
-</div>
-
----
-
-## Deliverables {#deliverables}
-
-All pilots produce five key deliverables throughout their 18-month journey:
-
-| ID | Deliverable | Timeline | Type |
-|----|-------------|----------|------|
-| **PD1** | Data Management Plan & Ethics | M1–M2 | Fixed deadline |
-| **PD2** | Interoperability Self-Assessment | M1–M2 & Final | Fixed (two submissions) |
-| **PD3** | Pilot Scope & Architecture | TBD | Pilot-defined |
-| **PD4** | Governance Scheme | TBD | Pilot-defined |
-| **PD5** | Communication & Exploitation Report | TBD | Pilot-defined |
-
-### Deliverable Tracker
-
-<div class="deliverable-tracker">
-  <table class="deliverable-table">
-    <thead>
-      <tr>
-        <th>Pilot</th>
-        <th>Round</th>
-        <th>PD1</th>
-        <th>PD2 (Initial)</th>
-        <th>PD3</th>
-        <th>PD4</th>
-        <th>PD5</th>
-        <th>PD2 (Final)</th>
-      </tr>
-    </thead>
-    <tbody id="deliverable-tracker-body">
-      <tr>
-        <td colspan="8" style="text-align: center; color: #999; padding: 1.5rem; font-size: 0.8rem;">
-          Pilot data will appear here once Round 1 begins in May 2026.
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<details markdown>
-<summary>Preview: how the tracker will look</summary>
-
-<div class="deliverable-tracker">
-  <table class="deliverable-table">
-    <thead>
-      <tr>
-        <th>Pilot</th>
-        <th>Round</th>
-        <th>PD1</th>
-        <th>PD2 (Initial)</th>
-        <th>PD3</th>
-        <th>PD4</th>
-        <th>PD5</th>
-        <th>PD2 (Final)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Example Pilot A</td>
-        <td>C1</td>
-        <td><span class="status-badge approved">Approved</span></td>
-        <td><span class="status-badge submitted">Submitted</span></td>
-        <td><span class="status-badge in-progress">In Progress</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-      </tr>
-      <tr>
-        <td>Example Pilot B</td>
-        <td>C1</td>
-        <td><span class="status-badge approved">Approved</span></td>
-        <td><span class="status-badge in-progress">In Progress</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-      </tr>
-      <tr>
-        <td>Example Pilot C</td>
-        <td>C2</td>
-        <td><span class="status-badge in-progress">In Progress</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-        <td><span class="status-badge not-started">Not Started</span></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-</details>
+<div id="pilot-directory"></div>
 
 ---
 

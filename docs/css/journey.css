@@ -12,6 +12,8 @@
   --journey-implement: #388e3c;
   --journey-sharingback: #0097a7;
   --journey-handover: #5d4037;
+  --journey-contribution: #0097a7;
+  --journey-legacy: #5d4037;
 }
 
 /* ---- Phase Stepper ---- */
@@ -224,9 +226,9 @@ a.stepper-subphase:hover {
 /* Timeline grid */
 .timeline-grid {
   display: grid;
-  grid-template-columns: 120px repeat(20, 1fr);
+  grid-template-columns: 120px repeat(23, 1fr);
   gap: 0;
-  min-width: 960px;
+  min-width: 1100px;
   font-size: 0.65rem;
   position: relative;
   padding-top: 1rem;
@@ -297,6 +299,38 @@ a.stepper-subphase:hover {
   z-index: 6;
 }
 
+/* Handover divider after M18 */
+.timeline-month.handover-after {
+  position: relative;
+  overflow: visible;
+}
+
+.timeline-month.handover-after::before {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: 0;
+  width: 2px;
+  height: 500px;
+  background: #999;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.timeline-month.handover-after::after {
+  content: 'HANDOVER';
+  position: absolute;
+  right: -1px;
+  bottom: calc(100% + 2px);
+  transform: translateX(50%);
+  font-size: 0.45rem;
+  font-weight: 800;
+  color: #999;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  z-index: 6;
+}
+
 /* Phase bands */
 .timeline-row {
   display: contents;
@@ -345,6 +379,8 @@ a.stepper-subphase:hover {
 .timeline-band.implement { background: var(--journey-implement); }
 .timeline-band.sharingback { background: var(--journey-sharingback); }
 .timeline-band.handover { background: var(--journey-handover); }
+.timeline-band.contribution { background: var(--journey-contribution); }
+.timeline-band.legacy { background: var(--journey-legacy); }
 
 /* Deliverable markers */
 .timeline-marker {
@@ -420,6 +456,24 @@ a.stepper-subphase:hover {
 .timeline-pilot-label a:hover {
   color: #1976d2;
   text-decoration: underline;
+}
+
+.pilot-repo-badge {
+  margin-left: 0.35rem;
+  font-size: 0.5rem;
+  font-weight: 600;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  background: #e3f2fd;
+  color: #1565c0 !important;
+  text-decoration: none !important;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pilot-repo-badge:hover {
+  background: #bbdefb;
 }
 
 /* Cohort separator row */

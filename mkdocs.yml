@@ -47,7 +47,16 @@ nav:
   # - Solar LDT Demo:
   #   - Demo: demo/index.md
   #   - How it works: demo/how-it-works.md
-  # - Pilot Journey: journey/index.md  # hidden until ready for release
+  - Pilot Journey:
+    - journey/index.md
+    - Pilot Updates: journey/feed.md
+    # - Pilots:
+    #   - Demo Pilot: journey/pilots/round1/demo-pilot/index.md
+    #   - EU TwinLink: journey/pilots/round1/eu-twinlink/index.md
+    #   - Municipal: journey/pilots/round1/municipal/index.md
+
+hooks:
+  - docs/overrides/hooks/copy_pilot_updates.py
 
 plugins:
   - redirects:
@@ -70,6 +79,7 @@ extra_css:
   - css/methodology_diagram.css
   - css/feedback_widget.css
   - css/journey.css
+  - css/pilot_page.css
 
 markdown_extensions:
   - attr_list
@@ -99,6 +109,8 @@ extra_javascript:
   - js/papaparse.min.js # CSV parser for Google Sheets integration
   - js/resources_poc.js # test resource interactive frame
   - js/journey.js # pilot journey timeline and tracker
+  - js/marked.min.js
+  - js/pilot_page.js
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
 
 

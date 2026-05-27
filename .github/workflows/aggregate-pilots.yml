@@ -1,0 +1,43 @@
+name: Aggregate pilot data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install aggregator dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run aggregator
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/aggregate_pilots.py
+
+      - name: Commit updated pilot data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            docs/journey/pilots/ \
+            docs/journey/all_pilots.json \
+            docs/journey/all_updates_index.json \
+            docs/feeds/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(aggregator): refresh pilot data and feeds"
+            git push
+          fi
