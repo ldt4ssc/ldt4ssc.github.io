@@ -39,5 +39,10 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore(aggregator): refresh pilot data and feeds"
-            git push
+            for i in 1 2 3; do
+              git push && break
+              echo "Push attempt $i failed, retrying in 10s…"
+              sleep 10
+              git pull --rebase
+            done
           fi
