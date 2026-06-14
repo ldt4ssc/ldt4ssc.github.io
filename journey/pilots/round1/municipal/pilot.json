@@ -1,0 +1,67 @@
+{
+  "composition": "Ubitech, Technical University of Denmark, Murcia, Ai-nergy, Nicosia Municipality, University of Cyprus, Odins (Odins)",
+  "consortium": [
+    {
+      "country_code": "",
+      "name": "Ubitech",
+      "role": "Pilot lead"
+    },
+    {
+      "country_code": "",
+      "name": "Ubitech",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Technical University of Denmark",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Ai-nergy",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "University of Cyprus",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Odins (Odins)",
+      "role": "Partner"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "name": "Ubitech",
+    "organisation": ""
+  },
+  "description": "The Murcia-Nicosia pilot connects the MiMurcia and iniCOSIA platforms via the SIMPL/CEEDS framework to share complementary LDT services across borders - combining Murcia's well-being and urban services with Nicosia's energy and mobility IoT capabilities.",
+  "external_page_url": "../journey/pilots/round1/municipal/",
+  "focus_areas": [
+    "Energy & mobility",
+    "smart public lighting"
+  ],
+  "locations": [
+    {
+      "city": "Murcia",
+      "country": "",
+      "country_code": ""
+    },
+    {
+      "city": "Nicosia",
+      "country": "",
+      "country_code": ""
+    }
+  ],
+  "name": "MUNICIPAL",
+  "pilot_id": "municipal",
+  "pilot_page_url": "../journey/pilots/round1/municipal/",
+  "repository_url": "",
+  "round": "round1",
+  "short_name": "municipal",
+  "start_date": "2026-05-15",
+  "status": "Onboarding",
+  "work_strand": "WS1"
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledgehub.ldt4ssc.eu/assets/update-v1.schema.json",
+  "title": "LDT4SSC Pilot Update",
+  "description": "Schema for a structured update record published in an LDT4SSC pilot repository.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "type",
+    "date",
+    "title",
+    "work_strand",
+    "authors"
+  ],
+  "properties": {
+    "schema_version": {
+      "description": "The version of the update schema this record follows.",
+      "type": "integer",
+      "const": 1
+    },
+    "type": {
+      "description": "The kind of update being published.",
+      "type": "string",
+      "enum": ["general", "milestone", "lesson", "asset", "event"]
+    },
+    "date": {
+      "description": "The date the update is published, in ISO 8601 format (YYYY-MM-DD).",
+      "type": "string",
+      "format": "date"
+    },
+    "title": {
+      "description": "Short, descriptive title of the update.",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 200
+    },
+    "tags": {
+      "description": "Topic tags drawn from the LDT4SSC thematic list. Optional but encouraged.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "uniqueItems": true
+    },
+    "work_strand": {
+      "description": "The LDT4SSC work strand this update relates to.",
+      "type": "string",
+      "enum": ["WS1", "WS2", "WS3"]
+    },
+    "authors": {
+      "description": "The contributor(s) who authored this update.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "organisation"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "organisation": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "related_assets": {
+      "description": "Optional links to related assets, repositories, or external resources.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "related_event": {
+      "description": "Optional reference to an event (for type=event records).",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "location": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
