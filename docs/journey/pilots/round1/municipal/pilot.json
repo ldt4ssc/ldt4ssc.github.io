@@ -1,83 +1,62 @@
 {
-  "composition": "Ayuntamento de Cartagena, City of Almelo, Almelo Energie, Ertico, iLabs Technologies, FHC Corp, Nunsys, iSHARE, LogiNex, University of the Aegean, HyEnSys",
+  "composition": "Ubitech, Technical University of Denmark, Murcia, Ai-nergy, Nicosia Municipality, University of Cyprus, Odins (Odins)",
   "consortium": [
     {
       "country_code": "",
-      "name": "Ayuntamiento de Cartagena",
+      "name": "Ubitech",
       "role": "Pilot lead"
     },
     {
       "country_code": "",
-      "name": "Almelo Energie",
+      "name": "Ubitech",
       "role": "Partner"
     },
     {
       "country_code": "",
-      "name": "Ertico",
+      "name": "Technical University of Denmark",
       "role": "Partner"
     },
     {
       "country_code": "",
-      "name": "iLabs Technologies",
+      "name": "Ai-nergy",
       "role": "Partner"
     },
     {
       "country_code": "",
-      "name": "FHC Corp",
+      "name": "University of Cyprus",
       "role": "Partner"
     },
     {
       "country_code": "",
-      "name": "Nunsys",
-      "role": "Partner"
-    },
-    {
-      "country_code": "",
-      "name": "iSHARE",
-      "role": "Partner"
-    },
-    {
-      "country_code": "",
-      "name": "LogiNex",
-      "role": "Partner"
-    },
-    {
-      "country_code": "",
-      "name": "University of the Aegean",
-      "role": "Partner"
-    },
-    {
-      "country_code": "",
-      "name": "HyEnSys",
+      "name": "Odins (Odins)",
       "role": "Partner"
     }
   ],
   "contact": {
     "email": "",
-    "name": "Ayuntamiento de Cartagena",
+    "name": "Ubitech",
     "organisation": ""
   },
-  "description": "EUTwinLink interconnects Local Digital Twins in Cartagena, Almelo, Hamburg (Port), and Aruba (Airport) with shared data models, scenario simulation, and citizen dashboards to drive evidence-based decisions on air quality, energy, and decarbonisation.",
+  "description": "The Murcia-Nicosia pilot connects the MiMurcia and iniCOSIA platforms via the SIMPL/CEEDS framework to share complementary LDT services across borders - combining Murcia's well-being and urban services with Nicosia's energy and mobility IoT capabilities.",
   "external_page_url": "../journey/pilots/round1/municipal/",
   "focus_areas": [
-    "Positive energy districts",
-    "low emission zones",
-    "sustainable travel corridors"
+    "Energy & mobility",
+    "smart public lighting"
   ],
   "locations": [
     {
-      "city": "Cartagena",
+      "city": "Murcia",
       "country": "",
       "country_code": ""
     },
     {
-      "city": "Almelo",
+      "city": "Nicosia",
       "country": "",
       "country_code": ""
     }
   ],
-  "name": "EUTwinLink",
-  "pilot_id": "eu-twinlink",
+  "name": "MUNICIPAL",
+  "pilot_id": "municipal",
   "pilot_page_url": "../journey/pilots/round1/municipal/",
   "repository_url": "",
   "round": "round1",
