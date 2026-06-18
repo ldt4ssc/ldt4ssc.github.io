@@ -25,6 +25,9 @@ LDT4SSC pilots are open to a wide range of stakeholders, including:
 - Syndicates and energy communities  
 - Technology providers and AI innovators from the private and public sector  
 
+**Preparing your application**  
+Check out [**our material**](../assets/PDFs/LDT4SSC-Preparing a Proposal - Dos and Donts in your application.pdf) for *do*s and *don't*s when preparing your application.
+
 ---
 ## Piloting opportunities
 

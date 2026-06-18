@@ -136,9 +136,9 @@ It aims to dynamically represent a defined observed geographical area to analyse
 
     ??? info "To know more..."
 
-        A video presentation of the project: https://www.youtube.com/watch?v=ZtXkcPQSGiU 
+        [A video presentation of the project](https://www.youtube.com/watch?v=ZtXkcPQSGiU)
         
-        Feedback from the Fiware ecosystem: https://www.fiware.org/2021/11/15/perugias-digital-transition-to-smart-city-powered-by-fiware-technology/ 
+        [Feedback from the Fiware ecosystem](https://www.fiware.org/2021/11/15/perugias-digital-transition-to-smart-city-powered-by-fiware-technology/) 
 
 
 ??? example "Zurich (CH): a dynamic 3D twin of the built environment"
