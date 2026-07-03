@@ -9,8 +9,9 @@ It collects and organises the project’s knowledge outputs, providing stakehold
 
 - **Strategy & Sustainability** – The project’s mission, vision, impact framework, and long-term sustainability strategy.  
 - **Smart Communities Ecosystem** – Links and resources connecting LDT4SSC with European initiatives such as *Living-in.EU, DS4SSCC, CitCom.ai, SIMPL,* and the *EU LDT Toolbox*.  
-- **Pilot Guidance** – Technical and non-technical recommendations for pilot development, integration with data spaces, and references to standards. Includes information regarding the different Work Strands and how pilots can participate.  
-- **Pilots** – Profiles of awarded pilots, documenting their objectives, datasets, services, and results.  
+- **Pilot Guidance** – Overview of open calls for pilots, application process, requirements and recommendations.  
+- **Resources for Pilots** – Technical and non-technical resources, including standards, tools, and frameworks, to guide LDT implementations. Access to the LDT Interoperability Blueprint.
+- **Pilot journey** – Profiles of awarded pilots, documenting their objectives, datasets, services, and results. Includes the pilot journey documentation and updates.
 
 ---
 
