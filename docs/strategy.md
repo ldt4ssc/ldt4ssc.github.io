@@ -15,10 +15,21 @@ Long-term viability also depends on maintaining an open and interoperable ecosys
 ## Mission, Vision & Values  
 
 **Mission:**  
-To build a robust, scalable, and interoperable ecosystem of Local Digital Twins (LDTs) across Europe, empowering communities with digital twin capabilities and AI-driven tools to optimise urban services, foster innovation, and tackle pressing challenges such as climate change, environmental, economic and social sustainability, and digital transformation.  
+
+To build a scalable and interoperable ecosystem of Local Digital Twins (LDT) to empower European local communities with opportunities to share and reuse (real-time) data, advanced AI capabilities, simulation and federated services. These assets and services will foster data-driven decision-making, improved public value creation and resilient, equitable urban and community development. 
+
 
 **Vision:**  
-The LDT4SSC contributes to the broader vision for a resilient, inclusive, and interconnected European digital landscape where interoperable local digital twins drive sustainable urban development, support the twin green and digital transitions, and strengthen Europe’s competitiveness, autonomy, and societal well-being. The initiative aims to support the Networked Local Digital Twins towards the CitiVERSE European Digital Infrastructure Consortium (LDT CitiVERSE EDICs) in developing and scaling interoperable digital infrastructure across the European Union, fostering economies of scale and enabling cross-border collaboration among the LDT ecosystem. This contributes directly to Europe’s Digital Decade Compass 2030 targets and Green Deal objectives.  
+
+The LDT4SSC aims to foster a resilient, inclusive and interconnected European LDT ecosystem, where: 
+
+- LDTs can operate as core public digital infrastructure;  
+- Stakeholders from local communities are able to share data, services, and other assets seamlessly;  
+- Integration with the LDT Toolbox fosters replication of LDT4SSC assets and services and support their scalability;  
+- SIMPL and the LDT CitiVERSE EDIC can offer opportunities for long-term federation and sustainability;  
+- AI-powered LDT services support the EU’s green & digital transition, and
+Europe’s competitiveness and digital sovereignty are strengthened.  
+
 
 **Values:**  
 
