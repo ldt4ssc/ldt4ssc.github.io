@@ -67,6 +67,9 @@ While long-term impact is challenging to anticipate, the framework offers a robu
 
 The framework sets objectives and procedures for monitoring impacts, outlining Key Performance Indicators (KPIs) based on relevant literature and lessons learned from past initiatives, such as the **DS4SSCC-DEP Impact Assessment Framework** and the **CitCom.ai European AI Market Report**. Importantly, the framework is designed to evolve over time, adapting to stakeholder feedback and implementation experiences.  
 
-The **Impact Assessment Framework** is expected to be published soon.  
+The **Impact Assessment Framework** can be downloaded below:
+
+!!! info "The LDT4SSC Impact Assessment Framework"
+    [Download as PDF](../assets/PDFs/LDT4SSC_Impact_Assessment_Framework.pdf){ .md-button .md-button--primary }
 
 ---
