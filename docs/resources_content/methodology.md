@@ -98,9 +98,9 @@
 <thead><tr><th>#</th><th>Workshop</th><th>Phase</th><th>Duration</th></tr></thead>
 <tbody>
 <tr><td><a href="#mapping-use-case">1.1</a></td><td>Mapping your Use Case</td><td><span class="ws-explore">EXPLORE</span></td><td>3h</td></tr>
-<tr><td><a href="#questioning-the-purpose">1.2</a></td><td>Questioning The Purpose of your LDT Project</td><td><span class="ws-explore">EXPLORE</span></td><td>3h 15min &times; 3</td></tr>
+<tr><td><a href="#questioning-the-purpose">1.2</a></td><td>Questioning The Purpose of your LDT Project</td><td><span class="ws-explore">EXPLORE</span></td><td>2h 40min &times; 3</td></tr>
 <tr><td><a href="#implementing-sustainable-digital-design">1.3</a></td><td>Implementing Sustainable Digital Design</td><td><span class="ws-explore">EXPLORE</span></td><td>2h</td></tr>
-<tr><td><a href="#effective-visualisation-dashboards">2.1</a></td><td>Co-Creating Effective Visualisation Dashboards</td><td><span class="ws-validate">VALIDATE</span></td><td>3h 15min</td></tr>
+<tr><td><a href="#effective-visualisation-dashboards">2.1</a></td><td>Co-Creating Effective Visualisation Dashboards</td><td><span class="ws-validate">VALIDATE</span></td><td>3h</td></tr>
 <tr><td><a href="#implementing-data-governance">2.2.1</a></td><td>Understanding Data Governance and Setting the Goal</td><td><span class="ws-validate">VALIDATE</span></td><td>2h</td></tr>
 <tr><td><a href="#implementing-data-governance">2.2.2</a></td><td>Mapping Stakeholders' Legitimacy and Authority</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 30min</td></tr>
 <tr><td><a href="#implementing-data-governance">2.2.3</a></td><td>Designing your Data Governance Roadmap</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 5min</td></tr>
@@ -108,13 +108,13 @@
 <tr><td><a href="#implementing-data-governance">2.2.5</a></td><td>Refining your Legal Framework for Data Governance</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 30min &ndash; 2h</td></tr>
 <tr><td><a href="#inventorying-ldt-project-data">2.3</a></td><td>Inventorying your LDT Projects' Data</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 40min</td></tr>
 <tr><td><a href="#unlocking-interoperability">2.4</a></td><td>Identifying Levers, Obstacles and Objectives for Interoperability</td><td><span class="ws-validate">VALIDATE</span></td><td>2h</td></tr>
-<tr><td><a href="#lego-serious-play">BONUS</a></td><td>Lego&reg; Serious Play</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 20min</td></tr>
+<tr><td><a href="#lego-serious-play">BONUS</a></td><td>Lego&reg; Serious Play</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 45min</td></tr>
 <tr><td><a href="#prototyping-use-case-context-broker">3.1</a></td><td>Prototyping a Use Case with a Context Broker</td><td><span class="ws-define">DEFINE</span></td><td>&mdash;</td></tr>
-<tr><td><a href="#onboarding-acculturation">4.1</a></td><td>Onboarding &amp; Acculturation in Digital Projects</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 10min</td></tr>
-<tr><td><a href="#designing-action-plan">4.2</a></td><td>Designing a Structured Action Plan</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 30min</td></tr>
-<tr><td><a href="#designing-business-model">4.3</a></td><td>Designing a Sustainable Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 15min</td></tr>
-<tr><td><a href="#refining-business-model">4.4</a></td><td>Refining the Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>2h 10min</td></tr>
-<tr><td><a href="#completing-dcc">4.5</a></td><td>Completing your Data Cooperation Canvas</td><td><span class="ws-implement">IMPLEMENT</span></td><td>2 days</td></tr>
+<tr><td><a href="#onboarding-acculturation">4.1</a></td><td>Onboarding &amp; Acculturation in Digital Projects</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 30min</td></tr>
+<tr><td><a href="#designing-action-plan">4.2</a></td><td>Designing a Structured Action Plan</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 45min</td></tr>
+<tr><td><a href="#designing-business-model">4.3</a></td><td>Designing a Sustainable Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 50min</td></tr>
+<tr><td><a href="#refining-business-model">4.4</a></td><td>Refining the Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>2h 25min</td></tr>
+<tr><td><a href="#completing-dcc">4.5</a></td><td>Completing your Data Cooperation Canvas</td><td><span class="ws-implement">IMPLEMENT</span></td><td>&mdash;</td></tr>
 </tbody>
 </table>
 
@@ -128,30 +128,33 @@ The Ideation step generally lasts from four to eight weeks, depending on the lev
 
 📋 **Prerequisites**
 
-- A clear understanding of the project's broader goals (e.g., smart city objectives, climate adaptation).
-- Stakeholder identification and initial engagement (local authorities, experts, citizens, private sector).
-- Basic data and resource availability to explore feasibility.
-- Alignment with public policies (e.g., digital transformation, sustainability strategies).
-- Workshop materials and facilitation tools (e.g., templates, visual aids).
+- A clear understanding of the project’s goals (e.g.,climate change adaptation, better traffic management, improved electricity-grid resilience).
+- Stakeholder identification and initial engagement (local authorities, experts, citizens, service providers).
+- Basic resource and data availability for feasibility.
+- Project alignment with local public policies (e.g., digital transformation, sustainability strategies, smart city objectives).
 
 🎯 **Objectives**
 
+- Clearly define use cases aligned with public policy and project goals.
+- Engage stakeholders, align them and understand their needs.
 - Identify challenges and opportunities for the Local Digital Twin (LDT) project.
-- Define and prioritise use cases aligned with public policy and sustainability goals.
-- Engage stakeholders to understand roles, needs, and governance dynamics.
-- Assess costs, benefits, and impacts (economic, social, environmental).
-- Lay the foundation for validation and detailed planning in later steps.
+- Assess benefits and impacts (economic, social, environmental).
+- Lay out the foundation for the specification process and detailed planning in later steps.
 
 👥 **Stakeholders to Involve**
+
+***Necessary:***
 
 - **Project Coordination Roles** (Project Coordinators, etc.) – They facilitate structured ideation, stakeholder alignment, and documentation of exploratory outputs.
 - **Domain Expertise Roles** (Use-Case Owners, Subject-Matter Experts, Researchers, Field Agents, etc.) – They define real-world challenges and opportunities, grounding ideation in practical, context-specific needs.
 - **Decision Roles** (Elected Officials, Deputy Chief Executives, Directors, Heads of Departments, etc.) – They ensure strategic alignment with policy priorities and secure high-level buy-in for project direction and resource allocation.
 - **End-Users or representatives of civil society** (Citizens, Citizens' Associations or Panels, etc.) – They ensure use cases reflect citizen priorities and societal impact, fostering inclusivity from the outset.
+- **Innovation / Smart City Roles** (Smart City Experts, UX/UI Designers, Innovation Laboratories, etc.) – They drive user-centric, innovative design and ensure solutions align with smart city standards and emerging best practices.
+
+***Advised:***
+
 - **Technical Roles** (IT Department Staff, External Service Providers, Technical Experts, etc.), if available – They provide early feasibility insights to avoid unrealistic assumptions and ground ideation in technical possibilities.
 - **Other Local Authorities facing similar issues** – They offer peer-learning opportunities and best practices to accelerate problem-solving and innovation.
-
-
 
 ???+ workshop_ideation "**EXPLORE Resources**"
 
@@ -165,11 +168,11 @@ The Ideation step generally lasts from four to eight weeks, depending on the lev
 
         *PDF coming soon — contact the project team in the meantime.*
 
-    #### 1.2 Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Costs and Benefits {#questioning-the-purpose}
+    #### 1.2 Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Benefits {#questioning-the-purpose}
 
-    This workshop clarifies the project's objectives and expected impacts across operational, user, strategic, economic, and socio-environmental dimensions. It supports iterative mapping of costs and benefits to justify the project and prioritise functionalities. The result is a clearer project vision, aiding decision-making and resource allocation.
+    This workshop clarifies the project's objectives and expected impacts across operational, user, strategic, economic, and socio-environmental dimensions. It supports iterative mapping of benefits to justify the project and prioritise functionalities. The result is a clearer project vision, aiding decision-making and resource allocation.
 
-    ??? workshop_ideation "Workshop 1.2: Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Costs and Benefits"
+    ??? workshop_ideation "Workshop 1.2: Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Benefits"
 
         [Download workshop as PDF](#){ .md-button .md-button--primary }
 
@@ -193,8 +196,7 @@ The Ideation step generally lasts from four to eight weeks, depending on the lev
 At this stage of the method, the following elements have been completed or identified:
 
 - Clear project objectives and alignment with public policy goals.
-- Shared and prioritised use cases reflecting stakeholder needs and challenges.
-- Stakeholder maps outlining roles, legitimacy, and influence in data governance.
+- Shared understanding of use cases reflecting stakeholder needs and challenges.
 - Sustainability and impact assessments (economic, social, environmental).
 - Initial [cost-benefit framework](non_tech_resources.md#cost-benefit-analysis) to guide decision-making.
 - Collective understanding of the project's purpose and strategic direction.
@@ -217,21 +219,24 @@ This step helps to avoid misunderstandings between the business and technical te
 
 📋 **Prerequisites**
 
-- Completed outputs from the [EXPLORE step](#ideation-explore) (clearly-defined use case, stakeholder maps, sustainability assessments, main data requirements and available resources, etc.).
+- Completed the [EXPLORE step](#ideation-explore).
 - Access to technical, legal, and operational expertise for feasibility assessments.
 - Stakeholder commitment and availability for validation discussions.
+- High level buy-in of the project from elected officials.
 - Clear criteria for evaluation (e.g., impact metrics, compliance requirements, resource constraints).
-- Workshop tools and templates (e.g., validation frameworks, decision matrices).
 
 🎯 **Objectives**
 
-- Test and refine use cases, hypotheses, and assumptions from the [EXPLORE step](#ideation-explore).
-- Assess technical, legal, and operational feasibility of the proposed LDT solutions (define terms of access, base documents for prototyping, etc.).
+- Refine and validate use cases definitions, hypotheses, and assumptions from the EXPLORE step.
+- Assess technical, legal, and operational feasibility of the proposed LDT solutions.
 - Validate stakeholder roles and governance structures to ensure alignment and accountability.
-- Prioritise actions and resources based on feasibility, impact, and strategic alignment.
-- Develop a validated roadmap for transitioning into the [DEFINE phase](#prototyping-define).
+- Prioritise actions based on feasibility, impact, and strategic alignment.
+- Set up a data governance and legal framework for your LDT project.
+- Embed interoperability by-design into the LDTs specifications.
 
 👥 **Stakeholders to Involve**
+
+***Necessary:***
 
 - **Project Coordination Roles** (Project Coordinators, etc.) – They are vital to align stakeholders, manage timelines, and ensure seamless integration of validated outputs into the project's strategic roadmap.
 - **Domain Expertise Roles** (Use-Case Owners, Subject-Matter Experts, Researchers, Field Agents, etc.) – They ensure the real-world relevance and accuracy of use cases, validating technical and operational assumptions against domain-specific knowledge.
@@ -317,7 +322,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
     #### 2.4 Identifying Levers, Obstacles and Objectives for Interoperability: From Awareness to Actionable Strategies for LDT Projects {#unlocking-interoperability}
 
-    This more technical workshop introduces participants to interoperability and highlights its importance from the outset of a data project, helping them in  identifying obstacles, levers and levels of interoperability (technical, syntactic, semantic, governance). Through a collective diagnosis using the visual exercise known as 'Speed-Boat' (anchors = brakes, sails = levers, island = objectives), teams prioritise needs, share feedback and define concrete short-term actions. The workshop anticipates interoperability issues (data silos, incompatible formats, lack of governance) and equips teams to avoid them by building a shared vision between business lines, technical teams and decision-makers. It facilitates the integration of requirements into specifications and prepares additional actions to ensure usable, interconnected and sustainable data in the following stages.
+    This more technical workshop helps participants move from a shared understanding of their current information system architecture to concrete strategies for improving interoperability. Through a structured, hands-on process, stakeholders map applications, databases and data flows, identify key obstacles and gaps, and work together to define practical solutions that can strengthen connections between systems and better support use cases. By the end of the session, participants will have clarified priority technical challenges, explored actionable improvement levers, and laid the groundwork for coordinated next steps toward implementation.
 
     ??? workshop_specifications "Workshop 2.4: Identifying Levers, Obstacles and Objectives for Interoperability: From Awareness to Actionable Strategies for LDT Projects"
 
@@ -343,12 +348,11 @@ This step helps to avoid misunderstandings between the business and technical te
 
 At this stage of the method, the following elements have been achieved or identified:
 
-- Validated use cases with tested assumptions and feasibility assessments.
 - Technical, legal, and operational constraints documented and addressed.
 - Refined stakeholder roles and governance structures with clear responsibilities.
-- Actionable roadmaps for [data governance](#implementing-data-governance), [legal compliance](non_tech_resources.md#legal-guidance), and business models.
-- Prioritised action plans with timelines, resources, and risk mitigation strategies.
-- Stakeholder buy-in and alignment on validated outputs.
+- Actionable roadmaps for [data governance](#implementing-data-governance), [legal compliance](non_tech_resources.md#legal-guidance), and legal compliance.
+- Prioritised action plans with timelines and resources for data governance and interoperability.
+ 
 
 ➡️ Next: [Phase 3 – Prototyping (DEFINE)](#prototyping-define)
 
@@ -364,35 +368,38 @@ In the LDT4SSC methodology, the aim of prototyping is twofold: to demonstrate th
 
 📋 **Prerequisites**
 
-- Validated use cases, stakeholder maps, and feasibility assessments from the [VALIDATE step](#specifications-validate).
-- Technical and operational expertise to define system architecture, data flows, and integration requirements.
-- Stakeholder consensus on governance structures, roles, and decision-making processes.
-- Access to necessary tools and templates (e.g., system design frameworks, governance charters, project management software).
-- Clear strategic alignment with public policies, sustainability goals, and organisational objectives.
+- Completed the [VALIDATE step](#specifications-validate).
+- Technical and operational expertise to define and prototype system architecture, data flows, and integration requirements.
+- Sufficient resources for prototyping and user-testing.
+
 
 🎯 **Objectives**
 
-- Experiment with concrete solutions using real data and representative users.
-- Validate organisational hypotheses.
-- Confirm technical feasibility (data access, processing, flow integration, result display, etc.).
-- Confirm or refine design choices based on practical feedback.
-- Prepare the conditions for future deployment (technical, organisational, legal).
+- Formalise the LDT project’s architecture aligned with LDT interoperability Blueprint.
+- Demonstrate that the LDT solution works to answer the project’s goals 
+- Check that the LDT solution has real values for end users and answers their needs.
+- Prepare for seamless transition into the [IMPLEMENT step](#deployment-implement) with a fully documented and approved project blueprint.
 
 👥 **Stakeholders to Involve**
 
+***Necessary:***
+
 - **Project Coordination Roles** (Project Coordinators, etc.) – They orchestrate cross-functional alignment, timelines, and resource allocation for definition outputs.
-- **Domain Expertise Roles** (Use-Case Owners, Subject-Matter Experts, Researchers, Field Agents, etc.) – They refine use-case specifications and technical requirements, ensuring alignment with operational realities.
 - **Data Roles** (GIS Specialists, Data Engineers, Open Data Officers, Data Scientists, etc.) – They design data architectures and workflows, validating interoperability and quality standards.
-- **Innovation / Smart City Roles** (Smart City Experts, UX/UI Designers, Innovation Laboratories, etc.) – They drive user-centric, innovative design and ensure solutions align with smart city standards and emerging best practices.
-- **Legal Roles** (Data Protection Officers, Legal Experts, Intellectual Property Managers, etc.) – They embed legal and ethical guardrails into governance frameworks and data-sharing agreements.
-- **End-Users or representatives of civil society** (Citizens, Citizens' Associations or Panels, etc.) – They validate user experience and accessibility of proposed dashboards or tools.
 - **Technical Roles** (IT Department Staff, External Service Providers, Technical Experts, etc.) – They provide early technical validation of system integration or scalability constraints.
+- **End-Users or representatives of civil society** (Citizens, Citizens' Associations or Panels, etc.) – They validate user experience and accessibility of proposed dashboards or tools.
+
+***Advised:***
+
+- **Innovation / Smart City Roles** (Smart City Experts, UX/UI Designers, Innovation Laboratories, etc.) – They drive user-centric, innovative design and ensure solutions align with smart city standards and emerging best practices.
+- **Domain Expertise Roles** (Use-Case Owners, Subject-Matter Experts, Researchers, Field Agents, etc.) – They refine use-case specifications and technical requirements, ensuring alignment with operational realities.
+
 
 ???+ workshop_prototyping "DEFINE Resources"
 
     #### 3.1 Prototyping a Use Case with a Context Broker: A Step-by-Step Technical Guide for LDT4SSC Pilots {#prototyping-use-case-context-broker}
 
-    These slides are an optional but practical resource for pilots who want to technically implement a use case using a context broker, completing the PROTOTYPING–DEFINE phase of the methodology. They walk through four steps: (1) accurately defining needs (purpose, data inventory, functionalities); (2) modelling and contextualising data using existing standards, ontologies, and a cross-functional repository; (3) integrating data into a platform via ETL pipelines, converting to NGSI-LD format; and (4) exploiting the data through dashboards, business applications, open data publications, or inter-system reuse. The approach is illustrated with the energy consumption use case from the City of Paris, and is transferable to any use case.
+    These slides are an optional but practical resource for pilots who want to technically implement a use case using a context broker. They walk through six steps: (1) accurately defining needs (purpose, data inventory, functionalities); (2) modelling and contextualising data using existing standards, ontologies, and a cross-functional repository; (3) integrating data into a context broker via ETL pipelines, converting to NGSI-LD format; (4) adding AI and simulations for decision-making support; (5) exploiting the data through dashboards, business applications, open data publications, or inter-system reuse; and (6) carrying out verifications of the results. The approach is illustrated with the energy consumption use case from the City of Paris, and is transferable to any use case.
 
     ??? workshop_prototyping "Methodology. Prototyping your Use Case with a Context Broker: A Step-by-Step Technical Guide for LDT4SSC Pilots"
 
@@ -405,12 +412,11 @@ In the LDT4SSC methodology, the aim of prototyping is twofold: to demonstrate th
 
 At this stage of the method, the following elements have been produced or identified:
 
-- A prototype that meets the use case.
-- Reusable knowledge model(s).
-- The code used to produce the algorithms or models.
+- A prototype that meets the needs of the end-users and objectives of the use case.
+- Reusable and validated technical and non-technical assets to be used in deployment such as knowledge models, algorithms and data pipeline.
 - Documentation of the prototype.
 
-It is then about expanding user testing, in a logic of progressive test/iteration, to arrive at a validation (or not!) from the community on scaling up. At that moment, we are at T0 of the [cost-benefit analysis](non_tech_resources.md#cost-benefit-analysis) method (see [workshop 1.2 Questioning the Purpose of your LDT Project](#questioning-the-purpose)).
+This step should end with user testing, in a logic of progressive test/iteration, to arrive at a validation from the community on scaling up and adopting the solution.
 
 ➡️ Next: [Phase 4 – Deployment (IMPLEMENT)](#deployment-implement)
 
@@ -428,26 +434,34 @@ This stage may also enable the project to be scaled up, either within the same r
 
 📋 **Prerequisites**
 
-- Finalised project blueprint from the [DEFINE step](#prototyping-define), including technical specifications, governance models, and action plans.
-- Secured resources (budget, technology, personnel) for deployment and operation.
-- Stakeholder readiness and commitment, including trained teams and clear communication channels.
-- Established monitoring and evaluation frameworks to track progress and measure impact.
+- Completed the [DEFINE step](#prototyping-define), including technical specifications, governance models, and action plans.
+- Secured resources (budget, technology, personnel) for deployment, operations and maintenance.
+- Stakeholder readiness and commitment, including project teams, political involvement and clear communication channels.
+- A clear vision of the future governance of the LDT solution.
 - Compliance with legal, ethical, and regulatory requirements, including data protection and interoperability standards.
+
 
 🎯 **Objectives**
 
 - Deploy the Local Digital Twin (LDT) platform based on the defined architecture, governance frameworks, and action plans.
-- Execute operational workflows, ensuring seamless integration of data sources, tools, and stakeholder processes.
 - Monitor and evaluate performance against established KPIs, adjusting strategies as needed for optimal outcomes.
 - Ensure stakeholder engagement and capacity-building to support adoption, training, and long-term sustainability.
 - Document lessons learned and best practices for scalability, replication, and continuous improvement.
+- Technically stabilise the solution for use in production.
+- Organise the maintenance, support and development of the solution over time.
+- Document to encourage internal and external re-use.
 
 👥 **Stakeholders to Involve**
+
+***Necessary:***
 
 - **Project Coordination Roles** (Project Coordinators, etc.) – They oversee implementation timelines, stakeholder communication, and risk management.
 - **Data Roles** (GIS Specialists, Data Engineers, Open Data Officers, Data Scientists, etc.) – They manage data pipelines, quality control, and real-time monitoring of the LDT system.
 - **Technical Roles** (IT Department Staff, External Service Providers, Technical Experts, etc.) – They execute platform deployment, integration, and troubleshooting, ensuring operational readiness.
 - **Legal Roles** (Data Protection Officers, Legal Experts, Intellectual Property Managers, etc.) – They ensure ongoing compliance with data protection, licensing, and contractual obligations.
+
+***Advised:***
+
 - **Domain Expertise Roles** (Use-Case Owners, Subject-Matter Experts, Researchers, Field Agents, etc.) – They support field-level validation and troubleshooting of use-case-specific issues.
 - **End-Users or representatives of civil society** (Citizens, Citizens' Associations or Panels, etc.) – They provide feedback on usability and impact, enabling iterative improvements post-deployment.
 - **Other Local Authorities facing similar issues** – They enable cross-city knowledge exchange and replication of successful deployment strategies, fostering scalability and shared learning.
@@ -509,14 +523,12 @@ This stage may also enable the project to be scaled up, either within the same r
 
 At this stage of the method, the following elements have been achieved or identified:
 
-- An action plan to scale up the project (acculturation, adoption, next steps, links to other use cases, etc.).
-- A list of funding and revenue sources to ensure the project's long-term viability and the foundations of the business plan.
-- A clear vision of the collaborations to be established with new partners around data for future use cases.
-- Deployed LDT platform with integrated data sources and operational workflows.
-- Functional dashboards and tools tailored to end-user needs.
-- Established data pipelines ensuring quality, interoperability, and real-time monitoring.
+- An action plan to scale up the project (onboarding, adoption, next steps, links to other use cases, etc.).
+- A business model to ensure the project's long-term viability and the foundations of their business plan.
+- A Deployed LDT with integrated data sources and operational workflows ensuring quality, interoperability, and real-time monitoring.
+- Functional dashboards and tools tailored to end user needs.
 - Trained stakeholders (staff, partners, end-users) with capacity-building initiatives.
-- Documented lessons learned and best practices for scalability and replication.
-- Ongoing evaluation framework to measure impact, user feedback, and continuous improvement.
+
+During this step, completing the [Data Cooperation Canvas (DS4SSCC)](https://www.datacooperationcanvas.eu/canvas/intro) for establishing Multi-Stakeholder Data Cooperation should be done.
 
 ➡️ See also: [Cost-Benefit Analysis](non_tech_resources.md#cost-benefit-analysis) | [Legal Guidance](non_tech_resources.md#legal-guidance)
