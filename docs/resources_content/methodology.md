@@ -43,8 +43,8 @@
       <a href="#designing-action-plan" class="activity-card activity-deployment-card">
         4.2 Designing a Structured Action Plan
       </a>
-      <a href="#onboarding-acculturation" class="activity-card activity-deployment-card">
-        4.1 Onboarding & Acculturation in Digital Projects
+      <a href="#onboarding-adoption" class="activity-card activity-deployment-card">
+        4.1 Onboarding & Adoption in Digital Projects
       </a>
     </div>
 
@@ -78,7 +78,7 @@
         2.2 Implementing data governance
       </a>
       <a href="#inventorying-ldt-project-data" class="activity-card activity-specifications-card">
-        2.3 Inventorying your LDT Projects' Data
+        2.3 Inventorying your LDT Project Data
       </a>
       <a href="#unlocking-interoperability" class="activity-card activity-specifications-card">
         2.4 Unlocking Interoperability
@@ -106,11 +106,11 @@
 <tr><td><a href="#implementing-data-governance">2.2.3</a></td><td>Designing your Data Governance Roadmap</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 5min</td></tr>
 <tr><td><a href="#implementing-data-governance">2.2.4</a></td><td>Complementing your Data Governance Roadmap with a Legal Framework</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 30min</td></tr>
 <tr><td><a href="#implementing-data-governance">2.2.5</a></td><td>Refining your Legal Framework for Data Governance</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 30min &ndash; 2h</td></tr>
-<tr><td><a href="#inventorying-ldt-project-data">2.3</a></td><td>Inventorying your LDT Projects' Data</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 40min</td></tr>
+<tr><td><a href="#inventorying-ldt-project-data">2.3</a></td><td>Inventorying your LDT Project Data</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 40min</td></tr>
 <tr><td><a href="#unlocking-interoperability">2.4</a></td><td>Identifying Levers, Obstacles and Objectives for Interoperability</td><td><span class="ws-validate">VALIDATE</span></td><td>2h</td></tr>
 <tr><td><a href="#lego-serious-play">BONUS</a></td><td>Lego&reg; Serious Play</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 45min</td></tr>
 <tr><td><a href="#prototyping-use-case-context-broker">3.1</a></td><td>Prototyping a Use Case with a Context Broker</td><td><span class="ws-define">DEFINE</span></td><td>&mdash;</td></tr>
-<tr><td><a href="#onboarding-acculturation">4.1</a></td><td>Onboarding &amp; Acculturation in Digital Projects</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 30min</td></tr>
+<tr><td><a href="#onboarding-adoption">4.1</a></td><td>Onboarding &amp; Adoption in Digital Projects</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 30min</td></tr>
 <tr><td><a href="#designing-action-plan">4.2</a></td><td>Designing a Structured Action Plan</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 45min</td></tr>
 <tr><td><a href="#designing-business-model">4.3</a></td><td>Designing a Sustainable Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 50min</td></tr>
 <tr><td><a href="#refining-business-model">4.4</a></td><td>Refining the Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>2h 25min</td></tr>
@@ -241,11 +241,11 @@ This step helps to avoid misunderstandings between the business and technical te
 
 ???+ workshop_specifications "**VALIDATE Resources**"
 
-    #### 2.1 Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes {#effective-visualisation-dashboards}
+    #### 2.1 Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Requirements, Indicators and Visual Prototypes {#effective-visualisation-dashboards}
 
     This workshop guides participants in designing tailored indicators and dashboards that align with the diverse needs of users ensuring clarity, relevance, and alignment with strategic objectives. By adopting the perspectives of different personas, teams define persona-specific indicators, detailing the required data, sources, calculations, and visualisation formats, while mapping the journey from raw data to actionable insights. The process bridges the gap between data and real-life usage, preventing overly complex or irrelevant dashboards, and produces practical deliverables such as indicator sheets, dashboard mockups, and action plans. These outputs empower stakeholders and pave the way for prototyping or deployment.
 
-    ??? workshop_specifications "Workshop 2.1: Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes"
+    ??? workshop_specifications "Workshop 2.1: Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Requirements, Indicators and Visual Prototypes"
 
         [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.1_LDT4SSC_Methodology_Workshop_Step2_Co-Creating-Effective-Visualisation-Dashboards.docx.pdf){ .md-button .md-button--primary }
 
@@ -289,11 +289,11 @@ This step helps to avoid misunderstandings between the business and technical te
 
             [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.2.5_LDT4SSC_Methodology_Workshop_Step2DATAGOV_Refining-your-Legal-Framework-for-Data-Governance.docx.pdf){ .md-button .md-button--primary }
 
-    #### 2.3 Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners {#inventorying-ldt-project-data}
+    #### 2.3 Inventorying your LDT Project Data: Unlocking Interoperability, Listing and committing to share data among partners {#inventorying-ldt-project-data}
 
     This workshop refines and expands the use case designed in 2.2.1 Understanding Data Governance and Setting the Goal by identifying data sources, lifecycle stages, and the roles of stakeholders in data management, with a focus on ensuring interoperability through APIs like Next Generation Service Interface with Linked Data (NGSI-LD) for future reuse. Participants —including technical and domain expertise roles— build on the initial use-case diagram ([Workshop 1.1 Mapping your Use Case](#mapping-use-case)) to map data flows, transformations, and tools, while also addressing storage, integration, and potential open data publishing.
 
-    ??? workshop_specifications "Workshop 2.3: Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners"
+    ??? workshop_specifications "Workshop 2.3: Inventorying your LDT Project Data: Unlocking Interoperability, Listing and committing to share data among partners"
 
         [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.3_LDT4SSC_Methodology_Workshop_Step2_Inventorying-your-LDT-Project-Data.docx.pdf){ .md-button .md-button--primary }
 
@@ -310,12 +310,12 @@ This step helps to avoid misunderstandings between the business and technical te
 
 
 
-    #### BONUS Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges {#lego-serious-play}
+    #### BONUS Lego® Serious Play: A Transversal Tool to Address and Overcome Data Governance Challenges {#lego-serious-play}
 
     The Lego® Serious Play workshop transforms abstract governance and project challenges into tangible, visual models, fostering shared understanding and creative problem-solving among diverse stakeholders. By moving beyond traditional formats, it unlocks original solutions and highlights gaps or unresolved issues before implementation. Teams can tackle challenges like: Designing governance frameworks (internal/external); Building IT architectures (e.g., hypervisors); Prototyping ideal user journeys or training action plans; Aligning cross-territory partnerships for shared data use cases. The hands-on approach ensures flexibility and clarity, making complex ideas adaptable and actionable.
 
 
-    ??? workshop_specifications "Workshop BONUS: Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges"
+    ??? workshop_specifications "Workshop BONUS: Lego® Serious Play: A Transversal Tool to Address and Overcome Data Governance Challenges"
 
         [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/Bonus_LDT4SSC_Methodology_Workshop_Step2_Lego®%20Serious-Play.docx.pdf){ .md-button .md-button--primary }
 
@@ -400,9 +400,9 @@ This step should end with user testing, in a logic of progressive test/iteration
 
 Deployment is the final stage, marking the transition from experimentation to implementation. Having demonstrated the feasibility of a project through a prototype, it is now a question of getting it used by all the end users within the organisation. This phase involves stabilising the prototype, making it reliable, and putting in place maintenance so that it becomes a long-term tool.
 
-During this phase, the project's technical infrastructure, its economic model, and the [legal framework](non_tech_resources.md#legal-guidance) for its use will be finalised, and a deployment action plan will be drawn up, involving in particular the acculturation, training, and onboarding of all staff.
+During this phase, the project's technical infrastructure, its economic model, and the [legal framework](non_tech_resources.md#legal-guidance) for its use will be finalised, and a deployment action plan will be drawn up, involving in particular the adoption, training, and onboarding of all staff.
 
-Ideally, most of the subjects covered in this stage ([business model](#designing-business-model), [legal framework](non_tech_resources.md#legal-guidance), [staff familiarisation](#onboarding-acculturation)) may already have been addressed upstream, so the aim here is to formalise the concrete elements arising from these discussions.
+Ideally, most of the subjects covered in this stage ([business model](#designing-business-model), [legal framework](non_tech_resources.md#legal-guidance), [staff familiarisation](#onboarding-adoption)) may already have been addressed upstream, so the aim here is to formalise the concrete elements arising from these discussions.
 
 This stage may also enable the project to be scaled up, either within the same region, or through re-use or pooling with other local authorities.
 
@@ -442,11 +442,11 @@ This stage may also enable the project to be scaled up, either within the same r
 
 ???+ workshop_deployment "IMPLEMENT Resources"
 
-    #### 4.1 Onboarding & Acculturation in Digital Projects: Engaging Stakeholders, Defining Training Paths, and Building a Sustainable Adoption Plan {#onboarding-acculturation}
+    #### 4.1 Onboarding & Adoption in Digital Projects: Engaging Stakeholders, Defining Training Paths, and Building a Sustainable Adoption Plan {#onboarding-adoption}
 
     This workshop fosters staff and stakeholder commitment to data projects by clarifying their roles, benefits, and required engagement levels, while tailoring awareness-raising and training initiatives to create a collaborative, data-driven culture. Participants map stakeholders into three tiers —stakeholders directly contributing to the project, the ones indirectly involved and citizens— defining tailored knowledge, key messages, and engagement methods (e.g., training, demos, interactive tools), culminating in an operational action plan for sustainable adoption. By embedding the human dimension early, it aligns technical teams, business units, and decision-makers, ensuring shared understanding and skills development. The outputs —audience maps, messaging frameworks, and action plans— serve as a blueprint for community engagement, reinforcing project resilience against organisational or regulatory shifts.
 
-    ??? workshop_deployment "Workshop 4.1: Onboarding & Acculturation in Digital Projects: Engaging Stakeholders, Defining Training Paths, and Building a Sustainable Adoption Plan"
+    ??? workshop_deployment "Workshop 4.1: Onboarding & Adoption in Digital Projects: Engaging Stakeholders, Defining Training Paths, and Building a Sustainable Adoption Plan"
 
         [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/4.1_LDT4SSC_Methodology_Workshop_Step4_Onboarding&Adoption-in-Digital-Projects.docx.pdf){ .md-button .md-button--primary }
 

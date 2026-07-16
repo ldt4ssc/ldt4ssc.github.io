@@ -113,11 +113,11 @@ The LDT4SSC Methodology is a four-phase implementation framework that guides pil
 <tr><td><a href="#implementing-data-governance">2.2.3</a></td><td>Designing your Data Governance Roadmap</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 5min</td></tr>
 <tr><td><a href="#implementing-data-governance">2.2.4</a></td><td>Complementing your Data Governance Roadmap with a Legal Framework</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 30min</td></tr>
 <tr><td><a href="#implementing-data-governance">2.2.5</a></td><td>Refining your Legal Framework for Data Governance</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 30min &ndash; 2h</td></tr>
-<tr><td><a href="#inventorying-ldt-project-data">2.3</a></td><td>Inventorying your LDT Projects' Data</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 40min</td></tr>
+<tr><td><a href="#inventorying-ldt-project-data">2.3</a></td><td>Inventorying your LDT Project Data</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 40min</td></tr>
 <tr><td><a href="#unlocking-interoperability">2.4</a></td><td>Identifying Levers, Obstacles and Objectives for Interoperability</td><td><span class="ws-validate">VALIDATE</span></td><td>2h</td></tr>
 <tr><td><a href="#lego-serious-play">BONUS</a></td><td>Lego&reg; Serious Play</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 45min</td></tr>
 <tr><td><a href="#prototyping-use-case-context-broker">3.1</a></td><td>Prototyping a Use Case with a Context Broker</td><td><span class="ws-define">DEFINE</span></td><td>&mdash;</td></tr>
-<tr><td><a href="#onboarding-acculturation">4.1</a></td><td>Onboarding &amp; Acculturation in Digital Projects</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 30min</td></tr>
+<tr><td><a href="#onboarding-adoption">4.1</a></td><td>Onboarding &amp; Adoption in Digital Projects</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 30min</td></tr>
 <tr><td><a href="#designing-action-plan">4.2</a></td><td>Designing a Structured Action Plan</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 45min</td></tr>
 <tr><td><a href="#designing-business-model">4.3</a></td><td>Designing a Sustainable Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 50min</td></tr>
 <tr><td><a href="#refining-business-model">4.4</a></td><td>Refining the Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>2h 25min</td></tr>
