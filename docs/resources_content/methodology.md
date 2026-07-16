@@ -164,9 +164,7 @@ The Ideation step generally lasts from four to eight weeks, depending on the lev
 
     ??? workshop_ideation "Workshop 1.1: Mapping your Use Case: Visualising Processes, Pinpointing Challenges, and Co-Designing Data-Driven Solutions"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/1.1_LDT4SSC_Methodology_Workshop_Step1_Mapping-your-Use-Case.docx.pdf){ .md-button .md-button--primary }
 
     #### 1.2 Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Benefits {#questioning-the-purpose}
 
@@ -174,9 +172,7 @@ The Ideation step generally lasts from four to eight weeks, depending on the lev
 
     ??? workshop_ideation "Workshop 1.2: Questioning The Purpose of your LDT Project: Iterative Mapping of the Multi-Dimensional Benefits"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/1.2_LDT4SSC_Methodology_Workshop_Step1_Questioning-The-Purpose-of-your-LDT-Project.docx.pdf){ .md-button .md-button--primary }
 
 
     #### 1.3 Implementing Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects {#implementing-sustainable-digital-design}
@@ -186,9 +182,7 @@ The Ideation step generally lasts from four to eight weeks, depending on the lev
 
     ??? workshop_ideation "Workshop 1.3: Implementing Sustainable Digital Design: Assessing and Integrating Social, Environmental, and Economic Impacts in Digital Projects"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/1.3_LDT4SSC_Methodology_Workshop_Step1_Implementing-Sustainable-Digital-Design.docx.pdf){ .md-button .md-button--primary }
 
 
 ✨ **Achievements at the end of the stage**
@@ -253,9 +247,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
     ??? workshop_specifications "Workshop 2.1: Co-Creating Effective Visualisation Dashboards: Translating User Needs into Functional Indicators and Visual Prototypes"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.1_LDT4SSC_Methodology_Workshop_Step2_Co-Creating-Effective-Visualisation-Dashboards.docx.pdf){ .md-button .md-button--primary }
 
 
 
@@ -270,42 +262,32 @@ This step helps to avoid misunderstandings between the business and technical te
             This workshop clarifies data governance by exploring its political, legal, organisational, and technical dimensions, building a shared strategic vision for the local authority or region. Through prospective analysis, participants envision ideal governance scenarios, identify levers and obstacles, and translate insights into a timeline-based action plan — embedding governance into all data projects and defining the roles, processes, and conditions for data quality, sharing, and collective skill growth.
 
 
-            [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-            *PDF coming soon — contact the project team in the meantime.*
+            [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.2.1_LDT4SSC_Methodology_Workshop_Step2DATAGOV_Understanding-Data-Governance-and-Setting-the-Goal.docx.pdf){ .md-button .md-button--primary }
 
 
         ??? workshop_specifications "Workshop 2.2.2: Mapping Stakeholders' Legitimacy and Authority to act in Data Governance: Understand Roles, Responsibilities, and Hierarchical Influence"
 
             Through a role-playing exercise, participants impersonate future users (e.g., operational agents or decision-makers) to simulate a typical day, uncovering challenges and imagining improvements to tools, processes, and interactions. Functional requirements are collectively listed, prioritised, and assessed for usefulness, feasibility, and originality. The workshop produces a visual stakeholder map, insights on power dynamics and governance gaps, and actionable inputs for future governance workshops.
 
-            [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-            *PDF coming soon — contact the project team in the meantime.*
+            [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.2.2_LDT4SSC_Methodology_Workshop_Step2DATAGOV_Mapping-Stakeholders-Legitimacy-and-Authority-to-Act-in-Data-Governance.docx.pdf){ .md-button .md-button--primary }
 
         ??? workshop_specifications "Workshop 2.2.3: Designing your Data Governance Roadmap: From Data Officer Mission Statement to Action"
 
             This workshop systematically guides participants through the development of a structured governance framework, beginning with the definition of a Data Officer's mission statement and culminating in a detailed, actionable roadmap that aligns roles, responsibilities, and operational stages with organisational objectives. Its primary outputs include a finalised mission statement, a prioritised action plan with assigned timelines and responsibilities, and a visual roadmap outlining short-, medium-, and long-term governance actions, ensuring clarity, accountability, and strategic alignment in data management initiatives.
 
-            [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-            *PDF coming soon — contact the project team in the meantime.*
+            [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.2.3_LDT4SSC_Methodology_Workshop_Step2DATAGOV_Designing-your-Data-Governance-Roadmap.docx.docx.pdf){ .md-button .md-button--primary }
 
         ??? workshop_specifications "Workshop 2.2.4: Complementing your Data Governance Roadmap with a Legal Framework: From Mapping Legal Phases to Action"
 
             This workshop empowers participants to draft robust contracts with providers and partners at every project stage —from LDT creation to interconnection— by identifying essential clauses and leveraging adaptable contractual frameworks (e.g., standard agreements for Proof of Concepts or operational contracts). It focuses on mitigating risks of technological or contractual lock-ins, ensuring seamless interoperability with local authority ecosystems, and equipping teams to negotiate effectively with suppliers while formalising interoperability requirements. Through a structured review of interoperability dimensions (technical, semantic, organisational, legal, and political), participants analyse their project's key stages, using provided resources (clauses, standard contracts, case studies, …) to address critical questions. By the workshop's conclusion, participants (with legal teams) gain clarity on long-term legal actions, IP management, and contract terms for procurement, subcontracting, and co-creation, ensuring the twin's sustainability and value retention in public-private partnerships.
 
-            [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-            *PDF coming soon — contact the project team in the meantime.*
+            [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.2.4_LDT4SSC_Methodology_Workshop_Step2DATAGOV_Complementing-your-Data-Governance-Roadmap-with-a-Legal-Framework.docx.pdf){ .md-button .md-button--primary }
 
         ??? workshop_specifications "Workshop 2.2.5: Refining your Legal Framework for Data Governance: Deep dive into legal and contractual requirements"
 
             The legal framework is an essential aspect of data governance. To ensure control, avoid fragmentation and secure usage, local authorities must rely on robust contractual clauses and appropriate internal processes. The aim of this workshop is to enable participants to identify their regulatory needs, formulate concrete proposals for clauses or actions, and compare these needs with existing resources.
 
-            [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-            *PDF coming soon — contact the project team in the meantime.*
+            [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.2.5_LDT4SSC_Methodology_Workshop_Step2DATAGOV_Refining-your-Legal-Framework-for-Data-Governance.docx.pdf){ .md-button .md-button--primary }
 
     #### 2.3 Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners {#inventorying-ldt-project-data}
 
@@ -313,9 +295,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
     ??? workshop_specifications "Workshop 2.3: Inventorying your LDT Projects' Data: Unlocking Interoperability, Listing and committing to share data among partners"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.3_LDT4SSC_Methodology_Workshop_Step2_Inventorying-your-LDT-Project-Data.docx.pdf){ .md-button .md-button--primary }
 
 
 
@@ -326,9 +306,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
     ??? workshop_specifications "Workshop 2.4: Identifying Levers, Obstacles and Objectives for Interoperability: From Awareness to Actionable Strategies for LDT Projects"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/2.4_LDT4SSC_Methodology_Workshop_Step2_Identifying-Levers-Obstacles-and-Objectives-for-Interoperability.docx.pdf){ .md-button .md-button--primary }
 
 
 
@@ -339,9 +317,7 @@ This step helps to avoid misunderstandings between the business and technical te
 
     ??? workshop_specifications "Workshop BONUS: Lego® Serious Play: A Transversal Tool to Unblock and Deepen Data Governance Challenges"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/Bonus_LDT4SSC_Methodology_Workshop_Step2_Lego®%20Serious-Play.docx.pdf){ .md-button .md-button--primary }
 
 
 ✨ **Achievements at the end of the stage**
@@ -403,9 +379,7 @@ In the LDT4SSC methodology, the aim of prototyping is twofold: to demonstrate th
 
     ??? workshop_prototyping "Methodology. Prototyping your Use Case with a Context Broker: A Step-by-Step Technical Guide for LDT4SSC Pilots"
 
-        [Download methodology as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download methodology as PDF](../assets/PDFs/ldt4ssc_methodology/3.1_Prototyping_your_Use_Case_with_a_Context_Broker__A_Step-by-Step_Technical_Guide_for_LDT4SSC_Pilots.pptx.pdf){ .md-button .md-button--primary }
 
 
 ✨ **Achievements at the end of the stage**
@@ -474,9 +448,7 @@ This stage may also enable the project to be scaled up, either within the same r
 
     ??? workshop_deployment "Workshop 4.1: Onboarding & Acculturation in Digital Projects: Engaging Stakeholders, Defining Training Paths, and Building a Sustainable Adoption Plan"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/4.1_LDT4SSC_Methodology_Workshop_Step4_Onboarding&Adoption-in-Digital-Projects.docx.pdf){ .md-button .md-button--primary }
 
     #### 4.2 Designing a Structured Action Plan: From Ideas to Execution for Your Use Case {#designing-action-plan}
 
@@ -484,9 +456,7 @@ This stage may also enable the project to be scaled up, either within the same r
 
     ??? workshop_deployment "Workshop 4.2: Designing a Structured Action Plan: From Ideas to Execution for Your Use Case"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/4.2_LDT4SSC_Methodology_Workshop_Step4_Designing-a-Structured-Action-Plan.docx.pdf){ .md-button .md-button--primary }
 
     #### 4.3 Designing a Sustainable Business Model: Funding, Valuation, and Deployment Strategies for Your Project {#designing-business-model}
 
@@ -494,9 +464,7 @@ This stage may also enable the project to be scaled up, either within the same r
 
     ??? workshop_deployment "Workshop 4.3: Designing a Sustainable Business Model: Funding, Valuation, and Deployment Strategies for Your Project"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/4.3_LDT4SSC_Methodology_Workshop_Step4_Designing-a-Sustainable-Business-Model.docx.pdf){ .md-button .md-button--primary }
 
     #### 4.4 Refining the Business Model: Designing, Testing, and Refining Your Strategy with a Canvas {#refining-business-model}
 
@@ -504,9 +472,7 @@ This stage may also enable the project to be scaled up, either within the same r
 
     ??? workshop_deployment "Workshop 4.4: Refining the Business Model: Designing, Testing, and Refining Your Strategy with a Canvas"
 
-        [Download workshop as PDF](#){ .md-button .md-button--primary }
-
-        *PDF coming soon — contact the project team in the meantime.*
+        [Download workshop as PDF](../assets/PDFs/ldt4ssc_methodology/4.4_LDT4SSC_Methodology_Workshop_Step4_Refining-the-Business-Model.docx.pdf){ .md-button .md-button--primary }
 
     #### 4.5 Completing your Data Cooperation Canvas (DS4SSCC): Developing Multi-Stakeholder Data Cooperation {#completing-dcc}
 
