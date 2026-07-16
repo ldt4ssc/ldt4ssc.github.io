@@ -94,8 +94,7 @@ The example stories developed for WS1 show how cities and communities with an ex
 
 The LDT4SSC Methodology is a four-phase implementation framework that guides pilots from initial ideation through to full deployment. It structures the pilot journey into **EXPLORE** (Ideation), **VALIDATE** (Specifications), **DEFINE** (Prototyping), and **IMPLEMENT** (Deployment), ensuring that each stage builds on validated outputs from the previous one. The methodology integrates 15 practical workshops covering use case mapping, data governance, interoperability, business modelling, and stakeholder onboarding.
 
-<!-- TODO: Replace with methodology overview image -->
-![Methodology overview](../assets/methodology_overview.png){ .off-glb }
+![Methodology overview](../assets/methodology_overview.jpg){ .off-glb }
 
 ### Workshop Overview
 
