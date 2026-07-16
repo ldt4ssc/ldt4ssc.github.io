@@ -118,20 +118,28 @@
 </tbody>
 </table>
 
+While presented sequentially for clarity, the methodology is not strictly linear. The order and content can be freely adapted to meet the needs, specificities and realities of each project.
+
+Pilots can run the full path or just the workshops they need. As the path is non-linear, they can iterate and loop back.
+
+Workshops don’t cover everything there is to do in a given step but rather support its success.
+
 ---
 
 ## Phase 1 – Ideation (EXPLORE) {#ideation-explore}
 
-Many digital projects begin with predefined solutions (dashboards, apps, algorithms) rather than user needs, risking misalignment, irrelevant data use, and stakeholder disengagement. The LDT4SSC Methodology requires a dedicated EXPLORE (Ideation) step to define clear needs and shared use cases, identify relevant data and anticipate impacts, and secure stakeholder alignment and ethical sustainability.
+Many digital projects begin with predefined solutions (dashboards, apps, algorithms) rather than user needs, risking misalignment, irrelevant data use, and stakeholder disengagement. The LDT4SSC Methodology requires a dedicated EXPLORE (Ideation) step to
+clearly define the use cases, identify benefits and anticipate impacts and secure stakeholder alignment.
 
-The Ideation step generally lasts from four to eight weeks, depending on the level of maturity and complexity of the project. It does not follow a strict linear path, but is essential for the strategic grounding of the project. Some workshops are however essential, in particular the use case mapping via iterative workshops ([1.1 Mapping your Use Case](#mapping-use-case)).
+The Ideation step generally lasts from four to eight weeks, depending on the level of maturity and complexity of the project. It does not necessarily follow a linear path, but is essential for the strategic grounding of the project. Some workshops are essential, in particular the ([1.1 Mapping your Use Case](#mapping-use-case)).
 
 📋 **Prerequisites**
 
-- A clear understanding of the project’s goals (e.g.,climate change adaptation, better traffic management, improved electricity-grid resilience).
-- Stakeholder identification and initial engagement (local authorities, experts, citizens, service providers).
+- A broad idea of the project’s goals (e.g.,climate change adaptation, better traffic management, improved electricity-grid resilience).
+- Initial stakeholder identification and contact (local authorities, experts, citizens, service providers).
 - Basic resource and data availability for feasibility.
 - Project alignment with local public policies (e.g., digital transformation, sustainability strategies, smart city objectives).
+
 
 🎯 **Objectives**
 
@@ -201,15 +209,18 @@ At this stage of the method, the following elements have been completed or ident
 
 ## Phase 2 – Specifications (VALIDATE) {#specifications-validate}
 
-At the end of the Ideation phase, we have a better idea of the need we are meeting, why we are doing the project, with whom and with what data — but we don't know exactly *how*. The VALIDATE (Specifications) step provides the link between the vision that emerges from the [Ideation step](#ideation-explore) and the actual implementation of the project. It involves translating a use case into technical and functional requirements, taking into account the real constraints of its environment (data, architecture, users, security, etc.).
+At the end of the [Ideation step](#ideation-explore), one should have a better idea of the need that should be met, the rationale behind the project, and with whom and with what data. However, it still remains unclear how the project should be undertaken.
 
-This step helps to avoid misunderstandings between the business and technical teams, and prepares a solid basis for development. It is also an opportunity to ensure that the principles of interoperability are integrated from the outset. It further ensures that pilots work on the following topics:
+The VALIDATE (Specifications) step provides the link between the vision that emerges from the Explore (Ideation) step and the actual implementation of the project. It involves translating a use case into functional requirements, taking into account the real constraints of its environment (data, architecture, users, security, etc.).
+
+This step helps to avoid misunderstandings between the business and technical teams, and prepares a solid basis for development. It is also an opportunity to ensure that the principles of interoperability are integrated from the outset. It further support pilots in defining the following elements:
 
 - The personas, i.e. the future users of the solution.
 - Their functionalities in relation to users.
 - The indicators and dashboards in relation to the personas.
 - The desired simulations.
 - The data and its governance.
+
 
 📋 **Prerequisites**
 
@@ -322,13 +333,14 @@ This step helps to avoid misunderstandings between the business and technical te
 
 ✨ **Achievements at the end of the stage**
 
-At this stage of the method, the following elements have been achieved or identified:
+At the end of this step of the methodology, the following elements have been completed or identified:
 
 - Technical, legal, and operational constraints documented and addressed.
 - Refined stakeholder roles and governance structures with clear responsibilities.
-- Actionable roadmaps for [data governance](#implementing-data-governance), [legal compliance](non_tech_resources.md#legal-guidance), and legal compliance.
+- Actionable roadmaps for data governance, and [legal compliance](non_tech_resources.md#legal-guidance).
 - Prioritised action plans with timelines and resources for data governance and interoperability.
- 
+
+**Note:** At the end of this step, a specifications document/Terms of reference (ToR) can be drawn-up setting out the specs and requirements for the LDT.
 
 ➡️ Next: [Phase 3 – Prototyping (DEFINE)](#prototyping-define)
 
@@ -336,11 +348,11 @@ At this stage of the method, the following elements have been achieved or identi
 
 ## Phase 3 – Prototyping (DEFINE) {#prototyping-define}
 
-Prototyping is the stage that transforms a still theoretical project into concrete proof of feasibility. It is not yet a question of producing a finished service, but of rapidly testing a solution on a restricted perimeter, using real data, confronting ideas with technical, functional, and human reality.
+Prototyping is the stage that transforms a still theoretical project into concrete proof of feasibility. It is not yet a question of producing a finished service, but of rapidly testing a solution on a restricted perimeter, using real data, confronting ideas with technical, functional and human reality.
 
-This is not a compulsory stage. The previous stages can show that solutions on the market do indeed meet the needs identified, and that prototyping is not a required necessity. Nevertheless, an experimentation stage can always be useful before large-scale deployment.
+This is not a compulsory stage. The previous stages can show that solutions on the market do indeed meet the needs identified, and that prototyping is not a required necessity. Nevertheless, an experimentation stage to test and validate the solution can always be useful before large-scale deployment.
 
-In the LDT4SSC methodology, the aim of prototyping is twofold: to demonstrate that the idea works, and to check that it has real value for users. It is an iterative, experimental, and frugal approach, which should enable you to learn quickly without committing to heavy investment. The aim is also, from this stage onwards, to rely on a scalable infrastructure, so that you don't have to start from scratch during the [deployment phase](#deployment-implement).
+The aim of prototyping is twofold: to demonstrate that the idea works, and to check that it has real value for users. It's an iterative, experimental and frugal approach, which should enable you to learn quickly, without committing to heavy investment. The aim is also, from this stage onwards, to rely on a scalable infrastructure, so that you don't have to start from scratch during the [deployment phase](#deployment-implement).
 
 📋 **Prerequisites**
 
@@ -425,6 +437,7 @@ This stage may also enable the project to be scaled up, either within the same r
 - Organise the maintenance, support and development of the solution over time.
 - Document to encourage internal and external re-use.
 
+
 👥 **Stakeholders to Involve**
 
 ***Necessary:***
@@ -498,3 +511,9 @@ At this stage of the method, the following elements have been achieved or identi
 During this step, completing the [Data Cooperation Canvas (DS4SSCC)](https://www.datacooperationcanvas.eu/canvas/intro) for establishing Multi-Stakeholder Data Cooperation should be done.
 
 ➡️ See also: [Cost-Benefit Analysis](non_tech_resources.md#cost-benefit-analysis) | [Legal Guidance](non_tech_resources.md#legal-guidance)
+
+---
+
+Please [share your feedback](https://docs.google.com/forms/d/e/1FAIpQLSfJT0iFW0tTbM6srnixKfQVWaLdeibNiBkPBjJNgDgwp1m7KQ/viewform) on the Methodology and its materials to the LDT4SSC consortium to help us improve it for reuse by other cities and communities.
+
+It is shared under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License which allows you to modify it to add your improvements.

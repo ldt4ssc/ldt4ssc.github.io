@@ -92,7 +92,7 @@ The example stories developed for WS1 show how cities and communities with an ex
 
 ## The LDT4SSC Methodology
 
-The LDT4SSC Methodology is a four-phase implementation framework that guides pilots from initial ideation through to full deployment. It structures the pilot journey into **EXPLORE** (Ideation), **VALIDATE** (Specifications), **DEFINE** (Prototyping), and **IMPLEMENT** (Deployment), ensuring that each stage builds on validated outputs from the previous one. The methodology integrates 15 practical workshops covering use case mapping, data governance, interoperability, business modelling, and stakeholder onboarding.
+The LDT4SSC Methodology is a use-case-centered four-phase implementation framework that guides LDT4SSC pilots from initial ideation through to full deployment of their projects. This methodology provides a logical implementation framework for building a Local Digital Twin by structuring the pilot journey into four steps **EXPLORE** (Ideation), **VALIDATE** (Specifications), **DEFINE** (Prototyping), and **IMPLEMENT** (Deployment), ensuring that each stage builds on validated outputs from the previous one. The methodology integrates 15 practical and self-contained workshops each tackling different challenges such as use case definition, data governance, interoperability, business modelling, and stakeholder onboarding. 
 
 ![Methodology overview](../assets/methodology_overview.jpg){ .off-glb }
 
