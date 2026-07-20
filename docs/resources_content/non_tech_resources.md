@@ -103,24 +103,24 @@ The LDT4SSC Methodology is a use-case-centered four-phase implementation framewo
 <table class="ws-table">
 <thead><tr><th>#</th><th>Workshop</th><th>Phase</th><th>Duration</th></tr></thead>
 <tbody>
-<tr><td><a href="#mapping-use-case">1.1</a></td><td>Mapping your Use Case</td><td><span class="ws-explore">EXPLORE</span></td><td>3h</td></tr>
-<tr><td><a href="#questioning-the-purpose">1.2</a></td><td>Questioning The Purpose of your LDT Project</td><td><span class="ws-explore">EXPLORE</span></td><td>2h 40min &times; 3</td></tr>
-<tr><td><a href="#implementing-sustainable-digital-design">1.3</a></td><td>Implementing Sustainable Digital Design</td><td><span class="ws-explore">EXPLORE</span></td><td>2h</td></tr>
-<tr><td><a href="#effective-visualisation-dashboards">2.1</a></td><td>Co-Creating Effective Visualisation Dashboards</td><td><span class="ws-validate">VALIDATE</span></td><td>3h</td></tr>
-<tr><td><a href="#implementing-data-governance">2.2.1</a></td><td>Understanding Data Governance and Setting the Goal</td><td><span class="ws-validate">VALIDATE</span></td><td>2h</td></tr>
-<tr><td><a href="#implementing-data-governance">2.2.2</a></td><td>Mapping Stakeholders' Legitimacy and Authority</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 30min</td></tr>
-<tr><td><a href="#implementing-data-governance">2.2.3</a></td><td>Designing your Data Governance Roadmap</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 5min</td></tr>
-<tr><td><a href="#implementing-data-governance">2.2.4</a></td><td>Complementing your Data Governance Roadmap with a Legal Framework</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 30min</td></tr>
-<tr><td><a href="#implementing-data-governance">2.2.5</a></td><td>Refining your Legal Framework for Data Governance</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 30min &ndash; 2h</td></tr>
-<tr><td><a href="#inventorying-ldt-project-data">2.3</a></td><td>Inventorying your LDT Project Data</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 40min</td></tr>
-<tr><td><a href="#unlocking-interoperability">2.4</a></td><td>Identifying Levers, Obstacles and Objectives for Interoperability</td><td><span class="ws-validate">VALIDATE</span></td><td>2h</td></tr>
-<tr><td><a href="#lego-serious-play">BONUS</a></td><td>Lego&reg; Serious Play</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 45min</td></tr>
-<tr><td><a href="#prototyping-use-case-context-broker">3.1</a></td><td>Prototyping a Use Case with a Context Broker</td><td><span class="ws-define">DEFINE</span></td><td>&mdash;</td></tr>
-<tr><td><a href="#onboarding-adoption">4.1</a></td><td>Onboarding &amp; Adoption in Digital Projects</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 30min</td></tr>
-<tr><td><a href="#designing-action-plan">4.2</a></td><td>Designing a Structured Action Plan</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 45min</td></tr>
-<tr><td><a href="#designing-business-model">4.3</a></td><td>Designing a Sustainable Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 50min</td></tr>
-<tr><td><a href="#refining-business-model">4.4</a></td><td>Refining the Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>2h 25min</td></tr>
-<tr><td><a href="#completing-dcc">4.5</a></td><td>Completing your Data Cooperation Canvas</td><td><span class="ws-implement">IMPLEMENT</span></td><td>&mdash;</td></tr>
+<tr><td><a href="../methodology/#mapping-use-case">1.1</a></td><td>Mapping your Use Case</td><td><span class="ws-explore">EXPLORE</span></td><td>3h</td></tr>
+<tr><td><a href="../methodology/#questioning-the-purpose">1.2</a></td><td>Questioning The Purpose of your LDT Project</td><td><span class="ws-explore">EXPLORE</span></td><td>2h 40min &times; 3</td></tr>
+<tr><td><a href="../methodology/#implementing-sustainable-digital-design">1.3</a></td><td>Implementing Sustainable Digital Design</td><td><span class="ws-explore">EXPLORE</span></td><td>2h</td></tr>
+<tr><td><a href="../methodology/#effective-visualisation-dashboards">2.1</a></td><td>Co-Creating Effective Visualisation Dashboards</td><td><span class="ws-validate">VALIDATE</span></td><td>3h</td></tr>
+<tr><td><a href="../methodology/#implementing-data-governance">2.2.1</a></td><td>Understanding Data Governance and Setting the Goal</td><td><span class="ws-validate">VALIDATE</span></td><td>2h</td></tr>
+<tr><td><a href="../methodology/#implementing-data-governance">2.2.2</a></td><td>Mapping Stakeholders' Legitimacy and Authority</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 30min</td></tr>
+<tr><td><a href="../methodology/#implementing-data-governance">2.2.3</a></td><td>Designing your Data Governance Roadmap</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 5min</td></tr>
+<tr><td><a href="../methodology/#implementing-data-governance">2.2.4</a></td><td>Complementing your Data Governance Roadmap with a Legal Framework</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 30min</td></tr>
+<tr><td><a href="../methodology/#implementing-data-governance">2.2.5</a></td><td>Refining your Legal Framework for Data Governance</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 30min &ndash; 2h</td></tr>
+<tr><td><a href="../methodology/#inventorying-ldt-project-data">2.3</a></td><td>Inventorying your LDT Project Data</td><td><span class="ws-validate">VALIDATE</span></td><td>1h 40min</td></tr>
+<tr><td><a href="../methodology/#unlocking-interoperability">2.4</a></td><td>Identifying Levers, Obstacles and Objectives for Interoperability</td><td><span class="ws-validate">VALIDATE</span></td><td>2h</td></tr>
+<tr><td><a href="../methodology/#lego-serious-play">BONUS</a></td><td>Lego&reg; Serious Play</td><td><span class="ws-validate">VALIDATE</span></td><td>2h 45min</td></tr>
+<tr><td><a href="../methodology/#prototyping-use-case-context-broker">3.1</a></td><td>Prototyping a Use Case with a Context Broker</td><td><span class="ws-define">DEFINE</span></td><td>&mdash;</td></tr>
+<tr><td><a href="../methodology/#onboarding-adoption">4.1</a></td><td>Onboarding &amp; Adoption in Digital Projects</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 30min</td></tr>
+<tr><td><a href="../methodology/#designing-action-plan">4.2</a></td><td>Designing a Structured Action Plan</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 45min</td></tr>
+<tr><td><a href="../methodology/#designing-business-model">4.3</a></td><td>Designing a Sustainable Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>1h 50min</td></tr>
+<tr><td><a href="../methodology/#refining-business-model">4.4</a></td><td>Refining the Business Model</td><td><span class="ws-implement">IMPLEMENT</span></td><td>2h 25min</td></tr>
+<tr><td><a href="../methodology/#completing-dcc">4.5</a></td><td>Completing your Data Cooperation Canvas</td><td><span class="ws-implement">IMPLEMENT</span></td><td>&mdash;</td></tr>
 </tbody>
 </table>
 
@@ -139,11 +139,8 @@ By defining clear output, outcome, and impact indicators and validation methods,
 
 The framework is embedded in the pilot's journey, requiring pilots to describe context and inputs, report activities and track specified output indicators, and to link outputs to measurable short-term outcomes and intended long-term impacts. Monitoring is iterative: pilots submit baseline, interim (6-monthly) and final reports through self-assessment questionnaires that will be shared later on as resources to pilots.
 
-<a id="impact-assessment-download"></a>
 !!! info "The LDT4SSC Impact Assessment Framework"
-    [Download as PDF](#){ .md-button .md-button--primary }
-
-    *PDF coming soon — contact the project team in the meantime.*
+    [Download as PDF](../assets/PDFs/LDT4SSC_Impact_Assessment_Framework.pdf){ .md-button .md-button--primary }
 
 ---
 
