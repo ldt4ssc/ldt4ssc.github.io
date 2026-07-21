@@ -59,6 +59,7 @@ hooks:
   - docs/overrides/hooks/copy_pilot_updates.py
 
 plugins:
+  - search
   - redirects:
       redirect_maps:
         'blueprint/index.md': 'https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/v1/'

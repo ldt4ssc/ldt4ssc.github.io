@@ -11,6 +11,8 @@
 ## General Guidance
 This section provides an overview of the piloting process within LDT4SSC and offers guidance and relevant resources for each of the Work Strands.  
 
+![Growth concept](../assets/images/Growth_concept.jpg)
+
 **Why to apply?**  
 Pilots are at the heart of LDT4SSC. They enable real-world testing of data-processing through digital twin solutions, interconnection of digital twins requiring data spaces processes, validate interoperability, and deliver tangible benefits for communities. Selected pilots will receive:  
 
