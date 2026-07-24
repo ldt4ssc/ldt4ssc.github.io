@@ -58,6 +58,7 @@
   "name": "MUNICIPAL",
   "pilot_id": "municipal",
   "pilot_page_url": "../journey/pilots/round1/municipal/",
+  "provider": "github",
   "repository_url": "",
   "round": "round1",
   "short_name": "municipal",
