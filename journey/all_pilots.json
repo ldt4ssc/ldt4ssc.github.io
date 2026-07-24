@@ -1,0 +1,157 @@
+[
+  {
+    "composition": "Ayuntamento de Cartagena, City of Almelo, Almelo Energie, Ertico, iLabs Technologies, FHC Corp, Nunsys, iSHARE, LogiNex, University of the Aegean, HyEnSys",
+    "consortium": [
+      {
+        "country_code": "",
+        "name": "Ayuntamiento de Cartagena",
+        "role": "Pilot lead"
+      },
+      {
+        "country_code": "",
+        "name": "Almelo Energie",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "Ertico",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "iLabs Technologies",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "FHC Corp",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "Nunsys",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "iSHARE",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "LogiNex",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "University of the Aegean",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "HyEnSys",
+        "role": "Partner"
+      }
+    ],
+    "contact": {
+      "email": "",
+      "name": "Ayuntamiento de Cartagena",
+      "organisation": ""
+    },
+    "description": "EUTwinLink interconnects Local Digital Twins in Cartagena, Almelo, Hamburg (Port), and Aruba (Airport) with shared data models, scenario simulation, and citizen dashboards to drive evidence-based decisions on air quality, energy, and decarbonisation.",
+    "external_page_url": "../journey/pilots/round1/eu-twinlink/",
+    "focus_areas": [
+      "Positive energy districts",
+      "low emission zones",
+      "sustainable travel corridors"
+    ],
+    "locations": [
+      {
+        "city": "Cartagena",
+        "country": "",
+        "country_code": ""
+      },
+      {
+        "city": "Almelo",
+        "country": "",
+        "country_code": ""
+      }
+    ],
+    "name": "EUTwinLink",
+    "pilot_id": "eu-twinlink",
+    "pilot_page_url": "../journey/pilots/round1/eu-twinlink/",
+    "repository_url": "",
+    "round": "round1",
+    "short_name": "eu-twinlink",
+    "start_date": "2026-05-15",
+    "status": "Onboarding",
+    "work_strand": "WS1"
+  },
+  {
+    "composition": "Ubitech, Technical University of Denmark, Murcia, Ai-nergy, Nicosia Municipality, University of Cyprus, Odins (Odins)",
+    "consortium": [
+      {
+        "country_code": "",
+        "name": "Ubitech",
+        "role": "Pilot lead"
+      },
+      {
+        "country_code": "",
+        "name": "Ubitech",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "Technical University of Denmark",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "Ai-nergy",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "University of Cyprus",
+        "role": "Partner"
+      },
+      {
+        "country_code": "",
+        "name": "Odins (Odins)",
+        "role": "Partner"
+      }
+    ],
+    "contact": {
+      "email": "",
+      "name": "Ubitech",
+      "organisation": ""
+    },
+    "description": "The Murcia-Nicosia pilot connects the MiMurcia and iniCOSIA platforms via the SIMPL/CEEDS framework to share complementary LDT services across borders - combining Murcia's well-being and urban services with Nicosia's energy and mobility IoT capabilities.",
+    "external_page_url": "../journey/pilots/round1/municipal/",
+    "focus_areas": [
+      "Energy & mobility",
+      "smart public lighting"
+    ],
+    "locations": [
+      {
+        "city": "Murcia",
+        "country": "",
+        "country_code": ""
+      },
+      {
+        "city": "Nicosia",
+        "country": "",
+        "country_code": ""
+      }
+    ],
+    "name": "MUNICIPAL",
+    "pilot_id": "municipal",
+    "pilot_page_url": "../journey/pilots/round1/municipal/",
+    "repository_url": "",
+    "round": "round1",
+    "short_name": "municipal",
+    "start_date": "2026-05-15",
+    "status": "Onboarding",
+    "work_strand": "WS1"
+  }
+]
