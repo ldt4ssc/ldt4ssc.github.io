@@ -24,6 +24,7 @@ jobs:
       - name: Run aggregator
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: python scripts/aggregate_pilots.py
 
       - name: Commit updated pilot data

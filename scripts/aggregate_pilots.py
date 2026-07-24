@@ -1,10 +1,11 @@
-"""Aggregate pilot data from the journey CSV and each pilot's GitHub repo.
+"""Aggregate pilot data from the journey CSV and each pilot's GitHub/GitLab repo.
 
 Run:
     python scripts/aggregate_pilots.py
 
 Optional env vars:
     GITHUB_TOKEN  — Bearer token for GitHub API / raw content requests (avoids rate-limits)
+    GITLAB_TOKEN  — Bearer token for GitLab API requests (only needed for private repos)
 """
 
 import csv
@@ -85,7 +86,7 @@ FEEDS_DIR = REPO_ROOT / "docs" / "feeds"
 TEMPLATE_MD = PILOTS_DIR / "_template.md"
 
 UPDATE_FILENAME_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-[a-z0-9-]+\.md$")
-GITHUB_REPO_RE = re.compile(r"^https?://github\.com/([^/]+)/([^/]+?)(?:\.git)?/?$")
+REPO_URL_RE = re.compile(r"^https?://([^/]+)/(.+?)(?:\.git)?/?$")
 
 # ---------------------------------------------------------------------------
 # HTTP helpers
@@ -98,6 +99,61 @@ def _get(url: str, token: str = "", timeout: int = 15) -> bytes:
     req.add_header("User-Agent", "ldt4ssc-aggregator/1.0")
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read()
+
+
+def parse_repo_url(repo_url: str, provider_hint: str = "") -> tuple[str, str, str] | None:
+    """Return (provider, host, project_path) or None if unrecognized.
+
+    provider is "github" or "gitlab". project_path is "owner/repo" for
+    GitHub (including GitHub Enterprise Server) or the full namespace
+    path for GitLab (may include nested groups). host is used to build
+    the API base, so self-hosted instances of either platform work the
+    same way as github.com/gitlab.com.
+
+    provider_hint (the pilot's `provider` CSV column) takes precedence
+    when set, since a self-hosted GitHub Enterprise repo URL and a
+    self-hosted GitLab repo URL are syntactically indistinguishable —
+    both look like https://{host}/{owner-or-namespace}/{repo}. With no
+    hint, falls back to the original heuristic (github.com -> github,
+    everything else -> gitlab), so pilots without the column keep
+    working unchanged.
+    """
+    m = REPO_URL_RE.match(repo_url)
+    if not m:
+        return None
+    host, project_path = m.group(1), m.group(2)
+
+    hint = provider_hint.strip().lower()
+    if hint == "github":
+        return ("github", host, project_path)
+    if hint == "gitlab":
+        return ("gitlab", host, project_path)
+
+    if host == "github.com":
+        return ("github", host, project_path)
+    return ("gitlab", host, project_path)
+
+
+def _github_api_base(host: str) -> str:
+    if host == "github.com":
+        return "https://api.github.com"
+    return f"https://{host}/api/v3"
+
+
+def _gitlab_get_raw(host: str, project_path: str, file_path: str, token: str, ref: str = "main") -> bytes:
+    proj = urllib.parse.quote(project_path, safe="")
+    path = urllib.parse.quote(file_path, safe="")
+    url = f"https://{host}/api/v4/projects/{proj}/repository/files/{path}/raw?ref={ref}"
+    return _get(url, token=token, timeout=15)
+
+
+def _gitlab_list_tree(host: str, project_path: str, dir_path: str, token: str, ref: str = "main") -> list:
+    proj = urllib.parse.quote(project_path, safe="")
+    params = {"ref": ref, "per_page": "100"}
+    if dir_path:
+        params["path"] = dir_path
+    url = f"https://{host}/api/v4/projects/{proj}/repository/tree?{urllib.parse.urlencode(params)}"
+    return json.loads(_get(url, token=token, timeout=15))
 
 
 # ---------------------------------------------------------------------------
@@ -170,6 +226,7 @@ def map_csv_row(row: dict) -> dict | None:
         "name": name,
         "pilot_id": row.get("Pilot ID", "").strip(),
         "pilot_page_url": pilot_page_url,
+        "provider": row.get("provider", "").strip().lower(),
         "repository_url": row.get("repository_url", "").strip(),
         "round": round_key,
         "short_name": _short_name_from_url(pilot_page_url, name),
@@ -185,7 +242,7 @@ def map_csv_row(row: dict) -> dict | None:
 
 _SCALAR_FIELDS = {"name", "description", "work_strand", "start_date"}
 _ARRAY_FIELDS = {"locations", "focus_areas", "consortium"}
-_IDENTITY_FIELDS = {"short_name", "pilot_id", "round", "pilot_page_url", "repository_url"}
+_IDENTITY_FIELDS = {"short_name", "pilot_id", "round", "pilot_page_url", "repository_url", "provider"}
 
 
 def apply_yaml_overlay(pilot: dict, yaml_data: dict) -> dict:
@@ -201,17 +258,39 @@ def apply_yaml_overlay(pilot: dict, yaml_data: dict) -> dict:
     return merged
 
 
-def fetch_yaml_overlay(pilot: dict, token: str) -> dict:
+def _github_get_raw(host: str, owner: str, repo: str, file_path: str, token: str, ref: str = "main") -> bytes:
+    """Fetch a single file's raw content from github.com or a GHES instance.
+
+    github.com serves raw content from raw.githubusercontent.com. GitHub
+    Enterprise Server has no equivalent raw subdomain, so for any other
+    host we go through the contents API and follow its (single-use,
+    always-refetched) download_url instead.
+    """
+    if host == "github.com":
+        raw_url = f"https://raw.githubusercontent.com/{owner}/{repo}/{ref}/{file_path}"
+        return _get(raw_url, token=token, timeout=15)
+    api_url = f"{_github_api_base(host)}/repos/{owner}/{repo}/contents/{file_path}?ref={ref}"
+    entry = json.loads(_get(api_url, token=token, timeout=15))
+    download_url = entry.get("download_url", "")
+    if not download_url:
+        raise ValueError(f"no download_url returned for {file_path}")
+    return _get(download_url, token=token, timeout=15)
+
+
+def fetch_yaml_overlay(pilot: dict, github_token: str, gitlab_token: str) -> dict:
     repo_url = pilot.get("repository_url", "")
     if not repo_url:
         return pilot
-    m = GITHUB_REPO_RE.match(repo_url)
-    if not m:
+    parsed = parse_repo_url(repo_url, pilot.get("provider", ""))
+    if not parsed:
         return pilot
-    owner, repo = m.group(1), m.group(2)
-    raw_url = f"https://raw.githubusercontent.com/{owner}/{repo}/main/pilot.yaml"
+    provider, host, project_path = parsed
     try:
-        content = _get(raw_url, token=token, timeout=15)
+        if provider == "github":
+            owner, repo = project_path.split("/", 1)
+            content = _github_get_raw(host, owner, repo, "pilot.yaml", github_token)
+        else:
+            content = _gitlab_get_raw(host, project_path, "pilot.yaml", gitlab_token)
         yaml_data = yaml.safe_load(content)
         if not isinstance(yaml_data, dict):
             raise ValueError("pilot.yaml did not parse as a mapping")
@@ -244,16 +323,21 @@ def _parse_front_matter(content: str) -> tuple[dict, str]:
 
 
 def fetch_updates(
-    owner: str,
-    repo: str,
+    provider: str,
+    host: str,
+    project_path: str,
     dest_dir: Path,
     pilot: dict,
     token: str,
 ) -> tuple[list[dict], int, int]:
-    """Fetch updates from GitHub. Returns (index_entries, ok_count, skipped_count)."""
-    api_url = f"https://api.github.com/repos/{owner}/{repo}/contents/updates?ref=main"
+    """Fetch updates from GitHub or GitLab. Returns (index_entries, ok_count, skipped_count)."""
     try:
-        listing = json.loads(_get(api_url, token=token, timeout=15))
+        if provider == "github":
+            owner, repo = project_path.split("/", 1)
+            api_url = f"{_github_api_base(host)}/repos/{owner}/{repo}/contents/updates?ref=main"
+            listing = json.loads(_get(api_url, token=token, timeout=15))
+        else:
+            listing = _gitlab_list_tree(host, project_path, "updates", token)
     except Exception as exc:
         print(f"WARN: could not list updates for {pilot['short_name']}: {exc}", file=sys.stderr)
         return [], 0, 0
@@ -272,11 +356,16 @@ def fetch_updates(
         filename = entry.get("name", "")
         if not UPDATE_FILENAME_RE.match(filename):
             continue
+        if provider == "gitlab" and entry.get("type") != "blob":
+            continue
         download_url = entry.get("download_url", "")
-        if not download_url:
+        if provider == "github" and not download_url:
             continue
         try:
-            raw = _get(download_url, token=token, timeout=15)
+            if provider == "github":
+                raw = _get(download_url, token=token, timeout=15)
+            else:
+                raw = _gitlab_get_raw(host, project_path, entry.get("path", filename), token)
             text = raw.decode("utf-8")
         except Exception as exc:
             print(f"WARN: could not fetch {filename} for {pilot['short_name']}: {exc}", file=sys.stderr)
@@ -393,7 +482,8 @@ def generate_rss(all_pilots: list[dict], all_updates: list[dict]) -> None:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    token = os.environ.get("GITHUB_TOKEN", "")
+    github_token = os.environ.get("GITHUB_TOKEN", "")
+    gitlab_token = os.environ.get("GITLAB_TOKEN", "")
 
     print("Fetching pilots CSV…")
     try:
@@ -426,7 +516,7 @@ def main() -> None:
             continue
 
         original_name = pilot["name"]
-        pilot = fetch_yaml_overlay(pilot, token)
+        pilot = fetch_yaml_overlay(pilot, github_token, gitlab_token)
         if pilot["name"] != original_name:
             pilots_skipped_yaml += 0  # yaml succeeded — don't count as skipped
         # (we track yaml-skip inside fetch_yaml_overlay via stderr warning only)
@@ -446,10 +536,11 @@ def main() -> None:
 
         repo_url = pilot.get("repository_url", "")
         if repo_url:
-            m = GITHUB_REPO_RE.match(repo_url)
-            if m:
-                owner, repo = m.group(1), m.group(2)
-                idx, ok, skipped = fetch_updates(owner, repo, dest, pilot, token)
+            parsed = parse_repo_url(repo_url, pilot.get("provider", ""))
+            if parsed:
+                provider, host, project_path = parsed
+                token = github_token if provider == "github" else gitlab_token
+                idx, ok, skipped = fetch_updates(provider, host, project_path, dest, pilot, token)
                 (dest / "updates_index.json").write_text(
                     json.dumps(idx, indent=2, cls=_DateEncoder), encoding="utf-8"
                 )
