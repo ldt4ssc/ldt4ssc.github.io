@@ -210,11 +210,4 @@ This page summarises requirements **shared across WS1, WS2, and WS3**. For work-
 
 ## Application Process  
 
-👉 The third round of open calls is now **OPEN**. Apply by **July 13 2026**.
-
-To apply, 
-
-1. Check your eligibility;
-2. Prepare and complete the required forms;
-3. Before submitting, ensure that all required documents are completed and signed, the consortium meets the eligibility criteria, the proposal aligns with the objectives of Work Strand 1, 2, or 3;
-4. Submit your application via the LDT4SSC mailbox: 👉 [Submit here](mailto:application@ldt4ssc.eu).
+👉 The third and last round of open calls is now **CLOSED**. Join our [**Stakeholder Forum**](https://docs.google.com/forms/d/e/1FAIpQLScyauYurnx0KJM29TTKWmZzlSCcY8LlIVnhTF4weM1qGKDdPg/viewform) to follow the latest updates of the community. Access the [**pilot journey**](../journey/) to know more about our pilots.

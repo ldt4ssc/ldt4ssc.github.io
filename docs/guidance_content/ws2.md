@@ -12,7 +12,8 @@ This Work Strand focuses on supporting key policy scenarios and addressing commo
 - Second Round of open calls: February 2026  
 - Third Round of open calls: May 2026  
 
-👉 The third round of open calls is now **OPEN**. Apply by **July 13 2026**.
+👉 The third and last round of open calls is now **CLOSED**. Join our [**Stakeholder Forum**](https://docs.google.com/forms/d/e/1FAIpQLScyauYurnx0KJM29TTKWmZzlSCcY8LlIVnhTF4weM1qGKDdPg/viewform) to follow the latest updates of the community. Access the [**pilot journey**](../journey/) to know more about our pilots.
+
 
 **What is the goal?**  
 
