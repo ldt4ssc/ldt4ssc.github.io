@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+
+  <!-- Feedback Widget (only on resources pages) -->
+  {% set show_feedback = page.file.src_path == 'resources.md' or
+                         'tech_resources.md' in page.file.src_path or
+                         'non_tech_resources.md' in page.file.src_path %}
+  {% if show_feedback %}
+  <div class="feedback-widget">
+    <a href="https://forms.gle/Yk5UYHJM1moFv7PT9" target="_blank" class="feedback-button animating" title="Provide feedback on the usability of resources">
+      <span class="feedback-icon">💬</span>
+      <span class="feedback-text animating">Give Feedback</span>
+    </a>
+  </div>
+  <script>
+    // Remove animation class after animation completes so hover can work
+    document.addEventListener('DOMContentLoaded', function() {
+      const button = document.querySelector('.feedback-button');
+      const text = document.querySelector('.feedback-text');
+
+      if (button && text) {
+        // Animation starts after 1s delay and runs for 3.5s = 4.5s total
+        setTimeout(function() {
+          button.classList.remove('animating');
+          text.classList.remove('animating');
+        }, 4600); // Slightly after animation completes
+      }
+    });
+  </script>
+  {% endif %}
+{% endblock %}

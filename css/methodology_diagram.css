@@ -1,0 +1,507 @@
+/* docs/css/methodology_diagram.css */
+/* Interactive Methodology Diagram Styling */
+
+:root {
+  /* Phase Colors - matching the image */
+  --ideation-primary: #f9a825;
+  --ideation-bg: #f9a825;
+  --ideation-text: white;
+
+  --specifications-primary: #424242;
+  --specifications-bg: #424242;
+  --specifications-text: white;
+
+  --prototyping-primary: #1976d2;
+  --prototyping-bg: #1976d2;
+  --prototyping-text: white;
+
+  --deployment-primary: #388e3c;
+  --deployment-bg: #388e3c;
+  --deployment-text: white;
+
+  /* Activity box colors */
+  --activity-ideation-bg: #fff3cd;
+  --activity-ideation-border: #f9a825;
+
+  --activity-specifications-bg: #e0e0e0;
+  --activity-specifications-border: #757575;
+
+  --activity-prototyping-bg: #cfe8fc;
+  --activity-prototyping-border: #1976d2;
+
+  --activity-deployment-bg: #c8e6c9;
+  --activity-deployment-border: #388e3c;
+
+  /* Neutral */
+  --center-bg: #ffffff;
+  --center-border: #bdbdbd;
+}
+
+/* Custom admonition styling */
+:root {
+  --md-admonition-icon--wall: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 16h9v5H3zm-1-6h6v5H2zm7 0h6v5H9zm7 0h6v5h-6zm-3 6h8v5h-8zM3 4h8v5H3zm9 0h9v5h-9z"/></svg>')
+}
+.md-typeset .admonition.workshop_deployment,
+.md-typeset details.workshop_deployment {
+  border-color: #388e3c;
+}
+.md-typeset .workshop_deployment > .admonition-title,
+.md-typeset .workshop_deployment > summary {
+  background-color: #c8e6c9;
+}
+.md-typeset .workshop_deployment > .admonition-title::before,
+.md-typeset .workshop_deployment > summary::before {
+  background-color: #388e3c;
+  -webkit-mask-image: var(--md-admonition-icon--wall);
+          mask-image: var(--md-admonition-icon--wall);
+}
+
+.md-typeset .admonition.workshop_ideation,
+.md-typeset details.workshop_ideation {
+  border-color: #f9a825;
+}
+.md-typeset .workshop_ideation > .admonition-title,
+.md-typeset .workshop_ideation > summary {
+  background-color: #fff3cd;
+}
+.md-typeset .workshop_ideation > .admonition-title::before,
+.md-typeset .workshop_ideation > summary::before {
+  background-color: #f9a825;
+  -webkit-mask-image: var(--md-admonition-icon--wall);
+          mask-image: var(--md-admonition-icon--wall);
+}
+
+.md-typeset .admonition.workshop_specifications,
+.md-typeset details.workshop_specifications {
+  border-color: #424242;
+}
+.md-typeset .workshop_specifications > .admonition-title,
+.md-typeset .workshop_specifications > summary {
+  background-color: #e0e0e0;
+}
+.md-typeset .workshop_specifications > .admonition-title::before,
+.md-typeset .workshop_specifications > summary::before {
+  background-color: #424242;
+  -webkit-mask-image: var(--md-admonition-icon--wall);
+          mask-image: var(--md-admonition-icon--wall);
+}
+
+.md-typeset .admonition.workshop_prototyping,
+.md-typeset details.workshop_prototyping {
+  border-color: #1976d2;
+}
+.md-typeset .workshop_prototyping > .admonition-title,
+.md-typeset .workshop_prototyping > summary {
+  background-color: #cfe8fc;
+}
+.md-typeset .workshop_prototyping > .admonition-title::before,
+.md-typeset .workshop_prototyping > summary::before {
+  background-color: #1976d2;
+  -webkit-mask-image: var(--md-admonition-icon--wall);
+          mask-image: var(--md-admonition-icon--wall);
+}
+
+
+/* Main Container */
+.methodology-diagram {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner wrapper for the square + center */
+.diagram-inner {
+  position: relative;
+  width: 500px;
+  height: 550px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 140px;
+}
+
+/* Central Circle */
+.diagram-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.use-case-circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: var(--center-bg);
+  border: 3px solid var(--center-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  color: #424242;
+}
+
+/* Quadrants - Form a unified square */
+.quadrant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.quadrant:link,
+.quadrant:visited,
+.quadrant:hover,
+.quadrant:active {
+  color: white;
+  text-decoration: none;
+}
+
+.quadrant::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0);
+  transition: background 0.3s ease;
+}
+
+.quadrant:hover::before {
+  background: rgba(255,255,255,0.15);
+}
+
+.quadrant:focus {
+  outline: 3px solid white;
+  outline-offset: -3px;
+}
+
+.phase-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.phase-action {
+  font-size: 0.55rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Quadrant Positioning - forming a square */
+.quadrant-deployment {
+  grid-column: 1;
+  grid-row: 1;
+  background: var(--deployment-bg);
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.quadrant-ideation {
+  grid-column: 2;
+  grid-row: 1;
+  background: var(--ideation-bg);
+  color: white;
+  border-bottom-left-radius: 0;
+}
+
+.quadrant-prototyping {
+  grid-column: 1;
+  grid-row: 2;
+  background: var(--prototyping-bg);
+  color: white;
+  border-top-right-radius: 0;
+}
+
+.quadrant-specifications {
+  grid-column: 2;
+  grid-row: 2;
+  background: var(--specifications-bg);
+  color: white;
+  border-top-left-radius: 0;
+}
+
+/* Activity Groups - Positioned outside the square (left and right sides) */
+.activity-group {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 180px;
+}
+
+/* Left side groups */
+.activity-deployment {
+  left: -200px;
+  top: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.activity-prototyping {
+  left: -200px;
+  bottom: 0;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+/* Right side groups */
+.activity-ideation {
+  right: -200px;
+  top: 0;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.activity-specifications {
+  right: -200px;
+  bottom: 0;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* Activity Cards - Base Styling */
+.activity-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: all 0.2s ease;
+  border-left: 3px solid;
+  cursor: pointer;
+  color: #212121;
+  width: 100%;
+}
+
+.activity-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.activity-card:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+/* No number circles - text based */
+.activity-number {
+  display: none;
+}
+
+/* Phase-specific Activity Card Styling */
+.activity-deployment-card {
+  background: var(--activity-deployment-bg);
+  border-left-color: var(--activity-deployment-border);
+}
+
+.activity-deployment-card:hover {
+  background: #b8deba;
+}
+
+.activity-ideation-card {
+  background: var(--activity-ideation-bg);
+  border-left-color: var(--activity-ideation-border);
+}
+
+.activity-ideation-card:hover {
+  background: #ffe9a3;
+}
+
+.activity-prototyping-card {
+  background: var(--activity-prototyping-bg);
+  border-left-color: var(--activity-prototyping-border);
+}
+
+.activity-prototyping-card:hover {
+  background: #b3dff9;
+}
+
+.activity-specifications-card {
+  background: var(--activity-specifications-bg);
+  border-left-color: var(--activity-specifications-border);
+}
+
+.activity-specifications-card:hover {
+  background: #d0d0d0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .methodology-diagram {
+    padding: 1rem;
+  }
+
+  .diagram-inner {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin: 200px auto;
+  }
+
+  .use-case-circle {
+    width: 90px;
+    height: 90px;
+    font-size: 0.75rem;
+  }
+
+  .quadrant {
+    padding: 0.5rem;
+  }
+
+  .phase-name {
+    font-size: 0.65rem;
+  }
+
+  .phase-action {
+    font-size: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .activity-group {
+    width: 45%;
+    max-width: 140px;
+  }
+
+  .activity-card {
+    font-size: 0.55rem;
+    padding: 0.35rem 0.5rem;
+  }
+
+  /* Top-left card - Green (Deployment) */
+  .activity-deployment {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 10px;
+    left: 0;
+    right: auto;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  /* Top-right card - Yellow (Ideation) */
+  .activity-ideation {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 10px;
+    left: auto;
+    right: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  /* Bottom-left card - Blue (Prototyping) */
+  .activity-prototyping {
+    top: 100%;
+    margin-top: 10px;
+    bottom: auto;
+    left: 0;
+    right: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  /* Bottom-right card - Grey (Specifications) */
+  .activity-specifications {
+    top: 100%;
+    margin-top: 10px;
+    bottom: auto;
+    left: auto;
+    right: 0;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+}
+
+
+
+/* Print Styles */
+@media print {
+  .methodology-diagram {
+    page-break-inside: avoid;
+  }
+
+  .quadrant,
+  .activity-card {
+    page-break-inside: avoid;
+  }
+
+  .quadrant:hover::before,
+  .activity-card:hover {
+    transform: none;
+  }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+  .quadrant,
+  .activity-card,
+  .quadrant::before {
+    transition: none;
+  }
+
+  .quadrant:hover::before,
+  .activity-card:hover {
+    transform: none;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .use-case-circle {
+    border-width: 4px;
+  }
+
+  .activity-card {
+    border-left-width: 4px;
+  }
+}
+
+/* Phase heading colors */
+h3#ideation-explore {
+  color: var(--ideation-primary);
+  font-weight: 700;
+}
+
+h3#specifications-validate {
+  color: var(--specifications-primary);
+  font-weight: 700;
+}
+
+h3#prototyping-define {
+  color: var(--prototyping-primary);
+  font-weight: 700;
+}
+
+h3#deployment-implement {
+  color: var(--deployment-primary);
+  font-weight: 700;
+}
