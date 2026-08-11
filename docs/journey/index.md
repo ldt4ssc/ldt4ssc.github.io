@@ -234,6 +234,10 @@ The progress tracker shows the 21-month pilot journey with key phases and delive
 
 ## Pilots {#pilots}
 
+<div class="map">
+  <iframe src="https://knowledgehub.ldt4ssc.eu/LDT4SSC_Pilots_Map/index.html"></iframe>
+</div>
+
 <div id="pilot-directory"></div>
 
 ---
