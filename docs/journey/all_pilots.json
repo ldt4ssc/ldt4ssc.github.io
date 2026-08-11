@@ -85,7 +85,7 @@
     "round": "round1",
     "short_name": "eu-twinlink",
     "start_date": "2026-05-15",
-    "status": "Onboarding",
+    "status": "EXPLORE",
     "work_strand": "WS1"
   },
   {
@@ -153,7 +153,7 @@
     "round": "round1",
     "short_name": "municipal",
     "start_date": "2026-05-15",
-    "status": "Onboarding",
+    "status": "EXPLORE",
     "work_strand": "WS1"
   }
 ]
