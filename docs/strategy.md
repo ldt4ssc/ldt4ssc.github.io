@@ -56,7 +56,7 @@ Europe’s competitiveness and digital sovereignty are strengthened.
 
 ---
 
-## Impact Evaluation Framework  
+## Impact Assessment Framework  
 
 As set out above, the overall ambition for promoting Local Digital Twins (LDTs) and working towards their federation is to drive sustainable local development, supported by digitalisation, the green transition, and thriving innovation ecosystems. To remain credible, the initiative defines and follows a robust impact assessment framework, with two main purposes:  
 
