@@ -23,7 +23,7 @@
     "organisation": ""
   },
   "description": "A federated Local Digital Twin pilot demonstrating that smaller municipalities can deploy effective, data-driven climate resilience services using commonly available data sources and replicable architectures.",
-  "external_page_url": "",
+  "external_page_url": "../journey/pilots/round2/cityres/",
   "focus_areas": [
     "Multi-hazard early warning",
     "resilience impact assessment for spatial planning"
@@ -42,7 +42,7 @@
   ],
   "name": "CITYRES",
   "pilot_id": "cityres",
-  "pilot_page_url": "",
+  "pilot_page_url": "../journey/pilots/round2/cityres/",
   "provider": "",
   "repository_url": "",
   "round": "round2",

@@ -18,7 +18,7 @@
     "organisation": ""
   },
   "description": "A cross-sectoral civic digital twin integrating climate, infrastructure, and emergency management data to support evidence-based governance, disaster preparedness, and citizen transparency in two European cities.",
-  "external_page_url": "",
+  "external_page_url": "../journey/pilots/round2/civictwinlab/",
   "focus_areas": [
     "Public climate & statistics dashboard",
     "emergency & disaster scenario planning"
@@ -37,7 +37,7 @@
   ],
   "name": "CivicTwinLab",
   "pilot_id": "civictwinlab",
-  "pilot_page_url": "",
+  "pilot_page_url": "../journey/pilots/round2/civictwinlab/",
   "provider": "",
   "repository_url": "",
   "round": "round2",

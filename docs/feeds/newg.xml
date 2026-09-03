@@ -2,11 +2,11 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>NeWG+ — LDT4SSC Updates</title>
-    <link>https://knowledgehub.ldt4ssc.eu/</link>
+    <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/</link>
     <description>A two-scale digital twin pilot connecting a major wholesale food market in Madrid with a small producer city in Codogno to transform agrifood logistics and commerce into reusable governed public digital infrastructure.</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Sep 2026 15:31:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 15:35:54 +0000</lastBuildDate>
   </channel>
 </rss>

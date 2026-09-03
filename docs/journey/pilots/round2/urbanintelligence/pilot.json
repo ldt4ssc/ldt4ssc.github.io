@@ -23,7 +23,7 @@
     "organisation": ""
   },
   "description": "A federated urban data space interconnecting two municipal Local Digital Twins to enable cross-city data sharing, predictive traffic planning, and environmental scenario analysis.",
-  "external_page_url": "",
+  "external_page_url": "../journey/pilots/round2/urbanintelligence/",
   "focus_areas": [
     "Traffic & environmental data sharing",
     "predictive traffic & event planning",
@@ -43,7 +43,7 @@
   ],
   "name": "UrbanIntelligence",
   "pilot_id": "urbanintelligence",
-  "pilot_page_url": "",
+  "pilot_page_url": "../journey/pilots/round2/urbanintelligence/",
   "provider": "",
   "repository_url": "",
   "round": "round2",

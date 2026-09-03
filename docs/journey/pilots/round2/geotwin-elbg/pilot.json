@@ -28,7 +28,7 @@
     "organisation": ""
   },
   "description": "A zero-hardware cross-border digital twin leveraging Copernicus satellite data and AI to deliver predictive air quality risk assessment and prescriptive policy analysis for small municipalities unable to afford physical sensor infrastructure.",
-  "external_page_url": "",
+  "external_page_url": "../journey/pilots/round2/geotwin-elbg/",
   "focus_areas": [
     "Predictive air quality risk assessment",
     "environmental policy scenario analysis"
@@ -47,7 +47,7 @@
   ],
   "name": "GeoTwin-ELBG",
   "pilot_id": "geotwin-elbg",
-  "pilot_page_url": "",
+  "pilot_page_url": "../journey/pilots/round2/geotwin-elbg/",
   "provider": "",
   "repository_url": "",
   "round": "round2",

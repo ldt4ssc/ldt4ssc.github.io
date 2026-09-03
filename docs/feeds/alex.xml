@@ -2,11 +2,11 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>ALEX — LDT4SSC Updates</title>
-    <link>https://knowledgehub.ldt4ssc.eu/</link>
+    <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/alex/</link>
     <description>An AI-powered Local Digital Twin initiative evolving existing urban platforms into dynamic tools for building energy retrofit prioritisation, climate neutrality planning, and sustainable urban design.</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Sep 2026 15:31:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 15:35:54 +0000</lastBuildDate>
   </channel>
 </rss>

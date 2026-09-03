@@ -43,7 +43,7 @@
     "organisation": ""
   },
   "description": "A satellite-only, hardware-free cross-border Local Digital Twin using Copernicus and open meteorological data to deliver predictive flood risk forecasting and resilience planning for small coastal municipalities.",
-  "external_page_url": "",
+  "external_page_url": "../journey/pilots/round2/aquaguard-twin/",
   "focus_areas": [
     "Predictive flood risk forecasting",
     "drainage maintenance prioritisation & resilience planning"
@@ -62,7 +62,7 @@
   ],
   "name": "AquaGuard-Twin",
   "pilot_id": "aquaguard-twin",
-  "pilot_page_url": "",
+  "pilot_page_url": "../journey/pilots/round2/aquaguard-twin/",
   "provider": "",
   "repository_url": "",
   "round": "round2",

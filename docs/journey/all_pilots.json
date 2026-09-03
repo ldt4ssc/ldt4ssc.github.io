@@ -181,7 +181,7 @@
       "organisation": ""
     },
     "description": "A federated urban data space interconnecting two municipal Local Digital Twins to enable cross-city data sharing, predictive traffic planning, and environmental scenario analysis.",
-    "external_page_url": "",
+    "external_page_url": "../journey/pilots/round2/urbanintelligence/",
     "focus_areas": [
       "Traffic & environmental data sharing",
       "predictive traffic & event planning",
@@ -201,7 +201,7 @@
     ],
     "name": "UrbanIntelligence",
     "pilot_id": "urbanintelligence",
-    "pilot_page_url": "",
+    "pilot_page_url": "../journey/pilots/round2/urbanintelligence/",
     "provider": "",
     "repository_url": "",
     "round": "round2",
@@ -240,7 +240,7 @@
       "organisation": ""
     },
     "description": "An AI-powered Local Digital Twin initiative evolving existing urban platforms into dynamic tools for building energy retrofit prioritisation, climate neutrality planning, and sustainable urban design.",
-    "external_page_url": "",
+    "external_page_url": "../journey/pilots/round2/alex/",
     "focus_areas": [
       "Building energy retrofit prioritisation",
       "climate action scenario simulation",
@@ -260,7 +260,7 @@
     ],
     "name": "ALEX",
     "pilot_id": "alex",
-    "pilot_page_url": "",
+    "pilot_page_url": "../journey/pilots/round2/alex/",
     "provider": "",
     "repository_url": "",
     "round": "round2",
@@ -299,7 +299,7 @@
       "organisation": ""
     },
     "description": "A zero-hardware cross-border digital twin leveraging Copernicus satellite data and AI to deliver predictive air quality risk assessment and prescriptive policy analysis for small municipalities unable to afford physical sensor infrastructure.",
-    "external_page_url": "",
+    "external_page_url": "../journey/pilots/round2/geotwin-elbg/",
     "focus_areas": [
       "Predictive air quality risk assessment",
       "environmental policy scenario analysis"
@@ -318,7 +318,7 @@
     ],
     "name": "GeoTwin-ELBG",
     "pilot_id": "geotwin-elbg",
-    "pilot_page_url": "",
+    "pilot_page_url": "../journey/pilots/round2/geotwin-elbg/",
     "provider": "",
     "repository_url": "",
     "round": "round2",
@@ -372,7 +372,7 @@
       "organisation": ""
     },
     "description": "A satellite-only, hardware-free cross-border Local Digital Twin using Copernicus and open meteorological data to deliver predictive flood risk forecasting and resilience planning for small coastal municipalities.",
-    "external_page_url": "",
+    "external_page_url": "../journey/pilots/round2/aquaguard-twin/",
     "focus_areas": [
       "Predictive flood risk forecasting",
       "drainage maintenance prioritisation & resilience planning"
@@ -391,7 +391,7 @@
     ],
     "name": "AquaGuard-Twin",
     "pilot_id": "aquaguard-twin",
-    "pilot_page_url": "",
+    "pilot_page_url": "../journey/pilots/round2/aquaguard-twin/",
     "provider": "",
     "repository_url": "",
     "round": "round2",
@@ -425,7 +425,7 @@
       "organisation": ""
     },
     "description": "A federated Local Digital Twin pilot demonstrating that smaller municipalities can deploy effective, data-driven climate resilience services using commonly available data sources and replicable architectures.",
-    "external_page_url": "",
+    "external_page_url": "../journey/pilots/round2/cityres/",
     "focus_areas": [
       "Multi-hazard early warning",
       "resilience impact assessment for spatial planning"
@@ -444,7 +444,7 @@
     ],
     "name": "CITYRES",
     "pilot_id": "cityres",
-    "pilot_page_url": "",
+    "pilot_page_url": "../journey/pilots/round2/cityres/",
     "provider": "",
     "repository_url": "",
     "round": "round2",
@@ -473,7 +473,7 @@
       "organisation": ""
     },
     "description": "A cross-sectoral civic digital twin integrating climate, infrastructure, and emergency management data to support evidence-based governance, disaster preparedness, and citizen transparency in two European cities.",
-    "external_page_url": "",
+    "external_page_url": "../journey/pilots/round2/civictwinlab/",
     "focus_areas": [
       "Public climate & statistics dashboard",
       "emergency & disaster scenario planning"
@@ -492,7 +492,7 @@
     ],
     "name": "CivicTwinLab",
     "pilot_id": "civictwinlab",
-    "pilot_page_url": "",
+    "pilot_page_url": "../journey/pilots/round2/civictwinlab/",
     "provider": "",
     "repository_url": "",
     "round": "round2",
@@ -536,7 +536,7 @@
       "organisation": ""
     },
     "description": "A two-scale digital twin pilot connecting a major wholesale food market in Madrid with a small producer city in Codogno to transform agrifood logistics and commerce into reusable governed public digital infrastructure.",
-    "external_page_url": "",
+    "external_page_url": "../journey/pilots/round2/newg/",
     "focus_areas": [
       "Fresh-food logistics optimisation",
       "governed data publishing",
@@ -556,7 +556,7 @@
     ],
     "name": "NeWG+",
     "pilot_id": "newg",
-    "pilot_page_url": "",
+    "pilot_page_url": "../journey/pilots/round2/newg/",
     "provider": "",
     "repository_url": "",
     "round": "round2",
@@ -615,7 +615,7 @@
       "organisation": ""
     },
     "description": "A federated network of AI-reasoning Local Digital Twins transforming public buildings into a coordinated energy flexibility and renewable energy integration system for municipalities.",
-    "external_page_url": "",
+    "external_page_url": "../journey/pilots/round2/perform/",
     "focus_areas": [
       "Building energy monitoring & optimisation",
       "renewable energy & storage investment planning"
@@ -634,7 +634,7 @@
     ],
     "name": "PERFORM",
     "pilot_id": "perform",
-    "pilot_page_url": "",
+    "pilot_page_url": "../journey/pilots/round2/perform/",
     "provider": "",
     "repository_url": "",
     "round": "round2",

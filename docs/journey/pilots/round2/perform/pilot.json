@@ -48,7 +48,7 @@
     "organisation": ""
   },
   "description": "A federated network of AI-reasoning Local Digital Twins transforming public buildings into a coordinated energy flexibility and renewable energy integration system for municipalities.",
-  "external_page_url": "",
+  "external_page_url": "../journey/pilots/round2/perform/",
   "focus_areas": [
     "Building energy monitoring & optimisation",
     "renewable energy & storage investment planning"
@@ -67,7 +67,7 @@
   ],
   "name": "PERFORM",
   "pilot_id": "perform",
-  "pilot_page_url": "",
+  "pilot_page_url": "../journey/pilots/round2/perform/",
   "provider": "",
   "repository_url": "",
   "round": "round2",
