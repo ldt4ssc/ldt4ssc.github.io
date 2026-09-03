@@ -1,0 +1,64 @@
+{
+  "composition": "Ayuntamiento de Madrid, Comune di Codogno, capillar IT, SEAMWARE, Mines Paris - PSL, Politecnico di Milano (POLIMI)",
+  "consortium": [
+    {
+      "country_code": "",
+      "name": "Ayuntamiento de Madrid DGOD",
+      "role": "Pilot lead"
+    },
+    {
+      "country_code": "",
+      "name": "capillar IT",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "SEAMWARE",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Mines Paris - PSL",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Politecnico di Milano (POLIMI)",
+      "role": "Partner"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "name": "Ayuntamiento de Madrid DGOD",
+    "organisation": ""
+  },
+  "description": "A two-scale digital twin pilot connecting a major wholesale food market in Madrid with a small producer city in Codogno to transform agrifood logistics and commerce into reusable governed public digital infrastructure.",
+  "external_page_url": "",
+  "focus_areas": [
+    "Fresh-food logistics optimisation",
+    "governed data publishing",
+    "agrifood corridor simulation & planning"
+  ],
+  "locations": [
+    {
+      "city": "Madrid",
+      "country": "",
+      "country_code": ""
+    },
+    {
+      "city": "Codogno",
+      "country": "",
+      "country_code": ""
+    }
+  ],
+  "name": "NeWG+",
+  "pilot_id": "newg",
+  "pilot_page_url": "",
+  "provider": "",
+  "repository_url": "",
+  "round": "round2",
+  "short_name": "newg",
+  "start_date": "2026-09-15",
+  "status": "Selected",
+  "work_strand": "WS1"
+}

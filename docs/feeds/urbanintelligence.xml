@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>LDT4SSC Pilot Updates</title>
-    <link>https://knowledgehub.ldt4ssc.eu/journey/feed/</link>
-    <description>All updates from LDT4SSC pilots</description>
+    <title>UrbanIntelligence — LDT4SSC Updates</title>
+    <link>https://knowledgehub.ldt4ssc.eu/</link>
+    <description>A federated urban data space interconnecting two municipal Local Digital Twins to enable cross-city data sharing, predictive traffic planning, and environmental scenario analysis.</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>

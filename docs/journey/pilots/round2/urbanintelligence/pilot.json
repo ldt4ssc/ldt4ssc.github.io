@@ -1,0 +1,54 @@
+{
+  "composition": "City of Kranj, City of Pula, Riko, 3fs",
+  "consortium": [
+    {
+      "country_code": "",
+      "name": "City of Kranj",
+      "role": "Pilot lead"
+    },
+    {
+      "country_code": "",
+      "name": "Riko",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "3fs",
+      "role": "Partner"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "name": "City of Kranj",
+    "organisation": ""
+  },
+  "description": "A federated urban data space interconnecting two municipal Local Digital Twins to enable cross-city data sharing, predictive traffic planning, and environmental scenario analysis.",
+  "external_page_url": "",
+  "focus_areas": [
+    "Traffic & environmental data sharing",
+    "predictive traffic & event planning",
+    "environmental measure scenario analysis"
+  ],
+  "locations": [
+    {
+      "city": "Kranj",
+      "country": "",
+      "country_code": ""
+    },
+    {
+      "city": "Pula",
+      "country": "",
+      "country_code": ""
+    }
+  ],
+  "name": "UrbanIntelligence",
+  "pilot_id": "urbanintelligence",
+  "pilot_page_url": "",
+  "provider": "",
+  "repository_url": "",
+  "round": "round2",
+  "short_name": "urbanintelligence",
+  "start_date": "2026-09-15",
+  "status": "Selected",
+  "work_strand": "WS1"
+}

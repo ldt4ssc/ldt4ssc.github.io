@@ -1,0 +1,73 @@
+{
+  "composition": "Multiversal IKE, Lioncode, Union Code X Monoproso pi IKE, Municipality of Pangaio, Municipality of Limanu, Progresso, International Hellenic University (IHU) -- Department of Science and Technology, Fundatia Magdalena Deijs",
+  "consortium": [
+    {
+      "country_code": "",
+      "name": "Multiversal IKE",
+      "role": "Pilot lead"
+    },
+    {
+      "country_code": "",
+      "name": "Multiversal IKE",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Lioncode",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Union Code X Monoproso pi IKE",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Progresso",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "International Hellenic University (IHU) -- Department of Science and Technology",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Fundatia Magdalena Deijs",
+      "role": "Partner"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "name": "Multiversal IKE",
+    "organisation": ""
+  },
+  "description": "A satellite-only, hardware-free cross-border Local Digital Twin using Copernicus and open meteorological data to deliver predictive flood risk forecasting and resilience planning for small coastal municipalities.",
+  "external_page_url": "",
+  "focus_areas": [
+    "Predictive flood risk forecasting",
+    "drainage maintenance prioritisation & resilience planning"
+  ],
+  "locations": [
+    {
+      "city": "Pangaio",
+      "country": "",
+      "country_code": ""
+    },
+    {
+      "city": "Limanu",
+      "country": "",
+      "country_code": ""
+    }
+  ],
+  "name": "AquaGuard-Twin",
+  "pilot_id": "aquaguard-twin",
+  "pilot_page_url": "",
+  "provider": "",
+  "repository_url": "",
+  "round": "round2",
+  "short_name": "aquaguard-twin",
+  "start_date": "2026-09-15",
+  "status": "Selected",
+  "work_strand": "WS2"
+}

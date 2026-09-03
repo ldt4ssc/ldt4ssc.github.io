@@ -1,0 +1,53 @@
+{
+  "composition": "Municipality of Ko\u010devje, Municipality of Onda, VTC, Riko",
+  "consortium": [
+    {
+      "country_code": "",
+      "name": "Municipality of Ko\u010devje",
+      "role": "Pilot lead"
+    },
+    {
+      "country_code": "",
+      "name": "VTC",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Riko",
+      "role": "Partner"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "name": "Municipality of Ko\u010devje",
+    "organisation": ""
+  },
+  "description": "A federated Local Digital Twin pilot demonstrating that smaller municipalities can deploy effective, data-driven climate resilience services using commonly available data sources and replicable architectures.",
+  "external_page_url": "",
+  "focus_areas": [
+    "Multi-hazard early warning",
+    "resilience impact assessment for spatial planning"
+  ],
+  "locations": [
+    {
+      "city": "Ko\u010devje",
+      "country": "",
+      "country_code": ""
+    },
+    {
+      "city": "Onda",
+      "country": "",
+      "country_code": ""
+    }
+  ],
+  "name": "CITYRES",
+  "pilot_id": "cityres",
+  "pilot_page_url": "",
+  "provider": "",
+  "repository_url": "",
+  "round": "round2",
+  "short_name": "cityres",
+  "start_date": "2026-09-15",
+  "status": "Selected",
+  "work_strand": "WS2"
+}

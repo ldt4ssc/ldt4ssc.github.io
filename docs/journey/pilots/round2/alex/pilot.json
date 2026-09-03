@@ -1,0 +1,59 @@
+{
+  "composition": "City of Helsinki, Prague Institute of Planning and Development, Operator ICT Prague, Czech Academy of Sciences, Land Survey of Finland / Finnish Geospatial Research Institute (NLS FGI)",
+  "consortium": [
+    {
+      "country_code": "",
+      "name": "City of Helsinki",
+      "role": "Pilot lead"
+    },
+    {
+      "country_code": "",
+      "name": "Operator ICT Prague",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Czech Academy of Sciences",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Land Survey of Finland / Finnish Geospatial Research Institute (NLS FGI)",
+      "role": "Partner"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "name": "City of Helsinki",
+    "organisation": ""
+  },
+  "description": "An AI-powered Local Digital Twin initiative evolving existing urban platforms into dynamic tools for building energy retrofit prioritisation, climate neutrality planning, and sustainable urban design.",
+  "external_page_url": "",
+  "focus_areas": [
+    "Building energy retrofit prioritisation",
+    "climate action scenario simulation",
+    "sustainable urban planning"
+  ],
+  "locations": [
+    {
+      "city": "Helsinki",
+      "country": "",
+      "country_code": ""
+    },
+    {
+      "city": "Prague",
+      "country": "",
+      "country_code": ""
+    }
+  ],
+  "name": "ALEX",
+  "pilot_id": "alex",
+  "pilot_page_url": "",
+  "provider": "",
+  "repository_url": "",
+  "round": "round2",
+  "short_name": "alex",
+  "start_date": "2026-09-15",
+  "status": "Selected",
+  "work_strand": "WS3"
+}
