@@ -1,0 +1,78 @@
+{
+  "composition": "Clockwork, Ubitech, Municipality of Naoussa, Stereograph, Municipality of Vila Franca de Xira, Technical University of Denmark, Nhood Services Portugal, AI-nergy, Austrian Institute of Technology",
+  "consortium": [
+    {
+      "country_code": "",
+      "name": "Clockwork",
+      "role": "Pilot lead"
+    },
+    {
+      "country_code": "",
+      "name": "Clockwork",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Ubitech",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Stereograph",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Technical University of Denmark",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Nhood Services Portugal",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "AI-nergy",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Austrian Institute of Technology",
+      "role": "Partner"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "name": "Clockwork",
+    "organisation": ""
+  },
+  "description": "A federated network of AI-reasoning Local Digital Twins transforming public buildings into a coordinated energy flexibility and renewable energy integration system for municipalities.",
+  "external_page_url": "../journey/pilots/round2/perform/",
+  "focus_areas": [
+    "Building energy monitoring & optimisation",
+    "renewable energy & storage investment planning"
+  ],
+  "locations": [
+    {
+      "city": "Naoussa",
+      "country": "",
+      "country_code": ""
+    },
+    {
+      "city": "Vila Franca de Xira",
+      "country": "",
+      "country_code": ""
+    }
+  ],
+  "name": "PERFORM",
+  "pilot_id": "perform",
+  "pilot_page_url": "../journey/pilots/round2/perform/",
+  "provider": "",
+  "repository_url": "",
+  "round": "round2",
+  "short_name": "perform",
+  "start_date": "2026-09-15",
+  "status": "Selected",
+  "work_strand": "WS2"
+}

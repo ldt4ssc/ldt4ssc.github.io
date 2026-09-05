@@ -1,0 +1,58 @@
+{
+  "composition": "Lioncode EE, Nestos Municipality, Sandanski Municipality, Kavala Chamber of Commerce, Laboratory of Geoinformatics - AUTH (LabGeo)",
+  "consortium": [
+    {
+      "country_code": "",
+      "name": "Lioncode EE",
+      "role": "Pilot lead"
+    },
+    {
+      "country_code": "",
+      "name": "Lioncode EE",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Kavala Chamber of Commerce",
+      "role": "Partner"
+    },
+    {
+      "country_code": "",
+      "name": "Laboratory of Geoinformatics - AUTH (LabGeo)",
+      "role": "Partner"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "name": "Lioncode EE",
+    "organisation": ""
+  },
+  "description": "A zero-hardware cross-border digital twin leveraging Copernicus satellite data and AI to deliver predictive air quality risk assessment and prescriptive policy analysis for small municipalities unable to afford physical sensor infrastructure.",
+  "external_page_url": "../journey/pilots/round2/geotwin-elbg/",
+  "focus_areas": [
+    "Predictive air quality risk assessment",
+    "environmental policy scenario analysis"
+  ],
+  "locations": [
+    {
+      "city": "Nestos",
+      "country": "",
+      "country_code": ""
+    },
+    {
+      "city": "Sandanski",
+      "country": "",
+      "country_code": ""
+    }
+  ],
+  "name": "GeoTwin-ELBG",
+  "pilot_id": "geotwin-elbg",
+  "pilot_page_url": "../journey/pilots/round2/geotwin-elbg/",
+  "provider": "",
+  "repository_url": "",
+  "round": "round2",
+  "short_name": "geotwin-elbg",
+  "start_date": "2026-09-15",
+  "status": "Selected",
+  "work_strand": "WS2"
+}

@@ -1,0 +1,48 @@
+{
+  "composition": "City of Ingolstadt, Baral Geohaus - Geoconsulting AG, City of Zagreb",
+  "consortium": [
+    {
+      "country_code": "",
+      "name": "Baral Geohaus - Geoconsulting AG",
+      "role": "Pilot lead"
+    },
+    {
+      "country_code": "",
+      "name": "Baral Geohaus - Geoconsulting AG",
+      "role": "Partner"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "name": "Baral Geohaus - Geoconsulting AG",
+    "organisation": ""
+  },
+  "description": "A cross-sectoral civic digital twin integrating climate, infrastructure, and emergency management data to support evidence-based governance, disaster preparedness, and citizen transparency in two European cities.",
+  "external_page_url": "../journey/pilots/round2/civictwinlab/",
+  "focus_areas": [
+    "Public climate & statistics dashboard",
+    "emergency & disaster scenario planning"
+  ],
+  "locations": [
+    {
+      "city": "Ingolstadt",
+      "country": "",
+      "country_code": ""
+    },
+    {
+      "city": "Zagreb",
+      "country": "",
+      "country_code": ""
+    }
+  ],
+  "name": "CivicTwinLab",
+  "pilot_id": "civictwinlab",
+  "pilot_page_url": "../journey/pilots/round2/civictwinlab/",
+  "provider": "",
+  "repository_url": "",
+  "round": "round2",
+  "short_name": "civictwinlab",
+  "start_date": "2026-09-15",
+  "status": "Selected",
+  "work_strand": "WS2"
+}
