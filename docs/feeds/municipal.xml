@@ -3,10 +3,11 @@
   <channel>
     <title>MUNICIPAL — LDT4SSC Updates</title>
     <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round1/municipal/</link>
-    <description>The Murcia-Nicosia pilot connects the MiMurcia and iniCOSIA platforms via the SIMPL/CEEDS framework to share complementary LDT services across borders - combining Murcia's well-being and urban services with Nicosia's energy and mobility IoT capabilities.</description>
+    <description>The MUNICIPAL pilot demonstrates a networked ecosystem of Local Digital Twins across energy, mobility, and public services by interconnecting the cities of Murcia and Nicosia. It leverages the SIMPL middleware to enable sovereign, cross-border sharing of data and AI-driven digital services.
+</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Sep 2026 11:07:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 14:26:19 +0000</lastBuildDate>
   </channel>
 </rss>

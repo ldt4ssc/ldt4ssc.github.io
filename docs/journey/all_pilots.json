@@ -92,69 +92,90 @@
     "composition": "Ubitech, Technical University of Denmark, Murcia, Ai-nergy, Nicosia Municipality, University of Cyprus, Odins (Odins)",
     "consortium": [
       {
-        "country_code": "",
         "name": "Ubitech",
-        "role": "Pilot lead"
+        "role": "Pilot lead",
+        "country_code": "GR",
+        "website": "https://ubitech.eu/"
       },
       {
-        "country_code": "",
-        "name": "Ubitech",
-        "role": "Partner"
-      },
-      {
-        "country_code": "",
         "name": "Technical University of Denmark",
-        "role": "Partner"
+        "role": "Research",
+        "country_code": "DK",
+        "website": "https://www.dtu.dk/"
       },
       {
-        "country_code": "",
-        "name": "Ai-nergy",
-        "role": "Partner"
+        "name": "OdinS",
+        "role": "Technology partner",
+        "country_code": "ES",
+        "website": "https://odins.ai/"
       },
       {
-        "country_code": "",
+        "name": "AI-nergy",
+        "role": "Technology partner",
+        "country_code": "DK",
+        "website": "https://ai-nergy.net/"
+      },
+      {
         "name": "University of Cyprus",
-        "role": "Partner"
+        "role": "Research",
+        "country_code": "CY",
+        "website": "https://www.ucy.ac.cy/"
       },
       {
-        "country_code": "",
-        "name": "Odins (Odins)",
-        "role": "Partner"
+        "name": "Murcia Municipality",
+        "role": "Public authority",
+        "country_code": "ES",
+        "website": "https://web.murcia.es/"
+      },
+      {
+        "name": "Nicosia Municipality",
+        "role": "Public authority",
+        "country_code": "CY",
+        "website": "https://www.nicosia.org.cy/"
       }
     ],
     "contact": {
-      "email": "",
-      "name": "Ubitech",
-      "organisation": ""
+      "name": "Stamatis Diakakis",
+      "email": "sdiakakis@ubitech.eu",
+      "organisation": "Ubitech"
     },
-    "description": "The Murcia-Nicosia pilot connects the MiMurcia and iniCOSIA platforms via the SIMPL/CEEDS framework to share complementary LDT services across borders - combining Murcia's well-being and urban services with Nicosia's energy and mobility IoT capabilities.",
+    "description": "The MUNICIPAL pilot demonstrates a networked ecosystem of Local Digital Twins across energy, mobility, and public services by interconnecting the cities of Murcia and Nicosia. It leverages the SIMPL middleware to enable sovereign, cross-border sharing of data and AI-driven digital services.\n",
     "external_page_url": "../journey/pilots/round1/municipal/",
     "focus_areas": [
-      "Energy & mobility",
-      "smart public lighting"
+      "Mobility",
+      "Air-quality",
+      "Public lighting"
     ],
     "locations": [
       {
         "city": "Murcia",
-        "country": "",
-        "country_code": ""
+        "country": "Spain",
+        "country_code": "ES"
       },
       {
         "city": "Nicosia",
-        "country": "",
-        "country_code": ""
+        "country": "Cyprus",
+        "country_code": "CY"
       }
     ],
     "name": "MUNICIPAL",
     "pilot_id": "municipal",
     "pilot_page_url": "../journey/pilots/round1/municipal/",
     "provider": "github",
-    "repository_url": "",
+    "repository_url": "https://github.com/ptriantis-ubitech/ldt4ssc-municipal",
     "round": "round1",
     "short_name": "municipal",
-    "start_date": "2026-05-15",
+    "start_date": "2026-05-14",
     "status": "EXPLORE",
-    "work_strand": "WS1"
+    "work_strand": "WS1",
+    "schema_version": 1,
+    "end_date": "2027-11-14",
+    "external_links": [
+      {
+        "label": "UBITECH MUNICIPAL Press Release",
+        "url": "https://ubitech.eu/ubitech-awarded-ldt4ssc-cascading-grant-to-advance-cross-border-digital-twin-interconnection/"
+      }
+    ]
   },
   {
     "composition": "City of Kranj, City of Pula, Riko, 3fs",
