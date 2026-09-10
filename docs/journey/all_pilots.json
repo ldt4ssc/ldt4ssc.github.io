@@ -228,7 +228,7 @@
     "round": "round2",
     "short_name": "urbanintelligence",
     "start_date": "2026-09-15",
-    "status": "Selected",
+    "status": "Onboarding",
     "work_strand": "WS1"
   },
   {
@@ -287,7 +287,7 @@
     "round": "round2",
     "short_name": "alex",
     "start_date": "2026-09-15",
-    "status": "Selected",
+    "status": "Onboarding",
     "work_strand": "WS3"
   },
   {
@@ -345,7 +345,7 @@
     "round": "round2",
     "short_name": "geotwin-elbg",
     "start_date": "2026-09-15",
-    "status": "Selected",
+    "status": "Onboarding",
     "work_strand": "WS2"
   },
   {
@@ -418,7 +418,7 @@
     "round": "round2",
     "short_name": "aquaguard-twin",
     "start_date": "2026-09-15",
-    "status": "Selected",
+    "status": "Onboarding",
     "work_strand": "WS2"
   },
   {
@@ -471,7 +471,7 @@
     "round": "round2",
     "short_name": "cityres",
     "start_date": "2026-09-15",
-    "status": "Selected",
+    "status": "Onboarding",
     "work_strand": "WS2"
   },
   {
@@ -519,7 +519,7 @@
     "round": "round2",
     "short_name": "civictwinlab",
     "start_date": "2026-09-15",
-    "status": "Selected",
+    "status": "Onboarding",
     "work_strand": "WS2"
   },
   {
@@ -583,7 +583,7 @@
     "round": "round2",
     "short_name": "newg",
     "start_date": "2026-09-15",
-    "status": "Selected",
+    "status": "Onboarding",
     "work_strand": "WS1"
   },
   {
@@ -661,7 +661,7 @@
     "round": "round2",
     "short_name": "perform",
     "start_date": "2026-09-15",
-    "status": "Selected",
+    "status": "Onboarding",
     "work_strand": "WS2"
   }
 ]
