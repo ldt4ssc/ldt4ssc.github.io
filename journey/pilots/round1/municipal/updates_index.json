@@ -1,0 +1,26 @@
+[
+  {
+    "authors": [
+      {
+        "name": "Panagiotis Triantis",
+        "organisation": "Ubitech"
+      }
+    ],
+    "date": "2026-08-07",
+    "pilot_name": "MUNICIPAL",
+    "pilot_page_url": "../journey/pilots/round1/municipal/",
+    "short_name": "municipal",
+    "slug": "2026-08-07-municipal-kickoff",
+    "summary": "The MUNICIPAL pilot project has officially launched following our kick-off meeting hosted by the City Council of Murcia on July 7th and 8th. The event brought together our consortium of seven partners",
+    "tags": [
+      "kick-off",
+      "interoperability",
+      "cross-border",
+      "simpl"
+    ],
+    "title": "MUNICIPAL Project Kick-Off in Murcia",
+    "topics": [],
+    "type": "event",
+    "work_strand": "WS1"
+  }
+]
