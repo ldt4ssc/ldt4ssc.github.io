@@ -1,0 +1,44 @@
+{
+  "composition": "Nice company, Awesome city, Amazing institute",
+  "consortium": [
+    {
+      "country_code": "LU",
+      "name": "Nice Company",
+      "role": "Pilot Lead",
+      "website": "<https://...>"
+    }
+  ],
+  "contact": {
+    "email": "<contact@example.org>",
+    "name": "<Contact person name>",
+    "organisation": "<Organisation name>"
+  },
+  "description": "This is a demo pilot page. Please disconsider all other stuff\n",
+  "external_page_url": "../journey/pilots/round1/demo-pilot/",
+  "focus_areas": [
+    "mobility",
+    "safety"
+  ],
+  "locations": [
+    {
+      "city": "Gotham",
+      "country": "Luxembourg",
+      "country_code": "LU"
+    },
+    {
+      "city": "Narnia",
+      "country": "Luxembourg",
+      "country_code": "LU"
+    }
+  ],
+  "name": "Demo Pilot",
+  "pilot_id": "demo-pilot",
+  "pilot_page_url": "../journey/pilots/round1/demo-pilot/",
+  "repository_url": "https://github.com/lucvmag/tempate-test",
+  "round": "round1",
+  "schema_version": 1,
+  "short_name": "demo-pilot",
+  "start_date": "2026-05-15",
+  "status": "EXPLORE",
+  "work_strand": "WS1"
+}
