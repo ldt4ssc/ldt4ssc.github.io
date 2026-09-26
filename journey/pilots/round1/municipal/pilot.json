@@ -1,0 +1,89 @@
+{
+  "composition": "Ubitech, Technical University of Denmark, Murcia, Ai-nergy, Nicosia Municipality, University of Cyprus, Odins (Odins)",
+  "consortium": [
+    {
+      "country_code": "GR",
+      "name": "Ubitech",
+      "role": "Pilot lead",
+      "website": "https://ubitech.eu/"
+    },
+    {
+      "country_code": "DK",
+      "name": "Technical University of Denmark",
+      "role": "Research",
+      "website": "https://www.dtu.dk/"
+    },
+    {
+      "country_code": "ES",
+      "name": "OdinS",
+      "role": "Technology partner",
+      "website": "https://odins.ai/"
+    },
+    {
+      "country_code": "DK",
+      "name": "AI-nergy",
+      "role": "Technology partner",
+      "website": "https://ai-nergy.net/"
+    },
+    {
+      "country_code": "CY",
+      "name": "University of Cyprus",
+      "role": "Research",
+      "website": "https://www.ucy.ac.cy/"
+    },
+    {
+      "country_code": "ES",
+      "name": "Murcia Municipality",
+      "role": "Public authority",
+      "website": "https://web.murcia.es/"
+    },
+    {
+      "country_code": "CY",
+      "name": "Nicosia Municipality",
+      "role": "Public authority",
+      "website": "https://www.nicosia.org.cy/"
+    }
+  ],
+  "contact": {
+    "email": "sdiakakis@ubitech.eu",
+    "name": "Stamatis Diakakis",
+    "organisation": "Ubitech"
+  },
+  "description": "The MUNICIPAL pilot demonstrates a networked ecosystem of Local Digital Twins across energy, mobility, and public services by interconnecting the cities of Murcia and Nicosia. It leverages the SIMPL middleware to enable sovereign, cross-border sharing of data and AI-driven digital services.\n",
+  "end_date": "2027-11-14",
+  "external_links": [
+    {
+      "label": "UBITECH MUNICIPAL Press Release",
+      "url": "https://ubitech.eu/ubitech-awarded-ldt4ssc-cascading-grant-to-advance-cross-border-digital-twin-interconnection/"
+    }
+  ],
+  "external_page_url": "../journey/pilots/round1/municipal/",
+  "focus_areas": [
+    "Mobility",
+    "Air-quality",
+    "Public lighting"
+  ],
+  "locations": [
+    {
+      "city": "Murcia",
+      "country": "Spain",
+      "country_code": "ES"
+    },
+    {
+      "city": "Nicosia",
+      "country": "Cyprus",
+      "country_code": "CY"
+    }
+  ],
+  "name": "MUNICIPAL",
+  "pilot_id": "municipal",
+  "pilot_page_url": "../journey/pilots/round1/municipal/",
+  "provider": "github",
+  "repository_url": "https://github.com/ptriantis-ubitech/ldt4ssc-municipal",
+  "round": "round1",
+  "schema_version": 1,
+  "short_name": "municipal",
+  "start_date": "2026-05-14",
+  "status": "EXPLORE",
+  "work_strand": "WS1"
+}
