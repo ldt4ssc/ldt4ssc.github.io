@@ -1,0 +1,12 @@
+{
+  "@context": [
+    "https://smart-data-models.github.io/dataModel.Building/context.jsonld",
+    {
+      "solar": "https://knowledgehub.ldt4ssc.eu/assets/demo/vocab#",
+      "rooftopArea": "solar:rooftopArea",
+      "installedCapacity": "solar:installedCapacity",
+      "tiltAngle": "solar:tiltAngle",
+      "generatedPower": "solar:generatedPower"
+    }
+  ]
+}
