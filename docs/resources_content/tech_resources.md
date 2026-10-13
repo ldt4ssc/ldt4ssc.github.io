@@ -203,7 +203,7 @@ The technical resource library is categorised by layer (according to the MIM8 la
           <span class="info-icon">?</span>
           <div class="info-tooltip-content">
             Based on the MIM8 layers
-            <a href="https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2025-10/eu_ldt_presentation.pdf" target="_blank" class="tooltip-link">See more</a>
+            <a href="https://mims.oascities.org/mims-specification-v9.0/local-digital-twins" target="_blank" class="tooltip-link">See more</a>
           </div>
         </span>
       </label>
@@ -218,8 +218,8 @@ The technical resource library is categorised by layer (according to the MIM8 la
         <span class="info-tooltip-wrapper">
           <span class="info-icon">?</span>
           <div class="info-tooltip-content">
-            Based on the Minimal Interoperability Mechanisms (MIMs) Plus Specification 8.0
-            <a href="https://living-in.eu/sites/default/files/files/mims-plus-v.8_2.pdf" target="_blank" class="tooltip-link">See more</a>
+            Based on the Minimal Interoperability Mechanisms (MIMs) Plus Specification 9.0
+            <a href="https://mims.oascities.org/mims-plus-specification-9.0" target="_blank" class="tooltip-link">See more</a>
           </div>
         </span>
       </label>

@@ -81,6 +81,7 @@ extra_css:
   - css/feedback_widget.css
   - css/journey.css
   - css/pilot_page.css
+  - css/guidance.css
 
 markdown_extensions:
   - attr_list
@@ -93,6 +94,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.tabbed:
+      alternate_style: true
 
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji

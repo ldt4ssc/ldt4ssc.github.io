@@ -1,0 +1,53 @@
+/* ============================================================
+   Guidance pages — custom admonitions
+   ============================================================ */
+
+/* ---- "If you are an LDT4SSC pilot" admonition ----
+   Used ONLY for content that binds funded pilots: requirements (Rq/Rc),
+   deliverables, assessments and payment conditions. Everything else on the
+   guidance pages is general advice for anyone building an LDT, so a reader
+   can tell at a glance which parts apply to them. */
+
+:root {
+  --md-admonition-icon--pilot: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg>');
+}
+
+.md-typeset .admonition.pilot,
+.md-typeset details.pilot {
+  border-color: #0097a7;
+}
+
+.md-typeset .pilot > .admonition-title,
+.md-typeset .pilot > summary {
+  background-color: #e0f3f6;
+}
+
+.md-typeset .pilot > .admonition-title::before,
+.md-typeset .pilot > summary::before {
+  background-color: #0097a7;
+  -webkit-mask-image: var(--md-admonition-icon--pilot);
+          mask-image: var(--md-admonition-icon--pilot);
+}
+
+/* Dark scheme: keep the title band legible */
+[data-md-color-scheme="slate"] .md-typeset .pilot > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .pilot > summary {
+  background-color: rgba(0, 151, 167, 0.22);
+}
+
+/* ---- Workflow step cards ----
+   Steps are the substance of the workflow pages, so they are headings rather
+   than admonitions. The marker keeps them scannable without adding colour. */
+
+.md-typeset .workflow-steps h3 {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  padding-top: 1.2rem;
+  margin-top: 1.8rem;
+}
+
+.md-typeset .step-goal {
+  border-left: 3px solid #0097a7;
+  padding: 0.1rem 0 0.1rem 0.8rem;
+  margin: 0.6rem 0 1rem;
+  color: var(--md-default-fg-color--light);
+}
