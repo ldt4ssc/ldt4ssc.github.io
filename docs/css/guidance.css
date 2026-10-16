@@ -51,3 +51,47 @@
   margin: 0.6rem 0 1rem;
   color: var(--md-default-fg-color--light);
 }
+
+/* ---- LDT level colour code ----
+   Three levels used across the strategy and guidance pages:
+     1. the individual LDT
+     2. the LDT ecosystem
+     3. LDT4SSC shared assets and services
+   Applied as a left border + tinted label so the same level reads the same
+   way in tables, lists and prose. */
+
+:root {
+  --ldt-level-individual: #f4b400;
+  --ldt-level-ecosystem:  #27a328;
+  --ldt-level-assets:     #1e74d5;
+}
+
+.md-typeset .level-individual,
+.md-typeset .level-ecosystem,
+.md-typeset .level-assets {
+  font-weight: 700;
+  border-left: 4px solid;
+  padding-left: 0.5rem;
+}
+
+.md-typeset .level-individual { border-color: var(--ldt-level-individual); color: #8a6400; }
+.md-typeset .level-ecosystem  { border-color: var(--ldt-level-ecosystem);  color: #1b6f1c; }
+.md-typeset .level-assets     { border-color: var(--ldt-level-assets);     color: #15559c; }
+
+[data-md-color-scheme="slate"] .md-typeset .level-individual { color: #f4b400; }
+[data-md-color-scheme="slate"] .md-typeset .level-ecosystem  { color: #5ec95f; }
+[data-md-color-scheme="slate"] .md-typeset .level-assets     { color: #68a8f0; }
+
+/* Inline dot, for referring to a level mid-sentence */
+.md-typeset .level-dot::before {
+  content: "";
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  border-radius: 50%;
+  margin-right: 0.35em;
+  vertical-align: baseline;
+}
+.md-typeset .level-dot.individual::before { background: var(--ldt-level-individual); }
+.md-typeset .level-dot.ecosystem::before  { background: var(--ldt-level-ecosystem); }
+.md-typeset .level-dot.assets::before     { background: var(--ldt-level-assets); }

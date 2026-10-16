@@ -26,7 +26,11 @@ theme:
 
 nav:
   - Welcome: index.md
-  - Strategy & Sustainability: strategy.md
+  - Strategy & Sustainability:
+    - strategy/index.md
+    - Ecosystem diagnostics: strategy/diagnostics.md
+    - Value & funding: strategy/value.md
+    - Strategic priorities: strategy/priorities.md
   - Smart Communities Ecosystem:
     - communities_content/index.md
     - Data Spaces: communities_content/Data_Spaces_Related_Initiatives.md

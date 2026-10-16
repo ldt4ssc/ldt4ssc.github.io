@@ -568,7 +568,7 @@ Six deployments that put these concepts into practice. They are not LDT4SSC pilo
 prior and parallel work worth learning from, including where they fall short of the
 interoperability this project asks for. Each is tagged with the strand it best illustrates.
 
-| Deployment | Illustrates | In one line |
+| Deployment | Work strand | Summary |
 |---|---|---|
 | **Perugia (IT)** | WS1 · WS2 | An interoperable urban platform on the FIWARE stack, with inter-municipal data governance |
 | **Zurich (CH)** | WS2 · WS3 | A dynamic 3D twin grown from a 2011 city model into an operational planning system |

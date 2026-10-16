@@ -75,7 +75,7 @@ Pilots are selected through three rounds of open calls. Each round follows a jou
   <div class="cohort-card" style="border-left-color: #2e7d32;">
     <h3 style="color: #2e7d32;">Round 2</h3>
     <div class="cohort-dates">September 2026 – February 2028</div>
-    <span class="cohort-status" style="background: #e8f5e9; color: #1b5e20;">Upcoming</span>
+    <span class="cohort-status" style="background: #e8f5e9; color: #1b5e20;">ONGOING</span>
   </div>
   <div class="cohort-card" style="border-left-color: #e65100;">
     <h3 style="color: #e65100;">Round 3</h3>
