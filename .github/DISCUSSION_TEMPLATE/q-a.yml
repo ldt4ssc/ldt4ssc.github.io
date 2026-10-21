@@ -1,0 +1,35 @@
+body:
+  - type: markdown
+    attributes:
+      value: Ask about building Local Digital Twins, the LDT4SSC methodology or the open calls. Put your question in the **title** and the details below.
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Technical
+        - Data governance and legal
+        - Methodology
+        - Open calls and administration
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: work_strand
+    attributes:
+      label: Work strand
+      options:
+        - WS1 Interconnection of LDTs
+        - WS2 Creation of LDTs
+        - WS3 AI-based capabilities
+        - Not specific
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What are you trying to do, and what have you tried?
+    validations:
+      required: true
