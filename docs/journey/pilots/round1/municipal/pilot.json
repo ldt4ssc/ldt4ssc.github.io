@@ -63,7 +63,9 @@
     "Air-quality",
     "Public lighting"
   ],
-  "github_usernames": [],
+  "github_usernames": [
+    "ptriantis-ubitech"
+  ],
   "locations": [
     {
       "city": "Murcia",

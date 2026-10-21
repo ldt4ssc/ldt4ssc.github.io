@@ -164,7 +164,9 @@
     "pilot_page_url": "../journey/pilots/round1/municipal/",
     "provider": "github",
     "repository_url": "https://github.com/ptriantis-ubitech/ldt4ssc-municipal",
-    "github_usernames": [],
+    "github_usernames": [
+      "ptriantis-ubitech"
+    ],
     "round": "round1",
     "short_name": "municipal",
     "start_date": "2026-05-14",
