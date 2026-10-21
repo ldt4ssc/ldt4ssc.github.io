@@ -1,0 +1,53 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest something for the LDT4SSC Knowledge Base. Others can upvote or comment, and a curator adds it once it is agreed.
+        Use the **title** above for its name. To report an error in an existing entry, open an issue instead.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you suggesting?
+      options:
+        - A resource (standard, tool, guideline, report…)
+        - An organisation
+        - A value for one of the lists (resource type, layer, building block…)
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Main link
+      description: The page where someone finds out what it is.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What is it?
+      description: One or two sentences, in your own words. For a list value, give its definition.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters for Local Digital Twins
+      description: When would a pilot or a city use it?
+
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher
+      description: For a resource, who publishes or maintains it.
+
+  - type: dropdown
+    id: profile
+    attributes:
+      label: Who is it for?
+      options:
+        - Technical
+        - Non-technical
+        - Both
+        - Not sure
