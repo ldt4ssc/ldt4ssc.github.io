@@ -632,6 +632,17 @@ async function openUpdateModal(entry, base) {
   panel.appendChild(closeBtn);
   panel.appendChild(header);
   panel.appendChild(bodyDiv);
+  if (entry.discussion_url) {
+    const discuss = document.createElement("p");
+    discuss.className = "modal-discuss";
+    const link = document.createElement("a");
+    link.href = entry.discussion_url;
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "Comment on this update on GitHub";
+    discuss.appendChild(link);
+    panel.appendChild(discuss);
+  }
 
   modal.innerHTML = "";
   modal.appendChild(backdrop);
