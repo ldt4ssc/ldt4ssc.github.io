@@ -1,0 +1,107 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share what your pilot has done, learned or produced. Updates are published on the [Knowledge Hub](https://knowledgehub.ldt4ssc.eu/journey/feed/), and replies here appear as comments under them.
+        Write the **title** above (5 to 200 characters). Only posts from the members registered for each pilot are published.
+
+  - type: dropdown
+    id: pilot
+    attributes:
+      label: Pilot
+      options:
+        - ALEX
+        - AquaGuard-Twin
+        - CITYRES
+        - CivicTwinLab
+        - EUTwinLink
+        - GeoTwin-ELBG
+        - MUNICIPAL
+        - NeWG+
+        - PERFORM
+        - UrbanIntelligence
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of update
+      description: "General: news. Milestone: a step reached. Lesson: something learned. Asset: something you produced (data, code, document). Event: something you held or attended."
+      options:
+        - General
+        - Milestone
+        - Lesson
+        - Asset
+        - Event
+    validations:
+      required: true
+
+  - type: dropdown
+    id: work_strand
+    attributes:
+      label: Work strand
+      options:
+        - WS1 Interconnection of LDTs
+        - WS2 Creation of LDTs
+        - WS3 AI-based capabilities
+    validations:
+      required: true
+
+  - type: textarea
+    id: text
+    attributes:
+      label: Update
+      description: Write in English. You can format text and drag images in here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: authors
+    attributes:
+      label: Authors
+      description: One per line, as Name, Organisation.
+      placeholder: |
+        Maria Rossi, City of Turin
+        Jan de Vries, TNO
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Leave empty to use the day you post. Format YYYY-MM-DD.
+      placeholder: "2026-10-21"
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Optional. Lowercase words separated by commas.
+      placeholder: kick-off, data-spaces, air-quality
+
+  - type: textarea
+    id: related_assets
+    attributes:
+      label: Related links
+      description: Optional. Repositories, documents or datasets this update is about, one link per line.
+
+  - type: markdown
+    attributes:
+      value: "**Only for events**"
+
+  - type: input
+    id: event_name
+    attributes:
+      label: Event name
+
+  - type: input
+    id: event_location
+    attributes:
+      label: Event location
+
+  - type: input
+    id: event_url
+    attributes:
+      label: Event link
