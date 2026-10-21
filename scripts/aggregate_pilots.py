@@ -228,6 +228,7 @@ def map_csv_row(row: dict) -> dict | None:
         "pilot_page_url": pilot_page_url,
         "provider": row.get("provider", "").strip().lower(),
         "repository_url": row.get("repository_url", "").strip(),
+        "github_usernames": [u.lstrip("@").lower() for u in _split_list(row.get("github_usernames", ""))],
         "round": round_key,
         "short_name": _short_name_from_url(pilot_page_url, name),
         "start_date": _parse_date(row.get("Start Date", "")),
@@ -242,7 +243,7 @@ def map_csv_row(row: dict) -> dict | None:
 
 _SCALAR_FIELDS = {"name", "description", "work_strand", "start_date"}
 _ARRAY_FIELDS = {"locations", "focus_areas", "consortium"}
-_IDENTITY_FIELDS = {"short_name", "pilot_id", "round", "pilot_page_url", "repository_url", "provider"}
+_IDENTITY_FIELDS = {"short_name", "pilot_id", "round", "pilot_page_url", "repository_url", "provider", "github_usernames"}
 
 
 def apply_yaml_overlay(pilot: dict, yaml_data: dict) -> dict:
@@ -408,11 +409,240 @@ def fetch_updates(
             "topics": fm.get("topics", []),
             "type": fm.get("type", ""),
             "work_strand": pilot["work_strand"],
+            "source": "repository",
         })
         ok += 1
 
     index_entries.sort(key=lambda x: x["date"], reverse=True)
     return index_entries, ok, skipped
+
+
+# ---------------------------------------------------------------------------
+# Updates posted as GitHub Discussions
+# ---------------------------------------------------------------------------
+#
+# Pilots can post an update by filling in the form of the "Pilot updates"
+# Discussions category (.github/DISCUSSION_TEMPLATE/pilot-updates.yml) in this
+# repository, instead of writing a file in their own repository. Such a post
+# becomes the same update file, in the same place, as one fetched from a
+# repository, so the pilot pages and the feed show both alike.
+#
+# Every update also gets a Discussion: updates from repositories get one
+# opened by the aggregator, so replies to any update happen in one place.
+
+HUB_REPO = os.environ.get("HUB_REPOSITORY", "ldt4ssc/ldt4ssc.github.io")
+UPDATES_CATEGORY = "pilot-updates"
+FORM_LABELS = ["Pilot", "Type of update", "Work strand", "Update", "Authors", "Date",
+               "Tags", "Related links", "Event name", "Event location", "Event link"]
+MIRROR_MARK = "<!-- ldt4ssc-update: {} -->"
+MIRROR_MARK_RE = re.compile(r"<!-- ldt4ssc-update: (\S+) -->")
+
+
+def _graphql(query: str, variables: dict, token: str) -> dict:
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": variables}).encode(),
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
+                 "User-Agent": "ldt4ssc-aggregator/1.0"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        result = json.loads(resp.read())
+    if result.get("errors"):
+        raise RuntimeError("; ".join(e.get("message", "") for e in result["errors"]))
+    return result["data"]
+
+
+def fetch_discussions(token: str) -> tuple[str, str, list[dict]]:
+    """Return (repository id, category id, discussions) for the Pilot updates category."""
+    owner, name = HUB_REPO.split("/", 1)
+    data = _graphql(
+        """query($owner: String!, $name: String!) {
+             repository(owner: $owner, name: $name) {
+               id
+               discussionCategories(first: 50) { nodes { id slug } }
+             }
+           }""", {"owner": owner, "name": name}, token)
+    repo = data["repository"]
+    category = next((c for c in repo["discussionCategories"]["nodes"] if c["slug"] == UPDATES_CATEGORY), None)
+    if category is None:
+        raise RuntimeError(f"no '{UPDATES_CATEGORY}' Discussions category in {HUB_REPO}")
+    discussions, cursor = [], None
+    while True:
+        page = _graphql(
+            """query($owner: String!, $name: String!, $category: ID!, $cursor: String) {
+                 repository(owner: $owner, name: $name) {
+                   discussions(first: 50, after: $cursor, categoryId: $category) {
+                     pageInfo { hasNextPage endCursor }
+                     nodes { number title url body createdAt author { login } }
+                   }
+                 }
+               }""", {"owner": owner, "name": name, "category": category["id"], "cursor": cursor}, token)
+        block = page["repository"]["discussions"]
+        discussions += block["nodes"]
+        if not block["pageInfo"]["hasNextPage"]:
+            break
+        cursor = block["pageInfo"]["endCursor"]
+    return repo["id"], category["id"], discussions
+
+
+def parse_form(body: str) -> dict[str, str]:
+    """Read the answers of a form-based Discussion: each answer sits under '### <label>'."""
+    found = []
+    for label in FORM_LABELS:
+        matches = list(re.finditer(rf"^###\s+{re.escape(label)}\s*$", body, flags=re.MULTILINE))
+        if matches:
+            # The update text may contain its own '### ' headings: fields before it are the first
+            # match, fields after it the last.
+            m = matches[0] if FORM_LABELS.index(label) <= FORM_LABELS.index("Update") else matches[-1]
+            found.append((m.start(), m.end(), label))
+    found.sort()
+    answers = {}
+    for i, (_, end, label) in enumerate(found):
+        stop = found[i + 1][0] if i + 1 < len(found) else len(body)
+        value = body[end:stop].strip()
+        answers[label] = "" if value == "_No response_" else value
+    return answers
+
+
+def _slug(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def discussion_to_update(d: dict, pilots_by_name: dict[str, dict], token: str) -> tuple[dict | None, dict, str, str]:
+    """Turn a Discussion into (pilot, front matter, text, problem). problem is '' when publishable."""
+    form = parse_form(d.get("body") or "")
+    pilot = pilots_by_name.get(form.get("Pilot", "").strip().lower())
+    if pilot is None:
+        return None, {}, "", f"pilot '{form.get('Pilot', '')}' not found"
+    author = ((d.get("author") or {}).get("login") or "").lower()
+    if author not in pilot.get("github_usernames", []):
+        return pilot, {}, "", f"author '{author}' is not registered for {pilot['name']} (github_usernames column)"
+
+    date = form.get("Date", "")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+        date = d["createdAt"][:10]
+    authors = []
+    for line in form.get("Authors", "").splitlines():
+        name, _, organisation = line.strip().partition(",")
+        if name.strip():
+            authors.append({"name": name.strip(), "organisation": organisation.strip() or pilot["name"]})
+    ws = re.match(r"(WS\d)", form.get("Work strand", ""))
+    fm = {
+        "schema_version": 1,
+        "type": form.get("Type of update", "").strip().lower(),
+        "date": date,
+        "title": d["title"].strip(),
+        "work_strand": ws.group(1) if ws else "",
+        "authors": authors,
+    }
+    tags = sorted({_slug(t) for t in form.get("Tags", "").split(",") if _slug(t)})
+    if tags:
+        fm["tags"] = tags
+    links = sorted({m.group(0) for m in re.finditer(r"https?://[^\s)>\]]+", form.get("Related links", ""))})
+    if links:
+        fm["related_assets"] = links
+    event = {k: form.get(label, "").strip() for k, label in
+             (("name", "Event name"), ("location", "Event location"), ("url", "Event link"))}
+    event = {k: v for k, v in event.items() if v}
+    if event:
+        fm["related_event"] = event
+
+    errors = _validate_fm(fm, token)
+    if errors:
+        return pilot, fm, "", "validation failed: " + "; ".join(errors)
+    return pilot, fm, form.get("Update", "").strip(), ""
+
+
+def _index_entry(pilot: dict, fm: dict, slug: str, text: str) -> dict:
+    summary = _strip_markdown(text)[:200]
+    return {
+        "authors": fm.get("authors", []),
+        "date": str(fm["date"]),
+        "pilot_name": pilot["name"],
+        "pilot_page_url": pilot["pilot_page_url"],
+        "short_name": pilot["short_name"],
+        "slug": slug,
+        "summary": summary,
+        "tags": fm.get("tags", []),
+        "title": fm.get("title", slug),
+        "topics": [],
+        "type": fm.get("type", ""),
+        "work_strand": pilot["work_strand"],
+    }
+
+
+def add_discussion_updates(discussions: list[dict], pilots: list[dict], entries: dict[str, list[dict]],
+                           token: str) -> tuple[int, int]:
+    """Write each publishable Discussion as an update file. Returns (published, held back)."""
+    pilots_by_name = {p["name"].lower(): p for p in pilots}
+    published = held = 0
+    for d in discussions:
+        if MIRROR_MARK_RE.search(d.get("body") or ""):
+            continue                                  # opened by the aggregator for a repository update
+        pilot, fm, text, problem = discussion_to_update(d, pilots_by_name, token)
+        if problem:
+            print(f"HELD: discussion #{d['number']} ({d['url']}): {problem}", file=sys.stderr)
+            held += 1
+            continue
+        dest = PILOTS_DIR / pilot["round"] / pilot["short_name"] / "updates"
+        dest.mkdir(parents=True, exist_ok=True)
+        slug = f"{fm['date']}-{_slug(fm['title'])[:60].strip('-') or 'update-' + str(d['number'])}"
+        if any(e["slug"] == slug for e in entries.get(pilot["short_name"], [])):
+            slug = f"{slug}-{d['number']}"
+        front = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True)
+        (dest / f"{slug}.md").write_text(f"---\n{front}---\n\n{text}\n", encoding="utf-8")
+        entry = _index_entry(pilot, fm, slug, text)
+        entry.update({"source": "discussion", "discussion": d["number"], "discussion_url": d["url"]})
+        entries.setdefault(pilot["short_name"], []).append(entry)
+        published += 1
+    return published, held
+
+
+def open_discussions_for_repository_updates(entries: dict[str, list[dict]], discussions: list[dict],
+                                            repo_id: str, category_id: str, token: str) -> int:
+    """Give every repository update a Discussion, so replies happen in one place. Returns how many were opened."""
+    existing = {}
+    for d in discussions:
+        m = MIRROR_MARK_RE.search(d.get("body") or "")
+        if m:
+            existing[m.group(1)] = d
+    opened = 0
+    for short_name, items in entries.items():
+        for e in items:
+            if e.get("source") != "repository":
+                continue
+            key = f"{short_name}/{e['slug']}"
+            d = existing.get(key)
+            if d is None:
+                link = f"{HUB_BASE_URL}/{e['pilot_page_url'].lstrip('/')}#update={e['slug']}"
+                body = (f"{MIRROR_MARK.format(key)}\n**{e['pilot_name']}** posted this update in their repository. "
+                        f"[Read it on the Knowledge Hub]({link}).\n\n> {e['summary']}\n\nReply here to comment on it.")
+                try:
+                    created = _graphql(
+                        """mutation($repo: ID!, $category: ID!, $title: String!, $body: String!) {
+                             createDiscussion(input: {repositoryId: $repo, categoryId: $category,
+                                                      title: $title, body: $body}) {
+                               discussion { number url }
+                             }
+                           }""", {"repo": repo_id, "category": category_id, "title": e["title"], "body": body}, token)
+                except Exception as exc:
+                    print(f"WARN: could not open a discussion for {key}: {exc}", file=sys.stderr)
+                    continue
+                d = created["createDiscussion"]["discussion"]
+                opened += 1
+            e["discussion"], e["discussion_url"] = d["number"], d["url"]
+    return opened
+
+
+def remove_withdrawn_discussion_updates(pilot_dir: Path, current: list[dict]) -> None:
+    """Delete update files that came from a Discussion that no longer exists or is no longer publishable."""
+    index_path = pilot_dir / "updates_index.json"
+    if not index_path.exists():
+        return
+    keep = {e["slug"] for e in current}
+    for old in json.loads(index_path.read_text(encoding="utf-8")):
+        if old.get("source") == "discussion" and old["slug"] not in keep:
+            (pilot_dir / "updates" / f"{old['slug']}.md").unlink(missing_ok=True)
 
 
 # ---------------------------------------------------------------------------
@@ -505,6 +735,7 @@ def main() -> None:
 
     all_pilots: list[dict] = []
     all_updates: list[dict] = []
+    entries: dict[str, list[dict]] = {}
     pilots_ok = 0
     pilots_skipped_yaml = 0
     updates_ok = 0
@@ -541,12 +772,27 @@ def main() -> None:
                 provider, host, project_path = parsed
                 token = github_token if provider == "github" else gitlab_token
                 idx, ok, skipped = fetch_updates(provider, host, project_path, dest, pilot, token)
-                (dest / "updates_index.json").write_text(
-                    json.dumps(idx, indent=2, cls=_DateEncoder), encoding="utf-8"
-                )
-                all_updates.extend(idx)
+                entries[pilot["short_name"]] = idx
                 updates_ok += ok
                 updates_skipped += skipped
+
+    if github_token:
+        try:
+            repo_id, category_id, discussions = fetch_discussions(github_token)
+            published, held = add_discussion_updates(discussions, all_pilots, entries, github_token)
+            opened = open_discussions_for_repository_updates(entries, discussions, repo_id, category_id, github_token)
+            print(f"Discussions: {published} updates published, {held} held back, {opened} discussions opened")
+        except Exception as exc:
+            print(f"WARN: could not read the Pilot updates discussions: {exc}", file=sys.stderr)
+    else:
+        print("WARN: no GITHUB_TOKEN, skipping the Pilot updates discussions", file=sys.stderr)
+
+    for pilot in all_pilots:
+        idx = sorted(entries.get(pilot["short_name"], []), key=lambda x: x["date"], reverse=True)
+        dest = PILOTS_DIR / pilot["round"] / pilot["short_name"]
+        remove_withdrawn_discussion_updates(dest, idx)
+        (dest / "updates_index.json").write_text(json.dumps(idx, indent=2, cls=_DateEncoder), encoding="utf-8")
+        all_updates.extend(idx)
 
     all_updates.sort(key=lambda x: x["date"], reverse=True)
 
