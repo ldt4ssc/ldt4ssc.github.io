@@ -632,16 +632,27 @@ async function openUpdateModal(entry, base) {
   panel.appendChild(closeBtn);
   panel.appendChild(header);
   panel.appendChild(bodyDiv);
-  if (entry.discussion_url) {
-    const discuss = document.createElement("p");
-    discuss.className = "modal-discuss";
-    const link = document.createElement("a");
-    link.href = entry.discussion_url;
-    link.target = "_blank";
-    link.rel = "noopener";
-    link.textContent = "Comment on this update on GitHub";
-    discuss.appendChild(link);
-    panel.appendChild(discuss);
+  if (entry.discussion) {
+    const comments = document.createElement("div");
+    comments.className = "modal-comments";
+    const giscus = document.createElement("script");
+    giscus.src = "https://giscus.app/client.js";
+    const settings = {
+      "data-repo": "ldt4ssc/ldt4ssc.github.io",
+      "data-repo-id": "R_kgDOPaaaVg",
+      "data-mapping": "number",
+      "data-term": String(entry.discussion),   // this update's Discussion, instead of the placeholder 1
+      "data-reactions-enabled": "1",
+      "data-emit-metadata": "0",
+      "data-input-position": "top",
+      "data-theme": "preferred_color_scheme",
+      "data-lang": "en",
+    };
+    for (const [name, value] of Object.entries(settings)) giscus.setAttribute(name, value);
+    giscus.crossOrigin = "anonymous";
+    giscus.async = true;
+    comments.appendChild(giscus);
+    panel.appendChild(comments);
   }
 
   modal.innerHTML = "";
