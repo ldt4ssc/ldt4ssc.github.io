@@ -1,0 +1,37 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open a topic on a challenge other peers may share, so each can bring their experience. Put the topic in the **title**, for example *Integrating mobility datasets from multiple sources*.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Topic and context
+      description: What is the challenge, and why does it matter for your pilot?
+    validations:
+      required: true
+
+  - type: textarea
+    id: ask
+    attributes:
+      label: What would you like to hear from others?
+      description: For example approaches, tools, pitfalls, or examples from other cities.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: work_strand
+    attributes:
+      label: Work strand
+      options:
+        - WS1 Interconnection of LDTs
+        - WS2 Creation of LDTs
+        - WS3 AI-based capabilities
+        - Not specific
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Related resources
+      description: Optional. Links to anything relevant, one per line.
