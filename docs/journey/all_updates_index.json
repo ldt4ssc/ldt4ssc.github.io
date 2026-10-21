@@ -21,6 +21,9 @@
     "title": "MUNICIPAL Project Kick-Off in Murcia",
     "topics": [],
     "type": "event",
-    "work_strand": "WS1"
+    "work_strand": "WS1",
+    "source": "repository",
+    "discussion": 5,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/5"
   }
 ]
