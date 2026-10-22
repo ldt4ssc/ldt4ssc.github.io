@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
     grid.querySelectorAll(".timeline-pilot-label, .timeline-pilot-cell, .timeline-cohort-header").forEach(el => el.remove());
 
     const pilots = allPilots.filter(p => p.kh === "Y" && p.name);
-    if (!pilots.length) return;
+    if (!pilots.length) { syncTimelineDividerHeight(); return; }
 
     // Build deliverable lookup
     const deliverablesByPilot = {};
@@ -395,7 +395,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+
+    syncTimelineDividerHeight();
   }
+
+  // ---- Divider height ----
+  // The KICK-OFF and HANDOVER bars are drawn on month-header cells, so they
+  // cannot inherit the grid's height. Measure it and expose it as a custom
+  // property the CSS reads, so the bars always span the full timeline however
+  // many pilot rows are shown.
+  function syncTimelineDividerHeight() {
+    const grid = document.querySelector(".timeline-grid");
+    if (!grid) return;
+    const header = grid.querySelector(".timeline-month");
+    // Bars start at the top of the month header, so subtract the grid padding
+    // above it to reach the bottom of the grid exactly.
+    const offset = header ? header.getBoundingClientRect().top - grid.getBoundingClientRect().top : 0;
+    grid.style.setProperty("--timeline-grid-height", (grid.scrollHeight - offset) + "px");
+  }
+
+  window.addEventListener("resize", syncTimelineDividerHeight);
 
   // ---- Tab click handling ----
   timelineTabs.addEventListener("click", (e) => {

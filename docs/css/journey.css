@@ -226,7 +226,7 @@ a.stepper-subphase:hover {
 /* Timeline grid */
 .timeline-grid {
   display: grid;
-  grid-template-columns: 120px repeat(23, 1fr);
+  grid-template-columns: 150px repeat(23, 1fr);
   gap: 0;
   min-width: 1100px;
   font-size: 0.65rem;
@@ -279,9 +279,11 @@ a.stepper-subphase:hover {
   left: -1px;
   top: 0;
   width: 2px;
-  height: 500px;
+  /* span the full grid, however many pilot rows are rendered */
+  height: var(--timeline-grid-height, 100vh);
   background: #999;
-  z-index: 6;
+  /* below Material's sticky .md-header (z-index 4), above the phase bands */
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -296,7 +298,7 @@ a.stepper-subphase:hover {
   color: #999;
   letter-spacing: 0.05em;
   white-space: nowrap;
-  z-index: 6;
+  z-index: 3;
 }
 
 /* Handover divider after M18 */
@@ -311,9 +313,11 @@ a.stepper-subphase:hover {
   right: -1px;
   top: 0;
   width: 2px;
-  height: 500px;
+  /* span the full grid, however many pilot rows are rendered */
+  height: var(--timeline-grid-height, 100vh);
   background: #999;
-  z-index: 6;
+  /* below Material's sticky .md-header (z-index 4), above the phase bands */
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -328,7 +332,7 @@ a.stepper-subphase:hover {
   color: #999;
   letter-spacing: 0.05em;
   white-space: nowrap;
-  z-index: 6;
+  z-index: 3;
 }
 
 /* Phase bands */
@@ -445,7 +449,21 @@ a.stepper-subphase:hover {
   color: #555;
   display: flex;
   align-items: center;
+  gap: 0.35rem;
   border-bottom: 1px solid #f0f0f0;
+  /* never hyphenate or break a pilot name mid-word */
+  overflow-wrap: normal;
+  word-break: keep-all;
+  hyphens: none;
+}
+
+/* the name itself stays on one line; it shrinks before the badge does */
+.timeline-pilot-label > a,
+.timeline-pilot-label > span {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .timeline-pilot-label a {
@@ -459,7 +477,7 @@ a.stepper-subphase:hover {
 }
 
 .pilot-repo-badge {
-  margin-left: 0.35rem;
+  flex: 0 0 auto;
   font-size: 0.5rem;
   font-weight: 600;
   padding: 0.1rem 0.3rem;
@@ -552,7 +570,8 @@ a.stepper-subphase:hover {
   transform: translateX(-50%);
   width: 2px;
   background: #d32f2f;
-  z-index: 5;
+  /* below Material's sticky .md-header (z-index 4) */
+  z-index: 3;
 }
 
 .timeline-now-marker::before {
