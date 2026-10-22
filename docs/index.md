@@ -33,7 +33,7 @@ project's lifetime.
 
     [:octicons-arrow-right-24: Guidance](guidance_content/index.md)
 
--   :material-toolbox-outline:{ .lg .middle } __Resources for Pilots__
+-   :material-toolbox-outline:{ .lg .middle } __Resources__
 
     Technical resources — standards, tools and frameworks — and non-technical resources
     including the [LDT4SSC Methodology](resources_content/methodology.md), impact assessment, legal and AI guidance.

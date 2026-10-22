@@ -1,6 +1,6 @@
-# Resources for Pilots
+# Resources
 
-The **Resources for Pilots** section provides comprehensive support for pilot projects within the LDT4SSC initiative. Whether you're building technical infrastructure or navigating organizational challenges, these resources offer practical guidance to help you succeed.
+The **Resources** section provides comprehensive support for pilot projects within the LDT4SSC initiative. Whether you're building technical infrastructure or navigating organizational challenges, these resources offer practical guidance to help you succeed.
 
 We've organized resources into two complementary categories: **Technical Resources** provide the standards, tools, and frameworks needed for interoperable Local Digital Twin deployments, while **Non-Technical Resources** offer strategic, organizational, and governance guidance to support your pilot journey from ideation through deployment.
 

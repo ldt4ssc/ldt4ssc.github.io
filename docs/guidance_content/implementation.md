@@ -16,7 +16,7 @@ page is the entry point for that phase: it brings the **methodology**, the **tec
 resources**, and the **LDT Interoperability Blueprint** into a single route from a use case
 on paper to a working, interoperable Local Digital Twin.
 
-Where the [Resources for Pilots](../resources_content/index.md) section is a *library* — a
+Where the [Resources](../resources_content/index.md) section is a *library* — a
 catalogue of standards, tools and frameworks to draw from — this page is the *assembly
 instructions*: which pieces to pick up, in what order, and how they fit together for each
 work strand.

@@ -140,7 +140,7 @@ service still needs the Core a WS2 pilot builds.
 
 <div class="grid cards" markdown>
 
--   :material-toolbox-outline:{ .lg .middle } __Resources for Pilots__
+-   :material-toolbox-outline:{ .lg .middle } __Resources__
 
     The technical resource library, the LDT4SSC Methodology and its workshops, impact
     assessment, legal and AI guidance.
