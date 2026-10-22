@@ -11,5 +11,12 @@ Aggregated updates from all active pilots, in reverse chronological order.
 
 [:material-rss: Subscribe via RSS](../feeds/all.xml)
 
+!!! info "Posting an update"
+    Pilots publish here either through the
+    [Pilot updates form](https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/categories/pilot-updates)
+    or as a Markdown file in their own repository.
+
+    [:octicons-arrow-right-24: How to post an update](../guidance_content/contributing.md#posting-a-pilot-update)
+
 <div id="all-updates-feed"></div>
 <div id="pilot-update-modal" hidden></div>

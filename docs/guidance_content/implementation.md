@@ -239,52 +239,15 @@ Components are organised into three levels that follow the data's path from the 
 the people using it. Knowing which level you are working at tells you which architecture and
 which workflow apply to you.
 
-```mermaid
-flowchart TB
-    subgraph SURFACE["LDT Surface — what people interact with"]
-        direction LR
-        SV["Decision-making<br/>services"]
-        AN["Analytics"]
-        VI["Visualisation"]
-    end
+![High-level view of a Local Digital Twin: LDT Base holds raw data sources and data spaces; LDT Core holds data acquisition and data management within a connectivity envelope; LDT Surface holds analysis, visualisations and decision-making, with services spanning the upper layers](../assets/blueprint/high-level-ldt.jpg){ width="100%" }
 
-    subgraph CORE["LDT Core — where data becomes usable"]
-        direction LR
-        DA["Data acquisition"]
-        DM["Data management"]
-        CN["Connectivity"]
-    end
+*Source: [LDT Interoperability Blueprint](../../blueprint/) — [high-level overview of an LDT](https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#high-level-overview-ldt).*
 
-    subgraph BASE["LDT Base — connection to the territory"]
-        direction LR
-        SR["Data sources"]
-    end
-
-    BASE --> CORE --> SURFACE
-    SURFACE -. "prescriptive feedback" .-> CORE
-
-    classDef sources  fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0a53a8;
-    classDef acquis   fill:#ebf7dd,stroke:#5fa83b,stroke-width:2px,color:#11734b;
-    classDef connect  fill:#ffe4d6,stroke:#ff6b1a,stroke-width:2px,color:#753800;
-    classDef datamgmt fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#5a3286;
-    classDef analytic fill:#fff5d9,stroke:#e6a800,stroke-width:2px,color:#473821;
-    classDef decision fill:#ffebe9,stroke:#e53935,stroke-width:2px,color:#b10202;
-    classDef visual   fill:#e0eff3,stroke:#00acc1,stroke-width:2px,color:#215a6c;
-
-    class SR sources;
-    class DA acquis;
-    class CN connect;
-    class DM datamgmt;
-    class AN analytic;
-    class SV decision;
-    class VI visual;
-```
-
-| Level | Layers it contains | Primary work strand |
+| Level | Layers | Primary work strand |
 |---|---|---|
-| **Base** | Data sources | WS1 |
-| **Core** | Data acquisition · Connectivity · Data management | WS2 |
-| **Surface** | Analytics · Decision-making · Visualisation | WS3 |
+| **LDT Base** | Data sources — raw sources and data spaces | WS1 |
+| **LDT Core** | Data acquisition · Data management, within Connectivity | WS2 |
+| **LDT Surface** | Analysis · Visualisations · Decision-making, exposed as Services | WS3 |
 
 The layer names above are the same ones used to classify every entry in the
 [Technical Resource Library](../resources_content/tech_resources.md#technical-resource-library),

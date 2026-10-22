@@ -56,7 +56,7 @@ so they ask nothing new of pilots beyond what the calls specify.
 
 ---
 
-## 1 · Coordinating towards interoperability and multi-stakeholder collaboration
+## 1 · Coordinate interoperability & collaboration
 
 The foundation of a scalable European LDT ecosystem is the ability to **connect heterogeneous
 systems** across communities, sectors and borders. Interoperability frameworks and tools already
@@ -89,7 +89,7 @@ leadership and coordination across initiatives.
 
 ---
 
-## 2 · Advancing local digitalisation at scale
+## 2 · Scale open, replicable services
 
 Many LDT services remain **siloed and non-replicable**, limiting reuse and scalability. The focus
 is on ensuring pilots' LDTs are designed as reusable, modular and replicable solutions addressing
@@ -123,7 +123,7 @@ them from scratch**.
 
 ---
 
-## 3 · Demonstrating business and public value
+## 3 · Demonstrate public & business value
 
 A critical barrier to sustainability is the **limited articulation and assessment of the value
 LDTs generate**. Without clear value propositions and capture mechanisms across stakeholders,
@@ -163,7 +163,7 @@ economic sustainability and supports the emergence of a structured LDT market.
 
 ---
 
-## 4 · Growing the communities of practice
+## 4 · Grow communities of practice
 
 The LDT ecosystem is inherently **multi-stakeholder**, requiring sustained collaboration across
 public authorities, private sector, academia and civil society. The aim is to grow gradually from
@@ -194,7 +194,7 @@ differing levels of maturity.
 
 ---
 
-## 5 · Strengthening capabilities across all three levels
+## 5 · Strengthen capabilities continuously
 
 Sustainability depends on stakeholders' ability to develop and mobilise the necessary
 **technical, organisational and governance capabilities** — across

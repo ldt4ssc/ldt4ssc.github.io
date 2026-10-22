@@ -257,3 +257,18 @@ The pilots are organised across three interconnected work strands:
 !!! abstract "WS3: Adding New Advanced AI-Based Tools to existing LDTs"
     **Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDTs Toolbox.**
     Pilots integrating artificial intelligence capabilities into Local Digital Twin systems for enhanced decision-making.
+
+---
+
+## Contributing to the journey
+
+Pilots publish their own progress — milestones, lessons, assets and events — which appears on
+their pilot page and in the [activity feed](feed.md).
+
+!!! info "For pilots"
+    Post through the
+    [Pilot updates form](https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/categories/pilot-updates)
+    (your GitHub username must be registered by the LDT4SSC team first), or as a Markdown file
+    in your own repository.
+
+    [:octicons-arrow-right-24: Posting updates & contributing](../guidance_content/contributing.md)
