@@ -1,13 +1,8 @@
 ---
 title: Open calls (archive)
-search:
-  exclude: true
 ---
 
 # Open calls — archive
-
-!!! warning "Draft for partner validation"
-    This page is a **draft under review**, not listed in the site navigation.
 
 !!! info "All three rounds are closed"
     The third and final round closed on **13 July 2026**. This page is kept as a record of what

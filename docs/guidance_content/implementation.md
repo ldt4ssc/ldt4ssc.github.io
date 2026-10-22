@@ -1,15 +1,8 @@
 ---
 title: Implementation Guidance
-search:
-  exclude: true
 ---
 
 # Implementation Guidance
-
-!!! warning "Draft for partner validation"
-    This page is a **draft under review**. It is not listed in the site navigation and is
-    excluded from search. It consolidates the LDT4SSC implementation guidance ahead of
-    publication — comments and corrections are welcome before it goes live.
 
 The open calls are closed and pilots are moving from *being selected* to *building*. This
 page is the entry point for that phase: it brings the **methodology**, the **technical

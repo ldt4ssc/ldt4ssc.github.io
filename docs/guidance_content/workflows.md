@@ -1,14 +1,8 @@
 ---
 title: Implementation workflows
-search:
-  exclude: true
 ---
 
 # Implementation workflows
-
-!!! warning "Draft for partner validation"
-    This page is a **draft under review**, not listed in the site navigation. It accompanies the
-    [Implementation Guidance](implementation.md) hub.
 
 Three worked examples of getting from an existing situation to a working result, one per work
 strand. They are **illustrative, not normative**: each goal can be reached in several ways, with

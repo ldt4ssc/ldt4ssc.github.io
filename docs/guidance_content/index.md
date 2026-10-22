@@ -1,213 +1,178 @@
+---
+title: Pilot Guidance
+---
+
 # Pilot Guidance
 
-!!! tip "On this page"
-    - [General Guidance](#general-guidance) - Overview of piloting process
-    - [Piloting opportunities](#piloting-opportunities) - Work-strand specific information
-    - [Common requirements](#common-requirements) - Requirements common to all work-strands
-    - [Testing environment](#testing-environment) - Sandbox for pilot demonstrators
-    - [Application process](#application-process) - Summary for potential applicants
+The open calls are closed and the pilots are building. This section carries everything a pilot
+needs from that point on — what to build, how to build it so it connects, and what has to be
+delivered — alongside an archive of what the calls originally asked for.
 
+![The LDT4SSC growth concept: pilots build local twins, connect them, and feed reusable assets back to the ecosystem.](../assets/images/Growth_concept.jpg){ width="100%" }
 
-## General Guidance
-This section provides an overview of the piloting process within LDT4SSC and offers guidance and relevant resources for each of the Work Strands.  
+<div class="grid cards" markdown>
 
-![Growth concept](../assets/images/Growth_concept.jpg)
+-   :material-hammer-wrench:{ .lg .middle } __Implementation guidance__
 
-**Why to apply?**  
-Pilots are at the heart of LDT4SSC. They enable real-world testing of data-processing through digital twin solutions, interconnection of digital twins requiring data spaces processes, validate interoperability, and deliver tangible benefits for communities. Selected pilots will receive:  
+    What you are building, the reference architectures per work strand, and how the
+    methodology, technical resources and Blueprint fit together.
 
-- Funding support.  
-- Technical & non-technical guidance.  
-- Increased visibility across the European Local Digital Twin ecosystem.  
+    [:octicons-arrow-right-24: Implementation guidance](implementation.md)
 
-**Who should apply?**  
-LDT4SSC pilots are open to a wide range of stakeholders, including:  
+-   :material-format-list-numbered:{ .lg .middle } __Workflows__
 
-- Cities, municipalities, provincial, regional authorities/governments  
-- Syndicates and energy communities  
-- Technology providers and AI innovators from the private and public sector  
+    Three worked recipes — interconnect existing LDTs, deploy a new one, build an AI service —
+    step by step, naming the tools at each stage.
 
-**Preparing your application**  
-Check out [**our material**](../assets/PDFs/LDT4SSC-Preparing a Proposal - Dos and Donts in your application.pdf) for *do*s and *don't*s when preparing your application.
+    [:octicons-arrow-right-24: Workflows](workflows.md)
 
----
-## Piloting opportunities
+-   :material-clipboard-check-outline:{ .lg .middle } __Pilot obligations__
 
-<p align="center">👉 Check the sections below for more detailed information on each Work Strand.</p>
+    What must be built, assessed, documented and published, with the Rq and Rc codes and which
+    strands each applies to.
 
-<div align="center" style="font-size: 2em; margin: 20px 0;">
-⬇️
-</div>
+    [:octicons-arrow-right-24: Obligations](obligations.md)
 
-**Work Strands (WS):**  
-The project foresees **three Work Strands** through which potential pilots can apply to receive funding and develop their solutions:  
+-   :material-bullhorn-outline:{ .lg .middle } __Posting updates & contributing__
 
-!!! abstract "WS1: Technical Interconnection of LDTs"
-    **Linking and scaling digital twins that are already in place**
+    How to publish your pilot's progress, ask questions, compare approaches, and suggest
+    additions to the Knowledge Base.
 
-    [:octicons-arrow-right-24: View Details](ws1.md)
+    [:octicons-arrow-right-24: Contributing](contributing.md)
 
-!!! abstract "WS2: Creation of LDTs Based on Common Needs"
-    **Addressing shared urban or regional challenges (e.g., cross-border traffic, air pollution)**
+-   :material-archive-outline:{ .lg .middle } __Open calls (archive)__
 
-    [:octicons-arrow-right-24: View Details](ws2.md)
+    Consortium conditions, financial rules, timelines and the Call for Pilots Manuals, kept as
+    a record now the calls have closed.
 
-!!! abstract "WS3: Adding New Advanced AI-Based Capabilities to existing LDTs"
-    **Integrating AI-driven, value-added services to enhance existing LDTs and new services to the LDT Toolbox**
-
-    [:octicons-arrow-right-24: View Details](ws3.md)
-
-
----
-
-## Common Requirements
-
-This page summarises requirements **shared across WS1, WS2, and WS3**. For work-strand-specific requirements, see the individual cheat sheets.
-
-
-### 🎯 **Consortium Composition**
-
-  - **2+ local/regional public authorities** from **2 different eligible countries**
-  - **1+ additional partner** (private entity, association, trusted third party, or sector representative)
-  - Eligible countries: EU Member States (incl. outermost regions & OCTs), EEA (Norway, Iceland, Liechtenstein), DEP-associated countries
-  - Preference for EU local/regional authorities as **Lead Partner**
-  - LDT4SSC Consortium members **cannot** participate in pilot consortia
-
-
-### 📋 **Application Form Content**
-
-  - **Data governance** scheme: current → target  
-      → Political • Technical • Legal • Organisational dimensions
-  - **Project management**: teams, coordination, resource allocation, recruitment
-  - **Political endorsement** (Letter of Commitment) + **technical capacity** for each public authority
-  - **End-user engagement** strategy (workshops, consultations, participatory activities)
-  - **Quadruple Helix stakeholders** — involve **3 of 4** groups:  
-      → Public • Private • Research/Academia • Civil Society
-  - **Alignment with EU priorities**: Green Deal, New European Bauhaus, LDT4SSC challenges
-  - **Replicability**: explain how approach/results can transfer to other EU communities
-  - **Socio-economic and environmental effects** + eco-design approach
-  - **Sustainability strategy** post-pilot (maintenance, scaling, financial plans)
-
-
-### 🧱 **Documents to Submit**
-
-| Document | Format |
-|----------|--------|
-| Application Form | PDF |
-| Financial Form | Excel (.xlsx) |
-| Letter(s) of Commitment | PDF |
-| Ownership and Control Declaration (OCD) | PDF |
-| Ethics and Data Protection Self-Assessment | PDF |
-
-
-### 🛠️ **Project Implementation**
-
-  - Follow **LDT4SSC methodology phases**:  
-      → **Explore** → **Validate** → **Define** → **Implement**
-  - Submit workplan around **pre-defined Pilot Deliverables** (PD1–PD5)
-  - **Semantic interoperability** via Linked Data Ontology (MIM1)  
-      → e.g., NGSI-LD, LDES, SPARQL
-  - Engage with at least **5 foundational MIMs Plus**:  
-      → MIM0 (Accessing Data), MIM1 (Interlinking Data), MIM2 (Processing Data), MIM3 (Sharing Data), MIM6 (Securing Data)
-  - Establish **contractual framework** guaranteeing LDT/service sustainability
-  - Publish **open data models** in open repositories under open licences
-  - Maintain documentation for **LDT4SSC Knowledge Hub**
-  - If using **proprietary components**: provide plan for open-source equivalent
-
-
-### 💰 **Financial Rules**
-
-| Rule | Value |
-|------|-------|
-| Maximum grant per third-party (across all pilots) | **€500,000** |
-| Maximum grant per consortium | **€1,000,000** |
-| Co-funding from applicants | **≥ 50%** of total costs |
-| Indirect costs | **7% flat rate** of direct costs |
-| Pilot duration | **12–18 months** |
-
-
-### 📊 **Reporting**
-
-  - **Interim report** (mid-term): Technical + Financial
-  - **Final report** (within 30 days of conclusion): Technical + Financial
-  - **Certificate on Financial Statements** (CFS) required if contribution ≥ €325,000
-
-
-### ⭐ **Common Recommendations**
-
-  - Assess **LORDIMAS digital maturity**  
-      → Lead: Digitally Optimised | Others: ≥ Moderate
-  - Use **open-source components**; share enhancements back to community
-  - Include **IP and exploitation rights** provisions in consortium agreement
-  - Technically establish:  
-      → **DCAT** data catalogue  
-      → **Data management system** (JSON-LD, RDF, NGSI-LD)  
-      → **IAM** (OAuth2, OpenID Connect, Verifiable Credentials)  
-      → **ODRL-based data policy**
-  - **Record baseline data** before project start (for Cost-Benefit Analysis)
-  - Assess **eco-design maturity** (General Policy Framework for Ecodesign v2024)  
-      → At least 30 highest-priority criteria
-
-
-### 📅 **Timeline (Third Round of open calls - WS1, WS2, WS3)**
-
-| Milestone | Date |
-|-----------|------|
-| Call opens | 13 May 2026 |
-| Call closes | 13 July 2026 (23:59 CET) |
-| Selection announced | August 2026 |
-| Pilots start | December 2026 |
-| Pilots end (max 18 months) | June 2028 |
-
-
-
-
-
-
-
-<!-- ## Work Strands - Piloting Opportunities
-
-
-
-<div class="grid cards grid-cols-1" markdown>
-
--   __Piloting Activities WS1__  
-
-    Technical Inter-connection of Existing LDTs.  
-
-    [:octicons-arrow-right-24: View Details](ws1.md)
+    [:octicons-arrow-right-24: Archive](open-calls.md)
 
 </div>
 
-<div class="grid cards grid-cols-1" markdown>
+---
 
--   __Piloting Activities WS2__  
+## Start from where you are
 
-    Creation of LDTs Based on Common Needs.  
+=== "I am building"
 
-    [:octicons-arrow-right-24: View Details](ws2.md)
+    Start with the **[implementation guidance](implementation.md)** to place yourself — which
+    LDT level you are working at, which reference architecture applies, and how the
+    methodology, resources and Blueprint connect.
+
+    Then follow the **[workflow](workflows.md)** for your work strand:
+
+    | Your situation | Workflow |
+    |---|---|
+    | Existing twins that need to talk to each other | [WS1 · Interconnect existing LDTs](workflows.md#ws1-interconnect-existing-ldts) |
+    | A twin that does not exist yet | [WS2 · Deploy a new LDT](workflows.md#ws2-deploy-a-new-ldt) |
+    | A working twin that should predict, explain or advise | [WS3 · Build an AI-based service](workflows.md#ws3-build-an-ai-based-service) |
+
+    Keep the **[obligations](obligations.md)** page open alongside — several steps carry
+    binding requirements.
+
+    As you go, **[post updates](contributing.md#posting-a-pilot-update)** on what you build and
+    learn. They appear on your pilot's page and in the updates feed.
+
+=== "I need to check an obligation"
+
+    The **[obligations](obligations.md)** page groups requirements by theme — build,
+    interoperate, follow the methodology, engage, share back, sustain — with the Rq/Rc codes
+    and a column per work strand.
+
+    Codes differ between strands, so read your own column. For binding wording, go to the
+    [Call for Pilots Manual](open-calls.md#call-for-pilots-manuals).
+
+    The two deadlines most often missed:
+
+    - the **ISAQ** in months 1–2 *and* again in the second reporting period — a final score
+      above three is a **condition for payment**;
+    - **packaging and publishing** assets, which is far cheaper done continuously than at the
+      end.
+
+=== "I am looking for the call requirements"
+
+    The calls are closed, but the full reference is archived:
+    **[open calls](open-calls.md)** for consortium conditions, financial rules and timelines,
+    and the per-strand cheat sheets for the detailed breakdowns —
+    [WS1](ws1.md) · [WS2](ws2.md) · [WS3](ws3.md).
+
+---
+
+## The three work strands
+
+Each strand targets a different level of the LDT stack. They stack on one another — a WS3
+service still needs the Core a WS2 pilot builds.
+
+!!! abstract "WS1 · Technical interconnection of LDTs"
+    **Linking and scaling digital twins already in place.**
+    Works at the <span class="level-dot individual">Base and Core levels</span>: exposing what
+    exists through standard interfaces and connecting it to other twins.
+
+    [Architecture](implementation.md#ws1-technical-interconnection) ·
+    [Workflow](workflows.md#ws1-interconnect-existing-ldts) ·
+    [Call requirements](ws1.md)
+
+!!! abstract "WS2 · Creation of LDTs based on common needs"
+    **Addressing shared urban or regional challenges.**
+    Builds the <span class="level-dot ecosystem">Core</span>: shared data acquisition, context
+    management and analytics, specified once and instantiated locally.
+
+    [Architecture](implementation.md#ws2-ldt-deployment) ·
+    [Workflow](workflows.md#ws2-deploy-a-new-ldt) ·
+    [Call requirements](ws2.md)
+
+!!! abstract "WS3 · Advanced AI-based capabilities"
+    **Integrating AI-driven services into existing LDTs.**
+    Works at the <span class="level-dot assets">Surface</span>: AI services, simulation and
+    immersive interfaces consuming an existing LDT and publishing results back into it.
+
+    [Architecture](implementation.md#ws3-ai-based-services) ·
+    [Workflow](workflows.md#ws3-build-an-ai-based-service) ·
+    [Call requirements](ws3.md)
+
+---
+
+## Testing environment
+
+A sandboxed reference environment for pilot demonstrations is planned, so that pilots can try
+a deployment without standing up their own stack first.
+
+!!! info "Coming soon"
+    The environment is not yet available. In the meantime the
+    [technical resources](../resources_content/tech_resources.md) list the components to deploy
+    locally.
+
+---
+
+## Related sections
+
+<div class="grid cards" markdown>
+
+-   :material-toolbox-outline:{ .lg .middle } __Resources__
+
+    The technical resource library, the LDT4SSC Methodology and its workshops, impact
+    assessment, legal and AI guidance.
+
+    [:octicons-arrow-right-24: Resources](../resources_content/index.md)
+
+-   :material-ruler-square-compass:{ .lg .middle } __Interoperability Blueprint__
+
+    Building blocks, workflows and reference architectures — co-created with pilots and under
+    active development.
+
+    [:octicons-arrow-right-24: Blueprint](../blueprint/)
+
+-   :material-compass-outline:{ .lg .middle } __Strategy & Sustainability__
+
+    The conditions these obligations are designed to create, and 18 capabilities mapped against
+    the same requirement codes.
+
+    [:octicons-arrow-right-24: Strategy](../strategy/index.md)
+
+-   :material-flag-outline:{ .lg .middle } __Pilot Journey__
+
+    What the pilots are building, the obstacles they hit, and the assets they publish.
+
+    [:octicons-arrow-right-24: Pilot Journey](../journey/index.md)
+
 </div>
-
-
-<div class="grid cards grid-cols-1" markdown>
-
--   __Piloting Activities WS3__  
-
-    Adding New Advanced AI-Based Tools to the LDTs Toolbox.  
-
-    [:octicons-arrow-right-24: View Details](ws3.md)
-
-</div> -->
----
-
-## Testing Environment  
-
-- **Demo environment:** Provide sandboxed or reference environments for pilot demonstrations.  
-
-*Coming soon.*
- 
----
-
-## Application Process  
-
-👉 The third and last round of open calls is now **CLOSED**. Join our [**Stakeholder Forum**](https://docs.google.com/forms/d/e/1FAIpQLScyauYurnx0KJM29TTKWmZzlSCcY8LlIVnhTF4weM1qGKDdPg/viewform) to follow the latest updates of the community. Access the [**pilot journey**](../journey/) to know more about our pilots.

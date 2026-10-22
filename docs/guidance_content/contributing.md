@@ -1,13 +1,8 @@
 ---
 title: Posting updates & contributing
-search:
-  exclude: true
 ---
 
 # Posting updates & contributing
-
-!!! warning "Draft for partner validation"
-    This page is a **draft under review**, not listed in the site navigation.
 
 Pilots publish their progress on this Hub, ask questions, compare approaches with other pilots,
 and suggest additions to the Knowledge Base. All of it happens through

@@ -41,9 +41,15 @@ nav:
     - Cities Network: communities_content/Cities_Network_Related_Initiatives.md
   - Pilot Guidance:
     - guidance_content/index.md
-    - WS1 – Interconnection of LDTs: guidance_content/ws1.md
-    - WS2 – Creation of LDTs: guidance_content/ws2.md
-    - WS3 – AI-Based Capabilities: guidance_content/ws3.md
+    - Implementation guidance: guidance_content/implementation.md
+    - Implementation workflows: guidance_content/workflows.md
+    - Pilot obligations: guidance_content/obligations.md
+    - Posting updates & contributing: guidance_content/contributing.md
+    - Open calls (archive):
+      - guidance_content/open-calls.md
+      - WS1 – Interconnection of LDTs: guidance_content/ws1.md
+      - WS2 – Creation of LDTs: guidance_content/ws2.md
+      - WS3 – AI-Based Capabilities: guidance_content/ws3.md
   - Resources:
     - resources_content/index.md
     - Technical Resources: resources_content/tech_resources.md

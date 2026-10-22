@@ -1,13 +1,8 @@
 ---
 title: Pilot obligations
-search:
-  exclude: true
 ---
 
 # Pilot obligations
-
-!!! warning "Draft for partner validation"
-    This page is a **draft under review**, not listed in the site navigation.
 
 What an awarded pilot has to do, build, assess and publish during implementation — gathered
 from the Call for Pilots Manuals and grouped by theme rather than by call section, so you can

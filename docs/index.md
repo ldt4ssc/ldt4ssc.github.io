@@ -60,7 +60,7 @@ project's lifetime.
 
 ## Purpose
 
-The Knowledge Hub is more than a repository. By consolidating resources in one place, it:
+The Knowledge Hub is the navigation layer on top of the project's Knowledge Base. By consolidating resources in one place, it:
 
 - **Documents the strategy** — mission, vision, impact assessment and the sustainability
   framework guiding the project;
