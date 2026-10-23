@@ -287,11 +287,19 @@ The technical resource library is categorised by layer (according to the MIM8 la
 
 ## Suggest a Resource
 
-Know of a technical resource that should be included in our database? Share it with us using the form below!
+Know of a technical resource that should be included in our database? Propose it in the
+Knowledge Base suggestions category on GitHub. A form there asks for the main link, a short
+description, why it matters for Local Digital Twins, the publisher, and who it is for.
 
-<div class="form-container">
-  <iframe src="https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/new?category=knowledge-base-suggestions" width="100%" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
+Others can upvote or comment, and curators add agreed suggestions to the catalogue.
+
+<p style="text-align: center; margin-top: 1.5rem;">
+  <a href="https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/new?category=knowledge-base-suggestions" class="suggest-resource-button" target="_blank" rel="noopener">Suggest a resource on GitHub</a>
+</p>
+
+<p style="text-align: center; color: #616161; font-size: 0.8rem;">
+  Posting needs a free GitHub account. To report an error in an existing entry,
+  <a href="https://github.com/ldt4ssc/ldt4ssc.github.io/issues/new" target="_blank" rel="noopener">open an issue</a> instead.
+</p>
 
 
-## Other resources
