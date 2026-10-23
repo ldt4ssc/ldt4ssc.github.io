@@ -290,7 +290,7 @@ The technical resource library is categorised by layer (according to the MIM8 la
 Know of a technical resource that should be included in our database? Share it with us using the form below!
 
 <div class="form-container">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTRwPEhr_SjZekvfrwbSHNKugVfC6-HQSJGPL8FJIZsVWamA/viewform?embedded=true" width="100%" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <iframe src="https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/new?category=knowledge-base-suggestions" width="100%" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
 
 
