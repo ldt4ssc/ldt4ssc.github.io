@@ -1,0 +1,2612 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://knowledgehub.ldt4ssc.eu/guidance_content/workflows/">
+      
+      
+        <link rel="prev" href="../implementation/">
+      
+      
+        <link rel="next" href="../obligations/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/fav_icon_resized.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Implementation workflows - Knowledge Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+      <link rel="stylesheet" href="../../css/resources_poc.css">
+    
+      <link rel="stylesheet" href="../../css/methodology_diagram.css">
+    
+      <link rel="stylesheet" href="../../css/feedback_widget.css">
+    
+      <link rel="stylesheet" href="../../css/journey.css">
+    
+      <link rel="stylesheet" href="../../css/pilot_page.css">
+    
+      <link rel="stylesheet" href="../../css/guidance.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#implementation-workflows" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ldt4ssc.eu/" title="Knowledge Hub" class="md-header__button md-logo" aria-label="Knowledge Hub" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Knowledge Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Implementation workflows
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ldt4ssc.eu/" title="Knowledge Hub" class="md-nav__button md-logo" aria-label="Knowledge Hub" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Knowledge Hub
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../strategy/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategy & Sustainability
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Strategy & Sustainability
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/diagnostics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem diagnostics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/value/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Value & funding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/priorities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategic priorities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../communities_content/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Communities Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Smart Communities Ecosystem
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Data_Spaces_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/AI_For_Smart_Cities_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI for Smart Cities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Local_Digital_Twins_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Local Digital Twins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/CitiVerse_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CitiVerse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Interoperability_and_MIMs_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interoperability & MIMs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Cities_Network_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cities Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot Guidance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pilot Guidance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../implementation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementation guidance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementation workflows
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementation workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ws1-interconnect-existing-ldts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WS1 · Interconnect existing LDTs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WS1 · Interconnect existing LDTs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-semantic-and-structural-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 · Semantic and structural alignment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-enable-data-exchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 · Enable data exchange
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-governance-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 · Governance integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-operational-and-analytical-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 · Operational and analytical integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ws2-deploy-a-new-ldt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WS2 · Deploy a new LDT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WS2 · Deploy a new LDT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-agree-the-use-case-responsibilities-and-shared-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 · Agree the use case, responsibilities and shared specification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-prepare-and-ingest-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 · Prepare and ingest data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-deploy-context-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 · Deploy context management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-develop-and-package-the-shared-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 · Develop and package the shared Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-develop-analytics-and-ai-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 · Develop analytics and AI services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-build-surface-level-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 · Build Surface-level services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-deploy-locally-and-configure-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 · Deploy locally and configure access
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-integrate-governance-and-data-spaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 · Integrate governance and data spaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-document-and-publish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 · Document and publish
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ws3-build-an-ai-based-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WS3 · Build an AI-based service
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WS3 · Build an AI-based service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-define-the-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 · Define the services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-access-and-prepare-the-ldts-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 · Access and prepare the LDT's data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-build-the-road-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 · Build the road graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-develop-and-train-the-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 · Develop and train the models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-integrate-responsible-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 · Integrate responsible AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-deploy-and-serve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 · Deploy and serve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-build-user-facing-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 · Build user-facing services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-validate-with-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 · Validate with users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-document-publish-and-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 · Document, publish and share
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obligations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot obligations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posting updates & contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open calls (archive)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Open calls (archive)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-calls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open calls (archive)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ws1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WS1 – Interconnection of LDTs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ws2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WS2 – Creation of LDTs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ws3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WS3 – AI-Based Capabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../resources_content/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources_content/tech_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources_content/non_tech_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-technical Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../journey/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot Journey
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pilot Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journey/feed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot Updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ws1-interconnect-existing-ldts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WS1 · Interconnect existing LDTs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WS1 · Interconnect existing LDTs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-semantic-and-structural-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 · Semantic and structural alignment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-enable-data-exchange" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 · Enable data exchange
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-governance-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 · Governance integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-operational-and-analytical-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 · Operational and analytical integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ws2-deploy-a-new-ldt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WS2 · Deploy a new LDT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WS2 · Deploy a new LDT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-agree-the-use-case-responsibilities-and-shared-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 · Agree the use case, responsibilities and shared specification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-prepare-and-ingest-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 · Prepare and ingest data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-deploy-context-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 · Deploy context management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-develop-and-package-the-shared-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 · Develop and package the shared Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-develop-analytics-and-ai-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 · Develop analytics and AI services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-build-surface-level-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 · Build Surface-level services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-deploy-locally-and-configure-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 · Deploy locally and configure access
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-integrate-governance-and-data-spaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 · Integrate governance and data spaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-document-and-publish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 · Document and publish
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ws3-build-an-ai-based-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WS3 · Build an AI-based service
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WS3 · Build an AI-based service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-define-the-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 · Define the services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-access-and-prepare-the-ldts-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 · Access and prepare the LDT's data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-build-the-road-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 · Build the road graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-develop-and-train-the-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 · Develop and train the models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-integrate-responsible-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 · Integrate responsible AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-deploy-and-serve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 · Deploy and serve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-build-user-facing-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 · Build user-facing services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-validate-with-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 · Validate with users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-document-publish-and-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 · Document, publish and share
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+
+<h1 id="implementation-workflows">Implementation workflows</h1>
+<p>Three worked examples of getting from an existing situation to a working result, one per work
+strand. They are <strong>illustrative, not normative</strong>: each goal can be reached in several ways, with
+different software and different architecture layouts. What these workflows do is show one
+coherent path using resources from this Hub, so that the standards and tools stop being a list
+and start being a sequence.</p>
+<div class="admonition info">
+<p class="admonition-title">How to read these</p>
+<p>These are neither guidelines nor the sole reference solutions. The examples are intentionally
+concrete but <strong>not technology-agnostic</strong>: they name specific open standards, protocols and
+open-source tools that facilitate interoperability, while recognising other technical
+pathways achieve the same result. Where you deviate, write down why — that reasoning is what
+the <a href="../../blueprint/">Blueprint</a> needs back from you.</p>
+<p>The Blueprint documents two workflows at a finer grain than these strand-level recipes —
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#workflow-adding-new-slc-existing-ldt">adding a new Surface-level component</a>
+and <a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#workflow-discover-slc-existing-ldt">discovering which components work with which twin</a>.</p>
+</div>
+<div class="admonition pilot">
+<p class="admonition-title">If you are an LDT4SSC pilot</p>
+<p>Several steps below carry obligations specific to funded pilots — a SIMPL-Open Agent
+(<strong>Rq14</strong>), AI Act compliance (<strong>Rq21</strong>), publication to the EU LDT Marketplace (<strong>Rq27</strong>) and
+federation with WS1 pilots (<strong>Rc4</strong>). These are flagged in teal where they arise, and
+summarised under
+<a href="../implementation/#obligations-and-checkpoints">Obligations and checkpoints</a>.</p>
+</div>
+<p><a class="md-button" href="../implementation/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.78 19.03a.75.75 0 0 1-1.06 0l-6.25-6.25a.75.75 0 0 1 0-1.06l6.25-6.25a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L5.81 11.5h14.44a.75.75 0 0 1 0 1.5H5.81l4.97 4.97a.75.75 0 0 1 0 1.06"/></svg></span> Back to Implementation Guidance</a></p>
+<div class="workflow-steps">
+<h2 id="ws1-interconnect-existing-ldts">WS1 · Interconnect existing LDTs</h2>
+<p><strong>Scenario.</strong> An existing LDT holds its data in <a href="https://www.postgresql.org/docs/18/index.html"><strong>PostgreSQL</strong></a>,
+with PostGIS for geospatial data and TimescaleDB for time series. The source is left
+unchanged: an adaptor maps its data to <a href="https://cim.etsi.org/NGSI-LD/official/front-page.html"><strong>NGSI-LD</strong></a>
+entities, which a context broker exposes, and the LDT joins an existing data space through a
+<a href="https://code.europa.eu/simpl/simpl-open/documentation/user-manual"><strong>SIMPL-Open</strong></a> Agent
+that includes an EDC-based connector.</p>
+<div class="admonition info">
+<p class="admonition-title">Guiding principle — expose, don't rebuild</p>
+<p>The legacy twin's internal architecture stays untouched. Interoperability is achieved at
+the boundary, through adaptation and standard interfaces, so each organisation keeps its
+sovereign storage format while becoming legible to the others.</p>
+</div>
+<h3 id="step-1-semantic-and-structural-alignment">Step 1 · Semantic and structural alignment</h3>
+<p class="step-goal"><strong>Goal:</strong> make the existing LDT's data interpretable by other LDTs, by mapping it to open standards and shared models <strong>without changing the source</strong>.</p>
+<p><em>Define the semantic target</em></p>
+<ul>
+<li>Adopt NGSI-LD with the relevant <a href="https://github.com/smart-data-models"><strong>Smart Data Models</strong></a>
+  as the starting point for contextual data, extending them where needed and contributing
+  extensions back to the community.</li>
+</ul>
+<p><em>Deploy a context broker to manage NGSI-LD entities</em></p>
+<ul>
+<li>Configure a <a href="https://stellio.readthedocs.io/en/latest/"><strong>Stellio</strong></a> context broker as
+  the central component for contextual entity management.</li>
+<li>Expose geospatial layers through <a href="https://docs.ogc.org/is/17-069r4/17-069r4.html"><strong>OGC API Features</strong></a>
+  interfaces.</li>
+</ul>
+<p><em>Build and plug mappings using ETL adaptors</em></p>
+<ul>
+<li>Use <a href="https://jolt-demo.appspot.com/"><strong>JoltTransform Demo</strong></a> to test transformations, and
+  <a href="https://nifi.apache.org/documentation/"><strong>Apache NiFi</strong></a> (or
+  <a href="https://fiware-draco.readthedocs.io/en/latest/"><strong>FIWARE Draco</strong></a> within Apache NiFi)
+  to map the database to NGSI-LD entities.</li>
+<li>Validate payloads against NGSI-LD and Smart Data Models using
+  <a href="https://pypi.org/project/pysmartdatamodels/"><strong>PySmartDataModels</strong></a>.</li>
+</ul>
+<h3 id="step-2-enable-data-exchange">Step 2 · Enable data exchange</h3>
+<p class="step-goal"><strong>Goal:</strong> describe and register the transformed data so that other participants in the data space can <strong>discover it and request access</strong>.</p>
+<p><em>Prepare and maintain DCAT-AP metadata to register in the data space</em></p>
+<ul>
+<li>Create and maintain <a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/300"><strong>DCAT-AP</strong></a>
+  records for datasets and each distribution in the context broker.</li>
+<li>Ensure metadata records follow the <strong>ETSI GR CIM 048</strong> definitions, which map NGSI-LD
+  entities to DCAT-AP representations (Catalog, Dataset, Distribution, Data Service).</li>
+<li>Link each record to its <strong>live data source</strong> via unique identifiers, and include key
+  metadata such as data source, update frequency, contact information and licence.</li>
+</ul>
+<p><em>Deploy a SIMPL-Open Agent and publish the catalogue</em></p>
+<ul>
+<li>Deploy a SIMPL-Open Agent, which includes an <a href="https://eclipse-edc.github.io/documentation/"><strong>EDC</strong></a>-based
+  data space connector.</li>
+</ul>
+<div class="admonition pilot">
+<p class="admonition-title">If you are an LDT4SSC pilot</p>
+<p>Deploying a <strong>SIMPL-Open Agent is required by Rq14</strong> — it is not optional for WS1 pilots.</p>
+</div>
+<ul>
+<li>Register the connector's endpoint with the data space operator (e.g. the participant
+  responsible for the SIMPL-Open Governance Authority Agent).</li>
+<li>Expose the DCAT-AP metadata via the connector, ensuring alignment with the
+  <a href="https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/"><strong>Eclipse Dataspace Protocol</strong></a>.</li>
+</ul>
+<h3 id="step-3-governance-integration">Step 3 · Governance integration</h3>
+<p class="step-goal"><strong>Goal:</strong> make the LDT a <strong>trusted, sovereign participant</strong> in the data space, controlling who accesses its data and on what terms.</p>
+<p><em>Establish identity and access</em></p>
+<ul>
+<li>Configure <a href="https://www.keycloak.org/documentation.html"><strong>Keycloak</strong></a> with <strong>OAuth 2.0 /
+  OpenID Connect</strong> to manage authentication, role-based access control and token-based
+  authorisation across components.</li>
+</ul>
+<p><em>Attach and apply usage and privacy policies</em></p>
+<ul>
+<li>Use <a href="https://www.w3.org/TR/odrl-model/"><strong>ODRL</strong></a> to model permissions, prohibitions and
+  duties, aligned with the <strong>Gaia-X Trust Framework</strong>.</li>
+<li>Register policies in the SIMPL-Open Agent via the Eclipse Dataspace Protocol.</li>
+<li>Configure the Agent's connector to enforce them at runtime. Where other LDTs query the
+  broker directly, <strong>enforce the same policies at the broker</strong> through Stellio's access
+  control or <a href="https://www.openpolicyagent.org/docs"><strong>Open Policy Agent</strong></a>.</li>
+</ul>
+<p><em>Federate catalogues and context</em></p>
+<ul>
+<li>Make the connector's DCAT-AP catalogue available to the data space's <strong>federated
+  catalogue</strong>, as maintained by SIMPL-Open.</li>
+<li>Enable inter-LDT interoperability through <strong>NGSI-LD federation</strong> across context brokers.</li>
+</ul>
+<h3 id="step-4-operational-and-analytical-integration">Step 4 · Operational and analytical integration</h3>
+<p class="step-goal"><strong>Goal:</strong> put the interconnection to use for analysis, decision support and participation,</p>
+<p><strong>while keeping shared outputs governed</strong>.</p>
+<p><em>Build analytical pipelines on the federated context</em></p>
+<ul>
+<li>Use NGSI-LD federation as the underlying infrastructure for distributed, semantically
+  interoperable access to shared assets across LDT deployments.</li>
+<li>Orchestrate machine learning pipelines with <a href="https://www.kubeflow.org/docs/"><strong>Kubeflow</strong></a>
+  and deploy trained models with <a href="https://kserve.github.io/website/docs/intro"><strong>KServe</strong></a>,
+  publishing results back to the broker as NGSI-LD entities.</li>
+</ul>
+<p><em>Deploy visualisation and decision support tools</em></p>
+<ul>
+<li>Provide analytical dashboards with <a href="https://grafana.com/docs/"><strong>Grafana</strong></a> or
+  <a href="https://superset.apache.org/docs/intro"><strong>Apache Superset</strong></a> for temporal and tabular
+  insights.</li>
+<li>Deliver geospatial visualisations with <a href="https://maplibre.org/maplibre-gl-js/docs/"><strong>MapLibre</strong></a>
+  or <a href="https://docs.kepler.gl/docs/api-reference"><strong>kepler.gl</strong></a>, and enable citizen
+  participation through <a href="https://docs.decidim.org/en/develop/index.html"><strong>Decidim</strong></a>.</li>
+</ul>
+<p><em>Maintain governance in operation</em></p>
+<ul>
+<li>Register all shared outputs and analytical services in SIMPL, maintaining DCAT-AP records
+  and corresponding policy references.</li>
+<li>Continuously monitor connector and broker logs to verify policy compliance and ensure
+  transparency of data flows and usage.</li>
+</ul>
+<h2 id="ws2-deploy-a-new-ldt">WS2 · Deploy a new LDT</h2>
+<p><strong>Scenario.</strong> Several municipalities jointly specify shared components covering data
+acquisition, context management, analytics and user-facing services, which each then
+instantiates with its own data. A third-party partner may deliver Core components as
+open-source software or operate them as a service with tenant isolation, or build the
+Surface-level services that consume them.</p>
+<div class="admonition info">
+<p class="admonition-title">Guiding principle — data sovereignty</p>
+<p>Whatever the delivery model, each municipality keeps <strong>ownership of its data, control over
+configuration, and the ability to operate independently</strong>.</p>
+</div>
+<h3 id="step-1-agree-the-use-case-responsibilities-and-shared-specification">Step 1 · Agree the use case, responsibilities and shared specification</h3>
+<p class="step-goal"><strong>Goal:</strong> agree what you are building together, who builds each part, and the specification every part must conform to.</p>
+<p><em>Define the cross-sector use case</em>, making use of the
+<a href="../../resources_content/methodology/">LDT4SSC Methodology</a>:</p>
+<ul>
+<li>Specify the data flows, analytical capabilities and user-facing services to be developed.</li>
+<li>Identify the sources each municipality will contribute, whether existing databases and
+  data platforms, new sensors or third-party feeds.</li>
+</ul>
+<p><em>Survey what already exists, before deciding to build</em></p>
+<ul>
+<li>Search the <a href="https://interoperable-europe.ec.europa.eu/collection/ldttoolbox">EU LDT Toolbox</a>
+  catalogue and the <a href="../implementation/#sharing-back">LDT4SSC Asset Repository</a> for components covering part
+  of your use case. Record an explicit <strong>reuse / extend / build</strong> decision for each
+  capability.</li>
+</ul>
+<p><em>Assign responsibilities for development</em></p>
+<ul>
+<li>Agree the division of work between consortium members.</li>
+<li>Define the <strong>delivery model</strong>: open-source components deployed locally by municipalities,
+  or a service operated by a private partner with tenant isolation.</li>
+</ul>
+<p><em>Define the interoperability contract</em></p>
+<ul>
+<li>Agree data models and entity types (e.g. NGSI-LD with Smart Data Models), selecting
+  existing models or proposing new ones where needed.</li>
+<li>Specify interfaces using <a href="https://spec.openapis.org/oas/v3.1.0.html"><strong>OpenAPI 3.1</strong></a> for
+  synchronous APIs and <a href="https://www.asyncapi.com/docs/reference/specification/v3.0.0"><strong>AsyncAPI</strong></a>
+  for event-driven interfaces.</li>
+<li>Document the mandatory attributes, update frequencies and data quality requirements all
+  parties commit to.</li>
+</ul>
+<h3 id="step-2-prepare-and-ingest-data">Step 2 · Prepare and ingest data</h3>
+<p class="step-goal"><strong>Goal:</strong> each municipality brings its existing and new data into the agreed models through its own ingestion pipelines.</p>
+<p><em>Inventory and prepare existing data</em></p>
+<ul>
+<li>Catalogue existing sources relevant to the use case, including municipal databases, open
+  data portals, GIS systems and the <strong>DS4SSCC-DEP Priority Datasets</strong>.</li>
+<li>Assess data quality and identify gaps that require new data collection.</li>
+</ul>
+<p><em>Deploy sensors and new data sources</em></p>
+<ul>
+<li>Install IoT sensors or integrate third-party feeds, accessible via standard protocols
+  (<strong>HTTPS</strong>, <a href="https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html"><strong>MQTT</strong></a>).</li>
+</ul>
+<p><em>Build ingestion pipelines</em></p>
+<ul>
+<li>Deploy Apache NiFi as the ETL layer for each municipality.</li>
+<li>Map source data to the agreed entity types, testing transformations in JoltTransform Demo.</li>
+<li>Validate transformed payloads using PySmartDataModels prior to ingestion.</li>
+</ul>
+<h3 id="step-3-deploy-context-management">Step 3 · Deploy context management</h3>
+<p class="step-goal"><strong>Goal:</strong> give each municipality a context broker holding the <strong>current and historical state</strong> of its entities.</p>
+<p><em>Deploy the context broker and ingest data</em></p>
+<ul>
+<li>Deploy Stellio as the NGSI-LD context broker, or receive a dedicated tenant where the
+  private partner operates it as a service.</li>
+<li>Configure the broker to receive entities from the ingestion pipelines, with PostgreSQL
+  and PostGIS for persistent and geospatial storage.</li>
+</ul>
+<h3 id="step-4-develop-and-package-the-shared-core">Step 4 · Develop and package the shared Core</h3>
+<p class="step-goal"><strong>Goal:</strong> build the shared Core components <strong>once</strong>, in a form each municipality can deploy and configure independently.</p>
+<p><em>If municipalities jointly develop the Core as open-source components</em></p>
+<ul>
+<li>Implement data management services and APIs according to the shared specification, in a
+  shared code repository with agreed contribution and review processes.</li>
+<li>Package components as <a href="https://docs.docker.com/"><strong>Docker</strong></a> containers with
+  configuration-driven customisation, so each city can deploy independently.</li>
+</ul>
+<p><em>If a private partner delivers the Core</em></p>
+<ul>
+<li>For <strong>open-source delivery</strong>, provide container images, <a href="https://helm.sh/docs/"><strong>Helm</strong></a>
+  charts and documentation for municipalities to deploy on their own infrastructure.</li>
+<li>For <strong>delivery as a service</strong>, operate the infrastructure with strict tenant isolation,
+  and provide a control plane through which municipalities register data connectors, adjust
+  processing parameters, define access policies, monitor system status, and <strong>retrieve or
+  purge their data at any time</strong>.</li>
+</ul>
+<h3 id="step-5-develop-analytics-and-ai-services">Step 5 · Develop analytics and AI services</h3>
+<p class="step-goal"><strong>Goal:</strong> develop shared analytical capabilities each municipality can run on its own data.</p>
+<p><em>Develop analytical modules</em></p>
+<ul>
+<li>Build models addressing the cross-sector use case (e.g. predictive models, anomaly
+  detection), prototyped and trained with <a href="https://scikit-learn.org/stable/"><strong>Scikit-Learn</strong></a>
+  or <a href="https://docs.pytorch.org/docs/stable/index.html"><strong>PyTorch</strong></a> and <strong>parameterised so
+  each city can retrain on its own data</strong>.</li>
+<li>Use Kubeflow for pipeline orchestration and <a href="https://mlflow.org/docs/latest/"><strong>MLflow</strong></a>
+  for experiment tracking.</li>
+</ul>
+<p><em>Deploy inference services</em></p>
+<ul>
+<li>Serve models with KServe, consuming NGSI-LD entities and publishing results back to the
+  context broker.</li>
+<li>Keep services <strong>stateless</strong>, so they can be deployed per municipality or shared with
+  tenant isolation.</li>
+</ul>
+<p><em>Integrate responsible AI tooling</em></p>
+<ul>
+<li>Use <a href="https://shap.readthedocs.io/en/latest/"><strong>SHAP</strong></a> for model explainability, and
+  <a href="https://docs.evidentlyai.com/"><strong>Evidently AI</strong></a> to monitor model drift and data quality
+  in production. The <a href="#ws3-build-an-ai-based-service">WS3 workflow</a> covers AI service development in more
+  detail.</li>
+</ul>
+<h3 id="step-6-build-surface-level-services">Step 6 · Build Surface-level services</h3>
+<p class="step-goal"><strong>Goal:</strong> build the user-facing services and visualisations that consume the shared Core.</p>
+<p><em>Develop Surface-level services on the shared Core</em></p>
+<ul>
+<li>Build visualisation tools, citizen-facing applications or domain-specific services that
+  consume the Core APIs, respecting each municipality's access policies.</li>
+<li>Deliver them as components municipalities host themselves, or as a service with tenant
+  separation.</li>
+</ul>
+<p><em>Example Surface-level components</em></p>
+<ul>
+<li>Grafana dashboards connected to the context broker, from shared templates customised per
+  city.</li>
+<li>MapLibre for geospatial visualisation.</li>
+<li>Decidim for citizen participation, connected to relevant Core data within governance
+  constraints.</li>
+</ul>
+<h3 id="step-7-deploy-locally-and-configure-access">Step 7 · Deploy locally and configure access</h3>
+<p class="step-goal"><strong>Goal:</strong> each municipality deploys and configures its own LDT instance from the shared components, and confirms it works end to end.</p>
+<p><em>Deploy infrastructure</em></p>
+<ul>
+<li>Deploy the Core and Surface components on each municipality's infrastructure using the
+  provided containers and <a href="https://kubernetes.io/docs/home/"><strong>Kubernetes</strong></a> manifests (or
+  Docker Compose for simpler setups), or onboard a dedicated tenant where a partner
+  operates the service.</li>
+</ul>
+<p><em>Configure identity and access</em></p>
+<ul>
+<li>Integrate Keycloak for authentication and role-based access control using OAuth 2.0 /
+  OpenID Connect, with each municipality managing its own users and permissions.</li>
+</ul>
+<p><em>Customise to local context</em></p>
+<ul>
+<li>Apply city-specific configuration for data source endpoints, transformation parameters,
+  dashboard branding and language settings, <strong>without code changes</strong>.</li>
+</ul>
+<p><em>Validate the deployment</em></p>
+<ul>
+<li>Run the <a href="https://forge.etsi.org/rep/cim/ngsi-ld-test-suite"><strong>NGSI-LD Test Suite</strong></a> to
+  verify context broker compliance.</li>
+<li>Validate sample data flows end to end, from ingestion through analytics to Surface-level
+  services.</li>
+</ul>
+<h3 id="step-8-integrate-governance-and-data-spaces">Step 8 · Integrate governance and data spaces</h3>
+<p class="step-goal"><strong>Goal:</strong> safeguard each municipality's data sovereignty and enable controlled sharing beyond the consortium.</p>
+<p><em>Safeguard sovereignty</em></p>
+<ul>
+<li>Ensure each municipality retains ownership and control of its data regardless of the
+  deployment model. Where a partner operates the service, guarantee data isolation, export
+  rights and deletion through <strong>contractual and technical measures</strong>.</li>
+</ul>
+<p><em>Integrate with data spaces, where applicable</em></p>
+<ul>
+<li>Deploy a data space connector
+  (<a href="https://github.com/FIWARE/data-space-connector/tree/main/doc">FIWARE Data Space Connector</a>,
+  EDC Connector or TRUE Connector) to enable controlled sharing with external parties or
+  across the consortium.</li>
+</ul>
+<div class="admonition pilot">
+<p class="admonition-title">If you are an LDT4SSC pilot</p>
+<p><strong>Rc4 encourages federation with WS1 pilots</strong> through a SIMPL-Open Agent, so your twin can
+join the wider interconnection those pilots are building.</p>
+</div>
+<ul>
+<li>Create DCAT-AP metadata records for datasets and services, exposed via the connector for
+  discovery.</li>
+</ul>
+<p><em>Enforce usage policies</em></p>
+<ul>
+<li>Define usage policies using ODRL, aligned with the Gaia-X Trust Framework, with each
+  municipality setting its own and connectors enforcing them at runtime.</li>
+</ul>
+<h3 id="step-9-document-and-publish">Step 9 · Document and publish</h3>
+<p class="step-goal"><strong>Goal:</strong> ensure the components can be maintained by the municipalities and <strong>reused by other cities</strong>.</p>
+<p><em>Produce technical documentation</em></p>
+<ul>
+<li>Produce architecture documentation, API references, deployment guides and configuration
+  recipes.</li>
+<li>Document the interoperability contract and data models for future adopters.</li>
+</ul>
+<p><em>Train and hand over</em></p>
+<ul>
+<li>Deliver training sessions for municipal technical staff on system operation and
+  troubleshooting.</li>
+<li>Where a partner operates the service, document <strong>exit procedures</strong> for exporting data and
+  migrating to self-hosting or another provider.</li>
+</ul>
+<p><em>Publish openly</em></p>
+<ul>
+<li>Publish jointly developed components under open-source licences to the
+  <strong>LDT4SSC Assets Repository</strong>.</li>
+<li>Contribute new data models to the community.</li>
+</ul>
+<h2 id="ws3-build-an-ai-based-service">WS3 · Build an AI-based service</h2>
+<p><strong>Scenario.</strong> WS3 pilots develop <strong>at least two AI-based services</strong> that extend existing LDTs
+with predictive, prospective or prescriptive capabilities, working mainly at the Surface
+level. A private partner typically leads development, with municipalities providing LDT data,
+domain expertise and validation environments.</p>
+<p>The example use case explores <strong>how road closures and traffic management measures affect
+traffic on surrounding streets and, through it, air quality</strong>, so that planners and residents
+can see the likely effect of an intervention on their neighbourhood before it happens. The
+workflow applies equally to other cross-sectoral cases built on networks, such as energy grids
+or water distribution.</p>
+<div class="admonition info">
+<p class="admonition-title">Guiding principle — replicability by construction</p>
+<p>Services must be documented and validated with end users so <strong>other cities can replicate
+them</strong>, and must follow responsible AI principles throughout. Design for that from the
+first line of code, not as a final write-up.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">This is one modelling approach among several</p>
+<p>The example below learns from historical disruptions using a graph neural network. Other
+services will call for different approaches — forecasting on sensor history, anomaly
+detection, or agent-based simulation where behavioural change matters. Steps 1–2 and 5–9
+apply regardless; steps 3–4 are where your modelling choice lands. The Blueprint's
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#support-different-ai-models">supporting different AI models</a>
+section covers the interoperability requirements that apply whichever you choose.</p>
+</div>
+<h3 id="step-1-define-the-services">Step 1 · Define the services</h3>
+<p class="step-goal"><strong>Goal:</strong> agree what the two services predict, the data they need, and the interventions they can <strong>credibly</strong> cover.</p>
+<p><em>Define the services</em></p>
+<ul>
+<li><strong>Traffic Redistribution Predictor</strong> — estimates traffic on every road segment given
+  current conditions and a proposed change to the network.</li>
+<li><strong>Air Quality Impact Estimator</strong> — estimates the resulting change in NO₂ and PM2.5
+  concentrations, and identifies which segments contribute most in each zone.</li>
+</ul>
+<p><em>Document each service</em></p>
+<ul>
+<li><strong>Inputs:</strong> <code>TrafficFlowObserved</code>, <code>RoadSegment</code> and <code>AirQualityObserved</code> entities, plus
+  the proposed network change.</li>
+<li><strong>Outputs:</strong> predicted traffic per road segment and air quality per zone, with
+  uncertainty bounds.</li>
+<li><strong>User interaction:</strong> an interactive map where users select interventions and see
+  predicted impacts.</li>
+</ul>
+<p><em>Set the scope and check for reuse</em></p>
+<ul>
+<li>Limit the scope to <strong>interventions represented in the historical data</strong> (e.g. closures,
+  lane reductions, signal changes). Measures that change travel behaviour are outside what
+  the models can learn from traffic history.</li>
+<li>Check existing models, including the
+  <a href="https://interoperable-europe.ec.europa.eu/collection/ldttoolbox">EU LDT Toolbox</a>
+  <strong>Urban Mobility</strong> and <strong>Pollution Propagation</strong> models, before building from scratch.</li>
+</ul>
+<p><em>Assess readiness and assign responsibilities</em></p>
+<ul>
+<li>Assess each municipality's LDT for the traffic, air quality and disruption data required.</li>
+<li>Agree responsibilities between the private partner and the municipalities, and the
+  delivery model.</li>
+</ul>
+<h3 id="step-2-access-and-prepare-the-ldts-data">Step 2 · Access and prepare the LDT's data</h3>
+<p class="step-goal"><strong>Goal:</strong> gather and prepare the traffic, air quality and disruption data the models will learn from.</p>
+<p><em>Access LDT data</em></p>
+<ul>
+<li>Retrieve entities from each municipality's LDT through the <strong>NGSI-LD API</strong>, or via
+  adaptors where the LDT uses a different set of standards.</li>
+</ul>
+<p><em>Collect disruption history</em></p>
+<ul>
+<li>Gather records of <strong>road works, incidents and events</strong> from municipal sources. These are
+  the examples from which the model learns the effect of an intervention.</li>
+</ul>
+<p><em>Clean and integrate the data</em></p>
+<ul>
+<li>Clean the data and temporally align traffic and air quality observations with Apache NiFi.</li>
+<li>Store the integrated datasets in PostgreSQL with PostGIS.</li>
+</ul>
+<h3 id="step-3-build-the-road-graph">Step 3 · Build the road graph</h3>
+<p class="step-goal"><strong>Goal:</strong> represent the road network as a <strong>graph</strong> on which traffic observations and past disruptions can be learned.</p>
+<p><em>Define the graph</em></p>
+<ul>
+<li>Represent each road segment as a <strong>node</strong>, connected to the segments it shares an
+  intersection with, carrying capacity, speed limit and lane count as attributes.</li>
+</ul>
+<p><em>Attach observations and disruptions</em></p>
+<ul>
+<li>Attach traffic observations to their segments as time series. Segments without sensors
+  stay in the graph <strong>without</strong> observations.</li>
+<li>Encode each historical disruption as a <strong>change to the graph</strong>, with the affected segments
+  removed or flagged, paired with the traffic observed while it lasted.</li>
+<li>Version each training dataset with <a href="https://dvc.org/doc"><strong>DVC</strong></a>.</li>
+</ul>
+<h3 id="step-4-develop-and-train-the-models">Step 4 · Develop and train the models</h3>
+<p class="step-goal"><strong>Goal:</strong> train models that predict how a change on one road segment affects traffic across the network, and air quality with it.</p>
+<p><em>Train the traffic model</em></p>
+<ul>
+<li>Train a <strong>spatio-temporal graph neural network</strong> in
+  <a href="https://pytorch-geometric.readthedocs.io/en/latest/"><strong>PyTorch Geometric</strong></a> on both
+  normal and disrupted periods, <strong>holding back a set of past disruptions for validation</strong>.</li>
+<li>Estimate uncertainty with an ensemble of models or quantile outputs.</li>
+</ul>
+<p><em>Train the air quality estimator</em></p>
+<ul>
+<li>Train <a href="https://xgboost.readthedocs.io/en/stable/"><strong>XGBoost</strong></a> on observed traffic around
+  each monitoring station, to be applied to predicted traffic.</li>
+</ul>
+<p><em>Track and scale training</em></p>
+<ul>
+<li>Log all training runs with MLflow, linked to the DVC data version.</li>
+<li>Where partner municipalities <strong>cannot pool data</strong>, train across cities with
+  <strong>EU LDT Federated Learning</strong> so each city's data stays local, and use the
+  <strong>AI Factories</strong> for GPU capacity where needed.</li>
+</ul>
+<h3 id="step-5-integrate-responsible-ai">Step 5 · Integrate responsible AI</h3>
+<p class="step-goal"><strong>Goal:</strong> make the services' predictions explainable, open about their uncertainty, and compliant with European AI requirements <strong>before they reach users</strong>.</p>
+<p><em>Explainability</em></p>
+<ul>
+<li>Use <strong>graph explainability methods</strong> to show which segments most influence a predicted
+  change, and SHAP to show what drives each air quality estimate.</li>
+</ul>
+<p><em>Uncertainty communication</em></p>
+<ul>
+<li><strong>Widen the reported uncertainty</strong> for segments without sensors and for interventions
+  unlike any in the training history, and flag the latter to users.</li>
+</ul>
+<p><em>Documentation for trustworthiness</em></p>
+<ul>
+<li>Produce a <strong>model card</strong> for each service covering intended use, data sources, performance
+  metrics, known limitations and fairness assessments.</li>
+</ul>
+<div class="admonition pilot">
+<p class="admonition-title">If you are an LDT4SSC pilot</p>
+<p><strong>Rq21 requires AI Act compliance</strong> for AI influencing public decisions. <strong>CitCom.ai</strong>'s
+testing services can provide supporting evidence.</p>
+</div>
+<h3 id="step-6-deploy-and-serve">Step 6 · Deploy and serve</h3>
+<p class="step-goal"><strong>Goal:</strong> make the trained models available as secure, <strong>interactive</strong> services integrated with the LDT.</p>
+<p><em>Deploy inference services</em></p>
+<ul>
+<li>Serve both models using KServe behind the
+  <a href="https://kserve.github.io/website/docs/concepts/architecture/data-plane/v2-protocol"><strong>Open Inference Protocol</strong></a>,
+  with each API described in OpenAPI 3.1. Inference takes <strong>milliseconds</strong>, so scenarios
+  return interactively.</li>
+<li>Secure the endpoints with Keycloak through OAuth 2.0 / OpenID Connect, so each service
+  applies the access policies of the municipality whose data it uses.</li>
+</ul>
+<p><em>Integrate with LDT data flows</em></p>
+<ul>
+<li>Publish predictions back to the context broker as derived entities (e.g.
+  <code>PredictedTrafficFlow</code>, <code>PredictedAirQuality</code>), including confidence intervals, the
+  scenario identifier and the model version.</li>
+</ul>
+<p><em>Monitor and retrain</em></p>
+<ul>
+<li>Monitor drift with Evidently AI, and orchestrate retraining with Kubeflow as new data and
+  new disruptions arrive.</li>
+</ul>
+<h3 id="step-7-build-user-facing-services">Step 7 · Build user-facing services</h3>
+<p class="step-goal"><strong>Goal:</strong> put the predictions in front of planners, operators and residents in a form they can explore and act on.</p>
+<p><em>Interactive scenario explorer</em></p>
+<ul>
+<li>Build a web application with MapLibre or kepler.gl as the mapping layer, where users close
+  segments, adjust traffic measures, compare scenarios, and see predicted impacts
+  immediately with uncertainty ranges and explanations.</li>
+</ul>
+<p><em>Analytical dashboards</em></p>
+<ul>
+<li>Deploy Grafana for monitoring model performance and data quality, and Apache Superset for
+  exploring past predictions against observed outcomes.</li>
+</ul>
+<p><em>Immersive and CitiVerse-aligned interfaces</em></p>
+<ul>
+<li>For pilots developing CitiVerse features, build 3D/XR visualisations with <strong>Unity</strong>,
+  <strong>Unreal</strong> or <strong>Cesium for Unreal</strong>, including <strong>AR for on-site planning sessions</strong>.</li>
+</ul>
+<p><em>Participatory decision-making</em></p>
+<ul>
+<li>Integrate scenario comparisons with Decidim for public consultations, so residents can
+  express preferences <strong>with the predicted impacts in view</strong>.</li>
+</ul>
+<h3 id="step-8-validate-with-users">Step 8 · Validate with users</h3>
+<p class="step-goal"><strong>Goal:</strong> confirm, with real users and real past events, that the services meet their needs and predict reliably.</p>
+<p><em>Pilot deployment</em></p>
+<ul>
+<li>Deploy the services connected to live LDT data in a controlled pilot phase, where
+  predictions inform decisions that <strong>remain with human planners</strong>.</li>
+</ul>
+<p><em>Technical and end-user validation</em></p>
+<ul>
+<li>Compare predictions against the <strong>held-back past disruptions</strong>, and across partner cities
+  to verify generalisability.</li>
+<li>Engage traffic engineers, environmental officers and residents in structured testing of
+  predictions, explanations and interface usability.</li>
+</ul>
+<p><em>Iterate</em></p>
+<ul>
+<li>Refine models and interfaces where predictions or explanations fall short of user
+  expectations or observed outcomes.</li>
+</ul>
+<h3 id="step-9-document-publish-and-share">Step 9 · Document, publish and share</h3>
+<p class="step-goal"><strong>Goal:</strong> make the services <strong>replicable by other cities</strong> and available to the wider LDT ecosystem.</p>
+<p><em>Document the services</em></p>
+<ul>
+<li>Document data requirements, graph construction, the encoding of disruptions, the models
+  and their validation, deployment and governance, with a <strong>step-by-step replication guide</strong>
+  for other cities.</li>
+</ul>
+<p><em>Publish to the LDT Toolbox Marketplace</em></p>
+<ul>
+<li>Publish the services to the <strong>EU LDT Marketplace</strong>.</li>
+</ul>
+<div class="admonition pilot">
+<p class="admonition-title">If you are an LDT4SSC pilot</p>
+<p>Publication to the EU LDT Marketplace is <strong>required by Rq27</strong>.</p>
+</div>
+<ul>
+<li>Contribute new Smart Data Models (e.g. <code>PredictedTrafficFlow</code>) back to the community.</li>
+</ul>
+<p><em>Share through the data space</em></p>
+<ul>
+<li>Expose services and outputs via an <strong>EDC Connector</strong>, with DCAT-AP records and ODRL
+  policies (e.g. predictions may be used for planning but not for commercial routing
+  without agreement).</li>
+</ul>
+<hr />
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+  <!-- Feedback Widget (only on resources pages) -->
+  
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      LDT4SSC is a project funded by the Digital Europe Programme under grant agreement number 101226211. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the European Commission can be held responsible for them.
+This work is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/logo-top-redirect.js"></script>
+      
+        <script src="../../js/frame-escape.js"></script>
+      
+        <script src="../../js/papaparse.min.js"></script>
+      
+        <script src="../../js/resources_poc.js"></script>
+      
+        <script src="../../js/journey.js"></script>
+      
+        <script src="../../js/marked.min.js"></script>
+      
+        <script src="../../js/pilot_page.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
