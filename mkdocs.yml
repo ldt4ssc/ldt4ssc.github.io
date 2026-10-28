@@ -1,5 +1,7 @@
 site_name: Knowledge Hub
 site_url: https://knowledgehub.ldt4ssc.eu/
+repo_url: https://github.com/ldt4ssc/ldt4ssc.github.io
+repo_name: LDT4SSC Knowledge Base
 
 theme:
   name: material
