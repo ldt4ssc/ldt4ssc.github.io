@@ -1,0 +1,2765 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://knowledgehub.ldt4ssc.eu/guidance_content/implementation/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../workflows/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/fav_icon_resized.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Implementation Guidance - Knowledge Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+      <link rel="stylesheet" href="../../css/resources_poc.css">
+    
+      <link rel="stylesheet" href="../../css/methodology_diagram.css">
+    
+      <link rel="stylesheet" href="../../css/feedback_widget.css">
+    
+      <link rel="stylesheet" href="../../css/journey.css">
+    
+      <link rel="stylesheet" href="../../css/pilot_page.css">
+    
+      <link rel="stylesheet" href="../../css/guidance.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#implementation-guidance" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ldt4ssc.eu/" title="Knowledge Hub" class="md-header__button md-logo" aria-label="Knowledge Hub" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Knowledge Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Implementation Guidance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ldt4ssc/ldt4ssc.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LDT4SSC Knowledge Base
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ldt4ssc.eu/" title="Knowledge Hub" class="md-nav__button md-logo" aria-label="Knowledge Hub" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Knowledge Hub
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ldt4ssc/ldt4ssc.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LDT4SSC Knowledge Base
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../strategy/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategy & Sustainability
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Strategy & Sustainability
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/diagnostics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem diagnostics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/value/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Value & funding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/priorities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategic priorities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../communities_content/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Communities Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Smart Communities Ecosystem
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Data_Spaces_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/AI_For_Smart_Cities_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI for Smart Cities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Local_Digital_Twins_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Local Digital Twins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/CitiVerse_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CitiVerse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Interoperability_and_MIMs_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interoperability & MIMs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../communities_content/Cities_Network_Related_Initiatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cities Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot Guidance
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pilot Guidance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementation guidance
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementation guidance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#start-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start here
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-pieces-fit-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the pieces fit together
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How the pieces fit together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-your-way-around-the-blueprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding your way around the Blueprint
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-are-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you are building
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What you are building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#five-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Five capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-functional-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The functional scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-architectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference architectures
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation workflows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-from-real-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning from real deployments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obligations-and-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obligations and checkpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Obligations and checkpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#throughout-the-pilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Throughout the pilot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sharing back
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-to-go-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to go next
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementation workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obligations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot obligations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posting updates & contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open calls (archive)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Open calls (archive)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-calls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open calls (archive)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ws1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WS1 – Interconnection of LDTs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ws2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WS2 – Creation of LDTs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ws3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WS3 – AI-Based Capabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../resources_content/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources_content/tech_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources_content/non_tech_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-technical Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../journey/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot Journey
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pilot Journey
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journey/feed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pilot Updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#start-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start here
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-pieces-fit-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the pieces fit together
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How the pieces fit together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-your-way-around-the-blueprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding your way around the Blueprint
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-are-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you are building
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What you are building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#five-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Five capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-functional-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The functional scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-architectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference architectures
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation workflows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-from-real-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning from real deployments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obligations-and-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obligations and checkpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Obligations and checkpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#throughout-the-pilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Throughout the pilot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sharing back
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-to-go-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to go next
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="implementation-guidance">Implementation Guidance</h1>
+<p>The open calls are closed and pilots are moving from <em>being selected</em> to <em>building</em>. This
+page is the entry point for that phase: it brings the <strong>methodology</strong>, the <strong>technical
+resources</strong>, and the <strong>LDT Interoperability Blueprint</strong> into a single route from a use case
+on paper to a working, interoperable Local Digital Twin.</p>
+<p>Where the <a href="../../resources_content/">Resources</a> section is a <em>library</em> — a
+catalogue of standards, tools and frameworks to draw from — this page is the <em>assembly
+instructions</em>: which pieces to pick up, in what order, and how they fit together for each
+work strand.</p>
+<h2 id="start-here">Start here</h2>
+<p>Three questions place you on the right path. They map to the three work strands, but they are
+questions about <strong>what you are building</strong>, not about which call you applied to.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2H1v2h12V9h-3c1.11 0 2-.89 2-2V3c0-1.11-.89-2-2-2zm0 2h6v4H4zM3 13v7h7v-2H5v-5zm11 0c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2h-3v2h12v-2h-3c1.11 0 2-.89 2-2v-4c0-1.11-.89-2-2-2zm0 2h6v4h-6z"/></svg></span> <strong>I have LDTs. I need them to talk to each other.</strong></p>
+<p>You are working at the <strong>Base</strong> and <strong>Core</strong> levels: exposing what already exists through
+standard interfaces, and connecting it to other twins — directly, through a federation
+broker, or through a data space.</p>
+<p><a href="#ws1-technical-interconnection"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> WS1 architecture</a> ·
+<a href="../workflows/#ws1-interconnect-existing-ldts">WS1 workflow</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span> <strong>We need a twin that does not exist yet.</strong></p>
+<p>You are building the <strong>Core</strong>: shared data acquisition, context management and analytics
+that several municipalities specify once and each instantiate locally, keeping sovereignty
+over their own data.</p>
+<p><a href="#ws2-ldt-deployment"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> WS2 architecture</a> ·
+<a href="../workflows/#ws2-deploy-a-new-ldt">WS2 workflow</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92"/></svg></span> <strong>The twin works. It should now predict, explain or advise.</strong></p>
+<p>You are working at the <strong>Surface</strong>: AI services, simulation and immersive interfaces that
+consume an existing LDT and publish results back into it.</p>
+<p><a href="#ws3-ai-based-services"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> WS3 architecture</a> ·
+<a href="../workflows/#ws3-build-an-ai-based-service">WS3 workflow</a></p>
+</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">The strands are cumulative, not exclusive</p>
+<p>Interconnection, deployment and AI services stack on one another. A WS3 pilot still needs
+the Core a WS2 pilot builds; a WS2 pilot that wants to federate later will thank itself for
+following the WS1 interoperability choices from day one. Read across the tabs below rather
+than only your own.</p>
+</div>
+<hr />
+<h2 id="how-the-pieces-fit-together">How the pieces fit together</h2>
+<p>Pilots have four bodies of support. They are not alternatives — each answers a different
+question, and they are designed to be used together throughout the pilot's life. Three are
+LDT4SSC's own; the fourth, the EU LDT Toolbox, is the wider European ecosystem this project
+feeds into and draws from.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m7 17 3.2-6.8L17 7l-3.2 6.8zm5-5.9a.9.9 0 0 0-.9.9.9.9 0 0 0 .9.9.9.9 0 0 0 .9-.9.9.9 0 0 0-.9-.9M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8"/></svg></span> <strong>The Methodology</strong></p>
+<p><em>How do we organise ourselves?</em></p>
+<p>Four phases — <strong>EXPLORE → VALIDATE → DEFINE → IMPLEMENT</strong> — and 15 self-contained
+workshops covering use-case definition, data governance, interoperability, business
+modelling and stakeholder onboarding.</p>
+<p><a href="../../resources_content/methodology/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Methodology &amp; workshops</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 8h-3V6c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10h20V10c0-1.1-.9-2-2-2M9 6h6v2H9zm11 12H4v-3h2v1h2v-1h8v1h2v-1h2zm-2-5v-1h-2v1H8v-1H6v1H4v-3h16v3z"/></svg></span> <strong>The Technical Resources</strong></p>
+<p><em>What do we build it with?</em></p>
+<p>A filterable library of standards, protocols, frameworks and tools, classified by LDT
+layer, MIMs Plus, category and scope — plus the ISAQ self-assessment.</p>
+<p><a href="../../resources_content/tech_resources/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Technical resource library</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19.88V22l-1.8-1.17-4.79-9a4.9 4.9 0 0 0 1.78-1M15 7a3 3 0 0 1-3 3 3 3 0 0 1-.44 0L5.8 20.83 4 22v-2.12L9.79 9A3 3 0 0 1 12 4V2a1 1 0 0 1 1 1v1.18A3 3 0 0 1 15 7m-2 0a1 1 0 1 0-1 1 1 1 0 0 0 1-1m-8.78 3L6 11.8l-1.44 2.76L2.1 12.1m9.9 5.66-1.5-1.51L9 19l3 3 3-3-1.47-2.77M19.78 10 18 11.8l1.5 2.76 2.4-2.46Z"/></svg></span> <strong>The Interoperability Blueprint</strong></p>
+<p><em>How should it be put together so it connects?</em></p>
+<p>LDT building blocks, workflows, and reference architectures that make components
+reusable and twins interconnectable.</p>
+<p><a href="../../blueprint/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> LDT Interoperability Blueprint</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 10.96a.985.985 0 0 1-.37-1.37L3.13 7c.11-.2.28-.34.47-.42l7.83-4.4c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.19.1.35.26.44.46l1.45 2.52c.28.48.11 1.09-.36 1.36l-1 .58v4.96c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-5.54c-.3.17-.68.18-1 0m10-6.81v6.7l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-3.22l-5 2.9c-.33.18-.7.17-1 .01v3.69zm-5.15-2.55 6.28-3.63-.58-1.01-6.28 3.63z"/></svg></span> <strong>The EU LDT Toolbox</strong></p>
+<p><em>What already exists that we can reuse — and where does our work go?</em></p>
+<p>The European catalogue of LDT tools, services and best practices. Check it <strong>before</strong>
+building, and publish back to its Marketplace <strong>after</strong>.</p>
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/ldttoolbox"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> EU LDT Toolbox</a></p>
+</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">The Blueprint is being written <strong>with</strong> pilots, not handed <strong>to</strong> them</p>
+<p>The <a href="../../blueprint/">LDT Interoperability Blueprint</a> is a <strong>living, work-in-progress
+document, co-created with the pilots</strong>. It is deliberately not finished: the building
+blocks, workflows and reference architectures in it are refined as pilots hit real
+obstacles and report back what worked.</p>
+<p>What this means for you, concretely:</p>
+<ul>
+<li><strong>Treat it as guidance, not as a specification to certify against.</strong> Where it is silent
+  or underspecified, make a reasoned choice and document it.</li>
+<li><strong>Your implementation decisions are inputs.</strong> Gap analyses, workarounds, and "we tried X
+  and it failed because Y" are exactly what the next revision needs.</li>
+<li><strong>Report back through the <a href="../../journey/">Pilot Journey</a></strong> and through your pilot
+  deliverables. Those updates feed the Blueprint, the <a href="#obligations-and-checkpoints">Asset
+  Repository</a>, and ultimately the EU LDT Toolbox.</li>
+</ul>
+</div>
+<h3 id="finding-your-way-around-the-blueprint">Finding your way around the Blueprint</h3>
+<p>The Blueprint is a single long specification. These are the entry points most relevant while
+implementing — each links straight to the relevant section.</p>
+<table>
+<thead>
+<tr>
+<th>If you are…</th>
+<th>Go to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Getting oriented</td>
+<td><a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#high-level-overview-ldt">High-level overview of an LDT</a></td>
+</tr>
+<tr>
+<td>Choosing what to build</td>
+<td><a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#building-blocks">LDT building blocks</a> — <a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#business-organisational-building-blocks">business &amp; organisational</a> · <a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#technical-building-blocks">technical</a></td>
+</tr>
+<tr>
+<td>Designing the architecture</td>
+<td><a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#reference-architectures">Reference architectures</a> · <a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#technical-architecture">technical architecture</a></td>
+</tr>
+<tr>
+<td>Adding a component to an existing twin</td>
+<td><a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#workflow-adding-new-slc-existing-ldt">Workflow: adding new Surface-level components</a></td>
+</tr>
+<tr>
+<td>Making components discoverable</td>
+<td><a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#workflow-discover-slc-existing-ldt">Workflow: discovering compatible components</a></td>
+</tr>
+<tr>
+<td>Picking standards</td>
+<td><a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#standards-protocols">Standards and protocols</a> — <a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#ngsild-based-systems">NGSI-LD</a> · <a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#rdf-based-systems">RDF</a></td>
+</tr>
+<tr>
+<td>Checking MIMs alignment</td>
+<td><a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#alignment-mims">Alignment with MIMs Plus</a></td>
+</tr>
+<tr>
+<td>Connecting to a data space</td>
+<td><a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#relationship-data-spaces">Relationship between data spaces and LDTs</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Blueprint guidance per LDT layer</p>
+<p>The Blueprint's <a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#how-to-build-ldt">How to build an LDT</a> section is organised by the
+<strong>same layers</strong> used throughout this page and in the resource library — so once you know
+which layer you are working on, you can go straight to its guidance:</p>
+<p><a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#how-to-build-data-acquisition">Data acquisition</a> ·
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#how-to-build-data-management">Data management</a> ·
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#how-to-build-connectivity">Connectivity</a> ·
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#how-to-build-analysis">Analysis</a> ·
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#how-to-build-decision-making">Decision-making</a> ·
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#how-to-build-visualisations">Visualisations</a></p>
+<p>It also splits guidance by methodology phase:
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#explore-validate">Explore &amp; Validate</a> · <a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#define-implement">Define &amp; Implement</a>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Coming to the Blueprint: maturity plateaus</p>
+<p>A recurring question from pilots is <em>"where are we, and what is the next realistic step?"</em>
+A <strong>maturity plateaus assessment</strong> — successive plateaus a twin moves through, with the
+capabilities and interoperability features that define each — is planned for the Blueprint
+and is not yet published.</p>
+<p>Until then, use the <a href="../../resources_content/tech_resources/#interoperability-self-assessment-questionnaire-isaq">ISAQ</a>
+for a point-in-time interoperability score, and the
+<a href="#five-capabilities">five capabilities</a> below to describe how far your twin has matured.</p>
+</div>
+<!-- ### A pilot's route, and the loop it closes
+
+A pilot is not a straight line ending at deployment. Work **comes in** from the European
+ecosystem at the start, and **goes back out** to it at the end — so the next pilot starts
+further along than you did.
+
+<pre class="mermaid"><code>flowchart TB
+    TBIN["&lt;b&gt;EU LDT Toolbox&lt;/b&gt;&lt;br/&gt;reuse existing tools,&lt;br/&gt;services and best practices"]
+
+    A["&lt;b&gt;EXPLORE&lt;/b&gt;&lt;br/&gt;Use case and purpose"]
+    B["&lt;b&gt;VALIDATE&lt;/b&gt;&lt;br/&gt;Data inventory, governance,&lt;br/&gt;interoperability goals"]
+    C["&lt;b&gt;DEFINE&lt;/b&gt;&lt;br/&gt;Prototype, architecture,&lt;br/&gt;standards"]
+    D["&lt;b&gt;IMPLEMENT&lt;/b&gt;&lt;br/&gt;Deploy, operate, share back"]
+
+    OUT["&lt;b&gt;Share back&lt;/b&gt;&lt;br/&gt;Toolbox Marketplace · Asset Repository&lt;br/&gt;Smart Data Models · Blueprint"]
+
+    TBIN --&gt; A
+    A --&gt; B --&gt; C --&gt; D
+    D --&gt; OUT
+    OUT -. "the next pilot starts here" .-&gt; TBIN
+
+    classDef explore   fill:#fff8e1,stroke:#f9a825,stroke-width:2px,color:#5d4037;
+    classDef validate  fill:#eceff1,stroke:#424242,stroke-width:2px,color:#212121;
+    classDef define    fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0a53a8;
+    classDef implement fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#1b5e20;
+    classDef eco       fill:#e0eff3,stroke:#00acc1,stroke-width:2px,color:#215a6c;
+    class A explore;
+    class B validate;
+    class C define;
+    class D implement;
+    class TBIN,OUT eco;</code></pre>
+
+!!! info "Check the Toolbox before you build"
+    Before committing to build a component, look for it in the
+    [EU LDT Toolbox](https://interoperable-europe.ec.europa.eu/collection/ldttoolbox) catalogue and the
+    [LDT4SSC Asset Repository](#sharing-back). Reusing or extending an existing component is
+    almost always cheaper than starting from scratch — and it is what the openness principle
+    asks of you in both directions.
+
+The ISAQ sits across this route as a **checkpoint, not a gate**: run it early to find your
+gaps, and again later to evidence progress — see
+[Obligations and checkpoints](#obligations-and-checkpoints). -->
+
+<hr />
+<h2 id="what-you-are-building">What you are building</h2>
+<p>Before choosing tools, it helps to agree on what an LDT <em>is</em> in this project, and on the
+vocabulary used throughout the architectures and workflows below.</p>
+<div class="admonition info">
+<p class="admonition-title">Working definition</p>
+<p>A <strong>Local (or Urban) Digital Twin</strong> is a digital representation of physical assets, systems
+or processes in a defined local context (city, district, building, industry, port,
+airport). LDTs are based on <strong>structured data models and contextualised data</strong>. They
+leverage historical, near real-time or real-time data, and they enable <strong>visualisation,
+analysis, simulation and reasoning services that support decision-making</strong>.</p>
+<p>This is a <em>working</em> reference, intended to converge with the definition in
+<strong>MIM8 – Local Digital Twins</strong>. Cities already running mature twins on different
+architectures are not out of scope by default.</p>
+</div>
+<h3 id="three-levels">Three levels</h3>
+<p>Components are organised into three levels that follow the data's path from the territory to
+the people using it. Knowing which level you are working at tells you which architecture and
+which workflow apply to you.</p>
+<p><img alt="High-level view of a Local Digital Twin: LDT Base holds raw data sources and data spaces; LDT Core holds data acquisition and data management within a connectivity envelope; LDT Surface holds analysis, visualisations and decision-making, with services spanning the upper layers" src="../../assets/blueprint/high-level-ldt.jpg" width="100%" /></p>
+<p><em>Source: <a href="../../blueprint/">LDT Interoperability Blueprint</a> — <a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#high-level-overview-ldt">high-level overview of an LDT</a>.</em></p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Layers</th>
+<th>Primary work strand</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>LDT Base</strong></td>
+<td>Data sources — raw sources and data spaces</td>
+<td>WS1</td>
+</tr>
+<tr>
+<td><strong>LDT Core</strong></td>
+<td>Data acquisition · Data management, within Connectivity</td>
+<td>WS2</td>
+</tr>
+<tr>
+<td><strong>LDT Surface</strong></td>
+<td>Analysis · Visualisations · Decision-making, exposed as Services</td>
+<td>WS3</td>
+</tr>
+</tbody>
+</table>
+<p>The layer names above are the same ones used to classify every entry in the
+<a href="../../resources_content/tech_resources/#technical-resource-library">Technical Resource Library</a>,
+so you can filter the library by the layer you are currently working on.</p>
+<div class="admonition info">
+<p class="admonition-title">The Base/Core boundary is fluid in an interconnection</p>
+<p>When two LDTs interconnect, <strong>the Core of one twin may act as the Base of another</strong>. This is
+why WS1 pilots should read the WS2 Core guidance too: what you expose becomes someone
+else's foundation.</p>
+</div>
+<h3 id="five-capabilities">Five capabilities</h3>
+<p>Capability is the honest way to describe how far a twin has matured. Most pilots start
+descriptive and add capabilities incrementally — you are not expected to reach prescriptive.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>1 · Descriptive</strong></p>
+<p>Current and past states of the real-world asset, static and dynamic. Augmentation
+functions pull stored data into live services and visualisations.</p>
+</li>
+<li>
+<p><strong>2 · Predictive</strong></p>
+<p>Extends the descriptive twin with predictions of how the asset could evolve, using
+predictive models to envision future scenarios.</p>
+</li>
+<li>
+<p><strong>3 · Prospective</strong></p>
+<p>Conducts <em>what-if</em> analyses, extending prediction across multiple possible futures to
+evaluate the consequences of an action.</p>
+</li>
+<li>
+<p><strong>4 · Prescriptive</strong></p>
+<p>Suggests — or, in extreme cases, executes — actions on the real system to reach an
+objective. Requires safety, accountability and governance safeguards.</p>
+</li>
+<li>
+<p><strong>5 · Diagnostic</strong></p>
+<p>Explains situations and alerts on deviations from expected conditions; evaluates what
+happened, especially when the real asset malfunctions.</p>
+</li>
+</ul>
+</div>
+<h3 id="the-functional-scope">The functional scope</h3>
+<p>Not every component is essential. The <strong>core</strong> of an LDT is a contextual and semantic data
+management system (typically a context broker) plus a knowledge meta-model. Everything else
+is additive — and two components exist specifically to let twins interconnect.</p>
+<div class="admonition info">
+<p class="admonition-title">Which components are optional, and which unlock interconnection</p>
+<ul>
+<li><strong>Essential core:</strong> contextual data management (context broker) + knowledge models.</li>
+<li><strong>Additive:</strong> ETL (integration), Identity (access rights), Visualisation and BI, Data
+  Services, Code, Data.</li>
+<li><strong>Not essential to a standalone twin, but required to interconnect:</strong><ul>
+<li><strong>Policy</strong> — obligations and rights of data producer and user, verified via
+  <a href="https://www.w3.org/TR/odrl-model/">ODRL</a>, managed through Eclipse Dataspace
+  Components; SIMPL enables the process.</li>
+<li><strong>Catalog</strong> — standardised documentation of available data, enabling exposure and
+  discovery of metadata.</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="reference-architectures">Reference architectures</h2>
+<p>These are <strong>possibilities, not prescriptions</strong>. Pilots run many different internal
+implementations, including proprietary ones, and these architectures are deliberately agnostic
+to what sits inside an existing twin. They show how the principles, definitions and resources
+in this Hub combine into something buildable.</p>
+<div class="admonition info">
+<p class="admonition-title">Many meta-architectures for LDTs exist and are still emerging</p>
+<p>These reflect the current state of the art. For an up-to-date overview, refer to
+<a href="https://mims.oascities.org/local-digital-twins">MIMs Plus 8 on Local Digital Twins</a>
+alongside the Blueprint's own
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#reference-architectures">reference architectures</a>, which go a level deeper into the
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#technical-architecture">technical architecture</a> and the
+<a href="https://spec.knows.idlab.ugent.be/ldt-interoperability-blueprint/latest/#artefacts">artefacts exchanged between components</a>.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">WS1 · Technical interconnection</label><label for="__tabbed_1_2">WS2 · LDT deployment</label><label for="__tabbed_1_3">WS3 · AI-based services</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a id="ws1-technical-interconnection"></a></p>
+<p><strong>The question:</strong> how do two or more existing twins share data without either of them
+rebuilding its internals?</p>
+<p><img alt="WS1 reference architecture — interconnection between existing LDTs via a data space or a federation broker" src="../../assets/architectures/ws1_ref_arc.svg" width="100%" /></p>
+<p><strong>How it works</strong></p>
+<ol>
+<li><strong>Adapt before exposing.</strong> A transformation layer (adaptor) maps the legacy twin's data
+   to interoperable standards <em>prior to exposure</em>, without altering the local, sovereign
+   storage format inside the organisation.</li>
+<li><strong>Expose through a broker plus a security component.</strong> The context broker is pivotal: as
+   well as orchestrating the twin, it acts as a first compliance check. NGSI-LD brokers
+   natively verify syntactic compliance with the NGSI-LD information model — semantic
+   consistency, data quality and ontological alignment still need complementary governance.</li>
+<li><strong>Connect directly</strong> where twins belong to the same organisation or neighbouring
+   departments: two context brokers can intercommunicate, share a broker within one
+   security layer, or use the <strong>NGSI-LD federation architecture</strong> (§4.3.4 of ETSI GS CIM
+   009), where a federation broker aggregates distant information and exposes it as if it
+   came from a central broker, based on sharing rules registered in a Context Registry.</li>
+<li><strong>Or connect via a data space</strong>, deploying a data space connector that manages security,
+   access, contracts and policy. <strong>Using a SIMPL Governance Authority Agent is a
+   requirement in WS1</strong> — it defines the vocabulary and schema and maintains a compliant
+   shared catalogue.</li>
+</ol>
+<p><strong>Key components</strong></p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adaptor</td>
+<td>Maps legacy data to interoperable standards before exposure</td>
+</tr>
+<tr>
+<td>Context broker</td>
+<td>Orchestrates entities; first check on syntactic compliance</td>
+</tr>
+<tr>
+<td>Identity &amp; access</td>
+<td>Authentication, authorisation, token-based access control</td>
+</tr>
+<tr>
+<td>Federation broker</td>
+<td>Aggregates distant brokers, exposed as if central</td>
+</tr>
+<tr>
+<td>Data space connector</td>
+<td>Security, access, contracts and policy enforcement</td>
+</tr>
+<tr>
+<td>SIMPL GA Agent</td>
+<td>Vocabulary, schema and federated catalogue — <strong>required in WS1</strong></td>
+</tr>
+</tbody>
+</table>
+<details class="info">
+<summary>SIMPL-Open technology stack (as currently deployed)</summary>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Technology</th>
+<th>Capability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Self-Descriptions (SD)</td>
+<td>SD (GX-Trustframework)</td>
+<td>Metadata description</td>
+</tr>
+<tr>
+<td>SD Creator</td>
+<td>XFSC SD Tooling</td>
+<td>Metadata description</td>
+</tr>
+<tr>
+<td>Data Space Catalogue</td>
+<td>XFSC Federated Catalogue</td>
+<td>Data discovery</td>
+</tr>
+<tr>
+<td>Signer Service</td>
+<td>XFSC Signer</td>
+<td>Signature</td>
+</tr>
+<tr>
+<td>Connector</td>
+<td>EDC</td>
+<td>Data exchange</td>
+</tr>
+<tr>
+<td>Infrastructure Provisioning</td>
+<td>Crossplane</td>
+<td>Infrastructure provisioning</td>
+</tr>
+<tr>
+<td>Authentication</td>
+<td>Keycloak</td>
+<td>Authentication provider</td>
+</tr>
+<tr>
+<td>Identity Provider</td>
+<td>EJBCA</td>
+<td>Identity provider</td>
+</tr>
+<tr>
+<td>Authorisation</td>
+<td>Spring Cloud Gateway</td>
+<td>Authorisation</td>
+</tr>
+</tbody>
+</table>
+</details>
+<div class="admonition info">
+<p class="admonition-title">What 'done' looks like</p>
+<p>Interconnected entities share data and resources in a trustworthy, interoperable way —
+cataloguing, policies, configuration, identity and access management, and contracting
+all handled in the data space sphere. Twins act as <strong>both consumers and providers</strong>.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><a id="ws2-ldt-deployment"></a></p>
+<p><strong>The question:</strong> what do we actually have to build, and in what order, to stand up a twin
+that does not exist yet?</p>
+<p><img alt="WS2 reference architecture — project-level LDT deployment across Base, Core and Surface" src="../../assets/architectures/ws2_ref_arc.svg" width="100%" /></p>
+<p><strong>How it works</strong></p>
+<ol>
+<li><strong>The Base captures the territory.</strong> Sensors provide telemetry, models such as BIM
+   describe built assets, and external sources — including data spaces — supply the rest.</li>
+<li><strong>The Core makes data usable.</strong> Data acquisition components (ETL pipelines, semantic
+   alignment through ontologies like Smart Data Models) transform and validate incoming
+   data before a context broker manages it.</li>
+<li><strong>The broker is the central integration point</strong>, maintaining the current state of all
+   entities, while past states remain reachable through temporal APIs or dedicated
+   time-series storage.</li>
+<li><strong>The Surface delivers value</strong> through Analysis (augmentation functions and prediction
+   models generating future scenarios), Services (domain applications such as energy
+   management or traffic control), and Visualisation (3D models, interactive maps, charts,
+   scenario builders).</li>
+</ol>
+<p><strong>Key components</strong></p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data sources</td>
+<td>Sensors, BIM models, external and administrative sources</td>
+</tr>
+<tr>
+<td>ETL</td>
+<td>Transforms and validates incoming data</td>
+</tr>
+<tr>
+<td>Ontologies</td>
+<td>Semantic alignment (e.g. Smart Data Models)</td>
+</tr>
+<tr>
+<td>Context broker</td>
+<td>Central integration point; current state of all entities</td>
+</tr>
+<tr>
+<td>Database manager</td>
+<td>Past states for historical analysis</td>
+</tr>
+<tr>
+<td>Analysis</td>
+<td>Augmentation functions and prediction models</td>
+</tr>
+<tr>
+<td>Services &amp; Visualisation</td>
+<td>Domain applications and user-facing interfaces</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">The architecture is bidirectional</p>
+<p>Prescriptive services and diagnosis modules feed <strong>back</strong> into the Core, enabling
+improvement loops where AI-driven recommendations inform decision-making, operational
+processes, or — where appropriate and properly governed — certain automated actions on
+real-world assets, in compliance with safety, accountability and governance
+requirements.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">What 'done' looks like</p>
+<p>Each municipality runs its own instance of a jointly specified Core, fed by its own
+Base-level data, retaining ownership of its data and control over configuration — while
+benefiting from shared development effort.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><a id="ws3-ai-based-services"></a></p>
+<p><strong>The question:</strong> how do we develop, deploy and keep alive an AI service on top of a twin?</p>
+<p><img alt="WS3 reference architecture — project-level AI-based service architecture" src="../../assets/architectures/ws3_ref_arc.svg" width="100%" /></p>
+<p><strong>How it works</strong></p>
+<ol>
+<li><strong>Data &amp; Feature draws from the Core.</strong> It fetches historical and real-time data from the
+   data management layer, pre-processes it (cleaning, transformation) and engineers features
+   such as spatial joins and temporal aggregations.</li>
+<li><strong>Model Development and Training.</strong> Model definitions and architectures are prototyped,
+   then trained on distributed infrastructure with every run tracked — hyperparameters,
+   metrics, dataset versions — producing model artifacts.</li>
+<li><strong>Deployment and Inference.</strong> Validated models are registered, packaged to portable
+   formats and released; serving endpoints handle prediction requests and <strong>publish results
+   back to the LDT</strong> as standardised (e.g. NGSI-LD) entities.</li>
+<li><strong>Monitoring closes the loop.</strong> Performance tracking and drift detection signal the
+   Orchestration layer, which manages data refresh on schedule, retraining on trigger, and
+   on-demand scenario building for user-driven requests.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">This is not a linear pipeline</p>
+<p>AI development is iterative and cyclical: insights from deployment inform data
+collection, model failures trigger re-examination of features, user feedback reshapes
+problem framing, and drift detection prompts recalibration. Feedback loops connect
+Inference back to upstream domains via monitoring and retraining.</p>
+</div>
+<p><strong>The six domains</strong></p>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data &amp; Feature</strong></td>
+<td>Ingests from the Core; cleans, transforms, engineers features; generates synthetic data when needed</td>
+</tr>
+<tr>
+<td><strong>Model Development</strong></td>
+<td>Model definitions — theoretical, agent-based or data-driven — plus architectures and validation strategies</td>
+</tr>
+<tr>
+<td><strong>Training</strong></td>
+<td>Executes training runs, tracks experiments, produces artifacts (weights, configs, metrics)</td>
+</tr>
+<tr>
+<td><strong>Deployment</strong></td>
+<td>Registers validated models, packages to portable formats, releases to production</td>
+</tr>
+<tr>
+<td><strong>Inference</strong></td>
+<td>Serving endpoints handle requests and publish results back to the LDT</td>
+</tr>
+<tr>
+<td><strong>Monitoring</strong></td>
+<td>Tracks performance, detects data and concept drift, triggers retraining</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Orchestration</strong> is a cross-cutting domain managing three cycles: <strong>data refresh</strong> on
+schedule, <strong>retrain</strong> on trigger (drift detected, or specialist evaluation via active
+learning), and <strong>scenario builder</strong> on demand for user-driven inference requests.</p>
+<div class="admonition info">
+<p class="admonition-title">Two concerns permeate every domain</p>
+<ul>
+<li><strong>Responsible AI</strong> — explainability, fairness assessment, uncertainty quantification —
+  ensures services meet European trustworthiness requirements.</li>
+<li><strong>Governance and Security</strong> — access control, approval workflows, data space
+  integration via EDC and ODRL — ensures services operate within appropriate policy
+  frameworks.</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">What 'done' looks like</p>
+<p>The <strong>Analysis layer of the LDT Surface</strong> becomes the integration point between MLOps
+infrastructure and the wider LDT ecosystem: AI services consume current and past states
+from the real-world asset and publish future scenarios feeding visualisation, services
+and citizen-facing applications.</p>
+</div>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="implementation-workflows">Implementation workflows</h2>
+<p>Three worked examples take each work strand from an existing situation to a working result —
+the standards and tools above, arranged into a sequence. They live on their own page because
+each runs to several steps.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2H1v2h12V9h-3c1.11 0 2-.89 2-2V3c0-1.11-.89-2-2-2zm0 2h6v4H4zM3 13v7h7v-2H5v-5zm11 0c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2h-3v2h12v-2h-3c1.11 0 2-.89 2-2v-4c0-1.11-.89-2-2-2zm0 2h6v4h-6z"/></svg></span> <strong>WS1 · Interconnect existing LDTs</strong></p>
+<p>Expose a legacy twin through standard interfaces and join a data space — 4 steps.</p>
+<p><a href="../workflows/#ws1-interconnect-existing-ldts"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> WS1 workflow</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span> <strong>WS2 · Deploy a new LDT</strong></p>
+<p>Specify once, instantiate locally, keep sovereignty over your own data — 9 steps.</p>
+<p><a href="../workflows/#ws2-deploy-a-new-ldt"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> WS2 workflow</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92"/></svg></span> <strong>WS3 · Build an AI-based service</strong></p>
+<p>From LDT data to a validated, published AI service — 9 steps.</p>
+<p><a href="../workflows/#ws3-build-an-ai-based-service"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> WS3 workflow</a></p>
+</li>
+</ul>
+</div>
+<p><a class="md-button md-button--primary" href="../workflows/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> All implementation workflows</a></p>
+<hr />
+<h2 id="learning-from-real-deployments">Learning from real deployments</h2>
+<p>Six deployments that put these concepts into practice. They are not LDT4SSC pilots — they are
+prior and parallel work worth learning from, including where they fall short of the
+interoperability this project asks for. Each is tagged with the strand it best illustrates.</p>
+<table>
+<thead>
+<tr>
+<th>Deployment</th>
+<th>Work strand</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Perugia (IT)</strong></td>
+<td>WS1 · WS2</td>
+<td>An interoperable urban platform on the FIWARE stack, with inter-municipal data governance</td>
+</tr>
+<tr>
+<td><strong>Zurich (CH)</strong></td>
+<td>WS2 · WS3</td>
+<td>A dynamic 3D twin grown from a 2011 city model into an operational planning system</td>
+</tr>
+<tr>
+<td><strong>Differdange (LU)</strong></td>
+<td>WS2</td>
+<td>EV charging balanced against renewable generation — mid-migration to open standards</td>
+</tr>
+<tr>
+<td><strong>Antibes (FR)</strong></td>
+<td>WS2 · WS3</td>
+<td>Indoor air quality across a school, surfaced through a 3D twin of the territory</td>
+</tr>
+<tr>
+<td><strong>Kiel (DE)</strong></td>
+<td>WS3</td>
+<td>Immersive heritage and ocean literacy in the SENSE CitiVerse pilot</td>
+</tr>
+<tr>
+<td><strong>Cartagena (ES)</strong></td>
+<td>WS3</td>
+<td>Real-time mobility and environmental indicators in a photorealistic 3D control room</td>
+</tr>
+</tbody>
+</table>
+<p>Expand any deployment below for the full account — the stack used, what it achieved, and where
+it still falls short of the interoperability this project asks for.</p>
+<details class="example">
+<summary>Perugia (IT) — an interoperable urban platform</summary>
+<p>Perugia harmonised its data using the <strong>FIWARE</strong> stack, specifically a solution called
+WiseTown. The project integrated the city's software infrastructure, managing large amounts
+of data from different sources — geographical information systems, satellite images, IoT
+sensors. <a href="https://github.com/smart-data-models"><strong>Smart Data Models</strong></a> allowed semantic interoperability, while a <strong>context broker</strong>
+integrated the orchestration onto NGSI-LD standards.</p>
+<p><strong>The stack:</strong> Smart Data Models, <a href="https://github.com/FIWARE/context.Orion-LD/tree/develop/doc/manuals-ld"><strong>Orion-LD</strong></a> as messaging and context information manager,
+FIWARE <strong>Keyrock</strong> for security infrastructure, and the FIWARE <strong>IDAS</strong> solution for IoT
+agents.</p>
+<p><strong>Use cases deployed:</strong> mobility and parking (real-time traffic and parking availability);
+environment and quality of life (air pollution, noise, public lighting); green space
+management; energy optimisation (public lighting scenarios, renewable integration); and
+citizen participation (mobile apps and crowd-planning tools for residents to report
+problems and monitor resolution).</p>
+<p><strong>Why it matters:</strong> Perugia's ability, as a <strong>medium-sized city</strong>, to mobilise interoperable
+infrastructure and implement inter-municipal data governance. It demonstrates that
+interoperability "by design", combined with shared data governance, can drive innovation for
+local authorities beyond the major cities.</p>
+<p><a href="https://www.youtube.com/watch?v=ZtXkcPQSGiU">Video presentation</a> ·
+<a href="https://www.fiware.org/2021/11/15/perugias-digital-transition-to-smart-city-powered-by-fiware-technology/">FIWARE ecosystem write-up</a></p>
+</details>
+<details class="example">
+<summary>Zurich (CH) — a dynamic 3D twin of the built environment</summary>
+<p>Facing growth to 520,000 residents by 2040, Zurich launched a dynamic 3D spatial model to
+support evidence-based decision-making, integrating real-time data, 3D models and analytical
+tools to simulate climate impacts, densification and mobility.</p>
+<p>The twin evolved from Zurich's <strong>3D City Model</strong> (2011, managed by the GIS department,
+integrated by ESRI), encompassing topography, buildings, bridges and vegetation at various
+levels of detail. These datasets became the base for linking cadastral, environmental and
+planning information under a governance framework aligned with Switzerland's Federal Act on
+Geoinformation (GeoIG). Data is public via the city's Geoportal, with interactive
+visualisation through <strong>Zurich Virtuell</strong>.</p>
+<p><strong>Applications:</strong> the Municipal Development Plan (current, allowed and scenario development);
+urban climate analysis (airflow modelling, heat mitigation); architectural competitions with
+AR-assisted jury assessment; and participatory initiatives such as "Minecraft Zurich",
+lowering barriers to political participation.</p>
+<div class="admonition warning">
+<p class="admonition-title">Read this one critically</p>
+<p>Zurich shows how a data platform can mature into a full digital twin with an operational
+decision-support system. <strong>However</strong>, LDT4SSC envisions communities adopting an <em>open</em>
+architecture to guarantee interconnection and interoperability. Proprietary solutions
+such as the one adopted here would need adapting to the interoperable standards and
+specifications set out in this guidance.</p>
+</div>
+</details>
+<details class="example">
+<summary>Differdange (LU) — clean energy and mobility</summary>
+<p>Differdange pursues net-zero carbon emissions through renewable energy initiatives. LIST,
+with the city's experts in the CitCom.ai project, developed an LDT integrating <strong>electric
+vehicle infrastructure and renewable energy generation</strong> — leveraging information on charging
+points, buildings and solar panels, because understanding the balance between renewable
+production and charging-station demand is essential to the city's sustainability goals.</p>
+<p>The implementation includes data collection and telemetry emulators, spatio-temporal and
+graph databases, DT cloud solutions, and interactive maps and dashboards. Analytical models
+both produce synthetic telemetry and predict telemetry under simulation parameters.</p>
+<p><strong>The interoperability journey — useful precisely because it is unfinished:</strong> the team is
+producing a <strong>gap analysis</strong> to assess the current implementation's interoperability. First
+step is adopting an NGSI-LD-compliant context broker (Stellio, Orion-LD or Scorpio). Second
+is adopting domain-specific ontologies from <strong>Smart Data Models</strong> — the Buildings model from
+Smart Cities, plus Photovoltaic Device and Photovoltaic Measurement from Smart Energy.</p>
+<p>Notably, their effort is <strong>not</strong> to add a virtualisation layer to transform data, but to
+overhaul the data structure itself — a different trade-off from the WS1 workflow above.</p>
+</details>
+<details class="example">
+<summary>Antibes (FR) — an indoor descriptive LDT with 3D implementation</summary>
+<p>In enclosed spaces, indoor air quality is greatly affected by CO₂, which affects comfort and
+health; regulations may require ventilation assessment and pollutant control measures.</p>
+<p>Antibes Town Hall and EGM equipped teaching and living spaces at the Jean Moulin School with
+<strong>30 Nexelec Carbon sensors</strong> across 14 primary classrooms, 6 nursery classrooms, 1 activity
+room, 2 dormitories and a large dining hall, continuously measuring CO₂, temperature and
+relative humidity.</p>
+<p>Sensors connect to the <strong>Orange LoRaWAN</strong> network; data is centralised on an EGM TWIN·PICKS
+platform (FIWARE architecture with <a href="https://stellio.readthedocs.io/en/latest/"><strong>Stellio</strong></a> context broker), where the school air
+confinement index (<strong>ICONE</strong>) is calculated from continuous CO₂ measurement over a school
+week at 10-minute intervals, exclusively for periods when the room is occupied.</p>
+<p>The city fed the ICONE index into its existing 3D representation of the territory: temporal
+data is retrieved <strong>directly from the NGSI-LD API</strong> by the 3D visualisation tools Terra
+Explorer and Cesium — a clean illustration of a Surface component consuming a standard Core
+interface.</p>
+</details>
+<details class="example">
+<summary>Kiel (DE) — immersive heritage and ocean literacy</summary>
+<p>Kiel is a pilot in <strong>SENSE</strong> (Strengthening Cities and Enhancing Neighbourhood Sense of
+Belonging), creating interconnected virtual worlds mirroring real cities, using EU data
+infrastructure and interoperability standards to develop CitiVerse use cases.</p>
+<p><strong>Two scenarios:</strong> <em>Hidden World</em> reveals intangible history — such as pre-war architecture
+destroyed during WWII — through spatialised storytelling embedded in a 3D twin. <em>SEALEVEL</em>
+provides a seaward extension of the digital city, connecting curated information on marine
+ecosystems and water quality with the land–sea interface of the Kiel Fjord.</p>
+<p><strong>Technically:</strong> a frontend User Application, a Scenario Service Layer, and a Data &amp;
+Knowledge Layer connected to the SENSE Data Space. A structured <strong>Narrative Tour Model</strong>
+orchestrates chapter progression and triggers automated fly-to actions and viewpoint framing
+in the 3D environment. Content is delivered via JSON-based narrative definitions binding
+descriptive text and archive media to georeferenced <strong>OGC POI</strong>-aligned points of interest.
+Parking sensor data is exposed through a <strong>FIWARE Orion Context Broker</strong> API with NGSIv2 and
+FIWARE Smart Data Models. A Metocean and water-quality indicator model translates
+hydrological observations into interpretable status summaries and historical comparisons.</p>
+</details>
+<details class="example">
+<summary>Cartagena (ES) — smart mobility and urban cohesion</summary>
+<p>Also a <strong>SENSE</strong> CitiVerse pilot, Cartagena focuses on <strong>Smart Urban Mobility</strong> and <strong>Public
+Space, Environment and Quality of Life</strong>.</p>
+<p>The mobility scenario integrates real-time traffic monitoring with environmental indicators,
+letting users visualise how individual travel choices affect collective outcomes like air
+quality. The second scenario extends this into an <strong>urban cohesion lens</strong>, where planners and
+residents explore how socio-economic indicators (age structure, employment, income) intersect
+with environmental stressors like noise and heat — identifying <strong>vulnerability hotspots</strong>
+where limited green space and high pollution overlap with low social resilience, justifying
+more equitable interventions.</p>
+<p><strong>Technically:</strong> a high-resolution 3D City Model rendered with <strong>Unreal Engine</strong> and <strong>Cesium
+3D Tiles</strong>. The data layer uses a FIWARE architecture with the <strong>Orion Context Broker</strong>
+ingesting live streams from 13 traffic flow sensors, 25 crowd flow sensors, 26 air quality
+sensors and 20 parking occupancy sensors, modelled per NGSIv2 and FIWARE Smart Data Models. A
+graph-based street network model supports multi-criteria optimisation (Dijkstra/A* family)
+weighing travel time against environmental exposure and regulatory constraints.</p>
+<p>For citizens, an interactive 3D mobility assistant compares routes on travel time,
+reliability, emissions and Low-Emission Zone compliance. For professionals, a virtual
+control-room offers what-if simulations for temporary events and before/after comparisons to
+evaluate mobility plans.</p>
+</details>
+<div class="admonition info">
+<p class="admonition-title">See LDT4SSC pilots as they build</p>
+<p>The examples above are external references. To follow <strong>our own pilots</strong> — what they are
+building, the obstacles they hit and the assets they publish — see the
+<a href="../../journey/">Pilot Journey</a> and the
+<a href="../../journey/feed/">aggregated pilot updates</a>.</p>
+</div>
+<hr />
+<h2 id="obligations-and-checkpoints">Obligations and checkpoints</h2>
+<p>Most of this page is guidance you can adapt. This section is not — these are commitments that
+apply to pilots across all three work strands.</p>
+<div class="admonition pilot">
+<p class="admonition-title">Interoperability Self-Assessment is a condition for payment</p>
+<p>Awarded pilots across all three Work Strands must complete the <strong>Interoperability
+Self-Assessment Questionnaire (ISAQ)</strong> during <strong>months 1–2</strong> of their project, and again
+during the <strong>second reporting period</strong>. It is a predefined Pilot Deliverable.</p>
+<p><strong>Achieving a score above three in the final assessment is a condition for payment.</strong> Pilots
+must share the completed Excel file including all sheets.</p>
+<p><a href="../../resources_content/tech_resources/#interoperability-self-assessment-questionnaire-isaq"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Get the ISAQ</a></p>
+</div>
+<h3 id="throughout-the-pilot">Throughout the pilot</h3>
+<ul>
+<li><strong>Engage with at least five foundational MIMs Plus</strong> — MIM0 (Accessing Data), MIM1
+  (Interlinking Data), MIM2 (Representing Data), MIM3 (Sharing Data), MIM6 (Securing Data) —
+  and use a Linked Data ontology (MIM1) for semantic consistency.</li>
+<li><strong>Follow the methodology phases:</strong> EXPLORE → VALIDATE → DEFINE → IMPLEMENT, with a workplan
+  structured around pilot deliverables PD1–PD5.</li>
+<li><strong>Publish open data models</strong> in open repositories under open licences.</li>
+<li><strong>Justify proprietary components</strong> and provide a plan towards an open-source equivalent.</li>
+<li><strong>Document continuously</strong> for this Knowledge Hub — see the
+  <a href="../../journey/">Pilot Journey</a> for how updates are published.</li>
+</ul>
+<h3 id="sharing-back">Sharing back</h3>
+<p>The project's openness principle is concrete and runs in both directions: you draw on the
+European ecosystem at the start, and components developed in your pilot return to it at the
+end. This is the step that makes the next pilot cheaper than yours.</p>
+<p><strong>Where things go</strong></p>
+<table>
+<thead>
+<tr>
+<th>Destination</th>
+<th>What belongs there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://interoperable-europe.ec.europa.eu/collection/ldttoolbox"><strong>EU LDT Toolbox</strong> Marketplace</a></td>
+<td>Reusable tools and services other European cities can adopt</td>
+</tr>
+<tr>
+<td><strong>LDT4SSC Asset Repository</strong></td>
+<td>Pilot-produced components, configurations and deployment recipes</td>
+</tr>
+<tr>
+<td><a href="https://github.com/smart-data-models"><strong>Smart Data Models</strong></a></td>
+<td>New or extended entity models (e.g. <code>PredictedTrafficFlow</code>)</td>
+</tr>
+<tr>
+<td><a href="../../blueprint/"><strong>Interoperability Blueprint</strong></a></td>
+<td>Gap analyses, obstacles hit, patterns that worked</td>
+</tr>
+<tr>
+<td><a href="../../journey/"><strong>Knowledge Hub</strong></a></td>
+<td>Progress updates, lessons learned, published assets</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How to package</strong></p>
+<ul>
+<li>Package components as <strong>containers</strong> with Helm charts, API specifications and sample
+  configuration for different city sizes.</li>
+<li>Include the documentation that makes reuse possible: data requirements, deployment
+  procedures, governance arrangements and — for AI services — model cards.</li>
+<li>Ensure shared components are compatible with <a href="https://code.europa.eu/simpl/simpl-open/documentation/user-manual"><strong>SIMPL-Open</strong></a>'s
+  architecture and the EU LDT Toolbox.</li>
+<li>Publish under an <strong>open licence</strong>; justify any proprietary component and provide a route to an
+  open-source equivalent.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Package as you go, not at the end</p>
+<p>Pilots that leave packaging to the final months consistently under-deliver on it. Treat the
+container, the API spec and the README as part of each component's definition of done — the
+<a href="../workflows/#ws2-deploy-a-new-ldt">WS2</a> and <a href="../workflows/#ws3-build-an-ai-based-service">WS3</a> workflows both build this in from step 1.</p>
+</div>
+<h3 id="where-to-go-next">Where to go next</h3>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m7 17 3.2-6.8L17 7l-3.2 6.8zm5-5.9a.9.9 0 0 0-.9.9.9.9 0 0 0 .9.9.9.9 0 0 0 .9-.9.9.9 0 0 0-.9-.9M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8"/></svg></span> <strong>Run a workshop</strong></p>
+<p>Fifteen self-contained workshops across the four phases.</p>
+<p><a href="../../resources_content/methodology/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Methodology</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 8h-3V6c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10h20V10c0-1.1-.9-2-2-2M9 6h6v2H9zm11 12H4v-3h2v1h2v-1h8v1h2v-1h2zm-2-5v-1h-2v1H8v-1H6v1H4v-3h16v3z"/></svg></span> <strong>Find a tool</strong></p>
+<p>Filter the library by layer, MIM, category or scope.</p>
+<p><a href="../../resources_content/tech_resources/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Technical resources</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> <strong>Governance, legal, business model</strong></p>
+<p>Impact assessment, cost-benefit analysis, legal and AI guidance.</p>
+<p><a href="../../resources_content/non_tech_resources/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Non-technical resources</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19.88V22l-1.8-1.17-4.79-9a4.9 4.9 0 0 0 1.78-1M15 7a3 3 0 0 1-3 3 3 3 0 0 1-.44 0L5.8 20.83 4 22v-2.12L9.79 9A3 3 0 0 1 12 4V2a1 1 0 0 1 1 1v1.18A3 3 0 0 1 15 7m-2 0a1 1 0 1 0-1 1 1 1 0 0 0 1-1m-8.78 3L6 11.8l-1.44 2.76L2.1 12.1m9.9 5.66-1.5-1.51L9 19l3 3 3-3-1.47-2.77M19.78 10 18 11.8l1.5 2.76 2.4-2.46Z"/></svg></span> <strong>Shape the Blueprint</strong></p>
+<p>Building blocks, workflows and reference architectures — co-created with pilots.</p>
+<p><a href="../../blueprint/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Interoperability Blueprint</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 10.96a.985.985 0 0 1-.37-1.37L3.13 7c.11-.2.28-.34.47-.42l7.83-4.4c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.19.1.35.26.44.46l1.45 2.52c.28.48.11 1.09-.36 1.36l-1 .58v4.96c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-5.54c-.3.17-.68.18-1 0m10-6.81v6.7l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-3.22l-5 2.9c-.33.18-.7.17-1 .01v3.69zm-5.15-2.55 6.28-3.63-.58-1.01-6.28 3.63z"/></svg></span> <strong>Reuse and publish</strong></p>
+<p>The European catalogue of LDT tools and services — check it before building, publish to it
+after.</p>
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/ldttoolbox"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> EU LDT Toolbox</a></p>
+</li>
+</ul>
+</div>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Feedback on this page</p>
+<p>This draft consolidates guidance that was previously spread across the technical resources,
+the methodology and internal deliverables — in particular the reference architectures and
+implementation workflows, which were not publicly available before. If something is missing,
+wrong, or reads as more prescriptive than it should, please flag it before publication.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+
+  <!-- Feedback Widget (only on resources pages) -->
+  
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      LDT4SSC is a project funded by the Digital Europe Programme under grant agreement number 101226211. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the European Commission can be held responsible for them.
+This work is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/logo-top-redirect.js"></script>
+      
+        <script src="../../js/frame-escape.js"></script>
+      
+        <script src="../../js/papaparse.min.js"></script>
+      
+        <script src="../../js/resources_poc.js"></script>
+      
+        <script src="../../js/journey.js"></script>
+      
+        <script src="../../js/marked.min.js"></script>
+      
+        <script src="../../js/pilot_page.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

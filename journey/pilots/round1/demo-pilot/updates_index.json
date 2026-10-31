@@ -1,0 +1,56 @@
+[
+  {
+    "authors": [
+      {
+        "name": "Jane Doe",
+        "organisation": "City of Example"
+      },
+      {
+        "name": "John Smith",
+        "organisation": "Tech Partner Ltd"
+      }
+    ],
+    "date": "2026-03-10",
+    "pilot_name": "Demo Pilot",
+    "pilot_page_url": "../journey/pilots/round1/demo-pilot/",
+    "short_name": "demo-pilot",
+    "slug": "2026-03-10-test",
+    "summary": "We are releasing version 1.0 of the shared mobility data model we developed\nfor cross-city queries.\n\nWhat the asset is\n\nThe model extends the NGSI-LD Vehicle and Road entity types with a\nsmall set of ",
+    "tags": [
+      "mobility",
+      "data-models",
+      "interoperability"
+    ],
+    "title": "Cross-city mobility data model v1.0 released",
+    "topics": [],
+    "type": "asset",
+    "work_strand": "WS1"
+  },
+  {
+    "authors": [
+      {
+        "name": "Jane Doe",
+        "organisation": "City of Example"
+      },
+      {
+        "name": "John Smith",
+        "organisation": "Tech Partner Ltd"
+      }
+    ],
+    "date": "2026-03-10",
+    "pilot_name": "Demo Pilot",
+    "pilot_page_url": "../journey/pilots/round1/demo-pilot/",
+    "short_name": "demo-pilot",
+    "slug": "2026-04-15-test-validation",
+    "summary": "We are releasing version 1.0 of the shared mobility data model we developed\nfor cross-city queries.\n\nWhat the asset is\n\nThe model extends the NGSI-LD Vehicle and Road entity types with a\nsmall set of ",
+    "tags": [
+      "mobility",
+      "data-models",
+      "interoperability"
+    ],
+    "title": "Cross-city mobility data model v1.0 released",
+    "topics": [],
+    "type": "asset",
+    "work_strand": "WS1"
+  }
+]

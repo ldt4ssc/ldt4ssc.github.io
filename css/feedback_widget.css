@@ -1,0 +1,160 @@
+/* Floating feedback button */
+.feedback-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.feedback-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 12px;
+  background-color: #1976d2;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s ease-out;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.feedback-button:hover {
+  background-color: #1565c0 !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3) !important;
+  color: white !important;
+  padding: 12px 20px 12px 12px !important;
+  border-radius: 25px !important;
+  width: auto !important;
+  min-width: auto !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  animation: none !important;
+}
+
+.feedback-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-text {
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: opacity 0.2s ease-out, max-width 0.2s ease-out;
+  color: white !important;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.feedback-button:hover .feedback-text {
+  opacity: 1 !important;
+  max-width: 200px !important;
+  display: inline-block !important;
+  animation: none !important;
+}
+
+/* Animation on page load - slide in and fade text */
+@keyframes slideIn {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes expandButton {
+  0%, 15% {
+    padding: 12px;
+    border-radius: 50%;
+    width: 48px;
+    gap: 0;
+  }
+  20%, 80% {
+    padding: 12px 20px 12px 12px;
+    border-radius: 25px;
+    width: auto;
+    gap: 8px;
+  }
+  100% {
+    padding: 12px;
+    border-radius: 50%;
+    width: 48px;
+    gap: 0;
+  }
+}
+
+@keyframes textFadeInOut {
+  0%, 15% {
+    opacity: 0;
+    max-width: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+    max-width: 150px;
+  }
+  100% {
+    opacity: 0;
+    max-width: 0;
+  }
+}
+
+.feedback-widget {
+  animation: none;
+}
+
+/* Apply animation only once - use a class that gets removed */
+.feedback-button.animating {
+  animation:
+    slideIn 0.6s ease-out 0.5s both,
+    expandButton 3.5s ease-in-out 0.5s forwards;
+}
+
+.feedback-text.animating {
+  animation: textFadeInOut 3.5s ease-in-out 0.5s forwards;
+}
+
+/* Responsive: smaller on mobile */
+@media (max-width: 768px) {
+  .feedback-widget {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .feedback-button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .feedback-icon {
+    font-size: 18px;
+  }
+}
+
+/* Extra small screens - keep compact */
+@media (max-width: 480px) {
+  .feedback-button:hover {
+    width: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    gap: 0;
+  }
+
+  .feedback-button:hover .feedback-text {
+    display: none;
+  }
+}
