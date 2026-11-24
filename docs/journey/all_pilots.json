@@ -536,66 +536,115 @@
     "composition": "Ayuntamiento de Madrid, Comune di Codogno, capillar IT, SEAMWARE, Mines Paris - PSL, Politecnico di Milano (POLIMI)",
     "consortium": [
       {
-        "country_code": "",
-        "name": "Ayuntamiento de Madrid DGOD",
-        "role": "Pilot lead"
+        "name": "Ayuntamiento de Madrid - Direcci\u00f3n General de la Oficina Digital (DGOD)",
+        "role": "Pilot lead",
+        "country_code": "ES",
+        "website": "https://www.madrid.es"
       },
       {
-        "country_code": "",
+        "name": "Comune di Codogno",
+        "role": "Public authority",
+        "country_code": "IT",
+        "website": "https://www.comune.codogno.lo.it"
+      },
+      {
         "name": "capillar IT",
-        "role": "Partner"
+        "role": "Technology partner & Technical coordinator",
+        "country_code": "ES",
+        "website": "https://capillar.it"
       },
       {
-        "country_code": "",
         "name": "SEAMWARE",
-        "role": "Partner"
+        "role": "Technology partner",
+        "country_code": "ES",
+        "website": "https://seamware.com"
       },
       {
-        "country_code": "",
         "name": "Mines Paris - PSL",
-        "role": "Partner"
+        "role": "Research",
+        "country_code": "FR",
+        "website": "https://www.minesparis.psl.eu"
       },
       {
-        "country_code": "",
         "name": "Politecnico di Milano (POLIMI)",
-        "role": "Partner"
+        "role": "Research",
+        "country_code": "IT",
+        "website": "https://www.polimi.it"
       }
     ],
     "contact": {
-      "email": "",
-      "name": "Ayuntamiento de Madrid DGOD",
-      "organisation": ""
+      "name": "Ayuntamiento de Madrid - DGOD (Fernando \u00c1lvarez Garc\u00eda) & capillar IT (Javier Esquillor, Andr\u00e9s Juli\u00e1n)",
+      "email": "alvarezgf@madrid.es",
+      "organisation": "Ayuntamiento de Madrid - Direcci\u00f3n General de la Oficina Digital (DGOD) / capillar IT"
     },
-    "description": "A two-scale digital twin pilot connecting a major wholesale food market in Madrid with a small producer city in Codogno to transform agrifood logistics and commerce into reusable governed public digital infrastructure.",
+    "description": "A two-scale digital twin pilot connecting a major wholesale food market in Madrid (Mercamadrid) with a medium-sized producer city in Lombardy (Codogno) to transform agrifood logistics and commerce into reusable, governed public digital infrastructure.\n",
     "external_page_url": "../journey/pilots/round2/newg/",
     "focus_areas": [
       "Fresh-food logistics optimisation",
-      "governed data publishing",
-      "agrifood corridor simulation & planning"
+      "Governed data publishing",
+      "Agrifood corridor simulation & planning"
     ],
     "locations": [
       {
         "city": "Madrid",
-        "country": "",
-        "country_code": ""
+        "country": "Spain",
+        "country_code": "ES"
       },
       {
         "city": "Codogno",
-        "country": "",
-        "country_code": ""
+        "country": "Italy",
+        "country_code": "IT"
       }
     ],
     "name": "NeWG+",
     "pilot_id": "newg",
     "pilot_page_url": "../journey/pilots/round2/newg/",
-    "provider": "",
-    "repository_url": "",
-    "github_usernames": [],
+    "provider": "github",
+    "repository_url": "https://github.com/Capillar-IT/ldt4ssc-newg",
+    "github_usernames": [
+      "anjj"
+    ],
     "round": "round2",
     "short_name": "newg",
-    "start_date": "2026-09-15",
+    "start_date": "2026-08-31",
     "status": "Onboarding",
-    "work_strand": "WS1"
+    "work_strand": "WS1",
+    "schema_version": 1,
+    "contacts": [
+      {
+        "name": "Fernando \u00c1lvarez Garc\u00eda",
+        "role": "Pilot Lead & Public Governance Lead (Subdirector General de Transformaci\u00f3n Digital, 5G / IoT)",
+        "email": "alvarezgf@madrid.es",
+        "organisation": "Ayuntamiento de Madrid - Direcci\u00f3n General de la Oficina Digital (DGOD)"
+      },
+      {
+        "name": "Javier Esquillor",
+        "role": "Technical Coordinator & Managing Director",
+        "email": "javi@capillar.it",
+        "organisation": "capillar IT"
+      },
+      {
+        "name": "Andr\u00e9s Juli\u00e1n",
+        "role": "Technical Coordinator, COO & Product Delivery Lead",
+        "email": "andres.j@capillar.it",
+        "organisation": "capillar IT"
+      }
+    ],
+    "end_date": "2028-02-29",
+    "external_links": [
+      {
+        "label": "Madrid Digital Twin (Gemelo Digital de Madrid)",
+        "url": "https://gemelo.madrid.es/en/"
+      },
+      {
+        "label": "Codogno Digital Twin (POLIMI)",
+        "url": "https://codogno-digital-twin.netlify.app/"
+      },
+      {
+        "label": "LDT4SSC Knowledge Hub \u2014 NeWG+ Pilot Page",
+        "url": "https://knowledgehub.ldt4ssc.eu/journey/pilots/round2/newg/"
+      }
+    ]
   },
   {
     "composition": "Clockwork, Ubitech, Municipality of Naoussa, Stereograph, Municipality of Vila Franca de Xira, Technical University of Denmark, Nhood Services Portugal, AI-nergy, Austrian Institute of Technology",

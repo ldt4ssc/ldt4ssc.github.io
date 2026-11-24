@@ -2,64 +2,113 @@
   "composition": "Ayuntamiento de Madrid, Comune di Codogno, capillar IT, SEAMWARE, Mines Paris - PSL, Politecnico di Milano (POLIMI)",
   "consortium": [
     {
-      "country_code": "",
-      "name": "Ayuntamiento de Madrid DGOD",
-      "role": "Pilot lead"
+      "country_code": "ES",
+      "name": "Ayuntamiento de Madrid - Direcci\u00f3n General de la Oficina Digital (DGOD)",
+      "role": "Pilot lead",
+      "website": "https://www.madrid.es"
     },
     {
-      "country_code": "",
+      "country_code": "IT",
+      "name": "Comune di Codogno",
+      "role": "Public authority",
+      "website": "https://www.comune.codogno.lo.it"
+    },
+    {
+      "country_code": "ES",
       "name": "capillar IT",
-      "role": "Partner"
+      "role": "Technology partner & Technical coordinator",
+      "website": "https://capillar.it"
     },
     {
-      "country_code": "",
+      "country_code": "ES",
       "name": "SEAMWARE",
-      "role": "Partner"
+      "role": "Technology partner",
+      "website": "https://seamware.com"
     },
     {
-      "country_code": "",
+      "country_code": "FR",
       "name": "Mines Paris - PSL",
-      "role": "Partner"
+      "role": "Research",
+      "website": "https://www.minesparis.psl.eu"
     },
     {
-      "country_code": "",
+      "country_code": "IT",
       "name": "Politecnico di Milano (POLIMI)",
-      "role": "Partner"
+      "role": "Research",
+      "website": "https://www.polimi.it"
     }
   ],
   "contact": {
-    "email": "",
-    "name": "Ayuntamiento de Madrid DGOD",
-    "organisation": ""
+    "email": "alvarezgf@madrid.es",
+    "name": "Ayuntamiento de Madrid - DGOD (Fernando \u00c1lvarez Garc\u00eda) & capillar IT (Javier Esquillor, Andr\u00e9s Juli\u00e1n)",
+    "organisation": "Ayuntamiento de Madrid - Direcci\u00f3n General de la Oficina Digital (DGOD) / capillar IT"
   },
-  "description": "A two-scale digital twin pilot connecting a major wholesale food market in Madrid with a small producer city in Codogno to transform agrifood logistics and commerce into reusable governed public digital infrastructure.",
+  "contacts": [
+    {
+      "email": "alvarezgf@madrid.es",
+      "name": "Fernando \u00c1lvarez Garc\u00eda",
+      "organisation": "Ayuntamiento de Madrid - Direcci\u00f3n General de la Oficina Digital (DGOD)",
+      "role": "Pilot Lead & Public Governance Lead (Subdirector General de Transformaci\u00f3n Digital, 5G / IoT)"
+    },
+    {
+      "email": "javi@capillar.it",
+      "name": "Javier Esquillor",
+      "organisation": "capillar IT",
+      "role": "Technical Coordinator & Managing Director"
+    },
+    {
+      "email": "andres.j@capillar.it",
+      "name": "Andr\u00e9s Juli\u00e1n",
+      "organisation": "capillar IT",
+      "role": "Technical Coordinator, COO & Product Delivery Lead"
+    }
+  ],
+  "description": "A two-scale digital twin pilot connecting a major wholesale food market in Madrid (Mercamadrid) with a medium-sized producer city in Lombardy (Codogno) to transform agrifood logistics and commerce into reusable, governed public digital infrastructure.\n",
+  "end_date": "2028-02-29",
+  "external_links": [
+    {
+      "label": "Madrid Digital Twin (Gemelo Digital de Madrid)",
+      "url": "https://gemelo.madrid.es/en/"
+    },
+    {
+      "label": "Codogno Digital Twin (POLIMI)",
+      "url": "https://codogno-digital-twin.netlify.app/"
+    },
+    {
+      "label": "LDT4SSC Knowledge Hub \u2014 NeWG+ Pilot Page",
+      "url": "https://knowledgehub.ldt4ssc.eu/journey/pilots/round2/newg/"
+    }
+  ],
   "external_page_url": "../journey/pilots/round2/newg/",
   "focus_areas": [
     "Fresh-food logistics optimisation",
-    "governed data publishing",
-    "agrifood corridor simulation & planning"
+    "Governed data publishing",
+    "Agrifood corridor simulation & planning"
   ],
-  "github_usernames": [],
+  "github_usernames": [
+    "anjj"
+  ],
   "locations": [
     {
       "city": "Madrid",
-      "country": "",
-      "country_code": ""
+      "country": "Spain",
+      "country_code": "ES"
     },
     {
       "city": "Codogno",
-      "country": "",
-      "country_code": ""
+      "country": "Italy",
+      "country_code": "IT"
     }
   ],
   "name": "NeWG+",
   "pilot_id": "newg",
   "pilot_page_url": "../journey/pilots/round2/newg/",
-  "provider": "",
-  "repository_url": "",
+  "provider": "github",
+  "repository_url": "https://github.com/Capillar-IT/ldt4ssc-newg",
   "round": "round2",
+  "schema_version": 1,
   "short_name": "newg",
-  "start_date": "2026-09-15",
+  "start_date": "2026-08-31",
   "status": "Onboarding",
   "work_strand": "WS1"
 }
