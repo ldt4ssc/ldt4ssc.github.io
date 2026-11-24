@@ -650,79 +650,96 @@
     "composition": "Clockwork, Ubitech, Municipality of Naoussa, Stereograph, Municipality of Vila Franca de Xira, Technical University of Denmark, Nhood Services Portugal, AI-nergy, Austrian Institute of Technology",
     "consortium": [
       {
-        "country_code": "",
         "name": "Clockwork",
-        "role": "Pilot lead"
+        "role": "Pilot lead, Technology partner",
+        "country_code": "EL",
+        "website": "https://clockwork-energy.gr/"
       },
       {
-        "country_code": "",
-        "name": "Clockwork",
-        "role": "Partner"
-      },
-      {
-        "country_code": "",
         "name": "Ubitech",
-        "role": "Partner"
+        "role": "Technology partner",
+        "country_code": "EL",
+        "website": "https://ubitech.eu/"
       },
       {
-        "country_code": "",
+        "name": "Municipality of Heroic City of Naoussa",
+        "role": "Public authority",
+        "country_code": "EL",
+        "website": "https://www.naoussa.gr/"
+      },
+      {
         "name": "Stereograph",
-        "role": "Partner"
+        "role": "Technology partner",
+        "country_code": "FR",
+        "website": "https://www.stereograph.fr/"
       },
       {
-        "country_code": "",
+        "name": "Municipality of Vila Franca de Xira",
+        "role": "Public authority",
+        "country_code": "PT",
+        "website": "https://www.cm-vfxira.pt/"
+      },
+      {
         "name": "Technical University of Denmark",
-        "role": "Partner"
+        "role": "Research",
+        "country_code": "DK",
+        "website": "https://dtu.dk/"
       },
       {
-        "country_code": "",
         "name": "Nhood Services Portugal",
-        "role": "Partner"
+        "role": "Technology partner",
+        "country_code": "PT",
+        "website": "https://nhood.pt/"
       },
       {
-        "country_code": "",
         "name": "AI-nergy",
-        "role": "Partner"
+        "role": "Technology partner",
+        "country_code": "DK",
+        "website": "https://ai-nergy.net/"
       },
       {
-        "country_code": "",
-        "name": "Austrian Institute of Technology",
-        "role": "Partner"
+        "name": "AIT Austrian Institute of Technology GmbH",
+        "role": "Research",
+        "country_code": "AT",
+        "website": "https://www.ait.ac.at/"
       }
     ],
     "contact": {
-      "email": "",
-      "name": "Clockwork",
-      "organisation": ""
+      "name": "Spyridon Vlachos",
+      "email": "spivla@clockwork.engineering",
+      "organisation": "Clockwork"
     },
-    "description": "A federated network of AI-reasoning Local Digital Twins transforming public buildings into a coordinated energy flexibility and renewable energy integration system for municipalities.",
+    "description": "A federated network of AI-reasoning Local Digital Twins transforming public buildings into a coordinated energy flexibility and renewable energy integration system for municipalities.\n",
     "external_page_url": "../journey/pilots/round2/perform/",
     "focus_areas": [
       "Building energy monitoring & optimisation",
-      "renewable energy & storage investment planning"
+      "Renewable energy & storage investment planning"
     ],
     "locations": [
       {
-        "city": "Naoussa",
-        "country": "",
-        "country_code": ""
+        "city": "Municipality of Naoussa",
+        "country": "Greece",
+        "country_code": "EL"
       },
       {
-        "city": "Vila Franca de Xira",
-        "country": "",
-        "country_code": ""
+        "city": "Municipality of Vila Franca de Xira",
+        "country": "Portugal",
+        "country_code": "PT"
       }
     ],
     "name": "PERFORM",
     "pilot_id": "perform",
     "pilot_page_url": "../journey/pilots/round2/perform/",
-    "provider": "",
-    "repository_url": "",
-    "github_usernames": [],
+    "provider": "github",
+    "repository_url": "https://github.com/Clockwork-Eng/ldt4ssc-perform",
+    "github_usernames": [
+      "chrpapadop"
+    ],
     "round": "round2",
     "short_name": "perform",
     "start_date": "2026-09-15",
     "status": "Onboarding",
-    "work_strand": "WS2"
+    "work_strand": "WS2",
+    "schema_version": 1
   }
 ]
