@@ -1,1 +1,95 @@
-[]
+[
+  {
+    "authors": [
+      {
+        "name": "Jasna Veji\u0107",
+        "organisation": "AI-nergy"
+      },
+      {
+        "name": "Christos Papadopoulos",
+        "organisation": "Clockwork"
+      }
+    ],
+    "date": "2026-10-30",
+    "pilot_name": "PERFORM",
+    "pilot_page_url": "../journey/pilots/round2/perform/",
+    "short_name": "perform",
+    "slug": "2026-10-30-first-deliverables-and-self-assessment",
+    "summary": "By the end of October 2026, PERFORM had submitted its first two deliverables, PD1 and PD2, and completed its initial pilot self-assessment.\n\nThese early outputs establish a starting point for organisi",
+    "tags": [
+      "deliverables",
+      "self-assessment",
+      "pilot-readiness",
+      "local-digital-twins"
+    ],
+    "title": "PERFORM submits its first deliverables and completes its initial self-assessment",
+    "topics": [],
+    "type": "milestone",
+    "work_strand": "WS2",
+    "source": "repository",
+    "discussion": 12,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/12"
+  },
+  {
+    "authors": [
+      {
+        "name": "Jasna Veji\u0107",
+        "organisation": "AI-nergy"
+      },
+      {
+        "name": "Christos Papadopoulos",
+        "organisation": "Clockwork"
+      }
+    ],
+    "date": "2026-10-19",
+    "pilot_name": "PERFORM",
+    "pilot_page_url": "../journey/pilots/round2/perform/",
+    "short_name": "perform",
+    "slug": "2026-10-19-perform-partners-meet-in-naoussa",
+    "summary": "On 19\u201320 October 2026, PERFORM partners met in Naoussa, Greece, to review the pilot scope, align technical activities and prepare the first project deliverables.\n\nBoth Naoussa and Vila Franca de Xira ",
+    "tags": [
+      "pilot-planning",
+      "energy",
+      "interoperability",
+      "data-management"
+    ],
+    "title": "PERFORM partners meet in Naoussa to advance pilot planning",
+    "topics": [],
+    "type": "event",
+    "work_strand": "WS2",
+    "source": "repository",
+    "discussion": 13,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/13"
+  },
+  {
+    "authors": [
+      {
+        "name": "Jasna Veji\u0107",
+        "organisation": "AI-nergy"
+      },
+      {
+        "name": "Christos Papadopoulos",
+        "organisation": "Clockwork"
+      }
+    ],
+    "date": "2026-09-23",
+    "pilot_name": "PERFORM",
+    "pilot_page_url": "../journey/pilots/round2/perform/",
+    "short_name": "perform",
+    "slug": "2026-09-23-perform-online-kick-off-meeting",
+    "summary": "On 23 September 2026, PERFORM held its online kick-off meeting, bringing together 18 participants from all consortium partners. The meeting opened with a presentation by Spiros Vlachos from CLOCKWORK,",
+    "tags": [
+      "kick-off",
+      "energy",
+      "local-digital-twins",
+      "consortium"
+    ],
+    "title": "PERFORM launches with an online kick-off meeting",
+    "topics": [],
+    "type": "event",
+    "work_strand": "WS2",
+    "source": "repository",
+    "discussion": 14,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/14"
+  }
+]
