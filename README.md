@@ -1,6 +1,6 @@
 # LDT4SSC Knowledge Hub
 
-The LDT4SSC Knowledge Hub is the home where the Local Digital Twin ecosystem builds its principles of interoperability together. Its pilot projects, each bringing together two cities and a third partner, are where this ecosystem takes root.
+The LDT4SSC Knowledge Hub is the home where the Local Digital Twin ecosystem builds its principles of interoperability together. Its pilot projects, each bringing together at least two cities and a third partner, are where this ecosystem takes root.
 
 It rests on two layers:
 
