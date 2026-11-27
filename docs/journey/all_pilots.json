@@ -240,32 +240,53 @@
     "composition": "City of Helsinki, Prague Institute of Planning and Development, Operator ICT Prague, Czech Academy of Sciences, Land Survey of Finland / Finnish Geospatial Research Institute (NLS FGI)",
     "consortium": [
       {
-        "country_code": "",
         "name": "City of Helsinki",
-        "role": "Pilot lead"
+        "role": "Coordinator, Helsinki pilot",
+        "country_code": "FI",
+        "website": "https://www.hel.fi/en"
       },
       {
-        "country_code": "",
-        "name": "Operator ICT Prague",
-        "role": "Partner"
+        "name": "Forum Virium Helsinki",
+        "role": "Development, Helsinki pilot",
+        "country_code": "FI",
+        "website": "https://forumvirium.fi/en/"
       },
       {
-        "country_code": "",
-        "name": "Czech Academy of Sciences",
-        "role": "Partner"
+        "name": "Prague Institute of Planning and Development (IPR Praha)",
+        "role": "Prague pilot",
+        "country_code": "CZ",
+        "website": "https://iprpraha.cz/en"
       },
       {
-        "country_code": "",
-        "name": "Land Survey of Finland / Finnish Geospatial Research Institute (NLS FGI)",
-        "role": "Partner"
+        "name": "Operator ICT",
+        "role": "AI components, Prague pilot",
+        "country_code": "CZ",
+        "website": "https://operatorict.cz/en"
+      },
+      {
+        "name": "Institute of Computer Science of the Czech Academy of Sciences",
+        "role": "Atmospheric and micro-scale simulation",
+        "country_code": "CZ",
+        "website": "https://www.cs.cas.cz/index.php/en"
+      },
+      {
+        "name": "National Land Survey of Finland, Finnish Geospatial Research Institute",
+        "role": "Geospatial interoperability, Location Europe",
+        "country_code": "FI",
+        "website": "https://www.maanmittauslaitos.fi/en/research"
+      },
+      {
+        "name": "Visions",
+        "role": "Data space connector",
+        "country_code": "FR",
+        "website": "https://visionspol.eu"
       }
     ],
     "contact": {
-      "email": "",
-      "name": "City of Helsinki",
-      "organisation": ""
+      "name": "Tapani Heino",
+      "organisation": "City of Helsinki"
     },
-    "description": "An AI-powered Local Digital Twin initiative evolving existing urban platforms into dynamic tools for building energy retrofit prioritisation, climate neutrality planning, and sustainable urban design.",
+    "description": "An AI-powered Local Digital Twin initiative evolving existing urban platforms into dynamic tools for building energy retrofit prioritisation, climate neutrality planning, and sustainable urban design.\n",
     "external_page_url": "../journey/pilots/round2/alex/",
     "focus_areas": [
       "Building energy retrofit prioritisation",
@@ -275,26 +296,31 @@
     "locations": [
       {
         "city": "Helsinki",
-        "country": "",
-        "country_code": ""
+        "country": "Finland",
+        "country_code": "FI"
       },
       {
         "city": "Prague",
-        "country": "",
-        "country_code": ""
+        "country": "Czechia",
+        "country_code": "CZ"
       }
     ],
     "name": "ALEX",
     "pilot_id": "alex",
     "pilot_page_url": "../journey/pilots/round2/alex/",
-    "provider": "",
-    "repository_url": "",
-    "github_usernames": [],
+    "provider": "github",
+    "repository_url": "https://github.com/ALEX-LDT/ldt4ssc-alex",
+    "github_usernames": [
+      "tatue",
+      "laurigates"
+    ],
     "round": "round2",
     "short_name": "alex",
-    "start_date": "2026-09-15",
+    "start_date": "2026-08-31",
     "status": "EXPLORE",
-    "work_strand": "WS3"
+    "work_strand": "WS3",
+    "schema_version": 1,
+    "end_date": "2028-02-29"
   },
   {
     "composition": "Lioncode EE, Nestos Municipality, Sandanski Municipality, Kavala Chamber of Commerce, Laboratory of Geoinformatics - AUTH (LabGeo)",

@@ -3,10 +3,11 @@
   <channel>
     <title>ALEX — LDT4SSC Updates</title>
     <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/alex/</link>
-    <description>An AI-powered Local Digital Twin initiative evolving existing urban platforms into dynamic tools for building energy retrofit prioritisation, climate neutrality planning, and sustainable urban design.</description>
+    <description>An AI-powered Local Digital Twin initiative evolving existing urban platforms into dynamic tools for building energy retrofit prioritisation, climate neutrality planning, and sustainable urban design.
+</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 01:19:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:12:36 +0000</lastBuildDate>
   </channel>
 </rss>
