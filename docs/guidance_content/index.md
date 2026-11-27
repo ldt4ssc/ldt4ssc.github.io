@@ -40,10 +40,9 @@ delivered — alongside an archive of what the calls originally asked for.
 
     [:octicons-arrow-right-24: Contributing](contributing.md)
 
--   :material-archive-outline:{ .lg .middle } __Open calls (archive)__
+-   :material-archive-outline:{ .lg .middle } __Open calls__
 
-    Consortium conditions, financial rules, timelines and the Call for Pilots Manuals, kept as
-    a record now the calls have closed.
+    Consortium conditions, financial rules, timelines and the Call for Pilots Manuals, for ongoing and closed calls for pilots.
 
     [:octicons-arrow-right-24: Archive](open-calls.md)
 

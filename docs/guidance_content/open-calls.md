@@ -1,10 +1,13 @@
 ---
-title: Open calls (archive)
+title: Open calls
 ---
 
-# Open calls — archive
+# Open calls
 
-!!! info "All three rounds are closed"
+!!! info "Fourth open call"
+    **A fourth open call is now open!** Please check it out [here](https://ldt4ssc.eu/call-four/). Apply by **January 25th 2027**.
+
+!!! info "Three previous call rounds"
     The third and final round closed on **13 July 2026**. This page is kept as a record of what
     the calls asked for — useful to awarded pilots re-reading their commitments, and to anyone
     tracing how the pilot portfolio was assembled.
@@ -13,6 +16,19 @@ title: Open calls (archive)
     [pilot obligations](obligations.md) page. To follow the community, join the
     [Stakeholder Forum](https://docs.google.com/forms/d/e/1FAIpQLScyauYurnx0KJM29TTKWmZzlSCcY8LlIVnhTF4weM1qGKDdPg/viewform);
     to see the pilots already running, go to the [Pilot Journey](../journey/index.md).
+
+---
+## The fourth open call
+
+**A fourth open call is now open!** Please check it out [here](https://ldt4ssc.eu/call-four/). Apply by **January 25th 2027**. It comprises [**Work Strand 1**](ws1.md) only (interconnect existing LDTs).
+
+| Milestone | Date |
+|---|---|
+| Call opened | 26 November 2026 |
+| Call closing | 25 January 2027 (23:59 CET) |
+| Selection announced | March 2027 |
+| Pilots start | May 2027 |
+| Pilots end (max 18 months) | November 2028 |
 
 ---
 
@@ -48,7 +64,7 @@ pilots.
 
 ---
 
-## Who could apply
+## Who can apply
 
 **Consortium composition** — the minimum in every strand:
 
@@ -65,7 +81,7 @@ communities, and technology providers and AI innovators from both public and pri
 
 ---
 
-## What applicants submitted
+## What applicants submit
 
 | Document | Format |
 |---|---|
@@ -75,14 +91,14 @@ communities, and technology providers and AI innovators from both public and pri
 | Ownership and Control Declaration (OCD) | PDF |
 | Ethics and Data Protection Self-Assessment | PDF |
 
-**Application form content** covered: data governance (current → target, across political,
+**Application form content** covers: data governance (current → target, across political,
 technical, legal and organisational dimensions); project management and resource allocation;
 political endorsement and technical capacity per public authority; end-user engagement;
 quadruple-helix stakeholder involvement (3 of 4 groups); alignment with EU priorities;
 replicability to other EU communities; socio-economic and environmental effects with an
 eco-design approach; and a post-pilot sustainability strategy.
 
-Applicants also provided **four draft diagrams** per use case — technical (deployment, current
+Applicants also provide **four draft diagrams** per use case — technical (deployment, current
 and future) and functional (data lifecycle, current and future). In WS3 the functional diagram
 covered the end-to-end data and AI pipeline, from collection through training, validation and
 testing to deployment and monitoring.
@@ -99,19 +115,6 @@ testing to deployment and monitoring.
 | Indirect costs | **7% flat rate** of direct costs |
 | Pilot duration | **12–18 months** |
 
----
-
-## Timeline — third round
-
-| Milestone | Date |
-|---|---|
-| Call opened | 13 May 2026 |
-| Call closed | 13 July 2026 (23:59 CET) |
-| Selection announced | August 2026 |
-| Pilots start | December 2026 |
-| Pilots end (max 18 months) | June 2028 |
-
-Earlier rounds opened in November 2025 (first) and February 2026 (second).
 
 ---
 

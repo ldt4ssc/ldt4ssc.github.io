@@ -12,8 +12,10 @@ This Work Strand focuses on connecting and testing existing Local Digital Twins 
 - First Round of open calls: November 2025
 - Second Round of open calls: February 2026 
 - Third Round of open calls: May 2026 
+- Fourth Round of open calls: November 2026
 
-👉 The third and last round of open calls is now **CLOSED**. Join our [**Stakeholder Forum**](https://docs.google.com/forms/d/e/1FAIpQLScyauYurnx0KJM29TTKWmZzlSCcY8LlIVnhTF4weM1qGKDdPg/viewform) to follow the latest updates of the community. Access the [**pilot journey**](../journey/index.md) to know more about our pilots.
+!!! info "Open calls"
+    **A fourth open call is now open!** Please check it out [here](https://ldt4ssc.eu/call-four/). Access the [**pilot journey**](../journey/index.md) to know more about our ongoing pilots from previous calls.
 
 **What is the goal?**
 

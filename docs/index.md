@@ -5,6 +5,11 @@ Sustainable Communities (LDT4SSC)**. It collects the project's outputs — strat
 technical resources and pilot work — and keeps them openly available for reuse beyond the
 project's lifetime.
 
+!!! info "Open calls"
+    **A fourth open call is now open!** Please check it out [here](https://ldt4ssc.eu/call-four/). To follow the community, join the
+    [Stakeholder Forum](https://docs.google.com/forms/d/e/1FAIpQLScyauYurnx0KJM29TTKWmZzlSCcY8LlIVnhTF4weM1qGKDdPg/viewform),
+    or see the [Pilot Journey](journey/index.md) for the pilots already underway.
+
 ---
 
 ## Sections
@@ -71,7 +76,4 @@ The Knowledge Hub is the navigation layer on top of the project's Knowledge Base
 - **Equips pilots** — guidance, technical recommendations and demonstrators;
 - **Enables reuse** — so outputs remain usable after the project ends.
 
-!!! info "Open calls"
-    All three rounds of open calls have closed. To follow the community, join the
-    [Stakeholder Forum](https://docs.google.com/forms/d/e/1FAIpQLScyauYurnx0KJM29TTKWmZzlSCcY8LlIVnhTF4weM1qGKDdPg/viewform),
-    or see the [Pilot Journey](journey/index.md) for the pilots already underway.
+

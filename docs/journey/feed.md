@@ -11,6 +11,8 @@ Aggregated updates from all active pilots, in reverse chronological order.
 
 [:material-rss: Subscribe via RSS](../feeds/all.xml)
 
+<a href="http://validator.w3.org/feed/check.cgi?url=https%3A//knowledgehub.ldt4ssc.eu/feeds/all.xml"><img src="/assets/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a>
+
 !!! info "Posting an update"
     Pilots publish here either through the
     [Pilot updates form](https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/categories/pilot-updates)
