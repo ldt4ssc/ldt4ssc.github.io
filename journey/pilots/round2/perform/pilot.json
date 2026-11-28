@@ -1,0 +1,96 @@
+{
+  "composition": "Clockwork, Ubitech, Municipality of Naoussa, Stereograph, Municipality of Vila Franca de Xira, Technical University of Denmark, Nhood Services Portugal, AI-nergy, Austrian Institute of Technology",
+  "consortium": [
+    {
+      "country_code": "EL",
+      "name": "Clockwork",
+      "role": "Pilot lead, Technology partner",
+      "website": "https://clockwork-energy.gr/"
+    },
+    {
+      "country_code": "EL",
+      "name": "Ubitech",
+      "role": "Technology partner",
+      "website": "https://ubitech.eu/"
+    },
+    {
+      "country_code": "EL",
+      "name": "Municipality of Heroic City of Naoussa",
+      "role": "Public authority",
+      "website": "https://www.naoussa.gr/"
+    },
+    {
+      "country_code": "FR",
+      "name": "Stereograph",
+      "role": "Technology partner",
+      "website": "https://www.stereograph.fr/"
+    },
+    {
+      "country_code": "PT",
+      "name": "Municipality of Vila Franca de Xira",
+      "role": "Public authority",
+      "website": "https://www.cm-vfxira.pt/"
+    },
+    {
+      "country_code": "DK",
+      "name": "Technical University of Denmark",
+      "role": "Research",
+      "website": "https://dtu.dk/"
+    },
+    {
+      "country_code": "PT",
+      "name": "Nhood Services Portugal",
+      "role": "Technology partner",
+      "website": "https://nhood.pt/"
+    },
+    {
+      "country_code": "DK",
+      "name": "AI-nergy",
+      "role": "Technology partner",
+      "website": "https://ai-nergy.net/"
+    },
+    {
+      "country_code": "AT",
+      "name": "AIT Austrian Institute of Technology GmbH",
+      "role": "Research",
+      "website": "https://www.ait.ac.at/"
+    }
+  ],
+  "contact": {
+    "email": "spivla@clockwork.engineering",
+    "name": "Spyridon Vlachos",
+    "organisation": "Clockwork"
+  },
+  "description": "A federated network of AI-reasoning Local Digital Twins transforming public buildings into a coordinated energy flexibility and renewable energy integration system for municipalities.\n",
+  "external_page_url": "../journey/pilots/round2/perform/",
+  "focus_areas": [
+    "Building energy monitoring & optimisation",
+    "Renewable energy & storage investment planning"
+  ],
+  "github_usernames": [
+    "chrpapadop"
+  ],
+  "locations": [
+    {
+      "city": "Municipality of Naoussa",
+      "country": "Greece",
+      "country_code": "EL"
+    },
+    {
+      "city": "Municipality of Vila Franca de Xira",
+      "country": "Portugal",
+      "country_code": "PT"
+    }
+  ],
+  "name": "PERFORM",
+  "pilot_id": "perform",
+  "pilot_page_url": "../journey/pilots/round2/perform/",
+  "provider": "github",
+  "repository_url": "https://github.com/Clockwork-Eng/ldt4ssc-perform",
+  "round": "round2",
+  "schema_version": 1,
+  "short_name": "perform",
+  "start_date": "2026-09-15",
+  "status": "EXPLORE",
+  "work_strand": "WS2"
+}

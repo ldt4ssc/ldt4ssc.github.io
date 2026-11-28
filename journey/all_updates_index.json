@@ -1,0 +1,337 @@
+[
+  {
+    "authors": [
+      {
+        "name": "Andr\u00e9s Juli\u00e1n",
+        "organisation": "capillar IT"
+      },
+      {
+        "name": "Yu Liu",
+        "organisation": "Mines Paris - PSL"
+      },
+      {
+        "name": "Javier Esquillor",
+        "organisation": "capillar IT"
+      },
+      {
+        "name": "Alberto L.",
+        "organisation": "capillar IT"
+      }
+    ],
+    "date": "2026-11-19",
+    "pilot_name": "NeWG+",
+    "pilot_page_url": "../journey/pilots/round2/newg/",
+    "short_name": "newg",
+    "slug": "2026-11-19-h3-smart-mesh-poc-and-dynamic-granularity-framework",
+    "summary": "Through our November bi-weekly technical working sessions between capillar IT and Mines Paris \u2014 PSL, we have defined the H3 Spatial Smart Mesh Proof-of-Concept (POC) architecture and the spatial-tempo",
+    "tags": [
+      "smart-mesh",
+      "h3",
+      "simulation",
+      "green-it",
+      "urban-logistics",
+      "mercamadrid"
+    ],
+    "title": "H3 Smart Mesh POC architecture and dynamic spatial-temporal granularity framework defined with Mines Paris - PSL",
+    "topics": [],
+    "type": "general",
+    "work_strand": "WS1",
+    "source": "repository",
+    "discussion": 6,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/6"
+  },
+  {
+    "authors": [
+      {
+        "name": "Andr\u00e9s Juli\u00e1n",
+        "organisation": "capillar IT"
+      },
+      {
+        "name": "Paula Callejas",
+        "organisation": "Ayuntamiento de Madrid - Pilot Coordination Support"
+      }
+    ],
+    "date": "2026-11-18",
+    "pilot_name": "NeWG+",
+    "pilot_page_url": "../journey/pilots/round2/newg/",
+    "short_name": "newg",
+    "slug": "2026-11-18-ldt4ssc-pilots-needs-assessment-workshop",
+    "summary": "Representatives of the NeWG+ consortium participated in the LDT4SSC Needs Assessment Workshop for Pilots organised across Work Strands 1, 2, and 3 to benchmark technical and non-technical building-blo",
+    "tags": [
+      "methodology",
+      "interoperability",
+      "data-spaces",
+      "capacity-building",
+      "peer-learning"
+    ],
+    "title": "NeWG+ participates in the LDT4SSC Pilots Needs Assessment Workshop",
+    "topics": [],
+    "type": "event",
+    "work_strand": "WS1",
+    "source": "repository",
+    "discussion": 7,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/7"
+  },
+  {
+    "authors": [
+      {
+        "name": "Fernando \u00c1lvarez Garc\u00eda",
+        "organisation": "Ayuntamiento de Madrid - Direcci\u00f3n General de la Oficina Digital (DGOD)"
+      },
+      {
+        "name": "Javier Esquillor",
+        "organisation": "capillar IT"
+      },
+      {
+        "name": "Andr\u00e9s Juli\u00e1n",
+        "organisation": "capillar IT"
+      }
+    ],
+    "date": "2026-10-30",
+    "pilot_name": "NeWG+",
+    "pilot_page_url": "../journey/pilots/round2/newg/",
+    "short_name": "newg",
+    "slug": "2026-10-30-m2-data-management-and-interoperability-baseline",
+    "summary": "The NeWG+ consortium has completed its Month 2 (M2) foundational deliverables\u2014the Data Management Plan & Ethics baseline (PD1) and the initial LDT4SSC Interoperability Self-Assessment (PD2 V1 / ISAQ)\u2014",
+    "tags": [
+      "data-governance",
+      "interoperability",
+      "ethics",
+      "ngsi-ld",
+      "smart-data-models",
+      "mims-plus"
+    ],
+    "title": "Month 2 deliverables completed: Data Management & Ethics baseline and Interoperability Self-Assessment V1",
+    "topics": [],
+    "type": "milestone",
+    "work_strand": "WS1",
+    "source": "repository",
+    "discussion": 8,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/8"
+  },
+  {
+    "authors": [
+      {
+        "name": "Jasna Veji\u0107",
+        "organisation": "AI-nergy"
+      },
+      {
+        "name": "Christos Papadopoulos",
+        "organisation": "Clockwork"
+      }
+    ],
+    "date": "2026-10-30",
+    "pilot_name": "PERFORM",
+    "pilot_page_url": "../journey/pilots/round2/perform/",
+    "short_name": "perform",
+    "slug": "2026-10-30-first-deliverables-and-self-assessment",
+    "summary": "By the end of October 2026, PERFORM had submitted its first two deliverables, PD1 and PD2, and completed its initial pilot self-assessment.\n\nThese early outputs establish a starting point for organisi",
+    "tags": [
+      "deliverables",
+      "self-assessment",
+      "pilot-readiness",
+      "local-digital-twins"
+    ],
+    "title": "PERFORM submits its first deliverables and completes its initial self-assessment",
+    "topics": [],
+    "type": "milestone",
+    "work_strand": "WS2",
+    "source": "repository",
+    "discussion": 12,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/12"
+  },
+  {
+    "authors": [
+      {
+        "name": "Jasna Veji\u0107",
+        "organisation": "AI-nergy"
+      },
+      {
+        "name": "Christos Papadopoulos",
+        "organisation": "Clockwork"
+      }
+    ],
+    "date": "2026-10-19",
+    "pilot_name": "PERFORM",
+    "pilot_page_url": "../journey/pilots/round2/perform/",
+    "short_name": "perform",
+    "slug": "2026-10-19-perform-partners-meet-in-naoussa",
+    "summary": "On 19\u201320 October 2026, PERFORM partners met in Naoussa, Greece, to review the pilot scope, align technical activities and prepare the first project deliverables.\n\nBoth Naoussa and Vila Franca de Xira ",
+    "tags": [
+      "pilot-planning",
+      "energy",
+      "interoperability",
+      "data-management"
+    ],
+    "title": "PERFORM partners meet in Naoussa to advance pilot planning",
+    "topics": [],
+    "type": "event",
+    "work_strand": "WS2",
+    "source": "repository",
+    "discussion": 13,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/13"
+  },
+  {
+    "authors": [
+      {
+        "name": "Fernando \u00c1lvarez Garc\u00eda",
+        "organisation": "Ayuntamiento de Madrid - Direcci\u00f3n General de la Oficina Digital (DGOD)"
+      },
+      {
+        "name": "Javier Esquillor",
+        "organisation": "capillar IT"
+      },
+      {
+        "name": "Andr\u00e9s Juli\u00e1n",
+        "organisation": "capillar IT"
+      }
+    ],
+    "date": "2026-10-18",
+    "pilot_name": "NeWG+",
+    "pilot_page_url": "../journey/pilots/round2/newg/",
+    "short_name": "newg",
+    "slug": "2026-10-18-mercamadrid-and-municipal-areas-kickoff",
+    "summary": "We held the NeWG+ Madrid Operational Kick-Off bringing together Mercamadrid, wholesale and retail sector associations (AEMPM, ADEPESCA, COMAPES), and the five participating municipal areas of Ayuntami",
+    "tags": [
+      "stakeholder-engagement",
+      "mercamadrid",
+      "urban-logistics",
+      "digital-product-passport",
+      "data-governance"
+    ],
+    "title": "NeWG+ Madrid operational kick-off with Mercamadrid, sector associations, and municipal areas",
+    "topics": [],
+    "type": "event",
+    "work_strand": "WS1",
+    "source": "repository",
+    "discussion": 9,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/9"
+  },
+  {
+    "authors": [
+      {
+        "name": "Andr\u00e9s Juli\u00e1n",
+        "organisation": "capillar IT"
+      },
+      {
+        "name": "Javier Esquillor",
+        "organisation": "capillar IT"
+      }
+    ],
+    "date": "2026-10-15",
+    "pilot_name": "NeWG+",
+    "pilot_page_url": "../journey/pilots/round2/newg/",
+    "short_name": "newg",
+    "slug": "2026-10-15-madrid-open-data-h3-smart-mesh-audit",
+    "summary": "We have completed a comprehensive technical audit and live stream verification of the Madrid Open Data Portal (datos.madrid.es), informo.madrid.es, and mc30.es across 131 catalog entries to map the re",
+    "tags": [
+      "smart-mesh",
+      "open-data",
+      "geospatial",
+      "mobility",
+      "green-it",
+      "h3"
+    ],
+    "title": "Madrid Open Data catalog audit completed to power the multi-resolution H3 Smart Mesh",
+    "topics": [],
+    "type": "general",
+    "work_strand": "WS1",
+    "source": "repository",
+    "discussion": 10,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/10"
+  },
+  {
+    "authors": [
+      {
+        "name": "Jasna Veji\u0107",
+        "organisation": "AI-nergy"
+      },
+      {
+        "name": "Christos Papadopoulos",
+        "organisation": "Clockwork"
+      }
+    ],
+    "date": "2026-09-23",
+    "pilot_name": "PERFORM",
+    "pilot_page_url": "../journey/pilots/round2/perform/",
+    "short_name": "perform",
+    "slug": "2026-09-23-perform-online-kick-off-meeting",
+    "summary": "On 23 September 2026, PERFORM held its online kick-off meeting, bringing together 18 participants from all consortium partners. The meeting opened with a presentation by Spiros Vlachos from CLOCKWORK,",
+    "tags": [
+      "kick-off",
+      "energy",
+      "local-digital-twins",
+      "consortium"
+    ],
+    "title": "PERFORM launches with an online kick-off meeting",
+    "topics": [],
+    "type": "event",
+    "work_strand": "WS2",
+    "source": "repository",
+    "discussion": 14,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/14"
+  },
+  {
+    "authors": [
+      {
+        "name": "Fernando \u00c1lvarez Garc\u00eda",
+        "organisation": "Ayuntamiento de Madrid - Direcci\u00f3n General de la Oficina Digital (DGOD)"
+      },
+      {
+        "name": "Javier Esquillor",
+        "organisation": "capillar IT"
+      },
+      {
+        "name": "Andr\u00e9s Juli\u00e1n",
+        "organisation": "capillar IT"
+      }
+    ],
+    "date": "2026-08-31",
+    "pilot_name": "NeWG+",
+    "pilot_page_url": "../journey/pilots/round2/newg/",
+    "short_name": "newg",
+    "slug": "2026-08-31-pilot-grant-agreement-signed-and-launch",
+    "summary": "The NeWG+ pilot (New Wholesale Market Generation: cities digital infrastructure implementation through sustainable logistics and commerce) has officially entered into force following the signature of ",
+    "tags": [
+      "governance",
+      "interoperability",
+      "digital-twins",
+      "agrifood-logistics",
+      "data-spaces"
+    ],
+    "title": "NeWG+ Pilot Grant Agreement signed and WS1 consortium officially launched",
+    "topics": [],
+    "type": "milestone",
+    "work_strand": "WS1",
+    "source": "repository",
+    "discussion": 11,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/11"
+  },
+  {
+    "authors": [
+      {
+        "name": "Panagiotis Triantis",
+        "organisation": "Ubitech"
+      }
+    ],
+    "date": "2026-08-07",
+    "pilot_name": "MUNICIPAL",
+    "pilot_page_url": "../journey/pilots/round1/municipal/",
+    "short_name": "municipal",
+    "slug": "2026-08-07-municipal-kickoff",
+    "summary": "The MUNICIPAL pilot project has officially launched following our kick-off meeting hosted by the City Council of Murcia on July 7th and 8th. The event brought together our consortium of seven partners",
+    "tags": [
+      "kick-off",
+      "interoperability",
+      "cross-border",
+      "simpl"
+    ],
+    "title": "MUNICIPAL Project Kick-Off in Murcia",
+    "topics": [],
+    "type": "event",
+    "work_strand": "WS1",
+    "source": "repository",
+    "discussion": 5,
+    "discussion_url": "https://github.com/ldt4ssc/ldt4ssc.github.io/discussions/5"
+  }
+]

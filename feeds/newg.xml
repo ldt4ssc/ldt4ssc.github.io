@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>NeWG+ — LDT4SSC Updates</title>
+    <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/</link>
+    <description>A two-scale digital twin pilot connecting a major wholesale food market in Madrid (Mercamadrid) with a medium-sized producer city in Lombardy (Codogno) to transform agrifood logistics and commerce into reusable, governed public digital infrastructure.
+</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 28 Nov 2026 14:47:38 +0000</lastBuildDate>
+    <item>
+      <title>NeWG+ Pilot Grant Agreement signed and WS1 consortium officially launched</title>
+      <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-08-31-pilot-grant-agreement-signed-and-launch</link>
+      <description>The NeWG+ pilot (New Wholesale Market Generation: cities digital infrastructure implementation through sustainable logistics and commerce) has officially entered into force following the signature of </description>
+      <guid isPermaLink="false">https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-08-31-pilot-grant-agreement-signed-and-launch</guid>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Madrid Open Data catalog audit completed to power the multi-resolution H3 Smart Mesh</title>
+      <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-10-15-madrid-open-data-h3-smart-mesh-audit</link>
+      <description>We have completed a comprehensive technical audit and live stream verification of the Madrid Open Data Portal (datos.madrid.es), informo.madrid.es, and mc30.es across 131 catalog entries to map the re</description>
+      <guid isPermaLink="false">https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-10-15-madrid-open-data-h3-smart-mesh-audit</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>NeWG+ Madrid operational kick-off with Mercamadrid, sector associations, and municipal areas</title>
+      <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-10-18-mercamadrid-and-municipal-areas-kickoff</link>
+      <description>We held the NeWG+ Madrid Operational Kick-Off bringing together Mercamadrid, wholesale and retail sector associations (AEMPM, ADEPESCA, COMAPES), and the five participating municipal areas of Ayuntami</description>
+      <guid isPermaLink="false">https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-10-18-mercamadrid-and-municipal-areas-kickoff</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Month 2 deliverables completed: Data Management &amp; Ethics baseline and Interoperability Self-Assessment V1</title>
+      <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-10-30-m2-data-management-and-interoperability-baseline</link>
+      <description>The NeWG+ consortium has completed its Month 2 (M2) foundational deliverables—the Data Management Plan &amp; Ethics baseline (PD1) and the initial LDT4SSC Interoperability Self-Assessment (PD2 V1 / ISAQ)—</description>
+      <guid isPermaLink="false">https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-10-30-m2-data-management-and-interoperability-baseline</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>NeWG+ participates in the LDT4SSC Pilots Needs Assessment Workshop</title>
+      <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-11-18-ldt4ssc-pilots-needs-assessment-workshop</link>
+      <description>Representatives of the NeWG+ consortium participated in the LDT4SSC Needs Assessment Workshop for Pilots organised across Work Strands 1, 2, and 3 to benchmark technical and non-technical building-blo</description>
+      <guid isPermaLink="false">https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-11-18-ldt4ssc-pilots-needs-assessment-workshop</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>H3 Smart Mesh POC architecture and dynamic spatial-temporal granularity framework defined with Mines Paris - PSL</title>
+      <link>https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-11-19-h3-smart-mesh-poc-and-dynamic-granularity-framework</link>
+      <description>Through our November bi-weekly technical working sessions between capillar IT and Mines Paris — PSL, we have defined the H3 Spatial Smart Mesh Proof-of-Concept (POC) architecture and the spatial-tempo</description>
+      <guid isPermaLink="false">https://knowledgehub.ldt4ssc.eu/../journey/pilots/round2/newg/#update=2026-11-19-h3-smart-mesh-poc-and-dynamic-granularity-framework</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
